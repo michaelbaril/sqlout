@@ -1,0 +1,43 @@
+{
+    "name": "baril/sqlout",
+    "description": "MySQL fulltext driver for Laravel Scout.",
+    "keywords": [
+        "laravel", "scout", "mysql", "fulltext", "search"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/database": "^5.8",
+        "illuminate/support": "^5.8",
+        "laravel/scout": "^7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baril\\Sqlout\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Baril\\Sqlout\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "baril/smoothie": "Some fruity additions to Laravel's Eloquent."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baril\\Sqlout\\SqloutServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "sniff": "./vendor/bin/phpcs --standard=./phpcs.xml ./src",
+        "fix": "./vendor/bin/phpcbf --standard=./phpcs.xml ./src",
+        "test": "vendor/bin/phpunit --colors=always --testdox -v"
+    }
+}
