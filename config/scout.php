@@ -80,7 +80,8 @@ return [
     */
 
     'sqlout' => [
-        //
+        'table_name' => 'searchindex',
+        'default_mode' => 'in natural language mode',
     ],
 
 ];

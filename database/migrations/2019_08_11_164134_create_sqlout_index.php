@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -13,17 +14,18 @@ class CreateSqloutIndex extends Migration
      */
     public function up()
     {
-        Schema::create('searchindex', function (Blueprint $table) {
+        Schema::create(config('scout.sqlout.table_name'), function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('record_type', 100)->index();
+            $table->string('record_type', 191)->index();
             $table->unsignedBigInteger('record_id')->index();
-            $table->string('field');
+            $table->string('field', 191)->index();
             $table->unsignedSmallInteger('weight')->default(1);
             $table->text('content');
             $table->timestamps();
             $table->engine = 'MyISAM';
         });
-        DB::statement('ALTER TABLE wp_searchindex ADD FULLTEXT searchindex_content (content)');
+        $tableName = DB::getTablePrefix() . config('scout.sqlout.table_name');
+        DB::statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");
     }
 
     /**
@@ -33,6 +35,6 @@ class CreateSqloutIndex extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists(config('scout.sqlout.table_name'));
     }
 }

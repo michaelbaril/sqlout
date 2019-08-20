@@ -26,6 +26,7 @@
         }
     },
     "suggest": {
+        "wamania/php-stemmer": "PHP stemmer that can be used together with Sqlout.",
         "baril/smoothie": "Some fruity additions to Laravel's Eloquent."
     },
     "extra": {

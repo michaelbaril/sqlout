@@ -7,7 +7,6 @@ use Illuminate\Contracts\Support\Arrayable;
 
 class SearchIndex extends Model
 {
-    protected $table = 'searchindex';
     protected $fillable = [
         'record_type',
         'record_id',
@@ -15,6 +14,11 @@ class SearchIndex extends Model
         'weight',
         'content',
     ];
+
+    public function getTable(): string
+    {
+        return config('scout.sqlout.table_name');
+    }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
@@ -50,40 +54,5 @@ class SearchIndex extends Model
         } else {
             $builder->where('record_id', $id);
         }
-    }
-
-    /**
-     *
-     * @param string $type
-     * @param string $terms
-     * @param string $mode Search mode: "natural language" or "boolean"
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public static function search($type, $terms, $mode = null)
-    {
-        $mode = $mode ?? 'natural language';
-        $query = static::query()
-                ->with('record')
-                ->type($type)
-                ->whereRaw("match(content) against (? in $mode mode)", [$terms])
-                ->groupBy('record_type')
-                ->groupBy('record_id');
-        if ($mode !== 'boolean') {
-            $query->selectRaw("sum(weight * (match(content) against (? in $mode mode))) as score", [$terms]);
-        }
-        $query->addSelect(['record_type', 'record_id']);
-        return $query;
-    }
-
-    /**
-     *
-     * @param \Illuminate\Database\Eloquent\Builder $query
-     * @return int
-     */
-    public static function totalCount($query)
-    {
-        $query = clone $query;
-        $query->getQuery()->groups = null;
-        return $query->count((new static)->getConnection()->raw('distinct record_id'));
     }
 }

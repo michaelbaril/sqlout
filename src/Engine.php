@@ -2,6 +2,10 @@
 
 namespace Baril\Sqlout;
 
+use Closure;
+use Baril\Sqlout\Builder as SqloutBuilder;
+use Illuminate\Support\Collection;
+use Illuminate\Contracts\Support\Arrayable;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
 use Laravel\Scout\Builder;
 
@@ -18,7 +22,7 @@ class Engine extends ScoutEngine
         $models->each(function ($model) {
             $type = $model->getMorphClass();
             $id = $model->getKey();
-            SearchIndex::type($type)->id($id)->delete();
+            SearchIndex::where('record_type', $type)->where('record_id', $id)->delete();
 
             $data = $model->toSearchableArray();
             foreach (array_filter($data) as $field => $content) {
@@ -26,7 +30,7 @@ class Engine extends ScoutEngine
                     'record_type' => $type,
                     'record_id' => $id,
                     'field' => $field,
-                    'weight' => $model->weights[$field] ?? 1,
+                    'weight' => $model->getSearchWeight($field),
                     'content' => $content,
                 ]);
             }
@@ -41,11 +45,12 @@ class Engine extends ScoutEngine
      */
     public function delete($models)
     {
-        $models->each(function ($model) {
-            $type = $model->getMorphClass();
-            $id = $model->getKey();
-            SearchIndex::type($type)->id($id)->delete();
-        });
+        if (!$models->count()) {
+            return;
+        }
+        SearchIndex::where('record_type', $models->first()->getMorphClass())
+                ->whereIn('record_id', $models->modelKeys())
+                ->delete();
     }
 
     /**
@@ -86,29 +91,63 @@ class Engine extends ScoutEngine
      */
     protected function performSearch(Builder $builder, array $options = [])
     {
-        $query = SearchIndex::search(
-            $builder->model->getMorphClass(),
-            $builder->query
-            // $mode = null
-        );
-        if ($builder->queryCallback) {
-            // @todo trashed
-            $query->whereHasMorph('record', $builder->model->getMorphClass(), clone $builder->queryCallback);
-            $builder->queryCallback = null;
-        } else {
-            $query->hasMorph('record', $builder->model->getMorphClass());
-        }
+        $mode = $builder->mode ?? config('scout.sqlout.default_mode');
 
+        // Creating search query:
+        $query = SearchIndex::query()
+                ->with('record')
+                ->where('record_type', $builder->model->getMorphClass())
+                ->whereRaw("match(content) against (? $mode)", [$builder->query])
+                ->groupBy('record_type')
+                ->groupBy('record_id');
+        if ($mode !== SqloutBuilder::BOOLEAN) {
+            $query->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$builder->query]);
+        }
+        $query->addSelect(['record_type', 'record_id']);
         foreach ($builder->wheres as $field => $value) {
-            $query->where($field, $value);
+            if (is_array($value) || $value instanceof Arrayable) {
+                $query->whereIn($field, $value);
+            } else {
+                $query->where($field, $value);
+            }
         }
 
-        $results = ['nbHits' => SearchIndex::totalCount($query)];
-
-        foreach ($builder->orders as $order) {
-            $query->orderBy($order['column'], $order['direction']);
+        // Order clauses:
+        if (!$builder->orders && $mode !== SqloutBuilder::BOOLEAN) {
+            $builder->orderByScore();
+        }
+        if ($builder->orders) {
+            foreach ($builder->orders as $i => $order) {
+                if ($order['column'] == '_score') {
+                    $query->orderBy($order['column'], $order['direction']);
+                    continue;
+                }
+                $alias = 'sqlout_reserved_order_' . $i;
+                $subQuery = $builder->model->newQuery()
+                        ->select([
+                            $builder->model->getKeyName() . " as {$alias}_id",
+                            $order['column'] . " as {$alias}_order",
+                        ]);
+                $query->joinSub($subQuery, $alias, function ($join) use ($alias) {
+                    $join->on('record_id', '=', $alias . '_id');
+                });
+                $query->orderBy($alias . '_order', $order['direction']);
+            }
         }
 
+        // Applying scopes to the model query:
+        $query->whereHasMorph('record', $builder->model->getMorphClass(), function ($query) use ($builder) {
+            foreach ($builder->scopes as $scope) {
+                if ($scope instanceof Closure) {
+                    $scope($query);
+                } else {
+                    list($method, $parameters) = $scope;
+                    $query->$method(...$parameters);
+                }
+            }
+        });
+
+        // Applying limit/offset:
         if ($options['hitsPerPage'] ?? null) {
             $query->limit($options['hitsPerPage']);
             if ($options['page'] ?? null) {
@@ -117,6 +156,13 @@ class Engine extends ScoutEngine
             }
         }
 
+        // Performing a first query to determine the total number of hits:
+        $countQuery = $query->getQuery()
+                ->cloneWithout(['groups', 'orders', 'offset', 'limit'])
+                ->cloneWithoutBindings(['order']);
+        $results = ['nbHits' => $countQuery->count($countQuery->getConnection()->raw('distinct record_id'))];
+
+        // Performing the search itself:
         $results['hits'] = $query->with('record')->get();
 
         return $results;
@@ -144,7 +190,7 @@ class Engine extends ScoutEngine
     public function map(Builder $builder, $results, $model)
     {
         $models = $results['hits']->map(function ($hit) {
-            $hit->record->_score = $hit->score;
+            $hit->record->_score = $hit->_score;
             return $hit->record;
         })->all();
         return $model->newCollection($models);
@@ -169,6 +215,6 @@ class Engine extends ScoutEngine
      */
     public function flush($model)
     {
-        SearchIndex::type($model->getMorphClass())->delete();
+        SearchIndex::where('record_type', $model->getMorphClass())->delete();
     }
 }
