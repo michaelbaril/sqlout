@@ -40,9 +40,17 @@ class Builder extends ScoutBuilder
         $this->scopes[] = $callback;
     }
 
+    /**
+     * Add a constraint to the search query.
+     *
+     * @param  string  $field
+     * @param  mixed  $value
+     * @return $this
+     */
     public function where($field, $value)
     {
-        $this->scopes[] = ['where', [$field, $value]];
+        $args = func_get_args();
+        $this->scopes[] = ['where', $args];
         return $this;
     }
 
@@ -77,32 +85,67 @@ class Builder extends ScoutBuilder
         return $this->orderBy('_score', $direction);
     }
 
+    /**
+     * Restrict the search to the provided field(s).
+     *
+     * @param string|array|\Illuminate\Contracts\Support\Arrayable $fields
+     * @return $this
+     */
     public function only($fields)
     {
         return parent::where('field', $fields);
     }
 
+    /**
+     * Switches to the provided mode.
+     *
+     * @param string $mode
+     * @return $this
+     */
     public function mode($mode)
     {
         $this->mode = trim(strtolower($mode));
         return $this;
     }
 
-    public function naturalLanguage()
+    /**
+     * Switches to natural language mode.
+     *
+     * @param string $mode
+     * @return $this
+     */
+    public function inNaturalLanguageMode()
     {
         return $this->mode(static::NATURAL_LANGUAGE);
     }
 
-    public function boolean()
-    {
-        return $this->mode(static::BOOLEAN);
-    }
-
-    public function queryExpansion()
+    /**
+     * Switches to natural language mode with query expansion.
+     *
+     * @param string $mode
+     * @return $this
+     */
+    public function withQueryExpansion()
     {
         return $this->mode(static::QUERY_EXPANSION);
     }
 
+    /**
+     * Switches to boolean mode.
+     *
+     * @param string $mode
+     * @return $this
+     */
+    public function inBooleanMode()
+    {
+        return $this->mode(static::BOOLEAN);
+    }
+
+    /**
+     * Returns the total number of hits
+     *
+     * @return int
+     */
     public function count()
     {
         return $this->engine()->getTotalCount(

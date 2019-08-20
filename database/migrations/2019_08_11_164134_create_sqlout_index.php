@@ -22,7 +22,6 @@ class CreateSqloutIndex extends Migration
             $table->unsignedSmallInteger('weight')->default(1);
             $table->text('content');
             $table->timestamps();
-            $table->engine = 'MyISAM';
         });
         $tableName = DB::getTablePrefix() . config('scout.sqlout.table_name');
         DB::statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");

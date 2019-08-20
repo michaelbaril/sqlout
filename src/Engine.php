@@ -3,8 +3,6 @@
 namespace Baril\Sqlout;
 
 use Closure;
-use Baril\Sqlout\Builder as SqloutBuilder;
-use Illuminate\Support\Collection;
 use Illuminate\Contracts\Support\Arrayable;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
 use Laravel\Scout\Builder;
@@ -99,11 +97,9 @@ class Engine extends ScoutEngine
                 ->where('record_type', $builder->model->getMorphClass())
                 ->whereRaw("match(content) against (? $mode)", [$builder->query])
                 ->groupBy('record_type')
-                ->groupBy('record_id');
-        if ($mode !== SqloutBuilder::BOOLEAN) {
-            $query->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$builder->query]);
-        }
-        $query->addSelect(['record_type', 'record_id']);
+                ->groupBy('record_id')
+                ->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$builder->query])
+                ->addSelect(['record_type', 'record_id']);
         foreach ($builder->wheres as $field => $value) {
             if (is_array($value) || $value instanceof Arrayable) {
                 $query->whereIn($field, $value);
@@ -113,7 +109,7 @@ class Engine extends ScoutEngine
         }
 
         // Order clauses:
-        if (!$builder->orders && $mode !== SqloutBuilder::BOOLEAN) {
+        if (!$builder->orders) {
             $builder->orderByScore();
         }
         if ($builder->orders) {

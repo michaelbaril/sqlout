@@ -93,6 +93,18 @@ $results = Post::search('this rug really tied the room together')->withTrashed()
 See [Scout's documentation](https://laravel.com/docs/5.8/scout#searching)
 for more details.
 
+Sqlout's builder also provides the following additional methods:
+
+```php
+// Restrict the search to some fields only:
+$builder->only('title');
+$builder->only(['title', 'excerpt']);
+// (use the same names as in the toSearchableArray method)
+
+// Retrieve the total number of results:
+$nbHits = $builder->count();
+```
+
 ### Using scopes
 
 With Sqlout, you can also use your model scopes on the search builder,
@@ -103,6 +115,9 @@ $results = Post::search('this rug really tied the room together')
     ->published() // the `published` scope is defined in the Post class
     ->get();
 ```
+
+> :warning: If your scope adds an `order by` clause, it won't be applied.
+> See below the proper way to order results.
 
 If the name of your scope collides with the name of a method of the `Builder`
 object, you can use the `scope` method:
@@ -115,28 +130,38 @@ $results = Post::search('this rug really tied the room together')
     ->get();
 ```
 
-> Note: Similarly, all calls to the `where` method on the search builder will be
-> forwarded to the model's query builder.
+Similarly, all calls to the `where` method on the search builder will be
+forwarded to the model's query builder.
 
-### Additional methods
+### Search modes
 
-Sqlout's builder provides the following additional methods:
+MySQL's fulltext search comes in 3 flavours:
+* natural language mode,
+* natural language mode with query expansion,
+* boolean mode.
+
+Sqlout's default mode is "natural language", but this can be changed in the
+config file.
+
+You can switch between all 3 modes on a per-query basis by using the following
+methods:
 
 ```php
-// Switch between MySQL's fulltext search modes:
-$builder->naturalLanguage();
-$builder->boolean();
-$builder->queryExpansion();
-// the default mode is "natural language" (can be customized in the config file)
-
-// Order the results by score (not available in boolean mode):
-$builder->orderByScore();
-
-// Restrict the search to some fields only:
-$builder->only('title');
-$builder->only(['title', 'excerpt']);
-// (use the same names as in the toSearchableArray method)
-
-// Retrieve the total number of results:
-$nbHits = $builder->count();
+$builder->inNaturalLanguageMode();
+$builder->withQueryExpansion();
+$builder->inBooleanMode();
 ```
+
+### Ordering the results
+
+If no order is specified, the results will be ordered by score (most relevant
+first). But you can also order the results by any column of your table.
+
+```php
+$builder->orderBy('post_status', 'asc')->orderByScore();
+// "post_status" is a column of the original table
+```
+
+In the example below, the results will be ordered by status first, and then
+by descending score.
+
