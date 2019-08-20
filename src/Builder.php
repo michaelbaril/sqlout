@@ -38,6 +38,7 @@ class Builder extends ScoutBuilder
     public function scope(Closure $callback)
     {
         $this->scopes[] = $callback;
+        return $this;
     }
 
     /**
