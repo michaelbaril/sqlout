@@ -165,3 +165,33 @@ $builder->orderBy('post_status', 'asc')->orderByScore();
 In the example below, the results will be ordered by status first, and then
 by descending score.
 
+### Filters, tokenizer, stopwords and stemming
+
+In your config file, you can customize the way the indexed content and search
+terms will be processed:
+
+```php
+return [
+    // ...
+    'sqlout' => [
+        'table_name' => 'searchindex',
+        'default_mode' => 'in natural language mode',
+        'filters' => [ // anything callable (function name, closure...)
+            'strip_tags',
+            'html_entity_decode',
+            'mb_strtolower',
+            'strip_punctuation', // this helper is provided by Sqlout (see helpers.php)
+        ],
+        'token_delimiter' => '/[\s]+/',
+        'minimum_length' => 2,
+        'stopwords' => [
+            'est',
+            'les',
+        ],
+        'stemmer' => Wamania\Snowball\French::class,
+    ],
+];
+```
+
+In the example, the stemmer comes from the package `wamania/php-stemmer`, but
+any class with a `stem` method, or anything callable such as a closure, will do.

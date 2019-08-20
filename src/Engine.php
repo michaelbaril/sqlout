@@ -4,11 +4,53 @@ namespace Baril\Sqlout;
 
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
+use Illuminate\Support\Collection;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
 use Laravel\Scout\Builder;
 
 class Engine extends ScoutEngine
 {
+    /**
+     * Apply the filters to the indexed content or search terms, tokenize it
+     * and stem the words.
+     *
+     * @param string $content
+     * @return string
+     */
+    protected function processString($content)
+    {
+        // Apply custom filters:
+        foreach (config('scout.sqlout.filters', []) as $filter) {
+            if (is_callable($filter)) {
+                $content = call_user_func($filter, $content);
+            }
+        }
+
+        // Tokenize:
+        $words = preg_split(config('scout.sqlout.token_delimiter', '/[\s]+/'), $content);
+
+        // Remove stopwords & short words:
+        $minLength = config('scout.sqlout.minimum_length', 0);
+        $stopwords = config('scout.sqlout.stopwords', []);
+        $words = (new Collection($words))->reject(function ($word) use ($minLength, $stopwords) {
+            return mb_strlen($word) < $minLength || in_array($word, $stopwords);
+        })->all();
+
+        // Stem:
+        $stemmer = config('scout.sqlout.stemmer');
+        if (is_string($stemmer) && method_exists($stemmer, 'stem')) {
+            $stemmer = [new $stemmer, 'stem'];
+        }
+        if (is_callable($stemmer)) {
+            foreach ($words as $k => $word) {
+                $words[$k] = call_user_func($stemmer, $word);
+            }
+        }
+
+        // Return result:
+        return implode(' ', $words);
+    }
+
     /**
      * Update the given model in the index.
      *
@@ -29,7 +71,7 @@ class Engine extends ScoutEngine
                     'record_id' => $id,
                     'field' => $field,
                     'weight' => $model->getSearchWeight($field),
-                    'content' => $content,
+                    'content' => $this->processString($content),
                 ]);
             }
         });
@@ -90,15 +132,16 @@ class Engine extends ScoutEngine
     protected function performSearch(Builder $builder, array $options = [])
     {
         $mode = $builder->mode ?? config('scout.sqlout.default_mode');
+        $terms = $this->processString($builder->query);
 
         // Creating search query:
         $query = SearchIndex::query()
                 ->with('record')
                 ->where('record_type', $builder->model->getMorphClass())
-                ->whereRaw("match(content) against (? $mode)", [$builder->query])
+                ->whereRaw("match(content) against (? $mode)", [$terms])
                 ->groupBy('record_type')
                 ->groupBy('record_id')
-                ->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$builder->query])
+                ->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$terms])
                 ->addSelect(['record_type', 'record_id']);
         foreach ($builder->wheres as $field => $value) {
             if (is_array($value) || $value instanceof Arrayable) {

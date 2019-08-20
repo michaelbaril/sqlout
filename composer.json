@@ -13,9 +13,13 @@
         "laravel/scout": "^7.1"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^2.8"
+        "squizlabs/php_codesniffer": "^2.8",
+        "wamania/php-stemmer": "^1.2"
     },
     "autoload": {
+        "files": [
+          "src/helpers.php"
+        ],
         "psr-4": {
             "Baril\\Sqlout\\": "src/"
         }

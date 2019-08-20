@@ -82,6 +82,19 @@ return [
     'sqlout' => [
         'table_name' => 'searchindex',
         'default_mode' => 'in natural language mode',
+//        'filters' => [
+//            'strip_tags',
+//            'html_entity_decode',
+//            'mb_strtolower',
+//            'strip_punctuation',
+//        ],
+//        'token_delimiter' => '/[\s]+/',
+//        'minimum_length' => 2,
+//        'stopwords' => [
+//            'est',
+//            'les',
+//        ],
+//        'stemmer' => Wamania\Snowball\French::class, // from package wamania/php-stemmer
     ],
 
 ];
