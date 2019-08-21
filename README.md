@@ -174,8 +174,7 @@ terms will be processed:
 return [
     // ...
     'sqlout' => [
-        'table_name' => 'searchindex',
-        'default_mode' => 'in natural language mode',
+        // ...
         'filters' => [ // anything callable (function name, closure...)
             'strip_tags',
             'html_entity_decode',
@@ -193,5 +192,6 @@ return [
 ];
 ```
 
-In the example, the stemmer comes from the package `wamania/php-stemmer`, but
-any class with a `stem` method, or anything callable such as a closure, will do.
+In the example, the stemmer comes from the package
+[`wamania/php-stemmer`](https://github.com/wamania/php-stemmer), but any class
+with a `stem` method, or anything callable such as a closure, will do.
