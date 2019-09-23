@@ -19,7 +19,8 @@ Publish the configuration:
 php artisan vendor:publish
 ```
 
-Add the service providers (Scout's and Sqlout's) to your `config/app.php` file:
+If you're not using package discovery, manually add the service providers
+(Scout's and Sqlout's) to your `config/app.php` file:
 
 ```php
 return [
@@ -43,14 +44,13 @@ be customized in the config file).
 
 ## Making a model searchable
 
-The process is similar to what is described in
-[Scout's documentation](https://laravel.com/docs/5.8/scout#configuration),
-with a few differences (listed below).
-
 ```php
+
+use Baril\Sqlout\Searchable;
+
 class Post extends Model
 {
-    use \Baril\Sqlout\Searchable;
+    use Searchable;
 
     protected $weights = [
         'title' => 4,
@@ -68,6 +68,10 @@ class Post extends Model
 }
 ```
 
+The example above is similar to what is described in
+[Scout's documentation](https://laravel.com/docs/5.8/scout#configuration),
+with the following differences/additions:
+
 * You'll notice that the model uses the `Baril\Sqlout\Searchable` trait
 instead of `Laravel\Scout\Searchable`.
 * The `$weight` property can be used to "boost" some fields. The default value
@@ -79,7 +83,7 @@ Once this is done, you can index your data using Scout's Artisan command:
 php artisan scout:import "App\Post"
 ```
 
-Of course, your models will also be indexed automatically on save.
+Your models will also be indexed automatically on save.
 
 ## Searching
 
@@ -87,7 +91,7 @@ Of course, your models will also be indexed automatically on save.
 
 ```php
 $results = Post::search('this rug really tied the room together')->get();
-$results = Post::search('this rug really tied the room together')->withTrashed()->get();
+$results = Post::search('the dude abides')->withTrashed()->get();
 ```
 
 See [Scout's documentation](https://laravel.com/docs/5.8/scout#searching)
@@ -108,19 +112,24 @@ $nbHits = $builder->count();
 ### Using scopes
 
 With Sqlout, you can also use your model scopes on the search builder,
-as if it was a query builder on the model:
+as if it was a query builder on the model itself. Similarly, all calls to the
+`where` method on the search builder will be
+forwarded to the model's query builder.
 
 ```php
 $results = Post::search('this rug really tied the room together')
     ->published() // the `published` scope is defined in the Post class
+    ->where('date', '>', '2010-10-10')
     ->get();
 ```
 
-> :warning: If your scope adds an `order by` clause, it won't be applied.
-> See below the proper way to order results.
+> :warning: Keep in mind that these forwarded scopes will actually be applied
+> to a subquery (the main query here being the one on the `searchindex` table).
+> This means that for example a scope that adds an `order by` clause won't have
+> any effect. See below for the proper way to order results.
 
-If the name of your scope collides with the name of a method of the `Builder`
-object, you can use the `scope` method:
+If the name of your scope collides with the name of a method of the
+`Baril\Sqlout\Builder` object, you can wrap your scope into the `scope` method:
 
 ```php
 $results = Post::search('this rug really tied the room together')
@@ -130,9 +139,6 @@ $results = Post::search('this rug really tied the room together')
     ->get();
 ```
 
-Similarly, all calls to the `where` method on the search builder will be
-forwarded to the model's query builder.
-
 ### Search modes
 
 MySQL's fulltext search comes in 3 flavours:
@@ -140,11 +146,11 @@ MySQL's fulltext search comes in 3 flavours:
 * natural language mode with query expansion,
 * boolean mode.
 
-Sqlout's default mode is "natural language", but this can be changed in the
-config file.
+Sqlout's default mode is "natural language" (but this can be changed in the
+config file).
 
-You can switch between all 3 modes on a per-query basis by using the following
-methods:
+You can also switch between all 3 modes on a per-query basis, by using the
+following methods:
 
 ```php
 $builder->inNaturalLanguageMode();
