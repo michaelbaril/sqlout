@@ -102,6 +102,25 @@ class SearchTest extends TestCase
         $this->assertEquals($comment->id, $results[0]->id);
     }
 
+    public function test_ordering()
+    {
+        $posts = Post::all();
+        $posts[3]->title = 'schtroumpf';
+        $posts[3]->save();
+        $posts[2]->title = 'gargamel';
+        $posts[2]->body = 'schtroumpf';
+        $posts[2]->save();
+
+        // Order by score by default:
+        $results = Post::search('schtroumpf')->get();
+        $this->assertEquals($posts[3]->id, $results[0]->id);
+        $this->assertEquals($posts[2]->id, $results[1]->id);
+
+        $results = Post::search('schtroumpf')->orderBy('title')->get();
+        $this->assertEquals($posts[2]->id, $results[0]->id);
+        $this->assertEquals($posts[3]->id, $results[1]->id);
+    }
+
     public function test_search_modes()
     {
         app('config')->set('scout.sqlout.default_mode', Builder::BOOLEAN);
