@@ -8,15 +8,15 @@
     "type": "library",
     "require": {
         "php": ">=7.0",
-        "illuminate/database": "^5.8",
-        "illuminate/support": "^5.8",
+        "illuminate/database": "^5.8|^6.0",
+        "illuminate/support": "^5.8|^6.0",
         "laravel/scout": "^7.1"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.8",
         "wamania/php-stemmer": "^1.2",
-        "orchestra/testbench": "^3.8",
-        "orchestra/database": "^3.8"
+        "orchestra/testbench": "^3.8|^4.0",
+        "orchestra/database": "^3.8|^4.0"
     },
     "autoload": {
         "files": [
