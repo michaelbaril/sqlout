@@ -5,6 +5,8 @@ a dedicated table of the MySQL database, and uses a fulltext index to search.
 It is meant for small-sized projects, for which bigger solutions such as
 ElasticSearch would be an overkill.
 
+Sqlout is compatible with Laravel 5.8+ / Scout 7.1+.
+
 ## Setup
 
 Require the package:
