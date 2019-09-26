@@ -147,7 +147,7 @@ class SearchTest extends TestCase
         $post->body = '<p>salut &ccedil;a boume ?</p>';
         $post->save();
 
-        $indexed = SearchIndex::type(Post::class)->id($post->id)->where('field', 'body')->value('content');
+        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('salut ça boume ?', $indexed);
     }
 
@@ -161,7 +161,7 @@ class SearchTest extends TestCase
         $post->body = 'shut the fuck up donny';
         $post->save();
 
-        $indexed = SearchIndex::type(Post::class)->id($post->id)->where('field', 'body')->value('content');
+        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('shut the up donny', $indexed);
     }
 
@@ -173,7 +173,7 @@ class SearchTest extends TestCase
         $post->body = 'shut the fuck up donny';
         $post->save();
 
-        $indexed = SearchIndex::type(Post::class)->id($post->id)->where('field', 'body')->value('content');
+        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('shut fuck donny', $indexed);
     }
 
@@ -197,5 +197,15 @@ class SearchTest extends TestCase
         $this->assertEquals(1, Post::search('chantées')->count());
         $this->assertEquals(1, Post::search('sèche')->count());
         $this->assertEquals(1, Post::search('chaussette')->count());
+    }
+
+    public function test_soft_delete()
+    {
+        app('config')->set('scout.soft_delete', true);
+        Post::query()->update(['body' => 'does marsellus wallace look like a bitch']);
+        Post::all()->searchable();
+        Post::first()->delete();
+        $this->assertEquals(4, Post::search('bitch')->count());
+        $this->assertEquals(5, Post::search('bitch')->withTrashed()->count());
     }
 }
