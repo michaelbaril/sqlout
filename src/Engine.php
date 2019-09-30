@@ -3,6 +3,7 @@
 namespace Baril\Sqlout;
 
 use Closure;
+use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
@@ -47,12 +48,16 @@ class Engine extends ScoutEngine
 
         // Stem:
         $stemmer = config('scout.sqlout.stemmer');
-        if (is_string($stemmer) && method_exists($stemmer, 'stem')) {
-            $stemmer = [new $stemmer, 'stem'];
-        }
-        if (is_callable($stemmer)) {
-            foreach ($words as $k => $word) {
-                $words[$k] = call_user_func($stemmer, $word);
+        if ($stemmer) {
+            if (is_string($stemmer) && class_exists($stemmer) && method_exists($stemmer, 'stem')) {
+                $stemmer = [new $stemmer, 'stem'];
+            }
+            if (is_callable($stemmer)) {
+                foreach ($words as $k => $word) {
+                    $words[$k] = call_user_func($stemmer, $word);
+                }
+            } else {
+                throw new Exception('Invalid stemmer!');
             }
         }
 

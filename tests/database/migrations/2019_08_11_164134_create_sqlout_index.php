@@ -14,7 +14,7 @@ class CreateSqloutIndex extends Migration
      */
     public function up()
     {
-        Schema::connection()->create(config('scout.sqlout.table_name'), function (Blueprint $table) {
+        Schema::create(config('scout.sqlout.table_name'), function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('record_type', 191)->index();
             $table->unsignedBigInteger('record_id')->index();
@@ -23,8 +23,8 @@ class CreateSqloutIndex extends Migration
             $table->text('content');
             $table->timestamps();
         });
-        $tableName = DB::connection()->getTablePrefix() . config('scout.sqlout.table_name');
-        DB::connection()->statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");
+        $tableName = DB::getTablePrefix() . config('scout.sqlout.table_name');
+        DB::statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");
     }
 
     /**
@@ -34,6 +34,6 @@ class CreateSqloutIndex extends Migration
      */
     public function down()
     {
-        Schema::connection()->dropIfExists(config('scout.sqlout.table_name'));
+        Schema::dropIfExists(config('scout.sqlout.table_name'));
     }
 }

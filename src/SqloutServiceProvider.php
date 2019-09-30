@@ -19,7 +19,6 @@ class SqloutServiceProvider extends ServiceProvider
             return new Engine;
         });
 
-        //$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->commands([
             MakeMigrationCommand::class,
         ]);
