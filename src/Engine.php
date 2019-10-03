@@ -175,7 +175,7 @@ class Engine extends ScoutEngine
         }
 
         // Applying scopes to the model query:
-        $query->whereHasMorph('record', $builder->model->getMorphClass(), function ($query) use ($builder) {
+        $query->whereHasMorph('record', get_class($builder->model), function ($query) use ($builder) {
             foreach ($builder->scopes as $scope) {
                 if ($scope instanceof Closure) {
                     $scope($query);

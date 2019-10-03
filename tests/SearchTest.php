@@ -7,6 +7,7 @@ use Baril\Sqlout\Builder;
 use Baril\Sqlout\SearchIndex;
 use Baril\Sqlout\Tests\Models\Comment;
 use Baril\Sqlout\Tests\Models\Post;
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Wamania\Snowball\French as FrenchStemmer;
 
 class SearchTest extends TestCase
@@ -207,5 +208,15 @@ class SearchTest extends TestCase
         Post::first()->delete();
         $this->assertEquals(4, Post::search('bitch')->count());
         $this->assertEquals(5, Post::search('bitch')->withTrashed()->count());
+    }
+
+    public function test_morph_map()
+    {
+        Relation::morphMap([
+            Post::class,
+        ]);
+        Post::query()->update(['title' => 'testing morphs']);
+        Post::all()->searchable();
+        $this->assertEquals(5, Post::search('morphs')->count());
     }
 }
