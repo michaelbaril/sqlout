@@ -45,6 +45,16 @@ php artisan migrate
 This will create a `searchindex` table in your database (the table name can
 be customized in the config file).
 
+If you want to index models that belong to different connections, you need
+a table for Sqlout on each connection. To create the table on a connection that
+is not the default connection, you can call the `sqlout:make-migration` command
+and pass the name of the connection:
+
+```
+php artisan sqlout:make-migration my_other_connection
+php artisan migrate
+```
+
 ## Making a model searchable
 
 ```php
@@ -204,18 +214,3 @@ return [
 In the example, the stemmer comes from the package
 [`wamania/php-stemmer`](https://github.com/wamania/php-stemmer), but any class
 with a `stem` method, or anything callable such as a closure, will do.
-
-### Multiple connections
-
-If you want to index models that belong to different connections, you need
-a table for Sqlout on each connection. To create the table on a connection that
-is not the default connection, you can call the `sqlout:make-migration` command
-and pass the name of the connection:
-
-```
-php artisan sqlout:make-migration my_other_connection
-php artisan migrate
-```
-
-You don't need to do anything else: Sqlout's engine will automatically switch
-its connection to the one of the model you're searching/indexing.
