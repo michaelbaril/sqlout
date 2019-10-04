@@ -209,6 +209,16 @@ class SearchTest extends TestCase
         $this->assertEquals(1, Post::search('chaussette')->count());
     }
 
+    public function test_closure_as_stemmer()
+    {
+        $closure = function ($word) {
+            return 'tralalatsointsoin';
+        };
+        app('config')->set('scout.sqlout.stemmer', $closure);
+        Post::first()->searchable();
+        $this->assertEquals(1, Post::search('tralalatsointsoin')->count());
+    }
+
     public function test_soft_delete()
     {
         app('config')->set('scout.soft_delete', true);
