@@ -2,8 +2,9 @@
 
 namespace Baril\Sqlout;
 
-use Laravel\Scout\EngineManager;
+use Baril\Sqlout\Console\MakeMigrationCommand;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Scout\EngineManager;
 
 class SqloutServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,10 @@ class SqloutServiceProvider extends ServiceProvider
             return new Engine;
         });
 
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        //$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->commands([
+            MakeMigrationCommand::class,
+        ]);
         $this->publishes([
             __DIR__.'/../config/scout.php' => $this->app['path.config'].DIRECTORY_SEPARATOR.'scout.php',
         ]);
