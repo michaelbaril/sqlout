@@ -38,7 +38,7 @@ return [
 Migrate your database:
 
 ```
-php sqlout:make-migration
+php artisan sqlout:make-migration
 php artisan migrate
 ```
 
