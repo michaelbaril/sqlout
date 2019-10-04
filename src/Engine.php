@@ -10,6 +10,15 @@ use Laravel\Scout\Builder;
 
 class Engine extends ScoutEngine
 {
+    protected function newSearchQuery($model)
+    {
+        $query = SearchIndex::query();
+        $searchModel = $query->getModel()
+                ->setConnection($model->getConnectionName())
+                ->setTable(config('scout.sqlout.table_name'));
+        return $query->setModel($searchModel);
+    }
+
     /**
      * Apply the filters to the indexed content or search terms, tokenize it
      * and stem the words.
@@ -62,11 +71,11 @@ class Engine extends ScoutEngine
         $models->each(function ($model) {
             $type = $model->getMorphClass();
             $id = $model->getKey();
-            SearchIndex::where('record_type', $type)->where('record_id', $id)->delete();
+            $this->newSearchQuery($model)->where('record_type', $type)->where('record_id', $id)->delete();
 
             $data = $model->toSearchableArray();
             foreach (array_filter($data) as $field => $content) {
-                SearchIndex::create([
+                $this->newSearchQuery($model)->create([
                     'record_type' => $type,
                     'record_id' => $id,
                     'field' => $field,
@@ -88,7 +97,8 @@ class Engine extends ScoutEngine
         if (!$models->count()) {
             return;
         }
-        SearchIndex::where('record_type', $models->first()->getMorphClass())
+        $this->newSearchQuery($models->first())
+                ->where('record_type', $models->first()->getMorphClass())
                 ->whereIn('record_id', $models->modelKeys())
                 ->delete();
     }
@@ -135,7 +145,7 @@ class Engine extends ScoutEngine
         $terms = $this->processString($builder->query);
 
         // Creating search query:
-        $query = SearchIndex::query()
+        $query = $this->newSearchQuery($builder->model)
                 ->with('record')
                 ->where('record_type', $builder->model->getMorphClass())
                 ->whereRaw("match(content) against (? $mode)", [$terms])
@@ -254,6 +264,6 @@ class Engine extends ScoutEngine
      */
     public function flush($model)
     {
-        SearchIndex::where('record_type', $model->getMorphClass())->delete();
+        $this->newSearchQuery($model)->where('record_type', $model->getMorphClass())->delete();
     }
 }

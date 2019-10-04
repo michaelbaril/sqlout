@@ -14,17 +14,20 @@ class CreateSqloutIndex extends Migration
      */
     public function up()
     {
-        Schema::create(config('scout.sqlout.table_name'), function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('record_type', 191)->index();
-            $table->unsignedBigInteger('record_id')->index();
-            $table->string('field', 191)->index();
-            $table->unsignedSmallInteger('weight')->default(1);
-            $table->text('content');
-            $table->timestamps();
-        });
-        $tableName = DB::getTablePrefix() . config('scout.sqlout.table_name');
-        DB::statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");
+        $connections = config('scout.sqlout.connections', ['']);
+        foreach ($connections as $connection) {
+            Schema::connection($connection)->create(config('scout.sqlout.table_name'), function (Blueprint $table) {
+                $table->bigIncrements('id');
+                $table->string('record_type', 191)->index();
+                $table->unsignedBigInteger('record_id')->index();
+                $table->string('field', 191)->index();
+                $table->unsignedSmallInteger('weight')->default(1);
+                $table->text('content');
+                $table->timestamps();
+            });
+            $tableName = DB::connection($connection)->getTablePrefix() . config('scout.sqlout.table_name');
+            DB::connection($connection)->statement("ALTER TABLE $tableName ADD FULLTEXT searchindex_content (content)");
+        }
     }
 
     /**

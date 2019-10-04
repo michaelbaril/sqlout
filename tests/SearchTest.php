@@ -20,9 +20,18 @@ class SearchTest extends TestCase
         factory(Comment::class, 5)->create();
     }
 
+    protected function newSearchQuery()
+    {
+        $query = SearchIndex::query();
+        $model = $query->getModel();
+        $model->setTable(config('scout.sqlout.table_name'));
+        $query->setModel($model);
+        return $query;
+    }
+
     public function test_index()
     {
-        $indexed = SearchIndex::groupBy('record_type')->selectRaw('record_type, count(*) as count')->pluck('count', 'record_type')->all();
+        $indexed = $this->newSearchQuery()->groupBy('record_type')->selectRaw('record_type, count(*) as count')->pluck('count', 'record_type')->all();
         $this->assertArrayHasKey(Comment::class, $indexed);
         $this->assertArrayHasKey(Post::class, $indexed);
         $this->assertEquals(5 * 2, $indexed[Comment::class]);
@@ -148,7 +157,7 @@ class SearchTest extends TestCase
         $post->body = '<p>salut &ccedil;a boume ?</p>';
         $post->save();
 
-        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
+        $indexed = $this->newSearchQuery()->where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('salut ça boume ?', $indexed);
     }
 
@@ -162,7 +171,7 @@ class SearchTest extends TestCase
         $post->body = 'shut the fuck up donny';
         $post->save();
 
-        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
+        $indexed = $this->newSearchQuery()->where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('shut the up donny', $indexed);
     }
 
@@ -174,7 +183,7 @@ class SearchTest extends TestCase
         $post->body = 'shut the fuck up donny';
         $post->save();
 
-        $indexed = SearchIndex::where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
+        $indexed = $this->newSearchQuery()->where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
         $this->assertEquals('shut fuck donny', $indexed);
     }
 
