@@ -5,7 +5,7 @@ a dedicated table of the MySQL database, and uses a fulltext index to search.
 It is meant for small-sized projects, for which bigger solutions such as
 ElasticSearch would be an overkill.
 
-Sqlout is compatible with Laravel 5.8+ / Scout 7.1+.
+Sqlout is compatible with Laravel 5.8+ / 6.x / 7.x and Scout 7.1+ / 8.x.
 
 ## Setup
 
@@ -82,7 +82,7 @@ class Post extends Model
 ```
 
 The example above is similar to what is described in
-[Scout's documentation](https://laravel.com/docs/5.8/scout#configuration),
+[Scout's documentation](https://laravel.com/docs/master/scout#configuration),
 with the following differences/additions:
 
 * You'll notice that the model uses the `Baril\Sqlout\Searchable` trait
@@ -107,7 +107,7 @@ $results = Post::search('this rug really tied the room together')->get();
 $results = Post::search('the dude abides')->withTrashed()->get();
 ```
 
-See [Scout's documentation](https://laravel.com/docs/5.8/scout#searching)
+See [Scout's documentation](https://laravel.com/docs/master/scout#searching)
 for more details.
 
 Sqlout's builder also provides the following additional methods:

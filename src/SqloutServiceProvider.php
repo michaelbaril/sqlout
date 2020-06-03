@@ -2,7 +2,7 @@
 
 namespace Baril\Sqlout;
 
-use Baril\Sqlout\Console\MakeMigrationCommand;
+use Baril\Sqlout\Migrations\MigrateMakeCommand;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Scout\EngineManager;
 
@@ -19,9 +19,11 @@ class SqloutServiceProvider extends ServiceProvider
             return new Engine;
         });
 
-        $this->commands([
-            MakeMigrationCommand::class,
-        ]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                MigrateMakeCommand::class,
+            ]);
+        }
         $this->publishes([
             __DIR__.'/../config/scout.php' => $this->app['path.config'].DIRECTORY_SEPARATOR.'scout.php',
         ]);

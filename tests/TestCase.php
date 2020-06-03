@@ -11,8 +11,10 @@ class TestCase extends OrchestraTestCase
 {
     protected function getEnvironmentSetUp($app)
     {
-        // We could be using either Dotenv 2.x or 3.x:
-        if (method_exists(Dotenv::class, 'create')) {
+        // We could be using any version of Dotenv since 2.x:
+        if (method_exists(Dotenv::class, 'createImmutable')) {
+            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+        } elseif (method_exists(Dotenv::class, 'create')) {
             $dotenv = Dotenv::create(dirname(__DIR__));
         } else {
             $dotenv = new Dotenv(dirname(__DIR__));

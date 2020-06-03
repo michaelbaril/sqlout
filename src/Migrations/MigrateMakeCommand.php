@@ -1,11 +1,13 @@
 <?php
 
-namespace Baril\Sqlout\Console;
+namespace Baril\Sqlout\Migrations;
 
-use Illuminate\Database\Console\Migrations\MigrateMakeCommand;
+use Baril\Sqlout\Migrations\MigrationCreator;
+use Illuminate\Database\Console\Migrations\MigrateMakeCommand as BaseCommand;
+use Illuminate\Support\Composer;
 use Illuminate\Support\Str;
 
-class MakeMigrationCommand extends MigrateMakeCommand
+class MigrateMakeCommand extends BaseCommand
 {
     protected $signature = 'sqlout:make-migration {connection? : Name of the connection}
         {--name= : The name of the migration.}
@@ -13,6 +15,11 @@ class MakeMigrationCommand extends MigrateMakeCommand
         {--realpath : Indicate any provided migration file paths are pre-resolved absolute paths.}
         {--migrate : Migrate the database after the migration file has been created.}';
     protected $description = 'Create the migration file for Sqlout, and optionally run the migration';
+
+    public function __construct(MigrationCreator $creator, Composer $composer)
+    {
+        parent::__construct($creator, $composer);
+    }
 
     public function handle()
     {
