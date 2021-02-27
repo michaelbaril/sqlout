@@ -23,11 +23,11 @@ class TestCase extends OrchestraTestCase
         $app['config']->set('database.default', 'sqlout');
         $app['config']->set('database.connections.sqlout', [
             'driver' => 'mysql',
-            'host' => getenv('DB_HOST'),
-            'port' => getenv('DB_PORT'),
-            'database' => getenv('DB_DATABASE'),
-            'username' => getenv('DB_USERNAME'),
-            'password' => getenv('DB_PASSWORD'),
+            'host' => $_ENV['DB_HOST'],
+            'port' => $_ENV['DB_PORT'],
+            'database' => $_ENV['DB_DATABASE'],
+            'username' => $_ENV['DB_USERNAME'],
+            'password' => $_ENV['DB_PASSWORD'],
             'prefix'   => '',
         ]);
         $app['config']->set('scout', require __DIR__ . '/../config/scout.php');

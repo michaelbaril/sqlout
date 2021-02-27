@@ -5,7 +5,17 @@ a dedicated table of the MySQL database, and uses a fulltext index to search.
 It is meant for small-sized projects, for which bigger solutions such as
 ElasticSearch would be an overkill.
 
-Sqlout is compatible with Laravel 5.8+ / 6.x / 7.x and Scout 7.1+ / 8.x.
+Sqlout is compatible with Laravel 5.8+ to 8.x and Scout 7.1+ / 8.x.
+
+## Version Compatibility
+
+ Laravel  | Scout     | Sqlout
+:---------|:----------|:----------
+ 5.8      | 7.1 / 7.2 | 1.x / 2.0
+ 6.x      | 7.1 / 7.2 | 1.x / 2.0
+ 6.x      | 8.x       | 2.0
+ 7.x      | 8.x       | 2.0
+ 8.x      | 8.x       | 3.x
 
 ## Setup
 
@@ -130,7 +140,7 @@ as if it was a query builder on the model itself. Similarly, all calls to the
 forwarded to the model's query builder.
 
 ```php
-$results = Post::search('this rug really tied the room together')
+$results = Post::search('you see what happens larry')
     ->published() // the `published` scope is defined in the Post class
     ->where('date', '>', '2010-10-10')
     ->get();
@@ -145,7 +155,7 @@ If the name of your scope collides with the name of a method of the
 `Baril\Sqlout\Builder` object, you can wrap your scope into the `scope` method:
 
 ```php
-$results = Post::search('this rug really tied the room together')
+$results = Post::search('ve vant ze money lebowski')
     ->scope(function ($query) {
         $query->within('something');
     })
