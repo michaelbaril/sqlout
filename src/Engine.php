@@ -53,7 +53,11 @@ class Engine extends ScoutEngine
             if (is_string($stemmer) && class_exists($stemmer) && method_exists($stemmer, 'stem')) {
                 $stemmer = [new $stemmer, 'stem'];
             }
-            if (is_callable($stemmer)) {
+            if (is_object($stemmer) && method_exists($stemmer, 'stem')) {
+                foreach ($words as $k => $word) {
+                    $words[$k] = $stemmer->stem($word);
+                }
+            } elseif (is_callable($stemmer)) {
                 foreach ($words as $k => $word) {
                     $words[$k] = call_user_func($stemmer, $word);
                 }
