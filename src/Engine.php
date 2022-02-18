@@ -6,6 +6,7 @@ use Closure;
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
+use Illuminate\Support\LazyCollection;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
 use Laravel\Scout\Builder;
 
@@ -251,6 +252,23 @@ class Engine extends ScoutEngine
     }
 
     /**
+     * Map the given results to instances of the given model via a lazy collection.
+     *
+     * @param  \Laravel\Scout\Builder  $builder
+     * @param  mixed  $results
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @return \Illuminate\Support\LazyCollection
+     */
+    public function lazyMap(Builder $builder, $results, $model)
+    {
+        $models = $results['hits']->map(function ($hit) {
+            $hit->record->_score = $hit->_score;
+            return $hit->record;
+        })->all();
+        return new LazyCollection($models);
+    }
+
+    /**
      * Get the total count from a raw result returned by the engine.
      *
      * @param  mixed  $results
@@ -270,5 +288,28 @@ class Engine extends ScoutEngine
     public function flush($model)
     {
         $this->newSearchQuery($model)->where('record_type', $model->getMorphClass())->delete();
+    }
+
+    /**
+     * Create a search index.
+     *
+     * @param  string  $name
+     * @param  array  $options
+     * @return mixed
+     */
+    public function createIndex($name, array $options = [])
+    {
+        //
+    }
+
+    /**
+     * Delete a search index.
+     *
+     * @param  string  $name
+     * @return mixed
+     */
+    public function deleteIndex($name)
+    {
+        //
     }
 }
