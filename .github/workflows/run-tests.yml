@@ -41,5 +41,9 @@ jobs:
           composer require "illuminate/database:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
 
+      - name: Setup .env
+        run: |
+          touch .env
+
       - name: Execute tests
         run: vendor/bin/phpunit
