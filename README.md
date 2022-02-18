@@ -9,13 +9,14 @@ Sqlout is compatible with Laravel 5.8+ to 8.x and Scout 7.1+ / 8.x.
 
 ## Version Compatibility
 
- Laravel  | Scout     | Sqlout
-:---------|:----------|:----------
- 5.8      | 7.1 / 7.2 | 1.x / 2.0
- 6.x      | 7.1 / 7.2 | 1.x / 2.0
- 6.x      | 8.x       | 2.0
- 7.x      | 8.x       | 2.0
- 8.x      | 8.x       | 3.x
+ Laravel   | Scout     | Sqlout
+:----------|:----------|:----------
+ 5.8       | 7.1 / 7.2 | 1.x / 2.0
+ 6.x       | 7.1 / 7.2 | 1.x / 2.0
+ 6.x       | 8.x       | 2.0
+ 7.x       | 8.x       | 2.0
+ 8.x       | 8.x       | 3.x
+ 8.x / 9.x | 9.x       | 4.x
 
 ## Setup
 
@@ -216,11 +217,12 @@ return [
             'est',
             'les',
         ],
-        'stemmer' => Wamania\Snowball\French::class,
+        'stemmer' => Wamania\Snowball\StemmerFactory::create('french'),
     ],
 ];
 ```
 
-In the example, the stemmer comes from the package
-[`wamania/php-stemmer`](https://github.com/wamania/php-stemmer), but any class
-with a `stem` method, or anything callable such as a closure, will do.
+In the example, the stemmer comes from the package [`wamania/php-stemmer`],
+but any class with a `stem` method, or anything callable such as a closure, will do.
+
+[`wamania/php-stemmer`]: https://github.com/wamania/php-stemmer
