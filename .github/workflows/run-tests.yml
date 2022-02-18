@@ -29,6 +29,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Start MySQL
+        run: |
+          sudo systemctl start mysql.service
+          mysql -uroot -proot -e 'CREATE DATABASE sqlout'
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -44,6 +49,11 @@ jobs:
       - name: Setup .env
         run: |
           touch .env
+          echo "DB_HOST=127.0.0.1"  >> .env
+          echo "DB_PORT=3306"       >> .env
+          echo "DB_DATABASE=sqlout" >> .env
+          echo "DB_USERNAME=root"   >> .env
+          echo "DB_PASSWORD=root"   >> .env
 
       - name: Execute tests
         run: vendor/bin/phpunit
