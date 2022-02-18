@@ -94,7 +94,7 @@ return [
 //            'est',
 //            'les',
 //        ],
-//        'stemmer' => Wamania\Snowball\French::class, // from package wamania/php-stemmer
+//        'stemmer' => Wamania\Snowball\StemmerFactory::create('french'), // from package wamania/php-stemmer
     ],
 
 ];
