@@ -221,8 +221,8 @@ class Engine extends ScoutEngine
                 ->cloneWithoutBindings(['order']);
         $results = ['nbHits' => $countQuery->count($countQuery->getConnection()->raw('distinct record_id'))];
 
-        // Performing the search itself:
-        $results['hits'] = $query->with('record')->get();
+        // Preparing the actual query:
+        $results['query'] = $query->with('record');
 
         return $results;
     }
@@ -235,7 +235,19 @@ class Engine extends ScoutEngine
      */
     public function mapIds($results)
     {
-        return $results['hits']->pluck('record_id')->values();
+        return $results['query']->pluck('record_id')->values();
+    }
+
+    /**
+     * Extract the Model from the search hit.
+     *
+     * @param SearchIndex $hit
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    protected function getRecord($hit)
+    {
+        $hit->record->_score = $hit->_score;
+        return $hit->record;
     }
 
     /**
@@ -248,9 +260,8 @@ class Engine extends ScoutEngine
      */
     public function map(Builder $builder, $results, $model)
     {
-        $models = $results['hits']->map(function ($hit) {
-            $hit->record->_score = $hit->_score;
-            return $hit->record;
+        $models = $results['query']->get()->map(function ($hit) {
+            return $this->getRecord($hit);
         })->all();
         return $model->newCollection($models);
     }
@@ -265,11 +276,9 @@ class Engine extends ScoutEngine
      */
     public function lazyMap(Builder $builder, $results, $model)
     {
-        $models = $results['hits']->map(function ($hit) {
-            $hit->record->_score = $hit->_score;
-            return $hit->record;
-        })->all();
-        return new LazyCollection($models);
+        return $results['query']->lazy()->map(function ($hit) {
+            return $this->getRecord($hit);
+        });
     }
 
     /**

@@ -238,4 +238,18 @@ class SearchTest extends TestCase
         Post::all()->searchable();
         $this->assertEquals(5, Post::search('morphs')->count());
     }
+
+    public function test_lazy()
+    {
+        Post::skip(1)->take(3)->get()->each(function ($post) {
+            $post->title = 'kikikuku';
+            $post->save();
+        });
+
+        $search = Post::search('kikikuku');
+        $results = $search->get()->all();
+        $lazyResults = $search->cursor()->all();
+        $this->assertCount(3, $lazyResults);
+        $this->assertEquals($results, $lazyResults);
+    }
 }
