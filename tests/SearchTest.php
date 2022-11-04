@@ -8,7 +8,7 @@ use Baril\Sqlout\SearchIndex;
 use Baril\Sqlout\Tests\Models\Comment;
 use Baril\Sqlout\Tests\Models\Post;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Wamania\Snowball\French as FrenchStemmer;
+use Wamania\Snowball\StemmerFactory;
 
 class SearchTest extends TestCase
 {
@@ -200,7 +200,7 @@ class SearchTest extends TestCase
 
         $this->assertEquals(0, Post::search('chanter')->count());
 
-        app('config')->set('scout.sqlout.stemmer', FrenchStemmer::class);
+        app('config')->set('scout.sqlout.stemmer', StemmerFactory::create('french'));
         $posts->searchable();
 
         $this->assertEquals(1, Post::search('chanter')->count());
