@@ -5,7 +5,13 @@ a dedicated table of the MySQL database, and uses a fulltext index to search.
 It is meant for small-sized projects, for which bigger solutions such as
 ElasticSearch would be an overkill.
 
-Sqlout is compatible with Laravel 5.8+ to 8.x and Scout 7.1+ / 8.x.
+Sqlout is different than Scout 9's native `Database` engine because it indexes
+data in a separate, dedicated table, and uses a fulltext index. Sqlout has more
+features such as field weights and word stemming.
+
+Sqlout is compatible with Laravel 5.8+ to 9.x and Scout 7.1+ / 8.x / 9.x
+(credit goes to [ikari7789](https://github.com/ikari7789) for Laravel 9 / Scout
+9 support).
 
 ## Version Compatibility
 
