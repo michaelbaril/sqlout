@@ -2,12 +2,14 @@
 
 namespace Baril\Sqlout\Tests\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Baril\Sqlout\Searchable;
+use Baril\Sqlout\Tests\Factories\CommentFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    use Searchable;
+    use HasFactory, Searchable;
 
     public function post()
     {
@@ -25,5 +27,10 @@ class Comment extends Model
     public function scopeAuthor($query, $author)
     {
         $query->where('author', $author);
+    }
+
+    protected static function newFactory()
+    {
+        return CommentFactory::new();
     }
 }

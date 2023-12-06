@@ -16,8 +16,8 @@ class SearchTest extends TestCase
     {
         parent::setUp();
 
-        factory(Post::class, 5)->create();
-        factory(Comment::class, 5)->create();
+        Post::factory()->count(5)->create();
+        Comment::factory()->count(5)->create();
     }
 
     protected function newSearchQuery()
