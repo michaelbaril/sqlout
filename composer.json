@@ -13,7 +13,7 @@
         "laravel/scout": "^9.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^2.8",
+        "phpcsstandards/php_codesniffer": "^2.8",
         "wamania/php-stemmer": "^3.0",
         "orchestra/testbench": "^6.23|^7.0"
     },
