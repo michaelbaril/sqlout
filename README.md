@@ -9,20 +9,21 @@ Sqlout is different than Scout 9's native `Database` engine because it indexes
 data in a separate, dedicated table, and uses a fulltext index. Sqlout has more
 features such as field weights and word stemming.
 
-Sqlout is compatible with Laravel 5.8+ to 9.x and Scout 7.1+ / 8.x / 9.x
-(credit goes to [ikari7789](https://github.com/ikari7789) for Laravel 9 / Scout
-9 support).
+Sqlout is compatible with Laravel 5.8+ to 10.x and Scout 7.1+ / 8.x / 9.x / 10.x
+(credit goes to [ikari7789](https://github.com/ikari7789) for Laravel 9 and 10 / Scout
+9 and 10 support).
 
 ## Version Compatibility
 
- Laravel   | Scout     | Sqlout
-:----------|:----------|:----------
- 5.8       | 7.1 / 7.2 | 1.x / 2.0
- 6.x       | 7.1 / 7.2 | 1.x / 2.0
- 6.x       | 8.x       | 2.0
- 7.x       | 8.x       | 2.0
- 8.x       | 8.x       | 3.x
- 8.x / 9.x | 9.x       | 4.x
+ Laravel    | Scout     | Sqlout
+:-----------|:----------|:----------
+ 5.8        | 7.1 / 7.2 | 1.x / 2.0
+ 6.x        | 7.1 / 7.2 | 1.x / 2.0
+ 6.x        | 8.x       | 2.0
+ 7.x        | 8.x       | 2.0
+ 8.x        | 8.x       | 3.x
+ 8.x / 9.x  | 9.x       | 4.x
+ 9.x / 10.x | 10.x      | 5.x
 
 ## Setup
 

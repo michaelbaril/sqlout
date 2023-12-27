@@ -46,7 +46,10 @@ class MigrateMakeCommand extends BaseCommand
 
         // Generate the file:
         $file = $this->creator->create(
-            $name, $this->getMigrationPath(), $tableName, true
+            $name,
+            $this->getMigrationPath(),
+            $tableName,
+            true
         );
         file_put_contents($file, $contents);
 
