@@ -11,15 +11,15 @@ run_test() {
     local dependency_version=${4}
 
     echo "Testing: PHP ${php_version} - Laravel ${laravel_version} - ${dependency_version}"
-    docker-compose exec mysql mysql sqlout -e 'DROP TABLE migrations; DROP TABLE posts; DROP TABLE comments; DROP TABLE searchindex' > /dev/null 2>&1 || true
-    docker-compose exec php-${php_version} composer require --no-interaction --no-update "illuminate/database:${laravel_version}" "illuminate/support:${laravel_version}" > /dev/null 2>&1
-    docker-compose exec php-${php_version} composer require --no-interaction --no-update --dev "orchestra/testbench:${testbench_version}" > /dev/null 2>&1
-    docker-compose exec php-${php_version} composer update  --no-interaction --prefer-dist "--${dependency_version}" > /dev/null 2>&1
-    docker-compose exec php-${php_version} ./vendor/bin/phpunit
+    docker compose exec mysql mysql sqlout -e 'DROP TABLE migrations; DROP TABLE posts; DROP TABLE comments; DROP TABLE searchindex' > /dev/null 2>&1 || true
+    docker compose exec php-${php_version} composer require --no-interaction --no-update "illuminate/database:${laravel_version}" "illuminate/support:${laravel_version}" > /dev/null 2>&1
+    docker compose exec php-${php_version} composer require --no-interaction --no-update --dev "orchestra/testbench:${testbench_version}" > /dev/null 2>&1
+    docker compose exec php-${php_version} composer update  --no-interaction --prefer-dist "--${dependency_version}" > /dev/null 2>&1
+    docker compose exec php-${php_version} ./vendor/bin/phpunit
     echo
 }
 
-docker-compose up -d --force-recreate --build > /dev/null 2>&1
+docker compose up -d --force-recreate --build > /dev/null 2>&1
 
 # Laravel 8
 run_test '7.3' ${LARAVEL_8_MIN_VERSION} '^6.23' 'prefer-lowest'
