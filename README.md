@@ -224,7 +224,7 @@ return [
             'est',
             'les',
         ],
-        'stemmer' => Wamania\Snowball\StemmerFactory::create('french'),
+        'stemmer' => Wamania\Snowball\Stemmer\French::class,
     ],
 ];
 ```
