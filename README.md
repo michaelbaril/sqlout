@@ -6,12 +6,12 @@
 [![Tests](https://img.shields.io/github/actions/workflow/status/michaelbaril/sqlout/run-tests.yml?branch=master&label=tests)](https://github.com/michaelbaril/sqlout/actions/workflows/run-tests.yml?query=branch%3Amaster)
 [![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fmichaelbaril.github.io%2Fsqlout%2Fcoverage%2Fbadge.json)](https://michaelbaril.github.io/sqlout/coverage/)
 
-Sqlout is a very simple MySQL driver for Laravel Scout. It indexes the data into
+Sqlout is a MySQL driver for Laravel Scout. It indexes the data into
 a dedicated table of the MySQL database, and uses a fulltext index to search.
 It is meant for small-sized projects, for which bigger solutions such as
 ElasticSearch would be an overkill.
 
-Sqlout is different than Scout 9's native `Database` engine because it indexes
+Sqlout is different than Scout's native `Database` engine because it indexes
 data in a separate, dedicated table, and uses a fulltext index. Sqlout has more
 features such as field weights and word stemming.
 
@@ -21,27 +21,28 @@ Sqlout is compatible with Laravel 5.8+ to 10.x and Scout 7.1+ / 8.x / 9.x / 10.x
 
 ## Version Compatibility
 
- Laravel    | Scout     | Sqlout
-:-----------|:----------|:----------
- 5.8        | 7.1 / 7.2 | 1.x / 2.0
- 6.x        | 7.1 / 7.2 | 1.x / 2.0
- 6.x        | 8.x       | 2.0
- 7.x        | 8.x       | 2.0
- 8.x        | 8.x       | 3.x
- 8.x / 9.x  | 9.x       | 4.x
- 9.x / 10.x | 10.x      | 5.x
+ Laravel     | Scout     | Sqlout
+:------------|:----------|:----------
+ 11.x / 12.x | 10.x      | 5.1+
+ 9.x / 10.x  | 10.x      | 5.x
+ 8.x / 9.x   | 9.x       | 4.x
+ 8.x         | 8.x       | 3.x
+ 7.x         | 8.x       | 2.0
+ 6.x         | 8.x       | 2.0
+ 6.x         | 7.1 / 7.2 | 1.x / 2.0
+ 5.8         | 7.1 / 7.2 | 1.x / 2.0
 
 ## Setup
 
 Require the package:
 
-```
+```bash
 composer require baril/sqlout
 ```
 
 Publish the configuration:
 
-```
+```bash
 php artisan vendor:publish
 ```
 
@@ -61,7 +62,7 @@ return [
 
 Migrate your database:
 
-```
+```bash
 php artisan sqlout:make-migration
 php artisan migrate
 ```
@@ -74,7 +75,7 @@ a table for Sqlout on each connection. To create the table on a connection that
 is not the default connection, you can call the `sqlout:make-migration` command
 and pass the name of the connection:
 
-```
+```bash
 php artisan sqlout:make-migration my_other_connection
 php artisan migrate
 ```
@@ -82,6 +83,7 @@ php artisan migrate
 ## Making a model searchable
 
 ```php
+namespace App\Models;
 
 use Baril\Sqlout\Searchable;
 
@@ -109,15 +111,15 @@ The example above is similar to what is described in
 [Scout's documentation](https://laravel.com/docs/master/scout#configuration),
 with the following differences/additions:
 
-* You'll notice that the model uses the `Baril\Sqlout\Searchable` trait
-instead of `Laravel\Scout\Searchable`.
-* The `$weight` property can be used to "boost" some fields. The default value
-is 1.
+* The model uses the `Baril\Sqlout\Searchable` trait instead of
+`Laravel\Scout\Searchable`.
+* The `$weight` property can be used to "boost" some fields.
+The default value is 1.
 
 Once this is done, you can index your data using Scout's Artisan command:
 
-```
-php artisan scout:import "App\Post"
+```bash
+php artisan scout:import "App\\Models\\Post"
 ```
 
 Your models will also be indexed automatically on save.
