@@ -34,7 +34,7 @@ class TestCase extends OrchestraTestCase
         ];
     }
 
-    protected function setUp() : void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
