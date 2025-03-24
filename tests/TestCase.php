@@ -11,23 +11,16 @@ class TestCase extends OrchestraTestCase
 {
     protected function getEnvironmentSetUp($app)
     {
-        // We could be using any version of Dotenv since 2.x:
-        if (method_exists(Dotenv::class, 'createImmutable')) {
-            $dotenv = Dotenv::createImmutable(dirname(__DIR__));
-        } elseif (method_exists(Dotenv::class, 'create')) {
-            $dotenv = Dotenv::create(dirname(__DIR__));
-        } else {
-            $dotenv = new Dotenv(dirname(__DIR__));
-        }
+        $dotenv = Dotenv::createImmutable(dirname(__DIR__), '.env.test');
         $dotenv->load();
-        $app['config']->set('database.default', 'sqlout');
-        $app['config']->set('database.connections.sqlout', [
+        $app['config']->set('database.default', 'test');
+        $app['config']->set('database.connections.test', [
             'driver' => 'mysql',
-            'host' => $_ENV['DB_HOST'],
-            'port' => $_ENV['DB_PORT'],
-            'database' => $_ENV['DB_DATABASE'],
-            'username' => $_ENV['DB_USERNAME'],
-            'password' => $_ENV['DB_PASSWORD'],
+            'host' => env('DB_HOST'),
+            'port' => env('DB_PORT'),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
             'prefix'   => '',
         ]);
         $app['config']->set('scout', require __DIR__ . '/../config/scout.php');

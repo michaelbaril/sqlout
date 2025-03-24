@@ -1,55 +1,39 @@
 ---
 services:
   mysql:
-    command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-      MYSQL_DATABASE: sqlout
-      MYSQL_PASSWORD: lara
-      MYSQL_USER: lara
-    expose:
-      - 3306
-    image: mysql
+      MYSQL_DATABASE: test
+      MYSQL_PASSWORD: test
+      MYSQL_USER: test
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    healthcheck:
+        test: ["CMD", "mysqladmin", "ping", "-proot"]
+        retries: 3
+        timeout: 5s
+    image: mysql:${MYSQL_VERSION:-8.4}
     restart: always
+    volumes:
+      - mysql_data:/var/lib/mysql
 
-  php-7.3:
+
+  php:
     build:
       args:
-        PHP_VERSION: '7.3'
+        PHP_VERSION: ${PHP_VERSION:-8.2}
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+      context: .
+      tags:
+        - ${COMPOSE_PROJECT_NAME}-php-${PHP_VERSION}
+    command: sleep infinity # keep the container running
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
+    image: ${COMPOSE_PROJECT_NAME}-php-${PHP_VERSION}
+    volumes:
+      - .:/app
+      - ${COMPOSER_CACHE_DIR}:/.composer/cache
 
-  php-7.4:
-    build:
-      args:
-        PHP_VERSION: '7.4'
-    depends_on:
-      - mysql
-
-  php-8.0:
-    build:
-      args:
-        PHP_VERSION: '8.0'
-    depends_on:
-      - mysql
-
-  php-8.1:
-    build:
-      args:
-        PHP_VERSION: '8.1'
-    depends_on:
-      - mysql
-
-  php-8.2:
-    build:
-      args:
-        PHP_VERSION: '8.2'
-    depends_on:
-      - mysql
-
-  php-8.3:
-    build:
-      args:
-        PHP_VERSION: '8.3'
-    depends_on:
-      - mysql
+volumes:
+    mysql_data:
+        driver: local
