@@ -1,4 +1,10 @@
-# Sqlout
+# Sqlout :dolphin:
+
+[![Version](https://img.shields.io/packagist/v/baril/sqlout?label=stable)](https://packagist.org/packages/baril/sqlout)
+[![License](https://img.shields.io/packagist/l/baril/sqlout)](https://packagist.org/packages/baril/sqlout)
+[![Downloads](https://img.shields.io/packagist/dt/baril/sqlout)](https://packagist.org/packages/baril/sqlout/stats)
+[![Tests](https://img.shields.io/github/actions/workflow/status/michaelbaril/sqlout/run-tests.yml?branch=master&label=tests)](https://github.com/michaelbaril/sqlout/actions/workflows/run-tests.yml?query=branch%3Amaster)
+[![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fmichaelbaril.github.io%2Fsqlout%2Fcoverage%2Fbadge.json)](https://michaelbaril.github.io/sqlout/coverage/)
 
 Sqlout is a very simple MySQL driver for Laravel Scout. It indexes the data into
 a dedicated table of the MySQL database, and uses a fulltext index to search.

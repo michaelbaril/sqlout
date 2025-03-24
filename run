@@ -1,0 +1,126 @@
+#!/bin/bash
+
+RED='\033[0;31m'
+PURPLE='\033[0;35m'
+GRAY='\033[1;30m'
+NC='\033[0m'
+
+myself="$(realpath $0)"
+preset_min='7.3 8.* lowest 5.7'
+preset_max='8.3 10.* stable 8.4'
+compose_project_name=${PWD##*\/}
+
+# Check if variable exists in .env file
+env_exists() {
+    touch .env
+    grep "$1=" .env >>/dev/null
+    return $?
+}
+
+# Add variable to .env file unless it already exists
+env_add() {
+    if ! env_exists $1; then
+        echo "$1=$2" >> .env
+        return $?
+    fi
+    return 1
+}
+
+# Add or replace variable in .env file
+env_replace() {
+    env_add ${1} ${2} || sed -i -E "s/^${1}=.*$/${1}=${2}/g" .env
+    return $?
+}
+
+if [[ $# == 0 || $# == 1 && ($1 == 'help') ]]; then
+    echo 'Usage:'
+    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the lowest requirements (PHP 7.3, Laravel 8)"
+    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the highest requirements (PHP 8.3, Laravel 10)"
+    echo -e "${PURPLE}run <COMMAND> <PHP_VERSION> <LARAVEL_VERSION> <DEPENDENCY_VERSION=lowest|stable> <MYSQL_VERSION>${NC}: run command with the specicied requirements"
+    echo -e "${PURPLE}run <COMMAND>${NC}: run command with the same requirements as previous run"
+    echo
+    echo 'Available commands:'
+    echo -e "${PURPLE}setup${NC}: just setup the containers with the provided requirements"
+    echo -e "${PURPLE}test${NC}: run PHPUnit tests"
+    echo -e "${PURPLE}cs${NC}: run PHP_CodeSniffer (show errors)"
+    echo -e "${PURPLE}cbf${NC}: run PHP Code Beautifier and Fixer (fix errors)"
+    echo -e "${PURPLE}help${NC}: this screen"
+
+    exit 0
+fi
+
+command=$1
+
+if [ $# -eq 1 ] && [ ! -f .env ]; then
+    $myself $command $preset_max
+    exit $?
+fi
+
+# Try to load preset
+if [[ $# = 2 && $2 =~ ^[a-zA-Z_]+$ ]]; then
+    preset="preset_$2"
+    if [ -z ${!preset+x} ]; then
+        echo -e "${RED}Preset $2 does not exist${NC}"
+        exit 1
+    fi
+    args=${!preset}
+    $myself $command $args
+    exit $?
+fi
+
+# Rebuild PHP image if needed
+if [ $# -gt 1 ]; then
+
+    # Set env variables for docker compose
+    env_add COMPOSE_PROJECT_NAME $compose_project_name
+    env_add UID $(id -u)
+    env_add GID $(id -g)
+    env_add COMPOSER_CACHE_DIR $(composer config -g cache-dir 2>/dev/null || echo "$HOME/.composer/cache")
+
+    php_version=$2
+    laravel_version=${3:-'*'}
+    dependency_version=${4:-'stable'}
+    mysql_version=${5:-'8.4'}
+
+    echo
+    echo 'Using:'
+    echo -e "- PHP ${PURPLE}${php_version}${NC}"
+    echo -e "- Laravel ${PURPLE}${laravel_version}${NC}"
+    echo -e "- ${PURPLE}${dependency_version}${NC} dependencies"
+    echo -e "- MySQL ${PURPLE}${mysql_version}${NC}"
+    echo
+
+    env_replace PHP_VERSION $php_version
+    env_replace MYSQL_VERSION $mysql_version
+
+    docker compose down
+    docker volume rm ${compose_project_name}_mysql_data >/dev/null 2>&1 
+fi
+
+# Start containers
+docker compose up --no-recreate -d
+
+# Reinstall packages if needed
+if [ $# -gt 1 ]; then
+    docker compose exec php rm -f /app/composer.lock
+    docker compose exec php composer update --with laravel/framework:$laravel_version --prefer-$dependency_version --prefer-dist --no-interaction
+fi
+
+# Run tests
+echo
+if [[ $1 == 'test' ]]; then
+    docker compose exec php ./vendor/bin/phpunit
+elif [[ $1 == 'cs' ]]; then
+    docker compose exec php ./vendor/bin/phpcs --standard=./phpcs.xml ./src
+elif [[ $1 == 'cbf' ]]; then
+    docker compose exec php ./vendor/bin/phpcbf --standard=./phpcs.xml ./src ./tests
+elif [[ $1 != 'setup' ]]; then
+    $myself help
+    exit $?
+fi
+echo
+
+# Show remaining containers
+echo -e "${GRAY}Remaining containers:${NC}"
+echo -e "${GRAY}=====================${NC}"
+docker compose ps -a

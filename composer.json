@@ -31,8 +31,7 @@
         }
     },
     "suggest": {
-        "wamania/php-stemmer": "PHP stemmer that can be used together with Sqlout.",
-        "baril/smoothie": "Some fruity additions to Laravel's Eloquent."
+        "wamania/php-stemmer": "PHP stemmer that can be used together with Sqlout."
     },
     "extra": {
         "branch-alias": {
@@ -43,10 +42,5 @@
                 "Baril\\Sqlout\\SqloutServiceProvider"
             ]
         }
-    },
-    "scripts": {
-        "sniff": "./vendor/bin/phpcs --standard=./phpcs.xml ./src",
-        "fix": "./vendor/bin/phpcbf --standard=./phpcs.xml ./src",
-        "test": "vendor/bin/phpunit --colors=always --testdox -v"
     }
 }
