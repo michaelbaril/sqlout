@@ -1,0 +1,1766 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Schema\Builder |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Schema.html">Schema</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Schema.Blueprint.html">
+							Blueprint
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.BlueprintState.html">
+							BlueprintState
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Schema.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ColumnDefinition.html">
+							ColumnDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html">
+							ForeignIdColumnDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html">
+							ForeignKeyDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.IndexDefinition.html">
+							IndexDefinition
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Schema.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Schema.Builder.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Schema.html">Schema</a>\<a href="Illuminate.Database.Schema.Builder.html">Builder</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a> <var>$connection</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new database Schema manager.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new database Schema manager.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultStringLength" id="_defaultStringLength">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaultStringLength(<span>int <var>$length</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default string length for migrations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default string length for migrations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaultStringLength">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultTimePrecision" id="_defaultTimePrecision">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaultTimePrecision(<span>?int <var>$precision</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default time precision for migrations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default time precision for migrations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaultTimePrecision">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultMorphKeyType" id="_defaultMorphKeyType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaultMorphKeyType(<span>string <var>$type</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default morph key type for migrations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default morph key type for migrations.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaultMorphKeyType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="morphUsingUuids" id="_morphUsingUuids">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>morphUsingUuids(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default morph key type for migrations to UUIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default morph key type for migrations to UUIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_morphUsingUuids">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="morphUsingUlids" id="_morphUsingUlids">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>morphUsingUlids(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default morph key type for migrations to ULIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default morph key type for migrations to ULIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_morphUsingUlids">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createDatabase" id="_createDatabase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createDatabase(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a database in the schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a database in the schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createDatabase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropDatabaseIfExists" id="_dropDatabaseIfExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropDatabaseIfExists(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop a database from the schema if the database exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop a database from the schema if the database exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropDatabaseIfExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSchemas" id="_getSchemas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSchemas(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the schemas that belong to the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the schemas that belong to the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSchemas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasTable" id="_hasTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasTable(<span>string <var>$table</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given table exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given table exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasView" id="_hasView">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasView(<span>string <var>$view</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given view exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given view exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasView">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTables" id="_getTables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTables(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the tables that belong to the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the tables that belong to the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTableListing" id="_getTableListing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTableListing(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>, <span>bool <var>$schemaQualified</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the names of the tables that belong to the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the names of the tables that belong to the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTableListing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getViews" id="_getViews">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getViews(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the views that belong to the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the views that belong to the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getViews">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTypes" id="_getTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTypes(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the user-defined types that belong to the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the user-defined types that belong to the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasColumn" id="_hasColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasColumn(<span>string <var>$table</var></span>, <span>string <var>$column</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given table has a given column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given table has a given column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasColumns" id="_hasColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasColumns(<span>string <var>$table</var></span>, <span>array <var>$columns</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given table has given columns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given table has given columns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenTableHasColumn" id="_whenTableHasColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenTableHasColumn(<span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a table builder callback if the given table has a given column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a table builder callback if the given table has a given column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenTableHasColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenTableDoesntHaveColumn" id="_whenTableDoesntHaveColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenTableDoesntHaveColumn(<span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a table builder callback if the given table doesn't have a given column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a table builder callback if the given table doesn't have a given column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenTableDoesntHaveColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumnType" id="_getColumnType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumnType(<span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span>bool <var>$fullDefinition</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the data type for the given column name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the data type for the given column name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumnType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumnListing" id="_getColumnListing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumnListing(<span>string <var>$table</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the column listing for a given table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the column listing for a given table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumnListing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumns" id="_getColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumns(<span>string <var>$table</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns for a given table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns for a given table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIndexes" id="_getIndexes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIndexes(<span>string <var>$table</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the indexes for a given table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the indexes for a given table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIndexes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIndexListing" id="_getIndexListing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIndexListing(<span>string <var>$table</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the names of the indexes for a given table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the names of the indexes for a given table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIndexListing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasIndex" id="_hasIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasIndex(<span>string <var>$table</var></span>, <span>string|array <var>$index</var></span>, <span>string|null <var>$type</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given table has a given index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given table has a given index.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getForeignKeys" id="_getForeignKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getForeignKeys(<span>string <var>$table</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the foreign keys for a given table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the foreign keys for a given table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getForeignKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="table" id="_table">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>table(<span>string <var>$table</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Modify a table on the schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Modify a table on the schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_table">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(<span>string <var>$table</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new table on the schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new table on the schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="drop" id="_drop">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>drop(<span>string <var>$table</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop a table from the schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop a table from the schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_drop">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropIfExists" id="_dropIfExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropIfExists(<span>string <var>$table</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop a table from the schema if it exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop a table from the schema if it exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropIfExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropColumns" id="_dropColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropColumns(<span>string <var>$table</var></span>, <span>string|array <var>$columns</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop columns from a table schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop columns from a table schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropAllTables" id="_dropAllTables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropAllTables(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop all tables from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop all tables from the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropAllTables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropAllViews" id="_dropAllViews">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropAllViews(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop all views from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop all views from the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropAllViews">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropAllTypes" id="_dropAllTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropAllTypes(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop all types from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop all types from the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropAllTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rename" id="_rename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rename(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Rename a table on the schema.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Rename a table on the schema.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enableForeignKeyConstraints" id="_enableForeignKeyConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enableForeignKeyConstraints(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Enable foreign key constraints.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enable foreign key constraints.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enableForeignKeyConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disableForeignKeyConstraints" id="_disableForeignKeyConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>disableForeignKeyConstraints(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable foreign key constraints.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable foreign key constraints.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disableForeignKeyConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutForeignKeyConstraints" id="_withoutForeignKeyConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutForeignKeyConstraints(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable foreign key constraints during the execution of a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable foreign key constraints during the execution of a callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutForeignKeyConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="build" id="_build">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>build(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the blueprint to build / modify the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the blueprint to build / modify the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_build">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createBlueprint" id="_createBlueprint">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createBlueprint(<span>string <var>$table</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new command set with a Closure.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new command set with a Closure.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createBlueprint">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCurrentSchemaListing" id="_getCurrentSchemaListing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCurrentSchemaListing(): string[]|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the names of the current schemas for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the names of the current schemas for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCurrentSchemaListing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCurrentSchemaName" id="_getCurrentSchemaName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCurrentSchemaName(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default schema name for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default schema name for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCurrentSchemaName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseSchemaAndTable" id="_parseSchemaAndTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseSchemaAndTable(<span>string <var>$reference</var></span>, <span>string|bool|null <var>$withDefaultSchema</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the given database object reference and extract the schema and table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the given database object reference and extract the schema and table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseSchemaAndTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConnection" id="_getConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConnection(): <a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the database connection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the database connection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="blueprintResolver" id="_blueprintResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>blueprintResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$resolver</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the Schema Blueprint resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the Schema Blueprint resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_blueprintResolver">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="connection" id="$connection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$connection</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="grammar" id="$grammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$grammar</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$grammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolver" id="$resolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultStringLength" id="$defaultStringLength">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaultStringLength</var> = <span class="php-num">255</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultStringLength">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultTimePrecision" id="$defaultTimePrecision">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaultTimePrecision</var> = <span class="php-num">0</span></code>
+				
+	<div class="expandable-collapsedView">
+		The default time precision for migrations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The default time precision for migrations.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultTimePrecision">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultMorphKeyType" id="$defaultMorphKeyType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaultMorphKeyType</var> = <span class="php-str">'int'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultMorphKeyType">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

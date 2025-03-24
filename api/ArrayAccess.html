@@ -1,0 +1,586 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface ArrayAccess |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-strip_punctuation.html">
+							strip_punctuation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="ArrayAccess.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="ArrayAccess.html">ArrayAccess</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">ArrayAccess</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a>
+
+		implements
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="ArrayIterator.html"><span>ArrayIterator</span></a>
+
+		implements
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	<li>
+<a href="Illuminate.Http.Resources.Json.JsonResource.html"><span>Illuminate\Http\Resources\Json\JsonResource</span></a>
+
+		implements
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Support.Responsable.html"><span title="Illuminate\Contracts\Support\Responsable">Responsable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html"><span title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</span></a>, 
+			<a href="Illuminate.Http.Resources.DelegatesToResource.html"><span title="Illuminate\Http\Resources\DelegatesToResource">DelegatesToResource</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html"><span>Illuminate\Http\Resources\Json\ResourceCollection</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.CollectsResources.html"><span title="Illuminate\Http\Resources\CollectsResources">CollectsResources</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html"><span>Illuminate\Http\Resources\Json\AnonymousResourceCollection</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="CachingIterator.html"><span>CachingIterator</span></a>
+
+		implements
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	<li>
+<a href="Illuminate.Http.Request.html"><span>Illuminate\Http\Request</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>
+
+		uses
+			<a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span title="Illuminate\Http\Concerns\CanBePrecognitive">CanBePrecognitive</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span title="Illuminate\Http\Concerns\InteractsWithContentTypes">InteractsWithContentTypes</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span title="Illuminate\Http\Concerns\InteractsWithFlashData">InteractsWithFlashData</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithInput.html"><span title="Illuminate\Http\Concerns\InteractsWithInput">InteractsWithInput</span></a>, 
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	<li>
+<a href="WeakMap.html"><span>WeakMap</span></a>
+
+		implements
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.CursorPaginator.html"><span>Illuminate\Pagination\CursorPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.Paginator.html"><span>Illuminate\Pagination\Paginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Container.Container.html"><span>Illuminate\Container\Container</span></a>
+
+		implements
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a>
+
+	</li>
+	<li>
+<a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ColumnDefinition.html"><span>Illuminate\Database\Schema\ColumnDefinition</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span>Illuminate\Database\Schema\ForeignIdColumnDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html"><span>Illuminate\Database\Schema\ForeignKeyDefinition</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.IndexDefinition.html"><span>Illuminate\Database\Schema\IndexDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.Stringable.html"><span>Illuminate\Support\Stringable</span></a>
+
+		implements
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Contracts.Support.ValidatedData.html"><span>Illuminate\Contracts\Support\ValidatedData</span></a>
+		extends
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<b><span class="active" title="ArrayAccess">ArrayAccess</span></b>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.ValidatedInput.html"><span>Illuminate\Support\ValidatedInput</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.ValidatedData.html"><span title="Illuminate\Contracts\Support\ValidatedData">ValidatedData</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>mixed <var>$offset</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Model.html#_offsetExists">						<code>Illuminate\Database\Eloquent\Model::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Collection.html#_offsetExists">						<code>Illuminate\Support\Collection::offsetExists()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_offsetExists">						<code>ArrayIterator::offsetExists()</code></a>				</li>
+				<li>
+<a href="WeakMap.html#_offsetExists">						<code>WeakMap::offsetExists()</code></a>				</li>
+				<li>
+<a href="CachingIterator.html#_offsetExists">						<code>CachingIterator::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Request.html#_offsetExists">						<code>Illuminate\Http\Request::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Container.Container.html#_offsetExists">						<code>Illuminate\Container\Container::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_offsetExists">						<code>Illuminate\Support\Fluent::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Stringable.html#_offsetExists">						<code>Illuminate\Support\Stringable::offsetExists()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.ValidatedInput.html#_offsetExists">						<code>Illuminate\Support\ValidatedInput::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>mixed <var>$offset</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Actually this should be return by ref but atm cannot be.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Actually this should be return by ref but atm cannot be.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Model.html#_offsetGet">						<code>Illuminate\Database\Eloquent\Model::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Collection.html#_offsetGet">						<code>Illuminate\Support\Collection::offsetGet()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_offsetGet">						<code>ArrayIterator::offsetGet()</code></a>				</li>
+				<li>
+<a href="WeakMap.html#_offsetGet">						<code>WeakMap::offsetGet()</code></a>				</li>
+				<li>
+<a href="CachingIterator.html#_offsetGet">						<code>CachingIterator::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Request.html#_offsetGet">						<code>Illuminate\Http\Request::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Container.Container.html#_offsetGet">						<code>Illuminate\Container\Container::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_offsetGet">						<code>Illuminate\Support\Fluent::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Stringable.html#_offsetGet">						<code>Illuminate\Support\Stringable::offsetGet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.ValidatedInput.html#_offsetGet">						<code>Illuminate\Support\ValidatedInput::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Model.html#_offsetSet">						<code>Illuminate\Database\Eloquent\Model::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Collection.html#_offsetSet">						<code>Illuminate\Support\Collection::offsetSet()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_offsetSet">						<code>ArrayIterator::offsetSet()</code></a>				</li>
+				<li>
+<a href="WeakMap.html#_offsetSet">						<code>WeakMap::offsetSet()</code></a>				</li>
+				<li>
+<a href="CachingIterator.html#_offsetSet">						<code>CachingIterator::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Request.html#_offsetSet">						<code>Illuminate\Http\Request::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Container.Container.html#_offsetSet">						<code>Illuminate\Container\Container::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_offsetSet">						<code>Illuminate\Support\Fluent::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Stringable.html#_offsetSet">						<code>Illuminate\Support\Stringable::offsetSet()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.ValidatedInput.html#_offsetSet">						<code>Illuminate\Support\ValidatedInput::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>mixed <var>$offset</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Model.html#_offsetUnset">						<code>Illuminate\Database\Eloquent\Model::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Collection.html#_offsetUnset">						<code>Illuminate\Support\Collection::offsetUnset()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_offsetUnset">						<code>ArrayIterator::offsetUnset()</code></a>				</li>
+				<li>
+<a href="WeakMap.html#_offsetUnset">						<code>WeakMap::offsetUnset()</code></a>				</li>
+				<li>
+<a href="CachingIterator.html#_offsetUnset">						<code>CachingIterator::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Request.html#_offsetUnset">						<code>Illuminate\Http\Request::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Container.Container.html#_offsetUnset">						<code>Illuminate\Container\Container::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_offsetUnset">						<code>Illuminate\Support\Fluent::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Stringable.html#_offsetUnset">						<code>Illuminate\Support\Stringable::offsetUnset()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.ValidatedInput.html#_offsetUnset">						<code>Illuminate\Support\ValidatedInput::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,3833 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Eloquent\Relations\BelongsToMany |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html">
+							BelongsTo
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">
+							BelongsToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasMany.html">
+							HasMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html">
+							HasManyThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOne.html">
+							HasOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html">
+							HasOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html">
+							HasOneOrManyThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html">
+							HasOneThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html">
+							MorphMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html">
+							MorphOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html">
+							MorphOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html">
+							MorphPivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html">
+							MorphTo
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html">
+							MorphToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Pivot.html">
+							Pivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Relation.html">
+							Relation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">BelongsToMany</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TPivotModel</span> is <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, TDeclaringModel, <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&gt;</code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable">InteractsWithPivotTable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\BelongsToMany</span></b>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable">InteractsWithPivotTable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphToMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>,
+	<span>TDeclaringModel <var>$parent</var></span>,
+	<span>string|class-string&lt;TRelatedModel&gt; <var>$table</var></span>,
+	<span>string <var>$foreignPivotKey</var></span>,
+	<span>string <var>$relatedPivotKey</var></span>,
+	<span>string <var>$parentKey</var></span>,
+	<span>string <var>$relatedKey</var></span>,
+	<span>string|null <var>$relationName</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new belongs to many relationship instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new belongs to many relationship instance.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\Relation::__construct()</code></a>				</li>
+		</ul>
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\MorphToMany::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveTableName" id="_resolveTableName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveTableName(<span>string <var>$table</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempt to resolve the intermediate table name from the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempt to resolve the intermediate table name from the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveTableName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addConstraints" id="_addConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addConstraints(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the base constraints on the relation query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the base constraints on the relation query.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_addConstraints">						<code>Illuminate\Database\Eloquent\Relations\Relation::addConstraints()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performJoin" id="_performJoin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>performJoin(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;|null <var>$query</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the join clause for the relation query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the join clause for the relation query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performJoin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addWhereConstraints" id="_addWhereConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addWhereConstraints(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the where clause for the relation query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the where clause for the relation query.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html#_addWhereConstraints">						<code>Illuminate\Database\Eloquent\Relations\MorphToMany::addWhereConstraints()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addWhereConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addEagerConstraints" id="_addEagerConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addEagerConstraints(<span>array <var>$models</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the constraints for an eager load of the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the constraints for an eager load of the relation.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\MorphToMany::addEagerConstraints()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\Relation::addEagerConstraints()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addEagerConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initRelation" id="_initRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initRelation(<span>array <var>$models</var></span>, <span><var>$relation</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Initialize the relation on a set of models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initialize the relation on a set of models.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\Relation::initRelation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(<span>array <var>$models</var></span>, <span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$results</var></span>, <span><var>$relation</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Match the eagerly loaded results to their parents.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Match the eagerly loaded results to their parents.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_match">						<code>Illuminate\Database\Eloquent\Relations\Relation::match()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildDictionary" id="_buildDictionary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildDictionary(<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt; <var>$results</var></span>): array&lt;array&lt;string, TRelatedModel&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Build model dictionary keyed by the relation's foreign key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Build model dictionary keyed by the relation's foreign key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildDictionary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPivotClass" id="_getPivotClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPivotClass(): class-string&lt;TPivotModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the class being used for pivot models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the class being used for pivot models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPivotClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="using" id="_using">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>using(<span>class-string&lt;TPivotModel&gt; <var>$class</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the custom pivot model to use for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the custom pivot model to use for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_using">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="as" id="_as">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>as(<span>string <var>$accessor</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the custom pivot accessor to use for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the custom pivot accessor to use for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_as">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivot" id="_wherePivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivot(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a where clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a where clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotBetween" id="_wherePivotBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotBetween(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>array <var>$values</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>, <span>bool <var>$not</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where between" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where between&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotBetween" id="_orWherePivotBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotBetween(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>array <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "or where between" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;or where between&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotNotBetween" id="_wherePivotNotBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotNotBetween(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>array <var>$values</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where pivot not between" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where pivot not between&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotNotBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotNotBetween" id="_orWherePivotNotBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotNotBetween(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>array <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "or where not between" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;or where not between&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotNotBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotIn" id="_wherePivotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotIn(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>mixed <var>$values</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>, <span>bool <var>$not</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where in" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where in&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivot" id="_orWherePivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivot(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set an "or where" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set an &quot;or where&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPivotValue" id="_withPivotValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPivotValue(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string, string&gt; <var>$column</var></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a where clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a where clause for a pivot table column.</p>
+<p>In addition, new pivot records will receive this value.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPivotValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotIn" id="_orWherePivotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotIn(<span>string <var>$column</var></span>, <span>mixed <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set an "or where in" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set an &quot;or where in&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotNotIn" id="_wherePivotNotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotNotIn(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>mixed <var>$values</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where not in" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where not in&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotNotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotNotIn" id="_orWherePivotNotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotNotIn(<span>string <var>$column</var></span>, <span>mixed <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set an "or where not in" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set an &quot;or where not in&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotNotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotNull" id="_wherePivotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotNull(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>, <span>bool <var>$not</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where null" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where null&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePivotNotNull" id="_wherePivotNotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePivotNotNull(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "where not null" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;where not null&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePivotNotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotNull" id="_orWherePivotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotNull(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>bool <var>$not</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "or where null" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;or where null&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePivotNotNull" id="_orWherePivotNotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePivotNotNull(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a "or where not null" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a &quot;or where not null&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePivotNotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderByPivot" id="_orderByPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orderByPivot(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-str">'asc'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "order by" clause for a pivot table column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;order by&quot; clause for a pivot table column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orderByPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findOrNew" id="_findOrNew">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findOrNew(
+	<span>mixed <var>$id</var></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel)</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a related model by its primary key or return a new instance of the related model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a related model by its primary key or return a new instance of the related model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findOrNew">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstOrNew" id="_firstOrNew">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstOrNew(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first related model record matching the attributes or instantiate it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first related model record matching the attributes or instantiate it.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstOrNew">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstOrCreate" id="_firstOrCreate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstOrCreate(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first record matching the attributes. If the record is not found, create it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first record matching the attributes. If the record is not found, create it.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstOrCreate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createOrFirst" id="_createOrFirst">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createOrFirst(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempt to create the record. If a unique constraint violation occurs, attempt to find the matching record.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempt to create the record. If a unique constraint violation occurs, attempt to find the matching record.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createOrFirst">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateOrCreate" id="_updateOrCreate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateOrCreate(<span>array <var>$attributes</var></span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Create or update a related record matching the attributes, and fill it with values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create or update a related record matching the attributes, and fill it with values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateOrCreate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>find(
+	<span>mixed <var>$id</var></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel|null)</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a related model by its primary key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a related model by its primary key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findSole" id="_findSole">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findSole(<span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a sole related model by its primary key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a sole related model by its primary key.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.ModelNotFoundException.html"><span>Illuminate\Database\Eloquent\ModelNotFoundException</span></a>&lt;TRelatedModel&gt;</code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Illuminate.Database.MultipleRecordsFoundException.html"><span>Illuminate\Database\MultipleRecordsFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findSole">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findMany" id="_findMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findMany(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|array <var>$ids</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Find multiple related models by their primary keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find multiple related models by their primary keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findOrFail" id="_findOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findOrFail(
+	<span>mixed <var>$id</var></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel)</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a related model by its primary key or throw an exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a related model by its primary key or throw an exception.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.ModelNotFoundException.html"><span>Illuminate\Database\Eloquent\ModelNotFoundException</span></a>&lt;TRelatedModel&gt;</code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findOr" id="_findOr">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findOr&lt;<span title="">TValue</span>&gt;(
+	<span>mixed <var>$id</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|list&lt;string&gt;|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;|TValue&nbsp;:&nbsp;TRelatedModel|TValue)</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a related model by its primary key or call a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a related model by its primary key or call a callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findOr">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstWhere" id="_firstWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstWhere(
+	<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|array <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+): TRelatedModel|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a basic where clause to the query, and return the first result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a basic where clause to the query, and return the first result.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query and get the first result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query and get the first result.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstOrFail" id="_firstOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstOrFail(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query and get the first result or throw an exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query and get the first result or throw an exception.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.ModelNotFoundException.html"><span>Illuminate\Database\Eloquent\ModelNotFoundException</span></a>&lt;TRelatedModel&gt;</code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstOr" id="_firstOr">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstOr&lt;<span title="">TValue</span>&gt;(
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|list&lt;string&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): TRelatedModel|TValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query and get the first result or call a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query and get the first result or call a callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstOr">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResults" id="_getResults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResults()</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the relationship.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\Relation::getResults()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span><var>$columns</var> = [<span class="php-str">'*'</span>]</span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query as a "select" statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query as a &quot;select&quot; statement.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_get">						<code>Illuminate\Database\Eloquent\Relations\Relation::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shouldSelect" id="_shouldSelect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shouldSelect(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the select columns for the relation query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the select columns for the relation query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shouldSelect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="aliasedPivotColumns" id="_aliasedPivotColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>aliasedPivotColumns(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the pivot columns for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the pivot columns for the relation.</p>
+<p>&quot;pivot_&quot; is prefixed at each column for easy removal later.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html#_aliasedPivotColumns">						<code>Illuminate\Database\Eloquent\Relations\MorphToMany::aliasedPivotColumns()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_aliasedPivotColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="paginate" id="_paginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>paginate(
+	<span>int|null <var>$perPage</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
+	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a paginator for the "select" statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a paginator for the &quot;select&quot; statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_paginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="simplePaginate" id="_simplePaginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>simplePaginate(
+	<span>int|null <var>$perPage</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
+	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a simple paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a simple paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_simplePaginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursorPaginate" id="_cursorPaginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursorPaginate(
+	<span>int|null <var>$perPage</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string <var>$cursorName</var> = <span class="php-str">'cursor'</span></span>,
+	<span>string|null <var>$cursor</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a cursor paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a cursor paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursorPaginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chunk" id="_chunk">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chunk(<span>int <var>$count</var></span>, <span>callable <var>$callback</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the results of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the results of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chunk">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chunkById" id="_chunkById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chunkById(<span>int <var>$count</var></span>, <span>callable <var>$callback</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the results of a query by comparing numeric IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the results of a query by comparing numeric IDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chunkById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chunkByIdDesc" id="_chunkByIdDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chunkByIdDesc(<span>int <var>$count</var></span>, <span>callable <var>$callback</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the results of a query by comparing IDs in descending order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the results of a query by comparing IDs in descending order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chunkByIdDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="eachById" id="_eachById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>eachById(<span>callable <var>$callback</var></span>, <span>int <var>$count</var> = <span class="php-num">1000</span></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback over each item while chunking by ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback over each item while chunking by ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_eachById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderedChunkById" id="_orderedChunkById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orderedChunkById(
+	<span>int <var>$count</var></span>,
+	<span>callable <var>$callback</var></span>,
+	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
+	<span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$descending</var> = <span class="php-kw">false</span></span>,
+): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the results of a query by comparing IDs in a given order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the results of a query by comparing IDs in a given order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orderedChunkById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="each" id="_each">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>each(<span>callable <var>$callback</var></span>, <span>int <var>$count</var> = <span class="php-num">1000</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback over each item while chunking.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback over each item while chunking.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_each">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazy" id="_lazy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lazy(<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Query lazily, by chunks of the given size.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Query lazily, by chunks of the given size.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lazy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazyById" id="_lazyById">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lazyById(
+	<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>,
+	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
+	<span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Query lazily, by chunking the results of a query by comparing IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Query lazily, by chunking the results of a query by comparing IDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lazyById">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazyByIdDesc" id="_lazyByIdDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lazyByIdDesc(
+	<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>,
+	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
+	<span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Query lazily, by chunking the results of a query by comparing IDs in descending order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Query lazily, by chunking the results of a query by comparing IDs in descending order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lazyByIdDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="_cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursor(): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a lazy collection for the given query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a lazy collection for the given query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareQueryBuilder" id="_prepareQueryBuilder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareQueryBuilder(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the query builder for query execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the query builder for query execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareQueryBuilder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hydratePivotRelation" id="_hydratePivotRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hydratePivotRelation(<span>array&lt;int, TRelatedModel&gt; <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Hydrate the pivot table relationship on the models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Hydrate the pivot table relationship on the models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hydratePivotRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="migratePivotAttributes" id="_migratePivotAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>migratePivotAttributes(<span>TRelatedModel <var>$model</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the pivot attributes from a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the pivot attributes from a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_migratePivotAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="touchIfTouching" id="_touchIfTouching">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touchIfTouching(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		If we're touching the parent model, touch.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>If we're touching the parent model, touch.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touchIfTouching">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="touchingParent" id="_touchingParent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touchingParent(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if we should touch the parent on sync.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if we should touch the parent on sync.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touchingParent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guessInverseRelation" id="_guessInverseRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>guessInverseRelation(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempt to guess the name of the inverse of the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempt to guess the name of the inverse of the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_guessInverseRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="touch" id="_touch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touch(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Touch all of the related models for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Touch all of the related models for the relationship.</p>
+<p>E.g.: Touch all roles associated with this user.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_touch">						<code>Illuminate\Database\Eloquent\Relations\Relation::touch()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allRelatedIds" id="_allRelatedIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allRelatedIds(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, int|string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the IDs for the related models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the IDs for the related models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allRelatedIds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>save(<span>TRelatedModel <var>$model</var></span>, <span>array <var>$pivotAttributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Save a new model and attach it to the parent model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save a new model and attach it to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saveQuietly" id="_saveQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saveQuietly(<span>TRelatedModel <var>$model</var></span>, <span>array <var>$pivotAttributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Save a new model without raising any events and attach it to the parent model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save a new model without raising any events and attach it to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saveQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saveMany" id="_saveMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saveMany&lt;<span title="">TContainer</span> is <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;array-key, TRelatedModel&gt;|array&lt;array-key, TRelatedModel&gt;&gt;(
+	<span>TContainer <var>$models</var></span>,
+	<span>array <var>$pivotAttributes</var> = []</span>,
+): TContainer</code>
+
+
+	<div class="expandable-collapsedView">
+		Save an array of new models and attach them to the parent model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save an array of new models and attach them to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saveMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saveManyQuietly" id="_saveManyQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saveManyQuietly&lt;<span title="">TContainer</span> is <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;array-key, TRelatedModel&gt;|array&lt;array-key, TRelatedModel&gt;&gt;(
+	<span>TContainer <var>$models</var></span>,
+	<span>array <var>$pivotAttributes</var> = []</span>,
+): TContainer</code>
+
+
+	<div class="expandable-collapsedView">
+		Save an array of new models without raising any events and attach them to the parent model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save an array of new models without raising any events and attach them to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saveManyQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(<span>array <var>$attributes</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new instance of the related model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new instance of the related model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createMany" id="_createMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createMany(<span>iterable <var>$records</var></span>, <span>array <var>$joinings</var> = []</span>): array&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create an array of new instances of the related models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an array of new instances of the related models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationExistenceQuery" id="_getRelationExistenceQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationExistenceQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a> <var>$query</var></span>, <span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a> <var>$parentQuery</var></span>, <span><var>$columns</var> = [<span class="php-str">'*'</span>]</span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the constraints for an internal relationship existence query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the constraints for an internal relationship existence query.</p>
+<p>Essentially, these queries compare on column names like whereColumn.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\Relation::getRelationExistenceQuery()</code></a>				</li>
+		</ul>
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\MorphToMany::getRelationExistenceQuery()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationExistenceQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationExistenceQueryForSelfJoin" id="_getRelationExistenceQueryForSelfJoin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationExistenceQueryForSelfJoin(
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>,
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TDeclaringModel&gt; <var>$parentQuery</var></span>,
+	<span>array|mixed <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the constraints for a relationship query on the same table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the constraints for a relationship query on the same table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationExistenceQueryForSelfJoin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="take" id="_take">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>take(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Alias to set the "limit" value of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Alias to set the &quot;limit&quot; value of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_take">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="limit" id="_limit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>limit(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the "limit" value of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the &quot;limit&quot; value of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_limit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExistenceCompareKey" id="_getExistenceCompareKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExistenceCompareKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the key for comparing against the parent key in "has" query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the key for comparing against the parent key in &quot;has&quot; query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExistenceCompareKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTimestamps" id="_withTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withTimestamps(<span>mixed <var>$createdAt</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$updatedAt</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the pivot table has creation and update timestamps.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the pivot table has creation and update timestamps.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createdAt" id="_createdAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createdAt(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;created at&quot; column.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_createdAt">						<code>Illuminate\Database\Eloquent\Relations\Relation::createdAt()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createdAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updatedAt" id="_updatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updatedAt(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_updatedAt">						<code>Illuminate\Database\Eloquent\Relations\Relation::updatedAt()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getForeignPivotKeyName" id="_getForeignPivotKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getForeignPivotKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the foreign key for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the foreign key for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getForeignPivotKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedForeignPivotKeyName" id="_getQualifiedForeignPivotKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedForeignPivotKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified foreign key for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified foreign key for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedForeignPivotKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelatedPivotKeyName" id="_getRelatedPivotKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelatedPivotKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "related key" for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;related key&quot; for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelatedPivotKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedRelatedPivotKeyName" id="_getQualifiedRelatedPivotKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedRelatedPivotKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified "related key" for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified &quot;related key&quot; for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedRelatedPivotKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParentKeyName" id="_getParentKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getParentKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parent key for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parent key for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParentKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedParentKeyName" id="_getQualifiedParentKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedParentKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified parent key name for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified parent key name for the relation.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getQualifiedParentKeyName">						<code>Illuminate\Database\Eloquent\Relations\Relation::getQualifiedParentKeyName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedParentKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelatedKeyName" id="_getRelatedKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelatedKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the related key for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the related key for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelatedKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedRelatedKeyName" id="_getQualifiedRelatedKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedRelatedKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified related key name for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified related key name for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedRelatedKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTable" id="_getTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTable(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the intermediate table for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the intermediate table for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationName" id="_getRelationName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the relationship name for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the relationship name for the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPivotAccessor" id="_getPivotAccessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPivotAccessor(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the pivot accessor for this relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the pivot accessor for this relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPivotAccessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPivotColumns" id="_getPivotColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPivotColumns(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the pivot columns for this relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the pivot columns for this relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPivotColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="qualifyPivotColumn" id="_qualifyPivotColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>qualifyPivotColumn(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>): string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Qualify the given column name by the pivot table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Qualify the given column name by the pivot table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_qualifyPivotColumn">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Relation.html#_noConstraints">noConstraints()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getEager">getEager()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_sole">sole()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_rawUpdate">rawUpdate()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationExistenceCountQuery">getRelationExistenceCountQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationCountHash">getRelationCountHash()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getKeys">getKeys()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationQuery">getRelationQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getQuery">getQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getBaseQuery">getBaseQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_toBase">toBase()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getParent">getParent()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelated">getRelated()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_relatedUpdatedAt">relatedUpdatedAt()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_whereInEager">whereInEager()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_whereInMethod">whereInMethod()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_requireMorphMap">requireMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_requiresMorphMap">requiresMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_enforceMorphMap">enforceMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_morphMap">morphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_buildMorphMapFromModels">buildMorphMapFromModels()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getMorphedModel">getMorphedModel()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getMorphAlias">getMorphAlias()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#___call">__call()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#___clone">__clone()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html#_getDictionaryKey">getDictionaryKey()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_toggle">toggle()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithoutDetaching">syncWithoutDetaching()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_sync">sync()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithPivotValues">syncWithPivotValues()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatRecordsList">formatRecordsList()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachNew">attachNew()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivot">updateExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivotUsingCustomClass">updateExistingPivotUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attach">attach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachUsingCustomClass">attachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecords">formatAttachRecords()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecord">formatAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_extractAttachIdAndAttributes">extractAttachIdAndAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_baseAttachRecord">baseAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_addTimestampsToAttachment">addTimestampsToAttachment()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_hasPivotColumn">hasPivotColumn()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detach">detach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detachUsingCustomClass">detachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getCurrentlyAttachedPivots">getCurrentlyAttachedPivots()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivot">newPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newExistingPivot">newExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatement">newPivotStatement()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatementForId">newPivotStatementForId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotQuery">newPivotQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_withPivot">withPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseIds">parseIds()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseId">parseId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKeys">castKeys()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKey">castKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castAttributes">castAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getTypeSwapValue">getTypeSwapValue()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="table" id="$table">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$table</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$table">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignPivotKey" id="$foreignPivotKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$foreignPivotKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$foreignPivotKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relatedPivotKey" id="$relatedPivotKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relatedPivotKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relatedPivotKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parentKey" id="$parentKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parentKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parentKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relatedKey" id="$relatedKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relatedKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relatedKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relationName" id="$relationName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relationName</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relationName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotColumns" id="$pivotColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotColumns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotWheres" id="$pivotWheres">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotWheres</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotWheres">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotWhereIns" id="$pivotWhereIns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotWhereIns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotWhereIns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotWhereNulls" id="$pivotWhereNulls">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotWhereNulls</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotWhereNulls">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotValues" id="$pivotValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotValues</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTimestamps" id="$withTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$withTimestamps</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$withTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotCreatedAt" id="$pivotCreatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotCreatedAt</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotCreatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotUpdatedAt" id="$pivotUpdatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotUpdatedAt</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotUpdatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="using" id="$using">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">class-string&lt;TPivotModel&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$using</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$using">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="accessor" id="$accessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$accessor</var> = <span class="php-str">'pivot'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$accessor">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$query">$query</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$parent">$parent</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$related">$related</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$eagerKeysWereEmpty">$eagerKeysWereEmpty</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$constraints">$constraints</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$morphMap">$morphMap</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$requireMorphMap">$requireMorphMap</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$selfJoinCount">$selfJoinCount</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

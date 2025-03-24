@@ -1,0 +1,3463 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Validation\Validator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Validation.html">Validation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Validation.Validator.html">
+							Validator
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Validation.PresenceVerifierInterface.html">
+							PresenceVerifierInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Validation.ValidationException.html">
+							ValidationException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Validation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Validation.Validator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Validation.html">Validation</a>\<a href="Illuminate.Validation.Validator.html">Validator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Validation.Validator.html"><span title="Illuminate\Contracts\Validation\Validator">Validator</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Validation.Concerns.FormatsMessages.html"><span title="Illuminate\Validation\Concerns\FormatsMessages">FormatsMessages</span></a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html"><span title="Illuminate\Validation\Concerns\ValidatesAttributes">ValidatesAttributes</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Contracts.Translation.Translator.html"><span title="Illuminate\Contracts\Translation\Translator">Translator</span></a> <var>$translator</var></span>, <span>array <var>$data</var></span>, <span>array <var>$rules</var></span>, <span>array <var>$messages</var> = []</span>, <span>array <var>$attributes</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Validator instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Validator instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseData" id="_parseData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseData(<span>array <var>$data</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the data array, converting dots and asterisks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the data array, converting dots and asterisks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replacePlaceholders" id="_replacePlaceholders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replacePlaceholders(<span>array <var>$data</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the placeholders used in data keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the placeholders used in data keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replacePlaceholders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replacePlaceholderInString" id="_replacePlaceholderInString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replacePlaceholderInString(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the placeholders in the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the placeholders in the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replacePlaceholderInString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceDotPlaceholderInParameters" id="_replaceDotPlaceholderInParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceDotPlaceholderInParameters(<span>array <var>$parameters</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace each field parameter dot placeholder with dot.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace each field parameter dot placeholder with dot.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceDotPlaceholderInParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="_after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>after(<span>callable|array|string <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an after validation callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an after validation callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_after">						<code>Illuminate\Contracts\Validation\Validator::after()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="passes" id="_passes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>passes(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the data passes the validation rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the data passes the validation rules.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_passes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fails" id="_fails">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fails(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the data fails the validation rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the data fails the validation rules.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_fails">						<code>Illuminate\Contracts\Validation\Validator::fails()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fails">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shouldBeExcluded" id="_shouldBeExcluded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shouldBeExcluded(<span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the attribute should be excluded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the attribute should be excluded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shouldBeExcluded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeAttribute" id="_removeAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeAttribute(<span>string <var>$attribute</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validate" id="_validate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validate(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the validator's rules against its data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the validator's rules against its data.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Validation.ValidationException.html"><span>Illuminate\Validation\ValidationException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_validate">						<code>Illuminate\Contracts\Validation\Validator::validate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateWithBag" id="_validateWithBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validateWithBag(<span>string <var>$errorBag</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the validator's rules against its data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the validator's rules against its data.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Validation.ValidationException.html"><span>Illuminate\Validation\ValidationException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateWithBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="safe" id="_safe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>safe(<span>array|null <var>$keys</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.ValidatedInput.html"><span title="Illuminate\Support\ValidatedInput">ValidatedInput</span></a>|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a validated input container for the validated input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a validated input container for the validated input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_safe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validated" id="_validated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validated(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes and values that were validated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes and values that were validated.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Validation.ValidationException.html"><span>Illuminate\Validation\ValidationException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_validated">						<code>Illuminate\Contracts\Validation\Validator::validated()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateAttribute" id="_validateAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validateAttribute(<span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Validate a given attribute against a rule.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validate a given attribute against a rule.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dependsOnOtherFields" id="_dependsOnOtherFields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dependsOnOtherFields(<span>string <var>$rule</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given rule depends on other fields.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given rule depends on other fields.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dependsOnOtherFields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExplicitKeys" id="_getExplicitKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExplicitKeys(<span>string <var>$attribute</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the explicit keys from an attribute flattened with dot notation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the explicit keys from an attribute flattened with dot notation.</p>
+<p>E.g. 'foo.1.bar.spark.baz' -&gt; [1, 'spark'] for 'foo.<em>.bar.</em>.baz'</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExplicitKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPrimaryAttribute" id="_getPrimaryAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPrimaryAttribute(<span>string <var>$attribute</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the primary attribute name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the primary attribute name.</p>
+<p>For example, if &quot;name.0&quot; is given, &quot;name.*&quot; will be returned.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPrimaryAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceDotInParameters" id="_replaceDotInParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceDotInParameters(<span>array <var>$parameters</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace each field parameter which has an escaped dot with the dot placeholder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace each field parameter which has an escaped dot with the dot placeholder.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceDotInParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceAsterisksInParameters" id="_replaceAsterisksInParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceAsterisksInParameters(<span>array <var>$parameters</var></span>, <span>array <var>$keys</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace each field parameter which has asterisks with the given keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace each field parameter which has asterisks with the given keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceAsterisksInParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValidatable" id="_isValidatable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValidatable(<span>object|string <var>$rule</var></span>, <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the attribute is validatable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the attribute is validatable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValidatable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="presentOrRuleIsImplicit" id="_presentOrRuleIsImplicit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>presentOrRuleIsImplicit(<span>object|string <var>$rule</var></span>, <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the field is present, or the rule implies required.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the field is present, or the rule implies required.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_presentOrRuleIsImplicit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isImplicit" id="_isImplicit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isImplicit(<span>object|string <var>$rule</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given rule implies the attribute is required.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given rule implies the attribute is required.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isImplicit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="passesOptionalCheck" id="_passesOptionalCheck">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>passesOptionalCheck(<span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the attribute passes any optional check.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the attribute passes any optional check.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_passesOptionalCheck">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotNullIfMarkedAsNullable" id="_isNotNullIfMarkedAsNullable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotNullIfMarkedAsNullable(<span>string <var>$rule</var></span>, <span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the attribute fails the nullable check.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the attribute fails the nullable check.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotNullIfMarkedAsNullable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasNotFailedPreviousRuleIfPresenceRule" id="_hasNotFailedPreviousRuleIfPresenceRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasNotFailedPreviousRuleIfPresenceRule(<span>string <var>$rule</var></span>, <span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if it's a necessary presence validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if it's a necessary presence validation.</p>
+<p>This is to avoid possible database type comparison errors.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasNotFailedPreviousRuleIfPresenceRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateUsingCustomRule" id="_validateUsingCustomRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validateUsingCustomRule(<span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span><a href="Illuminate.Contracts.Validation.Rule.html"><span class="deprecated" title="Illuminate\Contracts\Validation\Rule">Rule</span></a> <var>$rule</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Validate an attribute using a custom rule object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validate an attribute using a custom rule object.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateUsingCustomRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shouldStopValidating" id="_shouldStopValidating">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shouldStopValidating(<span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check if we should stop further validations on a given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check if we should stop further validations on a given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shouldStopValidating">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addFailure" id="_addFailure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addFailure(<span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a failed rule and error message to the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a failed rule and error message to the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addFailure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excludeAttribute" id="_excludeAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>excludeAttribute(<span>string <var>$attribute</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the given attribute to the list of excluded attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the given attribute to the list of excluded attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_excludeAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="valid" id="_valid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>valid(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the data which was valid.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the data which was valid.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_valid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="invalid" id="_invalid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>invalid(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the data which was invalid.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the data which was invalid.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_invalid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributesThatHaveMessages" id="_attributesThatHaveMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attributesThatHaveMessages(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate an array of all attributes that have messages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate an array of all attributes that have messages.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attributesThatHaveMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="failed" id="_failed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>failed(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the failed validation rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the failed validation rules.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_failed">						<code>Illuminate\Contracts\Validation\Validator::failed()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_failed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="messages" id="_messages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>messages(): <a href="Illuminate.Support.MessageBag.html"><span title="Illuminate\Support\MessageBag">MessageBag</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the message container for the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the message container for the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_messages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errors" id="_errors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>errors(): <a href="Illuminate.Support.MessageBag.html"><span title="Illuminate\Support\MessageBag">MessageBag</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		An alternative more semantic shortcut to the message container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>An alternative more semantic shortcut to the message container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_errors">						<code>Illuminate\Contracts\Validation\Validator::errors()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_errors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMessageBag" id="_getMessageBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMessageBag(): <a href="Illuminate.Support.MessageBag.html"><span title="Illuminate\Support\MessageBag">MessageBag</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the messages for the instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the messages for the instance.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.MessageProvider.html#_getMessageBag">						<code>Illuminate\Contracts\Support\MessageProvider::getMessageBag()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMessageBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasRule" id="_hasRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasRule(<span>string <var>$attribute</var></span>, <span>string|array <var>$rules</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given attribute has a rule in the given set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given attribute has a rule in the given set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRule" id="_getRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRule(<span>string <var>$attribute</var></span>, <span>string|array <var>$rules</var></span>): array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a rule and its parameters for a given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a rule and its parameters for a given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributes" id="_attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attributes(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the data under validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the data under validation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getData" id="_getData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getData(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the data under validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the data under validation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setData" id="_setData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setData(<span>array <var>$data</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the data under validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the data under validation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getValue" id="_getValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getValue(<span>string <var>$attribute</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of a given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of a given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setValue" id="_setValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setValue(<span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of a given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of a given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRules" id="_getRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRules(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the validation rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the validation rules.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRulesWithoutPlaceholders" id="_getRulesWithoutPlaceholders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRulesWithoutPlaceholders(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the validation rules with key placeholders removed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the validation rules with key placeholders removed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRulesWithoutPlaceholders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRules" id="_setRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRules(<span>array <var>$rules</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the validation rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the validation rules.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRules" id="_addRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addRules(<span>array <var>$rules</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the given rules and merge them into current rules.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the given rules and merge them into current rules.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sometimes" id="_sometimes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sometimes(<span>string|array <var>$attribute</var></span>, <span>string|array <var>$rules</var></span>, <span>callable <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add conditions to a given field based on a Closure.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add conditions to a given field based on a Closure.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Validation.Validator.html#_sometimes">						<code>Illuminate\Contracts\Validation\Validator::sometimes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sometimes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stopOnFirstFailure" id="_stopOnFirstFailure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>stopOnFirstFailure(<span>bool <var>$stopOnFirstFailure</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Instruct the validator to stop validating after the first rule failure.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Instruct the validator to stop validating after the first rule failure.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_stopOnFirstFailure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addExtensions" id="_addExtensions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addExtensions(<span>array <var>$extensions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an array of custom validator extensions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an array of custom validator extensions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addExtensions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addImplicitExtensions" id="_addImplicitExtensions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addImplicitExtensions(<span>array <var>$extensions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an array of custom implicit validator extensions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an array of custom implicit validator extensions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addImplicitExtensions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addDependentExtensions" id="_addDependentExtensions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addDependentExtensions(<span>array <var>$extensions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an array of custom dependent validator extensions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an array of custom dependent validator extensions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addDependentExtensions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addExtension" id="_addExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addExtension(<span>string <var>$rule</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$extension</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a custom validator extension.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a custom validator extension.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addImplicitExtension" id="_addImplicitExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addImplicitExtension(<span>string <var>$rule</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$extension</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a custom implicit validator extension.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a custom implicit validator extension.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addImplicitExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addDependentExtension" id="_addDependentExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addDependentExtension(<span>string <var>$rule</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$extension</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a custom dependent validator extension.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a custom dependent validator extension.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addDependentExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addReplacers" id="_addReplacers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addReplacers(<span>array <var>$replacers</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an array of custom validator message replacers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an array of custom validator message replacers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addReplacers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addReplacer" id="_addReplacer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addReplacer(<span>string <var>$rule</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$replacer</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a custom validator message replacer.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a custom validator message replacer.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addReplacer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCustomMessages" id="_setCustomMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCustomMessages(<span>array <var>$messages</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the custom messages for the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the custom messages for the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCustomMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAttributeNames" id="_setAttributeNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAttributeNames(<span>array <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the custom attributes on the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the custom attributes on the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAttributeNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCustomAttributes" id="_addCustomAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCustomAttributes(<span>array <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add custom attributes to the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add custom attributes to the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCustomAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setImplicitAttributesFormatter" id="_setImplicitAttributesFormatter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setImplicitAttributesFormatter(<span>callable|null <var>$formatter</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the callback that used to format an implicit attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the callback that used to format an implicit attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setImplicitAttributesFormatter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setValueNames" id="_setValueNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setValueNames(<span>array <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the custom values on the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the custom values on the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setValueNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCustomValues" id="_addCustomValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCustomValues(<span>array <var>$customValues</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the custom values for the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the custom values for the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCustomValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFallbackMessages" id="_setFallbackMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFallbackMessages(<span>array <var>$messages</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the fallback messages for the validator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the fallback messages for the validator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFallbackMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPresenceVerifier" id="_getPresenceVerifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPresenceVerifier(<span>string|null <var>$connection</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Validation.PresenceVerifierInterface.html"><span title="Illuminate\Validation\PresenceVerifierInterface">PresenceVerifierInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the Presence Verifier implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the Presence Verifier implementation.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPresenceVerifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPresenceVerifier" id="_setPresenceVerifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPresenceVerifier(<span><a href="Illuminate.Validation.PresenceVerifierInterface.html"><span title="Illuminate\Validation\PresenceVerifierInterface">PresenceVerifierInterface</span></a> <var>$presenceVerifier</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the Presence Verifier implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the Presence Verifier implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPresenceVerifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getException" id="_getException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getException(): class-string&lt;<a href="Illuminate.Validation.ValidationException.html"><span title="Illuminate\Validation\ValidationException">ValidationException</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the exception to throw upon failed validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the exception to throw upon failed validation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setException" id="_setException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setException(<span>class-string&lt;<a href="Illuminate.Validation.ValidationException.html"><span title="Illuminate\Validation\ValidationException">ValidationException</span></a>&gt; <var>$exception</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the exception to throw upon failed validation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the exception to throw upon failed validation.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureExponentWithinAllowedRangeUsing" id="_ensureExponentWithinAllowedRangeUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureExponentWithinAllowedRangeUsing(<span><var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure exponents are within range using the given callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure exponents are within range using the given callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureExponentWithinAllowedRangeUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTranslator" id="_getTranslator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTranslator(): <a href="Illuminate.Contracts.Translation.Translator.html"><span title="Illuminate\Contracts\Translation\Translator">Translator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the Translator implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the Translator implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTranslator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTranslator" id="_setTranslator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTranslator(<span><a href="Illuminate.Contracts.Translation.Translator.html"><span title="Illuminate\Contracts\Translation\Translator">Translator</span></a> <var>$translator</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the Translator implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the Translator implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTranslator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setContainer" id="_setContainer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setContainer(<span><a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a> <var>$container</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the IoC container instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the IoC container instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setContainer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callExtension" id="_callExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callExtension(<span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span>): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Call a custom validator extension.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call a custom validator extension.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callClassBasedExtension" id="_callClassBasedExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callClassBasedExtension(<span>string <var>$callback</var></span>, <span>array <var>$parameters</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Call a class based validator extension.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call a class based validator extension.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callClassBasedExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__call(<span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle dynamic calls to class methods.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle dynamic calls to class methods.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="BadMethodCallException.html"><span>BadMethodCallException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Validation.Concerns.FormatsMessages.html"><span>Illuminate\Validation\Concerns\FormatsMessages</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getMessage">getMessage()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getInlineMessage">getInlineMessage()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getFromLocalArray">getFromLocalArray()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getCustomMessageFromTranslator">getCustomMessageFromTranslator()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getWildcardCustomMessages">getWildcardCustomMessages()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getSizeMessage">getSizeMessage()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getAttributeType">getAttributeType()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_makeReplacements">makeReplacements()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getDisplayableAttribute">getDisplayableAttribute()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getAttributeFromTranslations">getAttributeFromTranslations()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getAttributeFromLocalArray">getAttributeFromLocalArray()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_replaceAttributePlaceholder">replaceAttributePlaceholder()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_replaceIndexPlaceholder">replaceIndexPlaceholder()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_replacePositionPlaceholder">replacePositionPlaceholder()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_replaceIndexOrPositionPlaceholder">replaceIndexOrPositionPlaceholder()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_numberToIndexOrPositionWord">numberToIndexOrPositionWord()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_replaceInputPlaceholder">replaceInputPlaceholder()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getDisplayableValue">getDisplayableValue()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_getAttributeList">getAttributeList()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_callReplacer">callReplacer()</a>, <a href="Illuminate.Validation.Concerns.FormatsMessages.html#_callClassBasedReplacer">callClassBasedReplacer()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html"><span>Illuminate\Validation\Concerns\ValidatesAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAccepted">validateAccepted()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAcceptedIf">validateAcceptedIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDeclined">validateDeclined()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDeclinedIf">validateDeclinedIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateActiveUrl">validateActiveUrl()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDnsRecords">getDnsRecords()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAscii">validateAscii()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateBail">validateBail()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateBefore">validateBefore()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateBeforeOrEqual">validateBeforeOrEqual()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAfter">validateAfter()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAfterOrEqual">validateAfterOrEqual()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_compareDates">compareDates()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDateFormat">getDateFormat()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDateTimestamp">getDateTimestamp()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_checkDateTimeOrder">checkDateTimeOrder()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDateTimeWithOptionalFormat">getDateTimeWithOptionalFormat()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDateTime">getDateTime()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAlpha">validateAlpha()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAlphaDash">validateAlphaDash()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateAlphaNum">validateAlphaNum()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateArray">validateArray()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateList">validateList()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredArrayKeys">validateRequiredArrayKeys()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateBetween">validateBetween()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateBoolean">validateBoolean()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateConfirmed">validateConfirmed()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateContains">validateContains()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateCurrentPassword">validateCurrentPassword()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDate">validateDate()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDateFormat">validateDateFormat()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDateEquals">validateDateEquals()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDecimal">validateDecimal()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDifferent">validateDifferent()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDigits">validateDigits()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDigitsBetween">validateDigitsBetween()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDimensions">validateDimensions()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_failsBasicDimensionChecks">failsBasicDimensionChecks()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_failsRatioCheck">failsRatioCheck()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDistinct">validateDistinct()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getDistinctValues">getDistinctValues()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_extractDistinctValues">extractDistinctValues()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateEmail">validateEmail()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExists">validateExists()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getExistCount">getExistCount()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateUnique">validateUnique()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getUniqueIds">getUniqueIds()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_prepareUniqueId">prepareUniqueId()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getUniqueExtra">getUniqueExtra()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_parseTable">parseTable()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getQueryColumn">getQueryColumn()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_guessColumnForQuery">guessColumnForQuery()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getExtraConditions">getExtraConditions()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExtensions">validateExtensions()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateFile">validateFile()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateFilled">validateFilled()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateGt">validateGt()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateLt">validateLt()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateGte">validateGte()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateLte">validateLte()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateLowercase">validateLowercase()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateUppercase">validateUppercase()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateHexColor">validateHexColor()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateImage">validateImage()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateIn">validateIn()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateInArray">validateInArray()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateInteger">validateInteger()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateIp">validateIp()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateIpv4">validateIpv4()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateIpv6">validateIpv6()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMacAddress">validateMacAddress()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateJson">validateJson()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMax">validateMax()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMaxDigits">validateMaxDigits()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMimes">validateMimes()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMimetypes">validateMimetypes()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_shouldBlockPhpUpload">shouldBlockPhpUpload()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMin">validateMin()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMinDigits">validateMinDigits()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMissing">validateMissing()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMissingIf">validateMissingIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMissingUnless">validateMissingUnless()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMissingWith">validateMissingWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMissingWithAll">validateMissingWithAll()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateMultipleOf">validateMultipleOf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateNullable">validateNullable()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateNotIn">validateNotIn()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateNumeric">validateNumeric()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validatePresent">validatePresent()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validatePresentIf">validatePresentIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validatePresentUnless">validatePresentUnless()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validatePresentWith">validatePresentWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validatePresentWithAll">validatePresentWithAll()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRegex">validateRegex()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateNotRegex">validateNotRegex()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequired">validateRequired()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredIf">validateRequiredIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredIfAccepted">validateRequiredIfAccepted()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredIfDeclined">validateRequiredIfDeclined()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibited">validateProhibited()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibitedIf">validateProhibitedIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibitedIfAccepted">validateProhibitedIfAccepted()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibitedIfDeclined">validateProhibitedIfDeclined()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibitedUnless">validateProhibitedUnless()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateProhibits">validateProhibits()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExclude">validateExclude()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExcludeIf">validateExcludeIf()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExcludeUnless">validateExcludeUnless()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredUnless">validateRequiredUnless()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExcludeWith">validateExcludeWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateExcludeWithout">validateExcludeWithout()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_parseDependentRuleParameters">parseDependentRuleParameters()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_shouldConvertToBoolean">shouldConvertToBoolean()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_convertValuesToBoolean">convertValuesToBoolean()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_convertValuesToNull">convertValuesToNull()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredWith">validateRequiredWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredWithAll">validateRequiredWithAll()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredWithout">validateRequiredWithout()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateRequiredWithoutAll">validateRequiredWithoutAll()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_anyFailingRequired">anyFailingRequired()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_allFailingRequired">allFailingRequired()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateSame">validateSame()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateSize">validateSize()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateSometimes">validateSometimes()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateStartsWith">validateStartsWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDoesntStartWith">validateDoesntStartWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateEndsWith">validateEndsWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateDoesntEndWith">validateDoesntEndWith()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateString">validateString()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateTimezone">validateTimezone()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateUrl">validateUrl()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateUlid">validateUlid()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_validateUuid">validateUuid()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_getSize">getSize()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_isValidFileInstance">isValidFileInstance()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_compare">compare()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_parseNamedParameters">parseNamedParameters()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_requireParameterCount">requireParameterCount()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_isSameType">isSameType()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_shouldBeNumeric">shouldBeNumeric()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_trim">trim()</a>, <a href="Illuminate.Validation.Concerns.ValidatesAttributes.html#_ensureExponentWithinAllowedRange">ensureExponentWithinAllowedRange()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="translator" id="$translator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Translation.Translator.html"><span title="Illuminate\Contracts\Translation\Translator">Translator</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$translator</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$translator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="container" id="$container">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$container</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$container">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="presenceVerifier" id="$presenceVerifier">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Validation.PresenceVerifierInterface.html"><span title="Illuminate\Validation\PresenceVerifierInterface">PresenceVerifierInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$presenceVerifier</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$presenceVerifier">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="failedRules" id="$failedRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$failedRules</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$failedRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excludeAttributes" id="$excludeAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$excludeAttributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$excludeAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="messages" id="$messages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.MessageBag.html"><span title="Illuminate\Support\MessageBag">MessageBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$messages</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$messages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="data" id="$data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$data</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$data">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initialRules" id="$initialRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$initialRules</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$initialRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rules" id="$rules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$rules</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="currentRule" id="$currentRule">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$currentRule</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$currentRule">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="implicitAttributes" id="$implicitAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$implicitAttributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$implicitAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="implicitAttributesFormatter" id="$implicitAttributesFormatter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$implicitAttributesFormatter</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$implicitAttributesFormatter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="distinctValues" id="$distinctValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$distinctValues</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$distinctValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="$after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$after</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="customMessages" id="$customMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$customMessages</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$customMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fallbackMessages" id="$fallbackMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fallbackMessages</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fallbackMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="customAttributes" id="$customAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$customAttributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$customAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="customValues" id="$customValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$customValues</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$customValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stopOnFirstFailure" id="$stopOnFirstFailure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$stopOnFirstFailure</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$stopOnFirstFailure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excludeUnvalidatedArrayKeys" id="$excludeUnvalidatedArrayKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$excludeUnvalidatedArrayKeys</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$excludeUnvalidatedArrayKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extensions" id="$extensions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$extensions</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$extensions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replacers" id="$replacers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$replacers</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$replacers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fileRules" id="$fileRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fileRules</var> = [<span class="php-str">'Between'</span>, <span class="php-str">'Dimensions'</span>, <span class="php-str">'Extensions'</span>, <span class="php-str">'File'</span>, <span class="php-str">'Image'</span>, <span class="php-str">'Max'</span>, <span class="php-str">'Mimes'</span>, <span class="php-str">'Mimetypes'</span>, <span class="php-str">'Min'</span>, <span class="php-str">'Size'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fileRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="implicitRules" id="$implicitRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$implicitRules</var> = [
+	<span class="php-str">'Accepted'</span>,
+	<span class="php-str">'AcceptedIf'</span>,
+	<span class="php-str">'Declined'</span>,
+	<span class="php-str">'DeclinedIf'</span>,
+	<span class="php-str">'Filled'</span>,
+	<span class="php-str">'Missing'</span>,
+	<span class="php-str">'MissingIf'</span>,
+	<span class="php-str">'MissingUnless'</span>,
+	<span class="php-str">'MissingWith'</span>,
+	<span class="php-str">'MissingWithAll'</span>,
+	<span class="php-str">'Present'</span>,
+	<span class="php-str">'PresentIf'</span>,
+	<span class="php-str">'PresentUnless'</span>,
+	<span class="php-str">'PresentWith'</span>,
+	<span class="php-str">'PresentWithAll'</span>,
+	<span class="php-str">'Required'</span>,
+	<span class="php-str">'RequiredIf'</span>,
+	<span class="php-str">'RequiredIfAccepted'</span>,
+	<span class="php-str">'RequiredIfDeclined'</span>,
+	<span class="php-str">'RequiredUnless'</span>,
+	<span class="php-str">'RequiredWith'</span>,
+	<span class="php-str">'RequiredWithAll'</span>,
+	<span class="php-str">'RequiredWithout'</span>,
+	<span class="php-str">'RequiredWithoutAll'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$implicitRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dependentRules" id="$dependentRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$dependentRules</var> = [
+	<span class="php-str">'After'</span>,
+	<span class="php-str">'AfterOrEqual'</span>,
+	<span class="php-str">'Before'</span>,
+	<span class="php-str">'BeforeOrEqual'</span>,
+	<span class="php-str">'Confirmed'</span>,
+	<span class="php-str">'Different'</span>,
+	<span class="php-str">'ExcludeIf'</span>,
+	<span class="php-str">'ExcludeUnless'</span>,
+	<span class="php-str">'ExcludeWith'</span>,
+	<span class="php-str">'ExcludeWithout'</span>,
+	<span class="php-str">'Gt'</span>,
+	<span class="php-str">'Gte'</span>,
+	<span class="php-str">'Lt'</span>,
+	<span class="php-str">'Lte'</span>,
+	<span class="php-str">'AcceptedIf'</span>,
+	<span class="php-str">'DeclinedIf'</span>,
+	<span class="php-str">'RequiredIf'</span>,
+	<span class="php-str">'RequiredIfAccepted'</span>,
+	<span class="php-str">'RequiredIfDeclined'</span>,
+	<span class="php-str">'RequiredUnless'</span>,
+	<span class="php-str">'RequiredWith'</span>,
+	<span class="php-str">'RequiredWithAll'</span>,
+	<span class="php-str">'RequiredWithout'</span>,
+	<span class="php-str">'RequiredWithoutAll'</span>,
+	<span class="php-str">'PresentIf'</span>,
+	<span class="php-str">'PresentUnless'</span>,
+	<span class="php-str">'PresentWith'</span>,
+	<span class="php-str">'PresentWithAll'</span>,
+	<span class="php-str">'Prohibited'</span>,
+	<span class="php-str">'ProhibitedIf'</span>,
+	<span class="php-str">'ProhibitedIfAccepted'</span>,
+	<span class="php-str">'ProhibitedIfDeclined'</span>,
+	<span class="php-str">'ProhibitedUnless'</span>,
+	<span class="php-str">'Prohibits'</span>,
+	<span class="php-str">'MissingIf'</span>,
+	<span class="php-str">'MissingUnless'</span>,
+	<span class="php-str">'MissingWith'</span>,
+	<span class="php-str">'MissingWithAll'</span>,
+	<span class="php-str">'Same'</span>,
+	<span class="php-str">'Unique'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dependentRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excludeRules" id="$excludeRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$excludeRules</var> = [<span class="php-str">'Exclude'</span>, <span class="php-str">'ExcludeIf'</span>, <span class="php-str">'ExcludeUnless'</span>, <span class="php-str">'ExcludeWith'</span>, <span class="php-str">'ExcludeWithout'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$excludeRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sizeRules" id="$sizeRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$sizeRules</var> = [<span class="php-str">'Size'</span>, <span class="php-str">'Between'</span>, <span class="php-str">'Min'</span>, <span class="php-str">'Max'</span>, <span class="php-str">'Gt'</span>, <span class="php-str">'Lt'</span>, <span class="php-str">'Gte'</span>, <span class="php-str">'Lte'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sizeRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="numericRules" id="$numericRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$numericRules</var> = [<span class="php-str">'Numeric'</span>, <span class="php-str">'Integer'</span>, <span class="php-str">'Decimal'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$numericRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultNumericRules" id="$defaultNumericRules">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaultNumericRules</var> = [<span class="php-str">'Numeric'</span>, <span class="php-str">'Integer'</span>, <span class="php-str">'Decimal'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultNumericRules">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="placeholderHash" id="$placeholderHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$placeholderHash</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$placeholderHash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exception" id="$exception">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">class-string&lt;<a href="Illuminate.Validation.ValidationException.html"><span title="Illuminate\Validation\ValidationException">ValidationException</span></a>&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$exception</var> = <a href="Illuminate.Validation.ValidationException.html"><span title="Illuminate\Validation\ValidationException">ValidationException</span></a>::class</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$exception">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureExponentWithinAllowedRangeUsing" id="$ensureExponentWithinAllowedRangeUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$ensureExponentWithinAllowedRangeUsing</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ensureExponentWithinAllowedRangeUsing">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

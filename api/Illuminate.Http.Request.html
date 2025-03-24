@@ -1,0 +1,2369 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Http\Request |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.html">Http</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Http.JsonResponse.html">
+							JsonResponse
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.RedirectResponse.html">
+							RedirectResponse
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Http.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.UploadedFile.html">
+							UploadedFile
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Http.FileHelpers.html">
+							FileHelpers
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.ResponseTrait.html">
+							ResponseTrait
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Http.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Http.Request.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Http.html">Http</a>\<a href="Illuminate.Http.Request.html">Request</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Symfony.Component.HttpFoundation.Request.html"><span title="Symfony\Component\HttpFoundation\Request">Request</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span title="Illuminate\Http\Concerns\CanBePrecognitive">CanBePrecognitive</span></a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span title="Illuminate\Http\Concerns\InteractsWithContentTypes">InteractsWithContentTypes</span></a>, <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span title="Illuminate\Http\Concerns\InteractsWithFlashData">InteractsWithFlashData</span></a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html"><span title="Illuminate\Http\Concerns\InteractsWithInput">InteractsWithInput</span></a>, <a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.HttpFoundation.Request.html"><span>Symfony\Component\HttpFoundation\Request</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Http\Request</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+		uses
+			<a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span title="Illuminate\Http\Concerns\CanBePrecognitive">CanBePrecognitive</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span title="Illuminate\Http\Concerns\InteractsWithContentTypes">InteractsWithContentTypes</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span title="Illuminate\Http\Concerns\InteractsWithFlashData">InteractsWithFlashData</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithInput.html"><span title="Illuminate\Http\Concerns\InteractsWithInput">InteractsWithInput</span></a>, 
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="capture" id="_capture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>capture(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Illuminate HTTP request from server variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Illuminate HTTP request from server variables.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_capture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="instance" id="_instance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>instance(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the Request instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the Request instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_instance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="method" id="_method">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>method(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the request method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the request method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_method">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uri" id="_uri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uri(): <a href="Illuminate.Support.Uri.html"><span title="Illuminate\Support\Uri">Uri</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a URI instance for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a URI instance for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="root" id="_root">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>root(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the root URL for the application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the root URL for the application.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_root">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="url" id="_url">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>url(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URL (no query string) for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URL (no query string) for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_url">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fullUrl" id="_fullUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fullUrl(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the full URL for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the full URL for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fullUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fullUrlWithQuery" id="_fullUrlWithQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fullUrlWithQuery(<span>array <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the full URL for the request with the added query string parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the full URL for the request with the added query string parameters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fullUrlWithQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fullUrlWithoutQuery" id="_fullUrlWithoutQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fullUrlWithoutQuery(<span>array|string <var>$keys</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the full URL for the request without the given query string parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the full URL for the request without the given query string parameters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fullUrlWithoutQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="_path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>path(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current path info for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current path info for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decodedPath" id="_decodedPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decodedPath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current decoded path info for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current decoded path info for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decodedPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="segment" id="_segment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>segment(<span>int <var>$index</var></span>, <span>string|null <var>$default</var> = <span class="php-kw">null</span></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a segment from the URI (1 based index).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a segment from the URI (1 based index).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_segment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="segments" id="_segments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>segments(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the segments for the request path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the segments for the request path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_segments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="is" id="_is">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>is(<span>mixed ...<var>$patterns</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the current request URI matches a pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the current request URI matches a pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_is">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="routeIs" id="_routeIs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>routeIs(<span>mixed ...<var>$patterns</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route name matches a given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route name matches a given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_routeIs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fullUrlIs" id="_fullUrlIs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fullUrlIs(<span>mixed ...<var>$patterns</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the current request URL and query string match a pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the current request URL and query string match a pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fullUrlIs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="host" id="_host">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>host(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the host name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the host name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_host">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="httpHost" id="_httpHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>httpHost(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the HTTP host being requested.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the HTTP host being requested.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_httpHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="schemeAndHttpHost" id="_schemeAndHttpHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>schemeAndHttpHost(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the scheme and HTTP host.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the scheme and HTTP host.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_schemeAndHttpHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ajax" id="_ajax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ajax(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the request is the result of an AJAX call.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the request is the result of an AJAX call.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ajax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pjax" id="_pjax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pjax(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the request is the result of a PJAX call.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the request is the result of a PJAX call.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pjax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prefetch" id="_prefetch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prefetch(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the request is the result of a prefetch call.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the request is the result of a prefetch call.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prefetch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="secure" id="_secure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>secure(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the request is over HTTPS.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the request is over HTTPS.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_secure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ip" id="_ip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ip(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the client IP address.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the client IP address.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ips" id="_ips">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ips(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the client IP addresses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the client IP addresses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ips">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="userAgent" id="_userAgent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>userAgent(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the client user agent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the client user agent.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_userAgent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span>array <var>$input</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new input into the current request's input array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new input into the current request's input array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeIfMissing" id="_mergeIfMissing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeIfMissing(<span>array <var>$input</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new input into the request's input, but only when that key is missing from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new input into the request's input, but only when that key is missing from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeIfMissing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replace" id="_replace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replace(<span>array <var>$input</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the input values for the current request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the input values for the current request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		This method belongs to Symfony HttpFoundation and is not usually needed when using Laravel.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>This method belongs to Symfony HttpFoundation and is not usually needed when using Laravel.</p>
+<p>Instead, you may use the &quot;input&quot; method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="json" id="_json">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>json(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): <a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a>|mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the JSON payload for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the JSON payload for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_json">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInputSource" id="_getInputSource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getInputSource(): <a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the input source for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the input source for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInputSource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createFrom" id="_createFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createFrom(<span><b><span class="active" title="Illuminate\Http\Request">Request</span></b> <var>$from</var></span>, <span><b><span class="active" title="Illuminate\Http\Request">Request</span></b>|null <var>$to</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new request instance from the given Laravel request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new request instance from the given Laravel request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createFromBase" id="_createFromBase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createFromBase(<span><a href="Symfony.Component.HttpFoundation.Request.html"><span title="Symfony\Component\HttpFoundation\Request">Request</span></a> <var>$request</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create an Illuminate request from a Symfony instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an Illuminate request from a Symfony instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createFromBase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="duplicate" id="_duplicate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>duplicate(
+	<span>?array <var>$query</var> = <span class="php-kw">null</span></span>,
+	<span>?array <var>$request</var> = <span class="php-kw">null</span></span>,
+	<span>?array <var>$attributes</var> = <span class="php-kw">null</span></span>,
+	<span>?array <var>$cookies</var> = <span class="php-kw">null</span></span>,
+	<span>?array <var>$files</var> = <span class="php-kw">null</span></span>,
+	<span>?array <var>$server</var> = <span class="php-kw">null</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$query</var>&nbsp;&nbsp;</td>
+										<td><p>The GET parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$request</var>&nbsp;&nbsp;</td>
+										<td><p>The POST parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attributes</var>&nbsp;&nbsp;</td>
+										<td><p>The request attributes (parameters parsed from the PATH_INFO, ...)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The COOKIE parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$files</var>&nbsp;&nbsp;</td>
+										<td><p>The FILES parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$server</var>&nbsp;&nbsp;</td>
+										<td><p>The SERVER parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.Request.html#_duplicate">						<code>Symfony\Component\HttpFoundation\Request::duplicate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_duplicate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterFiles" id="_filterFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filterFiles(<span>mixed <var>$files</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter the given array of files, removing any empty values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter the given array of files, removing any empty values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasSession" id="_hasSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasSession(<span>bool <var>$skipIfUninitialized</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$skipIfUninitialized</var>&nbsp;&nbsp;</td>
+										<td><p>When true, ignores factories injected by <code>setSessionFactory</code></p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.Request.html#_hasSession">						<code>Symfony\Component\HttpFoundation\Request::hasSession()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSession" id="_getSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSession(): <a href="Symfony.Component.HttpFoundation.Session.SessionInterface.html"><span title="Symfony\Component\HttpFoundation\Session\SessionInterface">SessionInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.Request.html#_getSession">						<code>Symfony\Component\HttpFoundation\Request::getSession()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="session" id="_session">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>session(): <a href="Illuminate.Contracts.Session.Session.html"><span title="Illuminate\Contracts\Session\Session">Session</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the session associated with the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the session associated with the request.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_session">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLaravelSession" id="_setLaravelSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setLaravelSession(<span><a href="Illuminate.Contracts.Session.Session.html"><span title="Illuminate\Contracts\Session\Session">Session</span></a> <var>$session</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the session instance on the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the session instance on the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLaravelSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRequestLocale" id="_setRequestLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRequestLocale(<span>string <var>$locale</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the locale for the request instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the locale for the request instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRequestLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefaultRequestLocale" id="_setDefaultRequestLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefaultRequestLocale(<span>string <var>$locale</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default locale for the request instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default locale for the request instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefaultRequestLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="user" id="_user">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>user(<span>string|null <var>$guard</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the user making the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the user making the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_user">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="route" id="_route">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>route(<span>string|null <var>$param</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>|object|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the route handling the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the route handling the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_route">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fingerprint" id="_fingerprint">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fingerprint(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a unique fingerprint for the request / route / IP address.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a unique fingerprint for the request / route / IP address.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fingerprint">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setJson" id="_setJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setJson(<span><a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a> <var>$json</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the JSON payload for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the JSON payload for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUserResolver" id="_getUserResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUserResolver(): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the user resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the user resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUserResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUserResolver" id="_setUserResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setUserResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the user resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the user resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUserResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRouteResolver" id="_getRouteResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRouteResolver(): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the route resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the route resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRouteResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRouteResolver" id="_setRouteResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRouteResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the route resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the route resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRouteResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the input and files for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the input and files for the request.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.Request.html#_toArray">						<code>Symfony\Component\HttpFoundation\Request::toArray()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">						<code>Illuminate\Contracts\Support\Arrayable::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>string <var>$offset</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given offset exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given offset exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>string <var>$offset</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>string <var>$offset</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>string <var>$offset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__isset" id="___isset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__isset(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check if an input element is set on the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check if an input element is set on the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___isset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an input element from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an input element from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validate" id="_validate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validate(<span>array <var>$rules</var></span>, <span>...<var>$params</var></span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateWithBag" id="_validateWithBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validateWithBag(<span>string <var>$errorBag</var></span>, <span>array <var>$rules</var></span>, <span>...<var>$params</var></span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateWithBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasValidSignature" id="_hasValidSignature">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasValidSignature(<span>bool <var>$absolute</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasValidSignature">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.HttpFoundation.Request.html"><span>Symfony\Component\HttpFoundation\Request</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.Request.html#___construct">__construct()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_initialize">initialize()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_createFromGlobals">createFromGlobals()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_create">create()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setFactory">setFactory()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#___clone">__clone()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#___toString">__toString()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_overrideGlobals">overrideGlobals()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setTrustedProxies">setTrustedProxies()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getTrustedProxies">getTrustedProxies()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getTrustedHeaderSet">getTrustedHeaderSet()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setTrustedHosts">setTrustedHosts()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getTrustedHosts">getTrustedHosts()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_normalizeQueryString">normalizeQueryString()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_enableHttpMethodParameterOverride">enableHttpMethodParameterOverride()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getHttpMethodParameterOverride">getHttpMethodParameterOverride()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_hasPreviousSession">hasPreviousSession()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setSession">setSession()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getClientIps">getClientIps()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getClientIp">getClientIp()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getScriptName">getScriptName()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPathInfo">getPathInfo()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getBasePath">getBasePath()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getBaseUrl">getBaseUrl()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getScheme">getScheme()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPort">getPort()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getUser">getUser()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPassword">getPassword()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getUserInfo">getUserInfo()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getHttpHost">getHttpHost()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getRequestUri">getRequestUri()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getSchemeAndHttpHost">getSchemeAndHttpHost()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getUri">getUri()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getUriForPath">getUriForPath()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getRelativeUriForPath">getRelativeUriForPath()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getQueryString">getQueryString()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isSecure">isSecure()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getHost">getHost()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setMethod">setMethod()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getMethod">getMethod()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getRealMethod">getRealMethod()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getMimeType">getMimeType()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getMimeTypes">getMimeTypes()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getFormat">getFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setFormat">setFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getRequestFormat">getRequestFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setRequestFormat">setRequestFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getContentTypeFormat">getContentTypeFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setDefaultLocale">setDefaultLocale()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getDefaultLocale">getDefaultLocale()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_setLocale">setLocale()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getLocale">getLocale()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isMethod">isMethod()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isMethodSafe">isMethodSafe()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isMethodIdempotent">isMethodIdempotent()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isMethodCacheable">isMethodCacheable()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getProtocolVersion">getProtocolVersion()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getContent">getContent()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPayload">getPayload()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getETags">getETags()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isNoCache">isNoCache()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPreferredFormat">getPreferredFormat()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getPreferredLanguage">getPreferredLanguage()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getLanguages">getLanguages()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getCharsets">getCharsets()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getEncodings">getEncodings()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_getAcceptableContentTypes">getAcceptableContentTypes()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isXmlHttpRequest">isXmlHttpRequest()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_preferSafeContent">preferSafeContent()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_prepareRequestUri">prepareRequestUri()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_prepareBaseUrl">prepareBaseUrl()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_prepareBasePath">prepareBasePath()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_preparePathInfo">preparePathInfo()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_initializeFormats">initializeFormats()</a>, <a href="Symfony.Component.HttpFoundation.Request.html#_isFromTrustedProxy">isFromTrustedProxy()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span>Illuminate\Http\Concerns\CanBePrecognitive</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Concerns.CanBePrecognitive.html#_filterPrecognitiveRules">filterPrecognitiveRules()</a>, <a href="Illuminate.Http.Concerns.CanBePrecognitive.html#_isAttemptingPrecognition">isAttemptingPrecognition()</a>, <a href="Illuminate.Http.Concerns.CanBePrecognitive.html#_isPrecognitive">isPrecognitive()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span>Illuminate\Http\Concerns\InteractsWithContentTypes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_isJson">isJson()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_expectsJson">expectsJson()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_wantsJson">wantsJson()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_accepts">accepts()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_prefers">prefers()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_acceptsAnyContentType">acceptsAnyContentType()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_acceptsJson">acceptsJson()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_acceptsHtml">acceptsHtml()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_matchesType">matchesType()</a>, <a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html#_format">format()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span>Illuminate\Http\Concerns\InteractsWithFlashData</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Concerns.InteractsWithFlashData.html#_old">old()</a>, <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html#_flash">flash()</a>, <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html#_flashOnly">flashOnly()</a>, <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html#_flashExcept">flashExcept()</a>, <a href="Illuminate.Http.Concerns.InteractsWithFlashData.html#_flush">flush()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Concerns.InteractsWithInput.html"><span>Illuminate\Http\Concerns\InteractsWithInput</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Concerns.InteractsWithInput.html#_server">server()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_hasHeader">hasHeader()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_header">header()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_bearerToken">bearerToken()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_keys">keys()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_all">all()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_input">input()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_fluent">fluent()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_query">query()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_post">post()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_hasCookie">hasCookie()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_cookie">cookie()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_allFiles">allFiles()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_convertUploadedFiles">convertUploadedFiles()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_hasFile">hasFile()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_isValidFile">isValidFile()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_file">file()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_data">data()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_retrieveItem">retrieveItem()</a>, <a href="Illuminate.Http.Concerns.InteractsWithInput.html#_dump">dump()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Symfony.Component.HttpFoundation.Request.html"><span>Symfony\Component\HttpFoundation\Request</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.Request.html#HEADER_FORWARDED"><code>HEADER_FORWARDED</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_FOR"><code>HEADER_X_FORWARDED_FOR</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_HOST"><code>HEADER_X_FORWARDED_HOST</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_PROTO"><code>HEADER_X_FORWARDED_PROTO</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_PORT"><code>HEADER_X_FORWARDED_PORT</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_PREFIX"><code>HEADER_X_FORWARDED_PREFIX</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_AWS_ELB"><code>HEADER_X_FORWARDED_AWS_ELB</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#HEADER_X_FORWARDED_TRAEFIK"><code>HEADER_X_FORWARDED_TRAEFIK</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_HEAD"><code>METHOD_HEAD</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_GET"><code>METHOD_GET</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_POST"><code>METHOD_POST</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_PUT"><code>METHOD_PUT</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_PATCH"><code>METHOD_PATCH</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_DELETE"><code>METHOD_DELETE</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_PURGE"><code>METHOD_PURGE</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_OPTIONS"><code>METHOD_OPTIONS</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_TRACE"><code>METHOD_TRACE</code></a>, <a href="Symfony.Component.HttpFoundation.Request.html#METHOD_CONNECT"><code>METHOD_CONNECT</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="json" id="$json">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$json</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$json">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertedFiles" id="$convertedFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$convertedFiles</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$convertedFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="userResolver" id="$userResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$userResolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$userResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="routeResolver" id="$routeResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$routeResolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$routeResolver">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Symfony.Component.HttpFoundation.Request.html"><span>Symfony\Component\HttpFoundation\Request</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Symfony.Component.HttpFoundation.Request.html#$trustedProxies">$trustedProxies</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$trustedHostPatterns">$trustedHostPatterns</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$trustedHosts">$trustedHosts</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$httpMethodParameterOverride">$httpMethodParameterOverride</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$attributes">$attributes</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$request">$request</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$query">$query</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$server">$server</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$files">$files</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$cookies">$cookies</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$headers">$headers</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$content">$content</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$languages">$languages</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$charsets">$charsets</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$encodings">$encodings</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$acceptableContentTypes">$acceptableContentTypes</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$pathInfo">$pathInfo</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$requestUri">$requestUri</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$baseUrl">$baseUrl</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$basePath">$basePath</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$method">$method</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$format">$format</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$session">$session</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$locale">$locale</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$defaultLocale">$defaultLocale</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$formats">$formats</a></var>, <var><a href="Symfony.Component.HttpFoundation.Request.html#$requestFactory">$requestFactory</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

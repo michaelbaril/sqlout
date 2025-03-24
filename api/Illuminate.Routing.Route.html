@@ -1,0 +1,3485 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Routing\Route |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Routing.html">Routing</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.AbstractRouteCollection.html">
+							AbstractRouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.CompiledRouteCollection.html">
+							CompiledRouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Controller.html">
+							Controller
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ControllerMiddlewareOptions.html">
+							ControllerMiddlewareOptions
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.PendingResourceRegistration.html">
+							PendingResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.PendingSingletonResourceRegistration.html">
+							PendingSingletonResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResourceRegistrar.html">
+							ResourceRegistrar
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Routing.Route.html">
+							Route
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteCollection.html">
+							RouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Router.html">
+							Router
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteRegistrar.html">
+							RouteRegistrar
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.RouteCollectionInterface.html">
+							RouteCollectionInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html">
+							CreatesRegularExpressionRouteConstraints
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.FiltersControllerMiddleware.html">
+							FiltersControllerMiddleware
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResolvesRouteDependencies.html">
+							ResolvesRouteDependencies
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Routing.Route.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Routing.html">Routing</a>\<a href="Illuminate.Routing.Route.html">Route</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html"><span title="Illuminate\Routing\CreatesRegularExpressionRouteConstraints">CreatesRegularExpressionRouteConstraints</span></a>, <a href="Illuminate.Routing.FiltersControllerMiddleware.html"><span title="Illuminate\Routing\FiltersControllerMiddleware">FiltersControllerMiddleware</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, <a href="Illuminate.Routing.ResolvesRouteDependencies.html"><span title="Illuminate\Routing\ResolvesRouteDependencies">ResolvesRouteDependencies</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>array|string <var>$methods</var></span>, <span>string <var>$uri</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|array <var>$action</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Route instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Route instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseAction" id="_parseAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseAction(<span>callable|array|null <var>$action</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the route action into a standard array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the route action into a standard array.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="run" id="_run">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>run(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the route action and return the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the route action and return the response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_run">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isControllerAction" id="_isControllerAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isControllerAction(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the route's action is a controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the route's action is a controller.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isControllerAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="runCallable" id="_runCallable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>runCallable(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the route action and return the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the route action and return the response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_runCallable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSerializedClosure" id="_isSerializedClosure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSerializedClosure(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route action is a serialized Closure.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route action is a serialized Closure.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSerializedClosure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="runController" id="_runController">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>runController(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the route action and return the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the route action and return the response.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpKernel.Exception.NotFoundHttpException.html"><span>Symfony\Component\HttpKernel\Exception\NotFoundHttpException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_runController">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getController" id="_getController">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getController(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the controller instance for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the controller instance for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getController">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getControllerClass" id="_getControllerClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getControllerClass(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the controller class used for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the controller class used for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getControllerClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getControllerMethod" id="_getControllerMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getControllerMethod(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the controller method used for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the controller method used for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getControllerMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseControllerCallback" id="_parseControllerCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseControllerCallback(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the controller.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseControllerCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flushController" id="_flushController">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flushController(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flush the cached container instance on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flush the cached container instance on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flushController">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="matches" id="_matches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>matches(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>, <span>bool <var>$includingMethod</var> = <span class="php-kw">true</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route matches a given request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route matches a given request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_matches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileRoute" id="_compileRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileRoute(): <a href="Symfony.Component.Routing.CompiledRoute.html"><span title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the route into a Symfony CompiledRoute instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the route into a Symfony CompiledRoute instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bind" id="_bind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bind(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Bind the route to a given request for execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Bind the route to a given request for execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bind">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasParameters" id="_hasParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasParameters(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route has parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route has parameters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasParameter" id="_hasParameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasParameter(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine a given parameter exists from the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine a given parameter exists from the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasParameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameter" id="_parameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameter(<span>string <var>$name</var></span>, <span>string|object|null <var>$default</var> = <span class="php-kw">null</span></span>): string|object|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a given parameter from the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a given parameter from the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="originalParameter" id="_originalParameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>originalParameter(<span>string <var>$name</var></span>, <span>string|null <var>$default</var> = <span class="php-kw">null</span></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get original value of a given parameter from the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get original value of a given parameter from the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_originalParameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setParameter" id="_setParameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setParameter(<span>string <var>$name</var></span>, <span>string|object|null <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a parameter to the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a parameter to the given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setParameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetParameter" id="_forgetParameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetParameter(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset a parameter on the route if it is set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset a parameter on the route if it is set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetParameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameters" id="_parameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameters(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the key / value list of parameters for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the key / value list of parameters for the route.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="originalParameters" id="_originalParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>originalParameters(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the key / value list of original parameters for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the key / value list of original parameters for the route.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_originalParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parametersWithoutNulls" id="_parametersWithoutNulls">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parametersWithoutNulls(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the key / value list of parameters without null values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the key / value list of parameters without null values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parametersWithoutNulls">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameterNames" id="_parameterNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameterNames(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the parameter names for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the parameter names for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameterNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileParameterNames" id="_compileParameterNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileParameterNames(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parameter names for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parameter names for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileParameterNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="signatureParameters" id="_signatureParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>signatureParameters(<span>array <var>$conditions</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parameters that are listed in the route / controller signature.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parameters that are listed in the route / controller signature.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_signatureParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindingFieldFor" id="_bindingFieldFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindingFieldFor(<span>string|int <var>$parameter</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the binding field for the given parameter.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the binding field for the given parameter.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindingFieldFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindingFields" id="_bindingFields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindingFields(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the binding fields for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the binding fields for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindingFields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setBindingFields" id="_setBindingFields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setBindingFields(<span>array <var>$bindingFields</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the binding fields for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the binding fields for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setBindingFields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parentOfParameter" id="_parentOfParameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parentOfParameter(<span>string <var>$parameter</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parent parameter of the given parameter.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parent parameter of the given parameter.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parentOfParameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTrashed" id="_withTrashed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withTrashed(<span>bool <var>$withTrashed</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Allow "trashed" models to be retrieved when resolving implicit model bindings for this route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Allow &quot;trashed&quot; models to be retrieved when resolving implicit model bindings for this route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withTrashed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allowsTrashedBindings" id="_allowsTrashedBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allowsTrashedBindings(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines if the route allows "trashed" models to be retrieved when resolving implicit model bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines if the route allows &quot;trashed&quot; models to be retrieved when resolving implicit model bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allowsTrashedBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaults" id="_defaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaults(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a default value for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a default value for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefaults" id="_setDefaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefaults(<span>array <var>$defaults</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default values for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default values for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="where" id="_where">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>where(<span>array|string <var>$name</var></span>, <span>string|null <var>$expression</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a regular expression requirement on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a regular expression requirement on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_where">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseWhere" id="_parseWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseWhere(<span>array|string <var>$name</var></span>, <span>string <var>$expression</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse arguments to the where method into an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse arguments to the where method into an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setWheres" id="_setWheres">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setWheres(<span>array <var>$wheres</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a list of regular expression requirements on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a list of regular expression requirements on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setWheres">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fallback" id="_fallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fallback(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Mark this route as a fallback route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Mark this route as a fallback route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFallback" id="_setFallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFallback(<span>bool <var>$isFallback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the fallback value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the fallback value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="methods" id="_methods">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>methods(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the HTTP verbs the route responds to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the HTTP verbs the route responds to.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_methods">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="httpOnly" id="_httpOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>httpOnly(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route only responds to HTTP requests.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route only responds to HTTP requests.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_httpOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="httpsOnly" id="_httpsOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>httpsOnly(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route only responds to HTTPS requests.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route only responds to HTTPS requests.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_httpsOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="secure" id="_secure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>secure(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route only responds to HTTPS requests.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route only responds to HTTPS requests.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_secure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="domain" id="_domain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>domain(<span><a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a>|string|null <var>$domain</var> = <span class="php-kw">null</span></span>): $this|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get or set the domain for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get or set the domain for the route.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_domain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDomain" id="_getDomain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDomain(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the domain defined for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the domain defined for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDomain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPrefix" id="_getPrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPrefix(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the prefix of the route instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the prefix of the route instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prefix" id="_prefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prefix(<span>string|null <var>$prefix</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a prefix to the route URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a prefix to the route URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updatePrefixOnAction" id="_updatePrefixOnAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updatePrefixOnAction(<span>string <var>$prefix</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the "prefix" attribute on the action array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the &quot;prefix&quot; attribute on the action array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updatePrefixOnAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uri" id="_uri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uri(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI associated with the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI associated with the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUri" id="_setUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setUri(<span>string <var>$uri</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the URI that the route responds to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the URI that the route responds to.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseUri" id="_parseUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseUri(<span>string <var>$uri</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the route URI and normalize / store any implicit binding fields.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the route URI and normalize / store any implicit binding fields.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the route instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the route instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="_name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>name(<span><a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a>|string <var>$name</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add or change the route name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add or change the route name.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="named" id="_named">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>named(<span>mixed ...<var>$patterns</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether the route's name matches the given patterns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether the route's name matches the given patterns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_named">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uses" id="_uses">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uses(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|array|string <var>$action</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the handler for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the handler for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uses">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addGroupNamespaceToStringUses" id="_addGroupNamespaceToStringUses">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addGroupNamespaceToStringUses(<span>string <var>$action</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse a string based action for the "uses" fluent method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse a string based action for the &quot;uses&quot; fluent method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addGroupNamespaceToStringUses">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getActionName" id="_getActionName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getActionName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the action name for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the action name for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getActionName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getActionMethod" id="_getActionMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getActionMethod(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the method name of the route action.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the method name of the route action.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getActionMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAction" id="_getAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAction(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the action array or one of its properties for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the action array or one of its properties for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAction" id="_setAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAction(<span>array <var>$action</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the action array for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the action array for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMissing" id="_getMissing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMissing(): <a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of the action that should be taken on a missing model exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of the action that should be taken on a missing model exception.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMissing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="missing" id="_missing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>missing(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$missing</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Define the callable that should be invoked on a missing model exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define the callable that should be invoked on a missing model exception.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_missing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="gatherMiddleware" id="_gatherMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>gatherMiddleware(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all middleware, including the ones from the controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all middleware, including the ones from the controller.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_gatherMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="middleware" id="_middleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>middleware(<span>array|string|null <var>$middleware</var> = <span class="php-kw">null</span></span>): $this|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get or set the middlewares attached to the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get or set the middlewares attached to the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_middleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="can" id="_can">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>can(<span><a href="UnitEnum.html"><span title="UnitEnum">UnitEnum</span></a>|string <var>$ability</var></span>, <span>array|string <var>$models</var> = []</span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the "Authorize" / "can" middleware should be applied to the route with the given options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the &quot;Authorize&quot; / &quot;can&quot; middleware should be applied to the route with the given options.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_can">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="controllerMiddleware" id="_controllerMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>controllerMiddleware(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the middleware for the route's controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the middleware for the route's controller.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_controllerMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="staticallyProvidedControllerMiddleware" id="_staticallyProvidedControllerMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>staticallyProvidedControllerMiddleware(<span>string <var>$class</var></span>, <span>string <var>$method</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the statically provided controller middleware for the given class and method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the statically provided controller middleware for the given class and method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_staticallyProvidedControllerMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutMiddleware" id="_withoutMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutMiddleware(<span>array|string <var>$middleware</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify middleware that should be removed from the given route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify middleware that should be removed from the given route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excludedMiddleware" id="_excludedMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>excludedMiddleware(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the middleware that should be removed from the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the middleware that should be removed from the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_excludedMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scopeBindings" id="_scopeBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scopeBindings(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the route should enforce scoping of multiple implicit Eloquent bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the route should enforce scoping of multiple implicit Eloquent bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scopeBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutScopedBindings" id="_withoutScopedBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutScopedBindings(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the route should not enforce scoping of multiple implicit Eloquent bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the route should not enforce scoping of multiple implicit Eloquent bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutScopedBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enforcesScopedBindings" id="_enforcesScopedBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enforcesScopedBindings(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route should enforce scoping of multiple implicit Eloquent bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route should enforce scoping of multiple implicit Eloquent bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enforcesScopedBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventsScopedBindings" id="_preventsScopedBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventsScopedBindings(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route should prevent scoping of multiple implicit Eloquent bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route should prevent scoping of multiple implicit Eloquent bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventsScopedBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="block" id="_block">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>block(<span>int|null <var>$lockSeconds</var> = <span class="php-num">10</span></span>, <span>int|null <var>$waitSeconds</var> = <span class="php-num">10</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the route should not allow concurrent requests from the same session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the route should not allow concurrent requests from the same session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_block">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutBlocking" id="_withoutBlocking">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutBlocking(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the route should allow concurrent requests from the same session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the route should allow concurrent requests from the same session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutBlocking">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="locksFor" id="_locksFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>locksFor(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the maximum number of seconds the route's session lock should be held for.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the maximum number of seconds the route's session lock should be held for.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_locksFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="waitsFor" id="_waitsFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>waitsFor(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the maximum number of seconds to wait while attempting to acquire a session lock.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the maximum number of seconds to wait while attempting to acquire a session lock.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_waitsFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="controllerDispatcher" id="_controllerDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>controllerDispatcher(): <a href="Illuminate.Routing.Contracts.ControllerDispatcher.html"><span title="Illuminate\Routing\Contracts\ControllerDispatcher">ControllerDispatcher</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the dispatcher for the route's controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the dispatcher for the route's controller.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_controllerDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getValidators" id="_getValidators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getValidators(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the route validators for the instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the route validators for the instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getValidators">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toSymfonyRoute" id="_toSymfonyRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toSymfonyRoute(): <a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the route to a Symfony route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the route to a Symfony route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toSymfonyRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptionalParameterNames" id="_getOptionalParameterNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptionalParameterNames(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the optional parameter names for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the optional parameter names for the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptionalParameterNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCompiled" id="_getCompiled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCompiled(): <a href="Symfony.Component.Routing.CompiledRoute.html"><span title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the compiled version of the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the compiled version of the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCompiled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRouter" id="_setRouter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRouter(<span><a href="Illuminate.Routing.Router.html"><span title="Illuminate\Routing\Router">Router</span></a> <var>$router</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the router instance on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the router instance on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRouter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setContainer" id="_setContainer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setContainer(<span><a href="Illuminate.Container.Container.html"><span title="Illuminate\Container\Container">Container</span></a> <var>$container</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the container instance on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the container instance on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setContainer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareForSerialization" id="_prepareForSerialization">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareForSerialization(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the route instance for serialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the route instance for serialization.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareForSerialization">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically access route parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically access route parameters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html"><span>Illuminate\Routing\CreatesRegularExpressionRouteConstraints</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereAlpha">whereAlpha()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereAlphaNumeric">whereAlphaNumeric()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereNumber">whereNumber()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereUlid">whereUlid()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereUuid">whereUuid()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereIn">whereIn()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_assignExpressionToParameters">assignExpressionToParameters()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Routing.FiltersControllerMiddleware.html"><span>Illuminate\Routing\FiltersControllerMiddleware</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Routing.FiltersControllerMiddleware.html#_methodExcludedByOptions">methodExcludedByOptions()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Routing.ResolvesRouteDependencies.html"><span>Illuminate\Routing\ResolvesRouteDependencies</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Routing.ResolvesRouteDependencies.html#_resolveClassMethodDependencies">resolveClassMethodDependencies()</a>, <a href="Illuminate.Routing.ResolvesRouteDependencies.html#_resolveMethodDependencies">resolveMethodDependencies()</a>, <a href="Illuminate.Routing.ResolvesRouteDependencies.html#_transformDependency">transformDependency()</a>, <a href="Illuminate.Routing.ResolvesRouteDependencies.html#_alreadyInParameters">alreadyInParameters()</a>, <a href="Illuminate.Routing.ResolvesRouteDependencies.html#_spliceIntoParameters">spliceIntoParameters()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="uri" id="$uri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$uri</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="methods" id="$methods">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$methods</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$methods">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="action" id="$action">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$action</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$action">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFallback" id="$isFallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$isFallback</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$isFallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="controller" id="$controller">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$controller</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$controller">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaults" id="$defaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaults</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wheres" id="$wheres">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$wheres</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$wheres">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameters" id="$parameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parameters</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameterNames" id="$parameterNames">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parameterNames</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parameterNames">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="originalParameters" id="$originalParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$originalParameters</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$originalParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTrashedBindings" id="$withTrashedBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$withTrashedBindings</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$withTrashedBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lockSeconds" id="$lockSeconds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$lockSeconds</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lockSeconds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="waitSeconds" id="$waitSeconds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$waitSeconds</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$waitSeconds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="computedMiddleware" id="$computedMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$computedMiddleware</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$computedMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compiled" id="$compiled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.Routing.CompiledRoute.html"><span title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$compiled</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$compiled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="router" id="$router">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Routing.Router.html"><span title="Illuminate\Routing\Router">Router</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$router</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$router">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="container" id="$container">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Container.Container.html"><span title="Illuminate\Container\Container">Container</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$container</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$container">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindingFields" id="$bindingFields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bindingFields</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bindingFields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validators" id="$validators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$validators</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$validators">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

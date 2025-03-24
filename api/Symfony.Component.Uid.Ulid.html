@@ -1,0 +1,492 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Uid\Ulid |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Uid.html">Uid</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Uid.AbstractUid.html">
+							AbstractUid
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Uid.Ulid.html">
+							Ulid
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Uid.HashableInterface.html">
+							HashableInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Uid.TimeBasedUidInterface.html">
+							TimeBasedUidInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Uid.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Uid.Ulid.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Uid.html">Uid</a>\<a href="Symfony.Component.Uid.Ulid.html">Ulid</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Symfony.Component.Uid.AbstractUid.html"><span title="Symfony\Component\Uid\AbstractUid">AbstractUid</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A ULID is lexicographically sortable and contains a 48-bit timestamp and 80-bit of crypto-random entropy.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a>
+
+		implements
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\Uid\Ulid</span></b>
+
+		implements
+			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>?string <var>$ulid</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValid" id="_isValid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValid(<span>string <var>$ulid</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether the passed value is valid for the constructor of the current class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the passed value is valid for the constructor of the current class.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_isValid">						<code>Symfony\Component\Uid\AbstractUid::isValid()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromString" id="_fromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromString(<span>string <var>$ulid</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates an AbstractUid from an identifier represented in any of the supported formats.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates an AbstractUid from an identifier represented in any of the supported formats.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_fromString">						<code>Symfony\Component\Uid\AbstractUid::fromString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBinary" id="_toBinary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBinary(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a raw binary string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a raw binary string.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_toBinary">						<code>Symfony\Component\Uid\AbstractUid::toBinary()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBinary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBase32" id="_toBase32">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBase32(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a base32 case insensitive string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a base32 case insensitive string.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_toBase32">						<code>Symfony\Component\Uid\AbstractUid::toBase32()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBase32">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDateTime" id="_getDateTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDateTime(): <a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.TimeBasedUidInterface.html#_getDateTime">						<code>Symfony\Component\Uid\TimeBasedUidInterface::getDateTime()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDateTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generate" id="_generate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>generate(<span>?<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$time</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generate">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.Uid.AbstractUid.html#_fromBinary">fromBinary()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_fromBase58">fromBase58()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_fromBase32">fromBase32()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_fromRfc4122">fromRfc4122()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_toBase58">toBase58()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_toRfc4122">toRfc4122()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_toHex">toHex()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_equals">equals()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_hash">hash()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_compare">compare()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_toString">toString()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#___toString">__toString()</a>, <a href="Symfony.Component.Uid.AbstractUid.html#_jsonSerialize">jsonSerialize()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="NIL" id="NIL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NIL = <span class="php-str">'00000000000000000000000000'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NIL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="MAX" id="MAX">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>MAX = <span class="php-str">'7ZZZZZZZZZZZZZZZZZZZZZZZZZ'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#MAX">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Symfony.Component.Uid.AbstractUid.html#$uid">$uid</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

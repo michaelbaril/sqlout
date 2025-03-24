@@ -1,0 +1,308 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Encryption\Encrypter |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Encryption.html">Encryption</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Contracts.Encryption.Encrypter.html">
+							Encrypter
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Encryption.DecryptException.html">
+							DecryptException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Encryption.EncryptException.html">
+							EncryptException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Encryption.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Encryption.Encrypter.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Encryption.html">Encryption</a>\<a href="Illuminate.Contracts.Encryption.Encrypter.html">Encrypter</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="encrypt" id="_encrypt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>encrypt(<span>mixed <var>$value</var></span>, <span>bool <var>$serialize</var> = <span class="php-kw">true</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Encrypt the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Encrypt the given value.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Encryption.EncryptException.html"><span>Illuminate\Contracts\Encryption\EncryptException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_encrypt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decrypt" id="_decrypt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decrypt(<span>string <var>$payload</var></span>, <span>bool <var>$unserialize</var> = <span class="php-kw">true</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Decrypt the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decrypt the given value.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Encryption.DecryptException.html"><span>Illuminate\Contracts\Encryption\DecryptException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decrypt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKey" id="_getKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the encryption key that the encrypter is currently using.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the encryption key that the encrypter is currently using.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAllKeys" id="_getAllKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAllKeys(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current encryption key and all previous encryption keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current encryption key and all previous encryption keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAllKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreviousKeys" id="_getPreviousKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPreviousKeys(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the previous encryption keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the previous encryption keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreviousKeys">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

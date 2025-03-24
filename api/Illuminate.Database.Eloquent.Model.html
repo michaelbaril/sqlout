@@ -1,0 +1,5874 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Eloquent\Model |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.HigherOrderBuilderProxy.html">
+							HigherOrderBuilderProxy
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Model.html">
+							Model
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.PendingHasThroughRelationship.html">
+							PendingHasThroughRelationship
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Scope.html">
+							Scope
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.HasCollection.html">
+							HasCollection
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.InvalidCastException.html">
+							InvalidCastException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.JsonEncodingException.html">
+							JsonEncodingException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.MassAssignmentException.html">
+							MassAssignmentException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.MissingAttributeException.html">
+							MissingAttributeException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.ModelNotFoundException.html">
+							ModelNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.RelationNotFoundException.html">
+							RelationNotFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Model.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="Illuminate.Database.Eloquent.Model.html">Model</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, <a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, <a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, <a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, <a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, <a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a>, <a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, <a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Model</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>array <var>$attributes</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Eloquent model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Eloquent model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bootIfNotBooted" id="_bootIfNotBooted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bootIfNotBooted(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Check if the model needs to be booted and if so, do it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check if the model needs to be booted and if so, do it.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bootIfNotBooted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="booting" id="_booting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>booting(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform any actions required before the model boots.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform any actions required before the model boots.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_booting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="boot" id="_boot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>boot(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Bootstrap the model and its traits.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Bootstrap the model and its traits.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_boot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bootTraits" id="_bootTraits">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bootTraits(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Boot all of the bootable traits on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Boot all of the bootable traits on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bootTraits">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initializeTraits" id="_initializeTraits">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initializeTraits(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Initialize any initializable traits on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initialize any initializable traits on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializeTraits">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="booted" id="_booted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>booted(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform any actions required after the model boots.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform any actions required after the model boots.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_booted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clearBootedModels" id="_clearBootedModels">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clearBootedModels(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Clear the list of booted models so they will be re-booted.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clear the list of booted models so they will be re-booted.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clearBootedModels">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutTouching" id="_withoutTouching">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutTouching(<span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disables relationship model touching for the current class during given callback scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disables relationship model touching for the current class during given callback scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutTouching">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutTouchingOn" id="_withoutTouchingOn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutTouchingOn(<span>array <var>$models</var></span>, <span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disables relationship model touching for the given model classes during given callback scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disables relationship model touching for the given model classes during given callback scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutTouchingOn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isIgnoringTouch" id="_isIgnoringTouch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isIgnoringTouch(<span>string|null <var>$class</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given model is ignoring touches.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given model is ignoring touches.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isIgnoringTouch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shouldBeStrict" id="_shouldBeStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shouldBeStrict(<span>bool <var>$shouldBeStrict</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that models should prevent lazy loading, silently discarding attributes, and accessing missing attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that models should prevent lazy loading, silently discarding attributes, and accessing missing attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shouldBeStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventLazyLoading" id="_preventLazyLoading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventLazyLoading(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prevent model relationships from being lazy loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prevent model relationships from being lazy loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventLazyLoading">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleLazyLoadingViolationUsing" id="_handleLazyLoadingViolationUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleLazyLoadingViolationUsing(<span>callable|null <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a callback that is responsible for handling lazy loading violations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a callback that is responsible for handling lazy loading violations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleLazyLoadingViolationUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventSilentlyDiscardingAttributes" id="_preventSilentlyDiscardingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventSilentlyDiscardingAttributes(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prevent non-fillable attributes from being silently discarded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prevent non-fillable attributes from being silently discarded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventSilentlyDiscardingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleDiscardedAttributeViolationUsing" id="_handleDiscardedAttributeViolationUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleDiscardedAttributeViolationUsing(<span>callable|null <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a callback that is responsible for handling discarded attribute violations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a callback that is responsible for handling discarded attribute violations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleDiscardedAttributeViolationUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventAccessingMissingAttributes" id="_preventAccessingMissingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventAccessingMissingAttributes(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prevent accessing missing attributes on retrieved models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prevent accessing missing attributes on retrieved models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventAccessingMissingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleMissingAttributeViolationUsing" id="_handleMissingAttributeViolationUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleMissingAttributeViolationUsing(<span>callable|null <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a callback that is responsible for handling missing attribute violations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a callback that is responsible for handling missing attribute violations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleMissingAttributeViolationUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutBroadcasting" id="_withoutBroadcasting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutBroadcasting(<span>callable <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback without broadcasting any model events for all model types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback without broadcasting any model events for all model types.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutBroadcasting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fill" id="_fill">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fill(<span>array <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Fill the model with an array of attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fill the model with an array of attributes.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.MassAssignmentException.html"><span>Illuminate\Database\Eloquent\MassAssignmentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fill">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forceFill" id="_forceFill">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forceFill(<span>array <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Fill the model with an array of attributes. Force mass assignment.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fill the model with an array of attributes. Force mass assignment.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forceFill">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="qualifyColumn" id="_qualifyColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>qualifyColumn(<span>string <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Qualify the given column name by the model's table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Qualify the given column name by the model's table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_qualifyColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="qualifyColumns" id="_qualifyColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>qualifyColumns(<span>array <var>$columns</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Qualify the given columns with the model's table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Qualify the given columns with the model's table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_qualifyColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newInstance" id="_newInstance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newInstance(<span>array <var>$attributes</var> = []</span>, <span>bool <var>$exists</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new instance of the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new instance of the given model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newInstance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newFromBuilder" id="_newFromBuilder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newFromBuilder(<span>array <var>$attributes</var> = []</span>, <span>string|null <var>$connection</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new model instance that is existing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new model instance that is existing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newFromBuilder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="on" id="_on">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>on(<span>string|null <var>$connection</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Begin querying the model on a given connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin querying the model on a given connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_on">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="onWriteConnection" id="_onWriteConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>onWriteConnection(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Begin querying the model on the write connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin querying the model on the write connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_onWriteConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the models from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the models from the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="with" id="_with">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>with(<span>array|string <var>$relations</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Begin querying a model with eager loading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin querying a model with eager loading.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_with">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="load" id="_load">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>load(<span>array|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relations on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relations on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_load">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorph" id="_loadMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorph(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationships on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationships on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMissing" id="_loadMissing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMissing(<span>array|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relations on the model if they are not already eager loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relations on the model if they are not already eager loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMissing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadAggregate" id="_loadAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadAggregate(<span>array|string <var>$relations</var></span>, <span>string <var>$column</var></span>, <span>string|null <var>$function</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation's column aggregations on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation's column aggregations on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadCount" id="_loadCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadCount(<span>array|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation counts on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation counts on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMax" id="_loadMax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMax(<span>array|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation max column values on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation max column values on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMin" id="_loadMin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMin(<span>array|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation min column values on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation min column values on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadSum" id="_loadSum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadSum(<span>array|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation's column summations on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation's column summations on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadSum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadAvg" id="_loadAvg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadAvg(<span>array|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relation average column values on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relation average column values on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadAvg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadExists" id="_loadExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadExists(<span>array|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load related model existence values on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load related model existence values on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphAggregate" id="_loadMorphAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphAggregate(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>, <span>string <var>$column</var></span>, <span>string|null <var>$function</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship column aggregation on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship column aggregation on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphCount" id="_loadMorphCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphCount(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship counts on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship counts on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphMax" id="_loadMorphMax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphMax(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship max column values on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship max column values on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphMax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphMin" id="_loadMorphMin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphMin(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship min column values on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship min column values on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphMin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphSum" id="_loadMorphSum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphSum(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship column summations on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship column summations on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphSum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphAvg" id="_loadMorphAvg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphAvg(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load relationship average column values on the polymorphic relation of a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load relationship average column values on the polymorphic relation of a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphAvg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="increment" id="_increment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>increment(<span>string <var>$column</var></span>, <span>float|int <var>$amount</var> = <span class="php-num">1</span></span>, <span>array <var>$extra</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Increment a column's value by a given amount.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Increment a column's value by a given amount.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_increment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decrement" id="_decrement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decrement(<span>string <var>$column</var></span>, <span>float|int <var>$amount</var> = <span class="php-num">1</span></span>, <span>array <var>$extra</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Decrement a column's value by a given amount.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decrement a column's value by a given amount.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decrement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="incrementOrDecrement" id="_incrementOrDecrement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>incrementOrDecrement(<span>string <var>$column</var></span>, <span>float|int <var>$amount</var></span>, <span>array <var>$extra</var></span>, <span>string <var>$method</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the increment or decrement method on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the increment or decrement method on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_incrementOrDecrement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>update(<span>array <var>$attributes</var> = []</span>, <span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the model in the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the model in the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateOrFail" id="_updateOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateOrFail(<span>array <var>$attributes</var> = []</span>, <span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the model in the database within a transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the model in the database within a transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateQuietly" id="_updateQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateQuietly(<span>array <var>$attributes</var> = []</span>, <span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the model in the database without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the model in the database without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="incrementQuietly" id="_incrementQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>incrementQuietly(<span>string <var>$column</var></span>, <span>float|int <var>$amount</var> = <span class="php-num">1</span></span>, <span>array <var>$extra</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Increment a column's value by a given amount without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Increment a column's value by a given amount without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_incrementQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decrementQuietly" id="_decrementQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decrementQuietly(<span>string <var>$column</var></span>, <span>float|int <var>$amount</var> = <span class="php-num">1</span></span>, <span>array <var>$extra</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Decrement a column's value by a given amount without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decrement a column's value by a given amount without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decrementQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="push" id="_push">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>push(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the model and all of its relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the model and all of its relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_push">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pushQuietly" id="_pushQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pushQuietly(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the model and all of its relationships without raising any events to the parent model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the model and all of its relationships without raising any events to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pushQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saveQuietly" id="_saveQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saveQuietly(<span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the model to the database without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the model to the database without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saveQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>save(<span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the model to the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the model to the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saveOrFail" id="_saveOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saveOrFail(<span>array <var>$options</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the model to the database within a transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the model to the database within a transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saveOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="finishSave" id="_finishSave">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>finishSave(<span>array <var>$options</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform any actions that are necessary after the model is saved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform any actions that are necessary after the model is saved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_finishSave">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performUpdate" id="_performUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>performUpdate(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform a model update operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform a model update operation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeysForSelectQuery" id="_setKeysForSelectQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeysForSelectQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the keys for a select query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the keys for a select query.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html#_setKeysForSelectQuery">						<code>Illuminate\Database\Eloquent\Relations\MorphPivot::setKeysForSelectQuery()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeysForSelectQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeyForSelectQuery" id="_getKeyForSelectQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKeyForSelectQuery(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the primary key value for a select query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the primary key value for a select query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeyForSelectQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeysForSaveQuery" id="_setKeysForSaveQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeysForSaveQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the keys for a save update query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the keys for a save update query.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html#_setKeysForSaveQuery">						<code>Illuminate\Database\Eloquent\Relations\MorphPivot::setKeysForSaveQuery()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeysForSaveQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeyForSaveQuery" id="_getKeyForSaveQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKeyForSaveQuery(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the primary key value for a save query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the primary key value for a save query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeyForSaveQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performInsert" id="_performInsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>performInsert(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform a model insert operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform a model insert operation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performInsert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="insertAndSetId" id="_insertAndSetId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>insertAndSetId(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>, <span>array <var>$attributes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Insert the given attributes and set the ID on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Insert the given attributes and set the ID on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_insertAndSetId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="destroy" id="_destroy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>destroy(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|array|int|string <var>$ids</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Destroy the models for the given IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Destroy the models for the given IDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_destroy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete the model from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete the model from the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html#_delete">						<code>Illuminate\Database\Eloquent\Relations\MorphPivot::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteQuietly" id="_deleteQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleteQuietly(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete the model from the database without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete the model from the database without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteOrFail" id="_deleteOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleteOrFail(): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete the model from the database within a transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete the model from the database within a transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forceDelete" id="_forceDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forceDelete(): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Force a hard delete on a soft deleted model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Force a hard delete on a soft deleted model.</p>
+<p>This method protects developers from running forceDelete when the trait is missing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forceDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forceDestroy" id="_forceDestroy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forceDestroy(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|array|int|string <var>$ids</var></span>): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Force a hard destroy on a soft deleted model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Force a hard destroy on a soft deleted model.</p>
+<p>This method protects developers from running forceDestroy when the trait is missing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forceDestroy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performDeleteOnModel" id="_performDeleteOnModel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>performDeleteOnModel(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the actual delete query on this model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the actual delete query on this model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performDeleteOnModel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="_query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>query(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Begin querying the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin querying the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQuery" id="_newQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder for the model's table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder for the model's table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newModelQuery" id="_newModelQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newModelQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder that doesn't have any global scopes or eager loading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder that doesn't have any global scopes or eager loading.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newModelQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryWithoutRelationships" id="_newQueryWithoutRelationships">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryWithoutRelationships(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder with no relationships loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder with no relationships loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryWithoutRelationships">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registerGlobalScopes" id="_registerGlobalScopes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>registerGlobalScopes(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$builder</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Register the global scopes for this builder instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register the global scopes for this builder instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_registerGlobalScopes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryWithoutScopes" id="_newQueryWithoutScopes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryWithoutScopes(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder that doesn't have any global scopes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder that doesn't have any global scopes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryWithoutScopes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryWithoutScope" id="_newQueryWithoutScope">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryWithoutScope(<span><a href="Illuminate.Database.Eloquent.Scope.html"><span title="Illuminate\Database\Eloquent\Scope">Scope</span></a>|string <var>$scope</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query instance without a given scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query instance without a given scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryWithoutScope">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryForRestoration" id="_newQueryForRestoration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryForRestoration(<span>array|int <var>$ids</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query to restore one or more models by their queueable IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query to restore one or more models by their queueable IDs.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html#_newQueryForRestoration">						<code>Illuminate\Database\Eloquent\Relations\MorphPivot::newQueryForRestoration()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryForRestoration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newEloquentBuilder" id="_newEloquentBuilder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newEloquentBuilder(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Eloquent query builder for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Eloquent query builder for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newEloquentBuilder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newBaseQueryBuilder" id="_newBaseQueryBuilder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newBaseQueryBuilder(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder instance for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder instance for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newBaseQueryBuilder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newPivot" id="_newPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newPivot(<span><b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b> <var>$parent</var></span>, <span>array <var>$attributes</var></span>, <span>string <var>$table</var></span>, <span>bool <var>$exists</var></span>, <span>string|null <var>$using</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pivot model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pivot model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasNamedScope" id="_hasNamedScope">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasNamedScope(<span>string <var>$scope</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model has a given scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model has a given scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasNamedScope">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callNamedScope" id="_callNamedScope">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callNamedScope(<span>string <var>$scope</var></span>, <span>array <var>$parameters</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the given named scope if possible.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the given named scope if possible.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callNamedScope">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the model instance to an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the model instance to an array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">						<code>Illuminate\Contracts\Support\Arrayable::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toJson" id="_toJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toJson(<span>int <var>$options</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the model instance to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the model instance to JSON.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.JsonEncodingException.html"><span>Illuminate\Database\Eloquent\JsonEncodingException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Jsonable.html#_toJson">						<code>Illuminate\Contracts\Support\Jsonable::toJson()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object into something JSON serializable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object into something JSON serializable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fresh" id="_fresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fresh(<span>array|string <var>$with</var> = []</span>): static|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Reload a fresh model instance from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reload a fresh model instance from the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="refresh" id="_refresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>refresh(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Reload the current model instance with fresh attributes from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reload the current model instance with fresh attributes from the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_refresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replicate" id="_replicate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replicate(<span>array|null <var>$except</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Clone the model into a new, non-existing instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clone the model into a new, non-existing instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replicate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replicateQuietly" id="_replicateQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replicateQuietly(<span>array|null <var>$except</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Clone the model into a new, non-existing instance without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clone the model into a new, non-existing instance without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replicateQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="is" id="_is">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>is(<span><b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null <var>$model</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if two models have the same ID and belong to the same table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if two models have the same ID and belong to the same table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_is">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNot" id="_isNot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNot(<span><b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null <var>$model</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if two models are not the same.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if two models are not the same.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConnection" id="_getConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConnection(): <a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the database connection for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the database connection for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConnectionName" id="_getConnectionName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConnectionName(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current connection name for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current connection name for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConnectionName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConnection" id="_setConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setConnection(<span>string|null <var>$name</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the connection associated with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the connection associated with the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveConnection" id="_resolveConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveConnection(<span>string|null <var>$connection</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve a connection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve a connection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConnectionResolver" id="_getConnectionResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConnectionResolver(): <a href="Illuminate.Database.ConnectionResolverInterface.html"><span title="Illuminate\Database\ConnectionResolverInterface">ConnectionResolverInterface</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the connection resolver instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the connection resolver instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConnectionResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConnectionResolver" id="_setConnectionResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setConnectionResolver(<span><a href="Illuminate.Database.ConnectionResolverInterface.html"><span title="Illuminate\Database\ConnectionResolverInterface">ConnectionResolverInterface</span></a> <var>$resolver</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the connection resolver instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the connection resolver instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConnectionResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsetConnectionResolver" id="_unsetConnectionResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsetConnectionResolver(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the connection resolver for models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the connection resolver for models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsetConnectionResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTable" id="_getTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTable(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table associated with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table associated with the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTable" id="_setTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTable(<span>string <var>$table</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the table associated with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the table associated with the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeyName" id="_getKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the primary key for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the primary key for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeyName" id="_setKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeyName(<span>string <var>$key</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the primary key for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the primary key for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedKeyName" id="_getQualifiedKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table qualified key name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table qualified key name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeyType" id="_getKeyType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKeyType(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the auto-incrementing key type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the auto-incrementing key type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeyType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeyType" id="_setKeyType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeyType(<span>string <var>$type</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the data type for the primary key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the data type for the primary key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeyType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIncrementing" id="_getIncrementing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIncrementing(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value indicating whether the IDs are incrementing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value indicating whether the IDs are incrementing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIncrementing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIncrementing" id="_setIncrementing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setIncrementing(<span>bool <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set whether IDs are incrementing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set whether IDs are incrementing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIncrementing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKey" id="_getKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKey(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of the model's primary key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of the model's primary key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableId" id="_getQueueableId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableId(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the queueable identity for the entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the queueable identity for the entity.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html#_getQueueableId">						<code>Illuminate\Database\Eloquent\Relations\MorphPivot::getQueueableId()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableEntity.html#_getQueueableId">						<code>Illuminate\Contracts\Queue\QueueableEntity::getQueueableId()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableRelations" id="_getQueueableRelations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableRelations(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the queueable relationships for the entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the queueable relationships for the entity.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableEntity.html#_getQueueableRelations">						<code>Illuminate\Contracts\Queue\QueueableEntity::getQueueableRelations()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableRelations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableConnection" id="_getQueueableConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableConnection(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the queueable connection for the entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the queueable connection for the entity.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableEntity.html#_getQueueableConnection">						<code>Illuminate\Contracts\Queue\QueueableEntity::getQueueableConnection()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRouteKey" id="_getRouteKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRouteKey(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of the model's route key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of the model's route key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Routing.UrlRoutable.html#_getRouteKey">						<code>Illuminate\Contracts\Routing\UrlRoutable::getRouteKey()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRouteKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRouteKeyName" id="_getRouteKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRouteKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the route key for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the route key for the model.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Routing.UrlRoutable.html#_getRouteKeyName">						<code>Illuminate\Contracts\Routing\UrlRoutable::getRouteKeyName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRouteKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveRouteBinding" id="_resolveRouteBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveRouteBinding(<span>mixed <var>$value</var></span>, <span>string|null <var>$field</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the model for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the model for a bound value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Routing.UrlRoutable.html#_resolveRouteBinding">						<code>Illuminate\Contracts\Routing\UrlRoutable::resolveRouteBinding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveRouteBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveSoftDeletableRouteBinding" id="_resolveSoftDeletableRouteBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveSoftDeletableRouteBinding(<span>mixed <var>$value</var></span>, <span>string|null <var>$field</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the model for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the model for a bound value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveSoftDeletableRouteBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveChildRouteBinding" id="_resolveChildRouteBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveChildRouteBinding(<span>string <var>$childType</var></span>, <span>mixed <var>$value</var></span>, <span>string|null <var>$field</var></span>): <b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the child model for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the child model for a bound value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Routing.UrlRoutable.html#_resolveChildRouteBinding">						<code>Illuminate\Contracts\Routing\UrlRoutable::resolveChildRouteBinding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveChildRouteBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveSoftDeletableChildRouteBinding" id="_resolveSoftDeletableChildRouteBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveSoftDeletableChildRouteBinding(<span>string <var>$childType</var></span>, <span>mixed <var>$value</var></span>, <span>string|null <var>$field</var></span>): <b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the child model for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the child model for a bound value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveSoftDeletableChildRouteBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveChildRouteBindingQuery" id="_resolveChildRouteBindingQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveChildRouteBindingQuery(<span>string <var>$childType</var></span>, <span>mixed <var>$value</var></span>, <span>string|null <var>$field</var></span>): <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;<b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>, $this, *&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the child model query for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the child model query for a bound value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveChildRouteBindingQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="childRouteBindingRelationshipName" id="_childRouteBindingRelationshipName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>childRouteBindingRelationshipName(<span>string <var>$childType</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the child route model binding relationship name for the given child type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the child route model binding relationship name for the given child type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_childRouteBindingRelationshipName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveRouteBindingQuery" id="_resolveRouteBindingQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveRouteBindingQuery(<span><b><span class="active" title="Illuminate\Database\Eloquent\Model">Model</span></b>|<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>|<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a> <var>$query</var></span>, <span>mixed <var>$value</var></span>, <span>string|null <var>$field</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve the model for a bound value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve the model for a bound value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveRouteBindingQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getForeignKey" id="_getForeignKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getForeignKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default foreign key name for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default foreign key name for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getForeignKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPerPage" id="_getPerPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPerPage(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of models to return per page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of models to return per page.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPerPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPerPage" id="_setPerPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPerPage(<span>int <var>$perPage</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the number of models to return per page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the number of models to return per page.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPerPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventsLazyLoading" id="_preventsLazyLoading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventsLazyLoading(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if lazy loading is disabled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if lazy loading is disabled.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventsLazyLoading">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventsSilentlyDiscardingAttributes" id="_preventsSilentlyDiscardingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventsSilentlyDiscardingAttributes(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if discarding guarded attribute fills is disabled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if discarding guarded attribute fills is disabled.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventsSilentlyDiscardingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventsAccessingMissingAttributes" id="_preventsAccessingMissingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preventsAccessingMissingAttributes(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if accessing missing attributes is disabled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if accessing missing attributes is disabled.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preventsAccessingMissingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="broadcastChannelRoute" id="_broadcastChannelRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>broadcastChannelRoute(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the broadcast channel route definition that is associated with the given entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the broadcast channel route definition that is associated with the given entity.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html#_broadcastChannelRoute">						<code>Illuminate\Contracts\Broadcasting\HasBroadcastChannel::broadcastChannelRoute()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_broadcastChannelRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="broadcastChannel" id="_broadcastChannel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>broadcastChannel(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the broadcast channel name that is associated with the given entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the broadcast channel name that is associated with the given entity.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html#_broadcastChannel">						<code>Illuminate\Contracts\Broadcasting\HasBroadcastChannel::broadcastChannel()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_broadcastChannel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically retrieve attributes on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically retrieve attributes on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__set" id="___set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__set(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically set attributes on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically set attributes on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___set">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>mixed <var>$offset</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given attribute exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given attribute exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>mixed <var>$offset</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value for a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value for a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value for a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value for a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>mixed <var>$offset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the value for a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the value for a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__isset" id="___isset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__isset(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an attribute or relation exists on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an attribute or relation exists on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___isset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unset" id="___unset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unset(<span>string <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset an attribute on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset an attribute on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__call(<span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle dynamic method calls into the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle dynamic method calls into the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__callStatic" id="___callStatic">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__callStatic(<span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle dynamic static method calls into the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle dynamic static method calls into the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___callStatic">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the model to its string representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the model to its string representation.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="_escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeWhenCastingToString(<span>bool <var>$escape</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the object's string representation should be escaped when __toString is invoked.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the object's string representation should be escaped when __toString is invoked.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html#_escapeWhenCastingToString">						<code>Illuminate\Contracts\Support\CanBeEscapedWhenCastToString::escapeWhenCastingToString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeWhenCastingToString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__sleep" id="___sleep">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__sleep(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the object for serialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the object for serialization.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___sleep">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__wakeup" id="___wakeup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__wakeup(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		When a model is being unserialized, check if it needs to be booted.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>When a model is being unserialized, check if it needs to be booted.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___wakeup">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HasAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_initializeHasAttributes">initializeHasAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_attributesToArray">attributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addDateAttributesToArray">addDateAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addMutatedAttributesToArray">addMutatedAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addCastAttributesToArray">addCastAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableAttributes">getArrayableAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableAppends">getArrayableAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_relationsToArray">relationsToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableRelations">getArrayableRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttribute">hasAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttribute">getAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_throwMissingAttributeExceptionIfApplicable">throwMissingAttributeExceptionIfApplicable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeValue">getAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeFromArray">getAttributeFromArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRelationValue">getRelationValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isRelation">isRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_handleLazyLoadingViolation">handleLazyLoadingViolation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRelationshipFromMethod">getRelationshipFromMethod()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasGetMutator">hasGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeMutator">hasAttributeMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeGetMutator">hasAttributeGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAnyGetMutator">hasAnyGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttribute">mutateAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttributeMarkedAttribute">mutateAttributeMarkedAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttributeForArray">mutateAttributeForArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeCasts">mergeCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_ensureCastsAreStringValues">ensureCastsAreStringValues()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttribute">castAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getClassCastableAttributeValue">getClassCastableAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getEnumCastableAttributeValue">getEnumCastableAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getCastType">getCastType()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_deviateClassCastableAttribute">deviateClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_serializeClassCastableAttribute">serializeClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isCustomDateTimeCast">isCustomDateTimeCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isImmutableCustomDateTimeCast">isImmutableCustomDateTimeCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDecimalCast">isDecimalCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAttribute">setAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasSetMutator">hasSetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeSetMutator">hasAttributeSetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setMutatedAttributeValue">setMutatedAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAttributeMarkedMutatedAttributeValue">setAttributeMarkedMutatedAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateAttribute">isDateAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fillJsonAttribute">fillJsonAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setClassCastableAttribute">setClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setEnumCastableAttribute">setEnumCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getEnumCaseFromValue">getEnumCaseFromValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getStorableEnumValue">getStorableEnumValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayAttributeWithValue">getArrayAttributeWithValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayAttributeByKey">getArrayAttributeByKey()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsJson">castAttributeAsJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getJsonCastFlags">getJsonCastFlags()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asJson">asJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromJson">fromJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromEncryptedString">fromEncryptedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsEncryptedString">castAttributeAsEncryptedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_encryptUsing">encryptUsing()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_currentEncrypter">currentEncrypter()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsHashedString">castAttributeAsHashedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromFloat">fromFloat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDecimal">asDecimal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDate">asDate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDateTime">asDateTime()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isStandardDateFormat">isStandardDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromDateTime">fromDateTime()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asTimestamp">asTimestamp()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_serializeDate">serializeDate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDates">getDates()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDateFormat">getDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setDateFormat">setDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasCast">hasCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getCasts">getCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_casts">casts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateCastable">isDateCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateCastableWithCustomFormat">isDateCastableWithCustomFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isJsonCastable">isJsonCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isEncryptedCastable">isEncryptedCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassCastable">isClassCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isEnumCastable">isEnumCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassDeviable">isClassDeviable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassSerializable">isClassSerializable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_resolveCasterClass">resolveCasterClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_parseCasterClass">parseCasterClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromCachedCasts">mergeAttributesFromCachedCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromClassCasts">mergeAttributesFromClassCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromAttributeCasts">mergeAttributesFromAttributeCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_normalizeCastClassResponse">normalizeCastClassResponse()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributes">getAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributesForInsert">getAttributesForInsert()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setRawAttributes">setRawAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getOriginal">getOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getOriginalWithoutRewindingModel">getOriginalWithoutRewindingModel()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRawOriginal">getRawOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_only">only()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginal">syncOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginalAttribute">syncOriginalAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginalAttributes">syncOriginalAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncChanges">syncChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDirty">isDirty()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClean">isClean()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_discardChanges">discardChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_wasChanged">wasChanged()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasChanges">hasChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDirty">getDirty()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDirtyForUpdate">getDirtyForUpdate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getChanges">getChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_originalIsEquivalent">originalIsEquivalent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_transformModelValue">transformModelValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_append">append()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAppends">getAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAppends">setAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAppended">hasAppended()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getMutatedAttributes">getMutatedAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_cacheMutatedAttributes">cacheMutatedAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getMutatorMethods">getMutatorMethods()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeMarkedMutatorMethods">getAttributeMarkedMutatorMethods()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span>Illuminate\Database\Eloquent\Concerns\HasEvents</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_bootHasEvents">bootHasEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_resolveObserveAttributes">resolveObserveAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_observe">observe()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_registerObserver">registerObserver()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_getObservableEvents">getObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_setObservableEvents">setObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_addObservableEvents">addObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_removeObservableEvents">removeObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_registerModelEvent">registerModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_fireModelEvent">fireModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_fireCustomModelEvent">fireCustomModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_filterModelEventResults">filterModelEventResults()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_retrieved">retrieved()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_saving">saving()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_saved">saved()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_updating">updating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_updated">updated()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_creating">creating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_created">created()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_replicating">replicating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_deleting">deleting()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_deleted">deleted()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_flushEventListeners">flushEventListeners()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_dispatchesEvents">dispatchesEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_getEventDispatcher">getEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_setEventDispatcher">setEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_unsetEventDispatcher">unsetEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_withoutEvents">withoutEvents()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span>Illuminate\Database\Eloquent\Concerns\HasGlobalScopes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_bootHasGlobalScopes">bootHasGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_resolveGlobalScopeAttributes">resolveGlobalScopeAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_addGlobalScope">addGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_addGlobalScopes">addGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_hasGlobalScope">hasGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getGlobalScope">getGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getAllGlobalScopes">getAllGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_setAllGlobalScopes">setAllGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getGlobalScopes">getGlobalScopes()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span>Illuminate\Database\Eloquent\Concerns\HasRelationships</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_relationResolver">relationResolver()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_resolveRelationUsing">resolveRelationUsing()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasOne">hasOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasOne">newHasOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasOneThrough">hasOneThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasOneThrough">newHasOneThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphOne">morphOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphOne">newMorphOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_belongsTo">belongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newBelongsTo">newBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphTo">morphTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphEagerTo">morphEagerTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphInstanceTo">morphInstanceTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphTo">newMorphTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getActualClassNameForMorph">getActualClassNameForMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_guessBelongsToRelation">guessBelongsToRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_through">through()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasMany">hasMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasMany">newHasMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasManyThrough">hasManyThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasManyThrough">newHasManyThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphMany">morphMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphMany">newMorphMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_belongsToMany">belongsToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newBelongsToMany">newBelongsToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphToMany">morphToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphToMany">newMorphToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphedByMany">morphedByMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_guessBelongsToManyRelation">guessBelongsToManyRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_joiningTable">joiningTable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_joiningTableSegment">joiningTableSegment()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_touches">touches()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_touchOwners">touchOwners()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getMorphs">getMorphs()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getMorphClass">getMorphClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newRelatedInstance">newRelatedInstance()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newRelatedThroughInstance">newRelatedThroughInstance()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getRelations">getRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getRelation">getRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_relationLoaded">relationLoaded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setRelation">setRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_unsetRelation">unsetRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setRelations">setRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_withoutRelations">withoutRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_unsetRelations">unsetRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getTouchedRelations">getTouchedRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setTouchedRelations">setTouchedRelations()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span>Illuminate\Database\Eloquent\Concerns\HasTimestamps</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_touch">touch()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_touchQuietly">touchQuietly()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_updateTimestamps">updateTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_setCreatedAt">setCreatedAt()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_setUpdatedAt">setUpdatedAt()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_freshTimestamp">freshTimestamp()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_freshTimestampString">freshTimestampString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_usesTimestamps">usesTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getCreatedAtColumn">getCreatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getUpdatedAtColumn">getUpdatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getQualifiedCreatedAtColumn">getQualifiedCreatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getQualifiedUpdatedAtColumn">getQualifiedUpdatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_withoutTimestamps">withoutTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_withoutTimestampsOn">withoutTimestampsOn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_isIgnoringTimestamps">isIgnoringTimestamps()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span>Illuminate\Database\Eloquent\Concerns\HasUniqueIds</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_usesUniqueIds">usesUniqueIds()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_setUniqueIds">setUniqueIds()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_newUniqueId">newUniqueId()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_uniqueIds">uniqueIds()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HidesAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_getHidden">getHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_setHidden">setHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_getVisible">getVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_setVisible">setVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeVisible">makeVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeVisibleIf">makeVisibleIf()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeHidden">makeHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeHiddenIf">makeHiddenIf()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\GuardsAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_getFillable">getFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_fillable">fillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_mergeFillable">mergeFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_getGuarded">getGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_guard">guard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_mergeGuarded">mergeGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_unguard">unguard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_reguard">reguard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isUnguarded">isUnguarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_unguarded">unguarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isFillable">isFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isGuarded">isGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isGuardableColumn">isGuardableColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_totallyGuarded">totallyGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_fillableFromArray">fillableFromArray()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span>Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_withoutRecursion">withoutRecursion()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_clearRecursiveCallValue">clearRecursiveCallValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_getRecursiveCallStack">getRecursiveCallStack()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_getRecursionCache">getRecursionCache()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_setRecursiveCallValue">setRecursiveCallValue()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.HasCollection.html"><span>Illuminate\Database\Eloquent\HasCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.HasCollection.html#_newCollection">newCollection()</a>, <a href="Illuminate.Database.Eloquent.HasCollection.html#_resolveCollectionFromAttribute">resolveCollectionFromAttribute()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="CREATED_AT" id="CREATED_AT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>CREATED_AT = <span class="php-str">'created_at'</span></code>
+
+	<div class="expandable-collapsedView">
+		The name of the "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The name of the &quot;created at&quot; column.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#CREATED_AT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UPDATED_AT" id="UPDATED_AT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UPDATED_AT = <span class="php-str">'updated_at'</span></code>
+
+	<div class="expandable-collapsedView">
+		The name of the "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The name of the &quot;updated at&quot; column.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UPDATED_AT">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="connection" id="$connection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$connection</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="table" id="$table">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$table</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$table">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="primaryKey" id="$primaryKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$primaryKey</var> = <span class="php-str">'id'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$primaryKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keyType" id="$keyType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$keyType</var> = <span class="php-str">'int'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$keyType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="incrementing" id="$incrementing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$incrementing</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$incrementing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="with" id="$with">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$with</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$with">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withCount" id="$withCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$withCount</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$withCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preventsLazyLoading" id="$preventsLazyLoading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$preventsLazyLoading</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$preventsLazyLoading">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="perPage" id="$perPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$perPage</var> = <span class="php-num">15</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$perPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exists" id="$exists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$exists</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$exists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wasRecentlyCreated" id="$wasRecentlyCreated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$wasRecentlyCreated</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$wasRecentlyCreated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="$escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$escapeWhenCastingToString</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$escapeWhenCastingToString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolver" id="$resolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.ConnectionResolverInterface.html"><span title="Illuminate\Database\ConnectionResolverInterface">ConnectionResolverInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatcher" id="$dispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$dispatcher</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="booted" id="$booted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$booted</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$booted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="traitInitializers" id="$traitInitializers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$traitInitializers</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$traitInitializers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="globalScopes" id="$globalScopes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$globalScopes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$globalScopes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ignoreOnTouch" id="$ignoreOnTouch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$ignoreOnTouch</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ignoreOnTouch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="modelsShouldPreventLazyLoading" id="$modelsShouldPreventLazyLoading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$modelsShouldPreventLazyLoading</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$modelsShouldPreventLazyLoading">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazyLoadingViolationCallback" id="$lazyLoadingViolationCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$lazyLoadingViolationCallback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lazyLoadingViolationCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="modelsShouldPreventSilentlyDiscardingAttributes" id="$modelsShouldPreventSilentlyDiscardingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$modelsShouldPreventSilentlyDiscardingAttributes</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$modelsShouldPreventSilentlyDiscardingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="discardedAttributeViolationCallback" id="$discardedAttributeViolationCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$discardedAttributeViolationCallback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$discardedAttributeViolationCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="modelsShouldPreventAccessingMissingAttributes" id="$modelsShouldPreventAccessingMissingAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$modelsShouldPreventAccessingMissingAttributes</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$modelsShouldPreventAccessingMissingAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="missingAttributeViolationCallback" id="$missingAttributeViolationCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$missingAttributeViolationCallback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$missingAttributeViolationCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isBroadcasting" id="$isBroadcasting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$isBroadcasting</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$isBroadcasting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="builder" id="$builder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">class-string&lt;<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$builder</var> = <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>::class</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$builder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collectionClass" id="$collectionClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">class-string&lt;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;*, *&gt;&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$collectionClass</var> = <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>::class</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$collectionClass">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HasAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributes">$attributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$original">$original</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$changes">$changes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$casts">$casts</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$classCastCache">$classCastCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributeCastCache">$attributeCastCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$primitiveCastTypes">$primitiveCastTypes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$dateFormat">$dateFormat</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$appends">$appends</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$snakeAttributes">$snakeAttributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$mutatorCache">$mutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributeMutatorCache">$attributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$getAttributeMutatorCache">$getAttributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$setAttributeMutatorCache">$setAttributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$castTypeCache">$castTypeCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$encrypter">$encrypter</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span>Illuminate\Database\Eloquent\Concerns\HasEvents</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#$dispatchesEvents">$dispatchesEvents</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#$observables">$observables</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span>Illuminate\Database\Eloquent\Concerns\HasRelationships</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$relations">$relations</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$touches">$touches</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$manyMethods">$manyMethods</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$relationResolvers">$relationResolvers</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span>Illuminate\Database\Eloquent\Concerns\HasTimestamps</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#$timestamps">$timestamps</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#$ignoreTimestampsOn">$ignoreTimestampsOn</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span>Illuminate\Database\Eloquent\Concerns\HasUniqueIds</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#$usesUniqueIds">$usesUniqueIds</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HidesAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#$hidden">$hidden</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#$visible">$visible</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\GuardsAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$fillable">$fillable</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$guarded">$guarded</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$unguarded">$unguarded</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$guardableColumns">$guardableColumns</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span>Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#$recursionCache">$recursionCache</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.HasCollection.html"><span>Illuminate\Database\Eloquent\HasCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.HasCollection.html#$resolvedCollectionClasses">$resolvedCollectionClasses</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,3706 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\HttpFoundation\Response |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Cookie.html">
+							Cookie
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.FileBag.html">
+							FileBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.HeaderBag.html">
+							HeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.InputBag.html">
+							InputBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.JsonResponse.html">
+							JsonResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ParameterBag.html">
+							ParameterBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.RedirectResponse.html">
+							RedirectResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Request.html">
+							Request
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.HttpFoundation.Response.html">
+							Response
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ResponseHeaderBag.html">
+							ResponseHeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ServerBag.html">
+							ServerBag
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.HttpFoundation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.HttpFoundation.Response.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="Symfony.Component.HttpFoundation.Response.html">Response</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Response represents an HTTP response.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\HttpFoundation\Response</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.HttpFoundation.RedirectResponse.html"><span>Symfony\Component\HttpFoundation\RedirectResponse</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.RedirectResponse.html"><span>Illuminate\Http\RedirectResponse</span></a>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Symfony.Component.HttpFoundation.JsonResponse.html"><span>Symfony\Component\HttpFoundation\JsonResponse</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.JsonResponse.html"><span>Illuminate\Http\JsonResponse</span></a>
+
+
+		uses
+			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>?string <var>$content</var> = <span class="php-str">''</span></span>, <span>int <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = []</span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$status</var>&nbsp;&nbsp;</td>
+										<td><p>The HTTP status code (200 &quot;OK&quot; by default)</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the HTTP status code is not valid</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.RedirectResponse.html#___construct">						<code>Symfony\Component\HttpFoundation\RedirectResponse::__construct()</code></a>				</li>
+				<li>
+<a href="Symfony.Component.HttpFoundation.JsonResponse.html#___construct">						<code>Symfony\Component\HttpFoundation\JsonResponse::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the Response as an HTTP string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the Response as an HTTP string.</p>
+<p>The string representation of the Response is the same as the
+one that will be sent to the client only if the prepare() method
+has been called before.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+	<div class="expandable-collapsedView">
+		Clones the current Response instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clones the current Response instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepare" id="_prepare">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepare(<span><a href="Symfony.Component.HttpFoundation.Request.html"><span title="Symfony\Component\HttpFoundation\Request">Request</span></a> <var>$request</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepares the Response before it is sent to the client.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepares the Response before it is sent to the client.</p>
+<p>This method tweaks the Response to ensure that it is
+compliant with RFC 2616. Most of the changes are based on
+the Request that is &quot;associated&quot; with this Response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepare">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sendHeaders" id="_sendHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sendHeaders(<span>positive-int|null <var>$statusCode</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sends HTTP headers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sends HTTP headers.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$statusCode</var>&nbsp;&nbsp;</td>
+										<td><p>The status code to use, override the statusCode property if set and not null</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sendHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sendContent" id="_sendContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sendContent(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sends content for the current web response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sends content for the current web response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sendContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="send" id="_send">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>send(<span>bool <var>$flush</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sends HTTP headers and content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sends HTTP headers and content.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$flush</var>&nbsp;&nbsp;</td>
+										<td><p>Whether output buffers should be flushed</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_send">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setContent" id="_setContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setContent(<span>?string <var>$content</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response content.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContent" id="_getContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getContent(): string|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the current response content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the current response content.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setProtocolVersion" id="_setProtocolVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setProtocolVersion(<span>string <var>$version</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the HTTP protocol version (1.0 or 1.1).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the HTTP protocol version (1.0 or 1.1).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setProtocolVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getProtocolVersion" id="_getProtocolVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getProtocolVersion(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the HTTP protocol version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the HTTP protocol version.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getProtocolVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStatusCode" id="_setStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setStatusCode(<span>int <var>$code</var></span>, <span>?string <var>$text</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response status code.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response status code.</p>
+<p>If the status text is null it will be automatically populated for the known
+status codes and left empty otherwise.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the HTTP status code is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStatusCode" id="_getStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStatusCode(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves the status code for the current web response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves the status code for the current web response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCharset" id="_setCharset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCharset(<span>string <var>$charset</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response charset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response charset.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCharset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCharset" id="_getCharset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCharset(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieves the response charset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieves the response charset.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCharset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCacheable" id="_isCacheable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCacheable(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response may safely be kept in a shared (surrogate) cache.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response may safely be kept in a shared (surrogate) cache.</p>
+<p>Responses marked &quot;private&quot; with an explicit Cache-Control directive are
+considered uncacheable.</p>
+<p>Responses with neither a freshness lifetime (Expires, max-age) nor cache
+validator (Last-Modified, ETag) are considered uncacheable because there is
+no way to tell when or how to remove them from the cache.</p>
+<p>Note that RFC 7231 and RFC 7234 possibly allow for a more permissive implementation,
+for example &quot;status codes that are defined as cacheable by default [...]
+can be reused by a cache with heuristic expiration unless otherwise indicated&quot;
+(<a href="https://tools.ietf.org/html/rfc7231#section-6.1">https://tools.ietf.org/html/rfc7231#section-6.1</a>)</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCacheable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFresh" id="_isFresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isFresh(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response is "fresh".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response is &quot;fresh&quot;.</p>
+<p>Fresh responses may be served from cache without any interaction with the
+origin. A response is considered fresh when it includes a Cache-Control/max-age
+indicator or Expires header and the calculated age is less than the freshness lifetime.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValidateable" id="_isValidateable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValidateable(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response includes headers that can be used to validate
+the response with the origin server using a…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response includes headers that can be used to validate
+the response with the origin server using a conditional GET request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValidateable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPrivate" id="_setPrivate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPrivate(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks the response as "private".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks the response as &quot;private&quot;.</p>
+<p>It makes the response ineligible for serving other clients.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPrivate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPublic" id="_setPublic">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPublic(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks the response as "public".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks the response as &quot;public&quot;.</p>
+<p>It makes the response eligible for serving other clients.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPublic">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setImmutable" id="_setImmutable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setImmutable(<span>bool <var>$immutable</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks the response as "immutable".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks the response as &quot;immutable&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setImmutable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isImmutable" id="_isImmutable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isImmutable(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response is marked as "immutable".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response is marked as &quot;immutable&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isImmutable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mustRevalidate" id="_mustRevalidate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mustRevalidate(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response must be revalidated by shared caches once it has become stale.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response must be revalidated by shared caches once it has become stale.</p>
+<p>This method indicates that the response must not be served stale by a
+cache in any circumstance without first revalidating with the origin.
+When present, the TTL of the response should not be overridden to be
+greater than the value provided by the origin.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mustRevalidate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDate" id="_getDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDate(): ?<a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the Date header as a DateTime instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the Date header as a DateTime instance.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When the header is not parseable</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDate" id="_setDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDate(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$date</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the Date header.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the Date header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAge" id="_getAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAge(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the age of the response in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the age of the response in seconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="expire" id="_expire">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>expire(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks the response stale by setting the Age header to be equal to the maximum age of the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks the response stale by setting the Age header to be equal to the maximum age of the response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_expire">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExpires" id="_getExpires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExpires(): ?<a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the value of the Expires header as a DateTime instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the value of the Expires header as a DateTime instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExpires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setExpires" id="_setExpires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setExpires(<span>?<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$date</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the Expires HTTP header with a DateTime instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the Expires HTTP header with a DateTime instance.</p>
+<p>Passing null as value will remove the header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setExpires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMaxAge" id="_getMaxAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMaxAge(): ?int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of seconds after the time specified in the response's Date
+header when the response should no longer…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of seconds after the time specified in the response's Date
+header when the response should no longer be considered fresh.</p>
+<p>First, it checks for a s-maxage directive, then a max-age directive, and then it falls
+back on an expires header. It returns null when no maximum age can be established.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMaxAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMaxAge" id="_setMaxAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMaxAge(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the number of seconds after which the response should no longer be considered fresh.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the number of seconds after which the response should no longer be considered fresh.</p>
+<p>This method sets the Cache-Control max-age directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMaxAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStaleIfError" id="_setStaleIfError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setStaleIfError(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the number of seconds after which the response should no longer be returned by shared caches when backend is down.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the number of seconds after which the response should no longer be returned by shared caches when backend is down.</p>
+<p>This method sets the Cache-Control stale-if-error directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStaleIfError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStaleWhileRevalidate" id="_setStaleWhileRevalidate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setStaleWhileRevalidate(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the number of seconds after which the response should no longer return stale content by shared caches.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the number of seconds after which the response should no longer return stale content by shared caches.</p>
+<p>This method sets the Cache-Control stale-while-revalidate directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStaleWhileRevalidate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSharedMaxAge" id="_setSharedMaxAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSharedMaxAge(<span>int <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the number of seconds after which the response should no longer be considered fresh by shared caches.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the number of seconds after which the response should no longer be considered fresh by shared caches.</p>
+<p>This method sets the Cache-Control s-maxage directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSharedMaxAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTtl" id="_getTtl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTtl(): ?int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the response's time-to-live in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the response's time-to-live in seconds.</p>
+<p>It returns null when no freshness information is present in the response.</p>
+<p>When the response's TTL is 0, the response may not be served from cache without first
+revalidating with the origin.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTtl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTtl" id="_setTtl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTtl(<span>int <var>$seconds</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response's time-to-live for shared caches in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response's time-to-live for shared caches in seconds.</p>
+<p>This method adjusts the Cache-Control/s-maxage directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTtl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setClientTtl" id="_setClientTtl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setClientTtl(<span>int <var>$seconds</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response's time-to-live for private/client caches in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response's time-to-live for private/client caches in seconds.</p>
+<p>This method adjusts the Cache-Control/max-age directive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setClientTtl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastModified" id="_getLastModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLastModified(): ?<a href="DateTimeImmutable.html"><span title="DateTimeImmutable">DateTimeImmutable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the Last-Modified HTTP header as a DateTime instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the Last-Modified HTTP header as a DateTime instance.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When the HTTP header is not parseable</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLastModified" id="_setLastModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setLastModified(<span>?<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$date</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the Last-Modified HTTP header with a DateTime instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the Last-Modified HTTP header with a DateTime instance.</p>
+<p>Passing null as value will remove the header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLastModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEtag" id="_getEtag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEtag(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the literal value of the ETag HTTP header.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the literal value of the ETag HTTP header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEtag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEtag" id="_setEtag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEtag(<span>string|null <var>$etag</var></span>, <span>bool <var>$weak</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the ETag value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the ETag value.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$etag</var>&nbsp;&nbsp;</td>
+										<td><p>The ETag unique identifier or null to remove the header</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$weak</var>&nbsp;&nbsp;</td>
+										<td><p>Whether you want a weak ETag or not</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEtag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCache" id="_setCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCache(<span>array <var>$options</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the response's cache headers (validation and/or expiration).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the response's cache headers (validation and/or expiration).</p>
+<p>Available options are: must_revalidate, no_cache, no_store, no_transform, public, private, proxy_revalidate, max_age, s_maxage, immutable, last_modified and etag.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setNotModified" id="_setNotModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setNotModified(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Modifies the response so that it conforms to the rules defined for a 304 status code.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Modifies the response so that it conforms to the rules defined for a 304 status code.</p>
+<p>This sets the status, removes the body, and discards any headers
+that MUST NOT be included in 304 responses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setNotModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasVary" id="_hasVary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasVary(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the response includes a Vary header.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the response includes a Vary header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasVary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVary" id="_getVary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getVary(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of header names given in the Vary header.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of header names given in the Vary header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setVary" id="_setVary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setVary(<span>string|array <var>$headers</var></span>, <span>bool <var>$replace</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the Vary header.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the Vary header.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$replace</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to replace the actual value or not (true by default)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setVary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotModified" id="_isNotModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotModified(<span><a href="Symfony.Component.HttpFoundation.Request.html"><span title="Symfony\Component\HttpFoundation\Request">Request</span></a> <var>$request</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines if the Response validators (ETag, Last-Modified) match
+a conditional value specified in the Request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines if the Response validators (ETag, Last-Modified) match
+a conditional value specified in the Request.</p>
+<p>If the Response is not modified, it sets the status code to 304 and
+removes the actual content by calling the setNotModified() method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isInvalid" id="_isInvalid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isInvalid(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is response invalid?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is response invalid?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isInvalid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isInformational" id="_isInformational">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isInformational(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is response informative?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is response informative?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isInformational">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSuccessful" id="_isSuccessful">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSuccessful(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is response successful?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is response successful?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSuccessful">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRedirection" id="_isRedirection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRedirection(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response a redirect?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response a redirect?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRedirection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isClientError" id="_isClientError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClientError(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is there a client error?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is there a client error?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClientError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isServerError" id="_isServerError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isServerError(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Was there a server side error?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Was there a server side error?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isServerError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isOk" id="_isOk">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isOk(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response OK?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response OK?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isOk">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isForbidden" id="_isForbidden">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isForbidden(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response forbidden?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response forbidden?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isForbidden">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotFound" id="_isNotFound">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotFound(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response a not found error?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response a not found error?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotFound">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRedirect" id="_isRedirect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRedirect(<span>?string <var>$location</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response a redirect of some form?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response a redirect of some form?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRedirect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is the response empty?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is the response empty?</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="closeOutputBuffers" id="_closeOutputBuffers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>closeOutputBuffers(<span>int <var>$targetLevel</var></span>, <span>bool <var>$flush</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Cleans or flushes output buffers up to target level.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cleans or flushes output buffers up to target level.</p>
+<p>Resulting level can be greater than target level if a non-removable buffer has been encountered.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_closeOutputBuffers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setContentSafe" id="_setContentSafe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setContentSafe(<span>bool <var>$safe</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Marks a response as safe according to RFC8674.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marks a response as safe according to RFC8674.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setContentSafe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureIEOverSSLCompatibility" id="_ensureIEOverSSLCompatibility">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureIEOverSSLCompatibility(<span><a href="Symfony.Component.HttpFoundation.Request.html"><span title="Symfony\Component\HttpFoundation\Request">Request</span></a> <var>$request</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if we need to remove Cache-Control for SSL encrypted downloads when using IE &lt; 9.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if we need to remove Cache-Control for SSL encrypted downloads when using IE &lt; 9.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureIEOverSSLCompatibility">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="HTTP_CONTINUE" id="HTTP_CONTINUE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_CONTINUE = <span class="php-num">100</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_CONTINUE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_SWITCHING_PROTOCOLS" id="HTTP_SWITCHING_PROTOCOLS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_SWITCHING_PROTOCOLS = <span class="php-num">101</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_SWITCHING_PROTOCOLS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PROCESSING" id="HTTP_PROCESSING">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PROCESSING = <span class="php-num">102</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PROCESSING">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_EARLY_HINTS" id="HTTP_EARLY_HINTS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_EARLY_HINTS = <span class="php-num">103</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_EARLY_HINTS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_OK" id="HTTP_OK">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_OK = <span class="php-num">200</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_OK">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_CREATED" id="HTTP_CREATED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_CREATED = <span class="php-num">201</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_CREATED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_ACCEPTED" id="HTTP_ACCEPTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_ACCEPTED = <span class="php-num">202</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_ACCEPTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NON_AUTHORITATIVE_INFORMATION" id="HTTP_NON_AUTHORITATIVE_INFORMATION">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NON_AUTHORITATIVE_INFORMATION = <span class="php-num">203</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NON_AUTHORITATIVE_INFORMATION">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NO_CONTENT" id="HTTP_NO_CONTENT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NO_CONTENT = <span class="php-num">204</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NO_CONTENT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_RESET_CONTENT" id="HTTP_RESET_CONTENT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_RESET_CONTENT = <span class="php-num">205</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_RESET_CONTENT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PARTIAL_CONTENT" id="HTTP_PARTIAL_CONTENT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PARTIAL_CONTENT = <span class="php-num">206</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PARTIAL_CONTENT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_MULTI_STATUS" id="HTTP_MULTI_STATUS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_MULTI_STATUS = <span class="php-num">207</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_MULTI_STATUS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_ALREADY_REPORTED" id="HTTP_ALREADY_REPORTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_ALREADY_REPORTED = <span class="php-num">208</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_ALREADY_REPORTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_IM_USED" id="HTTP_IM_USED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_IM_USED = <span class="php-num">226</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_IM_USED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_MULTIPLE_CHOICES" id="HTTP_MULTIPLE_CHOICES">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_MULTIPLE_CHOICES = <span class="php-num">300</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_MULTIPLE_CHOICES">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_MOVED_PERMANENTLY" id="HTTP_MOVED_PERMANENTLY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_MOVED_PERMANENTLY = <span class="php-num">301</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_MOVED_PERMANENTLY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_FOUND" id="HTTP_FOUND">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_FOUND = <span class="php-num">302</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_FOUND">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_SEE_OTHER" id="HTTP_SEE_OTHER">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_SEE_OTHER = <span class="php-num">303</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_SEE_OTHER">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NOT_MODIFIED" id="HTTP_NOT_MODIFIED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NOT_MODIFIED = <span class="php-num">304</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NOT_MODIFIED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_USE_PROXY" id="HTTP_USE_PROXY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_USE_PROXY = <span class="php-num">305</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_USE_PROXY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_RESERVED" id="HTTP_RESERVED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_RESERVED = <span class="php-num">306</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_RESERVED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_TEMPORARY_REDIRECT" id="HTTP_TEMPORARY_REDIRECT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_TEMPORARY_REDIRECT = <span class="php-num">307</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_TEMPORARY_REDIRECT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PERMANENTLY_REDIRECT" id="HTTP_PERMANENTLY_REDIRECT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PERMANENTLY_REDIRECT = <span class="php-num">308</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PERMANENTLY_REDIRECT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_BAD_REQUEST" id="HTTP_BAD_REQUEST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_BAD_REQUEST = <span class="php-num">400</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_BAD_REQUEST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_UNAUTHORIZED" id="HTTP_UNAUTHORIZED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_UNAUTHORIZED = <span class="php-num">401</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_UNAUTHORIZED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PAYMENT_REQUIRED" id="HTTP_PAYMENT_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PAYMENT_REQUIRED = <span class="php-num">402</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PAYMENT_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_FORBIDDEN" id="HTTP_FORBIDDEN">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_FORBIDDEN = <span class="php-num">403</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_FORBIDDEN">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NOT_FOUND" id="HTTP_NOT_FOUND">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NOT_FOUND = <span class="php-num">404</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NOT_FOUND">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_METHOD_NOT_ALLOWED" id="HTTP_METHOD_NOT_ALLOWED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_METHOD_NOT_ALLOWED = <span class="php-num">405</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_METHOD_NOT_ALLOWED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NOT_ACCEPTABLE" id="HTTP_NOT_ACCEPTABLE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NOT_ACCEPTABLE = <span class="php-num">406</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NOT_ACCEPTABLE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PROXY_AUTHENTICATION_REQUIRED" id="HTTP_PROXY_AUTHENTICATION_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PROXY_AUTHENTICATION_REQUIRED = <span class="php-num">407</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PROXY_AUTHENTICATION_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_REQUEST_TIMEOUT" id="HTTP_REQUEST_TIMEOUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_REQUEST_TIMEOUT = <span class="php-num">408</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_REQUEST_TIMEOUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_CONFLICT" id="HTTP_CONFLICT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_CONFLICT = <span class="php-num">409</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_CONFLICT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_GONE" id="HTTP_GONE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_GONE = <span class="php-num">410</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_GONE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_LENGTH_REQUIRED" id="HTTP_LENGTH_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_LENGTH_REQUIRED = <span class="php-num">411</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_LENGTH_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PRECONDITION_FAILED" id="HTTP_PRECONDITION_FAILED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PRECONDITION_FAILED = <span class="php-num">412</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PRECONDITION_FAILED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_REQUEST_ENTITY_TOO_LARGE" id="HTTP_REQUEST_ENTITY_TOO_LARGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_REQUEST_ENTITY_TOO_LARGE = <span class="php-num">413</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_REQUEST_ENTITY_TOO_LARGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_REQUEST_URI_TOO_LONG" id="HTTP_REQUEST_URI_TOO_LONG">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_REQUEST_URI_TOO_LONG = <span class="php-num">414</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_REQUEST_URI_TOO_LONG">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_UNSUPPORTED_MEDIA_TYPE" id="HTTP_UNSUPPORTED_MEDIA_TYPE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_UNSUPPORTED_MEDIA_TYPE = <span class="php-num">415</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_UNSUPPORTED_MEDIA_TYPE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE" id="HTTP_REQUESTED_RANGE_NOT_SATISFIABLE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_REQUESTED_RANGE_NOT_SATISFIABLE = <span class="php-num">416</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_REQUESTED_RANGE_NOT_SATISFIABLE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_EXPECTATION_FAILED" id="HTTP_EXPECTATION_FAILED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_EXPECTATION_FAILED = <span class="php-num">417</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_EXPECTATION_FAILED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_I_AM_A_TEAPOT" id="HTTP_I_AM_A_TEAPOT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_I_AM_A_TEAPOT = <span class="php-num">418</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_I_AM_A_TEAPOT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_MISDIRECTED_REQUEST" id="HTTP_MISDIRECTED_REQUEST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_MISDIRECTED_REQUEST = <span class="php-num">421</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_MISDIRECTED_REQUEST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_UNPROCESSABLE_ENTITY" id="HTTP_UNPROCESSABLE_ENTITY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_UNPROCESSABLE_ENTITY = <span class="php-num">422</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_UNPROCESSABLE_ENTITY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_LOCKED" id="HTTP_LOCKED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_LOCKED = <span class="php-num">423</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_LOCKED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_FAILED_DEPENDENCY" id="HTTP_FAILED_DEPENDENCY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_FAILED_DEPENDENCY = <span class="php-num">424</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_FAILED_DEPENDENCY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_TOO_EARLY" id="HTTP_TOO_EARLY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_TOO_EARLY = <span class="php-num">425</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_TOO_EARLY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_UPGRADE_REQUIRED" id="HTTP_UPGRADE_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_UPGRADE_REQUIRED = <span class="php-num">426</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_UPGRADE_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_PRECONDITION_REQUIRED" id="HTTP_PRECONDITION_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_PRECONDITION_REQUIRED = <span class="php-num">428</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_PRECONDITION_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_TOO_MANY_REQUESTS" id="HTTP_TOO_MANY_REQUESTS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_TOO_MANY_REQUESTS = <span class="php-num">429</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_TOO_MANY_REQUESTS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE" id="HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE = <span class="php-num">431</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_UNAVAILABLE_FOR_LEGAL_REASONS" id="HTTP_UNAVAILABLE_FOR_LEGAL_REASONS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_UNAVAILABLE_FOR_LEGAL_REASONS = <span class="php-num">451</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_UNAVAILABLE_FOR_LEGAL_REASONS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_INTERNAL_SERVER_ERROR" id="HTTP_INTERNAL_SERVER_ERROR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_INTERNAL_SERVER_ERROR = <span class="php-num">500</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_INTERNAL_SERVER_ERROR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NOT_IMPLEMENTED" id="HTTP_NOT_IMPLEMENTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NOT_IMPLEMENTED = <span class="php-num">501</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NOT_IMPLEMENTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_BAD_GATEWAY" id="HTTP_BAD_GATEWAY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_BAD_GATEWAY = <span class="php-num">502</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_BAD_GATEWAY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_SERVICE_UNAVAILABLE" id="HTTP_SERVICE_UNAVAILABLE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_SERVICE_UNAVAILABLE = <span class="php-num">503</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_SERVICE_UNAVAILABLE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_GATEWAY_TIMEOUT" id="HTTP_GATEWAY_TIMEOUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_GATEWAY_TIMEOUT = <span class="php-num">504</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_GATEWAY_TIMEOUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_VERSION_NOT_SUPPORTED" id="HTTP_VERSION_NOT_SUPPORTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_VERSION_NOT_SUPPORTED = <span class="php-num">505</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_VERSION_NOT_SUPPORTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL" id="HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL = <span class="php-num">506</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_INSUFFICIENT_STORAGE" id="HTTP_INSUFFICIENT_STORAGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_INSUFFICIENT_STORAGE = <span class="php-num">507</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_INSUFFICIENT_STORAGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_LOOP_DETECTED" id="HTTP_LOOP_DETECTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_LOOP_DETECTED = <span class="php-num">508</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_LOOP_DETECTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NOT_EXTENDED" id="HTTP_NOT_EXTENDED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NOT_EXTENDED = <span class="php-num">510</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NOT_EXTENDED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HTTP_NETWORK_AUTHENTICATION_REQUIRED" id="HTTP_NETWORK_AUTHENTICATION_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HTTP_NETWORK_AUTHENTICATION_REQUIRED = <span class="php-num">511</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HTTP_NETWORK_AUTHENTICATION_REQUIRED">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="headers" id="$headers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.ResponseHeaderBag.html"><span title="Symfony\Component\HttpFoundation\ResponseHeaderBag">ResponseHeaderBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$headers</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$headers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="content" id="$content">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$content</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$content">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="version" id="$version">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$version</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$version">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="statusCode" id="$statusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$statusCode</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$statusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="statusText" id="$statusText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$statusText</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$statusText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="charset" id="$charset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$charset</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$charset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="statusTexts" id="$statusTexts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$statusTexts</var> = [
+	<span class="php-num">100</span> =&gt; <span class="php-str">'Continue'</span>,
+	<span class="php-num">101</span> =&gt; <span class="php-str">'Switching Protocols'</span>,
+	<span class="php-num">102</span> =&gt; <span class="php-str">'Processing'</span>,
+	<span class="php-num">103</span> =&gt; <span class="php-str">'Early Hints'</span>,
+	<span class="php-num">200</span> =&gt; <span class="php-str">'OK'</span>,
+	<span class="php-num">201</span> =&gt; <span class="php-str">'Created'</span>,
+	<span class="php-num">202</span> =&gt; <span class="php-str">'Accepted'</span>,
+	<span class="php-num">203</span> =&gt; <span class="php-str">'Non-Authoritative Information'</span>,
+	<span class="php-num">204</span> =&gt; <span class="php-str">'No Content'</span>,
+	<span class="php-num">205</span> =&gt; <span class="php-str">'Reset Content'</span>,
+	<span class="php-num">206</span> =&gt; <span class="php-str">'Partial Content'</span>,
+	<span class="php-num">207</span> =&gt; <span class="php-str">'Multi-Status'</span>,
+	<span class="php-num">208</span> =&gt; <span class="php-str">'Already Reported'</span>,
+	<span class="php-num">226</span> =&gt; <span class="php-str">'IM Used'</span>,
+	<span class="php-num">300</span> =&gt; <span class="php-str">'Multiple Choices'</span>,
+	<span class="php-num">301</span> =&gt; <span class="php-str">'Moved Permanently'</span>,
+	<span class="php-num">302</span> =&gt; <span class="php-str">'Found'</span>,
+	<span class="php-num">303</span> =&gt; <span class="php-str">'See Other'</span>,
+	<span class="php-num">304</span> =&gt; <span class="php-str">'Not Modified'</span>,
+	<span class="php-num">305</span> =&gt; <span class="php-str">'Use Proxy'</span>,
+	<span class="php-num">307</span> =&gt; <span class="php-str">'Temporary Redirect'</span>,
+	<span class="php-num">308</span> =&gt; <span class="php-str">'Permanent Redirect'</span>,
+	<span class="php-num">400</span> =&gt; <span class="php-str">'Bad Request'</span>,
+	<span class="php-num">401</span> =&gt; <span class="php-str">'Unauthorized'</span>,
+	<span class="php-num">402</span> =&gt; <span class="php-str">'Payment Required'</span>,
+	<span class="php-num">403</span> =&gt; <span class="php-str">'Forbidden'</span>,
+	<span class="php-num">404</span> =&gt; <span class="php-str">'Not Found'</span>,
+	<span class="php-num">405</span> =&gt; <span class="php-str">'Method Not Allowed'</span>,
+	<span class="php-num">406</span> =&gt; <span class="php-str">'Not Acceptable'</span>,
+	<span class="php-num">407</span> =&gt; <span class="php-str">'Proxy Authentication Required'</span>,
+	<span class="php-num">408</span> =&gt; <span class="php-str">'Request Timeout'</span>,
+	<span class="php-num">409</span> =&gt; <span class="php-str">'Conflict'</span>,
+	<span class="php-num">410</span> =&gt; <span class="php-str">'Gone'</span>,
+	<span class="php-num">411</span> =&gt; <span class="php-str">'Length Required'</span>,
+	<span class="php-num">412</span> =&gt; <span class="php-str">'Precondition Failed'</span>,
+	<span class="php-num">413</span> =&gt; <span class="php-str">'Content Too Large'</span>,
+	<span class="php-num">414</span> =&gt; <span class="php-str">'URI Too Long'</span>,
+	<span class="php-num">415</span> =&gt; <span class="php-str">'Unsupported Media Type'</span>,
+	<span class="php-num">416</span> =&gt; <span class="php-str">'Range Not Satisfiable'</span>,
+	<span class="php-num">417</span> =&gt; <span class="php-str">'Expectation Failed'</span>,
+	<span class="php-num">418</span> =&gt; <span class="php-str">'I\'m a teapot'</span>,
+	<span class="php-num">421</span> =&gt; <span class="php-str">'Misdirected Request'</span>,
+	<span class="php-num">422</span> =&gt; <span class="php-str">'Unprocessable Content'</span>,
+	<span class="php-num">423</span> =&gt; <span class="php-str">'Locked'</span>,
+	<span class="php-num">424</span> =&gt; <span class="php-str">'Failed Dependency'</span>,
+	<span class="php-num">425</span> =&gt; <span class="php-str">'Too Early'</span>,
+	<span class="php-num">426</span> =&gt; <span class="php-str">'Upgrade Required'</span>,
+	<span class="php-num">428</span> =&gt; <span class="php-str">'Precondition Required'</span>,
+	<span class="php-num">429</span> =&gt; <span class="php-str">'Too Many Requests'</span>,
+	<span class="php-num">431</span> =&gt; <span class="php-str">'Request Header Fields Too Large'</span>,
+	<span class="php-num">451</span> =&gt; <span class="php-str">'Unavailable For Legal Reasons'</span>,
+	<span class="php-num">500</span> =&gt; <span class="php-str">'Internal Server Error'</span>,
+	<span class="php-num">501</span> =&gt; <span class="php-str">'Not Implemented'</span>,
+	<span class="php-num">502</span> =&gt; <span class="php-str">'Bad Gateway'</span>,
+	<span class="php-num">503</span> =&gt; <span class="php-str">'Service Unavailable'</span>,
+	<span class="php-num">504</span> =&gt; <span class="php-str">'Gateway Timeout'</span>,
+	<span class="php-num">505</span> =&gt; <span class="php-str">'HTTP Version Not Supported'</span>,
+	<span class="php-num">506</span> =&gt; <span class="php-str">'Variant Also Negotiates'</span>,
+	<span class="php-num">507</span> =&gt; <span class="php-str">'Insufficient Storage'</span>,
+	<span class="php-num">508</span> =&gt; <span class="php-str">'Loop Detected'</span>,
+	<span class="php-num">510</span> =&gt; <span class="php-str">'Not Extended'</span>,
+	<span class="php-num">511</span> =&gt; <span class="php-str">'Network Authentication Required'</span>,
+]</code>
+				
+	<div class="expandable-collapsedView">
+		Status codes translation table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Status codes translation table.</p>
+<p>The list of codes is complete according to the
+{@link <a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</a> Hypertext Transfer Protocol (HTTP) Status Code Registry}
+(last updated 2021-10-01).</p>
+<p>Unless otherwise noted, the status code is defined in RFC2616.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$statusTexts">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

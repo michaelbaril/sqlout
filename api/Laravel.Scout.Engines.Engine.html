@@ -1,0 +1,667 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Laravel\Scout\Engines\Engine |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Laravel.html">Laravel</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Laravel.Scout.html">Scout</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Laravel.Scout.Engines.html">Engines</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Laravel.Scout.Engines.Engine.html">
+							Engine
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Laravel.Scout.Engines.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Laravel.Scout.Engines.Engine.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Scout.html">Scout</a>\<a href="namespace-Laravel.Scout.Engines.html">Engines</a>\<a href="Laravel.Scout.Engines.Engine.html">Engine</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Laravel\Scout\Engines\Engine</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.Engine.html"><span>Baril\Sqlout\Engine</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>update(<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the given model in the index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the given model in the index.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_update">						<code>Baril\Sqlout\Engine::update()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given model from the index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given model from the index.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_delete">						<code>Baril\Sqlout\Engine::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="search" id="_search">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>search(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the given search on the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the given search on the engine.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_search">						<code>Baril\Sqlout\Engine::search()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_search">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="paginate" id="_paginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>paginate(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>int <var>$perPage</var></span>, <span>int <var>$page</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the given search on the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the given search on the engine.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_paginate">						<code>Baril\Sqlout\Engine::paginate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_paginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapIds" id="_mapIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapIds(<span>mixed <var>$results</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Pluck and return the primary keys of the given results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pluck and return the primary keys of the given results.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_mapIds">						<code>Baril\Sqlout\Engine::mapIds()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapIds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>map(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>mixed <var>$results</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Map the given results to instances of the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map the given results to instances of the given model.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_map">						<code>Baril\Sqlout\Engine::map()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazyMap" id="_lazyMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lazyMap(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>mixed <var>$results</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Map the given results to instances of the given model via a lazy collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map the given results to instances of the given model via a lazy collection.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_lazyMap">						<code>Baril\Sqlout\Engine::lazyMap()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lazyMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTotalCount" id="_getTotalCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTotalCount(<span>mixed <var>$results</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the total count from a raw result returned by the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the total count from a raw result returned by the engine.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_getTotalCount">						<code>Baril\Sqlout\Engine::getTotalCount()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTotalCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flush" id="_flush">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flush(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flush all of the model's records from the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flush all of the model's records from the engine.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_flush">						<code>Baril\Sqlout\Engine::flush()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flush">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createIndex" id="_createIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createIndex(<span>string <var>$name</var></span>, <span>array <var>$options</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a search index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a search index.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_createIndex">						<code>Baril\Sqlout\Engine::createIndex()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteIndex" id="_deleteIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleteIndex(<span>string <var>$name</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete a search index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete a search index.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Engine.html#_deleteIndex">						<code>Baril\Sqlout\Engine::deleteIndex()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapIdsFrom" id="_mapIdsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapIdsFrom(<span>mixed <var>$results</var></span>, <span>string <var>$key</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Pluck and return the primary keys of the given results using the given key name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pluck and return the primary keys of the given results using the given key name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapIdsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the query as a Collection of primary keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the query as a Collection of primary keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the given query mapped onto models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the given query mapped onto models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="_cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursor(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a lazy collection for the given query mapped onto models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a lazy collection for the given query mapped onto models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursor">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

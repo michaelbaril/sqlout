@@ -1,0 +1,798 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Concerns\GuardsAttributes |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">
+							GuardsAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">
+							HasAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">
+							HasEvents
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html">
+							HasGlobalScopes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html">
+							HasRelationships
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">
+							HasTimestamps
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html">
+							HasUniqueIds
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html">
+							HidesAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html">
+							PreventsCircularRecursion
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">
+							QueriesRelationships
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">GuardsAttributes</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Concerns\GuardsAttributes</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getFillable" id="_getFillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFillable(): array&lt;string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fillable attributes for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fillable attributes for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFillable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillable" id="_fillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillable(<span>array&lt;string&gt; <var>$fillable</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the fillable attributes for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the fillable attributes for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeFillable" id="_mergeFillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeFillable(<span>array&lt;string&gt; <var>$fillable</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new fillable attributes with existing fillable attributes on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new fillable attributes with existing fillable attributes on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeFillable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getGuarded" id="_getGuarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getGuarded(): array&lt;string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the guarded attributes for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the guarded attributes for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getGuarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guard" id="_guard">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>guard(<span>array&lt;string&gt; <var>$guarded</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the guarded attributes for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the guarded attributes for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_guard">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeGuarded" id="_mergeGuarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeGuarded(<span>array&lt;string&gt; <var>$guarded</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new guarded attributes with existing guarded attributes on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new guarded attributes with existing guarded attributes on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeGuarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unguard" id="_unguard">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unguard(<span>bool <var>$state</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable all mass assignable restrictions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable all mass assignable restrictions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unguard">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reguard" id="_reguard">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reguard(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Enable the mass assignment restrictions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enable the mass assignment restrictions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reguard">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUnguarded" id="_isUnguarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isUnguarded(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the current state is "unguarded".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the current state is &quot;unguarded&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUnguarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unguarded" id="_unguarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unguarded(<span>callable <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run the given callable while being unguarded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run the given callable while being unguarded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unguarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFillable" id="_isFillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isFillable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given attribute may be mass assigned.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given attribute may be mass assigned.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFillable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isGuarded" id="_isGuarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isGuarded(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given key is guarded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given key is guarded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isGuarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isGuardableColumn" id="_isGuardableColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isGuardableColumn(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given column is a valid, guardable column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given column is a valid, guardable column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isGuardableColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="totallyGuarded" id="_totallyGuarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>totallyGuarded(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model is totally guarded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model is totally guarded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_totallyGuarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillableFromArray" id="_fillableFromArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillableFromArray(<span>array <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fillable attributes of a given array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fillable attributes of a given array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillableFromArray">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="fillable" id="$fillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fillable</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fillable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guarded" id="$guarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string&gt;|bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$guarded</var> = [<span class="php-str">'*'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$guarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unguarded" id="$unguarded">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$unguarded</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$unguarded">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guardableColumns" id="$guardableColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$guardableColumns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$guardableColumns">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

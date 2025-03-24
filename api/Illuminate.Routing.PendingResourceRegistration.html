@@ -1,0 +1,928 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Routing\PendingResourceRegistration |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Routing.html">Routing</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.AbstractRouteCollection.html">
+							AbstractRouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.CompiledRouteCollection.html">
+							CompiledRouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Controller.html">
+							Controller
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ControllerMiddlewareOptions.html">
+							ControllerMiddlewareOptions
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Routing.PendingResourceRegistration.html">
+							PendingResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.PendingSingletonResourceRegistration.html">
+							PendingSingletonResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResourceRegistrar.html">
+							ResourceRegistrar
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Route.html">
+							Route
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteCollection.html">
+							RouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Router.html">
+							Router
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteRegistrar.html">
+							RouteRegistrar
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.RouteCollectionInterface.html">
+							RouteCollectionInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html">
+							CreatesRegularExpressionRouteConstraints
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.FiltersControllerMiddleware.html">
+							FiltersControllerMiddleware
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResolvesRouteDependencies.html">
+							ResolvesRouteDependencies
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Routing.PendingResourceRegistration.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Routing.html">Routing</a>\<a href="Illuminate.Routing.PendingResourceRegistration.html">PendingResourceRegistration</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html"><span title="Illuminate\Routing\CreatesRegularExpressionRouteConstraints">CreatesRegularExpressionRouteConstraints</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Routing.ResourceRegistrar.html"><span title="Illuminate\Routing\ResourceRegistrar">ResourceRegistrar</span></a> <var>$registrar</var></span>, <span>string <var>$name</var></span>, <span>string <var>$controller</var></span>, <span>array <var>$options</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pending resource registration instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pending resource registration instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="only" id="_only">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>only(<span>array|string|mixed <var>$methods</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the methods the controller should apply to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the methods the controller should apply to.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="except" id="_except">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>except(<span>array|string|mixed <var>$methods</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the methods the controller should exclude.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the methods the controller should exclude.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_except">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="names" id="_names">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>names(<span>array|string <var>$names</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the route names for controller actions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the route names for controller actions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_names">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="_name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>name(<span>string <var>$method</var></span>, <span>string <var>$name</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the route name for a controller action.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the route name for a controller action.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameters" id="_parameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameters(<span>array|string <var>$parameters</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Override the route parameter names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Override the route parameter names.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameter" id="_parameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameter(<span>string <var>$previous</var></span>, <span>string <var>$new</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Override a route parameter's name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Override a route parameter's name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="middleware" id="_middleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>middleware(<span>mixed <var>$middleware</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add middleware to the resource routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add middleware to the resource routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_middleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="middlewareFor" id="_middlewareFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>middlewareFor(<span>array|string <var>$methods</var></span>, <span>array|string <var>$middleware</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify middleware that should be added to the specified resource routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify middleware that should be added to the specified resource routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_middlewareFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutMiddleware" id="_withoutMiddleware">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutMiddleware(<span>array|string <var>$middleware</var></span>): $this|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify middleware that should be removed from the resource routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify middleware that should be removed from the resource routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutMiddleware">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutMiddlewareFor" id="_withoutMiddlewareFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutMiddlewareFor(<span>array|string <var>$methods</var></span>, <span>array|string <var>$middleware</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify middleware that should be removed from the specified resource routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify middleware that should be removed from the specified resource routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutMiddlewareFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="where" id="_where">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>where(<span>mixed <var>$wheres</var></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add "where" constraints to the resource routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add &quot;where&quot; constraints to the resource routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_where">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shallow" id="_shallow">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shallow(<span>bool <var>$shallow</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the resource routes should have "shallow" nesting.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the resource routes should have &quot;shallow&quot; nesting.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shallow">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="missing" id="_missing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>missing(<span>callable <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Define the callable that should be invoked on a missing model exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define the callable that should be invoked on a missing model exception.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_missing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scoped" id="_scoped">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scoped(<span>array <var>$fields</var> = []</span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the resource routes should be scoped using the given binding fields.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the resource routes should be scoped using the given binding fields.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scoped">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTrashed" id="_withTrashed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withTrashed(<span>array <var>$methods</var> = []</span>): <b><span class="active" title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Define which routes should allow "trashed" models to be retrieved when resolving implicit model bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define which routes should allow &quot;trashed&quot; models to be retrieved when resolving implicit model bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withTrashed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="register" id="_register">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>register(): <a href="Illuminate.Routing.RouteCollection.html"><span title="Illuminate\Routing\RouteCollection">RouteCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register the resource route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register the resource route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_register">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__destruct" id="___destruct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__destruct(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle the object's destruction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle the object's destruction.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___destruct">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html"><span>Illuminate\Routing\CreatesRegularExpressionRouteConstraints</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereAlpha">whereAlpha()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereAlphaNumeric">whereAlphaNumeric()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereNumber">whereNumber()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereUlid">whereUlid()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereUuid">whereUuid()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_whereIn">whereIn()</a>, <a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html#_assignExpressionToParameters">assignExpressionToParameters()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="registrar" id="$registrar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Routing.ResourceRegistrar.html"><span title="Illuminate\Routing\ResourceRegistrar">ResourceRegistrar</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$registrar</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$registrar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="$name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$name</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="controller" id="$controller">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$controller</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$controller">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="$options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$options</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$options">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registered" id="$registered">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$registered</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$registered">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

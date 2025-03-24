@@ -1,0 +1,1835 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Concerns\QueriesRelationships |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">
+							GuardsAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">
+							HasAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">
+							HasEvents
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html">
+							HasGlobalScopes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html">
+							HasRelationships
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">
+							HasTimestamps
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html">
+							HasUniqueIds
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html">
+							HidesAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html">
+							PreventsCircularRecursion
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">
+							QueriesRelationships
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">QueriesRelationships</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Concerns\QueriesRelationships</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Builder.html"><span>Illuminate\Database\Eloquent\Builder</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Database.Concerns.BuildsQueries.html"><span title="Illuminate\Database\Concerns\BuildsQueries">BuildsQueries</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</span></b>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasNested" id="_hasNested">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasNested(
+	<span>string <var>$relations</var></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nested relationship count / exists conditions to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nested relationship count / exists conditions to the query.</p>
+<p>Sets up recursive call to whereHas until we finish the nested relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasNested">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orHas" id="_orHas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orHas(<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;|string <var>$relation</var></span>, <span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>, <span>int <var>$count</var> = <span class="php-num">1</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orHas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doesntHave" id="_doesntHave">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doesntHave&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doesntHave">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orDoesntHave" id="_orDoesntHave">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orDoesntHave(<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;|string <var>$relation</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orDoesntHave">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereHas" id="_whereHas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereHas&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with where clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with where clauses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereHas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withWhereHas" id="_withWhereHas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withWhereHas(
+	<span>string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;|<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with where clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with where clauses.</p>
+<p>Also load the relationship with the same condition.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withWhereHas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereHas" id="_orWhereHas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereHas&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with where clauses and an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereHas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereDoesntHave" id="_whereDoesntHave">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereDoesntHave&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with where clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with where clauses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereDoesntHave">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereDoesntHave" id="_orWhereDoesntHave">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereDoesntHave&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a relationship count / exists condition to the query with where clauses and an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereDoesntHave">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMorph" id="_hasMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBelongsToRelation" id="_getBelongsToRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBelongsToRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, TDeclaringModel&gt; <var>$relation</var></span>,
+	<span>class-string&lt;TRelatedModel&gt; <var>$type</var></span>,
+): <a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html"><span title="Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</span></a>&lt;TRelatedModel, TDeclaringModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the BelongsTo relationship for a single polymorphic type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the BelongsTo relationship for a single polymorphic type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBelongsToRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orHasMorph" id="_orHasMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orHasMorph(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orHasMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doesntHaveMorph" id="_doesntHaveMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doesntHaveMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doesntHaveMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orDoesntHaveMorph" id="_orDoesntHaveMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orDoesntHaveMorph(<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>, <span>string|array&lt;int, string&gt; <var>$types</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orDoesntHaveMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereHasMorph" id="_whereHasMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereHasMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with where clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereHasMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereHasMorph" id="_orWhereHasMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereHasMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>,
+	<span>int <var>$count</var> = <span class="php-num">1</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with where clauses and an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereHasMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereDoesntHaveMorph" id="_whereDoesntHaveMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereDoesntHaveMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with where clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with where clauses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereDoesntHaveMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereDoesntHaveMorph" id="_orWhereDoesntHaveMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereDoesntHaveMorph&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;, string):&nbsp;mixed)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship count / exists condition to the query with where clauses and an "or".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship count / exists condition to the query with where clauses and an &quot;or&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereDoesntHaveMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereRelation" id="_whereRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a basic where clause to a relationship query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a basic where clause to a relationship query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withWhereRelation" id="_withWhereRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withWhereRelation(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;|string <var>$relation</var></span>,
+	<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a basic where clause to a relationship query and eager-load the relationship with the same conditions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a basic where clause to a relationship query and eager-load the relationship with the same conditions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withWhereRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereRelation" id="_orWhereRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where" clause to a relationship query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where&quot; clause to a relationship query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereDoesntHaveRelation" id="_whereDoesntHaveRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereDoesntHaveRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a basic count / exists condition to a relationship query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a basic count / exists condition to a relationship query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereDoesntHaveRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereDoesntHaveRelation" id="_orWhereDoesntHaveRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereDoesntHaveRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, *, *&gt;|string <var>$relation</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where" clause to a relationship query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where&quot; clause to a relationship query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereDoesntHaveRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereMorphRelation" id="_whereMorphRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereMorphRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship condition to the query with a where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship condition to the query with a where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereMorphRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereMorphRelation" id="_orWhereMorphRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereMorphRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship condition to the query with an "or where" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship condition to the query with an &quot;or where&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereMorphRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereMorphDoesntHaveRelation" id="_whereMorphDoesntHaveRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereMorphDoesntHaveRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship condition to the query with a doesn't have clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship condition to the query with a doesn't have clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereMorphDoesntHaveRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereMorphDoesntHaveRelation" id="_orWhereMorphDoesntHaveRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereMorphDoesntHaveRelation&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;(
+	<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;TRelatedModel, *&gt;|string <var>$relation</var></span>,
+	<span>string|array&lt;int, string&gt; <var>$types</var></span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;):&nbsp;mixed)|string|array|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a> <var>$column</var></span>,
+	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a polymorphic relationship condition to the query with an "or doesn't have" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a polymorphic relationship condition to the query with an &quot;or doesn't have&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereMorphDoesntHaveRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereMorphedTo" id="_whereMorphedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereMorphedTo(<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|iterable&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;|string|null <var>$model</var></span>, <span><var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a morph-to relationship condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a morph-to relationship condition to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereMorphedTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotMorphedTo" id="_whereNotMorphedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotMorphedTo(<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|iterable&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;|string <var>$model</var></span>, <span><var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a not morph-to relationship condition to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a not morph-to relationship condition to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotMorphedTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereMorphedTo" id="_orWhereMorphedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereMorphedTo(<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|iterable&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;|string|null <var>$model</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a morph-to relationship condition to the query with an "or where" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a morph-to relationship condition to the query with an &quot;or where&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereMorphedTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereNotMorphedTo" id="_orWhereNotMorphedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereNotMorphedTo(<span><a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a>&lt;*, *&gt;|string <var>$relation</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|iterable&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;|string <var>$model</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a not morph-to relationship condition to the query with an "or where" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a not morph-to relationship condition to the query with an &quot;or where&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereNotMorphedTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBelongsTo" id="_whereBelongsTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBelongsTo(
+	<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt; <var>$related</var></span>,
+	<span>string|null <var>$relationshipName</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "belongs to" relationship where clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;belongs to&quot; relationship where clause to the query.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.RelationNotFoundException.html"><span>Illuminate\Database\Eloquent\RelationNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBelongsTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereBelongsTo" id="_orWhereBelongsTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereBelongsTo(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$related</var></span>, <span>string|null <var>$relationshipName</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "BelongsTo" relationship with an "or where" clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;BelongsTo&quot; relationship with an &quot;or where&quot; clause to the query.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereBelongsTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withAggregate" id="_withAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withAggregate(<span>mixed <var>$relations</var></span>, <span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$column</var></span>, <span>string <var>$function</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include an aggregate value for a relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include an aggregate value for a relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationHashedColumn" id="_getRelationHashedColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationHashedColumn(<span>string <var>$column</var></span>, <span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt; <var>$relation</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the relation hashed column name for the given column and relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the relation hashed column name for the given column and relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationHashedColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withCount" id="_withCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withCount(<span>mixed <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to count the relations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to count the relations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withMax" id="_withMax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withMax(<span>string|array <var>$relation</var></span>, <span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include the max of the relation's column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include the max of the relation's column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withMax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withMin" id="_withMin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withMin(<span>string|array <var>$relation</var></span>, <span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include the min of the relation's column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include the min of the relation's column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withMin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withSum" id="_withSum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withSum(<span>string|array <var>$relation</var></span>, <span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include the sum of the relation's column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include the sum of the relation's column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withSum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withAvg" id="_withAvg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withAvg(<span>string|array <var>$relation</var></span>, <span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include the average of the relation's column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include the average of the relation's column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withAvg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withExists" id="_withExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withExists(<span>string|array <var>$relation</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add subselect queries to include the existence of related models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add subselect queries to include the existence of related models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addHasWhere" id="_addHasWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addHasWhere(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$hasQuery</var></span>, <span><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt; <var>$relation</var></span>, <span>string <var>$operator</var></span>, <span>int <var>$count</var></span>, <span>string <var>$boolean</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the "has" condition where clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the &quot;has&quot; condition where clause to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addHasWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeConstraintsFrom" id="_mergeConstraintsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeConstraintsFrom(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$from</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the where constraints from another query to the current query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the where constraints from another query to the current query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeConstraintsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requalifyWhereTables" id="_requalifyWhereTables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>requalifyWhereTables(<span>array <var>$wheres</var></span>, <span>string <var>$from</var></span>, <span>string <var>$to</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates the table name for any columns with a new qualified name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates the table name for any columns with a new qualified name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requalifyWhereTables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addWhereCountQuery" id="_addWhereCountQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addWhereCountQuery(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$operator</var> = <span class="php-str">'&gt;='</span></span>, <span>int <var>$count</var> = <span class="php-num">1</span></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a sub-query count clause to this query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a sub-query count clause to this query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addWhereCountQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationWithoutConstraints" id="_getRelationWithoutConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationWithoutConstraints(<span>string <var>$relation</var></span>): <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "has relation" base query instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;has relation&quot; base query instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationWithoutConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="canUseExistsForExistenceCheck" id="_canUseExistsForExistenceCheck">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>canUseExistsForExistenceCheck(<span>string <var>$operator</var></span>, <span>int <var>$count</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check if we can run an "exists" query to optimize performance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check if we can run an &quot;exists&quot; query to optimize performance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_canUseExistsForExistenceCheck">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

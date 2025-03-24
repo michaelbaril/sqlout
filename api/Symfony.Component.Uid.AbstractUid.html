@@ -1,0 +1,822 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Uid\AbstractUid |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Uid.html">Uid</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Component.Uid.AbstractUid.html">
+							AbstractUid
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Uid.Ulid.html">
+							Ulid
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Uid.HashableInterface.html">
+							HashableInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Uid.TimeBasedUidInterface.html">
+							TimeBasedUidInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Uid.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Uid.AbstractUid.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Uid.html">Uid</a>\<a href="Symfony.Component.Uid.AbstractUid.html">AbstractUid</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a>, <a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\Uid\AbstractUid</span></b>
+
+		implements
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.Ulid.html"><span>Symfony\Component\Uid\Ulid</span></a>
+
+		implements
+			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="isValid" id="_isValid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValid(<span>string <var>$uid</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether the passed value is valid for the constructor of the current class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the passed value is valid for the constructor of the current class.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.Ulid.html#_isValid">						<code>Symfony\Component\Uid\Ulid::isValid()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromString" id="_fromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromString(<span>string <var>$uid</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates an AbstractUid from an identifier represented in any of the supported formats.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates an AbstractUid from an identifier represented in any of the supported formats.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the passed value is not valid</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.Ulid.html#_fromString">						<code>Symfony\Component\Uid\Ulid::fromString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromBinary" id="_fromBinary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromBinary(<span>string <var>$uid</var></span>): static</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the passed value is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromBinary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromBase58" id="_fromBase58">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromBase58(<span>string <var>$uid</var></span>): static</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the passed value is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromBase58">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromBase32" id="_fromBase32">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromBase32(<span>string <var>$uid</var></span>): static</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the passed value is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromBase32">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromRfc4122" id="_fromRfc4122">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromRfc4122(<span>string <var>$uid</var></span>): static</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uid</var>&nbsp;&nbsp;</td>
+										<td><p>A valid RFC 9562/4122 uid</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the passed value is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromRfc4122">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBinary" id="_toBinary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBinary(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a raw binary string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a raw binary string.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.Ulid.html#_toBinary">						<code>Symfony\Component\Uid\Ulid::toBinary()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBinary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBase58" id="_toBase58">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBase58(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a base58 case-sensitive string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a base58 case-sensitive string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBase58">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBase32" id="_toBase32">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBase32(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a base32 case-insensitive string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a base32 case-insensitive string.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.Ulid.html#_toBase32">						<code>Symfony\Component\Uid\Ulid::toBase32()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBase32">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toRfc4122" id="_toRfc4122">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toRfc4122(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a RFC 9562/4122 case-insensitive string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a RFC 9562/4122 case-insensitive string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toRfc4122">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toHex" id="_toHex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toHex(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the identifier as a prefixed hexadecimal case insensitive string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the identifier as a prefixed hexadecimal case insensitive string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toHex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="equals" id="_equals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>equals(<span>mixed <var>$other</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the argument is an AbstractUid and contains the same value as the current instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the argument is an AbstractUid and contains the same value as the current instance.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$other</var>&nbsp;&nbsp;</td>
+										<td><p>The object to compare the current instance to,
+which is always an instance of the same class.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>True if equal, false otherwise.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Hashable.html#_equals">						<code>Ds\Hashable::equals()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_equals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hash" id="_hash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hash(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a scalar value to be used as the hash value of the objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a scalar value to be used as the hash value of the objects.</p>
+<p>While the hash value does not define equality, all objects that are
+equal according to Ds\Hashable::equals() must have the same hash
+value. Hash values of equal objects don't have to be unique, for
+example you could just return TRUE for all objects and nothing
+would break - the only implication would be that hash tables then
+turn into linked lists because all your objects will be hashed to
+the same bucket. It's therefore very important that you pick a good
+hash value, such as an ID or email address.</p>
+<p>This method allows objects to be used as keys in structures such as
+Ds\Map and Ds\Set, or any other lookup structure that honors this
+interface.</p>
+<p><b>Caution:</b> Do not pick a value that might change within the object,
+such as a public property. Hash table lookups would fail because
+the hash has changed.</p>
+<p><b>Caution:</b> All objects that are equal must have the same hash value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A scalar value to be used as this object's hash value.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Hashable.html#_hash">						<code>Ds\Hashable::hash()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compare" id="_compare">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compare(<span><b><span class="active" title="Symfony\Component\Uid\AbstractUid">self</span></b> <var>$other</var></span>): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compare">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toString" id="_toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					final
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="uid" id="$uid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$uid</var></code>
+				
+	<div class="expandable-collapsedView">
+		The identifier in its canonic representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The identifier in its canonic representation.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uid">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

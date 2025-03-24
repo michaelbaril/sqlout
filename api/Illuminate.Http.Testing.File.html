@@ -1,0 +1,710 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Http\Testing\File |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.html">Http</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.Testing.html">Testing</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Http.Testing.File.html">
+							File
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.Testing.FileFactory.html">
+							FileFactory
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Http.Testing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Http.Testing.File.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Http.html">Http</a>\<a href="namespace-Illuminate.Http.Testing.html">Testing</a>\<a href="Illuminate.Http.Testing.File.html">File</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Http.UploadedFile.html"><span title="Illuminate\Http\UploadedFile">UploadedFile</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="SplFileInfo.html"><span>SplFileInfo</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.HttpFoundation.File.File.html"><span>Symfony\Component\HttpFoundation\File\File</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.HttpFoundation.File.UploadedFile.html"><span>Symfony\Component\HttpFoundation\File\UploadedFile</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.UploadedFile.html"><span>Illuminate\Http\UploadedFile</span></a>
+
+
+		uses
+			<a href="Illuminate.Http.FileHelpers.html"><span title="Illuminate\Http\FileHelpers">FileHelpers</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Http\Testing\File</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$name</var></span>, <span>resource <var>$tempFile</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new file instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new file instance.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The full temporary path to the file</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$tempFile</var>&nbsp;&nbsp;</td>
+										<td><p>The original file name of the uploaded file</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#___construct">						<code>Symfony\Component\HttpFoundation\File\UploadedFile::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(<span>string <var>$name</var></span>, <span>string|int <var>$kilobytes</var> = <span class="php-num">0</span></span>): <b><span class="active" title="Illuminate\Http\Testing\File">File</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new fake file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new fake file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createWithContent" id="_createWithContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createWithContent(<span>string <var>$name</var></span>, <span>string <var>$content</var></span>): <b><span class="active" title="Illuminate\Http\Testing\File">File</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new fake file with content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new fake file with content.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createWithContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="image" id="_image">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>image(<span>string <var>$name</var></span>, <span>int <var>$width</var> = <span class="php-num">10</span></span>, <span>int <var>$height</var> = <span class="php-num">10</span></span>): <b><span class="active" title="Illuminate\Http\Testing\File">File</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new fake image.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new fake image.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_image">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="size" id="_size">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>size(<span>int <var>$kilobytes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the "size" of the file in kilobytes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the &quot;size&quot; of the file in kilobytes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_size">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSize" id="_getSize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSize(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the size of the file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the size of the file.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="SplFileInfo.html#_getSize">						<code>SplFileInfo::getSize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mimeType" id="_mimeType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mimeType(<span>string <var>$mimeType</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the "MIME type" for the file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the &quot;MIME type&quot; for the file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mimeType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMimeType" id="_getMimeType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMimeType(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the MIME type of the file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the MIME type of the file.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.File.File.html#_getMimeType">						<code>Symfony\Component\HttpFoundation\File\File::getMimeType()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMimeType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tempFilePath" id="_tempFilePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tempFilePath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the path to the temporary file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the path to the temporary file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tempFilePath">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Http.UploadedFile.html"><span>Illuminate\Http\UploadedFile</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.UploadedFile.html#_fake">fake()</a>, <a href="Illuminate.Http.UploadedFile.html#_store">store()</a>, <a href="Illuminate.Http.UploadedFile.html#_storePublicly">storePublicly()</a>, <a href="Illuminate.Http.UploadedFile.html#_storePubliclyAs">storePubliclyAs()</a>, <a href="Illuminate.Http.UploadedFile.html#_storeAs">storeAs()</a>, <a href="Illuminate.Http.UploadedFile.html#_get">get()</a>, <a href="Illuminate.Http.UploadedFile.html#_clientExtension">clientExtension()</a>, <a href="Illuminate.Http.UploadedFile.html#_createFromBase">createFromBase()</a>, <a href="Illuminate.Http.UploadedFile.html#_parseOptions">parseOptions()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html"><span>Symfony\Component\HttpFoundation\File\UploadedFile</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getClientOriginalName">getClientOriginalName()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getClientOriginalExtension">getClientOriginalExtension()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getClientOriginalPath">getClientOriginalPath()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getClientMimeType">getClientMimeType()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_guessClientExtension">guessClientExtension()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getError">getError()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_isValid">isValid()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_move">move()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getMaxFilesize">getMaxFilesize()</a>, <a href="Symfony.Component.HttpFoundation.File.UploadedFile.html#_getErrorMessage">getErrorMessage()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.HttpFoundation.File.File.html"><span>Symfony\Component\HttpFoundation\File\File</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.File.File.html#_guessExtension">guessExtension()</a>, <a href="Symfony.Component.HttpFoundation.File.File.html#_getContent">getContent()</a>, <a href="Symfony.Component.HttpFoundation.File.File.html#_getTargetFile">getTargetFile()</a>, <a href="Symfony.Component.HttpFoundation.File.File.html#_getName">getName()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="SplFileInfo.html"><span>SplFileInfo</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="SplFileInfo.html#_getPath">getPath()</a>, <a href="SplFileInfo.html#_getFilename">getFilename()</a>, <a href="SplFileInfo.html#_getExtension">getExtension()</a>, <a href="SplFileInfo.html#_getBasename">getBasename()</a>, <a href="SplFileInfo.html#_getPathname">getPathname()</a>, <a href="SplFileInfo.html#_getPerms">getPerms()</a>, <a href="SplFileInfo.html#_getInode">getInode()</a>, <a href="SplFileInfo.html#_getOwner">getOwner()</a>, <a href="SplFileInfo.html#_getGroup">getGroup()</a>, <a href="SplFileInfo.html#_getATime">getATime()</a>, <a href="SplFileInfo.html#_getMTime">getMTime()</a>, <a href="SplFileInfo.html#_getCTime">getCTime()</a>, <a href="SplFileInfo.html#_getType">getType()</a>, <a href="SplFileInfo.html#_isWritable">isWritable()</a>, <a href="SplFileInfo.html#_isReadable">isReadable()</a>, <a href="SplFileInfo.html#_isExecutable">isExecutable()</a>, <a href="SplFileInfo.html#_isFile">isFile()</a>, <a href="SplFileInfo.html#_isDir">isDir()</a>, <a href="SplFileInfo.html#_isLink">isLink()</a>, <a href="SplFileInfo.html#_getLinkTarget">getLinkTarget()</a>, <a href="SplFileInfo.html#_getRealPath">getRealPath()</a>, <a href="SplFileInfo.html#_getFileInfo">getFileInfo()</a>, <a href="SplFileInfo.html#_getPathInfo">getPathInfo()</a>, <a href="SplFileInfo.html#_openFile">openFile()</a>, <a href="SplFileInfo.html#_setFileClass">setFileClass()</a>, <a href="SplFileInfo.html#_setInfoClass">setInfoClass()</a>, <a href="SplFileInfo.html#___toString">__toString()</a>, <a href="SplFileInfo.html#___debugInfo">__debugInfo()</a>, <a href="SplFileInfo.html#__bad_state_ex" class="deprecated">_bad_state_ex()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.FileHelpers.html"><span>Illuminate\Http\FileHelpers</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.FileHelpers.html#_path">path()</a>, <a href="Illuminate.Http.FileHelpers.html#_extension">extension()</a>, <a href="Illuminate.Http.FileHelpers.html#_hashName">hashName()</a>, <a href="Illuminate.Http.FileHelpers.html#_dimensions">dimensions()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="name" id="$name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$name</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tempFile" id="$tempFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">resource</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$tempFile</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$tempFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sizeToReport" id="$sizeToReport">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$sizeToReport</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sizeToReport">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mimeTypeToReport" id="$mimeTypeToReport">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$mimeTypeToReport</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$mimeTypeToReport">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Http.FileHelpers.html"><span>Illuminate\Http\FileHelpers</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Http.FileHelpers.html#$hashName">$hashName</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

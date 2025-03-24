@@ -1,0 +1,687 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\HttpFoundation\JsonResponse |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Cookie.html">
+							Cookie
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.FileBag.html">
+							FileBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.HeaderBag.html">
+							HeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.InputBag.html">
+							InputBag
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.HttpFoundation.JsonResponse.html">
+							JsonResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ParameterBag.html">
+							ParameterBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.RedirectResponse.html">
+							RedirectResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Response.html">
+							Response
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ResponseHeaderBag.html">
+							ResponseHeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ServerBag.html">
+							ServerBag
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.HttpFoundation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.HttpFoundation.JsonResponse.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="Symfony.Component.HttpFoundation.JsonResponse.html">JsonResponse</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Symfony.Component.HttpFoundation.Response.html"><span title="Symfony\Component\HttpFoundation\Response">Response</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Response represents an HTTP response in JSON format.</p>
+<p>Note that this class does not force the returned JSON content to be an
+object. It is however recommended that you do return an object as it
+protects yourself against XSSI and JSON-JavaScript Hijacking.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.HttpFoundation.Response.html"><span>Symfony\Component\HttpFoundation\Response</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\HttpFoundation\JsonResponse</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.JsonResponse.html"><span>Illuminate\Http\JsonResponse</span></a>
+
+
+		uses
+			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>mixed <var>$data</var> = <span class="php-kw">null</span></span>, <span>int <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = []</span>, <span>bool <var>$json</var> = <span class="php-kw">false</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$status</var>&nbsp;&nbsp;</td>
+										<td><p>The HTTP status code (200 &quot;OK&quot; by default)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$json</var>&nbsp;&nbsp;</td>
+										<td><p>If the data is already a JSON string</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.HttpFoundation.Response.html#___construct">						<code>Symfony\Component\HttpFoundation\Response::__construct()</code></a>				</li>
+		</ul>
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.JsonResponse.html#___construct">						<code>Illuminate\Http\JsonResponse::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromJsonString" id="_fromJsonString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromJsonString(<span>string <var>$data</var></span>, <span>int <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Factory method for chainability.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Factory method for chainability.</p>
+<p>Example:</p>
+<p>return JsonResponse::fromJsonString('{&quot;key&quot;: &quot;value&quot;}')
+-&gt;setSharedMaxAge(300);</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>The JSON response string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$status</var>&nbsp;&nbsp;</td>
+										<td><p>The response status code (200 &quot;OK&quot; by default)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$headers</var>&nbsp;&nbsp;</td>
+										<td><p>An array of response headers</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.JsonResponse.html#_fromJsonString">						<code>Illuminate\Http\JsonResponse::fromJsonString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromJsonString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCallback" id="_setCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCallback(<span>string|null <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the JSONP callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the JSONP callback.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>The JSONP callback or null to use none</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When the callback name is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setJson" id="_setJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setJson(<span>string <var>$json</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a raw string containing a JSON document to be sent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a raw string containing a JSON document to be sent.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setData" id="_setData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setData(<span>mixed <var>$data</var> = []</span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the data to be sent as JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the data to be sent as JSON.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.JsonResponse.html#_setData">						<code>Illuminate\Http\JsonResponse::setData()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEncodingOptions" id="_getEncodingOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEncodingOptions(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns options used while encoding data to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns options used while encoding data to JSON.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEncodingOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEncodingOptions" id="_setEncodingOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEncodingOptions(<span>int <var>$encodingOptions</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets options used while encoding data to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets options used while encoding data to JSON.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.JsonResponse.html#_setEncodingOptions">						<code>Illuminate\Http\JsonResponse::setEncodingOptions()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEncodingOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>update(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates the content and headers according to the JSON data and callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates the content and headers according to the JSON data and callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.HttpFoundation.Response.html"><span>Symfony\Component\HttpFoundation\Response</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.Response.html#___toString">__toString()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#___clone">__clone()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_prepare">prepare()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_sendHeaders">sendHeaders()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_sendContent">sendContent()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_send">send()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setContent">setContent()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getContent">getContent()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setProtocolVersion">setProtocolVersion()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getProtocolVersion">getProtocolVersion()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setStatusCode">setStatusCode()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getStatusCode">getStatusCode()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setCharset">setCharset()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getCharset">getCharset()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isCacheable">isCacheable()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isFresh">isFresh()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isValidateable">isValidateable()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setPrivate">setPrivate()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setPublic">setPublic()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setImmutable">setImmutable()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isImmutable">isImmutable()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_mustRevalidate">mustRevalidate()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getDate">getDate()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setDate">setDate()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getAge">getAge()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_expire">expire()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getExpires">getExpires()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setExpires">setExpires()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getMaxAge">getMaxAge()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setMaxAge">setMaxAge()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setStaleIfError">setStaleIfError()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setStaleWhileRevalidate">setStaleWhileRevalidate()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setSharedMaxAge">setSharedMaxAge()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getTtl">getTtl()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setTtl">setTtl()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setClientTtl">setClientTtl()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getLastModified">getLastModified()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setLastModified">setLastModified()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getEtag">getEtag()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setEtag">setEtag()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setCache">setCache()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setNotModified">setNotModified()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_hasVary">hasVary()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_getVary">getVary()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setVary">setVary()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isNotModified">isNotModified()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isInvalid">isInvalid()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isInformational">isInformational()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isSuccessful">isSuccessful()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isRedirection">isRedirection()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isClientError">isClientError()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isServerError">isServerError()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isOk">isOk()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isForbidden">isForbidden()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isNotFound">isNotFound()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isRedirect">isRedirect()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_isEmpty">isEmpty()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_closeOutputBuffers">closeOutputBuffers()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_setContentSafe">setContentSafe()</a>, <a href="Symfony.Component.HttpFoundation.Response.html#_ensureIEOverSSLCompatibility">ensureIEOverSSLCompatibility()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="DEFAULT_ENCODING_OPTIONS" id="DEFAULT_ENCODING_OPTIONS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>DEFAULT_ENCODING_OPTIONS = <span class="php-num">15</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEFAULT_ENCODING_OPTIONS">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Symfony.Component.HttpFoundation.Response.html"><span>Symfony\Component\HttpFoundation\Response</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.HttpFoundation.Response.html#HTTP_CONTINUE"><code>HTTP_CONTINUE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_SWITCHING_PROTOCOLS"><code>HTTP_SWITCHING_PROTOCOLS</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PROCESSING"><code>HTTP_PROCESSING</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_EARLY_HINTS"><code>HTTP_EARLY_HINTS</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_OK"><code>HTTP_OK</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_CREATED"><code>HTTP_CREATED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_ACCEPTED"><code>HTTP_ACCEPTED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NON_AUTHORITATIVE_INFORMATION"><code>HTTP_NON_AUTHORITATIVE_INFORMATION</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NO_CONTENT"><code>HTTP_NO_CONTENT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_RESET_CONTENT"><code>HTTP_RESET_CONTENT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PARTIAL_CONTENT"><code>HTTP_PARTIAL_CONTENT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_MULTI_STATUS"><code>HTTP_MULTI_STATUS</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_ALREADY_REPORTED"><code>HTTP_ALREADY_REPORTED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_IM_USED"><code>HTTP_IM_USED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_MULTIPLE_CHOICES"><code>HTTP_MULTIPLE_CHOICES</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_MOVED_PERMANENTLY"><code>HTTP_MOVED_PERMANENTLY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_FOUND"><code>HTTP_FOUND</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_SEE_OTHER"><code>HTTP_SEE_OTHER</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NOT_MODIFIED"><code>HTTP_NOT_MODIFIED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_USE_PROXY"><code>HTTP_USE_PROXY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_RESERVED"><code>HTTP_RESERVED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_TEMPORARY_REDIRECT"><code>HTTP_TEMPORARY_REDIRECT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PERMANENTLY_REDIRECT"><code>HTTP_PERMANENTLY_REDIRECT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_BAD_REQUEST"><code>HTTP_BAD_REQUEST</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_UNAUTHORIZED"><code>HTTP_UNAUTHORIZED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PAYMENT_REQUIRED"><code>HTTP_PAYMENT_REQUIRED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_FORBIDDEN"><code>HTTP_FORBIDDEN</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NOT_FOUND"><code>HTTP_NOT_FOUND</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_METHOD_NOT_ALLOWED"><code>HTTP_METHOD_NOT_ALLOWED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NOT_ACCEPTABLE"><code>HTTP_NOT_ACCEPTABLE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PROXY_AUTHENTICATION_REQUIRED"><code>HTTP_PROXY_AUTHENTICATION_REQUIRED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_REQUEST_TIMEOUT"><code>HTTP_REQUEST_TIMEOUT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_CONFLICT"><code>HTTP_CONFLICT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_GONE"><code>HTTP_GONE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_LENGTH_REQUIRED"><code>HTTP_LENGTH_REQUIRED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PRECONDITION_FAILED"><code>HTTP_PRECONDITION_FAILED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_REQUEST_ENTITY_TOO_LARGE"><code>HTTP_REQUEST_ENTITY_TOO_LARGE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_REQUEST_URI_TOO_LONG"><code>HTTP_REQUEST_URI_TOO_LONG</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_UNSUPPORTED_MEDIA_TYPE"><code>HTTP_UNSUPPORTED_MEDIA_TYPE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_REQUESTED_RANGE_NOT_SATISFIABLE"><code>HTTP_REQUESTED_RANGE_NOT_SATISFIABLE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_EXPECTATION_FAILED"><code>HTTP_EXPECTATION_FAILED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_I_AM_A_TEAPOT"><code>HTTP_I_AM_A_TEAPOT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_MISDIRECTED_REQUEST"><code>HTTP_MISDIRECTED_REQUEST</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_UNPROCESSABLE_ENTITY"><code>HTTP_UNPROCESSABLE_ENTITY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_LOCKED"><code>HTTP_LOCKED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_FAILED_DEPENDENCY"><code>HTTP_FAILED_DEPENDENCY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_TOO_EARLY"><code>HTTP_TOO_EARLY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_UPGRADE_REQUIRED"><code>HTTP_UPGRADE_REQUIRED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_PRECONDITION_REQUIRED"><code>HTTP_PRECONDITION_REQUIRED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_TOO_MANY_REQUESTS"><code>HTTP_TOO_MANY_REQUESTS</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE"><code>HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_UNAVAILABLE_FOR_LEGAL_REASONS"><code>HTTP_UNAVAILABLE_FOR_LEGAL_REASONS</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_INTERNAL_SERVER_ERROR"><code>HTTP_INTERNAL_SERVER_ERROR</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NOT_IMPLEMENTED"><code>HTTP_NOT_IMPLEMENTED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_BAD_GATEWAY"><code>HTTP_BAD_GATEWAY</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_SERVICE_UNAVAILABLE"><code>HTTP_SERVICE_UNAVAILABLE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_GATEWAY_TIMEOUT"><code>HTTP_GATEWAY_TIMEOUT</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_VERSION_NOT_SUPPORTED"><code>HTTP_VERSION_NOT_SUPPORTED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL"><code>HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_INSUFFICIENT_STORAGE"><code>HTTP_INSUFFICIENT_STORAGE</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_LOOP_DETECTED"><code>HTTP_LOOP_DETECTED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NOT_EXTENDED"><code>HTTP_NOT_EXTENDED</code></a>, <a href="Symfony.Component.HttpFoundation.Response.html#HTTP_NETWORK_AUTHENTICATION_REQUIRED"><code>HTTP_NETWORK_AUTHENTICATION_REQUIRED</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="data" id="$data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$data</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$data">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callback" id="$callback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$callback</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$callback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="encodingOptions" id="$encodingOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$encodingOptions</var> = <b><span class="active" title="Symfony\Component\HttpFoundation\JsonResponse">self</span></b>::<a href="Symfony.Component.HttpFoundation.JsonResponse.html#DEFAULT_ENCODING_OPTIONS">DEFAULT_ENCODING_OPTIONS</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$encodingOptions">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Symfony.Component.HttpFoundation.Response.html"><span>Symfony\Component\HttpFoundation\Response</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Symfony.Component.HttpFoundation.Response.html#$headers">$headers</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$content">$content</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$version">$version</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$statusCode">$statusCode</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$statusText">$statusText</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$charset">$charset</a></var>, <var><a href="Symfony.Component.HttpFoundation.Response.html#$statusTexts">$statusTexts</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

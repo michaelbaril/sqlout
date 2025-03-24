@@ -1,0 +1,648 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Concerns\ManagesTransactions |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Concerns.BuildsQueries.html">
+							BuildsQueries
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html">
+							BuildsWhereDateClauses
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html">
+							CompilesJsonPaths
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.ExplainsQueries.html">
+							ExplainsQueries
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Concerns.ManagesTransactions.html">
+							ManagesTransactions
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Concerns.ManagesTransactions.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Concerns.ManagesTransactions.html">ManagesTransactions</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Concerns\ManagesTransactions</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Connection.html"><span>Illuminate\Database\Connection</span></a>
+
+		implements
+			<a href="Illuminate.Database.ConnectionInterface.html"><span title="Illuminate\Database\ConnectionInterface">ConnectionInterface</span></a>
+
+		uses
+			<a href="Illuminate.Database.DetectsConcurrencyErrors.html"><span title="Illuminate\Database\DetectsConcurrencyErrors">DetectsConcurrencyErrors</span></a>, 
+			<a href="Illuminate.Database.DetectsLostConnections.html"><span title="Illuminate\Database\DetectsLostConnections">DetectsLostConnections</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Concerns\ManagesTransactions">ManagesTransactions</span></b>, 
+			<a href="Illuminate.Support.InteractsWithTime.html"><span title="Illuminate\Support\InteractsWithTime">InteractsWithTime</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="transaction" id="_transaction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>transaction&lt;<span title="">TReturn</span> is mixed&gt;(<span><a href="Closure.html"><span title="Closure">Closure</span></a>(static):&nbsp;TReturn <var>$callback</var></span>, <span>int <var>$attempts</var> = <span class="php-num">1</span></span>): TReturn</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_transaction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleTransactionException" id="_handleTransactionException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleTransactionException(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>, <span>int <var>$currentAttempt</var></span>, <span>int <var>$maxAttempts</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle an exception encountered when running a transacted statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle an exception encountered when running a transacted statement.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleTransactionException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beginTransaction" id="_beginTransaction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>beginTransaction(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Start a new database transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Start a new database transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_beginTransaction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createTransaction" id="_createTransaction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createTransaction(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a transaction within the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a transaction within the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createTransaction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createSavepoint" id="_createSavepoint">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createSavepoint(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a save point within the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a save point within the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createSavepoint">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleBeginTransactionException" id="_handleBeginTransactionException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleBeginTransactionException(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle an exception from a transaction beginning.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle an exception from a transaction beginning.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleBeginTransactionException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="commit" id="_commit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>commit(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Commit the active database transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Commit the active database transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_commit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleCommitTransactionException" id="_handleCommitTransactionException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleCommitTransactionException(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>, <span>int <var>$currentAttempt</var></span>, <span>int <var>$maxAttempts</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle an exception encountered when committing a transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle an exception encountered when committing a transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleCommitTransactionException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rollBack" id="_rollBack">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rollBack(<span>int|null <var>$toLevel</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Rollback the active database transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Rollback the active database transaction.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rollBack">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performRollBack" id="_performRollBack">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>performRollBack(<span>int <var>$toLevel</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform a rollback within the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform a rollback within the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performRollBack">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleRollBackException" id="_handleRollBackException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleRollBackException(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle an exception from a rollback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle an exception from a rollback.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Throwable.html"><span>Throwable</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleRollBackException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transactionLevel" id="_transactionLevel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>transactionLevel(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of active transactions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of active transactions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_transactionLevel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterCommit" id="_afterCommit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>afterCommit(<span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the callback after a transaction commits.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the callback after a transaction commits.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_afterCommit">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

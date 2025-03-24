@@ -1,0 +1,2876 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Process\Process |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Process.html">Process</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Component.Process.Process.html">
+							Process
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Process.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Process.Process.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Process.html">Process</a>\<a href="Symfony.Component.Process.Process.html">Process</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;string, string&gt;</code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Process is a thin wrapper around proc_* functions to easily
+start independent PHP processes.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>array <var>$command</var></span>,
+	<span>string|null <var>$cwd</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$env</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$input</var> = <span class="php-kw">null</span></span>,
+	<span>int|float|null <var>$timeout</var> = <span class="php-num">60</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$command</var>&nbsp;&nbsp;</td>
+										<td><p>The command to run and its arguments listed as separate entries</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cwd</var>&nbsp;&nbsp;</td>
+										<td><p>The working directory or null to use the working dir of the current PHP process</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$env</var>&nbsp;&nbsp;</td>
+										<td><p>The environment variables or null to use the same environment as the current PHP process</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$input</var>&nbsp;&nbsp;</td>
+										<td><p>The input as stream resource, scalar or \Traversable, or null for no input</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$timeout</var>&nbsp;&nbsp;</td>
+										<td><p>The timeout in seconds or null to disable</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When proc_open is not installed</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromShellCommandline" id="_fromShellCommandline">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromShellCommandline(
+	<span>string <var>$command</var></span>,
+	<span>string|null <var>$cwd</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$env</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$input</var> = <span class="php-kw">null</span></span>,
+	<span>int|float|null <var>$timeout</var> = <span class="php-num">60</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a Process instance as a command-line to be run in a shell wrapper.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a Process instance as a command-line to be run in a shell wrapper.</p>
+<p>Command-lines are parsed by the shell of your OS (/bin/sh on Unix-like, cmd.exe on Windows.)
+This allows using e.g. pipes or conditional execution. In this mode, signals are sent to the
+shell wrapper and not to your commands.</p>
+<p>In order to inject dynamic values into command-lines, we strongly recommend using placeholders.
+This will save escaping values, which is not portable nor secure anyway:</p>
+<p>$process = Process::fromShellCommandline('my_command &quot;${:MY_VAR}&quot;');
+$process-&gt;run(null, ['MY_VAR' =&gt; $theValue]);</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$command</var>&nbsp;&nbsp;</td>
+										<td><p>The command line to pass to the shell of the OS</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cwd</var>&nbsp;&nbsp;</td>
+										<td><p>The working directory or null to use the working dir of the current PHP process</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$env</var>&nbsp;&nbsp;</td>
+										<td><p>The environment variables or null to use the same environment as the current PHP process</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$input</var>&nbsp;&nbsp;</td>
+										<td><p>The input as stream resource, scalar or \Traversable, or null for no input</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$timeout</var>&nbsp;&nbsp;</td>
+										<td><p>The timeout in seconds or null to disable</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When proc_open is not installed</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromShellCommandline">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__sleep" id="___sleep">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__sleep(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___sleep">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__wakeup" id="___wakeup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__wakeup(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___wakeup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__destruct" id="___destruct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__destruct()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___destruct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="run" id="_run">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>run(<span>callable|null <var>$callback</var> = <span class="php-kw">null</span></span>, <span>array <var>$env</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Runs the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Runs the process.</p>
+<p>The callback receives the type of output (out or err) and
+some bytes from the output in real-time. It allows to have feedback
+from the independent process during execution.</p>
+<p>The STDOUT and STDERR are also available after the process is finished
+via the getOutput() and getErrorOutput() methods.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A PHP callback to run whenever there is some
+output available on STDOUT or STDERR</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The exit status code</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessStartFailedException.html"><span>Symfony\Component\Process\Exception\ProcessStartFailedException</span></a></code>&nbsp;</td>
+										<td><p>When process can't be launched</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When process is already running</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessTimedOutException.html"><span>Symfony\Component\Process\Exception\ProcessTimedOutException</span></a></code>&nbsp;</td>
+										<td><p>When process timed out</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessSignaledException.html"><span>Symfony\Component\Process\Exception\ProcessSignaledException</span></a></code>&nbsp;</td>
+										<td><p>When process stopped after receiving signal</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case a callback is provided and output has been disabled</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_run">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mustRun" id="_mustRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mustRun(<span>?callable <var>$callback</var> = <span class="php-kw">null</span></span>, <span>array <var>$env</var> = []</span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Runs the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Runs the process.</p>
+<p>This is identical to run() except that an exception is thrown if the process
+exits with a non-zero exit code.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessFailedException.html"><span>Symfony\Component\Process\Exception\ProcessFailedException</span></a></code>&nbsp;</td>
+										<td><p>if the process didn't terminate successfully</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mustRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="start" id="_start">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>start(<span>callable|null <var>$callback</var> = <span class="php-kw">null</span></span>, <span>array <var>$env</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Starts the process and returns after writing the input to STDIN.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Starts the process and returns after writing the input to STDIN.</p>
+<p>This method blocks until all STDIN data is sent to the process then it
+returns while the process runs in the background.</p>
+<p>The termination of the process can be awaited with wait().</p>
+<p>The callback receives the type of output (out or err) and some bytes from
+the output in real-time while writing the standard input to the process.
+It allows to have feedback from the independent process during execution.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A PHP callback to run whenever there is some
+output available on STDOUT or STDERR</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessStartFailedException.html"><span>Symfony\Component\Process\Exception\ProcessStartFailedException</span></a></code>&nbsp;</td>
+										<td><p>When process can't be launched</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When process is already running</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case a callback is provided and output has been disabled</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_start">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="restart" id="_restart">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>restart(<span>callable|null <var>$callback</var> = <span class="php-kw">null</span></span>, <span>array <var>$env</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Restarts the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Restarts the process.</p>
+<p>Be warned that the process is cloned before being started.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A PHP callback to run whenever there is some
+output available on STDOUT or STDERR</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessStartFailedException.html"><span>Symfony\Component\Process\Exception\ProcessStartFailedException</span></a></code>&nbsp;</td>
+										<td><p>When process can't be launched</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When process is already running</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_restart">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wait" id="_wait">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wait(<span>callable|null <var>$callback</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Waits for the process to terminate.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Waits for the process to terminate.</p>
+<p>The callback receives the type of output (out or err) and some bytes
+from the output in real-time while writing the standard input to the process.
+It allows to have feedback from the independent process during execution.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A valid PHP callback</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The exitcode of the process</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessTimedOutException.html"><span>Symfony\Component\Process\Exception\ProcessTimedOutException</span></a></code>&nbsp;</td>
+										<td><p>When process timed out</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessSignaledException.html"><span>Symfony\Component\Process\Exception\ProcessSignaledException</span></a></code>&nbsp;</td>
+										<td><p>When process stopped after receiving signal</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When process is not yet started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wait">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="waitUntil" id="_waitUntil">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>waitUntil(<span>callable <var>$callback</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Waits until the callback returns true.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Waits until the callback returns true.</p>
+<p>The callback receives the type of output (out or err) and some bytes
+from the output in real-time while writing the standard input to the process.
+It allows to have feedback from the independent process during execution.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>When process timed out</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When process is not yet started</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessTimedOutException.html"><span>Symfony\Component\Process\Exception\ProcessTimedOutException</span></a></code>&nbsp;</td>
+										<td><p>In case the timeout was reached</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_waitUntil">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPid" id="_getPid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPid(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the Pid (process identifier), if applicable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the Pid (process identifier), if applicable.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The process id if running, null otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="signal" id="_signal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>signal(<span>int <var>$signal</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sends a POSIX signal to the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sends a POSIX signal to the process.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$signal</var>&nbsp;&nbsp;</td>
+										<td><p>A valid POSIX signal (see <a href="https://php.net/pcntl.constants">https://php.net/pcntl.constants</a>)</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not running</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case --enable-sigchild is activated and the process can't be killed</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case of failure</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_signal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disableOutput" id="_disableOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>disableOutput(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Disables fetching output and error output from the underlying process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disables fetching output and error output from the underlying process.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is already running</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>if an idle timeout is set</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disableOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enableOutput" id="_enableOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enableOutput(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Enables fetching output and error output from the underlying process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enables fetching output and error output from the underlying process.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is already running</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enableOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isOutputDisabled" id="_isOutputDisabled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isOutputDisabled(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true in case the output is disabled, false otherwise.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true in case the output is disabled, false otherwise.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isOutputDisabled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOutput" id="_getOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOutput(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the current output of the process (STDOUT).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the current output of the process (STDOUT).</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case the output has been disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIncrementalOutput" id="_getIncrementalOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIncrementalOutput(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the output incrementally.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the output incrementally.</p>
+<p>In comparison with the getOutput method which always return the whole
+output, this one returns the new output since the last call.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case the output has been disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIncrementalOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(<span>int <var>$flags</var> = <span class="php-num">0</span></span>): <a href="Generator.html"><span title="Generator">Generator</span></a>&lt;string, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an iterator to the output of the process, with the output type as keys (Process::OUT/ERR).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an iterator to the output of the process, with the output type as keys (Process::OUT/ERR).</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$flags</var>&nbsp;&nbsp;</td>
+										<td><p>A bit field of Process::ITER_* flags</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case the output has been disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not started</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clearOutput" id="_clearOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clearOutput(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Clears the process output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clears the process output.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clearOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getErrorOutput" id="_getErrorOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getErrorOutput(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the current error output of the process (STDERR).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the current error output of the process (STDERR).</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case the output has been disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getErrorOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIncrementalErrorOutput" id="_getIncrementalErrorOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIncrementalErrorOutput(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the errorOutput incrementally.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the errorOutput incrementally.</p>
+<p>In comparison with the getErrorOutput method which always return the
+whole error output, this one returns the new error output since the last
+call.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case the output has been disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIncrementalErrorOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clearErrorOutput" id="_clearErrorOutput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clearErrorOutput(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Clears the process output.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clears the process output.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clearErrorOutput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExitCode" id="_getExitCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExitCode(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the exit code returned by the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the exit code returned by the process.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The exit status code, null if the Process is not terminated</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExitCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExitCodeText" id="_getExitCodeText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExitCodeText(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a string representation for the exit code returned by the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a string representation for the exit code returned by the process.</p>
+<p>This method relies on the Unix exit code status standardization
+and might not be relevant for other operating systems.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A string representation for the exit status code, null if the Process is not terminated</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExitCodeText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSuccessful" id="_isSuccessful">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSuccessful(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the process ended successfully.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the process ended successfully.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSuccessful">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasBeenSignaled" id="_hasBeenSignaled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasBeenSignaled(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the child process has been terminated by an uncaught signal.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the child process has been terminated by an uncaught signal.</p>
+<p>It always returns false on Windows.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not terminated</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasBeenSignaled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTermSignal" id="_getTermSignal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTermSignal(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of the signal that caused the child process to terminate its execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of the signal that caused the child process to terminate its execution.</p>
+<p>It is only meaningful if hasBeenSignaled() returns true.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case --enable-sigchild is activated</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not terminated</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTermSignal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasBeenStopped" id="_hasBeenStopped">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasBeenStopped(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the child process has been stopped by a signal.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the child process has been stopped by a signal.</p>
+<p>It always returns false on Windows.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not terminated</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasBeenStopped">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStopSignal" id="_getStopSignal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStopSignal(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of the signal that caused the child process to stop its execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of the signal that caused the child process to stop its execution.</p>
+<p>It is only meaningful if hasBeenStopped() returns true.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is not terminated</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStopSignal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRunning" id="_isRunning">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRunning(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the process is currently running.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the process is currently running.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRunning">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isStarted" id="_isStarted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isStarted(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the process has been started with no regard to the current state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the process has been started with no regard to the current state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isStarted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isTerminated" id="_isTerminated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isTerminated(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the process is terminated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the process is terminated.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isTerminated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStatus" id="_getStatus">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStatus(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the process status.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the process status.</p>
+<p>The status is one of: ready, started, terminated.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStatus">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stop" id="_stop">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>stop(<span>int|float <var>$timeout</var> = <span class="php-num">10</span></span>, <span>int|null <var>$signal</var> = <span class="php-kw">null</span></span>): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Stops the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Stops the process.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$timeout</var>&nbsp;&nbsp;</td>
+										<td><p>The timeout in seconds</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$signal</var>&nbsp;&nbsp;</td>
+										<td><p>A POSIX signal to send in case the process has not stop at timeout, default is SIGKILL (9)</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The exit-code of the process or null if it's not running</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_stop">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastOutputTime" id="_getLastOutputTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLastOutputTime(): ?float</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the last output time in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the last output time in seconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastOutputTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommandLine" id="_getCommandLine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCommandLine(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the command line to be executed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the command line to be executed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommandLine">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTimeout" id="_getTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTimeout(): ?float</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the process timeout in seconds (max. runtime).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the process timeout in seconds (max. runtime).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIdleTimeout" id="_getIdleTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIdleTimeout(): ?float</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the process idle timeout in seconds (max. time since last output).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the process idle timeout in seconds (max. time since last output).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIdleTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTimeout" id="_setTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTimeout(<span>?float <var>$timeout</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the process timeout (max. runtime) in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the process timeout (max. runtime) in seconds.</p>
+<p>To disable the timeout, set this value to null.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.InvalidArgumentException.html"><span>Symfony\Component\Process\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if the timeout is negative</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIdleTimeout" id="_setIdleTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setIdleTimeout(<span>?float <var>$timeout</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the process idle timeout (max. time since last output) in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the process idle timeout (max. time since last output) in seconds.</p>
+<p>To disable the timeout, set this value to null.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>if the output is disabled</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.InvalidArgumentException.html"><span>Symfony\Component\Process\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if the timeout is negative</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIdleTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTty" id="_setTty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTty(<span>bool <var>$tty</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Enables or disables the TTY mode.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enables or disables the TTY mode.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.RuntimeException.html"><span>Symfony\Component\Process\Exception\RuntimeException</span></a></code>&nbsp;</td>
+										<td><p>In case the TTY mode is not supported</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isTty" id="_isTty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isTty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the TTY mode is enabled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the TTY mode is enabled.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isTty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPty" id="_setPty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPty(<span>bool <var>$bool</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets PTY mode.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets PTY mode.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPty" id="_isPty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isPty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns PTY state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns PTY state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isPty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getWorkingDirectory" id="_getWorkingDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getWorkingDirectory(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the working directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the working directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getWorkingDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setWorkingDirectory" id="_setWorkingDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setWorkingDirectory(<span>string <var>$cwd</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the current working directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the current working directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setWorkingDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEnv" id="_getEnv">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEnv(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the environment variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the environment variables.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEnv">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEnv" id="_setEnv">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEnv(<span>array&lt;string|<a href="Stringable.html"><span title="Stringable">Stringable</span></a>&gt; <var>$env</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the environment variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the environment variables.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$env</var>&nbsp;&nbsp;</td>
+										<td><p>The new environment variables</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEnv">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInput" id="_getInput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getInput(): resource|string|<a href="Iterator.html"><span title="Iterator">Iterator</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the Process input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the Process input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setInput" id="_setInput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setInput(<span>string|resource|<a href="Traversable.html"><span title="Traversable">Traversable</span></a>|<b><span class="active" title="Symfony\Component\Process\Process">self</span></b>|null <var>$input</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the input.</p>
+<p>This content will be passed to the underlying process standard input.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$input</var>&nbsp;&nbsp;</td>
+										<td><p>The content</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>In case the process is running</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setInput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="checkTimeout" id="_checkTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>checkTimeout(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Performs a check between the timeout definition and the time the process started.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Performs a check between the timeout definition and the time the process started.</p>
+<p>In case you run a background process (with the start method), you should
+trigger this method regularly to ensure the process timeout</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.ProcessTimedOutException.html"><span>Symfony\Component\Process\Exception\ProcessTimedOutException</span></a></code>&nbsp;</td>
+										<td><p>In case the timeout was reached</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_checkTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStartTime" id="_getStartTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStartTime(): float</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Process.Exception.LogicException.html"><span>Symfony\Component\Process\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>in case process is not started</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStartTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOptions" id="_setOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setOptions(<span>array <var>$options</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Defines options to pass to the underlying proc_open().
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines options to pass to the underlying proc_open().</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setIgnoredSignals" id="_setIgnoredSignals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setIgnoredSignals(<span>array <var>$signals</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Defines a list of posix signals that will not be propagated to the process.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines a list of posix signals that will not be propagated to the process.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setIgnoredSignals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isTtySupported" id="_isTtySupported">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isTtySupported(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether TTY is supported on the current operating system.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether TTY is supported on the current operating system.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isTtySupported">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPtySupported" id="_isPtySupported">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isPtySupported(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether PTY is supported on the current operating system.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether PTY is supported on the current operating system.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isPtySupported">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildCallback" id="_buildCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildCallback(<span>callable|null <var>$callback</var> = <span class="php-kw">null</span></span>): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Builds up the callback used by wait().
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Builds up the callback used by wait().</p>
+<p>The callbacks adds all occurred output to the specific buffer and calls
+the user callback (if present) with the received output.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>The user defined PHP callback</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateStatus" id="_updateStatus">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateStatus(<span>bool <var>$blocking</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates the status of the process, reads pipes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates the status of the process, reads pipes.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$blocking</var>&nbsp;&nbsp;</td>
+										<td><p>Whether to use a blocking read call</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateStatus">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSigchildEnabled" id="_isSigchildEnabled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSigchildEnabled(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether PHP has been compiled with the '--enable-sigchild' option or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether PHP has been compiled with the '--enable-sigchild' option or not.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSigchildEnabled">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="ERR" id="ERR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ERR = <span class="php-str">'err'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ERR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="OUT" id="OUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>OUT = <span class="php-str">'out'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#OUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STATUS_READY" id="STATUS_READY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STATUS_READY = <span class="php-str">'ready'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STATUS_READY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STATUS_STARTED" id="STATUS_STARTED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STATUS_STARTED = <span class="php-str">'started'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STATUS_STARTED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STATUS_TERMINATED" id="STATUS_TERMINATED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STATUS_TERMINATED = <span class="php-str">'terminated'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STATUS_TERMINATED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STDIN" id="STDIN">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STDIN = <span class="php-num">0</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STDIN">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STDOUT" id="STDOUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STDOUT = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STDOUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="STDERR" id="STDERR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>STDERR = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#STDERR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TIMEOUT_PRECISION" id="TIMEOUT_PRECISION">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TIMEOUT_PRECISION = <span class="php-num">0.2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TIMEOUT_PRECISION">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ITER_NON_BLOCKING" id="ITER_NON_BLOCKING">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ITER_NON_BLOCKING = <span class="php-num">1</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ITER_NON_BLOCKING">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ITER_KEEP_OUTPUT" id="ITER_KEEP_OUTPUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ITER_KEEP_OUTPUT = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ITER_KEEP_OUTPUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ITER_SKIP_OUT" id="ITER_SKIP_OUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ITER_SKIP_OUT = <span class="php-num">4</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ITER_SKIP_OUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ITER_SKIP_ERR" id="ITER_SKIP_ERR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>ITER_SKIP_ERR = <span class="php-num">8</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#ITER_SKIP_ERR">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="exitCodes" id="$exitCodes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$exitCodes</var> = [
+	<span class="php-num">0</span> =&gt; <span class="php-str">'OK'</span>,
+	<span class="php-num">1</span> =&gt; <span class="php-str">'General error'</span>,
+	<span class="php-num">2</span> =&gt; <span class="php-str">'Misuse of shell builtins'</span>,
+	<span class="php-num">126</span> =&gt; <span class="php-str">'Invoked command cannot execute'</span>,
+	<span class="php-num">127</span> =&gt; <span class="php-str">'Command not found'</span>,
+	<span class="php-num">128</span> =&gt; <span class="php-str">'Invalid exit argument'</span>,
+	<span class="php-num">129</span> =&gt; <span class="php-str">'Hangup'</span>,
+	<span class="php-num">130</span> =&gt; <span class="php-str">'Interrupt'</span>,
+	<span class="php-num">131</span> =&gt; <span class="php-str">'Quit and dump core'</span>,
+	<span class="php-num">132</span> =&gt; <span class="php-str">'Illegal instruction'</span>,
+	<span class="php-num">133</span> =&gt; <span class="php-str">'Trace/breakpoint trap'</span>,
+	<span class="php-num">134</span> =&gt; <span class="php-str">'Process aborted'</span>,
+	<span class="php-num">135</span> =&gt; <span class="php-str">'Bus error: "access to undefined portion of memory object"'</span>,
+	<span class="php-num">136</span> =&gt; <span class="php-str">'Floating point exception: "erroneous arithmetic operation"'</span>,
+	<span class="php-num">137</span> =&gt; <span class="php-str">'Kill (terminate immediately)'</span>,
+	<span class="php-num">138</span> =&gt; <span class="php-str">'User-defined 1'</span>,
+	<span class="php-num">139</span> =&gt; <span class="php-str">'Segmentation violation'</span>,
+	<span class="php-num">140</span> =&gt; <span class="php-str">'User-defined 2'</span>,
+	<span class="php-num">141</span> =&gt; <span class="php-str">'Write to pipe with no one reading'</span>,
+	<span class="php-num">142</span> =&gt; <span class="php-str">'Signal raised by alarm'</span>,
+	<span class="php-num">143</span> =&gt; <span class="php-str">'Termination (request to terminate)'</span>,
+	<span class="php-num">145</span> =&gt; <span class="php-str">'Child process terminated, stopped (or continued*)'</span>,
+	<span class="php-num">146</span> =&gt; <span class="php-str">'Continue if stopped'</span>,
+	<span class="php-num">147</span> =&gt; <span class="php-str">'Stop executing temporarily'</span>,
+	<span class="php-num">148</span> =&gt; <span class="php-str">'Terminal stop signal'</span>,
+	<span class="php-num">149</span> =&gt; <span class="php-str">'Background process attempting to read from tty ("in")'</span>,
+	<span class="php-num">150</span> =&gt; <span class="php-str">'Background process attempting to write to tty ("out")'</span>,
+	<span class="php-num">151</span> =&gt; <span class="php-str">'Urgent data available on socket'</span>,
+	<span class="php-num">152</span> =&gt; <span class="php-str">'CPU time limit exceeded'</span>,
+	<span class="php-num">153</span> =&gt; <span class="php-str">'File size limit exceeded'</span>,
+	<span class="php-num">154</span> =&gt; <span class="php-str">'Signal raised by timer counting virtual time: "virtual timer expired"'</span>,
+	<span class="php-num">155</span> =&gt; <span class="php-str">'Profiling timer expired'</span>,
+	<span class="php-num">157</span> =&gt; <span class="php-str">'Pollable event'</span>,
+	<span class="php-num">159</span> =&gt; <span class="php-str">'Bad syscall'</span>,
+]</code>
+				
+	<div class="expandable-collapsedView">
+		Exit codes translation table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Exit codes translation table.</p>
+<p>User-defined errors must use exit codes in the 64-113 range.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$exitCodes">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

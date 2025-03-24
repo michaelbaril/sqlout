@@ -1,0 +1,916 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Input\InputDefinition |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArgvInput.html">
+							ArgvInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArrayInput.html">
+							ArrayInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.Input.html">
+							Input
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputArgument.html">
+							InputArgument
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Console.Input.InputDefinition.html">
+							InputDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputOption.html">
+							InputOption
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputInterface.html">
+							InputInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.StreamableInputInterface.html">
+							StreamableInputInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.Input.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Input.InputDefinition.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="namespace-Symfony.Component.Console.Input.html">Input</a>\<a href="Symfony.Component.Console.Input.InputDefinition.html">InputDefinition</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A InputDefinition represents a set of valid command line arguments and options.</p>
+<p>Usage:</p>
+<p>$definition = new InputDefinition([
+new InputArgument('name', InputArgument::REQUIRED),
+new InputOption('foo', 'f', InputOption::VALUE_REQUIRED),
+]);</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>array <var>$definition</var> = []</span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$definition</var>&nbsp;&nbsp;</td>
+										<td><p>An array of InputArgument and InputOption instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefinition" id="_setDefinition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefinition(<span>array <var>$definition</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the definition of the input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the definition of the input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefinition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setArguments" id="_setArguments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setArguments(<span><a href="Symfony.Component.Console.Input.InputArgument.html"><span title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></a>[] <var>$arguments</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the InputArgument objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the InputArgument objects.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$arguments</var>&nbsp;&nbsp;</td>
+										<td><p>An array of InputArgument objects</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setArguments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addArguments" id="_addArguments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addArguments(<span><a href="Symfony.Component.Console.Input.InputArgument.html"><span title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></a>[] <var>$arguments</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds an array of InputArgument objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds an array of InputArgument objects.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$arguments</var>&nbsp;&nbsp;</td>
+										<td><p>An array of InputArgument objects</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addArguments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addArgument" id="_addArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addArgument(<span><a href="Symfony.Component.Console.Input.InputArgument.html"><span title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></a> <var>$argument</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.LogicException.html"><span>Symfony\Component\Console\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When incorrect argument is given</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArgument" id="_getArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArgument(<span>string|int <var>$name</var></span>): <a href="Symfony.Component.Console.Input.InputArgument.html"><span title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an InputArgument by name or by position.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an InputArgument by name or by position.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.InvalidArgumentException.html"><span>Symfony\Component\Console\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When argument given doesn't exist</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasArgument" id="_hasArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasArgument(<span>string|int <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputArgument object exists by name or position.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputArgument object exists by name or position.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArguments" id="_getArguments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArguments(): <a href="Symfony.Component.Console.Input.InputArgument.html"><span title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the array of InputArgument objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the array of InputArgument objects.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArguments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArgumentCount" id="_getArgumentCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArgumentCount(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of InputArguments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of InputArguments.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArgumentCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArgumentRequiredCount" id="_getArgumentRequiredCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArgumentRequiredCount(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of required InputArguments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of required InputArguments.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArgumentRequiredCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArgumentDefaults" id="_getArgumentDefaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArgumentDefaults(): array&lt;string|bool|int|float|array|null&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArgumentDefaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOptions" id="_setOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setOptions(<span><a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a>[] <var>$options</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the InputOption objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the InputOption objects.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>An array of InputOption objects</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOptions" id="_addOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOptions(<span><a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a>[] <var>$options</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds an array of InputOption objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds an array of InputOption objects.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>An array of InputOption objects</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOption" id="_addOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOption(<span><a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a> <var>$option</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.LogicException.html"><span>Symfony\Component\Console\Exception\LogicException</span></a></code>&nbsp;</td>
+										<td><p>When option given already exist</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOption" id="_getOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOption(<span>string <var>$name</var></span>): <a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an InputOption by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an InputOption by name.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.InvalidArgumentException.html"><span>Symfony\Component\Console\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When option given doesn't exist</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasOption" id="_hasOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasOption(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputOption object exists by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputOption object exists by name.</p>
+<p>This method can't be used to check if the user included the option when
+executing the command (use getOption() instead).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptions" id="_getOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptions(): <a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the array of InputOption objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the array of InputOption objects.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasShortcut" id="_hasShortcut">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasShortcut(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputOption object exists by shortcut.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputOption object exists by shortcut.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasShortcut">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasNegation" id="_hasNegation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasNegation(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputOption object exists by negated name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputOption object exists by negated name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasNegation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptionForShortcut" id="_getOptionForShortcut">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptionForShortcut(<span>string <var>$shortcut</var></span>): <a href="Symfony.Component.Console.Input.InputOption.html"><span title="Symfony\Component\Console\Input\InputOption">InputOption</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets an InputOption by shortcut.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets an InputOption by shortcut.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptionForShortcut">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptionDefaults" id="_getOptionDefaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptionDefaults(): array&lt;string|bool|int|float|array|null&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptionDefaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSynopsis" id="_getSynopsis">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSynopsis(<span>bool <var>$short</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the synopsis.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the synopsis.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSynopsis">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,572 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Validation\ValidationException |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Validation.html">Validation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Validation.Validator.html">
+							Validator
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Validation.PresenceVerifierInterface.html">
+							PresenceVerifierInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Validation.ValidationException.html">
+							ValidationException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Validation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Validation.ValidationException.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Validation.html">Validation</a>\<a href="Illuminate.Validation.ValidationException.html">ValidationException</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Exception.html"><span title="Exception">Exception</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Exception.html"><span>Exception</span></a>
+
+		implements
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Validation\ValidationException</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Contracts.Validation.Validator.html"><span title="Illuminate\Contracts\Validation\Validator">Validator</span></a> <var>$validator</var></span>, <span><a href="Symfony.Component.HttpFoundation.Response.html"><span title="Symfony\Component\HttpFoundation\Response">Response</span></a>|null <var>$response</var> = <span class="php-kw">null</span></span>, <span>string <var>$errorBag</var> = <span class="php-str">'default'</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new exception instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new exception instance.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Exception.html#___construct">						<code>Exception::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withMessages" id="_withMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withMessages(<span>array <var>$messages</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new validation exception from a plain array of messages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new validation exception from a plain array of messages.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="summarize" id="_summarize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>summarize(<span><a href="Illuminate.Contracts.Validation.Validator.html"><span title="Illuminate\Contracts\Validation\Validator">Validator</span></a> <var>$validator</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create an error message summary from the validation errors.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an error message summary from the validation errors.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_summarize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errors" id="_errors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>errors(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the validation error messages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the validation error messages.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_errors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="status" id="_status">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>status(<span>int <var>$status</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the HTTP status code to be used for the response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the HTTP status code to be used for the response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_status">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorBag" id="_errorBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>errorBag(<span>string <var>$errorBag</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the error bag on the exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the error bag on the exception.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_errorBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="redirectTo" id="_redirectTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>redirectTo(<span>string <var>$url</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the URL to redirect to on a validation error.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the URL to redirect to on a validation error.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_redirectTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponse" id="_getResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResponse(): <a href="Symfony.Component.HttpFoundation.Response.html"><span title="Symfony\Component\HttpFoundation\Response">Response</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying response instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying response instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponse">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Exception.html"><span>Exception</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Exception.html#___wakeup">__wakeup()</a>, <a href="Exception.html#_getMessage">getMessage()</a>, <a href="Exception.html#_getCode">getCode()</a>, <a href="Exception.html#_getFile">getFile()</a>, <a href="Exception.html#_getLine">getLine()</a>, <a href="Exception.html#_getTrace">getTrace()</a>, <a href="Exception.html#_getPrevious">getPrevious()</a>, <a href="Exception.html#_getTraceAsString">getTraceAsString()</a>, <a href="Exception.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="validator" id="$validator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Validation.Validator.html"><span title="Illuminate\Contracts\Validation\Validator">Validator</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$validator</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$validator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="response" id="$response">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.Response.html"><span title="Symfony\Component\HttpFoundation\Response">Response</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$response</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$response">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="status" id="$status">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$status</var> = <span class="php-num">422</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$status">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorBag" id="$errorBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$errorBag</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$errorBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="redirectTo" id="$redirectTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$redirectTo</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$redirectTo">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

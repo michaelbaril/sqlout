@@ -1,0 +1,750 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Concerns\HasTimestamps |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">
+							GuardsAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">
+							HasAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">
+							HasEvents
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html">
+							HasGlobalScopes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html">
+							HasRelationships
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">
+							HasTimestamps
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html">
+							HasUniqueIds
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html">
+							HidesAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html">
+							PreventsCircularRecursion
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">
+							QueriesRelationships
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">HasTimestamps</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Concerns\HasTimestamps</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="touch" id="_touch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touch(<span>string|null <var>$attribute</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the model's update timestamp.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the model's update timestamp.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="touchQuietly" id="_touchQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touchQuietly(<span>string|null <var>$attribute</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the model's update timestamp without raising any events.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the model's update timestamp without raising any events.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touchQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateTimestamps" id="_updateTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateTimestamps(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the creation and update timestamps.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the creation and update timestamps.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCreatedAt" id="_setCreatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCreatedAt(<span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of the "created at" attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of the &quot;created at&quot; attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCreatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUpdatedAt" id="_setUpdatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setUpdatedAt(<span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of the "updated at" attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of the &quot;updated at&quot; attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUpdatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="freshTimestamp" id="_freshTimestamp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>freshTimestamp(): <a href="Illuminate.Support.Carbon.html"><span title="Illuminate\Support\Carbon">Carbon</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a fresh timestamp for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a fresh timestamp for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_freshTimestamp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="freshTimestampString" id="_freshTimestampString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>freshTimestampString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a fresh timestamp for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a fresh timestamp for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_freshTimestampString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="usesTimestamps" id="_usesTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>usesTimestamps(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model uses timestamps.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model uses timestamps.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_usesTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCreatedAtColumn" id="_getCreatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCreatedAtColumn(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;created at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCreatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUpdatedAtColumn" id="_getUpdatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUpdatedAtColumn(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUpdatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedCreatedAtColumn" id="_getQualifiedCreatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedCreatedAtColumn(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified &quot;created at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedCreatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedUpdatedAtColumn" id="_getQualifiedUpdatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedUpdatedAtColumn(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedUpdatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutTimestamps" id="_withoutTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutTimestamps(<span>callable <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable timestamps for the current class during the given callback scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable timestamps for the current class during the given callback scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutTimestampsOn" id="_withoutTimestampsOn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutTimestampsOn(<span>array <var>$models</var></span>, <span>callable <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable timestamps for the given model classes during the given callback scope.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable timestamps for the given model classes during the given callback scope.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutTimestampsOn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isIgnoringTimestamps" id="_isIgnoringTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isIgnoringTimestamps(<span>string|null <var>$class</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given model is ignoring timestamps / touches.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given model is ignoring timestamps / touches.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isIgnoringTimestamps">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="timestamps" id="$timestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$timestamps</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$timestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ignoreTimestampsOn" id="$ignoreTimestampsOn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$ignoreTimestampsOn</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$ignoreTimestampsOn">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

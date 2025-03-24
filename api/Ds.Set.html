@@ -1,0 +1,1477 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Ds\Set |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ds.html">Ds</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ds.Deque.html">
+							Deque
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Map.html">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Pair.html">
+							Pair
+						</a>
+					</li>
+					<li>
+						<a href="Ds.PriorityQueue.html">
+							PriorityQueue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Queue.html">
+							Queue
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ds.Set.html">
+							Set
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Stack.html">
+							Stack
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Vector.html">
+							Vector
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ds.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Hashable.html">
+							Hashable
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Sequence.html">
+							Sequence
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ds.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ds.Set.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ds.html">Ds</a>\<a href="Ds.Set.html">Set</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A Set is a sequence of unique values. This implementation uses the same
+hash table as Ds\Map, where values are used as keys and the mapped value
+is ignored.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>iterable <var>$values</var> = []</span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new instance, using either a traversable object or an array
+for the initial values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new instance, using either a traversable object or an array
+for the initial values.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>A traversable object of an array to
+use the initial values.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span>mixed ...<var>$values</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds all given values to the set that haven't already been added.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds all given values to the set that haven't already been added.</p>
+<p><b>Note:</b> Values of type object are supported. If an object implements
+Ds\Hashable, equality will be determined by the object's equals
+function. If an object does not implement Ds\Hashable, objects must
+be references to the same instance to be considered equal.
+<p><b>Caution:</b> All comparisons are strict (type and value).
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td>...<var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>Values to add to the set.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allocate" id="_allocate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allocate(<span>int <var>$capacity</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Allocates enough memory for a required capacity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Allocates enough memory for a required capacity.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$capacity</var>&nbsp;&nbsp;</td>
+										<td><p>The number of values for which capacity should
+be allocated.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allocate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contains" id="_contains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>contains(<span>mixed ...<var>$values</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines if the set contains all values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines if the set contains all values.</p>
+<p>Values of type object are supported. If an object implements
+Ds\Hashable, equality will be determined by the object's equals
+function. If an object does not implement Ds\Hashable, objects must
+be references to the same instance to be considered equal.
+<p><b>Caution:</b> All comparisons are strict (type and value).
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td>...<var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>Values to check.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_contains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="capacity" id="_capacity">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>capacity(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the current capacity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the current capacity.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_capacity">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clear" id="_clear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clear(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes all values from the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes all values from the set.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_clear">						<code>Ds\Collection::clear()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Count elements of an object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count elements of an object</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The custom count as an integer.</p>
+</p>
+<p>
+The return value is cast to an integer.
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a shallow copy of the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a shallow copy of the set.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_copy">						<code>Ds\Collection::copy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diff" id="_diff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diff(<span><b><span class="active" title="Ds\Set">Set</span></b> <var>$set</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new set using values that aren't in another set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new set using values that aren't in another set.</p>
+<p>A \ B = {x ∈ A | x ∉ B}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$set</var>&nbsp;&nbsp;</td>
+										<td><p>Set containing the values to exclude.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new set containing all values that were not in the
+other set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filter" id="_filter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filter(<span>null|callable <var>$callback</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new set using a callable to determine which values to
+include
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new set using a callable to determine which values to
+include</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>Optional callable which returns TRUE if the
+value should be included, FALSE otherwise.
+If a callback is not provided, only values which are TRUE (see
+converting to boolean) will be included.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new set containing all the values for which either the
+callback returned TRUE, or all values that convert to TRUE if a
+callback was not provided.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the first value in the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the first value in the set.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The first value in the set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>int <var>$index</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the value at a given index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the value at a given index.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$index</var>&nbsp;&nbsp;</td>
+										<td><p>The index to access, starting at 0.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The value at the requested index.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Traversable.html"><span title="Traversable">Traversable</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersect" id="_intersect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersect(<span><b><span class="active" title="Ds\Set">Set</span></b> <var>$set</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new set using values common to both the current instance
+and another set. In other words, returns a copy of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new set using values common to both the current instance
+and another set. In other words, returns a copy of the current
+instance with all values removed that are not in the other set.</p>
+<p>A ∩ B = {x : x ∈ A ∧ x ∈ B}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$set</var>&nbsp;&nbsp;</td>
+										<td><p>The other set.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The intersection of the current instance and another set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the set is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the set is empty.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_isEmpty">						<code>Ds\Collection::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="join" id="_join">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>join(<span>null|string <var>$glue</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Joins all values together as a string using an optional separator
+between each value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Joins all values together as a string using an optional separator
+between each value.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$glue</var>&nbsp;&nbsp;</td>
+										<td><p>An optional string to separate each value.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_join">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>map(<span>callable <var>$callback</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of applying a callback function to each value in
+the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of applying a callback function to each value in
+the set.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A callable to apply to each value in the
+set.
+The callable should return what the new value will be in the new
+set.
+<code>callback ( mixed $value ) : mixed</code></p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The result of applying a callback to each value in
+the set.</p>
+<p><b>Note:</b> The values of the current instance won't be affected.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span>iterable <var>$values</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of adding all given values to the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of adding all given values to the set.</p>
+<p><b>Note:</b> The current instance won't be affected.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>A traversable object or an array.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The result of adding all given values to the set,
+effectively the same as adding the values to a copy, then returning
+that copy.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reduce" id="_reduce">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reduce(<span>callable <var>$callback</var></span>, <span>mixed|null <var>$initial</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Reduces the set to a single value using a callback function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reduces the set to a single value using a callback function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$initial</var>&nbsp;&nbsp;</td>
+										<td><p>The initial value of the carry value. Can be
+NULL.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The return value of the final callback.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reduce">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remove(<span>mixed ...<var>$values</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes all given values from the set, ignoring any that are not in
+the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes all given values from the set, ignoring any that are not in
+the set.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td>...<var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>The values to remove.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reverse" id="_reverse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reverse()</code>
+
+
+	<div class="expandable-collapsedView">
+		Reverses the set in-place.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reverses the set in-place.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reverse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reversed" id="_reversed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reversed(): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a reversed copy of the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a reversed copy of the set.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A reversed copy of the set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reversed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="slice" id="_slice">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>slice(<span>int <var>$index</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a sub-set of a given range
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a sub-set of a given range</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$index</var>&nbsp;&nbsp;</td>
+										<td><p>The index at which the sub-set starts. If positive,
+the set will start at that index in
+the set. If negative, the set will start that far from the end.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$length</var>&nbsp;&nbsp;</td>
+										<td><p>If a length is given and is positive, the
+resulting set will have up to that many values in it. If the length
+results in an overflow, only values up to the end of the set will be
+included. If a length is given and is negative, the set will stop
+that many values from the end. If a length is not provided, the
+resulting set will contain all values between the index and the end
+of the set.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A sub-set of the given range.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_slice">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="last" id="_last">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>last(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the last value in the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the last value in the set.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The last value in the set.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnderflowException.html"><span>UnderflowException</span></a></code>&nbsp;</td>
+										<td><p>if empty.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_last">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sort" id="_sort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sort(<span>callable|null <var>$comparator</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Sorts the set in-place, using an optional comparator function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sorts the set in-place, using an optional comparator function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return
+an integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to 2147483647.
+<code>callback ( mixed $a, mixed $b ) : int</code>
+<note><b>Caution:</b> Returning non-integer values from the comparison
+function, such as float, will result in an internal cast to integer
+of the callback's return value. So values such as 0.99 and 0.1 will
+both be cast to an integer value of 0, which will compare such values
+as equal.</note></p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sorted" id="_sorted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sorted(<span>null|callable <var>$comparator</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a sorted copy, using an optional comparator function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a sorted copy, using an optional comparator function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return an
+integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note  that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to 2147483647.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns a sorted copy of the set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sorted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sum" id="_sum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sum(): float|int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the sum of all values in the set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the sum of all values in the set.</p>
+<p><b>Note:</b> Arrays and objects are considered equal to zero when
+calculating the sum.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The sum of all the values in the set as either a
+float or int depending on the values in the set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="union" id="_union">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>union(<span><b><span class="active" title="Ds\Set">Set</span></b> <var>$set</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new set that contains the values of the current instance as
+well as the values of another set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new set that contains the values of the current instance as
+well as the values of another set.</p>
+<p>A ∪ B = {x: x ∈ A ∨ x ∈ B}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$set</var>&nbsp;&nbsp;</td>
+										<td><p>The other set, to combine with the current instance.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new set containing all the values of the current
+instance as well as another set.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_union">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="xor" id="_xor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>xor(<span><b><span class="active" title="Ds\Set">Set</span></b> <var>$set</var></span>): <b><span class="active" title="Ds\Set">Set</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new set using values in either the current instance or in
+another set, but not in both.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new set using values in either the current instance or in
+another set, but not in both.</p>
+<p>A ⊖ B = {x : x ∈ (A \ B) ∪ (B \ A)}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$set</var>&nbsp;&nbsp;</td>
+										<td><p>The other set.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new set containing values in the current instance as
+well as another set, but not in both.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_xor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the set to an array.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Casting to an array is not supported yet.&lt;/p&gt;
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the set to an array.</p>
+<p><b>Note:</b> Casting to an array is not supported yet.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array containing all the values in the same order as
+the collection.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_toArray">						<code>Ds\Collection::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify data which should be serialized to JSON
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify data which should be serialized to JSON</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>data which can be serialized by <b>json_encode</b>,
+which is a value of any type other than a resource.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,765 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Pagination\LengthAwarePaginator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Pagination.html">Pagination</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Pagination.AbstractCursorPaginator.html">
+							AbstractCursorPaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.AbstractPaginator.html">
+							AbstractPaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.Cursor.html">
+							Cursor
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.CursorPaginator.html">
+							CursorPaginator
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Pagination.LengthAwarePaginator.html">
+							LengthAwarePaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.Paginator.html">
+							Paginator
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Pagination.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Pagination.LengthAwarePaginator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Pagination.html">Pagination</a>\<a href="Illuminate.Pagination.LengthAwarePaginator.html">LengthAwarePaginator</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="covariant">out</span> <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Pagination.AbstractPaginator.html"><span title="Illuminate\Pagination\AbstractPaginator">AbstractPaginator</span></a>&lt;TKey, TValue&gt;</code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, <a href="Countable.html"><span title="Countable">Countable</span></a>, <a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, <a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, <a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, <a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;</code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Pagination.AbstractPaginator.html"><span>Illuminate\Pagination\AbstractPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Pagination\LengthAwarePaginator</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;|<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt;|null <var>$items</var></span>,
+	<span>int <var>$total</var></span>,
+	<span>int <var>$perPage</var></span>,
+	<span>int|null <var>$currentPage</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$options</var> = []</span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new paginator instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new paginator instance.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$options</var>&nbsp;&nbsp;</td>
+										<td><p>(path, query, fragment, pageName)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCurrentPage" id="_setCurrentPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCurrentPage(<span>int <var>$currentPage</var></span>, <span>string <var>$pageName</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current page for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current page for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCurrentPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="links" id="_links">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>links(<span>string|null <var>$view</var> = <span class="php-kw">null</span></span>, <span>array <var>$data</var> = []</span>): <a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Render the paginator using the given view.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Render the paginator using the given view.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_links">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="render" id="_render">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>render(<span>string|null <var>$view</var> = <span class="php-kw">null</span></span>, <span>array <var>$data</var> = []</span>): <a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Render the paginator using the given view.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Render the paginator using the given view.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Pagination.Paginator.html#_render">						<code>Illuminate\Contracts\Pagination\Paginator::render()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_render">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="linkCollection" id="_linkCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>linkCollection(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paginator links as a collection (for JSON responses).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paginator links as a collection (for JSON responses).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_linkCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="elements" id="_elements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>elements(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the array of elements to pass to the view.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the array of elements to pass to the view.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_elements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="total" id="_total">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>total(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the total number of items being paginated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the total number of items being paginated.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html#_total">						<code>Illuminate\Contracts\Pagination\LengthAwarePaginator::total()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_total">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMorePages" id="_hasMorePages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasMorePages(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if there are more items in the data source.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if there are more items in the data source.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Pagination.Paginator.html#_hasMorePages">						<code>Illuminate\Contracts\Pagination\Paginator::hasMorePages()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMorePages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nextPageUrl" id="_nextPageUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nextPageUrl(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URL for the next page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URL for the next page.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Pagination.Paginator.html#_nextPageUrl">						<code>Illuminate\Contracts\Pagination\Paginator::nextPageUrl()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nextPageUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lastPage" id="_lastPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lastPage(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the last page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the last page.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html#_lastPage">						<code>Illuminate\Contracts\Pagination\LengthAwarePaginator::lastPage()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lastPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the instance as an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the instance as an array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">						<code>Illuminate\Contracts\Support\Arrayable::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object into something JSON serializable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object into something JSON serializable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toJson" id="_toJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toJson(<span>int <var>$options</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object to its JSON representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object to its JSON representation.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Jsonable.html#_toJson">						<code>Illuminate\Contracts\Support\Jsonable::toJson()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toJson">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Pagination.AbstractPaginator.html"><span>Illuminate\Pagination\AbstractPaginator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Pagination.AbstractPaginator.html#_isValidPageNumber">isValidPageNumber()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_previousPageUrl">previousPageUrl()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_getUrlRange">getUrlRange()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_url">url()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_fragment">fragment()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_appends">appends()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_appendArray">appendArray()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_withQueryString">withQueryString()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_addQuery">addQuery()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_buildFragment">buildFragment()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_loadMorph">loadMorph()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_loadMorphCount">loadMorphCount()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_items">items()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_firstItem">firstItem()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_lastItem">lastItem()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_through">through()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_perPage">perPage()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_hasPages">hasPages()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_onFirstPage">onFirstPage()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_onLastPage">onLastPage()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_currentPage">currentPage()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_getPageName">getPageName()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_setPageName">setPageName()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_withPath">withPath()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_setPath">setPath()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_onEachSide">onEachSide()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_path">path()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_resolveCurrentPath">resolveCurrentPath()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_currentPathResolver">currentPathResolver()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_resolveCurrentPage">resolveCurrentPage()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_currentPageResolver">currentPageResolver()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_resolveQueryString">resolveQueryString()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_queryStringResolver">queryStringResolver()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_viewFactory">viewFactory()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_viewFactoryResolver">viewFactoryResolver()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_defaultView">defaultView()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_defaultSimpleView">defaultSimpleView()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_useTailwind">useTailwind()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_useBootstrap">useBootstrap()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_useBootstrapThree">useBootstrapThree()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_useBootstrapFour">useBootstrapFour()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_useBootstrapFive">useBootstrapFive()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_getIterator">getIterator()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_isEmpty">isEmpty()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_count">count()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_getCollection">getCollection()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_setCollection">setCollection()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_getOptions">getOptions()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_offsetExists">offsetExists()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_offsetGet">offsetGet()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_offsetSet">offsetSet()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_offsetUnset">offsetUnset()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#_toHtml">toHtml()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#___call">__call()</a>, <a href="Illuminate.Pagination.AbstractPaginator.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="total" id="$total">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$total</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$total">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lastPage" id="$lastPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$lastPage</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$lastPage">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Pagination.AbstractPaginator.html"><span>Illuminate\Pagination\AbstractPaginator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Pagination.AbstractPaginator.html#$items">$items</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$perPage">$perPage</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$currentPage">$currentPage</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$path">$path</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$query">$query</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$fragment">$fragment</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$pageName">$pageName</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$onEachSide">$onEachSide</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$options">$options</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$currentPathResolver">$currentPathResolver</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$currentPageResolver">$currentPageResolver</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$queryStringResolver">$queryStringResolver</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$viewFactoryResolver">$viewFactoryResolver</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$defaultView">$defaultView</a></var>, <var><a href="Illuminate.Pagination.AbstractPaginator.html#$defaultSimpleView">$defaultSimpleView</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

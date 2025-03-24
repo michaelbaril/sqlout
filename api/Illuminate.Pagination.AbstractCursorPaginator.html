@@ -1,0 +1,1813 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Pagination\AbstractCursorPaginator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Pagination.html">Pagination</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Pagination.AbstractCursorPaginator.html">
+							AbstractCursorPaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.AbstractPaginator.html">
+							AbstractPaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.Cursor.html">
+							Cursor
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.CursorPaginator.html">
+							CursorPaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.LengthAwarePaginator.html">
+							LengthAwarePaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Pagination.Paginator.html">
+							Paginator
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Pagination.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Pagination.AbstractCursorPaginator.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Pagination.html">Pagination</a>\<a href="Illuminate.Pagination.AbstractCursorPaginator.html">AbstractCursorPaginator</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="covariant">out</span> <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Pagination\AbstractCursorPaginator</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Pagination.CursorPaginator.html"><span>Illuminate\Pagination\CursorPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="url" id="_url">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>url(<span><a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null <var>$cursor</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URL for a given cursor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URL for a given cursor.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_url">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previousPageUrl" id="_previousPageUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>previousPageUrl(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URL for the previous page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URL for the previous page.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_previousPageUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nextPageUrl" id="_nextPageUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nextPageUrl(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		The URL for the next page, or null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The URL for the next page, or null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nextPageUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previousCursor" id="_previousCursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>previousCursor(): <a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "cursor" that points to the previous set of items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;cursor&quot; that points to the previous set of items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_previousCursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nextCursor" id="_nextCursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nextCursor(): <a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "cursor" that points to the next set of items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;cursor&quot; that points to the next set of items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nextCursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCursorForItem" id="_getCursorForItem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCursorForItem(<span><a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>|<a href="stdClass.html"><span title="stdClass">stdClass</span></a> <var>$item</var></span>, <span>bool <var>$isNext</var> = <span class="php-kw">true</span></span>): <a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a cursor instance for the given item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a cursor instance for the given item.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCursorForItem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParametersForItem" id="_getParametersForItem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getParametersForItem(<span><a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>|<a href="stdClass.html"><span title="stdClass">stdClass</span></a> <var>$item</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the cursor parameters for a given object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the cursor parameters for a given object.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParametersForItem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPivotParameterForItem" id="_getPivotParameterForItem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPivotParameterForItem(<span><a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>|<a href="stdClass.html"><span title="stdClass">stdClass</span></a> <var>$item</var></span>, <span>string <var>$parameterName</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the cursor parameter value from a pivot model if applicable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the cursor parameter value from a pivot model if applicable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPivotParameterForItem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureParameterIsPrimitive" id="_ensureParameterIsPrimitive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureParameterIsPrimitive(<span>mixed <var>$parameter</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure the parameter is a primitive type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure the parameter is a primitive type.</p>
+<p>This can resolve issues that arise the developer uses a value object for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureParameterIsPrimitive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fragment" id="_fragment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fragment(<span>string|null <var>$fragment</var> = <span class="php-kw">null</span></span>): $this|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get / set the URL fragment to be appended to URLs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get / set the URL fragment to be appended to URLs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fragment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="appends" id="_appends">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>appends(<span>array|string|null <var>$key</var></span>, <span>string|null <var>$value</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a set of query string values to the paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a set of query string values to the paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_appends">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="appendArray" id="_appendArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>appendArray(<span>array <var>$keys</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an array of query string values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an array of query string values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_appendArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withQueryString" id="_withQueryString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withQueryString(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add all current query string values to the paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add all current query string values to the paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withQueryString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addQuery" id="_addQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addQuery(<span>string <var>$key</var></span>, <span>string <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a query string value to the paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a query string value to the paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildFragment" id="_buildFragment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildFragment(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Build the full fragment portion of a URL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Build the full fragment portion of a URL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildFragment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorph" id="_loadMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorph(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationships onto the mixed relationship collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationships onto the mixed relationship collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphCount" id="_loadMorphCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphCount(<span>string <var>$relation</var></span>, <span>array <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship counts onto the mixed relationship collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship counts onto the mixed relationship collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="items" id="_items">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>items(): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the slice of items being paginated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the slice of items being paginated.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_items">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="through" id="_through">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>through(<span>callable <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Transform each item in the slice of items using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transform each item in the slice of items using a callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_through">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="perPage" id="_perPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>perPage(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of items shown per page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of items shown per page.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_perPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="_cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursor(): <a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current cursor being paginated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current cursor being paginated.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCursorName" id="_getCursorName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCursorName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query string variable used to store the cursor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query string variable used to store the cursor.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCursorName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCursorName" id="_setCursorName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCursorName(<span>string <var>$name</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the query string variable used to store the cursor.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the query string variable used to store the cursor.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCursorName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPath" id="_withPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPath(<span>string <var>$path</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the base path to assign to all URLs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the base path to assign to all URLs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPath" id="_setPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPath(<span>string <var>$path</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the base path to assign to all URLs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the base path to assign to all URLs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="_path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>path(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the base path for paginator generated URLs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the base path for paginator generated URLs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveCurrentCursor" id="_resolveCurrentCursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveCurrentCursor(<span>string <var>$cursorName</var> = <span class="php-str">'cursor'</span></span>, <span><var>$default</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the current cursor or return the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the current cursor or return the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveCurrentCursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="currentCursorResolver" id="_currentCursorResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>currentCursorResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$resolver</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the current cursor resolver callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the current cursor resolver callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_currentCursorResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="viewFactory" id="_viewFactory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>viewFactory(): <a href="Illuminate.Contracts.View.Factory.html"><span title="Illuminate\Contracts\View\Factory">Factory</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get an instance of the view factory from the resolver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an instance of the view factory from the resolver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_viewFactory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="ArrayIterator.html"><span title="ArrayIterator">ArrayIterator</span></a>&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an iterator for the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an iterator for the items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the list of items is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the list of items is empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotEmpty" id="_isNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the list of items is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the list of items is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of items for the current page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of items for the current page.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCollection" id="_getCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCollection(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paginator's underlying collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paginator's underlying collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCollection" id="_setCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCollection&lt;<span title="">TSetKey</span> is array-key, <span title="">TSetValue</span>&gt;(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TSetKey, TSetValue&gt; <var>$collection</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the paginator's underlying collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the paginator's underlying collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptions" id="_getOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptions(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paginator options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paginator options.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>TKey <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given item exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given item exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>TKey <var>$key</var></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the item at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the item at the given offset.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>TKey|null <var>$key</var></span>, <span>TValue <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the item at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the item at the given offset.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>TKey <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the item at the given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the item at the given key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toHtml" id="_toHtml">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toHtml(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Render the contents of the paginator to HTML.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Render the contents of the paginator to HTML.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Htmlable.html#_toHtml">						<code>Illuminate\Contracts\Support\Htmlable::toHtml()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toHtml">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__call(<span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Make dynamic calls into the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make dynamic calls into the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Render the contents of the paginator when casting to a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Render the contents of the paginator when casting to a string.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="items" id="$items">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$items</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$items">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="perPage" id="$perPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$perPage</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$perPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="$path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$path</var> = <span class="php-str">'/'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="$query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$query</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fragment" id="$fragment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fragment</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fragment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursorName" id="$cursorName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$cursorName</var> = <span class="php-str">'cursor'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cursorName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="$cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$cursor</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameters" id="$parameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parameters</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="$options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$options</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$options">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="currentCursorResolver" id="$currentCursorResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$currentCursorResolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$currentCursorResolver">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

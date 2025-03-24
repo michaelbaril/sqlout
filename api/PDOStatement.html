@@ -1,0 +1,662 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class PDOStatement |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-strip_punctuation.html">
+							strip_punctuation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="PDOStatement.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="PDOStatement.html">PDOStatement</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="bindColumn" id="_bindColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindColumn(
+	<span>string|int <var>$column</var></span>,
+	<span>mixed &amp;<var>$var</var></span>,
+	<span>int <var>$type</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::PARAM_STR</span>,
+	<span>int <var>$maxLength</var> = <span class="php-num">0</span></span>,
+	<span>mixed <var>$driverOptions</var> = <span class="php-kw">null</span></span>,
+): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindParam" id="_bindParam">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindParam(
+	<span>string|int <var>$param</var></span>,
+	<span>mixed &amp;<var>$var</var></span>,
+	<span>int <var>$type</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::PARAM_STR</span>,
+	<span>int <var>$maxLength</var> = <span class="php-num">0</span></span>,
+	<span>mixed <var>$driverOptions</var> = <span class="php-kw">null</span></span>,
+): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindParam">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindValue" id="_bindValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindValue(<span>string|int <var>$param</var></span>, <span>mixed <var>$value</var></span>, <span>int <var>$type</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::PARAM_STR</span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="closeCursor" id="_closeCursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>closeCursor(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_closeCursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="columnCount" id="_columnCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>columnCount(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_columnCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="debugDumpParams" id="_debugDumpParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>debugDumpParams(): bool|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_debugDumpParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorCode" id="_errorCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>errorCode(): string|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_errorCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errorInfo" id="_errorInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>errorInfo(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_errorInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="execute" id="_execute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>execute(<span>?array <var>$params</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_execute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetch" id="_fetch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fetch(<span>int <var>$mode</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::FETCH_DEFAULT</span>, <span>int <var>$cursorOrientation</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::FETCH_ORI_NEXT</span>, <span>int <var>$cursorOffset</var> = <span class="php-num">0</span></span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fetch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetchAll" id="_fetchAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fetchAll(<span>int <var>$mode</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::FETCH_DEFAULT</span>, <span>mixed ...<var>$args</var></span>): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fetchAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetchColumn" id="_fetchColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fetchColumn(<span>int <var>$column</var> = <span class="php-num">0</span></span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fetchColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetchObject" id="_fetchObject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fetchObject(<span>?string <var>$class</var> = <span class="php-str">"stdClass"</span></span>, <span>array <var>$constructorArgs</var> = []</span>): object|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fetchObject">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttribute" id="_getAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttribute(<span>int <var>$name</var></span>): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumnMeta" id="_getColumnMeta">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumnMeta(<span>int <var>$column</var></span>): array|false</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumnMeta">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nextRowset" id="_nextRowset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nextRowset(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nextRowset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rowCount" id="_rowCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rowCount(): int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rowCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAttribute" id="_setAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAttribute(<span>int <var>$attribute</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFetchMode" id="_setFetchMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFetchMode(<span>int <var>$mode</var></span>, <span>mixed ...<var>$args</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFetchMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Iterator.html"><span title="Iterator">Iterator</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

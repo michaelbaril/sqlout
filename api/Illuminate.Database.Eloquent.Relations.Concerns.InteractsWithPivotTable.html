@@ -1,0 +1,1154 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html">
+							AsPivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html">
+							CanBeOneOfMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html">
+							ComparesRelatedModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html">
+							InteractsWithDictionary
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html">
+							InteractsWithPivotTable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html">
+							SupportsDefaultModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html">
+							SupportsInverseRelations
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html">InteractsWithPivotTable</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html"><span>Illuminate\Database\Eloquent\Relations\BelongsToMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable">InteractsWithPivotTable</span></b>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphToMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="toggle" id="_toggle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toggle(<span>mixed <var>$ids</var></span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Toggles a model (or models) from the parent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Toggles a model (or models) from the parent.</p>
+<p>Each existing model is detached, and non existing ones are attached.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toggle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncWithoutDetaching" id="_syncWithoutDetaching">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncWithoutDetaching(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>): array{attached: array, detached: array, updated: array}</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync the intermediate tables with a list of IDs without detaching.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync the intermediate tables with a list of IDs without detaching.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncWithoutDetaching">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sync" id="_sync">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sync(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>, <span>bool <var>$detaching</var> = <span class="php-kw">true</span></span>): array{attached: array, detached: array, updated: array}</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync the intermediate tables with a list of IDs or collection of models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync the intermediate tables with a list of IDs or collection of models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sync">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncWithPivotValues" id="_syncWithPivotValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncWithPivotValues(
+	<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>,
+	<span>array <var>$values</var></span>,
+	<span>bool <var>$detaching</var> = <span class="php-kw">true</span></span>,
+): array{attached: array, detached: array, updated: array}</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync the intermediate tables with a list of IDs or collection of models with the given pivot values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync the intermediate tables with a list of IDs or collection of models with the given pivot values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncWithPivotValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="formatRecordsList" id="_formatRecordsList">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>formatRecordsList(<span>array <var>$records</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Format the sync / toggle record list so that it is keyed by ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Format the sync / toggle record list so that it is keyed by ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_formatRecordsList">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attachNew" id="_attachNew">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attachNew(<span>array <var>$records</var></span>, <span>array <var>$current</var></span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Attach all of the records that aren't in the given current records.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attach all of the records that aren't in the given current records.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attachNew">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateExistingPivot" id="_updateExistingPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateExistingPivot(<span>mixed <var>$id</var></span>, <span>array <var>$attributes</var></span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Update an existing pivot record on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update an existing pivot record on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateExistingPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updateExistingPivotUsingCustomClass" id="_updateExistingPivotUsingCustomClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updateExistingPivotUsingCustomClass(<span>mixed <var>$id</var></span>, <span>array <var>$attributes</var></span>, <span>bool <var>$touch</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Update an existing pivot record on the table via a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update an existing pivot record on the table via a custom class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updateExistingPivotUsingCustomClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attach" id="_attach">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attach(<span>mixed <var>$ids</var></span>, <span>array <var>$attributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Attach a model to the parent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attach a model to the parent.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attach">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attachUsingCustomClass" id="_attachUsingCustomClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attachUsingCustomClass(<span>mixed <var>$ids</var></span>, <span>array <var>$attributes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Attach a model to the parent using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attach a model to the parent using a custom class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attachUsingCustomClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="formatAttachRecords" id="_formatAttachRecords">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>formatAttachRecords(<span>array <var>$ids</var></span>, <span>array <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Create an array of records to insert into the pivot table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an array of records to insert into the pivot table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_formatAttachRecords">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="formatAttachRecord" id="_formatAttachRecord">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>formatAttachRecord(<span>int <var>$key</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$attributes</var></span>, <span>bool <var>$hasTimestamps</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a full attachment record payload.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a full attachment record payload.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_formatAttachRecord">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extractAttachIdAndAttributes" id="_extractAttachIdAndAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>extractAttachIdAndAttributes(<span>mixed <var>$key</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attach record ID and extra attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attach record ID and extra attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extractAttachIdAndAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="baseAttachRecord" id="_baseAttachRecord">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>baseAttachRecord(<span>int <var>$id</var></span>, <span>bool <var>$timed</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pivot attachment record.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pivot attachment record.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_baseAttachRecord">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addTimestampsToAttachment" id="_addTimestampsToAttachment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addTimestampsToAttachment(<span>array <var>$record</var></span>, <span>bool <var>$exists</var> = <span class="php-kw">false</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the creation and update timestamps on an attach record.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the creation and update timestamps on an attach record.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addTimestampsToAttachment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasPivotColumn" id="_hasPivotColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasPivotColumn(<span>string <var>$column</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether the given column is defined as a pivot column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether the given column is defined as a pivot column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasPivotColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="detach" id="_detach">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>detach(<span>mixed <var>$ids</var> = <span class="php-kw">null</span></span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Detach models from the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Detach models from the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_detach">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="detachUsingCustomClass" id="_detachUsingCustomClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>detachUsingCustomClass(<span>mixed <var>$ids</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Detach models from the relationship using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Detach models from the relationship using a custom class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_detachUsingCustomClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCurrentlyAttachedPivots" id="_getCurrentlyAttachedPivots">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCurrentlyAttachedPivots(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the pivot models that are currently attached.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the pivot models that are currently attached.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCurrentlyAttachedPivots">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newPivot" id="_newPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newPivot(<span>array <var>$attributes</var> = []</span>, <span>bool <var>$exists</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pivot model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pivot model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newExistingPivot" id="_newExistingPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newExistingPivot(<span>array <var>$attributes</var> = []</span>): <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new existing pivot model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new existing pivot model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newExistingPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newPivotStatement" id="_newPivotStatement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newPivotStatement(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new plain query builder for the pivot table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new plain query builder for the pivot table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newPivotStatement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newPivotStatementForId" id="_newPivotStatementForId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newPivotStatementForId(<span>mixed <var>$id</var></span>): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new pivot statement for a given "other" ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new pivot statement for a given &quot;other&quot; ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newPivotStatementForId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newPivotQuery" id="_newPivotQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newPivotQuery(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new query builder for the pivot table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new query builder for the pivot table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newPivotQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPivot" id="_withPivot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPivot(<span>array|mixed <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the columns on the pivot table to retrieve.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the columns on the pivot table to retrieve.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPivot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseIds" id="_parseIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseIds(<span>mixed <var>$value</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the IDs from the given mixed value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the IDs from the given mixed value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseIds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseId" id="_parseId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseId(<span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the ID from the given mixed value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the ID from the given mixed value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castKeys" id="_castKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castKeys(<span>array <var>$keys</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given keys to integers if they are numeric and string otherwise.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given keys to integers if they are numeric and string otherwise.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castKey" id="_castKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castKey(<span>mixed <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given key to convert to primary key type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given key to convert to primary key type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castAttributes" id="_castAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castAttributes(<span>array <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given pivot attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given pivot attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTypeSwapValue" id="_getTypeSwapValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTypeSwapValue(<span>string <var>$type</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts a given value to a given type value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts a given value to a given type value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTypeSwapValue">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

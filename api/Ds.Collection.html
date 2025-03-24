@@ -1,0 +1,507 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Ds\Collection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ds.html">Ds</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ds.Deque.html">
+							Deque
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Map.html">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Pair.html">
+							Pair
+						</a>
+					</li>
+					<li>
+						<a href="Ds.PriorityQueue.html">
+							PriorityQueue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Queue.html">
+							Queue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Set.html">
+							Set
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Stack.html">
+							Stack
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Vector.html">
+							Vector
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Ds.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Hashable.html">
+							Hashable
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Sequence.html">
+							Sequence
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ds.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ds.Collection.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Ds.html">Ds</a>\<a href="Ds.Collection.html">Collection</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Countable.html"><span title="Countable">Countable</span></a>, <a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>, <a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Collection is the base interface which covers functionality common to all
+the data structures in this library. It guarantees that all structures
+are traversable, countable, and can be converted to json using
+json_encode().</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Ds\Collection</span></b>
+		extends
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ds.Map.html"><span>Ds\Map</span></a>
+
+		implements
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+	</li>
+	<li>
+<a href="Ds.Set.html"><span>Ds\Set</span></a>
+
+		implements
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+	</li>
+	<li>
+<a href="Ds.Stack.html"><span>Ds\Stack</span></a>
+
+		implements
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+	</li>
+	<li>
+<a href="Ds.Queue.html"><span>Ds\Queue</span></a>
+
+		implements
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+	</li>
+	<li>
+<a href="Ds.PriorityQueue.html"><span>Ds\PriorityQueue</span></a>
+
+		implements
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+	</li>
+	<li>
+<a href="Ds.Sequence.html"><span>Ds\Sequence</span></a>
+		extends
+			<b><span class="active" title="Ds\Collection">Collection</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ds.Vector.html"><span>Ds\Vector</span></a>
+
+		implements
+			<a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Deque.html"><span>Ds\Deque</span></a>
+
+		implements
+			<a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="clear" id="_clear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clear(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes all values from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes all values from the collection.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Ds.Vector.html#_clear">						<code>Ds\Vector::clear()</code></a>				</li>
+				<li>
+<a href="Ds.Deque.html#_clear">						<code>Ds\Deque::clear()</code></a>				</li>
+				<li>
+<a href="Ds.Map.html#_clear">						<code>Ds\Map::clear()</code></a>				</li>
+				<li>
+<a href="Ds.Set.html#_clear">						<code>Ds\Set::clear()</code></a>				</li>
+				<li>
+<a href="Ds.Stack.html#_clear">						<code>Ds\Stack::clear()</code></a>				</li>
+				<li>
+<a href="Ds.Queue.html#_clear">						<code>Ds\Queue::clear()</code></a>				</li>
+				<li>
+<a href="Ds.PriorityQueue.html#_clear">						<code>Ds\PriorityQueue::clear()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(): <b><span class="active" title="Ds\Collection">Collection</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a shallow copy of the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a shallow copy of the collection.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Ds.Vector.html#_copy">						<code>Ds\Vector::copy()</code></a>				</li>
+				<li>
+<a href="Ds.Deque.html#_copy">						<code>Ds\Deque::copy()</code></a>				</li>
+				<li>
+<a href="Ds.Map.html#_copy">						<code>Ds\Map::copy()</code></a>				</li>
+				<li>
+<a href="Ds.Set.html#_copy">						<code>Ds\Set::copy()</code></a>				</li>
+				<li>
+<a href="Ds.Stack.html#_copy">						<code>Ds\Stack::copy()</code></a>				</li>
+				<li>
+<a href="Ds.Queue.html#_copy">						<code>Ds\Queue::copy()</code></a>				</li>
+				<li>
+<a href="Ds.PriorityQueue.html#_copy">						<code>Ds\PriorityQueue::copy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the collection is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the collection is empty.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Ds.Vector.html#_isEmpty">						<code>Ds\Vector::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.Deque.html#_isEmpty">						<code>Ds\Deque::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.Map.html#_isEmpty">						<code>Ds\Map::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.Set.html#_isEmpty">						<code>Ds\Set::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.Stack.html#_isEmpty">						<code>Ds\Stack::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.Queue.html#_isEmpty">						<code>Ds\Queue::isEmpty()</code></a>				</li>
+				<li>
+<a href="Ds.PriorityQueue.html#_isEmpty">						<code>Ds\PriorityQueue::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the collection to an array.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Casting to an array is not supported yet.&lt;/p&gt;
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the collection to an array.</p>
+<p><b>Note:</b> Casting to an array is not supported yet.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array containing all the values in the same order as
+the collection.</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Ds.Vector.html#_toArray">						<code>Ds\Vector::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.Deque.html#_toArray">						<code>Ds\Deque::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.Map.html#_toArray">						<code>Ds\Map::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.Set.html#_toArray">						<code>Ds\Set::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.Stack.html#_toArray">						<code>Ds\Stack::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.Queue.html#_toArray">						<code>Ds\Queue::toArray()</code></a>				</li>
+				<li>
+<a href="Ds.PriorityQueue.html#_toArray">						<code>Ds\PriorityQueue::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Countable.html"><span>Countable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Countable.html#_count">count()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="IteratorAggregate.html"><span>IteratorAggregate</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="IteratorAggregate.html#_getIterator">getIterator()</a></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="JsonSerializable.html"><span>JsonSerializable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="JsonSerializable.html#_jsonSerialize">jsonSerialize()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

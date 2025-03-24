@@ -1,0 +1,4127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\HttpFoundation\Request |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Cookie.html">
+							Cookie
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.FileBag.html">
+							FileBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.HeaderBag.html">
+							HeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.InputBag.html">
+							InputBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.JsonResponse.html">
+							JsonResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ParameterBag.html">
+							ParameterBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.RedirectResponse.html">
+							RedirectResponse
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.HttpFoundation.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Response.html">
+							Response
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ResponseHeaderBag.html">
+							ResponseHeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ServerBag.html">
+							ServerBag
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.HttpFoundation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.HttpFoundation.Request.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="Symfony.Component.HttpFoundation.Request.html">Request</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Request represents an HTTP request.</p>
+<p>The methods dealing with URL accept / return a raw path (% encoded):</p>
+<ul>
+<li>getBasePath</li>
+<li>getBaseUrl</li>
+<li>getPathInfo</li>
+<li>getRequestUri</li>
+<li>getUri</li>
+<li>getUriForPath</li>
+</ul>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\HttpFoundation\Request</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Request.html"><span>Illuminate\Http\Request</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+		uses
+			<a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span title="Illuminate\Http\Concerns\CanBePrecognitive">CanBePrecognitive</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span title="Illuminate\Http\Concerns\InteractsWithContentTypes">InteractsWithContentTypes</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span title="Illuminate\Http\Concerns\InteractsWithFlashData">InteractsWithFlashData</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithInput.html"><span title="Illuminate\Http\Concerns\InteractsWithInput">InteractsWithInput</span></a>, 
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>array <var>$query</var> = []</span>,
+	<span>array <var>$request</var> = []</span>,
+	<span>array <var>$attributes</var> = []</span>,
+	<span>array <var>$cookies</var> = []</span>,
+	<span>array <var>$files</var> = []</span>,
+	<span>array <var>$server</var> = []</span>,
+	<span>string|resource|null <var>$content</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$query</var>&nbsp;&nbsp;</td>
+										<td><p>The GET parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$request</var>&nbsp;&nbsp;</td>
+										<td><p>The POST parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attributes</var>&nbsp;&nbsp;</td>
+										<td><p>The request attributes (parameters parsed from the PATH_INFO, ...)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The COOKIE parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$files</var>&nbsp;&nbsp;</td>
+										<td><p>The FILES parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$server</var>&nbsp;&nbsp;</td>
+										<td><p>The SERVER parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$content</var>&nbsp;&nbsp;</td>
+										<td><p>The raw body data</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initialize" id="_initialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initialize(
+	<span>array <var>$query</var> = []</span>,
+	<span>array <var>$request</var> = []</span>,
+	<span>array <var>$attributes</var> = []</span>,
+	<span>array <var>$cookies</var> = []</span>,
+	<span>array <var>$files</var> = []</span>,
+	<span>array <var>$server</var> = []</span>,
+	<span>string|resource|null <var>$content</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the parameters for this request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the parameters for this request.</p>
+<p>This method also re-initializes all properties.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$query</var>&nbsp;&nbsp;</td>
+										<td><p>The GET parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$request</var>&nbsp;&nbsp;</td>
+										<td><p>The POST parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attributes</var>&nbsp;&nbsp;</td>
+										<td><p>The request attributes (parameters parsed from the PATH_INFO, ...)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The COOKIE parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$files</var>&nbsp;&nbsp;</td>
+										<td><p>The FILES parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$server</var>&nbsp;&nbsp;</td>
+										<td><p>The SERVER parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$content</var>&nbsp;&nbsp;</td>
+										<td><p>The raw body data</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createFromGlobals" id="_createFromGlobals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createFromGlobals(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new request with values from PHP's super globals.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new request with values from PHP's super globals.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createFromGlobals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(
+	<span>string <var>$uri</var></span>,
+	<span>string <var>$method</var> = <span class="php-str">'GET'</span></span>,
+	<span>array <var>$parameters</var> = []</span>,
+	<span>array <var>$cookies</var> = []</span>,
+	<span>array <var>$files</var> = []</span>,
+	<span>array <var>$server</var> = []</span>,
+	<span>string|resource|null <var>$content</var> = <span class="php-kw">null</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a Request based on a given URI and configuration.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a Request based on a given URI and configuration.</p>
+<p>The information contained in the URI always take precedence
+over the other information (server and parameters).</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uri</var>&nbsp;&nbsp;</td>
+										<td><p>The URI</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$method</var>&nbsp;&nbsp;</td>
+										<td><p>The HTTP method</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$parameters</var>&nbsp;&nbsp;</td>
+										<td><p>The query (GET) or request (POST) parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The request cookies ($_COOKIE)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$files</var>&nbsp;&nbsp;</td>
+										<td><p>The request files ($_FILES)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$server</var>&nbsp;&nbsp;</td>
+										<td><p>The server parameters ($_SERVER)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$content</var>&nbsp;&nbsp;</td>
+										<td><p>The raw body data</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpFoundation.Exception.BadRequestException.html"><span>Symfony\Component\HttpFoundation\Exception\BadRequestException</span></a></code>&nbsp;</td>
+										<td><p>When the URI is invalid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFactory" id="_setFactory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFactory(<span>?callable <var>$callable</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a callable able to create a Request instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a callable able to create a Request instance.</p>
+<p>This is mainly useful when you need to override the Request class
+to keep BC with an existing system. It should not be used for any
+other purpose.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFactory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="duplicate" id="_duplicate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>duplicate(
+	<span>array|null <var>$query</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$request</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$attributes</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$cookies</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$files</var> = <span class="php-kw">null</span></span>,
+	<span>array|null <var>$server</var> = <span class="php-kw">null</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Clones a request and overrides some of its parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clones a request and overrides some of its parameters.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$query</var>&nbsp;&nbsp;</td>
+										<td><p>The GET parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$request</var>&nbsp;&nbsp;</td>
+										<td><p>The POST parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$attributes</var>&nbsp;&nbsp;</td>
+										<td><p>The request attributes (parameters parsed from the PATH_INFO, ...)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$cookies</var>&nbsp;&nbsp;</td>
+										<td><p>The COOKIE parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$files</var>&nbsp;&nbsp;</td>
+										<td><p>The FILES parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$server</var>&nbsp;&nbsp;</td>
+										<td><p>The SERVER parameters</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Request.html#_duplicate">						<code>Illuminate\Http\Request::duplicate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_duplicate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+	<div class="expandable-collapsedView">
+		Clones the current request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clones the current request.</p>
+<p>Note that the session is not cloned as duplicated requests
+are most of the time sub-requests of the main one.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="overrideGlobals" id="_overrideGlobals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>overrideGlobals(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Overrides the PHP global variables according to this request instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Overrides the PHP global variables according to this request instance.</p>
+<p>It overrides $_GET, $_POST, $_REQUEST, $_SERVER, $_COOKIE.
+$_FILES is never overridden, see rfc1867</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_overrideGlobals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTrustedProxies" id="_setTrustedProxies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTrustedProxies(<span>array <var>$proxies</var></span>, <span>int-mask-of&lt;<b><span class="active" title="Symfony\Component\HttpFoundation\Request">Request</span></b>::HEADER_*&gt; <var>$trustedHeaderSet</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a list of trusted proxies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a list of trusted proxies.</p>
+<p>You should only list the reverse proxies that you manage directly.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$proxies</var>&nbsp;&nbsp;</td>
+										<td><p>A list of trusted proxies, the string 'REMOTE_ADDR' will be replaced with $_SERVER['REMOTE_ADDR'] and 'PRIVATE_SUBNETS' by IpUtils::PRIVATE_SUBNETS</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$trustedHeaderSet</var>&nbsp;&nbsp;</td>
+										<td><p>A bit field to set which headers to trust from your proxies</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTrustedProxies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTrustedProxies" id="_getTrustedProxies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTrustedProxies(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the list of trusted proxies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the list of trusted proxies.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTrustedProxies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTrustedHeaderSet" id="_getTrustedHeaderSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTrustedHeaderSet(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the set of trusted headers from trusted proxies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the set of trusted headers from trusted proxies.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A bit field of Request::HEADER_* that defines which headers are trusted from your proxies</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTrustedHeaderSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTrustedHosts" id="_setTrustedHosts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTrustedHosts(<span>array <var>$hostPatterns</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a list of trusted host patterns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a list of trusted host patterns.</p>
+<p>You should only list the hosts you manage using regexs.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$hostPatterns</var>&nbsp;&nbsp;</td>
+										<td><p>A list of trusted host patterns</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTrustedHosts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTrustedHosts" id="_getTrustedHosts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTrustedHosts(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the list of trusted host patterns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the list of trusted host patterns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTrustedHosts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="normalizeQueryString" id="_normalizeQueryString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>normalizeQueryString(<span>?string <var>$qs</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Normalizes a query string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Normalizes a query string.</p>
+<p>It builds a normalized query string, where keys/value pairs are alphabetized,
+have consistent escaping and unneeded delimiters are removed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_normalizeQueryString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enableHttpMethodParameterOverride" id="_enableHttpMethodParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enableHttpMethodParameterOverride(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Enables support for the _method request parameter to determine the intended HTTP method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enables support for the _method request parameter to determine the intended HTTP method.</p>
+<p>Be warned that enabling this feature might lead to CSRF issues in your code.
+Check that you are using CSRF tokens when required.
+If the HTTP method parameter override is enabled, an html-form with method &quot;POST&quot; can be altered
+and used to send a &quot;PUT&quot; or &quot;DELETE&quot; request via the _method request parameter.
+If these methods are not protected against CSRF, this presents a possible vulnerability.</p>
+<p>The HTTP method can only be overridden when the real HTTP method is POST.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enableHttpMethodParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHttpMethodParameterOverride" id="_getHttpMethodParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHttpMethodParameterOverride(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether support for the _method request parameter is enabled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether support for the _method request parameter is enabled.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHttpMethodParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSession" id="_getSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSession(): <a href="Symfony.Component.HttpFoundation.Session.SessionInterface.html"><span title="Symfony\Component\HttpFoundation\Session\SessionInterface">SessionInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the Session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the Session.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpFoundation.Exception.SessionNotFoundException.html"><span>Symfony\Component\HttpFoundation\Exception\SessionNotFoundException</span></a></code>&nbsp;</td>
+										<td><p>When session is not set properly</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Request.html#_getSession">						<code>Illuminate\Http\Request::getSession()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasPreviousSession" id="_hasPreviousSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasPreviousSession(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether the request contains a Session which was started in one of the
+previous requests.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the request contains a Session which was started in one of the
+previous requests.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasPreviousSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasSession" id="_hasSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasSession(<span>bool <var>$skipIfUninitialized</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether the request contains a Session object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the request contains a Session object.</p>
+<p>This method does not give any information about the state of the session object,
+like whether the session is started or not. It is just a way to check if this Request
+is associated with a Session instance.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$skipIfUninitialized</var>&nbsp;&nbsp;</td>
+										<td><p>When true, ignores factories injected by <code>setSessionFactory</code></p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Request.html#_hasSession">						<code>Illuminate\Http\Request::hasSession()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSession" id="_setSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSession(<span><a href="Symfony.Component.HttpFoundation.Session.SessionInterface.html"><span title="Symfony\Component\HttpFoundation\Session\SessionInterface">SessionInterface</span></a> <var>$session</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClientIps" id="_getClientIps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClientIps(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the client IP addresses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the client IP addresses.</p>
+<p>In the returned array the most trusted IP address is first, and the
+least trusted one last. The &quot;real&quot; client IP address is the last one,
+but this is also the least trusted one. Trusted proxies are stripped.</p>
+<p>Use this method carefully; you should use getClientIp() instead.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClientIps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClientIp" id="_getClientIp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClientIp(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the client IP address.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the client IP address.</p>
+<p>This method can read the client IP address from the &quot;X-Forwarded-For&quot; header
+when trusted proxies were set via &quot;setTrustedProxies()&quot;. The &quot;X-Forwarded-For&quot;
+header value is a comma+space separated list of IP addresses, the left-most
+being the original client, and each successive proxy that passed the request
+adding the IP address where it received the request from.</p>
+<p>If your reverse proxy uses a different header name than &quot;X-Forwarded-For&quot;,
+(&quot;Client-Ip&quot; for instance), configure it via the $trustedHeaderSet
+argument of the Request::setTrustedProxies() method instead.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClientIp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScriptName" id="_getScriptName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getScriptName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns current script name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns current script name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScriptName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPathInfo" id="_getPathInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPathInfo(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the path being requested relative to the executed script.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the path being requested relative to the executed script.</p>
+<p>The path info always starts with a /.</p>
+<p>Suppose this request is instantiated from /mysite on localhost:</p>
+<ul>
+<li>
+<a href="http://localhost/mysite">http://localhost/mysite</a>              returns an empty string</li>
+<li>
+<a href="http://localhost/mysite/about">http://localhost/mysite/about</a>        returns '/about'</li>
+<li>
+<a href="http://localhost/mysite/enco%20ded">http://localhost/mysite/enco%20ded</a>   returns '/enco%20ded'</li>
+<li>
+<a href="http://localhost/mysite/about?var=1">http://localhost/mysite/about?var=1</a>  returns '/about'</li>
+</ul>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The raw path (i.e. not urldecoded)</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPathInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBasePath" id="_getBasePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBasePath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the root path from which this request is executed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the root path from which this request is executed.</p>
+<p>Suppose that an index.php file instantiates this request object:</p>
+<ul>
+<li>
+<a href="http://localhost/index.php">http://localhost/index.php</a>         returns an empty string</li>
+<li>
+<a href="http://localhost/index.php/page">http://localhost/index.php/page</a>    returns an empty string</li>
+<li>
+<a href="http://localhost/web/index.php">http://localhost/web/index.php</a>     returns '/web'</li>
+<li>
+<a href="http://localhost/we%20b/index.php">http://localhost/we%20b/index.php</a>  returns '/we%20b'</li>
+</ul>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The raw path (i.e. not urldecoded)</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBasePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBaseUrl" id="_getBaseUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBaseUrl(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the root URL from which this request is executed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the root URL from which this request is executed.</p>
+<p>The base URL never ends with a /.</p>
+<p>This is similar to getBasePath(), except that it also includes the
+script filename (e.g. index.php) if one exists.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The raw URL (i.e. not urldecoded)</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBaseUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getScheme" id="_getScheme">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getScheme(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the request's scheme.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the request's scheme.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getScheme">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPort" id="_getPort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPort(): int|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the port on which the request is made.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the port on which the request is made.</p>
+<p>This method can read the client port from the &quot;X-Forwarded-Port&quot; header
+when trusted proxies were set via &quot;setTrustedProxies()&quot;.</p>
+<p>The &quot;X-Forwarded-Port&quot; header must contain the client port.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Can be a string if fetched from the server bag</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUser" id="_getUser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUser(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the user.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the user.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPassword" id="_getPassword">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPassword(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the password.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the password.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPassword">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUserInfo" id="_getUserInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUserInfo(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the user info.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the user info.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A user name if any and, optionally, scheme-specific information about how to gain authorization to access the server</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUserInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHttpHost" id="_getHttpHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHttpHost(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the HTTP host being requested.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the HTTP host being requested.</p>
+<p>The port name will be appended to the host if it's non-standard.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHttpHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRequestUri" id="_getRequestUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRequestUri(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the requested URI (path and query string).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the requested URI (path and query string).</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The raw URI (i.e. not URI decoded)</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRequestUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSchemeAndHttpHost" id="_getSchemeAndHttpHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSchemeAndHttpHost(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the scheme and HTTP host.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the scheme and HTTP host.</p>
+<p>If the URL was called with basic authentication, the user
+and the password are not added to the generated string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSchemeAndHttpHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUri" id="_getUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUri(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates a normalized URI (URL) for the Request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates a normalized URI (URL) for the Request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUriForPath" id="_getUriForPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUriForPath(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates a normalized URI for the given path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates a normalized URI for the given path.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>A path to use instead of the current one</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUriForPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelativeUriForPath" id="_getRelativeUriForPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelativeUriForPath(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the path as relative reference from the current Request path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the path as relative reference from the current Request path.</p>
+<p>Only the URIs path component (no schema, host etc.) is relevant and must be given.
+Both paths must be absolute and not contain relative parts.
+Relative URLs from one resource to another are useful when generating self-contained downloadable document archives.
+Furthermore, they can be used to reduce the link size in documents.</p>
+<p>Example target paths, given a base path of &quot;/a/b/c/d&quot;:</p>
+<ul>
+<li>&quot;/a/b/c/d&quot;     -&gt; &quot;&quot;</li>
+<li>&quot;/a/b/c/&quot;      -&gt; &quot;./&quot;</li>
+<li>&quot;/a/b/&quot;        -&gt; &quot;../&quot;</li>
+<li>&quot;/a/b/c/other&quot; -&gt; &quot;other&quot;</li>
+<li>&quot;/a/x/y&quot;       -&gt; &quot;../../x/y&quot;</li>
+</ul>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelativeUriForPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueryString" id="_getQueryString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueryString(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates the normalized query string for the Request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates the normalized query string for the Request.</p>
+<p>It builds a normalized query string, where keys/value pairs are alphabetized
+and have consistent escaping.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueryString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSecure" id="_isSecure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSecure(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the request is secure or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the request is secure or not.</p>
+<p>This method can read the client protocol from the &quot;X-Forwarded-Proto&quot; header
+when trusted proxies were set via &quot;setTrustedProxies()&quot;.</p>
+<p>The &quot;X-Forwarded-Proto&quot; header must contain the protocol: &quot;https&quot; or &quot;http&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSecure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHost" id="_getHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHost(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the host name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the host name.</p>
+<p>This method can read the client host name from the &quot;X-Forwarded-Host&quot; header
+when trusted proxies were set via &quot;setTrustedProxies()&quot;.</p>
+<p>The &quot;X-Forwarded-Host&quot; header must contain the client host name.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpFoundation.Exception.SuspiciousOperationException.html"><span>Symfony\Component\HttpFoundation\Exception\SuspiciousOperationException</span></a></code>&nbsp;</td>
+										<td><p>when the host name is invalid or not trusted</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMethod" id="_setMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMethod(<span>string <var>$method</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the request method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the request method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMethod" id="_getMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMethod(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the request "intended" method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the request &quot;intended&quot; method.</p>
+<p>If the X-HTTP-Method-Override header is set, and if the method is a POST,
+then it is used to determine the &quot;real&quot; intended HTTP method.</p>
+<p>The _method request parameter can also be used to determine the HTTP method,
+but only if enableHttpMethodParameterOverride() has been called.</p>
+<p>The method is always an uppercased string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRealMethod" id="_getRealMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRealMethod(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the "real" request method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the &quot;real&quot; request method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRealMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMimeType" id="_getMimeType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMimeType(<span>string <var>$format</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the mime type associated with the format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the mime type associated with the format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMimeType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMimeTypes" id="_getMimeTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMimeTypes(<span>string <var>$format</var></span>): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the mime types associated with the format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the mime types associated with the format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMimeTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFormat" id="_getFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFormat(<span>?string <var>$mimeType</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the format associated with the mime type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the format associated with the mime type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFormat" id="_setFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFormat(<span>?string <var>$format</var></span>, <span>string|string[] <var>$mimeTypes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Associates a format with mime types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Associates a format with mime types.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$mimeTypes</var>&nbsp;&nbsp;</td>
+										<td><p>The associated mime types (the preferred one must be the first as it will be used as the content type)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRequestFormat" id="_getRequestFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRequestFormat(<span>?string <var>$default</var> = <span class="php-str">'html'</span></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the request format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the request format.</p>
+<p>Here is the process to determine the format:</p>
+<ul>
+<li>format defined by the user (with setRequestFormat())</li>
+<li>_format request attribute</li>
+<li>$default</li>
+</ul>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRequestFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRequestFormat" id="_setRequestFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRequestFormat(<span>?string <var>$format</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the request format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the request format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRequestFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContentTypeFormat" id="_getContentTypeFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getContentTypeFormat(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the usual name of the format associated with the request's media type (provided in the Content-Type header).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the usual name of the format associated with the request's media type (provided in the Content-Type header).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContentTypeFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefaultLocale" id="_setDefaultLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefaultLocale(<span>string <var>$locale</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the default locale.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the default locale.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefaultLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultLocale" id="_getDefaultLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultLocale(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default locale.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default locale.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLocale" id="_setLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setLocale(<span>string <var>$locale</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the locale.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the locale.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLocale" id="_getLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLocale(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the locale.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the locale.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isMethod" id="_isMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isMethod(<span>string <var>$method</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the request method is of specified type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the request method is of specified type.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$method</var>&nbsp;&nbsp;</td>
+										<td><p>Uppercase request method (GET, POST etc)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isMethodSafe" id="_isMethodSafe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isMethodSafe(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether or not the method is safe.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether or not the method is safe.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isMethodSafe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isMethodIdempotent" id="_isMethodIdempotent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isMethodIdempotent(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether or not the method is idempotent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether or not the method is idempotent.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isMethodIdempotent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isMethodCacheable" id="_isMethodCacheable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isMethodCacheable(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the method is cacheable or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the method is cacheable or not.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isMethodCacheable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getProtocolVersion" id="_getProtocolVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getProtocolVersion(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the protocol version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the protocol version.</p>
+<p>If the application is behind a proxy, the protocol version used in the
+requests between the client and the proxy and between the proxy and the
+server might be different. This returns the former (from the &quot;Via&quot; header)
+if the proxy is trusted (see &quot;setTrustedProxies()&quot;), otherwise it returns
+the latter (from the &quot;SERVER_PROTOCOL&quot; server parameter).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getProtocolVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContent" id="_getContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getContent(<span>bool <var>$asResource</var> = <span class="php-kw">false</span></span>): string|resource</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the request body content.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the request body content.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$asResource</var>&nbsp;&nbsp;</td>
+										<td><p>If true, a resource will be returned</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPayload" id="_getPayload">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPayload(): <a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the decoded form or json request body.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the decoded form or json request body.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpFoundation.Exception.JsonException.html"><span>Symfony\Component\HttpFoundation\Exception\JsonException</span></a></code>&nbsp;</td>
+										<td><p>When the body cannot be decoded to an array</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPayload">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the request body decoded as array, typically from a JSON payload.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the request body decoded as array, typically from a JSON payload.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpFoundation.Exception.JsonException.html"><span>Symfony\Component\HttpFoundation\Exception\JsonException</span></a></code>&nbsp;</td>
+										<td><p>When the body cannot be decoded to an array</p>
+</td>
+									</tr>
+							</table>
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Request.html#_toArray">						<code>Illuminate\Http\Request::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getETags" id="_getETags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getETags(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the Etags.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the Etags.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getETags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNoCache" id="_isNoCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNoCache(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNoCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferredFormat" id="_getPreferredFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPreferredFormat(<span>?string <var>$default</var> = <span class="php-str">'html'</span></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the preferred format for the response by inspecting, in the following order:
+  * the request format set using…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the preferred format for the response by inspecting, in the following order:</p>
+<ul>
+<li>the request format set using setRequestFormat;</li>
+<li>the values of the Accept HTTP header.</li>
+</ul>
+<p>Note that if you use this method, you should send the &quot;Vary: Accept&quot; header
+in the response to prevent any issues with intermediary HTTP caches.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferredFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPreferredLanguage" id="_getPreferredLanguage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPreferredLanguage(<span>string[] <var>$locales</var> = <span class="php-kw">null</span></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the preferred language.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the preferred language.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$locales</var>&nbsp;&nbsp;</td>
+										<td><p>An array of ordered available locales</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPreferredLanguage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLanguages" id="_getLanguages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLanguages(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets a list of languages acceptable by the client browser ordered in the user browser preferences.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets a list of languages acceptable by the client browser ordered in the user browser preferences.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLanguages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCharsets" id="_getCharsets">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCharsets(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets a list of charsets acceptable by the client browser in preferable order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets a list of charsets acceptable by the client browser in preferable order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCharsets">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEncodings" id="_getEncodings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEncodings(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets a list of encodings acceptable by the client browser in preferable order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets a list of encodings acceptable by the client browser in preferable order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEncodings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAcceptableContentTypes" id="_getAcceptableContentTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAcceptableContentTypes(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets a list of content types acceptable by the client browser in preferable order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets a list of content types acceptable by the client browser in preferable order.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAcceptableContentTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isXmlHttpRequest" id="_isXmlHttpRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isXmlHttpRequest(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the request is an XMLHttpRequest.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the request is an XMLHttpRequest.</p>
+<p>It works if your JavaScript library sets an X-Requested-With HTTP header.
+It is known to work with common JavaScript frameworks:</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isXmlHttpRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preferSafeContent" id="_preferSafeContent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preferSafeContent(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the client browser prefers safe content or not according to RFC8674.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the client browser prefers safe content or not according to RFC8674.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preferSafeContent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareRequestUri" id="_prepareRequestUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareRequestUri(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareRequestUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBaseUrl" id="_prepareBaseUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBaseUrl(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepares the base URL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepares the base URL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBaseUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBasePath" id="_prepareBasePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBasePath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepares the base path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepares the base path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBasePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preparePathInfo" id="_preparePathInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preparePathInfo(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepares the path info.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepares the path info.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preparePathInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initializeFormats" id="_initializeFormats">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initializeFormats(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Initializes HTTP request formats.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initializes HTTP request formats.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializeFormats">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFromTrustedProxy" id="_isFromTrustedProxy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isFromTrustedProxy(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicates whether this request originated from a trusted proxy.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicates whether this request originated from a trusted proxy.</p>
+<p>This can be useful to determine whether or not to trust the
+contents of a proxy-specific header.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFromTrustedProxy">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="HEADER_FORWARDED" id="HEADER_FORWARDED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_FORWARDED = <span class="php-num">0b000001</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_FORWARDED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_FOR" id="HEADER_X_FORWARDED_FOR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_FOR = <span class="php-num">0b000010</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_FOR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_HOST" id="HEADER_X_FORWARDED_HOST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_HOST = <span class="php-num">0b000100</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_HOST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_PROTO" id="HEADER_X_FORWARDED_PROTO">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_PROTO = <span class="php-num">0b001000</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_PROTO">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_PORT" id="HEADER_X_FORWARDED_PORT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_PORT = <span class="php-num">0b010000</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_PORT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_PREFIX" id="HEADER_X_FORWARDED_PREFIX">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_PREFIX = <span class="php-num">0b100000</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_PREFIX">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_AWS_ELB" id="HEADER_X_FORWARDED_AWS_ELB">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_AWS_ELB = <span class="php-num">0b0011010</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_AWS_ELB">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HEADER_X_FORWARDED_TRAEFIK" id="HEADER_X_FORWARDED_TRAEFIK">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>HEADER_X_FORWARDED_TRAEFIK = <span class="php-num">0b0111110</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HEADER_X_FORWARDED_TRAEFIK">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_HEAD" id="METHOD_HEAD">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_HEAD = <span class="php-str">'HEAD'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_HEAD">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_GET" id="METHOD_GET">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_GET = <span class="php-str">'GET'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_GET">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_POST" id="METHOD_POST">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_POST = <span class="php-str">'POST'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_POST">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_PUT" id="METHOD_PUT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_PUT = <span class="php-str">'PUT'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_PUT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_PATCH" id="METHOD_PATCH">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_PATCH = <span class="php-str">'PATCH'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_PATCH">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_DELETE" id="METHOD_DELETE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_DELETE = <span class="php-str">'DELETE'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_DELETE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_PURGE" id="METHOD_PURGE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_PURGE = <span class="php-str">'PURGE'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_PURGE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_OPTIONS" id="METHOD_OPTIONS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_OPTIONS = <span class="php-str">'OPTIONS'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_OPTIONS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_TRACE" id="METHOD_TRACE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_TRACE = <span class="php-str">'TRACE'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_TRACE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="METHOD_CONNECT" id="METHOD_CONNECT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>METHOD_CONNECT = <span class="php-str">'CONNECT'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#METHOD_CONNECT">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="trustedProxies" id="$trustedProxies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$trustedProxies</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$trustedProxies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="trustedHostPatterns" id="$trustedHostPatterns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$trustedHostPatterns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$trustedHostPatterns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="trustedHosts" id="$trustedHosts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$trustedHosts</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$trustedHosts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="httpMethodParameterOverride" id="$httpMethodParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$httpMethodParameterOverride</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$httpMethodParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.ParameterBag.html"><span title="Symfony\Component\HttpFoundation\ParameterBag">ParameterBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var></code>
+				
+	<div class="expandable-collapsedView">
+		Custom parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Custom parameters.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="request" id="$request">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$request</var></code>
+				
+	<div class="expandable-collapsedView">
+		Request body parameters ($_POST).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Request body parameters ($_POST).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$request">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="$query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$query</var></code>
+				
+	<div class="expandable-collapsedView">
+		Query string parameters ($_GET).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Query string parameters ($_GET).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="server" id="$server">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.ServerBag.html"><span title="Symfony\Component\HttpFoundation\ServerBag">ServerBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$server</var></code>
+				
+	<div class="expandable-collapsedView">
+		Server and execution environment parameters ($_SERVER).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Server and execution environment parameters ($_SERVER).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$server">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="files" id="$files">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.FileBag.html"><span title="Symfony\Component\HttpFoundation\FileBag">FileBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$files</var></code>
+				
+	<div class="expandable-collapsedView">
+		Uploaded files ($_FILES).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Uploaded files ($_FILES).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$files">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cookies" id="$cookies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.InputBag.html"><span title="Symfony\Component\HttpFoundation\InputBag">InputBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$cookies</var></code>
+				
+	<div class="expandable-collapsedView">
+		Cookies ($_COOKIE).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cookies ($_COOKIE).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$cookies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="headers" id="$headers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.HeaderBag.html"><span title="Symfony\Component\HttpFoundation\HeaderBag">HeaderBag</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$headers</var></code>
+				
+	<div class="expandable-collapsedView">
+		Headers (taken from the $_SERVER).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Headers (taken from the $_SERVER).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$headers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="content" id="$content">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|resource|false|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$content</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$content">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="languages" id="$languages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$languages</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$languages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="charsets" id="$charsets">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$charsets</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$charsets">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="encodings" id="$encodings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$encodings</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$encodings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="acceptableContentTypes" id="$acceptableContentTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$acceptableContentTypes</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$acceptableContentTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pathInfo" id="$pathInfo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pathInfo</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pathInfo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requestUri" id="$requestUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$requestUri</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$requestUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="baseUrl" id="$baseUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$baseUrl</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$baseUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="basePath" id="$basePath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$basePath</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$basePath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="method" id="$method">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$method</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$method">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="format" id="$format">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$format</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$format">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="session" id="$session">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.HttpFoundation.Session.SessionInterface.html"><span title="Symfony\Component\HttpFoundation\Session\SessionInterface">SessionInterface</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$session</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$session">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="locale" id="$locale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$locale</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$locale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultLocale" id="$defaultLocale">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$defaultLocale</var> = <span class="php-str">'en'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$defaultLocale">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="formats" id="$formats">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, string[]&gt;|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$formats</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$formats">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requestFactory" id="$requestFactory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$requestFactory</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$requestFactory">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

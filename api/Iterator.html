@@ -1,0 +1,398 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Iterator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-strip_punctuation.html">
+							strip_punctuation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Iterator.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="Iterator.html">Iterator</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Traversable.html"><span title="Traversable">Traversable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Iterator</span></b>
+		extends
+			<a href="Traversable.html"><span title="Traversable">Traversable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Generator.html"><span>Generator</span></a>
+
+		implements
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+	</li>
+	<li>
+<a href="SeekableIterator.html"><span>SeekableIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="ArrayIterator.html"><span>ArrayIterator</span></a>
+
+		implements
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	<li>
+<a href="SplFileObject.html"><span>SplFileObject</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>, 
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="OuterIterator.html"><span>OuterIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="IteratorIterator.html"><span>IteratorIterator</span></a>
+
+		implements
+			<a href="OuterIterator.html"><span title="OuterIterator">OuterIterator</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="CachingIterator.html"><span>CachingIterator</span></a>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="RecursiveIterator.html"><span>RecursiveIterator</span></a>
+		extends
+			<b><span class="active" title="Iterator">Iterator</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="SplFileObject.html"><span>SplFileObject</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>, 
+			<a href="SeekableIterator.html"><span title="SeekableIterator">SeekableIterator</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="current" id="_current">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>current(): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Generator.html#_current">						<code>Generator::current()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_current">						<code>ArrayIterator::current()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_current">						<code>SplFileObject::current()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_current">						<code>IteratorIterator::current()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_current">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="next" id="_next">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>next(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Generator.html#_next">						<code>Generator::next()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_next">						<code>ArrayIterator::next()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_next">						<code>SplFileObject::next()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_next">						<code>IteratorIterator::next()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_next">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="key" id="_key">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>key(): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Generator.html#_key">						<code>Generator::key()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_key">						<code>ArrayIterator::key()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_key">						<code>SplFileObject::key()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_key">						<code>IteratorIterator::key()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_key">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="valid" id="_valid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>valid(): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Generator.html#_valid">						<code>Generator::valid()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_valid">						<code>ArrayIterator::valid()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_valid">						<code>SplFileObject::valid()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_valid">						<code>IteratorIterator::valid()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_valid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rewind" id="_rewind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rewind(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Generator.html#_rewind">						<code>Generator::rewind()</code></a>				</li>
+				<li>
+<a href="ArrayIterator.html#_rewind">						<code>ArrayIterator::rewind()</code></a>				</li>
+				<li>
+<a href="SplFileObject.html#_rewind">						<code>SplFileObject::rewind()</code></a>				</li>
+				<li>
+<a href="IteratorIterator.html#_rewind">						<code>IteratorIterator::rewind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rewind">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

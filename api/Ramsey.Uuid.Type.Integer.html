@@ -1,0 +1,456 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Ramsey\Uuid\Type\Integer |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ramsey.html">Ramsey</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ramsey.Uuid.html">Uuid</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ramsey.Uuid.Type.html">Type</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ramsey.Uuid.Type.Hexadecimal.html">
+							Hexadecimal
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ramsey.Uuid.Type.Integer.html">
+							Integer
+						</a>
+					</li>
+					<li>
+						<a href="Ramsey.Uuid.Type.Time.html">
+							Time
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ramsey.Uuid.Type.NumberInterface.html">
+							NumberInterface
+						</a>
+					</li>
+					<li>
+						<a href="Ramsey.Uuid.Type.TypeInterface.html">
+							TypeInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ramsey.Uuid.Type.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ramsey.Uuid.Type.Integer.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ramsey.html">Ramsey</a>\<a href="namespace-Ramsey.Uuid.html">Uuid</a>\<a href="namespace-Ramsey.Uuid.Type.html">Type</a>\<a href="Ramsey.Uuid.Type.Integer.html">Integer</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+			<tr><th><code>final</code></th></tr>
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Ramsey.Uuid.Type.NumberInterface.html"><span title="Ramsey\Uuid\Type\NumberInterface">NumberInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A value object representing an integer</p>
+<p>This class exists for type-safety purposes, to ensure that integers
+returned from ramsey/uuid methods as strings are truly integers and not some
+other kind of string.</p>
+<p>To support large integers beyond PHP_INT_MAX and PHP_INT_MIN on both 64-bit
+and 32-bit systems, we store the integers as strings.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>float|int|string|<b><span class="active" title="Ramsey\Uuid\Type\Integer">self</span></b> <var>$value</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNegative" id="_isNegative">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNegative(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if this number is less than zero
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if this number is less than zero</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.Type.NumberInterface.html#_isNegative">						<code>Ramsey\Uuid\Type\NumberInterface::isNegative()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNegative">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toString" id="_toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.Type.TypeInterface.html#_toString">						<code>Ramsey\Uuid\Type\TypeInterface::toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.Type.TypeInterface.html#___toString">						<code>Ramsey\Uuid\Type\TypeInterface::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serialize" id="_serialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>serialize(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Serializable.html#_serialize">						<code>Serializable::serialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_serialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__serialize" id="___serialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__serialize(): array{string: string}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___serialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unserialize" id="_unserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unserialize(<span>string <var>$data</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructs the object from a serialized string representation
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructs the object from a serialized string representation</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>The serialized string representation of the object</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Serializable.html#_unserialize">						<code>Serializable::unserialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unserialize" id="___unserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unserialize(<span>array{string?: string} <var>$data</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unserialize">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

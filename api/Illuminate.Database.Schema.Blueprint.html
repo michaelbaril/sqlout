@@ -1,0 +1,4552 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Schema\Blueprint |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Schema.html">Schema</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Schema.Blueprint.html">
+							Blueprint
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.BlueprintState.html">
+							BlueprintState
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ColumnDefinition.html">
+							ColumnDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html">
+							ForeignIdColumnDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html">
+							ForeignKeyDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.IndexDefinition.html">
+							IndexDefinition
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Schema.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Schema.Blueprint.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Schema.html">Schema</a>\<a href="Illuminate.Database.Schema.Blueprint.html">Blueprint</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a> <var>$connection</var></span>, <span>string <var>$table</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new schema blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new schema blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="build" id="_build">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>build(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the blueprint against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the blueprint against the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_build">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toSql" id="_toSql">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toSql(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the raw SQL statements for the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the raw SQL statements for the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toSql">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureCommandsAreValid" id="_ensureCommandsAreValid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureCommandsAreValid(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure the commands on the blueprint are valid for the connection type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure the commands on the blueprint are valid for the connection type.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="BadMethodCallException.html"><span>BadMethodCallException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureCommandsAreValid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="commandsNamed" id="_commandsNamed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">commandsNamed</span>(<span>array <var>$names</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the commands matching the given names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the commands matching the given names.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Will be removed in a future Laravel version.</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_commandsNamed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addImpliedCommands" id="_addImpliedCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addImpliedCommands(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the commands that are implied by the blueprint's state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the commands that are implied by the blueprint's state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addImpliedCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addFluentIndexes" id="_addFluentIndexes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addFluentIndexes(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the index commands fluently specified on columns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the index commands fluently specified on columns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addFluentIndexes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addFluentCommands" id="_addFluentCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addFluentCommands(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the fluent commands specified on any columns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the fluent commands specified on any columns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addFluentCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addAlterCommands" id="_addAlterCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addAlterCommands(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the alter commands if whenever needed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the alter commands if whenever needed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addAlterCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="creating" id="_creating">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>creating(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the blueprint has a create command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the blueprint has a create command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_creating">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the table needs to be created.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the table needs to be created.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="engine" id="_engine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>engine(<span>string <var>$engine</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the storage engine that should be used for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the storage engine that should be used for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_engine">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="innoDb" id="_innoDb">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>innoDb(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the InnoDB storage engine should be used for the table (MySQL only).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the InnoDB storage engine should be used for the table (MySQL only).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_innoDb">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="charset" id="_charset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>charset(<span>string <var>$charset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the character set that should be used for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the character set that should be used for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_charset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collation" id="_collation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collation(<span>string <var>$collation</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the collation that should be used for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the collation that should be used for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="temporary" id="_temporary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>temporary(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the table needs to be temporary.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the table needs to be temporary.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_temporary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="drop" id="_drop">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>drop(): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the table should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the table should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_drop">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropIfExists" id="_dropIfExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropIfExists(): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the table should be dropped if it exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the table should be dropped if it exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropIfExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropColumn" id="_dropColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropColumn(<span>array|mixed <var>$columns</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given columns should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given columns should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="renameColumn" id="_renameColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>renameColumn(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given columns should be renamed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given columns should be renamed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_renameColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropPrimary" id="_dropPrimary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropPrimary(<span>string|array|null <var>$index</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given primary key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given primary key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropPrimary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropUnique" id="_dropUnique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropUnique(<span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given unique key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given unique key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropUnique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropIndex" id="_dropIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropIndex(<span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given index should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given index should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropFullText" id="_dropFullText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropFullText(<span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given fulltext index should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given fulltext index should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropFullText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropSpatialIndex" id="_dropSpatialIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropSpatialIndex(<span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given spatial index should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given spatial index should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropSpatialIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropForeign" id="_dropForeign">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropForeign(<span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given foreign key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given foreign key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropForeign">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropConstrainedForeignId" id="_dropConstrainedForeignId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropConstrainedForeignId(<span>string <var>$column</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given column and foreign key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given column and foreign key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropConstrainedForeignId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropForeignIdFor" id="_dropForeignIdFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropForeignIdFor(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|string <var>$model</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given foreign key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given foreign key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropForeignIdFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropConstrainedForeignIdFor" id="_dropConstrainedForeignIdFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropConstrainedForeignIdFor(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|string <var>$model</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given foreign key should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given foreign key should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropConstrainedForeignIdFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="renameIndex" id="_renameIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>renameIndex(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the given indexes should be renamed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the given indexes should be renamed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_renameIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropTimestamps" id="_dropTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropTimestamps(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the timestamp columns should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the timestamp columns should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropTimestampsTz" id="_dropTimestampsTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropTimestampsTz(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the timestamp columns should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the timestamp columns should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropTimestampsTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropSoftDeletes" id="_dropSoftDeletes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropSoftDeletes(<span>string <var>$column</var> = <span class="php-str">'deleted_at'</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the soft delete column should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the soft delete column should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropSoftDeletes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropSoftDeletesTz" id="_dropSoftDeletesTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropSoftDeletesTz(<span>string <var>$column</var> = <span class="php-str">'deleted_at'</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the soft delete column should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the soft delete column should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropSoftDeletesTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropRememberToken" id="_dropRememberToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropRememberToken(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the remember token column should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the remember token column should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropRememberToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropMorphs" id="_dropMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the polymorphic columns should be dropped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the polymorphic columns should be dropped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rename" id="_rename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rename(<span>string <var>$to</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Rename the table to a given name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Rename the table to a given name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="primary" id="_primary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>primary(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$algorithm</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the primary key(s) for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the primary key(s) for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_primary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unique" id="_unique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unique(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$algorithm</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a unique index for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a unique index for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="index" id="_index">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>index(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$algorithm</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify an index for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify an index for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_index">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fullText" id="_fullText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fullText(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$algorithm</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a fulltext index for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a fulltext index for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fullText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="spatialIndex" id="_spatialIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>spatialIndex(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a spatial index for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a spatial index for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_spatialIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rawIndex" id="_rawIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rawIndex(<span>string <var>$expression</var></span>, <span>string <var>$name</var></span>): <a href="Illuminate.Database.Schema.IndexDefinition.html"><span title="Illuminate\Database\Schema\IndexDefinition">IndexDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a raw index for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a raw index for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rawIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreign" id="_foreign">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>foreign(<span>string|array <var>$columns</var></span>, <span>string|null <var>$name</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ForeignKeyDefinition.html"><span title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a foreign key for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a foreign key for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_foreign">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="id" id="_id">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>id(<span>string <var>$column</var> = <span class="php-str">'id'</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing big integer (8-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing big integer (8-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_id">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="increments" id="_increments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>increments(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing integer (4-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing integer (4-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_increments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="integerIncrements" id="_integerIncrements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>integerIncrements(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing integer (4-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing integer (4-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_integerIncrements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tinyIncrements" id="_tinyIncrements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tinyIncrements(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing tiny integer (1-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing tiny integer (1-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tinyIncrements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="smallIncrements" id="_smallIncrements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>smallIncrements(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing small integer (2-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing small integer (2-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_smallIncrements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mediumIncrements" id="_mediumIncrements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mediumIncrements(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing medium integer (3-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing medium integer (3-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mediumIncrements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bigIncrements" id="_bigIncrements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bigIncrements(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new auto-incrementing big integer (8-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new auto-incrementing big integer (8-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bigIncrements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="char" id="_char">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>char(<span>string <var>$column</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new char column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new char column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_char">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="string" id="_string">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>string(<span>string <var>$column</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new string column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new string column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_string">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tinyText" id="_tinyText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tinyText(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new tiny text column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new tiny text column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tinyText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="text" id="_text">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>text(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new text column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new text column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_text">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mediumText" id="_mediumText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mediumText(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new medium text column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new medium text column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mediumText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="longText" id="_longText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>longText(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new long text column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new long text column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_longText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="integer" id="_integer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>integer(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>, <span>bool <var>$unsigned</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new integer (4-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new integer (4-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_integer">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tinyInteger" id="_tinyInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tinyInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>, <span>bool <var>$unsigned</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new tiny integer (1-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new tiny integer (1-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tinyInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="smallInteger" id="_smallInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>smallInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>, <span>bool <var>$unsigned</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new small integer (2-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new small integer (2-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_smallInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mediumInteger" id="_mediumInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mediumInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>, <span>bool <var>$unsigned</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new medium integer (3-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new medium integer (3-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mediumInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bigInteger" id="_bigInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bigInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>, <span>bool <var>$unsigned</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new big integer (8-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new big integer (8-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bigInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsignedInteger" id="_unsignedInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsignedInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned integer (4-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned integer (4-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsignedInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsignedTinyInteger" id="_unsignedTinyInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsignedTinyInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned tiny integer (1-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned tiny integer (1-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsignedTinyInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsignedSmallInteger" id="_unsignedSmallInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsignedSmallInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned small integer (2-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned small integer (2-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsignedSmallInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsignedMediumInteger" id="_unsignedMediumInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsignedMediumInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned medium integer (3-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned medium integer (3-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsignedMediumInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsignedBigInteger" id="_unsignedBigInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsignedBigInteger(<span>string <var>$column</var></span>, <span>bool <var>$autoIncrement</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned big integer (8-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned big integer (8-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsignedBigInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignId" id="_foreignId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>foreignId(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span title="Illuminate\Database\Schema\ForeignIdColumnDefinition">ForeignIdColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new unsigned big integer (8-byte) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new unsigned big integer (8-byte) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_foreignId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignIdFor" id="_foreignIdFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>foreignIdFor(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|string <var>$model</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span title="Illuminate\Database\Schema\ForeignIdColumnDefinition">ForeignIdColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a foreign ID column for the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a foreign ID column for the given model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_foreignIdFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="float" id="_float">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>float(<span>string <var>$column</var></span>, <span>int <var>$precision</var> = <span class="php-num">53</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new float column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new float column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_float">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="double" id="_double">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>double(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new double column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new double column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_double">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decimal" id="_decimal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decimal(<span>string <var>$column</var></span>, <span>int <var>$total</var> = <span class="php-num">8</span></span>, <span>int <var>$places</var> = <span class="php-num">2</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new decimal column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new decimal column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decimal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="boolean" id="_boolean">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>boolean(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new boolean column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new boolean column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_boolean">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enum" id="_enum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enum(<span>string <var>$column</var></span>, <span>array <var>$allowed</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new enum column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new enum column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="set" id="_set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>set(<span>string <var>$column</var></span>, <span>array <var>$allowed</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new set column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new set column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_set">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="json" id="_json">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>json(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new json column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new json column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_json">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonb" id="_jsonb">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonb(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new jsonb column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new jsonb column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonb">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="date" id="_date">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>date(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new date column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new date column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_date">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dateTime" id="_dateTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dateTime(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new date-time column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new date-time column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dateTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dateTimeTz" id="_dateTimeTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dateTimeTz(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new date-time column (with time zone) on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new date-time column (with time zone) on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dateTimeTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="time" id="_time">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>time(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new time column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new time column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_time">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timeTz" id="_timeTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>timeTz(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new time column (with time zone) on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new time column (with time zone) on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_timeTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timestamp" id="_timestamp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>timestamp(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new timestamp column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new timestamp column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_timestamp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timestampTz" id="_timestampTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>timestampTz(<span>string <var>$column</var></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new timestamp (with time zone) column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new timestamp (with time zone) column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_timestampTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timestamps" id="_timestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>timestamps(<span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable creation and update timestamps to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable creation and update timestamps to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_timestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullableTimestamps" id="_nullableTimestamps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullableTimestamps(<span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable creation and update timestamps to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable creation and update timestamps to the table.</p>
+<p>Alias for self::timestamps().</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullableTimestamps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timestampsTz" id="_timestampsTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>timestampsTz(<span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add creation and update timestampTz columns to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add creation and update timestampTz columns to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_timestampsTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="datetimes" id="_datetimes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>datetimes(<span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add creation and update datetime columns to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add creation and update datetime columns to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_datetimes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="softDeletes" id="_softDeletes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>softDeletes(<span>string <var>$column</var> = <span class="php-str">'deleted_at'</span></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "deleted at" timestamp for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;deleted at&quot; timestamp for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_softDeletes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="softDeletesTz" id="_softDeletesTz">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>softDeletesTz(<span>string <var>$column</var> = <span class="php-str">'deleted_at'</span></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "deleted at" timestampTz for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;deleted at&quot; timestampTz for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_softDeletesTz">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="softDeletesDatetime" id="_softDeletesDatetime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>softDeletesDatetime(<span>string <var>$column</var> = <span class="php-str">'deleted_at'</span></span>, <span>int|null <var>$precision</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "deleted at" datetime column to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;deleted at&quot; datetime column to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_softDeletesDatetime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="year" id="_year">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>year(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new year column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new year column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_year">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="binary" id="_binary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>binary(<span>string <var>$column</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>, <span>bool <var>$fixed</var> = <span class="php-kw">false</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new binary column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new binary column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_binary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid" id="_uuid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid(<span>string <var>$column</var> = <span class="php-str">'uuid'</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new UUID column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new UUID column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignUuid" id="_foreignUuid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>foreignUuid(<span>string <var>$column</var></span>): <a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span title="Illuminate\Database\Schema\ForeignIdColumnDefinition">ForeignIdColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new UUID column on the table with a foreign key constraint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new UUID column on the table with a foreign key constraint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_foreignUuid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ulid" id="_ulid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ulid(<span>string <var>$column</var> = <span class="php-str">'ulid'</span></span>, <span>int|null <var>$length</var> = <span class="php-num">26</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new ULID column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new ULID column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ulid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignUlid" id="_foreignUlid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>foreignUlid(<span>string <var>$column</var></span>, <span>int|null <var>$length</var> = <span class="php-num">26</span></span>): <a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span title="Illuminate\Database\Schema\ForeignIdColumnDefinition">ForeignIdColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new ULID column on the table with a foreign key constraint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new ULID column on the table with a foreign key constraint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_foreignUlid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ipAddress" id="_ipAddress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ipAddress(<span>string <var>$column</var> = <span class="php-str">'ip_address'</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new IP address column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new IP address column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ipAddress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="macAddress" id="_macAddress">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>macAddress(<span>string <var>$column</var> = <span class="php-str">'mac_address'</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new MAC address column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new MAC address column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_macAddress">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="geometry" id="_geometry">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>geometry(<span>string <var>$column</var></span>, <span>string|null <var>$subtype</var> = <span class="php-kw">null</span></span>, <span>int <var>$srid</var> = <span class="php-num">0</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new geometry column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new geometry column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_geometry">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="geography" id="_geography">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>geography(<span>string <var>$column</var></span>, <span>string|null <var>$subtype</var> = <span class="php-kw">null</span></span>, <span>int <var>$srid</var> = <span class="php-num">4326</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new geography column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new geography column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_geography">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="computed" id="_computed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>computed(<span>string <var>$column</var></span>, <span>string <var>$expression</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new generated, computed column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new generated, computed column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_computed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="vector" id="_vector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>vector(<span>string <var>$column</var></span>, <span>int|null <var>$dimensions</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new vector column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new vector column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_vector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="morphs" id="_morphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>morphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the proper columns for a polymorphic table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the proper columns for a polymorphic table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_morphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullableMorphs" id="_nullableMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullableMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable columns for a polymorphic table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable columns for a polymorphic table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullableMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="numericMorphs" id="_numericMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>numericMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the proper columns for a polymorphic table using numeric IDs (incremental).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the proper columns for a polymorphic table using numeric IDs (incremental).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_numericMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullableNumericMorphs" id="_nullableNumericMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullableNumericMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable columns for a polymorphic table using numeric IDs (incremental).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable columns for a polymorphic table using numeric IDs (incremental).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullableNumericMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuidMorphs" id="_uuidMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuidMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the proper columns for a polymorphic table using UUIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the proper columns for a polymorphic table using UUIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuidMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullableUuidMorphs" id="_nullableUuidMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullableUuidMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable columns for a polymorphic table using UUIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable columns for a polymorphic table using UUIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullableUuidMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ulidMorphs" id="_ulidMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ulidMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the proper columns for a polymorphic table using ULIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the proper columns for a polymorphic table using ULIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ulidMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullableUlidMorphs" id="_nullableUlidMorphs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullableUlidMorphs(<span>string <var>$name</var></span>, <span>string|null <var>$indexName</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add nullable columns for a polymorphic table using ULIDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add nullable columns for a polymorphic table using ULIDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullableUlidMorphs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rememberToken" id="_rememberToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rememberToken(): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add the `remember_token` column to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the <code>remember_token</code> column to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rememberToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rawColumn" id="_rawColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rawColumn(<span>string <var>$column</var></span>, <span>string <var>$definition</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new custom column on the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new custom column on the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rawColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="comment" id="_comment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>comment(<span>string <var>$comment</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a comment to the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a comment to the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_comment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="indexCommand" id="_indexCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>indexCommand(<span>string <var>$type</var></span>, <span>string|array <var>$columns</var></span>, <span>string <var>$index</var></span>, <span>string|null <var>$algorithm</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a new index command to the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a new index command to the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_indexCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropIndexCommand" id="_dropIndexCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropIndexCommand(<span>string <var>$command</var></span>, <span>string <var>$type</var></span>, <span>string|array <var>$index</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new drop index command on the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new drop index command on the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropIndexCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createIndexName" id="_createIndexName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createIndexName(<span>string <var>$type</var></span>, <span>array <var>$columns</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a default index name for the table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a default index name for the table.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createIndexName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addColumn" id="_addColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addColumn(<span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>array <var>$parameters</var> = []</span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a new column to the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a new column to the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addColumnDefinition" id="_addColumnDefinition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addColumnDefinition(<span><a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a> <var>$definition</var></span>): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a new column definition to the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a new column definition to the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addColumnDefinition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="_after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>after(<span>string <var>$column</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the columns from the callback after the given column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the columns from the callback after the given column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeColumn" id="_removeColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeColumn(<span>string <var>$name</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a column from the schema blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a column from the schema blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCommand" id="_addCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCommand(<span>string <var>$name</var></span>, <span>array <var>$parameters</var> = []</span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a new command to the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a new command to the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createCommand" id="_createCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createCommand(<span>string <var>$name</var></span>, <span>array <var>$parameters</var> = []</span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new Fluent command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new Fluent command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTable" id="_getTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTable(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table the blueprint describes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table the blueprint describes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPrefix" id="_getPrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">getPrefix</span>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table prefix.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Use DB::getTablePrefix()</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumns" id="_getColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumns(): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns on the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns on the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommands" id="_getCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCommands(): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the commands on the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the commands on the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getState" id="_getState">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getState(): <a href="Illuminate.Database.Schema.BlueprintState.html"><span title="Illuminate\Database\Schema\BlueprintState">BlueprintState</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the state of the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the state of the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getState">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAddedColumns" id="_getAddedColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAddedColumns(): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns on the blueprint that should be added.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns on the blueprint that should be added.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAddedColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getChangedColumns" id="_getChangedColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">getChangedColumns</span>(): <a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns on the blueprint that should be changed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns on the blueprint that should be changed.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Will be removed in a future Laravel version.</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getChangedColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultTimePrecision" id="_defaultTimePrecision">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaultTimePrecision(): ?int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default time precision.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default time precision.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaultTimePrecision">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="connection" id="$connection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$connection</var></code>
+				
+	<div class="expandable-collapsedView">
+		The database connection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The database connection instance.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="grammar" id="$grammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$grammar</var></code>
+				
+	<div class="expandable-collapsedView">
+		The schema grammar instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The schema grammar instance.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$grammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="table" id="$table">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$table</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$table">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="columns" id="$columns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$columns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$columns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="commands" id="$commands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$commands</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$commands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="engine" id="$engine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$engine</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$engine">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="charset" id="$charset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$charset</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$charset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collation" id="$collation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$collation</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$collation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="temporary" id="$temporary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$temporary</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$temporary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="$after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$after</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="state" id="$state">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Schema.BlueprintState.html"><span title="Illuminate\Database\Schema\BlueprintState">BlueprintState</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$state</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$state">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

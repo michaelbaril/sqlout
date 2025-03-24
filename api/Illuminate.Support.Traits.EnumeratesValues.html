@@ -1,0 +1,3169 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Support\Traits\EnumeratesValues |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.Traits.html">Traits</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Traits.Conditionable.html">
+							Conditionable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Dumpable.html">
+							Dumpable
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.Traits.EnumeratesValues.html">
+							EnumeratesValues
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.ForwardsCalls.html">
+							ForwardsCalls
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.InteractsWithData.html">
+							InteractsWithData
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Macroable.html">
+							Macroable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Tappable.html">
+							Tappable
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.Traits.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.Traits.EnumeratesValues.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="namespace-Illuminate.Support.Traits.html">Traits</a>\<a href="Illuminate.Support.Traits.EnumeratesValues.html">EnumeratesValues</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="covariant">out</span> <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Support\Traits\EnumeratesValues</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></b>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.LazyCollection.html"><span>Illuminate\Support\LazyCollection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></b>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="make" id="_make">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>make&lt;<span title="">TMakeKey</span> is array-key, <span title="">TMakeValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TMakeKey, TMakeValue&gt;|iterable&lt;TMakeKey, TMakeValue&gt;|null <var>$items</var> = []</span>,
+): static&lt;TMakeKey, TMakeValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new collection instance if the value isn't one already.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new collection instance if the value isn't one already.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_make">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap&lt;<span title="">TWrapValue</span>&gt;(<span>iterable&lt;array-key, TWrapValue&gt;|TWrapValue <var>$value</var></span>): static&lt;array-key, TWrapValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given value in a collection if applicable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given value in a collection if applicable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unwrap" id="_unwrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unwrap&lt;<span title="">TUnwrapKey</span> is array-key, <span title="">TUnwrapValue</span>&gt;(
+	<span>array&lt;TUnwrapKey, TUnwrapValue&gt;|static&lt;TUnwrapKey, TUnwrapValue&gt; <var>$value</var></span>,
+): array&lt;TUnwrapKey, TUnwrapValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying items from the given collection if applicable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying items from the given collection if applicable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unwrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="empty" id="_empty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>empty(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new instance with no items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new instance with no items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_empty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="times" id="_times">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>times&lt;<span title="">TTimesValue</span>&gt;(<span>int <var>$number</var></span>, <span>(callable(int):&nbsp;TTimesValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>): static&lt;int, TTimesValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new collection by invoking the callback a given amount of times.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new collection by invoking the callback a given amount of times.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_times">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="avg" id="_avg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>avg(<span>((callable(TValue):&nbsp;float)|int)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>): float|int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the average value of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the average value of a given key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_avg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="average" id="_average">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>average(<span>((callable(TValue):&nbsp;float)|int)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>): float|int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Alias for the "avg" method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Alias for the &quot;avg&quot; method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_average">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="some" id="_some">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>some(<span>(callable(TValue, TKey):&nbsp;bool)|TValue|string <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Alias for the "contains" method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Alias for the &quot;contains&quot; method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_some">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dd" id="_dd">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dd(<span>mixed ...<var>$args</var></span>): never</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the given arguments and terminate execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the given arguments and terminate execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dd">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dump(<span>mixed ...<var>$args</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="each" id="_each">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>each(<span>callable(TValue, TKey):&nbsp;mixed <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback over each item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback over each item.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_each">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="eachSpread" id="_eachSpread">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>eachSpread(<span>callable <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback over each nested chunk of items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback over each nested chunk of items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_eachSpread">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="every" id="_every">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>every(<span>(callable(TValue, TKey):&nbsp;bool)|TValue|string <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if all items pass the given truth test.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if all items pass the given truth test.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_every">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstWhere" id="_firstWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstWhere(<span>callable|string <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first item by the given key value pair.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first item by the given key value pair.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="value" id="_value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>value&lt;<span title="">TValueDefault</span>&gt;(<span>string <var>$key</var></span>, <span>TValueDefault|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValueDefault) <var>$default</var> = <span class="php-kw">null</span></span>): TValue|TValueDefault</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a single key's value from the first matching item in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a single key's value from the first matching item in the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_value">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensure" id="_ensure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensure&lt;<span title="">TEnsureOfType</span>&gt;(
+	<span>class-string&lt;TEnsureOfType&gt;|array&lt;array-key, class-string&lt;TEnsureOfType&gt;&gt;|<span class="php-str">'string'</span>|<span class="php-str">'int'</span>|<span class="php-str">'float'</span>|<span class="php-str">'bool'</span>|<span class="php-str">'array'</span>|<span class="php-str">'null'</span> <var>$type</var></span>,
+): static&lt;TKey, TEnsureOfType&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure that every item in the collection is of the expected type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure that every item in the collection is of the expected type.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotEmpty" id="_isNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the collection is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the collection is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapSpread" id="_mapSpread">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapSpread&lt;<span title="">TMapSpreadValue</span>&gt;(<span>callable(mixed...):&nbsp;TMapSpreadValue <var>$callback</var></span>): static&lt;TKey, TMapSpreadValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a map over each nested chunk of items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a map over each nested chunk of items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapSpread">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapToGroups" id="_mapToGroups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapToGroups&lt;<span title="">TMapToGroupsKey</span> is array-key, <span title="">TMapToGroupsValue</span>&gt;(
+	<span>callable(TValue, TKey):&nbsp;array&lt;TMapToGroupsKey, TMapToGroupsValue&gt; <var>$callback</var></span>,
+): static&lt;TMapToGroupsKey, static&lt;int, TMapToGroupsValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a grouping map over the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a grouping map over the items.</p>
+<p>The callback should return an associative array with a single key/value pair.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapToGroups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flatMap" id="_flatMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flatMap&lt;<span title="">TFlatMapKey</span> is array-key, <span title="">TFlatMapValue</span>&gt;(
+	<span>callable(TValue, TKey):&nbsp;(<a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TFlatMapKey, TFlatMapValue&gt;|array&lt;TFlatMapKey, TFlatMapValue&gt;) <var>$callback</var></span>,
+): static&lt;TFlatMapKey, TFlatMapValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Map a collection and flatten the result by a single level.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map a collection and flatten the result by a single level.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flatMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapInto" id="_mapInto">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapInto&lt;<span title="">TMapIntoValue</span>&gt;(<span>class-string&lt;TMapIntoValue&gt; <var>$class</var></span>): static&lt;TKey, TMapIntoValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Map the values into a new class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map the values into a new class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapInto">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="min" id="_min">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>min(<span>(callable(TValue):&nbsp;mixed)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the min value of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the min value of a given key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_min">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="max" id="_max">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>max(<span>(callable(TValue):&nbsp;mixed)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the max value of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the max value of a given key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_max">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forPage" id="_forPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forPage(<span>int <var>$page</var></span>, <span>int <var>$perPage</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		"Paginate" the collection by slicing it into a smaller collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>&quot;Paginate&quot; the collection by slicing it into a smaller collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forPage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="partition" id="_partition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>partition(
+	<span>(callable(TValue, TKey):&nbsp;bool)|TValue|string <var>$key</var></span>,
+	<span>TValue|string|null <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>TValue|null <var>$value</var> = <span class="php-kw">null</span></span>,
+): static&lt;int&lt;<span class="php-num">0</span>, <span class="php-num">1</span>&gt;, static&lt;TKey, TValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Partition the collection into two arrays using the given callback or key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Partition the collection into two arrays using the given callback or key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_partition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="percentage" id="_percentage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>percentage(<span>callable(TValue, TKey):&nbsp;bool <var>$callback</var></span>, <span>int <var>$precision</var> = <span class="php-num">2</span></span>): float|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Calculate the percentage of items that pass a given truth test.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Calculate the percentage of items that pass a given truth test.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_percentage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sum" id="_sum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sum&lt;<span title="">TReturnType</span>&gt;(
+	<span>(callable(TValue):&nbsp;TReturnType)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+): ($callback is callable&nbsp;?&nbsp;TReturnType&nbsp;:&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the sum of the given values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the sum of the given values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenEmpty" id="_whenEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenEmpty&lt;<span title="">TWhenEmptyReturnType</span>&gt;(
+	<span>callable($this):&nbsp;TWhenEmptyReturnType <var>$callback</var></span>,
+	<span>(callable($this):&nbsp;TWhenEmptyReturnType)|null <var>$default</var> = <span class="php-kw">null</span></span>,
+): $this|TWhenEmptyReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the callback if the collection is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the callback if the collection is empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenNotEmpty" id="_whenNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenNotEmpty&lt;<span title="">TWhenNotEmptyReturnType</span>&gt;(
+	<span>callable($this):&nbsp;TWhenNotEmptyReturnType <var>$callback</var></span>,
+	<span>(callable($this):&nbsp;TWhenNotEmptyReturnType)|null <var>$default</var> = <span class="php-kw">null</span></span>,
+): $this|TWhenNotEmptyReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the callback if the collection is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the callback if the collection is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unlessEmpty" id="_unlessEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unlessEmpty&lt;<span title="">TUnlessEmptyReturnType</span>&gt;(
+	<span>callable($this):&nbsp;TUnlessEmptyReturnType <var>$callback</var></span>,
+	<span>(callable($this):&nbsp;TUnlessEmptyReturnType)|null <var>$default</var> = <span class="php-kw">null</span></span>,
+): $this|TUnlessEmptyReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the callback unless the collection is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the callback unless the collection is empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unlessEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unlessNotEmpty" id="_unlessNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unlessNotEmpty&lt;<span title="">TUnlessNotEmptyReturnType</span>&gt;(
+	<span>callable($this):&nbsp;TUnlessNotEmptyReturnType <var>$callback</var></span>,
+	<span>(callable($this):&nbsp;TUnlessNotEmptyReturnType)|null <var>$default</var> = <span class="php-kw">null</span></span>,
+): $this|TUnlessNotEmptyReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the callback unless the collection is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the callback unless the collection is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unlessNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="where" id="_where">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>where(<span>callable|string <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_where">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNull" id="_whereNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNull(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items where the value for the given key is null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items where the value for the given key is null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotNull" id="_whereNotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotNull(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items where the value for the given key is not null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items where the value for the given key is not null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereStrict" id="_whereStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereStrict(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair using strict comparison.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereIn" id="_whereIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereIn(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereInStrict" id="_whereInStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereInStrict(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair using strict comparison.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereInStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBetween" id="_whereBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBetween(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items such that the value of the given key is between the given values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items such that the value of the given key is between the given values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotBetween" id="_whereNotBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotBetween(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items such that the value of the given key is not between the given values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items such that the value of the given key is not between the given values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotIn" id="_whereNotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotIn(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotInStrict" id="_whereNotInStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotInStrict(<span>string <var>$key</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|iterable <var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter items by the given key value pair using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter items by the given key value pair using strict comparison.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotInStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereInstanceOf" id="_whereInstanceOf">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereInstanceOf&lt;<span title="">TWhereInstanceOf</span>&gt;(
+	<span>class-string&lt;TWhereInstanceOf&gt;|array&lt;array-key, class-string&lt;TWhereInstanceOf&gt;&gt; <var>$type</var></span>,
+): static&lt;TKey, TWhereInstanceOf&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter the items, removing any items that don't match the given type(s).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter the items, removing any items that don't match the given type(s).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereInstanceOf">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pipe" id="_pipe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pipe&lt;<span title="">TPipeReturnType</span>&gt;(<span>callable($this):&nbsp;TPipeReturnType <var>$callback</var></span>): TPipeReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass the collection to the given callback and return the result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass the collection to the given callback and return the result.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pipe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pipeInto" id="_pipeInto">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pipeInto&lt;<span title="">TPipeIntoValue</span>&gt;(<span>class-string&lt;TPipeIntoValue&gt; <var>$class</var></span>): TPipeIntoValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass the collection into a new class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass the collection into a new class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pipeInto">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pipeThrough" id="_pipeThrough">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pipeThrough(<span>array&lt;callable&gt; <var>$callbacks</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass the collection through a series of callable pipes and return the result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass the collection through a series of callable pipes and return the result.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pipeThrough">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reduce" id="_reduce">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reduce&lt;<span title="">TReduceInitial</span>, <span title="">TReduceReturnType</span>&gt;(
+	<span>callable(TReduceInitial|TReduceReturnType, TValue, TKey):&nbsp;TReduceReturnType <var>$callback</var></span>,
+	<span>TReduceInitial <var>$initial</var> = <span class="php-kw">null</span></span>,
+): TReduceReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Reduce the collection to a single value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reduce the collection to a single value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reduce">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reduceSpread" id="_reduceSpread">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reduceSpread(<span>callable <var>$callback</var></span>, <span>mixed ...<var>$initial</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Reduce the collection to multiple aggregate values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reduce the collection to multiple aggregate values.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnexpectedValueException.html"><span>UnexpectedValueException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reduceSpread">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reduceWithKeys" id="_reduceWithKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reduceWithKeys&lt;<span title="">TReduceWithKeysInitial</span>, <span title="">TReduceWithKeysReturnType</span>&gt;(
+	<span>callable(TReduceWithKeysInitial|TReduceWithKeysReturnType, TValue, TKey):&nbsp;TReduceWithKeysReturnType <var>$callback</var></span>,
+	<span>TReduceWithKeysInitial <var>$initial</var> = <span class="php-kw">null</span></span>,
+): TReduceWithKeysReturnType</code>
+
+
+	<div class="expandable-collapsedView">
+		Reduce an associative collection to a single value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reduce an associative collection to a single value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reduceWithKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reject" id="_reject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reject(<span>(callable(TValue, TKey):&nbsp;bool)|bool|TValue <var>$callback</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a collection of all elements that do not pass a given truth test.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a collection of all elements that do not pass a given truth test.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reject">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tap" id="_tap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tap(<span>callable($this):&nbsp;mixed <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass the collection to the given callback and then return it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass the collection to the given callback and then return it.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unique" id="_unique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unique(<span>(callable(TValue, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return only unique items from the collection array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return only unique items from the collection array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uniqueStrict" id="_uniqueStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uniqueStrict(<span>(callable(TValue, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return only unique items from the collection array using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return only unique items from the collection array using strict comparison.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uniqueStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collect" id="_collect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collect(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Collect the values into a collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Collect the values into a collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array&lt;TKey, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the collection of items as a plain array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the collection of items as a plain array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): array&lt;TKey, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object into something JSON serializable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object into something JSON serializable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toJson" id="_toJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toJson(<span>int <var>$options</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the collection of items as JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the collection of items as JSON.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCachingIterator" id="_getCachingIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCachingIterator(<span>int <var>$flags</var> = <a href="CachingIterator.html"><span title="CachingIterator">CachingIterator</span></a>::CALL_TOSTRING</span>): <a href="CachingIterator.html"><span title="CachingIterator">CachingIterator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a CachingIterator instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a CachingIterator instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCachingIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the collection to its string representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the collection to its string representation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="_escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeWhenCastingToString(<span>bool <var>$escape</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the model's string representation should be escaped when __toString is invoked.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the model's string representation should be escaped when __toString is invoked.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeWhenCastingToString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="proxy" id="_proxy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>proxy(<span>string <var>$method</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a method to the list of proxied methods.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a method to the list of proxied methods.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_proxy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically access collection proxies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically access collection proxies.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayableItems" id="_getArrayableItems">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayableItems(<span>mixed <var>$items</var></span>): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Results array of items from Collection or Arrayable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Results array of items from Collection or Arrayable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayableItems">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="operatorForWhere" id="_operatorForWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>operatorForWhere(<span>callable|string <var>$key</var></span>, <span>string|null <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get an operator checker callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an operator checker callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_operatorForWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="useAsCallable" id="_useAsCallable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>useAsCallable(<span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given value is callable, but not a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given value is callable, but not a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_useAsCallable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="valueRetriever" id="_valueRetriever">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>valueRetriever(<span>callable|string|null <var>$value</var></span>): callable</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a value retrieving callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a value retrieving callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_valueRetriever">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="equality" id="_equality">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>equality(<span>mixed <var>$value</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a>(mixed):&nbsp;bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Make a function to check an item's equality.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a function to check an item's equality.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_equality">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="negate" id="_negate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>negate(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Make a function using another function, by negating its result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a function using another function, by negating its result.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_negate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="identity" id="_identity">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>identity(): <a href="Closure.html"><span title="Closure">Closure</span></a>(TValue):&nbsp;TValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Make a function that returns what's passed to it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a function that returns what's passed to it.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_identity">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="$escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$escapeWhenCastingToString</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$escapeWhenCastingToString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="proxies" id="$proxies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$proxies</var> = [
+	<span class="php-str">'average'</span>,
+	<span class="php-str">'avg'</span>,
+	<span class="php-str">'contains'</span>,
+	<span class="php-str">'doesntContain'</span>,
+	<span class="php-str">'each'</span>,
+	<span class="php-str">'every'</span>,
+	<span class="php-str">'filter'</span>,
+	<span class="php-str">'first'</span>,
+	<span class="php-str">'flatMap'</span>,
+	<span class="php-str">'groupBy'</span>,
+	<span class="php-str">'keyBy'</span>,
+	<span class="php-str">'last'</span>,
+	<span class="php-str">'map'</span>,
+	<span class="php-str">'max'</span>,
+	<span class="php-str">'min'</span>,
+	<span class="php-str">'partition'</span>,
+	<span class="php-str">'percentage'</span>,
+	<span class="php-str">'reject'</span>,
+	<span class="php-str">'skipUntil'</span>,
+	<span class="php-str">'skipWhile'</span>,
+	<span class="php-str">'some'</span>,
+	<span class="php-str">'sortBy'</span>,
+	<span class="php-str">'sortByDesc'</span>,
+	<span class="php-str">'sum'</span>,
+	<span class="php-str">'takeUntil'</span>,
+	<span class="php-str">'takeWhile'</span>,
+	<span class="php-str">'unique'</span>,
+	<span class="php-str">'unless'</span>,
+	<span class="php-str">'until'</span>,
+	<span class="php-str">'when'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$proxies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="average" id="$average">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$average</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$average">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="avg" id="$avg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$avg</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$avg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contains" id="$contains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$contains</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$contains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doesntContain" id="$doesntContain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$doesntContain</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$doesntContain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="each" id="$each">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$each</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$each">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="every" id="$every">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$every</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$every">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filter" id="$filter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$filter</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$filter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="$first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$first</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flatMap" id="$flatMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$flatMap</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$flatMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="groupBy" id="$groupBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$groupBy</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$groupBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keyBy" id="$keyBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$keyBy</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$keyBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="last" id="$last">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$last</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$last">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="$map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$map</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="max" id="$max">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$max</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$max">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="min" id="$min">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$min</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$min">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="partition" id="$partition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$partition</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$partition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="percentage" id="$percentage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$percentage</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$percentage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reject" id="$reject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$reject</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$reject">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skipUntil" id="$skipUntil">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$skipUntil</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$skipUntil">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skipWhile" id="$skipWhile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$skipWhile</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$skipWhile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="some" id="$some">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$some</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$some">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortBy" id="$sortBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$sortBy</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sortBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortByDesc" id="$sortByDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$sortByDesc</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sortByDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sum" id="$sum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$sum</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$sum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="takeUntil" id="$takeUntil">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$takeUntil</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$takeUntil">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="takeWhile" id="$takeWhile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$takeWhile</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$takeWhile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unique" id="$unique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$unique</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$unique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unless" id="$unless">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$unless</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$unless">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="until" id="$until">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$until</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$until">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="when" id="$when">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					readonly
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.HigherOrderCollectionProxy.html"><span title="Illuminate\Support\HigherOrderCollectionProxy">HigherOrderCollectionProxy</span></a>&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$when</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$when">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

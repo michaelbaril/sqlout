@@ -1,0 +1,947 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Routing\CompiledRouteCollection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Routing.html">Routing</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.AbstractRouteCollection.html">
+							AbstractRouteCollection
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Routing.CompiledRouteCollection.html">
+							CompiledRouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Controller.html">
+							Controller
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ControllerMiddlewareOptions.html">
+							ControllerMiddlewareOptions
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.PendingResourceRegistration.html">
+							PendingResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.PendingSingletonResourceRegistration.html">
+							PendingSingletonResourceRegistration
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResourceRegistrar.html">
+							ResourceRegistrar
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Route.html">
+							Route
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteCollection.html">
+							RouteCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.Router.html">
+							Router
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.RouteRegistrar.html">
+							RouteRegistrar
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.RouteCollectionInterface.html">
+							RouteCollectionInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Routing.CreatesRegularExpressionRouteConstraints.html">
+							CreatesRegularExpressionRouteConstraints
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.FiltersControllerMiddleware.html">
+							FiltersControllerMiddleware
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Routing.ResolvesRouteDependencies.html">
+							ResolvesRouteDependencies
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Routing.CompiledRouteCollection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Routing.html">Routing</a>\<a href="Illuminate.Routing.CompiledRouteCollection.html">CompiledRouteCollection</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Routing.AbstractRouteCollection.html"><span title="Illuminate\Routing\AbstractRouteCollection">AbstractRouteCollection</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Routing.AbstractRouteCollection.html"><span>Illuminate\Routing\AbstractRouteCollection</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>, 
+			<a href="Illuminate.Routing.RouteCollectionInterface.html"><span title="Illuminate\Routing\RouteCollectionInterface">RouteCollectionInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Routing\CompiledRouteCollection</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>array <var>$compiled</var></span>, <span>array <var>$attributes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new CompiledRouteCollection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new CompiledRouteCollection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span><a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a> <var>$route</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Add a Route instance to the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a Route instance to the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_add">						<code>Illuminate\Routing\RouteCollectionInterface::add()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="refreshNameLookups" id="_refreshNameLookups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>refreshNameLookups(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Refresh the name look-up table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Refresh the name look-up table.</p>
+<p>This is done in case any names are fluently defined or if routes are overwritten.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_refreshNameLookups">						<code>Illuminate\Routing\RouteCollectionInterface::refreshNameLookups()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_refreshNameLookups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="refreshActionLookups" id="_refreshActionLookups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>refreshActionLookups(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Refresh the action look-up table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Refresh the action look-up table.</p>
+<p>This is done in case any actions are overwritten with new controllers.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_refreshActionLookups">						<code>Illuminate\Routing\RouteCollectionInterface::refreshActionLookups()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_refreshActionLookups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Find the first route matching a given request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find the first route matching a given request.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpKernel.Exception.MethodNotAllowedHttpException.html"><span>Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Symfony.Component.HttpKernel.Exception.NotFoundHttpException.html"><span>Symfony\Component\HttpKernel\Exception\NotFoundHttpException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_match">						<code>Illuminate\Routing\RouteCollectionInterface::match()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requestWithoutTrailingSlash" id="_requestWithoutTrailingSlash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>requestWithoutTrailingSlash(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): <a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a cloned instance of the given request without any trailing slash on the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a cloned instance of the given request without any trailing slash on the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requestWithoutTrailingSlash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string|null <var>$method</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get routes from the collection by method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get routes from the collection by method.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_get">						<code>Illuminate\Routing\RouteCollectionInterface::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasNamedRoute" id="_hasNamedRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasNamedRoute(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the route collection contains a given named route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the route collection contains a given named route.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_hasNamedRoute">						<code>Illuminate\Routing\RouteCollectionInterface::hasNamedRoute()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasNamedRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getByName" id="_getByName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getByName(<span>string <var>$name</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a route instance by its name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a route instance by its name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_getByName">						<code>Illuminate\Routing\RouteCollectionInterface::getByName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getByName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getByAction" id="_getByAction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getByAction(<span>string <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a route instance by its controller action.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a route instance by its controller action.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_getByAction">						<code>Illuminate\Routing\RouteCollectionInterface::getByAction()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getByAction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRoutes" id="_getRoutes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRoutes(): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the routes in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the routes in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_getRoutes">						<code>Illuminate\Routing\RouteCollectionInterface::getRoutes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRoutes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRoutesByMethod" id="_getRoutesByMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRoutesByMethod(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the routes keyed by their HTTP verb / method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the routes keyed by their HTTP verb / method.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_getRoutesByMethod">						<code>Illuminate\Routing\RouteCollectionInterface::getRoutesByMethod()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRoutesByMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRoutesByName" id="_getRoutesByName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRoutesByName(): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the routes keyed by their name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the routes keyed by their name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.RouteCollectionInterface.html#_getRoutesByName">						<code>Illuminate\Routing\RouteCollectionInterface::getRoutesByName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRoutesByName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newRoute" id="_newRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newRoute(<span>array <var>$attributes</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve an array of attributes to a Route instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve an array of attributes to a Route instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRouter" id="_setRouter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRouter(<span><a href="Illuminate.Routing.Router.html"><span title="Illuminate\Routing\Router">Router</span></a> <var>$router</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the router instance on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the router instance on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRouter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setContainer" id="_setContainer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setContainer(<span><a href="Illuminate.Container.Container.html"><span title="Illuminate\Container\Container">Container</span></a> <var>$container</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the container instance on the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the container instance on the route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setContainer">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Routing.AbstractRouteCollection.html"><span>Illuminate\Routing\AbstractRouteCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Routing.AbstractRouteCollection.html#_handleMatchedRoute">handleMatchedRoute()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_checkForAlternateVerbs">checkForAlternateVerbs()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_matchAgainstRoutes">matchAgainstRoutes()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_getRouteForMethods">getRouteForMethods()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_requestMethodNotAllowed">requestMethodNotAllowed()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_methodNotAllowed" class="deprecated">methodNotAllowed()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_compile">compile()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_dumper">dumper()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_toSymfonyRouteCollection">toSymfonyRouteCollection()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_addToSymfonyRoutesCollection">addToSymfonyRoutesCollection()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_generateRouteName">generateRouteName()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_getIterator">getIterator()</a>, <a href="Illuminate.Routing.AbstractRouteCollection.html#_count">count()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="compiled" id="$compiled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$compiled</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$compiled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="routes" id="$routes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Routing.RouteCollection.html"><span title="Illuminate\Routing\RouteCollection">RouteCollection</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$routes</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$routes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="router" id="$router">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Routing.Router.html"><span title="Illuminate\Routing\Router">Router</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$router</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$router">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="container" id="$container">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Container.Container.html"><span title="Illuminate\Container\Container">Container</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$container</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$container">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

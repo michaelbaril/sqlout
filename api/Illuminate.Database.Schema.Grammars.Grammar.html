@@ -1,0 +1,1378 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Schema\Grammars\Grammar |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Schema.html">Schema</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Schema.Grammars.html">Grammars</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Schema.Grammars.Grammar.html">
+							Grammar
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Schema.Grammars.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Schema.Grammars.Grammar.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Schema.html">Schema</a>\<a href="namespace-Illuminate.Database.Schema.Grammars.html">Grammars</a>\<a href="Illuminate.Database.Schema.Grammars.Grammar.html">Grammar</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Grammar.html"><span title="Illuminate\Database\Grammar">Grammar</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Schema\Grammars\Grammar</span></b>
+
+
+		uses
+			<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="compileCreateDatabase" id="_compileCreateDatabase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileCreateDatabase(<span>string <var>$name</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a create database command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a create database command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileCreateDatabase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDropDatabaseIfExists" id="_compileDropDatabaseIfExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDropDatabaseIfExists(<span>string <var>$name</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a drop database if exists command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a drop database if exists command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDropDatabaseIfExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileSchemas" id="_compileSchemas">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileSchemas(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the schemas.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the schemas.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileSchemas">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileTableExists" id="_compileTableExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileTableExists(<span>string|null <var>$schema</var></span>, <span>string <var>$table</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine if the given table exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine if the given table exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileTableExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileTables" id="_compileTables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileTables(<span>string|string[]|null <var>$schema</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the tables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the tables.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileTables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileViews" id="_compileViews">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileViews(<span>string|string[]|null <var>$schema</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the views.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the views.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileViews">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileTypes" id="_compileTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileTypes(<span>string|string[]|null <var>$schema</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the user-defined types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the user-defined types.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileColumns" id="_compileColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileColumns(<span>string|null <var>$schema</var></span>, <span>string <var>$table</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the columns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the columns.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileIndexes" id="_compileIndexes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileIndexes(<span>string|null <var>$schema</var></span>, <span>string <var>$table</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the indexes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the indexes.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileIndexes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileForeignKeys" id="_compileForeignKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileForeignKeys(<span>string|null <var>$schema</var></span>, <span>string <var>$table</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query to determine the foreign keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query to determine the foreign keys.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileForeignKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileRenameColumn" id="_compileRenameColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileRenameColumn(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): array|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a rename column command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a rename column command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileRenameColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileChange" id="_compileChange">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileChange(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): array|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a change column command into a series of SQL statements.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a change column command into a series of SQL statements.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileChange">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileFulltext" id="_compileFulltext">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileFulltext(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a fulltext index key command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a fulltext index key command.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileFulltext">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDropFullText" id="_compileDropFullText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDropFullText(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a drop fulltext index command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a drop fulltext index command.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDropFullText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileForeign" id="_compileForeign">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileForeign(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a foreign key command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a foreign key command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileForeign">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDropForeign" id="_compileDropForeign">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDropForeign(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$command</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a drop foreign key command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a drop foreign key command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDropForeign">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumns" id="_getColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumns(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the blueprint's added column definitions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the blueprint's added column definitions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getColumn" id="_getColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getColumn(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Database.Schema.ColumnDefinition.html"><span title="Illuminate\Database\Schema\ColumnDefinition">ColumnDefinition</span></a> <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the column definition.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the column definition.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getType" id="_getType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getType(<span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the SQL for the column data type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the SQL for the column data type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="typeComputed" id="_typeComputed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>typeComputed(<span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$column</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create the column definition for a generated, computed column type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create the column definition for a generated, computed column type.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_typeComputed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="typeVector" id="_typeVector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>typeVector(<span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create the column definition for a vector type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create the column definition for a vector type.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_typeVector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="typeRaw" id="_typeRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>typeRaw(<span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create the column definition for a raw column type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create the column definition for a raw column type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_typeRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addModifiers" id="_addModifiers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addModifiers(<span>string <var>$sql</var></span>, <span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a> <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the column modifiers to the definition.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the column modifiers to the definition.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addModifiers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommandByName" id="_getCommandByName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCommandByName(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span>string <var>$name</var></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the command with a given name if it exists on the blueprint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the command with a given name if it exists on the blueprint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommandByName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommandsByName" id="_getCommandsByName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCommandsByName(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span>string <var>$name</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the commands with a given name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the commands with a given name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommandsByName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasCommand" id="_hasCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasCommand(<span><a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a> <var>$blueprint</var></span>, <span><var>$name</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prefixArray" id="_prefixArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prefixArray(<span>string <var>$prefix</var></span>, <span>array <var>$values</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a prefix to an array of values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a prefix to an array of values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prefixArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapTable" id="_wrapTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapTable(<span>mixed <var>$table</var></span>, <span>string|null <var>$prefix</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a table in keyword identifiers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a table in keyword identifiers.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Grammar.html#_wrapTable">						<code>Illuminate\Database\Grammar::wrapTable()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap(<span><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a>|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a value in keyword identifiers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a value in keyword identifiers.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Grammar.html#_wrap">						<code>Illuminate\Database\Grammar::wrap()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultValue" id="_getDefaultValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultValue(<span>mixed <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Format a value so that it can be used in "default" clauses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Format a value so that it can be used in &quot;default&quot; clauses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFluentCommands" id="_getFluentCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFluentCommands(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fluent commands for the grammar.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fluent commands for the grammar.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFluentCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="supportsSchemaTransactions" id="_supportsSchemaTransactions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>supportsSchemaTransactions(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check if this Grammar supports schema changes wrapped in a transaction.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check if this Grammar supports schema changes wrapped in a transaction.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_supportsSchemaTransactions">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Grammar.html#___construct">__construct()</a>, <a href="Illuminate.Database.Grammar.html#_wrapArray">wrapArray()</a>, <a href="Illuminate.Database.Grammar.html#_wrapAliasedValue">wrapAliasedValue()</a>, <a href="Illuminate.Database.Grammar.html#_wrapAliasedTable">wrapAliasedTable()</a>, <a href="Illuminate.Database.Grammar.html#_wrapSegments">wrapSegments()</a>, <a href="Illuminate.Database.Grammar.html#_wrapValue">wrapValue()</a>, <a href="Illuminate.Database.Grammar.html#_wrapJsonSelector">wrapJsonSelector()</a>, <a href="Illuminate.Database.Grammar.html#_isJsonSelector">isJsonSelector()</a>, <a href="Illuminate.Database.Grammar.html#_columnize">columnize()</a>, <a href="Illuminate.Database.Grammar.html#_parameterize">parameterize()</a>, <a href="Illuminate.Database.Grammar.html#_parameter">parameter()</a>, <a href="Illuminate.Database.Grammar.html#_quoteString">quoteString()</a>, <a href="Illuminate.Database.Grammar.html#_escape">escape()</a>, <a href="Illuminate.Database.Grammar.html#_isExpression">isExpression()</a>, <a href="Illuminate.Database.Grammar.html#_getValue">getValue()</a>, <a href="Illuminate.Database.Grammar.html#_getDateFormat">getDateFormat()</a>, <a href="Illuminate.Database.Grammar.html#_getTablePrefix" class="deprecated">getTablePrefix()</a>, <a href="Illuminate.Database.Grammar.html#_setTablePrefix" class="deprecated">setTablePrefix()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span>Illuminate\Database\Concerns\CompilesJsonPaths</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonFieldAndPath">wrapJsonFieldAndPath()</a>, <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonPath">wrapJsonPath()</a>, <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonPathSegment">wrapJsonPathSegment()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="modifiers" id="$modifiers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$modifiers</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$modifiers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transactions" id="$transactions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$transactions</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$transactions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fluentCommands" id="$fluentCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fluentCommands</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fluentCommands">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Grammar.html#$connection">$connection</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,580 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Input\InputArgument |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArgvInput.html">
+							ArgvInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArrayInput.html">
+							ArrayInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.Input.html">
+							Input
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Console.Input.InputArgument.html">
+							InputArgument
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputDefinition.html">
+							InputDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputOption.html">
+							InputOption
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputInterface.html">
+							InputInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.StreamableInputInterface.html">
+							StreamableInputInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.Input.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Input.InputArgument.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="namespace-Symfony.Component.Console.Input.html">Input</a>\<a href="Symfony.Component.Console.Input.InputArgument.html">InputArgument</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Represents a command line argument.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$name</var></span>,
+	<span>int-mask-of&lt;<b><span class="active" title="Symfony\Component\Console\Input\InputArgument">InputArgument</span></b>::*&gt;|null <var>$mode</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$description</var> = <span class="php-str">''</span></span>,
+	<span>string|bool|int|float|array|null <var>$default</var> = <span class="php-kw">null</span></span>,
+	<span>array|(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Symfony.Component.Console.Completion.CompletionInput.html"><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span></a>, <a href="Symfony.Component.Console.Completion.CompletionSuggestions.html"><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span></a>):&nbsp;list&lt;string|<a href="Symfony.Component.Console.Completion.Suggestion.html"><span title="Symfony\Component\Console\Completion\Suggestion">Suggestion</span></a>&gt;) <var>$suggestedValues</var> = []</span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The argument name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$mode</var>&nbsp;&nbsp;</td>
+										<td><p>The argument mode: a bit mask of self::REQUIRED, self::OPTIONAL and self::IS_ARRAY</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$description</var>&nbsp;&nbsp;</td>
+										<td><p>A description text</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default value (for self::OPTIONAL mode only)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$suggestedValues</var>&nbsp;&nbsp;</td>
+										<td><p>The values used for input completion</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.InvalidArgumentException.html"><span>Symfony\Component\Console\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>When argument mode is not valid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the argument name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the argument name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRequired" id="_isRequired">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRequired(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the argument is required.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the argument is required.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if parameter mode is self::REQUIRED, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRequired">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isArray" id="_isArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isArray(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the argument can take multiple values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the argument can take multiple values.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if mode is self::IS_ARRAY, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefault" id="_setDefault">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefault(<span>string|bool|int|float|array|null <var>$default</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefault">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefault" id="_getDefault">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefault(): string|bool|int|float|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefault">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasCompletion" id="_hasCompletion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasCompletion(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the argument has values for input completion.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the argument has values for input completion.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasCompletion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="complete" id="_complete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>complete(<span><a href="Symfony.Component.Console.Completion.CompletionInput.html"><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Completion.CompletionSuggestions.html"><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span></a> <var>$suggestions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Supplies suggestions when command resolves possible completion options for input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Supplies suggestions when command resolves possible completion options for input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_complete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDescription" id="_getDescription">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDescription(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the description text.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the description text.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDescription">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="REQUIRED" id="REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>REQUIRED = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		Providing an argument is required (e.g. just 'app:foo' is not allowed).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Providing an argument is required (e.g. just 'app:foo' is not allowed).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="OPTIONAL" id="OPTIONAL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>OPTIONAL = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Providing an argument is optional (e.g. 'app:foo' and 'app:foo bar' are both allowed). This is the default behavior of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Providing an argument is optional (e.g. 'app:foo' and 'app:foo bar' are both allowed). This is the default behavior of arguments.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#OPTIONAL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="IS_ARRAY" id="IS_ARRAY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>IS_ARRAY = <span class="php-num">4</span></code>
+
+	<div class="expandable-collapsedView">
+		The argument accepts multiple values and turn them into an array (e.g. 'app:foo bar baz' will result in value ['bar', …
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The argument accepts multiple values and turn them into an array (e.g. 'app:foo bar baz' will result in value ['bar', 'baz']).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#IS_ARRAY">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

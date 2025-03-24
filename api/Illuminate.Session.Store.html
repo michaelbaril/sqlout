@@ -1,0 +1,2309 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Session\Store |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Session.html">Session</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Session.Store.html">
+							Store
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Session.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Session.Store.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Session.html">Session</a>\<a href="Illuminate.Session.Store.html">Store</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Session.Session.html"><span title="Illuminate\Contracts\Session\Session">Session</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$name</var></span>, <span><a href="SessionHandlerInterface.html"><span title="SessionHandlerInterface">SessionHandlerInterface</span></a> <var>$handler</var></span>, <span>string|null <var>$id</var> = <span class="php-kw">null</span></span>, <span>string <var>$serialization</var> = <span class="php-str">'php'</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new session instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new session instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="start" id="_start">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>start(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Start the session, reading the data from a handler.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Start the session, reading the data from a handler.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_start">						<code>Illuminate\Contracts\Session\Session::start()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_start">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadSession" id="_loadSession">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadSession(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Load the session data from the handler.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load the session data from the handler.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadSession">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="readFromHandler" id="_readFromHandler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>readFromHandler(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Read the session data from the handler.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Read the session data from the handler.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_readFromHandler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareForUnserialize" id="_prepareForUnserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareForUnserialize(<span>string <var>$data</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the raw string data from the session for unserialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the raw string data from the session for unserialization.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareForUnserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="marshalErrorBag" id="_marshalErrorBag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>marshalErrorBag(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Marshal the ViewErrorBag when using JSON serialization for sessions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Marshal the ViewErrorBag when using JSON serialization for sessions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_marshalErrorBag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="save" id="_save">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>save(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Save the session data to storage.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Save the session data to storage.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_save">						<code>Illuminate\Contracts\Session\Session::save()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_save">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareErrorBagForSerialization" id="_prepareErrorBagForSerialization">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareErrorBagForSerialization(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the ViewErrorBag instance for JSON serialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the ViewErrorBag instance for JSON serialization.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareErrorBagForSerialization">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareForStorage" id="_prepareForStorage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareForStorage(<span>string <var>$data</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the serialized session data for storage.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the serialized session data for storage.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareForStorage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ageFlashData" id="_ageFlashData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ageFlashData(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Age the flash data for the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Age the flash data for the session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ageFlashData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the session data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the session data.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_all">						<code>Illuminate\Contracts\Session\Session::all()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="only" id="_only">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>only(<span>array <var>$keys</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a subset of the session data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a subset of the session data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="except" id="_except">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>except(<span>array <var>$keys</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all the session data except for a specified array of items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all the session data except for a specified array of items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_except">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exists" id="_exists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>exists(<span>string|array <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if a key exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if a key exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_exists">						<code>Illuminate\Contracts\Session\Session::exists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_exists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="missing" id="_missing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>missing(<span>string|array <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given key is missing from the session data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given key is missing from the session data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_missing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has(<span>string|array <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a key is present and not null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a key is present and not null.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_has">						<code>Illuminate\Contracts\Session\Session::has()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAny" id="_hasAny">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAny(<span>string|array <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if any of the given keys are present and not null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if any of the given keys are present and not null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAny">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an item from the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an item from the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_get">						<code>Illuminate\Contracts\Session\Session::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pull" id="_pull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pull(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of a given key and then forget it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of a given key and then forget it.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_pull">						<code>Illuminate\Contracts\Session\Session::pull()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasOldInput" id="_hasOldInput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasOldInput(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the session contains old input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the session contains old input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasOldInput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOldInput" id="_getOldInput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOldInput(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the requested item from the flashed input array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the requested item from the flashed input array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOldInput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replace" id="_replace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replace(<span>array <var>$attributes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the given session attributes entirely.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the given session attributes entirely.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="put" id="_put">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>put(<span>string|array <var>$key</var></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Put a key / value pair or array of key / value pairs in the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Put a key / value pair or array of key / value pairs in the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_put">						<code>Illuminate\Contracts\Session\Session::put()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_put">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remember" id="_remember">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remember(<span>string <var>$key</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an item from the session, or store the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an item from the session, or store the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remember">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="push" id="_push">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>push(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Push a value onto a session array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Push a value onto a session array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_push">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="increment" id="_increment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>increment(<span>string <var>$key</var></span>, <span>int <var>$amount</var> = <span class="php-num">1</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Increment the value of an item in the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Increment the value of an item in the session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_increment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decrement" id="_decrement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decrement(<span>string <var>$key</var></span>, <span>int <var>$amount</var> = <span class="php-num">1</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Decrement the value of an item in the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decrement the value of an item in the session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decrement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flash" id="_flash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flash(<span>string <var>$key</var></span>, <span>mixed <var>$value</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flash a key / value pair to the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flash a key / value pair to the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_flash">						<code>Illuminate\Contracts\Session\Session::flash()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="now" id="_now">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>now(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flash a key / value pair to the session for immediate use.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flash a key / value pair to the session for immediate use.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_now">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reflash" id="_reflash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reflash(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reflash all of the session flash data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reflash all of the session flash data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reflash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keep" id="_keep">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keep(<span>array|mixed <var>$keys</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reflash a subset of the current flash data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reflash a subset of the current flash data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keep">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeNewFlashes" id="_mergeNewFlashes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeNewFlashes(<span>array <var>$keys</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new flash keys into the new flash array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new flash keys into the new flash array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeNewFlashes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeFromOldFlashData" id="_removeFromOldFlashData">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeFromOldFlashData(<span>array <var>$keys</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given keys from the old flash data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given keys from the old flash data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeFromOldFlashData">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flashInput" id="_flashInput">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flashInput(<span>array <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flash an input array to the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flash an input array to the session.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flashInput">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remove(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove an item from the session, returning its value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove an item from the session, returning its value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_remove">						<code>Illuminate\Contracts\Session\Session::remove()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forget" id="_forget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forget(<span>string|array <var>$keys</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove one or many items from the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove one or many items from the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_forget">						<code>Illuminate\Contracts\Session\Session::forget()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flush" id="_flush">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flush(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all of the items from the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all of the items from the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_flush">						<code>Illuminate\Contracts\Session\Session::flush()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flush">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="invalidate" id="_invalidate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>invalidate(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Flush the session data and regenerate the ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flush the session data and regenerate the ID.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_invalidate">						<code>Illuminate\Contracts\Session\Session::invalidate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_invalidate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="regenerate" id="_regenerate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>regenerate(<span>bool <var>$destroy</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a new session identifier.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a new session identifier.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_regenerate">						<code>Illuminate\Contracts\Session\Session::regenerate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_regenerate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="migrate" id="_migrate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>migrate(<span>bool <var>$destroy</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a new session ID for the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a new session ID for the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_migrate">						<code>Illuminate\Contracts\Session\Session::migrate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_migrate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isStarted" id="_isStarted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isStarted(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the session has been started.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the session has been started.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_isStarted">						<code>Illuminate\Contracts\Session\Session::isStarted()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isStarted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_getName">						<code>Illuminate\Contracts\Session\Session::getName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setName" id="_setName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setName(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the name of the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the name of the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_setName">						<code>Illuminate\Contracts\Session\Session::setName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="id" id="_id">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>id(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current session ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current session ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_id">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getId" id="_getId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getId(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current session ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current session ID.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_getId">						<code>Illuminate\Contracts\Session\Session::getId()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setId" id="_setId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setId(<span>string|null <var>$id</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the session ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the session ID.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_setId">						<code>Illuminate\Contracts\Session\Session::setId()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValidId" id="_isValidId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValidId(<span>string|null <var>$id</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if this is a valid session ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if this is a valid session ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValidId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateSessionId" id="_generateSessionId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>generateSessionId(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new, random session ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new, random session ID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateSessionId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setExists" id="_setExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setExists(<span>bool <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the existence of the session on the handler if applicable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the existence of the session on the handler if applicable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="token" id="_token">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>token(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the CSRF token value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the CSRF token value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_token">						<code>Illuminate\Contracts\Session\Session::token()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_token">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="regenerateToken" id="_regenerateToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>regenerateToken(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Regenerate the CSRF token value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Regenerate the CSRF token value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_regenerateToken">						<code>Illuminate\Contracts\Session\Session::regenerateToken()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_regenerateToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasPreviousUri" id="_hasPreviousUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasPreviousUri(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the previous URI is available.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the previous URI is available.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasPreviousUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previousUri" id="_previousUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>previousUri(): <a href="Illuminate.Support.Uri.html"><span title="Illuminate\Support\Uri">Uri</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the previous URL from the session as a URI instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the previous URL from the session as a URI instance.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_previousUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previousUrl" id="_previousUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>previousUrl(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the previous URL from the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the previous URL from the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_previousUrl">						<code>Illuminate\Contracts\Session\Session::previousUrl()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_previousUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPreviousUrl" id="_setPreviousUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPreviousUrl(<span>string <var>$url</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the "previous" URL in the session.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the &quot;previous&quot; URL in the session.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_setPreviousUrl">						<code>Illuminate\Contracts\Session\Session::setPreviousUrl()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPreviousUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="passwordConfirmed" id="_passwordConfirmed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>passwordConfirmed(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify that the user has confirmed their password.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify that the user has confirmed their password.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_passwordConfirmed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHandler" id="_getHandler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHandler(): <a href="SessionHandlerInterface.html"><span title="SessionHandlerInterface">SessionHandlerInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying session handler implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying session handler implementation.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_getHandler">						<code>Illuminate\Contracts\Session\Session::getHandler()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHandler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHandler" id="_setHandler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHandler(<span><a href="SessionHandlerInterface.html"><span title="SessionHandlerInterface">SessionHandlerInterface</span></a> <var>$handler</var></span>): <a href="SessionHandlerInterface.html"><span title="SessionHandlerInterface">SessionHandlerInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the underlying session handler implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the underlying session handler implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHandler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handlerNeedsRequest" id="_handlerNeedsRequest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handlerNeedsRequest(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the session handler needs a request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the session handler needs a request.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_handlerNeedsRequest">						<code>Illuminate\Contracts\Session\Session::handlerNeedsRequest()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handlerNeedsRequest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRequestOnHandler" id="_setRequestOnHandler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRequestOnHandler(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the request on the handler instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the request on the handler instance.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Session.Session.html#_setRequestOnHandler">						<code>Illuminate\Contracts\Session\Session::setRequestOnHandler()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRequestOnHandler">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="id" id="$id">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$id</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$id">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="$name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$name</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handler" id="$handler">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="SessionHandlerInterface.html"><span title="SessionHandlerInterface">SessionHandlerInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$handler</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$handler">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serialization" id="$serialization">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$serialization</var> = <span class="php-str">'php'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$serialization">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="started" id="$started">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$started</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$started">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

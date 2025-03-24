@@ -1,0 +1,783 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Http\Concerns\InteractsWithInput |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.html">Http</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Http.Concerns.CanBePrecognitive.html">
+							CanBePrecognitive
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html">
+							InteractsWithContentTypes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.Concerns.InteractsWithFlashData.html">
+							InteractsWithFlashData
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Http.Concerns.InteractsWithInput.html">
+							InteractsWithInput
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Http.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Http.Concerns.InteractsWithInput.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Http.html">Http</a>\<a href="namespace-Illuminate.Http.Concerns.html">Concerns</a>\<a href="Illuminate.Http.Concerns.InteractsWithInput.html">InteractsWithInput</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Http\Concerns\InteractsWithInput</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Request.html"><span>Illuminate\Http\Request</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>
+
+		uses
+			<a href="Illuminate.Http.Concerns.CanBePrecognitive.html"><span title="Illuminate\Http\Concerns\CanBePrecognitive">CanBePrecognitive</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithContentTypes.html"><span title="Illuminate\Http\Concerns\InteractsWithContentTypes">InteractsWithContentTypes</span></a>, 
+			<a href="Illuminate.Http.Concerns.InteractsWithFlashData.html"><span title="Illuminate\Http\Concerns\InteractsWithFlashData">InteractsWithFlashData</span></a>, 
+			<b><span class="active" title="Illuminate\Http\Concerns\InteractsWithInput">InteractsWithInput</span></b>, 
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="server" id="_server">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>server(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|array|null <var>$default</var> = <span class="php-kw">null</span></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a server variable from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a server variable from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_server">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasHeader" id="_hasHeader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasHeader(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a header is set on the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a header is set on the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasHeader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="header" id="_header">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>header(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|array|null <var>$default</var> = <span class="php-kw">null</span></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a header from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a header from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_header">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bearerToken" id="_bearerToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bearerToken(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the bearer token from the request headers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the bearer token from the request headers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bearerToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys for all of the input and files.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys for all of the input and files.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>array|mixed|null <var>$keys</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the input and files for the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the input and files for the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="input" id="_input">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>input(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve an input item from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve an input item from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_input">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fluent" id="_fluent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fluent(<span>array|string|null <var>$key</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve input from the request as a Fluent object instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve input from the request as a Fluent object instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fluent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="_query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>query(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|array|null <var>$default</var> = <span class="php-kw">null</span></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a query string item from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a query string item from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="post" id="_post">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>post(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|array|null <var>$default</var> = <span class="php-kw">null</span></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a request payload item from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a request payload item from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_post">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasCookie" id="_hasCookie">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasCookie(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a cookie is set on the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a cookie is set on the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasCookie">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cookie" id="_cookie">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cookie(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|array|null <var>$default</var> = <span class="php-kw">null</span></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a cookie from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a cookie from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cookie">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allFiles" id="_allFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allFiles(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array of all of the files on the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array of all of the files on the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertUploadedFiles" id="_convertUploadedFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>convertUploadedFiles(<span>array <var>$files</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given array of Symfony UploadedFiles to custom Laravel UploadedFiles.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given array of Symfony UploadedFiles to custom Laravel UploadedFiles.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_convertUploadedFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasFile" id="_hasFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasFile(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the uploaded data contains a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the uploaded data contains a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValidFile" id="_isValidFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValidFile(<span>mixed <var>$file</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check that the given file is a valid file instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check that the given file is a valid file instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValidFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="file" id="_file">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>file(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Http.UploadedFile.html"><span title="Illuminate\Http\UploadedFile">UploadedFile</span></a>|<a href="Illuminate.Http.UploadedFile.html"><span title="Illuminate\Http\UploadedFile">UploadedFile</span></a>[]|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a file from the request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a file from the request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_file">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="data" id="_data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>data(<span>string <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve data from the instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve data from the instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_data">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="retrieveItem" id="_retrieveItem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>retrieveItem(<span>string <var>$source</var></span>, <span>string|null <var>$key</var></span>, <span>string|array|null <var>$default</var></span>): string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve a parameter item from a given source.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve a parameter item from a given source.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_retrieveItem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dump(<span>mixed <var>$keys</var> = []</span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

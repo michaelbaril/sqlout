@@ -1,0 +1,915 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Routing\RouteCollection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Routing.html">Routing</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Routing.Alias.html">
+							Alias
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Routing.CompiledRoute.html">
+							CompiledRoute
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Routing.Route.html">
+							Route
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Routing.RouteCollection.html">
+							RouteCollection
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Routing.RouteCollection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Routing.html">Routing</a>\<a href="Symfony.Component.Routing.RouteCollection.html">RouteCollection</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;string, <a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a>&gt;, <a href="Countable.html"><span title="Countable">Countable</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A RouteCollection represents a set of Route instances.</p>
+<p>When adding a route at the end of the collection, an existing route
+with the same name is removed first. So there can only be one route
+with a given name.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone()</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="ArrayIterator.html"><span title="ArrayIterator">ArrayIterator</span></a>&lt;string, <a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the current RouteCollection as an Iterator that includes all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the current RouteCollection as an Iterator that includes all routes.</p>
+<p>It implements \IteratorAggregate.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the number of Routes in this collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the number of Routes in this collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span>string <var>$name</var></span>, <span><a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a> <var>$route</var></span>, <span>int <var>$priority</var> = <span class="php-num">0</span></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(): array&lt;string, <a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns all routes in this collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns all routes in this collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$name</var></span>): ?<a href="Symfony.Component.Routing.Route.html"><span title="Symfony\Component\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets a route by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets a route by name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remove(<span>string|string[] <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes a route or an array of routes by name from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes a route or an array of routes by name from the collection.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The route name or an array of route names</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCollection" id="_addCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCollection(<span><b><span class="active" title="Symfony\Component\Routing\RouteCollection">self</span></b> <var>$collection</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a route collection at the end of the current set by appending all
+routes of the added collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a route collection at the end of the current set by appending all
+routes of the added collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addPrefix" id="_addPrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addPrefix(<span>string <var>$prefix</var></span>, <span>array <var>$defaults</var> = []</span>, <span>array <var>$requirements</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a prefix to the path of all child routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a prefix to the path of all child routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addPrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addNamePrefix" id="_addNamePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addNamePrefix(<span>string <var>$prefix</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a prefix to the name of all the routes within in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a prefix to the name of all the routes within in the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addNamePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHost" id="_setHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHost(<span>?string <var>$pattern</var></span>, <span>array <var>$defaults</var> = []</span>, <span>array <var>$requirements</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the host pattern on all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the host pattern on all routes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCondition" id="_setCondition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCondition(<span>?string <var>$condition</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets a condition on all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets a condition on all routes.</p>
+<p>Existing conditions will be overridden.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCondition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addDefaults" id="_addDefaults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addDefaults(<span>array <var>$defaults</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds defaults to all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds defaults to all routes.</p>
+<p>An existing default value under the same name in a route will be overridden.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addDefaults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addRequirements" id="_addRequirements">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addRequirements(<span>array <var>$requirements</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds requirements to all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds requirements to all routes.</p>
+<p>An existing requirement under the same name in a route will be overridden.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addRequirements">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOptions" id="_addOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOptions(<span>array <var>$options</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds options to all routes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds options to all routes.</p>
+<p>An existing option value under the same name in a route will be overridden.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSchemes" id="_setSchemes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSchemes(<span>string|string[] <var>$schemes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the schemes (e.g. 'https') all child routes are restricted to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the schemes (e.g. 'https') all child routes are restricted to.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$schemes</var>&nbsp;&nbsp;</td>
+										<td><p>The scheme or an array of schemes</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSchemes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMethods" id="_setMethods">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMethods(<span>string|string[] <var>$methods</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the HTTP methods (e.g. 'POST') all child routes are restricted to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the HTTP methods (e.g. 'POST') all child routes are restricted to.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$methods</var>&nbsp;&nbsp;</td>
+										<td><p>The method or an array of methods</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMethods">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResources" id="_getResources">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResources(): <span title="Symfony\Component\Config\Resource\ResourceInterface">ResourceInterface</span>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of resources loaded to build this collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of resources loaded to build this collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResources">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addResource" id="_addResource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addResource(<span><span title="Symfony\Component\Config\Resource\ResourceInterface">ResourceInterface</span> <var>$resource</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a resource for this collection. If the resource already exists
+it is not added.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a resource for this collection. If the resource already exists
+it is not added.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addResource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addAlias" id="_addAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addAlias(<span>string <var>$name</var></span>, <span>string <var>$alias</var></span>): <a href="Symfony.Component.Routing.Alias.html"><span title="Symfony\Component\Routing\Alias">Alias</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Sets an alias for an existing route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets an alias for an existing route.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The alias to create</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$alias</var>&nbsp;&nbsp;</td>
+										<td><p>The route to alias</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Routing.Exception.InvalidArgumentException.html"><span>Symfony\Component\Routing\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>if the alias is for itself</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAliases" id="_getAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAliases(): array&lt;string, <a href="Symfony.Component.Routing.Alias.html"><span title="Symfony\Component\Routing\Alias">Alias</span></a>&gt;</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAlias" id="_getAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAlias(<span>string <var>$name</var></span>): ?<a href="Symfony.Component.Routing.Alias.html"><span title="Symfony\Component\Routing\Alias">Alias</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPriority" id="_getPriority">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPriority(<span>string <var>$name</var></span>): ?int</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPriority">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

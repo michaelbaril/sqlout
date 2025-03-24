@@ -1,0 +1,1167 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Concerns\HasEvents |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">
+							GuardsAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">
+							HasAttributes
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">
+							HasEvents
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html">
+							HasGlobalScopes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html">
+							HasRelationships
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">
+							HasTimestamps
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html">
+							HasUniqueIds
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html">
+							HidesAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html">
+							PreventsCircularRecursion
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">
+							QueriesRelationships
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">HasEvents</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Concerns\HasEvents</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="bootHasEvents" id="_bootHasEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bootHasEvents(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Boot the has event trait for a model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Boot the has event trait for a model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bootHasEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveObserveAttributes" id="_resolveObserveAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveObserveAttributes(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the observe class names from the attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the observe class names from the attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveObserveAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="observe" id="_observe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>observe(<span>object|array|string <var>$classes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register observers with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register observers with the model.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_observe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registerObserver" id="_registerObserver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>registerObserver(<span>object|string <var>$class</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a single observer with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a single observer with the model.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_registerObserver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getObservableEvents" id="_getObservableEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getObservableEvents(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the observable event names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the observable event names.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getObservableEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setObservableEvents" id="_setObservableEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setObservableEvents(<span>array <var>$observables</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the observable event names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the observable event names.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setObservableEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addObservableEvents" id="_addObservableEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addObservableEvents(<span>array|mixed <var>$observables</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an observable event name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an observable event name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addObservableEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeObservableEvents" id="_removeObservableEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeObservableEvents(<span>array|mixed <var>$observables</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove an observable event name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove an observable event name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeObservableEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="registerModelEvent" id="_registerModelEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>registerModelEvent(<span>string <var>$event</var></span>, <span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_registerModelEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireModelEvent" id="_fireModelEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireModelEvent(<span>string <var>$event</var></span>, <span>bool <var>$halt</var> = <span class="php-kw">true</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire the given event for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire the given event for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireModelEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireCustomModelEvent" id="_fireCustomModelEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireCustomModelEvent(<span>string <var>$event</var></span>, <span>string <var>$method</var></span>): mixed|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire a custom model event for the given event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire a custom model event for the given event.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireCustomModelEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filterModelEventResults" id="_filterModelEventResults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filterModelEventResults(<span>mixed <var>$result</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Filter the model event results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Filter the model event results.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filterModelEventResults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="retrieved" id="_retrieved">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>retrieved(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a retrieved model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a retrieved model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_retrieved">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saving" id="_saving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saving(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a saving model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a saving model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="saved" id="_saved">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>saved(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a saved model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a saved model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_saved">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updating" id="_updating">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updating(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an updating model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an updating model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updating">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updated" id="_updated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updated(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an updated model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an updated model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="creating" id="_creating">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>creating(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a creating model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a creating model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_creating">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="created" id="_created">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>created(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a created model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a created model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_created">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replicating" id="_replicating">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replicating(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a replicating model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a replicating model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replicating">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleting" id="_deleting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleting(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a deleting model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a deleting model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleted" id="_deleted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleted(<span><a href="Illuminate.Events.QueuedClosure.html"><span title="Illuminate\Events\QueuedClosure">QueuedClosure</span></a>|callable|array|class-string <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a deleted model event with the dispatcher.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a deleted model event with the dispatcher.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flushEventListeners" id="_flushEventListeners">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flushEventListeners(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all the event listeners for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all the event listeners for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flushEventListeners">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dispatchesEvents" id="_dispatchesEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dispatchesEvents(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the event map for the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the event map for the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatchesEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEventDispatcher" id="_getEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEventDispatcher(): <a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the event dispatcher instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the event dispatcher instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEventDispatcher" id="_setEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEventDispatcher(<span><a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a> <var>$dispatcher</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the event dispatcher instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the event dispatcher instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsetEventDispatcher" id="_unsetEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsetEventDispatcher(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the event dispatcher for models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the event dispatcher for models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsetEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutEvents" id="_withoutEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutEvents(<span>callable <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute a callback without firing any model events for any model type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute a callback without firing any model events for any model type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutEvents">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="dispatchesEvents" id="$dispatchesEvents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$dispatchesEvents</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dispatchesEvents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="observables" id="$observables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$observables</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$observables">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

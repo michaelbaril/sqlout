@@ -1,0 +1,690 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Schema\ForeignKeyDefinition |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Schema.html">Schema</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Schema.Blueprint.html">
+							Blueprint
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.BlueprintState.html">
+							BlueprintState
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ColumnDefinition.html">
+							ColumnDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html">
+							ForeignIdColumnDefinition
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html">
+							ForeignKeyDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Schema.IndexDefinition.html">
+							IndexDefinition
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Schema.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Schema.ForeignKeyDefinition.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Schema.html">Schema</a>\<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html">ForeignKeyDefinition</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Support.Fluent.html"><span title="Illuminate\Support\Fluent">Fluent</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Schema\ForeignKeyDefinition</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="cascadeOnUpdate" id="_cascadeOnUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cascadeOnUpdate(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that updates should cascade.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that updates should cascade.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cascadeOnUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="restrictOnUpdate" id="_restrictOnUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>restrictOnUpdate(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that updates should be restricted.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that updates should be restricted.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_restrictOnUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullOnUpdate" id="_nullOnUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullOnUpdate(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that updates should set the foreign key value to null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that updates should set the foreign key value to null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullOnUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="noActionOnUpdate" id="_noActionOnUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>noActionOnUpdate(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that updates should have "no action".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that updates should have &quot;no action&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_noActionOnUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cascadeOnDelete" id="_cascadeOnDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cascadeOnDelete(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that deletes should cascade.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that deletes should cascade.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cascadeOnDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="restrictOnDelete" id="_restrictOnDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>restrictOnDelete(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that deletes should be restricted.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that deletes should be restricted.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_restrictOnDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nullOnDelete" id="_nullOnDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nullOnDelete(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that deletes should set the foreign key value to null.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that deletes should set the foreign key value to null.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nullOnDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="noActionOnDelete" id="_noActionOnDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>noActionOnDelete(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that deletes should have "no action".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that deletes should have &quot;no action&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_noActionOnDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deferrable" id="_deferrable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deferrable(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the foreign key as deferrable (PostgreSQL)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the foreign key as deferrable (PostgreSQL)</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deferrable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initiallyImmediate" id="_initiallyImmediate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initiallyImmediate(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default time to check the constraint (PostgreSQL)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default time to check the constraint (PostgreSQL)</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initiallyImmediate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="on" id="_on">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>on(<span>string <var>$table</var></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the referenced table
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the referenced table</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_on">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="onDelete" id="_onDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>onDelete(<span>string <var>$action</var></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add an ON DELETE action
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an ON DELETE action</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_onDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="onUpdate" id="_onUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>onUpdate(<span>string <var>$action</var></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Add an ON UPDATE action
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an ON UPDATE action</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_onUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="references" id="_references">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>references(<span>string|array <var>$columns</var></span>): <b><span class="active" title="Illuminate\Database\Schema\ForeignKeyDefinition">ForeignKeyDefinition</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the referenced column(s)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the referenced column(s)</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_references">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Fluent.html#___construct">__construct()</a>, <a href="Illuminate.Support.Fluent.html#_get">get()</a>, <a href="Illuminate.Support.Fluent.html#_set">set()</a>, <a href="Illuminate.Support.Fluent.html#_fill">fill()</a>, <a href="Illuminate.Support.Fluent.html#_value">value()</a>, <a href="Illuminate.Support.Fluent.html#_scope">scope()</a>, <a href="Illuminate.Support.Fluent.html#_all">all()</a>, <a href="Illuminate.Support.Fluent.html#_data">data()</a>, <a href="Illuminate.Support.Fluent.html#_getAttributes">getAttributes()</a>, <a href="Illuminate.Support.Fluent.html#_toArray">toArray()</a>, <a href="Illuminate.Support.Fluent.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Support.Fluent.html#_toJson">toJson()</a>, <a href="Illuminate.Support.Fluent.html#_offsetExists">offsetExists()</a>, <a href="Illuminate.Support.Fluent.html#_offsetGet">offsetGet()</a>, <a href="Illuminate.Support.Fluent.html#_offsetSet">offsetSet()</a>, <a href="Illuminate.Support.Fluent.html#_offsetUnset">offsetUnset()</a>, <a href="Illuminate.Support.Fluent.html#___call">__call()</a>, <a href="Illuminate.Support.Fluent.html#___get">__get()</a>, <a href="Illuminate.Support.Fluent.html#___set">__set()</a>, <a href="Illuminate.Support.Fluent.html#___isset">__isset()</a>, <a href="Illuminate.Support.Fluent.html#___unset">__unset()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.InteractsWithData.html"><span>Illuminate\Support\Traits\InteractsWithData</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.InteractsWithData.html#_exists">exists()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_has">has()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_hasAny">hasAny()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenHas">whenHas()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_filled">filled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isNotFilled">isNotFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_anyFilled">anyFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenFilled">whenFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_missing">missing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenMissing">whenMissing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isEmptyString">isEmptyString()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_str">str()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_string">string()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_boolean">boolean()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_integer">integer()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_float">float()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_date">date()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enum">enum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enums">enums()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isBackedEnum">isBackedEnum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_array">array()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_only">only()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_except">except()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Fluent.html#$attributes">$attributes</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

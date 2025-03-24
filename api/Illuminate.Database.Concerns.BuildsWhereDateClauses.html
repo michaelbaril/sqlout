@@ -1,0 +1,800 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Concerns\BuildsWhereDateClauses |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Concerns.BuildsQueries.html">
+							BuildsQueries
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html">
+							BuildsWhereDateClauses
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html">
+							CompilesJsonPaths
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.ExplainsQueries.html">
+							ExplainsQueries
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.ManagesTransactions.html">
+							ManagesTransactions
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html">BuildsWhereDateClauses</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Concerns\BuildsWhereDateClauses</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Query.Builder.html"><span>Illuminate\Database\Query\Builder</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Query.Builder.html"><span title="Illuminate\Contracts\Database\Query\Builder">Builder</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Concerns\BuildsWhereDateClauses">BuildsWhereDateClauses</span></b>, 
+			<a href="Illuminate.Database.Concerns.BuildsQueries.html"><span title="Illuminate\Database\Concerns\BuildsQueries">BuildsQueries</span></a>, 
+			<a href="Illuminate.Database.Concerns.ExplainsQueries.html"><span title="Illuminate\Database\Concerns\ExplainsQueries">ExplainsQueries</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Query.JoinClause.html"><span>Illuminate\Database\Query\JoinClause</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Query.JoinLateralClause.html"><span>Illuminate\Database\Query\JoinLateralClause</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="wherePast" id="_wherePast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePast(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a where clause to determine if a "date" column is in the past to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a where clause to determine if a &quot;date&quot; column is in the past to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNowOrPast" id="_whereNowOrPast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNowOrPast(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a where clause to determine if a "date" column is in the past or now to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a where clause to determine if a &quot;date&quot; column is in the past or now to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNowOrPast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWherePast" id="_orWherePast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWherePast(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where" clause to determine if a "date" column is in the past to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where&quot; clause to determine if a &quot;date&quot; column is in the past to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWherePast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereNowOrPast" id="_orWhereNowOrPast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereNowOrPast(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a where clause to determine if a "date" column is in the past or now to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a where clause to determine if a &quot;date&quot; column is in the past or now to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereNowOrPast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereFuture" id="_whereFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereFuture(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a where clause to determine if a "date" column is in the future to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a where clause to determine if a &quot;date&quot; column is in the future to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNowOrFuture" id="_whereNowOrFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNowOrFuture(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a where clause to determine if a "date" column is in the future or now to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a where clause to determine if a &quot;date&quot; column is in the future or now to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNowOrFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereFuture" id="_orWhereFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereFuture(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where" clause to determine if a "date" column is in the future to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where&quot; clause to determine if a &quot;date&quot; column is in the future to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereNowOrFuture" id="_orWhereNowOrFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereNowOrFuture(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where" clause to determine if a "date" column is in the future or now to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where&quot; clause to determine if a &quot;date&quot; column is in the future or now to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereNowOrFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wherePastOrFuture" id="_wherePastOrFuture">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wherePastOrFuture(<span>array|string <var>$columns</var></span>, <span>string <var>$operator</var></span>, <span>string <var>$boolean</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "where" clause to determine if a "date" column is in the past or future.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;where&quot; clause to determine if a &quot;date&quot; column is in the past or future.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wherePastOrFuture">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereToday" id="_whereToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereToday(<span>array|string <var>$columns</var></span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is today to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is today to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBeforeToday" id="_whereBeforeToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBeforeToday(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is before today.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is before today.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBeforeToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereTodayOrBefore" id="_whereTodayOrBefore">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereTodayOrBefore(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is today or before to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is today or before to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereTodayOrBefore">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereAfterToday" id="_whereAfterToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereAfterToday(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is after today.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is after today.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereAfterToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereTodayOrAfter" id="_whereTodayOrAfter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereTodayOrAfter(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is today or after to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is today or after to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereTodayOrAfter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereToday" id="_orWhereToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereToday(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where date" clause to determine if a "date" column is today to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where date&quot; clause to determine if a &quot;date&quot; column is today to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereBeforeToday" id="_orWhereBeforeToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereBeforeToday(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where date" clause to determine if a "date" column is before today.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where date&quot; clause to determine if a &quot;date&quot; column is before today.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereBeforeToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereTodayOrBefore" id="_orWhereTodayOrBefore">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereTodayOrBefore(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where date" clause to determine if a "date" column is today or before to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where date&quot; clause to determine if a &quot;date&quot; column is today or before to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereTodayOrBefore">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereAfterToday" id="_orWhereAfterToday">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereAfterToday(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where date" clause to determine if a "date" column is after today.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where date&quot; clause to determine if a &quot;date&quot; column is after today.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereAfterToday">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereTodayOrAfter" id="_orWhereTodayOrAfter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereTodayOrAfter(<span>array|string <var>$columns</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "or where date" clause to determine if a "date" column is today or after to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;or where date&quot; clause to determine if a &quot;date&quot; column is today or after to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereTodayOrAfter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereTodayBeforeOrAfter" id="_whereTodayBeforeOrAfter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereTodayBeforeOrAfter(<span>array|string <var>$columns</var></span>, <span>string <var>$operator</var></span>, <span>string <var>$boolean</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where date" clause to determine if a "date" column is today or after to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where date&quot; clause to determine if a &quot;date&quot; column is today or after to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereTodayBeforeOrAfter">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,974 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Input\Input |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArgvInput.html">
+							ArgvInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArrayInput.html">
+							ArrayInput
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Console.Input.Input.html">
+							Input
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputArgument.html">
+							InputArgument
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputDefinition.html">
+							InputDefinition
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputOption.html">
+							InputOption
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputInterface.html">
+							InputInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.StreamableInputInterface.html">
+							StreamableInputInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.Input.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Input.Input.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="namespace-Symfony.Component.Console.Input.html">Input</a>\<a href="Symfony.Component.Console.Input.Input.html">Input</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a>, <a href="Symfony.Component.Console.Input.StreamableInputInterface.html"><span title="Symfony\Component\Console\Input\StreamableInputInterface">StreamableInputInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Input is the base class for all concrete Input classes.</p>
+<p>Three concrete classes are provided by default:</p>
+<ul>
+<li>
+<code>ArgvInput</code>: The input comes from the CLI arguments (argv)</li>
+<li>
+<code>StringInput</code>: The input is provided as a string</li>
+<li>
+<code>ArrayInput</code>: The input is provided as an array</li>
+</ul>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\Console\Input\Input</span></b>
+
+		implements
+			<a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a>, 
+			<a href="Symfony.Component.Console.Input.StreamableInputInterface.html"><span title="Symfony\Component\Console\Input\StreamableInputInterface">StreamableInputInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Console.Input.ArrayInput.html"><span>Symfony\Component\Console\Input\ArrayInput</span></a>
+
+
+	</li>
+	<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html"><span>Symfony\Component\Console\Input\ArgvInput</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Console.Completion.CompletionInput.html"><span>Symfony\Component\Console\Completion\CompletionInput</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>?<a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a> <var>$definition</var> = <span class="php-kw">null</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.ArrayInput.html#___construct">						<code>Symfony\Component\Console\Input\ArrayInput::__construct()</code></a>				</li>
+				<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html#___construct">						<code>Symfony\Component\Console\Input\ArgvInput::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bind" id="_bind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bind(<span><a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a> <var>$definition</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Binds the current Input instance with the given arguments and options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Binds the current Input instance with the given arguments and options.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Completion.CompletionInput.html#_bind">						<code>Symfony\Component\Console\Completion\CompletionInput::bind()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_bind">						<code>Symfony\Component\Console\Input\InputInterface::bind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bind">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parse" id="_parse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parse(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Processes command line arguments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Processes command line arguments.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.ArrayInput.html#_parse">						<code>Symfony\Component\Console\Input\ArrayInput::parse()</code></a>				</li>
+				<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html#_parse">						<code>Symfony\Component\Console\Input\ArgvInput::parse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validate" id="_validate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>validate(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates the input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates the input.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_validate">						<code>Symfony\Component\Console\Input\InputInterface::validate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isInteractive" id="_isInteractive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isInteractive(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Is this input means interactive?
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Is this input means interactive?</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_isInteractive">						<code>Symfony\Component\Console\Input\InputInterface::isInteractive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isInteractive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setInteractive" id="_setInteractive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setInteractive(<span>bool <var>$interactive</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the input interactivity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the input interactivity.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_setInteractive">						<code>Symfony\Component\Console\Input\InputInterface::setInteractive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setInteractive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArguments" id="_getArguments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArguments(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns all the given arguments merged with the default values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns all the given arguments merged with the default values.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_getArguments">						<code>Symfony\Component\Console\Input\InputInterface::getArguments()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArguments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArgument" id="_getArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArgument(<span>string <var>$name</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the argument value for a given argument name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the argument value for a given argument name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_getArgument">						<code>Symfony\Component\Console\Input\InputInterface::getArgument()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setArgument" id="_setArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setArgument(<span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets an argument value by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets an argument value by name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_setArgument">						<code>Symfony\Component\Console\Input\InputInterface::setArgument()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasArgument" id="_hasArgument">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasArgument(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputArgument object exists by name or position.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputArgument object exists by name or position.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_hasArgument">						<code>Symfony\Component\Console\Input\InputInterface::hasArgument()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasArgument">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOptions" id="_getOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOptions(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns all the given options merged with the default values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns all the given options merged with the default values.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_getOptions">						<code>Symfony\Component\Console\Input\InputInterface::getOptions()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOption" id="_getOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOption(<span>string <var>$name</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the option value for a given option name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the option value for a given option name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_getOption">						<code>Symfony\Component\Console\Input\InputInterface::getOption()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOption" id="_setOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setOption(<span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets an option value by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets an option value by name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_setOption">						<code>Symfony\Component\Console\Input\InputInterface::setOption()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasOption" id="_hasOption">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasOption(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if an InputOption object exists by name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if an InputOption object exists by name.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.InputInterface.html#_hasOption">						<code>Symfony\Component\Console\Input\InputInterface::hasOption()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasOption">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeToken" id="_escapeToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeToken(<span>string <var>$token</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escapes a token through escapeshellarg if it contains unsafe chars.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escapes a token through escapeshellarg if it contains unsafe chars.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setStream" id="_setStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setStream(<span>resource <var>$stream</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the input stream to read from when interacting with the user.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the input stream to read from when interacting with the user.</p>
+<p>This is mainly useful for testing purpose.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$stream</var>&nbsp;&nbsp;</td>
+										<td><p>The input stream</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.StreamableInputInterface.html#_setStream">						<code>Symfony\Component\Console\Input\StreamableInputInterface::setStream()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setStream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStream" id="_getStream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStream(): resource</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the input stream.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the input stream.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.StreamableInputInterface.html#_getStream">						<code>Symfony\Component\Console\Input\StreamableInputInterface::getStream()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStream">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="definition" id="$definition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$definition</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$definition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stream" id="$stream">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">resource</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$stream</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$stream">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="$options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$options</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$options">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="arguments" id="$arguments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$arguments</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$arguments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="interactive" id="$interactive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$interactive</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$interactive">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

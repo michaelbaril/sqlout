@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Baril\Sqlout\SearchIndex |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.Migrations.html">Migrations</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Baril.Sqlout.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li>
+						<a href="Baril.Sqlout.Engine.html">
+							Engine
+						</a>
+					</li>
+					<li class="active">
+						<a href="Baril.Sqlout.SearchIndex.html">
+							SearchIndex
+						</a>
+					</li>
+					<li>
+						<a href="Baril.Sqlout.SqloutServiceProvider.html">
+							SqloutServiceProvider
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Baril.Sqlout.Searchable.html">
+							Searchable
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Baril.Sqlout.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Baril.Sqlout.SearchIndex.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Baril.html">Baril</a>\<a href="namespace-Baril.Sqlout.html">Sqlout</a>\<a href="Baril.Sqlout.SearchIndex.html">SearchIndex</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Baril\Sqlout\SearchIndex</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-SearchIndex.html#7" title="Go to source code">SearchIndex.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="record" id="_record">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-SearchIndex.html#17-23" title="Go to source code">record</a>(): <a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span title="Illuminate\Database\Eloquent\Relations\MorphTo">MorphTo</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_record">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Model.html#___construct">__construct()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_bootIfNotBooted">bootIfNotBooted()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_booting">booting()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_boot">boot()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_bootTraits">bootTraits()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_initializeTraits">initializeTraits()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_booted">booted()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_clearBootedModels">clearBootedModels()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_withoutTouching">withoutTouching()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_withoutTouchingOn">withoutTouchingOn()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_isIgnoringTouch">isIgnoringTouch()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_shouldBeStrict">shouldBeStrict()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventLazyLoading">preventLazyLoading()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_handleLazyLoadingViolationUsing">handleLazyLoadingViolationUsing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventSilentlyDiscardingAttributes">preventSilentlyDiscardingAttributes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_handleDiscardedAttributeViolationUsing">handleDiscardedAttributeViolationUsing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventAccessingMissingAttributes">preventAccessingMissingAttributes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_handleMissingAttributeViolationUsing">handleMissingAttributeViolationUsing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_withoutBroadcasting">withoutBroadcasting()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_fill">fill()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_forceFill">forceFill()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_qualifyColumn">qualifyColumn()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_qualifyColumns">qualifyColumns()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newInstance">newInstance()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newFromBuilder">newFromBuilder()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_on">on()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_onWriteConnection">onWriteConnection()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_all">all()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_with">with()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_load">load()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorph">loadMorph()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMissing">loadMissing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadAggregate">loadAggregate()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadCount">loadCount()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMax">loadMax()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMin">loadMin()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadSum">loadSum()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadAvg">loadAvg()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadExists">loadExists()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphAggregate">loadMorphAggregate()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphCount">loadMorphCount()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphMax">loadMorphMax()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphMin">loadMorphMin()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphSum">loadMorphSum()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_loadMorphAvg">loadMorphAvg()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_increment">increment()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_decrement">decrement()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_incrementOrDecrement">incrementOrDecrement()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_update">update()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_updateOrFail">updateOrFail()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_updateQuietly">updateQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_incrementQuietly">incrementQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_decrementQuietly">decrementQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_push">push()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_pushQuietly">pushQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_saveQuietly">saveQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_save">save()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_saveOrFail">saveOrFail()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_finishSave">finishSave()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_performUpdate">performUpdate()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setKeysForSelectQuery">setKeysForSelectQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getKeyForSelectQuery">getKeyForSelectQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setKeysForSaveQuery">setKeysForSaveQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getKeyForSaveQuery">getKeyForSaveQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_performInsert">performInsert()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_insertAndSetId">insertAndSetId()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_destroy">destroy()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_delete">delete()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_deleteQuietly">deleteQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_deleteOrFail">deleteOrFail()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_forceDelete">forceDelete()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_forceDestroy">forceDestroy()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_performDeleteOnModel">performDeleteOnModel()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_query">query()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newQuery">newQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newModelQuery">newModelQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newQueryWithoutRelationships">newQueryWithoutRelationships()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_registerGlobalScopes">registerGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newQueryWithoutScopes">newQueryWithoutScopes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newQueryWithoutScope">newQueryWithoutScope()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newQueryForRestoration">newQueryForRestoration()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newEloquentBuilder">newEloquentBuilder()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newBaseQueryBuilder">newBaseQueryBuilder()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_newPivot">newPivot()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_hasNamedScope">hasNamedScope()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_callNamedScope">callNamedScope()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_toArray">toArray()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_toJson">toJson()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_fresh">fresh()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_refresh">refresh()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_replicate">replicate()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_replicateQuietly">replicateQuietly()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_is">is()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_isNot">isNot()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getConnection">getConnection()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getConnectionName">getConnectionName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setConnection">setConnection()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveConnection">resolveConnection()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getConnectionResolver">getConnectionResolver()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setConnectionResolver">setConnectionResolver()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_unsetConnectionResolver">unsetConnectionResolver()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getTable">getTable()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setTable">setTable()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getKeyName">getKeyName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setKeyName">setKeyName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getQualifiedKeyName">getQualifiedKeyName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getKeyType">getKeyType()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setKeyType">setKeyType()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getIncrementing">getIncrementing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setIncrementing">setIncrementing()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getKey">getKey()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getQueueableId">getQueueableId()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getQueueableRelations">getQueueableRelations()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getQueueableConnection">getQueueableConnection()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getRouteKey">getRouteKey()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getRouteKeyName">getRouteKeyName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveRouteBinding">resolveRouteBinding()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveSoftDeletableRouteBinding">resolveSoftDeletableRouteBinding()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveChildRouteBinding">resolveChildRouteBinding()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveSoftDeletableChildRouteBinding">resolveSoftDeletableChildRouteBinding()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveChildRouteBindingQuery">resolveChildRouteBindingQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_childRouteBindingRelationshipName">childRouteBindingRelationshipName()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_resolveRouteBindingQuery">resolveRouteBindingQuery()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getForeignKey">getForeignKey()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_getPerPage">getPerPage()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_setPerPage">setPerPage()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventsLazyLoading">preventsLazyLoading()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventsSilentlyDiscardingAttributes">preventsSilentlyDiscardingAttributes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_preventsAccessingMissingAttributes">preventsAccessingMissingAttributes()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_broadcastChannelRoute">broadcastChannelRoute()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_broadcastChannel">broadcastChannel()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___get">__get()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___set">__set()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_offsetExists">offsetExists()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_offsetGet">offsetGet()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_offsetSet">offsetSet()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_offsetUnset">offsetUnset()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___isset">__isset()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___unset">__unset()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___call">__call()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___toString">__toString()</a>, <a href="Illuminate.Database.Eloquent.Model.html#_escapeWhenCastingToString">escapeWhenCastingToString()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___sleep">__sleep()</a>, <a href="Illuminate.Database.Eloquent.Model.html#___wakeup">__wakeup()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HasAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_initializeHasAttributes">initializeHasAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_attributesToArray">attributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addDateAttributesToArray">addDateAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addMutatedAttributesToArray">addMutatedAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_addCastAttributesToArray">addCastAttributesToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableAttributes">getArrayableAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableAppends">getArrayableAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_relationsToArray">relationsToArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableRelations">getArrayableRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttribute">hasAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttribute">getAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_throwMissingAttributeExceptionIfApplicable">throwMissingAttributeExceptionIfApplicable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeValue">getAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeFromArray">getAttributeFromArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRelationValue">getRelationValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isRelation">isRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_handleLazyLoadingViolation">handleLazyLoadingViolation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRelationshipFromMethod">getRelationshipFromMethod()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasGetMutator">hasGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeMutator">hasAttributeMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeGetMutator">hasAttributeGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAnyGetMutator">hasAnyGetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttribute">mutateAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttributeMarkedAttribute">mutateAttributeMarkedAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mutateAttributeForArray">mutateAttributeForArray()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeCasts">mergeCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_ensureCastsAreStringValues">ensureCastsAreStringValues()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttribute">castAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getClassCastableAttributeValue">getClassCastableAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getEnumCastableAttributeValue">getEnumCastableAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getCastType">getCastType()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_deviateClassCastableAttribute">deviateClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_serializeClassCastableAttribute">serializeClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isCustomDateTimeCast">isCustomDateTimeCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isImmutableCustomDateTimeCast">isImmutableCustomDateTimeCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDecimalCast">isDecimalCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAttribute">setAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasSetMutator">hasSetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAttributeSetMutator">hasAttributeSetMutator()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setMutatedAttributeValue">setMutatedAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAttributeMarkedMutatedAttributeValue">setAttributeMarkedMutatedAttributeValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateAttribute">isDateAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fillJsonAttribute">fillJsonAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setClassCastableAttribute">setClassCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setEnumCastableAttribute">setEnumCastableAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getEnumCaseFromValue">getEnumCaseFromValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getStorableEnumValue">getStorableEnumValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayAttributeWithValue">getArrayAttributeWithValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getArrayAttributeByKey">getArrayAttributeByKey()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsJson">castAttributeAsJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getJsonCastFlags">getJsonCastFlags()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asJson">asJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromJson">fromJson()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromEncryptedString">fromEncryptedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsEncryptedString">castAttributeAsEncryptedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_encryptUsing">encryptUsing()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_currentEncrypter">currentEncrypter()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_castAttributeAsHashedString">castAttributeAsHashedString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromFloat">fromFloat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDecimal">asDecimal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDate">asDate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asDateTime">asDateTime()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isStandardDateFormat">isStandardDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_fromDateTime">fromDateTime()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_asTimestamp">asTimestamp()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_serializeDate">serializeDate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDates">getDates()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDateFormat">getDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setDateFormat">setDateFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasCast">hasCast()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getCasts">getCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_casts">casts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateCastable">isDateCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDateCastableWithCustomFormat">isDateCastableWithCustomFormat()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isJsonCastable">isJsonCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isEncryptedCastable">isEncryptedCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassCastable">isClassCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isEnumCastable">isEnumCastable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassDeviable">isClassDeviable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClassSerializable">isClassSerializable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_resolveCasterClass">resolveCasterClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_parseCasterClass">parseCasterClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromCachedCasts">mergeAttributesFromCachedCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromClassCasts">mergeAttributesFromClassCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_mergeAttributesFromAttributeCasts">mergeAttributesFromAttributeCasts()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_normalizeCastClassResponse">normalizeCastClassResponse()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributes">getAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributesForInsert">getAttributesForInsert()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setRawAttributes">setRawAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getOriginal">getOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getOriginalWithoutRewindingModel">getOriginalWithoutRewindingModel()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getRawOriginal">getRawOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_only">only()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginal">syncOriginal()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginalAttribute">syncOriginalAttribute()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncOriginalAttributes">syncOriginalAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_syncChanges">syncChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isDirty">isDirty()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_isClean">isClean()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_discardChanges">discardChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_wasChanged">wasChanged()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasChanges">hasChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDirty">getDirty()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getDirtyForUpdate">getDirtyForUpdate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getChanges">getChanges()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_originalIsEquivalent">originalIsEquivalent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_transformModelValue">transformModelValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_append">append()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAppends">getAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_setAppends">setAppends()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_hasAppended">hasAppended()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getMutatedAttributes">getMutatedAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_cacheMutatedAttributes">cacheMutatedAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getMutatorMethods">getMutatorMethods()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#_getAttributeMarkedMutatorMethods">getAttributeMarkedMutatorMethods()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span>Illuminate\Database\Eloquent\Concerns\HasEvents</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_bootHasEvents">bootHasEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_resolveObserveAttributes">resolveObserveAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_observe">observe()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_registerObserver">registerObserver()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_getObservableEvents">getObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_setObservableEvents">setObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_addObservableEvents">addObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_removeObservableEvents">removeObservableEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_registerModelEvent">registerModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_fireModelEvent">fireModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_fireCustomModelEvent">fireCustomModelEvent()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_filterModelEventResults">filterModelEventResults()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_retrieved">retrieved()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_saving">saving()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_saved">saved()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_updating">updating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_updated">updated()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_creating">creating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_created">created()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_replicating">replicating()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_deleting">deleting()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_deleted">deleted()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_flushEventListeners">flushEventListeners()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_dispatchesEvents">dispatchesEvents()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_getEventDispatcher">getEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_setEventDispatcher">setEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_unsetEventDispatcher">unsetEventDispatcher()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#_withoutEvents">withoutEvents()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span>Illuminate\Database\Eloquent\Concerns\HasGlobalScopes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_bootHasGlobalScopes">bootHasGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_resolveGlobalScopeAttributes">resolveGlobalScopeAttributes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_addGlobalScope">addGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_addGlobalScopes">addGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_hasGlobalScope">hasGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getGlobalScope">getGlobalScope()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getAllGlobalScopes">getAllGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_setAllGlobalScopes">setAllGlobalScopes()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html#_getGlobalScopes">getGlobalScopes()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span>Illuminate\Database\Eloquent\Concerns\HasRelationships</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_relationResolver">relationResolver()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_resolveRelationUsing">resolveRelationUsing()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasOne">hasOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasOne">newHasOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasOneThrough">hasOneThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasOneThrough">newHasOneThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphOne">morphOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphOne">newMorphOne()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_belongsTo">belongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newBelongsTo">newBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphTo">morphTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphEagerTo">morphEagerTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphInstanceTo">morphInstanceTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphTo">newMorphTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getActualClassNameForMorph">getActualClassNameForMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_guessBelongsToRelation">guessBelongsToRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_through">through()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasMany">hasMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasMany">newHasMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_hasManyThrough">hasManyThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newHasManyThrough">newHasManyThrough()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphMany">morphMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphMany">newMorphMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_belongsToMany">belongsToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newBelongsToMany">newBelongsToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphToMany">morphToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newMorphToMany">newMorphToMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_morphedByMany">morphedByMany()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_guessBelongsToManyRelation">guessBelongsToManyRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_joiningTable">joiningTable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_joiningTableSegment">joiningTableSegment()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_touches">touches()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_touchOwners">touchOwners()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getMorphs">getMorphs()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getMorphClass">getMorphClass()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newRelatedInstance">newRelatedInstance()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_newRelatedThroughInstance">newRelatedThroughInstance()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getRelations">getRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getRelation">getRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_relationLoaded">relationLoaded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setRelation">setRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_unsetRelation">unsetRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setRelations">setRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_withoutRelations">withoutRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_unsetRelations">unsetRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_getTouchedRelations">getTouchedRelations()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#_setTouchedRelations">setTouchedRelations()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span>Illuminate\Database\Eloquent\Concerns\HasTimestamps</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_touch">touch()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_touchQuietly">touchQuietly()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_updateTimestamps">updateTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_setCreatedAt">setCreatedAt()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_setUpdatedAt">setUpdatedAt()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_freshTimestamp">freshTimestamp()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_freshTimestampString">freshTimestampString()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_usesTimestamps">usesTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getCreatedAtColumn">getCreatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getUpdatedAtColumn">getUpdatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getQualifiedCreatedAtColumn">getQualifiedCreatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_getQualifiedUpdatedAtColumn">getQualifiedUpdatedAtColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_withoutTimestamps">withoutTimestamps()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_withoutTimestampsOn">withoutTimestampsOn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#_isIgnoringTimestamps">isIgnoringTimestamps()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span>Illuminate\Database\Eloquent\Concerns\HasUniqueIds</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_usesUniqueIds">usesUniqueIds()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_setUniqueIds">setUniqueIds()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_newUniqueId">newUniqueId()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#_uniqueIds">uniqueIds()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HidesAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_getHidden">getHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_setHidden">setHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_getVisible">getVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_setVisible">setVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeVisible">makeVisible()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeVisibleIf">makeVisibleIf()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeHidden">makeHidden()</a>, <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#_makeHiddenIf">makeHiddenIf()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\GuardsAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_getFillable">getFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_fillable">fillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_mergeFillable">mergeFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_getGuarded">getGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_guard">guard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_mergeGuarded">mergeGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_unguard">unguard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_reguard">reguard()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isUnguarded">isUnguarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_unguarded">unguarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isFillable">isFillable()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isGuarded">isGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_isGuardableColumn">isGuardableColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_totallyGuarded">totallyGuarded()</a>, <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#_fillableFromArray">fillableFromArray()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span>Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_withoutRecursion">withoutRecursion()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_clearRecursiveCallValue">clearRecursiveCallValue()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_getRecursiveCallStack">getRecursiveCallStack()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_getRecursionCache">getRecursionCache()</a>, <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#_setRecursiveCallValue">setRecursiveCallValue()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.HasCollection.html"><span>Illuminate\Database\Eloquent\HasCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.HasCollection.html#_newCollection">newCollection()</a>, <a href="Illuminate.Database.Eloquent.HasCollection.html#_resolveCollectionFromAttribute">resolveCollectionFromAttribute()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Model.html#CREATED_AT"><code>CREATED_AT</code></a>, <a href="Illuminate.Database.Eloquent.Model.html#UPDATED_AT"><code>UPDATED_AT</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="fillable" id="$fillable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-SearchIndex.html#9-15" title="Go to source code">$fillable</a></var> = [<span class="php-str">'record_type'</span>, <span class="php-str">'record_id'</span>, <span class="php-str">'field'</span>, <span class="php-str">'weight'</span>, <span class="php-str">'content'</span>]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fillable">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Model.html#$connection">$connection</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$table">$table</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$primaryKey">$primaryKey</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$keyType">$keyType</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$incrementing">$incrementing</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$with">$with</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$withCount">$withCount</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$preventsLazyLoading">$preventsLazyLoading</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$perPage">$perPage</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$exists">$exists</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$wasRecentlyCreated">$wasRecentlyCreated</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$escapeWhenCastingToString">$escapeWhenCastingToString</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$resolver">$resolver</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$dispatcher">$dispatcher</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$booted">$booted</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$traitInitializers">$traitInitializers</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$globalScopes">$globalScopes</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$ignoreOnTouch">$ignoreOnTouch</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$modelsShouldPreventLazyLoading">$modelsShouldPreventLazyLoading</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$lazyLoadingViolationCallback">$lazyLoadingViolationCallback</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$modelsShouldPreventSilentlyDiscardingAttributes">$modelsShouldPreventSilentlyDiscardingAttributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$discardedAttributeViolationCallback">$discardedAttributeViolationCallback</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$modelsShouldPreventAccessingMissingAttributes">$modelsShouldPreventAccessingMissingAttributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$missingAttributeViolationCallback">$missingAttributeViolationCallback</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$isBroadcasting">$isBroadcasting</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$builder">$builder</a></var>, <var><a href="Illuminate.Database.Eloquent.Model.html#$collectionClass">$collectionClass</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HasAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributes">$attributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$original">$original</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$changes">$changes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$casts">$casts</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$classCastCache">$classCastCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributeCastCache">$attributeCastCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$primitiveCastTypes">$primitiveCastTypes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$dateFormat">$dateFormat</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$appends">$appends</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$snakeAttributes">$snakeAttributes</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$mutatorCache">$mutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$attributeMutatorCache">$attributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$getAttributeMutatorCache">$getAttributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$setAttributeMutatorCache">$setAttributeMutatorCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$castTypeCache">$castTypeCache</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html#$encrypter">$encrypter</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span>Illuminate\Database\Eloquent\Concerns\HasEvents</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#$dispatchesEvents">$dispatchesEvents</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html#$observables">$observables</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span>Illuminate\Database\Eloquent\Concerns\HasRelationships</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$relations">$relations</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$touches">$touches</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$manyMethods">$manyMethods</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html#$relationResolvers">$relationResolvers</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span>Illuminate\Database\Eloquent\Concerns\HasTimestamps</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#$timestamps">$timestamps</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html#$ignoreTimestampsOn">$ignoreTimestampsOn</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span>Illuminate\Database\Eloquent\Concerns\HasUniqueIds</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html#$usesUniqueIds">$usesUniqueIds</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\HidesAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#$hidden">$hidden</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html#$visible">$visible</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span>Illuminate\Database\Eloquent\Concerns\GuardsAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$guarded">$guarded</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$unguarded">$unguarded</a></var>, <var><a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html#$guardableColumns">$guardableColumns</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span>Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html#$recursionCache">$recursionCache</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.HasCollection.html"><span>Illuminate\Database\Eloquent\HasCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.HasCollection.html#$resolvedCollectionClasses">$resolvedCollectionClasses</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

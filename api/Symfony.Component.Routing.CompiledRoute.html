@@ -1,0 +1,536 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Routing\CompiledRoute |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Routing.html">Routing</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Routing.Alias.html">
+							Alias
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Routing.CompiledRoute.html">
+							CompiledRoute
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Routing.Route.html">
+							Route
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Routing.RouteCollection.html">
+							RouteCollection
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Routing.CompiledRoute.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Routing.html">Routing</a>\<a href="Symfony.Component.Routing.CompiledRoute.html">CompiledRoute</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Serializable.html"><span title="Serializable">Serializable</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>CompiledRoutes are returned by the RouteCompiler class.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$staticPrefix</var></span>,
+	<span>string <var>$regex</var></span>,
+	<span>array <var>$tokens</var></span>,
+	<span>array <var>$pathVariables</var></span>,
+	<span>string|null <var>$hostRegex</var> = <span class="php-kw">null</span></span>,
+	<span>array <var>$hostTokens</var> = []</span>,
+	<span>array <var>$hostVariables</var> = []</span>,
+	<span>array <var>$variables</var> = []</span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$staticPrefix</var>&nbsp;&nbsp;</td>
+										<td><p>The static prefix of the compiled route</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$regex</var>&nbsp;&nbsp;</td>
+										<td><p>The regular expression to use to match this route</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$tokens</var>&nbsp;&nbsp;</td>
+										<td><p>An array of tokens to use to generate URL for this route</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$pathVariables</var>&nbsp;&nbsp;</td>
+										<td><p>An array of path variables</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$hostRegex</var>&nbsp;&nbsp;</td>
+										<td><p>Host regex</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$hostTokens</var>&nbsp;&nbsp;</td>
+										<td><p>Host tokens</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$hostVariables</var>&nbsp;&nbsp;</td>
+										<td><p>An array of host variables</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$variables</var>&nbsp;&nbsp;</td>
+										<td><p>An array of variables (variables defined in the path and in the host patterns)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__serialize" id="___serialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__serialize(): array</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___serialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unserialize" id="___unserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unserialize(<span>array <var>$data</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStaticPrefix" id="_getStaticPrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStaticPrefix(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the static prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the static prefix.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStaticPrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRegex" id="_getRegex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRegex(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the regex.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the regex.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRegex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHostRegex" id="_getHostRegex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHostRegex(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the host regex.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the host regex.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHostRegex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTokens" id="_getTokens">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTokens(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the tokens.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the tokens.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTokens">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHostTokens" id="_getHostTokens">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHostTokens(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the host tokens.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the host tokens.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHostTokens">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVariables" id="_getVariables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getVariables(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the variables.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVariables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPathVariables" id="_getPathVariables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPathVariables(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the path variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the path variables.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPathVariables">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHostVariables" id="_getHostVariables">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHostVariables(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the host variables.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the host variables.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHostVariables">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,937 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Grammar |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Connection.html">
+							Connection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DatabaseTransactionRecord.html">
+							DatabaseTransactionRecord
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DatabaseTransactionsManager.html">
+							DatabaseTransactionsManager
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Grammar.html">
+							Grammar
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.ConnectionInterface.html">
+							ConnectionInterface
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.ConnectionResolverInterface.html">
+							ConnectionResolverInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.DetectsConcurrencyErrors.html">
+							DetectsConcurrencyErrors
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DetectsLostConnections.html">
+							DetectsLostConnections
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.LostConnectionException.html">
+							LostConnectionException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.MultipleColumnsSelectedException.html">
+							MultipleColumnsSelectedException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.MultipleRecordsFoundException.html">
+							MultipleRecordsFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.QueryException.html">
+							QueryException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.RecordNotFoundException.html">
+							RecordNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.RecordsNotFoundException.html">
+							RecordsNotFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Grammar.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="Illuminate.Database.Grammar.html">Grammar</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Grammar</span></b>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span>Illuminate\Database\Schema\Grammars\Grammar</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Query.Grammars.Grammar.html"><span>Illuminate\Database\Query\Grammars\Grammar</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a> <var>$connection</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new grammar instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new grammar instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapArray" id="_wrapArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapArray(<span>array <var>$values</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap an array of values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap an array of values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapTable" id="_wrapTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapTable(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$table</var></span>, <span>string|null <var>$prefix</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a table in keyword identifiers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a table in keyword identifiers.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Schema.Grammars.Grammar.html#_wrapTable">						<code>Illuminate\Database\Schema\Grammars\Grammar::wrapTable()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a value in keyword identifiers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a value in keyword identifiers.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Schema.Grammars.Grammar.html#_wrap">						<code>Illuminate\Database\Schema\Grammars\Grammar::wrap()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapAliasedValue" id="_wrapAliasedValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapAliasedValue(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a value that has an alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a value that has an alias.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapAliasedValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapAliasedTable" id="_wrapAliasedTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapAliasedTable(<span>string <var>$value</var></span>, <span>string|null <var>$prefix</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a table that has an alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a table that has an alias.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapAliasedTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapSegments" id="_wrapSegments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapSegments(<span>array <var>$segments</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given value segments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given value segments.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapSegments">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapValue" id="_wrapValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapValue(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a single string in keyword identifiers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a single string in keyword identifiers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapJsonSelector" id="_wrapJsonSelector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonSelector(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given JSON selector.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given JSON selector.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonSelector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isJsonSelector" id="_isJsonSelector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isJsonSelector(<span>string <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given string is a JSON selector.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given string is a JSON selector.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isJsonSelector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="columnize" id="_columnize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>columnize(<span>array <var>$columns</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert an array of column names into a delimited string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert an array of column names into a delimited string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_columnize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameterize" id="_parameterize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameterize(<span>array <var>$values</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Create query parameter place-holders for an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create query parameter place-holders for an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameterize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parameter" id="_parameter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parameter(<span>mixed <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the appropriate query parameter place-holder for a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the appropriate query parameter place-holder for a value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parameter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="quoteString" id="_quoteString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>quoteString(<span>string|array <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Quote the given string literal.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Quote the given string literal.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_quoteString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escape" id="_escape">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escape(<span>string|float|int|bool|null <var>$value</var></span>, <span>bool <var>$binary</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escapes a value for safe SQL embedding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escapes a value for safe SQL embedding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escape">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isExpression" id="_isExpression">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isExpression(<span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given value is a raw expression.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given value is a raw expression.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isExpression">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getValue" id="_getValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getValue(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string|int|float <var>$expression</var></span>): string|int|float</code>
+
+
+	<div class="expandable-collapsedView">
+		Transforms expressions to their scalar types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transforms expressions to their scalar types.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDateFormat" id="_getDateFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDateFormat(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the format for database stored dates.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the format for database stored dates.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDateFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTablePrefix" id="_getTablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">getTablePrefix</span>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the grammar's table prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the grammar's table prefix.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Use DB::getTablePrefix()</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTablePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTablePrefix" id="_setTablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">setTablePrefix</span>(<span>string <var>$prefix</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the grammar's table prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the grammar's table prefix.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Use DB::setTablePrefix()</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTablePrefix">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="connection" id="$connection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$connection</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$connection">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

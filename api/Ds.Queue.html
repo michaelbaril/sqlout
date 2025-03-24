@@ -1,0 +1,695 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Ds\Queue |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ds.html">Ds</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ds.Deque.html">
+							Deque
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Map.html">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Pair.html">
+							Pair
+						</a>
+					</li>
+					<li>
+						<a href="Ds.PriorityQueue.html">
+							PriorityQueue
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ds.Queue.html">
+							Queue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Set.html">
+							Set
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Stack.html">
+							Stack
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Vector.html">
+							Vector
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ds.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Hashable.html">
+							Hashable
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Sequence.html">
+							Sequence
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ds.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ds.Queue.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ds.html">Ds</a>\<a href="Ds.Queue.html">Queue</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A Queue is a “first in, first out” or “FIFO” collection that only allows
+access to the value at the front of the queue and iterates in that order,
+destructively.</p>
+<p>Uses a Ds\Vector internally.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>iterable <var>$values</var> = []</span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new instance, using either a traversable object or an array
+for the initial values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new instance, using either a traversable object or an array
+for the initial values.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>A traversable object or an
+array to use for the initial values.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allocate" id="_allocate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allocate(<span>int <var>$capacity</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensures that enough memory is allocated for a required capacity. This
+removes the need to reallocate the internal as…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensures that enough memory is allocated for a required capacity. This
+removes the need to reallocate the internal as values are added.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$capacity</var>&nbsp;&nbsp;</td>
+										<td><p>The number of values for which capacity should
+be allocated.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allocate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="capacity" id="_capacity">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>capacity(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the current capacity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the current capacity.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The current capacity.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_capacity">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clear" id="_clear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clear(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes all values from the queue.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes all values from the queue.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_clear">						<code>Ds\Collection::clear()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Count elements of an object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count elements of an object</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The custom count as an integer.</p>
+</p>
+<p>
+The return value is cast to an integer.
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(): <a href="Ds.Stack.html"><span title="Ds\Stack">Stack</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a shallow copy of the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a shallow copy of the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_copy">						<code>Ds\Collection::copy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Traversable.html"><span title="Traversable">Traversable</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the collection is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the collection is empty.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_isEmpty">						<code>Ds\Collection::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the collection to an array.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Casting to an array is not supported yet.&lt;/p&gt;
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the collection to an array.</p>
+<p><b>Note:</b> Casting to an array is not supported yet.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array containing all the values in the same order as
+the collection.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_toArray">						<code>Ds\Collection::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify data which should be serialized to JSON
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify data which should be serialized to JSON</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>data which can be serialized by <b>json_encode</b>,
+which is a value of any type other than a resource.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="peek" id="_peek">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>peek(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the value at the top of the queue, but does not remove it.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the value at the top of the queue, but does not remove it.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The value at the top of the queue.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnderflowException.html"><span>UnderflowException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_peek">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pop" id="_pop">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pop(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes and returns the value at the top of the queue.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes and returns the value at the top of the queue.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The removed value which was at the top of the queue.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnderflowException.html"><span>UnderflowException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pop">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="push" id="_push">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>push(<span>array ...<var>$values</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Pushes values onto the queue.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pushes values onto the queue.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td>...<var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>The values to push onto the queue.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_push">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

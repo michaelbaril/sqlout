@@ -1,0 +1,645 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface JsonSerializable |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Functions</h3>
+			<ul>
+					<li>
+						<a href="function-strip_punctuation.html">
+							strip_punctuation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-none.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="JsonSerializable.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="JsonSerializable.html">JsonSerializable</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">JsonSerializable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Http.Resources.Json.JsonResource.html"><span>Illuminate\Http\Resources\Json\JsonResource</span></a>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Support.Responsable.html"><span title="Illuminate\Contracts\Support\Responsable">Responsable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html"><span title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</span></a>, 
+			<a href="Illuminate.Http.Resources.DelegatesToResource.html"><span title="Illuminate\Http\Resources\DelegatesToResource">DelegatesToResource</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html"><span>Illuminate\Http\Resources\Json\ResourceCollection</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.CollectsResources.html"><span title="Illuminate\Http\Resources\CollectsResources">CollectsResources</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html"><span>Illuminate\Http\Resources\Json\AnonymousResourceCollection</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.Ulid.html"><span>Symfony\Component\Uid\Ulid</span></a>
+
+		implements
+			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.CursorPaginator.html"><span>Illuminate\Pagination\CursorPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.Paginator.html"><span>Illuminate\Pagination\Paginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ColumnDefinition.html"><span>Illuminate\Database\Schema\ColumnDefinition</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span>Illuminate\Database\Schema\ForeignIdColumnDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html"><span>Illuminate\Database\Schema\ForeignKeyDefinition</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.IndexDefinition.html"><span>Illuminate\Database\Schema\IndexDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.MessageBag.html"><span>Illuminate\Support\MessageBag</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Illuminate.Contracts.Support.MessageBag.html"><span title="Illuminate\Contracts\Support\MessageBag">MessageBag</span></a>, 
+			<a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Pair.html"><span>Ds\Pair</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+	</li>
+	<li>
+<a href="Carbon.CarbonPeriod.html"><span>Carbon\CarbonPeriod</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+		uses
+			<a href="Carbon.Traits.LocalFactory.html"><span title="Carbon\Traits\LocalFactory">LocalFactory</span></a>, 
+			<a href="Carbon.Traits.IntervalRounding.html"><span title="Carbon\Traits\IntervalRounding">IntervalRounding</span></a>, 
+			<a href="Carbon.Traits.Mixin.html"><span title="Carbon\Traits\Mixin">Mixin</span></a>, 
+			<a href="Carbon.Traits.Options.html"><span title="Carbon\Traits\Options">Options</span></a>, 
+			<a href="Carbon.Traits.ToStringFormat.html"><span title="Carbon\Traits\ToStringFormat">ToStringFormat</span></a>
+	</li>
+	<li>
+<a href="Carbon.Language.html"><span>Carbon\Language</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+	</li>
+	<li>
+<a href="Illuminate.Support.Stringable.html"><span>Illuminate\Support\Stringable</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Support.Enumerable.html"><span>Illuminate\Support\Enumerable</span></a>
+		extends
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.LazyCollection.html"><span>Illuminate\Support\LazyCollection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="League.Uri.Contracts.UriInterface.html"><span>League\Uri\Contracts\UriInterface</span></a>
+		extends
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+
+	</li>
+	<li>
+<a href="Ramsey.Uuid.UuidInterface.html"><span>Ramsey\Uuid\UuidInterface</span></a>
+		extends
+			<a href="Ramsey.Uuid.DeprecatedUuidInterface.html"><span title="Ramsey\Uuid\DeprecatedUuidInterface">DeprecatedUuidInterface</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ramsey.Uuid.Uuid.html"><span>Ramsey\Uuid\Uuid</span></a>
+
+		implements
+			<a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a>
+
+		uses
+			<a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html"><span class="deprecated" title="Ramsey\Uuid\DeprecatedUuidMethodsTrait">DeprecatedUuidMethodsTrait</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Ramsey.Uuid.Type.TypeInterface.html"><span>Ramsey\Uuid\Type\TypeInterface</span></a>
+		extends
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Serializable.html"><span title="Serializable">Serializable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ramsey.Uuid.Type.Hexadecimal.html"><span>Ramsey\Uuid\Type\Hexadecimal</span></a>
+
+		implements
+			<a href="Ramsey.Uuid.Type.TypeInterface.html"><span title="Ramsey\Uuid\Type\TypeInterface">TypeInterface</span></a>
+
+	</li>
+	<li>
+<a href="Ramsey.Uuid.Type.Time.html"><span>Ramsey\Uuid\Type\Time</span></a>
+
+		implements
+			<a href="Ramsey.Uuid.Type.TypeInterface.html"><span title="Ramsey\Uuid\Type\TypeInterface">TypeInterface</span></a>
+
+	</li>
+	<li>
+<a href="Ramsey.Uuid.Type.NumberInterface.html"><span>Ramsey\Uuid\Type\NumberInterface</span></a>
+		extends
+			<a href="Ramsey.Uuid.Type.TypeInterface.html"><span title="Ramsey\Uuid\Type\TypeInterface">TypeInterface</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ramsey.Uuid.Type.Integer.html"><span>Ramsey\Uuid\Type\Integer</span></a>
+
+		implements
+			<a href="Ramsey.Uuid.Type.NumberInterface.html"><span title="Ramsey\Uuid\Type\NumberInterface">NumberInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Ds.Collection.html"><span>Ds\Collection</span></a>
+		extends
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ds.Map.html"><span>Ds\Map</span></a>
+
+		implements
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Set.html"><span>Ds\Set</span></a>
+
+		implements
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Stack.html"><span>Ds\Stack</span></a>
+
+		implements
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Queue.html"><span>Ds\Queue</span></a>
+
+		implements
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+	</li>
+	<li>
+<a href="Ds.PriorityQueue.html"><span>Ds\PriorityQueue</span></a>
+
+		implements
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Sequence.html"><span>Ds\Sequence</span></a>
+		extends
+			<a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Ds.Vector.html"><span>Ds\Vector</span></a>
+
+		implements
+			<a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a>
+
+	</li>
+	<li>
+<a href="Ds.Deque.html"><span>Ds\Deque</span></a>
+
+		implements
+			<a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Carbon.CarbonInterface.html"><span>Carbon\CarbonInterface</span></a>
+		extends
+			<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>, 
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Carbon.Carbon.html"><span>Carbon\Carbon</span></a>
+
+		implements
+			<a href="Carbon.CarbonInterface.html"><span title="Carbon\CarbonInterface">CarbonInterface</span></a>
+
+		uses
+			<a href="Carbon.Traits.Date.html"><span title="Carbon\Traits\Date">Date</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.Carbon.html"><span>Illuminate\Support\Carbon</span></a>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Carbon.CarbonImmutable.html"><span>Carbon\CarbonImmutable</span></a>
+
+		implements
+			<a href="Carbon.CarbonInterface.html"><span title="Carbon\CarbonInterface">CarbonInterface</span></a>
+
+		uses
+			<a href="Carbon.Traits.Date.html"><span title="Carbon\Traits\Date">Date</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): mixed</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Model.html#_jsonSerialize">						<code>Illuminate\Database\Eloquent\Model::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Resources.Json.JsonResource.html#_jsonSerialize">						<code>Illuminate\Http\Resources\Json\JsonResource::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ramsey.Uuid.Uuid.html#_jsonSerialize">						<code>Ramsey\Uuid\Uuid::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ramsey.Uuid.Type.Hexadecimal.html#_jsonSerialize">						<code>Ramsey\Uuid\Type\Hexadecimal::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ramsey.Uuid.Type.Integer.html#_jsonSerialize">						<code>Ramsey\Uuid\Type\Integer::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_jsonSerialize">						<code>Symfony\Component\Uid\AbstractUid::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\LengthAwarePaginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Pagination.Paginator.html#_jsonSerialize">						<code>Illuminate\Pagination\Paginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ramsey.Uuid.Type.Time.html#_jsonSerialize">						<code>Ramsey\Uuid\Type\Time::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Pagination.CursorPaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\CursorPaginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_jsonSerialize">						<code>Illuminate\Support\Fluent::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_jsonSerialize">						<code>Illuminate\Support\MessageBag::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Vector.html#_jsonSerialize">						<code>Ds\Vector::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Deque.html#_jsonSerialize">						<code>Ds\Deque::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Map.html#_jsonSerialize">						<code>Ds\Map::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Pair.html#_jsonSerialize">						<code>Ds\Pair::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Set.html#_jsonSerialize">						<code>Ds\Set::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Stack.html#_jsonSerialize">						<code>Ds\Stack::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.Queue.html#_jsonSerialize">						<code>Ds\Queue::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Ds.PriorityQueue.html#_jsonSerialize">						<code>Ds\PriorityQueue::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Carbon.Language.html#_jsonSerialize">						<code>Carbon\Language::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Stringable.html#_jsonSerialize">						<code>Illuminate\Support\Stringable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

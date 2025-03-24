@@ -1,0 +1,403 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class League\Uri\UriString |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-League.html">League</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-League.Uri.html">Uri</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="League.Uri.UriString.html">
+							UriString
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-League.Uri.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="League.Uri.UriString.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-League.html">League</a>\<a href="namespace-League.Uri.html">Uri</a>\<a href="League.Uri.UriString.html">UriString</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+			<tr><th><code>final</code></th></tr>
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>A class to parse a URI string according to RFC3986.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+		<table class="table" id="aliases">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Type aliases</th>
+			</tr>
+
+	<tr data-order="AuthorityMap" id="~AuthorityMap">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				
+					AuthorityMap
+				
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{user: ?string, pass: ?string, host: ?string, port: ?int}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~AuthorityMap">#</a>
+		</td>
+	</tr>
+	<tr data-order="ComponentMap" id="~ComponentMap">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				
+					ComponentMap
+				
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{scheme: ?string, user: ?string, pass: ?string, host: ?string, port: ?int, path: string, query: ?string, fragment: ?string}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~ComponentMap">#</a>
+		</td>
+	</tr>
+	<tr data-order="InputComponentMap" id="~InputComponentMap">
+		<td class="table-cell table-shrink">
+			<code class="nowrap">
+				
+					InputComponentMap
+				
+			</code>
+		</td>
+
+		<td class="table-cell">
+			<code class="nowrap">array{scheme?: ?string, user?: ?string, pass?: ?string, host?: ?string, port?: ?int, path?: ?string, query?: ?string, fragment?: ?string}</code>
+		</td>
+
+		<td class="table-anchor">
+			<a href="#~InputComponentMap">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="build" id="_build">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>build(<span><a href="League.Uri.UriString.html#~InputComponentMap"><span title="array&#123;scheme?: ?string, user?: ?string, pass?: ?string, host?: ?string, port?: ?int, path?: ?string, query?: ?string, fragment?: ?string}">InputComponentMap</span></a> <var>$components</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a URI string representation from its parsed representation
+returned by League\UriString::parse() or PHP's…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a URI string representation from its parsed representation
+returned by League\UriString::parse() or PHP's parse_url.</p>
+<p>If you supply your own array, you are responsible for providing
+valid components without their URI delimiters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_build">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildUri" id="_buildUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildUri(<span>?string <var>$scheme</var></span>, <span>?string <var>$authority</var></span>, <span>string <var>$path</var></span>, <span>?string <var>$query</var></span>, <span>?string <var>$fragment</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a URI string representation based on RFC3986 algorithm.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a URI string representation based on RFC3986 algorithm.</p>
+<p>valid URI component MUST be provided without their URI delimiters
+but properly encoded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildAuthority" id="_buildAuthority">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildAuthority(<span><a href="League.Uri.UriString.html#~InputComponentMap"><span title="array&#123;scheme?: ?string, user?: ?string, pass?: ?string, host?: ?string, port?: ?int, path?: ?string, query?: ?string, fragment?: ?string}">InputComponentMap</span></a> <var>$components</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a URI authority representation from its parsed representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a URI authority representation from its parsed representation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildAuthority">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parse" id="_parse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parse(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string|int <var>$uri</var></span>): <a href="League.Uri.UriString.html#~ComponentMap"><span title="array&#123;scheme: ?string, user: ?string, pass: ?string, host: ?string, port: ?int, path: string, query: ?string, fragment: ?string}">ComponentMap</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Parse a URI string into its components.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse a URI string into its components.</p>
+<p>This method parses a URI and returns an associative array containing any
+of the various components of the URI that are present.</p>
+<code>
+$components = UriString::parse('http://foo@test.example.com:42?query#');
+var_export($components);
+//will display
+array(
+  'scheme' => 'http',           // the URI scheme component
+  'user' => 'foo',              // the URI user component
+  'pass' => null,               // the URI pass component
+  'host' => 'test.example.com', // the URI host component
+  'port' => 42,                 // the URI port component
+  'path' => '',                 // the URI path component
+  'query' => 'query',           // the URI query component
+  'fragment' => '',             // the URI fragment component
+);
+</code>
+<p>The returned array is similar to PHP's parse_url return value with the following
+differences:</p>
+<ul>
+<li>All components are always present in the returned array</li>
+<li>Empty and undefined component are treated differently. And empty component is
+  set to the empty string while an undefined component is set to the `null` value.</li>
+<li>The path component is never undefined</li>
+<li>The method parses the URI following the RFC3986 rules, but you are still
+  required to validate the returned components against its related scheme specific rules.</li>
+</ul>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="League.Uri.Exceptions.SyntaxError.html"><span>League\Uri\Exceptions\SyntaxError</span></a></code>&nbsp;</td>
+										<td><p>if the URI contains invalid characters</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="League.Uri.Exceptions.SyntaxError.html"><span>League\Uri\Exceptions\SyntaxError</span></a></code>&nbsp;</td>
+										<td><p>if the URI contains an invalid scheme</p>
+</td>
+									</tr>
+									<tr>
+										<td><code><a href="League.Uri.Exceptions.SyntaxError.html"><span>League\Uri\Exceptions\SyntaxError</span></a></code>&nbsp;</td>
+										<td><p>if the URI contains an invalid path</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseAuthority" id="_parseAuthority">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseAuthority(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string|null <var>$authority</var></span>): <a href="League.Uri.UriString.html#~AuthorityMap"><span title="array&#123;user: ?string, pass: ?string, host: ?string, port: ?int}">AuthorityMap</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Parses the URI authority part.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parses the URI authority part.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="League.Uri.Exceptions.SyntaxError.html"><span>League\Uri\Exceptions\SyntaxError</span></a></code>&nbsp;</td>
+										<td><p>If the port component is invalid</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseAuthority">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Pagination\LengthAwarePaginator |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Pagination.html">Pagination</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Pagination.CursorPaginator.html">
+							CursorPaginator
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html">
+							LengthAwarePaginator
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Pagination.Paginator.html">
+							Paginator
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Pagination.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Pagination.html">Pagination</a>\<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html">LengthAwarePaginator</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="covariant">out</span> <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;TKey, TValue&gt;</code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Contracts\Pagination\LengthAwarePaginator</span></b>
+		extends
+			<a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;TKey, TValue&gt;
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<b><span class="active" title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></b>&lt;TKey, TValue&gt;
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getUrlRange" id="_getUrlRange">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUrlRange(<span>int <var>$start</var></span>, <span>int <var>$end</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a range of pagination URLs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a range of pagination URLs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUrlRange">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="total" id="_total">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>total(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine the total number of items in the data store.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine the total number of items in the data store.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html#_total">						<code>Illuminate\Pagination\LengthAwarePaginator::total()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_total">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lastPage" id="_lastPage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lastPage(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the page number of the last available page.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the page number of the last available page.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html#_lastPage">						<code>Illuminate\Pagination\LengthAwarePaginator::lastPage()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lastPage">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Contracts.Pagination.Paginator.html"><span>Illuminate\Contracts\Pagination\Paginator</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Contracts.Pagination.Paginator.html#_url">url()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_appends">appends()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_fragment">fragment()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_withQueryString">withQueryString()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_nextPageUrl">nextPageUrl()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_previousPageUrl">previousPageUrl()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_items">items()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_firstItem">firstItem()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_lastItem">lastItem()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_perPage">perPage()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_currentPage">currentPage()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_hasPages">hasPages()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_hasMorePages">hasMorePages()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_path">path()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_isEmpty">isEmpty()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Contracts.Pagination.Paginator.html#_render">render()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

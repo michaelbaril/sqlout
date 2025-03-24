@@ -1,0 +1,552 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Routing\Registrar |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Routing.html">Routing</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Routing.BindingRegistrar.html">
+							BindingRegistrar
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Contracts.Routing.Registrar.html">
+							Registrar
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Routing.UrlRoutable.html">
+							UrlRoutable
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Routing.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Routing.Registrar.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Routing.html">Routing</a>\<a href="Illuminate.Contracts.Routing.Registrar.html">Registrar</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Contracts\Routing\Registrar</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Routing.Router.html"><span>Illuminate\Routing\Router</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Routing.BindingRegistrar.html"><span title="Illuminate\Contracts\Routing\BindingRegistrar">BindingRegistrar</span></a>, 
+			<b><span class="active" title="Illuminate\Contracts\Routing\Registrar">Registrar</span></b>
+
+		uses
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new GET route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new GET route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_get">						<code>Illuminate\Routing\Router::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="post" id="_post">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>post(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new POST route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new POST route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_post">						<code>Illuminate\Routing\Router::post()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_post">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="put" id="_put">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>put(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new PUT route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new PUT route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_put">						<code>Illuminate\Routing\Router::put()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_put">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new DELETE route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new DELETE route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_delete">						<code>Illuminate\Routing\Router::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="patch" id="_patch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>patch(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new PATCH route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new PATCH route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_patch">						<code>Illuminate\Routing\Router::patch()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_patch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="_options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>options(<span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new OPTIONS route with the router.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new OPTIONS route with the router.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_options">						<code>Illuminate\Routing\Router::options()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_options">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(<span>array|string <var>$methods</var></span>, <span>string <var>$uri</var></span>, <span>array|string|callable <var>$action</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new route with the given verbs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new route with the given verbs.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_match">						<code>Illuminate\Routing\Router::match()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resource" id="_resource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resource(<span>string <var>$name</var></span>, <span>string <var>$controller</var></span>, <span>array <var>$options</var> = []</span>): <a href="Illuminate.Routing.PendingResourceRegistration.html"><span title="Illuminate\Routing\PendingResourceRegistration">PendingResourceRegistration</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Route a resource to a controller.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Route a resource to a controller.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_resource">						<code>Illuminate\Routing\Router::resource()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="group" id="_group">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>group(<span>array <var>$attributes</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$routes</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a route group with shared attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a route group with shared attributes.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_group">						<code>Illuminate\Routing\Router::group()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_group">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substituteBindings" id="_substituteBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substituteBindings(<span><a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a> <var>$route</var></span>): <a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Substitute the route bindings onto the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Substitute the route bindings onto the route.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_substituteBindings">						<code>Illuminate\Routing\Router::substituteBindings()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substituteBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substituteImplicitBindings" id="_substituteImplicitBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substituteImplicitBindings(<span><a href="Illuminate.Routing.Route.html"><span title="Illuminate\Routing\Route">Route</span></a> <var>$route</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Substitute the implicit Eloquent model bindings for the route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Substitute the implicit Eloquent model bindings for the route.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Routing.Router.html#_substituteImplicitBindings">						<code>Illuminate\Routing\Router::substituteImplicitBindings()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substituteImplicitBindings">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

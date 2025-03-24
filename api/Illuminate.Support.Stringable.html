@@ -1,0 +1,4335 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\Stringable |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.Stringable.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.Stringable.html">Stringable</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$value</var> = <span class="php-str">''</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new instance of the class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new instance of the class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="_after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>after(<span>string <var>$search</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the remainder of a string after the first occurrence of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the remainder of a string after the first occurrence of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterLast" id="_afterLast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>afterLast(<span>string <var>$search</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the remainder of a string after the last occurrence of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the remainder of a string after the last occurrence of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_afterLast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="append" id="_append">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>append(<span>array|string ...<var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Append the given values to the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Append the given values to the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_append">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newLine" id="_newLine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newLine(<span>int <var>$count</var> = <span class="php-num">1</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Append a new line to the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Append a new line to the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newLine">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ascii" id="_ascii">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ascii(<span>string <var>$language</var> = <span class="php-str">'en'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Transliterate a UTF-8 value to ASCII.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transliterate a UTF-8 value to ASCII.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ascii">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="basename" id="_basename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>basename(<span>string <var>$suffix</var> = <span class="php-str">''</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the trailing name component of the path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the trailing name component of the path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_basename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="charAt" id="_charAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>charAt(<span>int <var>$index</var></span>): string|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the character at the specified index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the character at the specified index.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_charAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chopStart" id="_chopStart">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chopStart(<span>string|array <var>$needle</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given string if it exists at the start of the current string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given string if it exists at the start of the current string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chopStart">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chopEnd" id="_chopEnd">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chopEnd(<span>string|array <var>$needle</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given string if it exists at the end of the current string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given string if it exists at the end of the current string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chopEnd">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="classBasename" id="_classBasename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>classBasename(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the basename of the class path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the basename of the class path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_classBasename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="before" id="_before">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>before(<span>string <var>$search</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the portion of a string before the first occurrence of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the portion of a string before the first occurrence of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_before">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeLast" id="_beforeLast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>beforeLast(<span>string <var>$search</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the portion of a string before the last occurrence of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the portion of a string before the last occurrence of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_beforeLast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="between" id="_between">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>between(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the portion of a string between two given values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the portion of a string between two given values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_between">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="betweenFirst" id="_betweenFirst">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>betweenFirst(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the smallest possible portion of a string between two given values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the smallest possible portion of a string between two given values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_betweenFirst">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="camel" id="_camel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>camel(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a value to camel case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a value to camel case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_camel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contains" id="_contains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>contains(<span>string|iterable&lt;string&gt; <var>$needles</var></span>, <span>bool <var>$ignoreCase</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string contains a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string contains a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_contains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="containsAll" id="_containsAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>containsAll(<span>iterable&lt;string&gt; <var>$needles</var></span>, <span>bool <var>$ignoreCase</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string contains all array values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string contains all array values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_containsAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertCase" id="_convertCase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>convertCase(<span>int <var>$mode</var> = MB_CASE_FOLD</span>, <span>string|null <var>$encoding</var> = <span class="php-str">'UTF-8'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the case of a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the case of a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_convertCase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deduplicate" id="_deduplicate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deduplicate(<span>string <var>$character</var> = <span class="php-str">' '</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace consecutive instances of a given character with a single character.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace consecutive instances of a given character with a single character.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deduplicate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dirname" id="_dirname">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dirname(<span>int <var>$levels</var> = <span class="php-num">1</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parent directory's path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parent directory's path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dirname">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="endsWith" id="_endsWith">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>endsWith(<span>string|iterable&lt;string&gt; <var>$needles</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string ends with a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string ends with a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_endsWith">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="exactly" id="_exactly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>exactly(<span><b><span class="active" title="Illuminate\Support\Stringable">Stringable</span></b>|string <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the string is an exact match with the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the string is an exact match with the given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_exactly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="excerpt" id="_excerpt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>excerpt(<span>string <var>$phrase</var> = <span class="php-str">''</span></span>, <span>array <var>$options</var> = []</span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Extracts an excerpt from text that matches the first instance of a phrase.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extracts an excerpt from text that matches the first instance of a phrase.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_excerpt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="explode" id="_explode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>explode(<span>string <var>$delimiter</var></span>, <span>int <var>$limit</var> = PHP_INT_MAX</span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Explode the string into a collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Explode the string into a collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_explode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="split" id="_split">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>split(<span>string|int <var>$pattern</var></span>, <span>int <var>$limit</var> = -<span class="php-num">1</span></span>, <span>int <var>$flags</var> = <span class="php-num">0</span></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Split a string using a regular expression or by length.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Split a string using a regular expression or by length.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_split">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="finish" id="_finish">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>finish(<span>string <var>$cap</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Cap a string with a single instance of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cap a string with a single instance of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_finish">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="is" id="_is">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>is(<span>string|iterable&lt;string&gt; <var>$pattern</var></span>, <span>bool <var>$ignoreCase</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string matches a given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string matches a given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_is">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAscii" id="_isAscii">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isAscii(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string is 7 bit ASCII.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string is 7 bit ASCII.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAscii">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isJson" id="_isJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isJson(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string is valid JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string is valid JSON.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUrl" id="_isUrl">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isUrl(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given value is a valid URL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given value is a valid URL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUrl">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUuid" id="_isUuid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isUuid(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string is a valid UUID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string is a valid UUID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUuid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUlid" id="_isUlid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isUlid(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string is a valid ULID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string is a valid ULID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUlid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given string is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given string is empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotEmpty" id="_isNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given string is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given string is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="kebab" id="_kebab">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>kebab(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a string to kebab case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a string to kebab case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_kebab">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="length" id="_length">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>length(<span>string|null <var>$encoding</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Return the length of the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return the length of the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_length">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="limit" id="_limit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>limit(<span>int <var>$limit</var> = <span class="php-num">100</span></span>, <span>string <var>$end</var> = <span class="php-str">'...'</span></span>, <span>bool <var>$preserveWords</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Limit the number of characters in a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Limit the number of characters in a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_limit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lower" id="_lower">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lower(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given string to lower-case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given string to lower-case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lower">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="markdown" id="_markdown">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>markdown(<span>array <var>$options</var> = []</span>, <span>array <var>$extensions</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert GitHub flavored Markdown into HTML.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert GitHub flavored Markdown into HTML.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_markdown">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="inlineMarkdown" id="_inlineMarkdown">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>inlineMarkdown(<span>array <var>$options</var> = []</span>, <span>array <var>$extensions</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert inline Markdown into HTML.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert inline Markdown into HTML.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_inlineMarkdown">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mask" id="_mask">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mask(<span>string <var>$character</var></span>, <span>int <var>$index</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>, <span>string <var>$encoding</var> = <span class="php-str">'UTF-8'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Masks a portion of a string with a repeated character.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Masks a portion of a string with a repeated character.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mask">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(<span>string <var>$pattern</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the string matching the given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the string matching the given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isMatch" id="_isMatch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isMatch(<span>string|iterable&lt;string&gt; <var>$pattern</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string matches a given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string matches a given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isMatch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="matchAll" id="_matchAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>matchAll(<span>string <var>$pattern</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the string matching the given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the string matching the given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_matchAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="test" id="_test">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>test(<span>string <var>$pattern</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the string matches the given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the string matches the given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_test">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="numbers" id="_numbers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>numbers(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all non-numeric characters from a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all non-numeric characters from a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_numbers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="padBoth" id="_padBoth">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>padBoth(<span>int <var>$length</var></span>, <span>string <var>$pad</var> = <span class="php-str">' '</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pad both sides of the string with another.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pad both sides of the string with another.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_padBoth">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="padLeft" id="_padLeft">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>padLeft(<span>int <var>$length</var></span>, <span>string <var>$pad</var> = <span class="php-str">' '</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pad the left side of the string with another.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pad the left side of the string with another.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_padLeft">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="padRight" id="_padRight">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>padRight(<span>int <var>$length</var></span>, <span>string <var>$pad</var> = <span class="php-str">' '</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pad the right side of the string with another.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pad the right side of the string with another.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_padRight">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseCallback" id="_parseCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseCallback(<span>string|null <var>$default</var> = <span class="php-kw">null</span></span>): array&lt;int, string|null&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse a Class@method style callback into class and method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse a Class@method style callback into class and method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pipe" id="_pipe">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pipe(<span>callable <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Call the given callback and return a new string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call the given callback and return a new string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pipe">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="plural" id="_plural">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>plural(<span>int|array|<a href="Countable.html"><span title="Countable">Countable</span></a> <var>$count</var> = <span class="php-num">2</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the plural form of an English word.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the plural form of an English word.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_plural">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pluralStudly" id="_pluralStudly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pluralStudly(<span>int|array|<a href="Countable.html"><span title="Countable">Countable</span></a> <var>$count</var> = <span class="php-num">2</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pluralize the last word of an English, studly caps case string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pluralize the last word of an English, studly caps case string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pluralStudly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pluralPascal" id="_pluralPascal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pluralPascal(<span>int|array|<a href="Countable.html"><span title="Countable">Countable</span></a> <var>$count</var> = <span class="php-num">2</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pluralize the last word of an English, Pascal caps case string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pluralize the last word of an English, Pascal caps case string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pluralPascal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="position" id="_position">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>position(<span>string <var>$needle</var></span>, <span>int <var>$offset</var> = <span class="php-num">0</span></span>, <span>string|null <var>$encoding</var> = <span class="php-kw">null</span></span>): int|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Find the multi-byte safe position of the first occurrence of the given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find the multi-byte safe position of the first occurrence of the given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_position">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepend" id="_prepend">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepend(<span>string ...<var>$values</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepend the given values to the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepend the given values to the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepend">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remove(<span>string|iterable&lt;string&gt; <var>$search</var></span>, <span>bool <var>$caseSensitive</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove any occurrence of the given string in the subject.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove any occurrence of the given string in the subject.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reverse" id="_reverse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reverse(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Reverse the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reverse the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reverse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="repeat" id="_repeat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>repeat(<span>int <var>$times</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Repeat the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Repeat the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_repeat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replace" id="_replace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replace(<span>string|iterable&lt;string&gt; <var>$search</var></span>, <span>string|iterable&lt;string&gt; <var>$replace</var></span>, <span>bool <var>$caseSensitive</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the given value in the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the given value in the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceArray" id="_replaceArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceArray(<span>string <var>$search</var></span>, <span>iterable&lt;string&gt; <var>$replace</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace a given value in the string sequentially with an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace a given value in the string sequentially with an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceFirst" id="_replaceFirst">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceFirst(<span>string <var>$search</var></span>, <span>string <var>$replace</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the first occurrence of a given value in the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the first occurrence of a given value in the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceFirst">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceStart" id="_replaceStart">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceStart(<span>string <var>$search</var></span>, <span>string <var>$replace</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the first occurrence of the given value if it appears at the start of the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the first occurrence of the given value if it appears at the start of the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceStart">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceLast" id="_replaceLast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceLast(<span>string <var>$search</var></span>, <span>string <var>$replace</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the last occurrence of a given value in the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the last occurrence of a given value in the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceLast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceEnd" id="_replaceEnd">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceEnd(<span>string <var>$search</var></span>, <span>string <var>$replace</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the last occurrence of a given value if it appears at the end of the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the last occurrence of a given value if it appears at the end of the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceEnd">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceMatches" id="_replaceMatches">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceMatches(<span>array|string <var>$pattern</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string[]|string <var>$replace</var></span>, <span>int <var>$limit</var> = -<span class="php-num">1</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the patterns matching the given regular expression.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the patterns matching the given regular expression.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceMatches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scan" id="_scan">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scan(<span>string <var>$format</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Parse input from a string to a collection, according to a format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse input from a string to a collection, according to a format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scan">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="squish" id="_squish">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>squish(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all "extra" blank space from the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all &quot;extra&quot; blank space from the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_squish">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="start" id="_start">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>start(<span>string <var>$prefix</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Begin a string with a single instance of a given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin a string with a single instance of a given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_start">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="stripTags" id="_stripTags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>stripTags(<span>string[]|string|null <var>$allowedTags</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Strip HTML and PHP tags from the given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Strip HTML and PHP tags from the given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_stripTags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="upper" id="_upper">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>upper(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given string to upper-case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given string to upper-case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_upper">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="title" id="_title">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>title(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given string to proper case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given string to proper case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_title">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="headline" id="_headline">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>headline(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given string to proper case for each word.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given string to proper case for each word.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_headline">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="apa" id="_apa">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>apa(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the given string to APA-style title case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the given string to APA-style title case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_apa">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transliterate" id="_transliterate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>transliterate(<span>string|null <var>$unknown</var> = <span class="php-str">'?'</span></span>, <span>bool|null <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Transliterate a string to its closest ASCII representation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transliterate a string to its closest ASCII representation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_transliterate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="singular" id="_singular">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>singular(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the singular form of an English word.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the singular form of an English word.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_singular">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="slug" id="_slug">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>slug(<span>string <var>$separator</var> = <span class="php-str">'-'</span></span>, <span>string|null <var>$language</var> = <span class="php-str">'en'</span></span>, <span>array&lt;string, string&gt; <var>$dictionary</var> = [<span class="php-str">'@'</span> =&gt; <span class="php-str">'at'</span>]</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Generate a URL friendly "slug" from a given string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generate a URL friendly &quot;slug&quot; from a given string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_slug">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="snake" id="_snake">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>snake(<span>string <var>$delimiter</var> = <span class="php-str">'_'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a string to snake case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a string to snake case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_snake">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="startsWith" id="_startsWith">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>startsWith(<span>string|iterable&lt;string&gt; <var>$needles</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string starts with a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string starts with a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_startsWith">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="studly" id="_studly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>studly(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a value to studly caps case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a value to studly caps case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_studly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pascal" id="_pascal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pascal(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the string to Pascal case.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the string to Pascal case.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pascal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substr" id="_substr">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substr(<span>int <var>$start</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>, <span>string <var>$encoding</var> = <span class="php-str">'UTF-8'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the portion of the string specified by the start and length parameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the portion of the string specified by the start and length parameters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substr">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substrCount" id="_substrCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substrCount(<span>string <var>$needle</var></span>, <span>int <var>$offset</var> = <span class="php-num">0</span></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the number of substring occurrences.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the number of substring occurrences.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substrCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substrReplace" id="_substrReplace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substrReplace(<span>string|string[] <var>$replace</var></span>, <span>int|int[] <var>$offset</var> = <span class="php-num">0</span></span>, <span>int|int[]|null <var>$length</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace text within a portion of a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace text within a portion of a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substrReplace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="swap" id="_swap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>swap(<span>array <var>$map</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Swap multiple keywords in a string with other keywords.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Swap multiple keywords in a string with other keywords.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_swap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="take" id="_take">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>take(<span>int <var>$limit</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Take the first or last &#123;$limit} characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take the first or last {$limit} characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_take">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="trim" id="_trim">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>trim(<span>string <var>$characters</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Trim the string of the given characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Trim the string of the given characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_trim">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ltrim" id="_ltrim">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ltrim(<span>string <var>$characters</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Left trim the string of the given characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Left trim the string of the given characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ltrim">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rtrim" id="_rtrim">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rtrim(<span>string <var>$characters</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Right trim the string of the given characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Right trim the string of the given characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rtrim">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lcfirst" id="_lcfirst">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lcfirst(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Make a string's first character lowercase.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a string's first character lowercase.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lcfirst">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ucfirst" id="_ucfirst">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ucfirst(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Make a string's first character uppercase.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a string's first character uppercase.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ucfirst">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ucsplit" id="_ucsplit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ucsplit(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Split a string by uppercase characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Split a string by uppercase characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ucsplit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenContains" id="_whenContains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenContains(<span>string|iterable&lt;string&gt; <var>$needles</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string contains a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string contains a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenContains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenContainsAll" id="_whenContainsAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenContainsAll(<span>iterable&lt;string&gt; <var>$needles</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string contains all array values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string contains all array values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenContainsAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenEmpty" id="_whenEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenEmpty(<span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenNotEmpty" id="_whenNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenNotEmpty(<span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is not empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is not empty.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenNotEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenEndsWith" id="_whenEndsWith">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenEndsWith(<span>string|iterable&lt;string&gt; <var>$needles</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string ends with a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string ends with a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenEndsWith">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenExactly" id="_whenExactly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenExactly(<span>string <var>$value</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is an exact match with the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is an exact match with the given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenExactly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenNotExactly" id="_whenNotExactly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenNotExactly(<span>string <var>$value</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is not an exact match with the given value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is not an exact match with the given value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenNotExactly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenIs" id="_whenIs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenIs(<span>string|iterable&lt;string&gt; <var>$pattern</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string matches a given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string matches a given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenIs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenIsAscii" id="_whenIsAscii">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenIsAscii(<span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is 7 bit ASCII.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is 7 bit ASCII.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenIsAscii">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenIsUuid" id="_whenIsUuid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenIsUuid(<span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is a valid UUID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is a valid UUID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenIsUuid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenIsUlid" id="_whenIsUlid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenIsUlid(<span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string is a valid ULID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string is a valid ULID.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenIsUlid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenStartsWith" id="_whenStartsWith">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenStartsWith(<span>string|iterable&lt;string&gt; <var>$needles</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string starts with a given substring.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string starts with a given substring.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenStartsWith">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenTest" id="_whenTest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenTest(<span>string <var>$pattern</var></span>, <span>callable <var>$callback</var></span>, <span>callable|null <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if the string matches the given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if the string matches the given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenTest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="words" id="_words">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>words(<span>int <var>$words</var> = <span class="php-num">100</span></span>, <span>string <var>$end</var> = <span class="php-str">'...'</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Limit the number of words in a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Limit the number of words in a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_words">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wordCount" id="_wordCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wordCount(<span>string|null <var>$characters</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of words a string contains.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of words a string contains.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wordCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wordWrap" id="_wordWrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wordWrap(<span>int <var>$characters</var> = <span class="php-num">75</span></span>, <span>string <var>$break</var> = <span class="php-str">"\n"</span></span>, <span>bool <var>$cutLongWords</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a string to a given number of characters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a string to a given number of characters.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wordWrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap(<span>string <var>$before</var></span>, <span>string|null <var>$after</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the string with the given strings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the string with the given strings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unwrap" id="_unwrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unwrap(<span>string <var>$before</var></span>, <span>string|null <var>$after</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Unwrap the string with the given strings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unwrap the string with the given strings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unwrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toHtmlString" id="_toHtmlString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toHtmlString(): <a href="Illuminate.Support.HtmlString.html"><span title="Illuminate\Support\HtmlString">HtmlString</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the string into a `HtmlString` instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the string into a <code>HtmlString</code> instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toHtmlString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBase64" id="_toBase64">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBase64(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the string to Base64 encoding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the string to Base64 encoding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBase64">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromBase64" id="_fromBase64">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromBase64(<span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Decode the Base64 encoded string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decode the Base64 encoded string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromBase64">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dump(<span>mixed ...<var>$args</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="value" id="_value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>value(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_value">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toString" id="_toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toInteger" id="_toInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toInteger(<span>int <var>$base</var> = <span class="php-num">10</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value as an integer.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value as an integer.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toFloat" id="_toFloat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toFloat(): float</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value as a float.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value as a float.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toFloat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBoolean" id="_toBoolean">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBoolean(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value as a boolean.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value as a boolean.</p>
+<p>Returns true when value is &quot;1&quot;, &quot;true&quot;, &quot;on&quot;, and &quot;yes&quot;. Otherwise, returns false.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBoolean">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toDate" id="_toDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toDate(<span>string|null <var>$format</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$tz</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Carbon.html"><span title="Illuminate\Support\Carbon">Carbon</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying string value as a Carbon instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying string value as a Carbon instance.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Carbon.Exceptions.InvalidFormatException.html"><span>Carbon\Exceptions\InvalidFormatException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object to a string when JSON encoded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object to a string when JSON encoded.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>mixed <var>$offset</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given offset exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given offset exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>mixed <var>$offset</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>mixed <var>$offset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Proxy dynamic properties onto methods.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Proxy dynamic properties onto methods.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the raw string value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the raw string value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Dumpable.html"><span>Illuminate\Support\Traits\Dumpable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Dumpable.html#_dd">dd()</a>, </code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="value" id="$value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$value</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$value">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,559 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Support\Traits\ForwardsCalls |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.Traits.html">Traits</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Traits.Conditionable.html">
+							Conditionable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Dumpable.html">
+							Dumpable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.EnumeratesValues.html">
+							EnumeratesValues
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.Traits.ForwardsCalls.html">
+							ForwardsCalls
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.InteractsWithData.html">
+							InteractsWithData
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Macroable.html">
+							Macroable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Traits.Tappable.html">
+							Tappable
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.Traits.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.Traits.ForwardsCalls.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="namespace-Illuminate.Support.Traits.html">Traits</a>\<a href="Illuminate.Support.Traits.ForwardsCalls.html">ForwardsCalls</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Support\Traits\ForwardsCalls</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html"><span>Illuminate\Database\Eloquent\Relations\BelongsTo</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span>Illuminate\Database\Eloquent\Relations\MorphTo</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations">SupportsInverseRelations</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html"><span>Illuminate\Database\Eloquent\Relations\HasOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphOneOrMany</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html"><span>Illuminate\Database\Eloquent\Relations\MorphOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html"><span>Illuminate\Database\Eloquent\Relations\BelongsToMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable">InteractsWithPivotTable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphToMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasManyThrough</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneThrough</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Builder.html"><span>Illuminate\Database\Eloquent\Builder</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Database.Concerns.BuildsQueries.html"><span title="Illuminate\Database\Concerns\BuildsQueries">BuildsQueries</span></a>, 
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\QueriesRelationships">QueriesRelationships</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Query.Builder.html"><span>Illuminate\Database\Query\Builder</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Query.Builder.html"><span title="Illuminate\Contracts\Database\Query\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html"><span title="Illuminate\Database\Concerns\BuildsWhereDateClauses">BuildsWhereDateClauses</span></a>, 
+			<a href="Illuminate.Database.Concerns.BuildsQueries.html"><span title="Illuminate\Database\Concerns\BuildsQueries">BuildsQueries</span></a>, 
+			<a href="Illuminate.Database.Concerns.ExplainsQueries.html"><span title="Illuminate\Database\Concerns\ExplainsQueries">ExplainsQueries</span></a>, 
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Query.JoinClause.html"><span>Illuminate\Database\Query\JoinClause</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Query.JoinLateralClause.html"><span>Illuminate\Database\Query\JoinLateralClause</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Http.RedirectResponse.html"><span>Illuminate\Http\RedirectResponse</span></a>
+
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Pagination.AbstractPaginator.html"><span>Illuminate\Pagination\AbstractPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	<li>
+<a href="Illuminate.Pagination.Paginator.html"><span>Illuminate\Pagination\Paginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Pagination.AbstractCursorPaginator.html"><span>Illuminate\Pagination\AbstractCursorPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></b>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Pagination.CursorPaginator.html"><span>Illuminate\Pagination\CursorPaginator</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a>&lt;TKey, TValue&gt;
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="forwardCallTo" id="_forwardCallTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forwardCallTo(<span>mixed <var>$object</var></span>, <span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Forward a method call to the given object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Forward a method call to the given object.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="BadMethodCallException.html"><span>BadMethodCallException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forwardCallTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forwardDecoratedCallTo" id="_forwardDecoratedCallTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forwardDecoratedCallTo(<span>mixed <var>$object</var></span>, <span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Forward a method call to the given object, returning $this if the forwarded call returned itself.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Forward a method call to the given object, returning $this if the forwarded call returned itself.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="BadMethodCallException.html"><span>BadMethodCallException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forwardDecoratedCallTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="throwBadMethodCallException" id="_throwBadMethodCallException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>throwBadMethodCallException(<span>string <var>$method</var></span>): never</code>
+
+
+	<div class="expandable-collapsedView">
+		Throw a bad method call exception for the given method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Throw a bad method call exception for the given method.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="BadMethodCallException.html"><span>BadMethodCallException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_throwBadMethodCallException">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

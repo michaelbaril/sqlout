@@ -1,0 +1,4020 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Connection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Connection.html">
+							Connection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DatabaseTransactionRecord.html">
+							DatabaseTransactionRecord
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DatabaseTransactionsManager.html">
+							DatabaseTransactionsManager
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Grammar.html">
+							Grammar
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.ConnectionInterface.html">
+							ConnectionInterface
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.ConnectionResolverInterface.html">
+							ConnectionResolverInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.DetectsConcurrencyErrors.html">
+							DetectsConcurrencyErrors
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.DetectsLostConnections.html">
+							DetectsLostConnections
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.LostConnectionException.html">
+							LostConnectionException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.MultipleColumnsSelectedException.html">
+							MultipleColumnsSelectedException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.MultipleRecordsFoundException.html">
+							MultipleRecordsFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.QueryException.html">
+							QueryException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.RecordNotFoundException.html">
+							RecordNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.RecordsNotFoundException.html">
+							RecordsNotFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Connection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="Illuminate.Database.Connection.html">Connection</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Database.ConnectionInterface.html"><span title="Illuminate\Database\ConnectionInterface">ConnectionInterface</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.DetectsConcurrencyErrors.html"><span title="Illuminate\Database\DetectsConcurrencyErrors">DetectsConcurrencyErrors</span></a>, <a href="Illuminate.Database.DetectsLostConnections.html"><span title="Illuminate\Database\DetectsLostConnections">DetectsLostConnections</span></a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html"><span title="Illuminate\Database\Concerns\ManagesTransactions">ManagesTransactions</span></a>, <a href="Illuminate.Support.InteractsWithTime.html"><span title="Illuminate\Support\InteractsWithTime">InteractsWithTime</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a> <var>$pdo</var></span>, <span>string <var>$database</var> = <span class="php-str">''</span></span>, <span>string <var>$tablePrefix</var> = <span class="php-str">''</span></span>, <span>array <var>$config</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new database connection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new database connection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="useDefaultQueryGrammar" id="_useDefaultQueryGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>useDefaultQueryGrammar(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the query grammar to the default implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the query grammar to the default implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_useDefaultQueryGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultQueryGrammar" id="_getDefaultQueryGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultQueryGrammar(): <a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default query grammar instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default query grammar instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultQueryGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="useDefaultSchemaGrammar" id="_useDefaultSchemaGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>useDefaultSchemaGrammar(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the schema grammar to the default implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the schema grammar to the default implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_useDefaultSchemaGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultSchemaGrammar" id="_getDefaultSchemaGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultSchemaGrammar(): <a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default schema grammar instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default schema grammar instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultSchemaGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="useDefaultPostProcessor" id="_useDefaultPostProcessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>useDefaultPostProcessor(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the query post processor to the default implementation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the query post processor to the default implementation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_useDefaultPostProcessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultPostProcessor" id="_getDefaultPostProcessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultPostProcessor(): <a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default post processor instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default post processor instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultPostProcessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSchemaBuilder" id="_getSchemaBuilder">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSchemaBuilder(): <a href="Illuminate.Database.Schema.Builder.html"><span title="Illuminate\Database\Schema\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a schema builder instance for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a schema builder instance for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSchemaBuilder">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="table" id="_table">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>table(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|<a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a>|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$table</var></span>, <span>string|null <var>$as</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Begin a fluent query against a database table.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Begin a fluent query against a database table.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_table">						<code>Illuminate\Database\ConnectionInterface::table()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_table">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="_query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>query(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query builder instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query builder instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="selectOne" id="_selectOne">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>selectOne(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>, <span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement and return a single result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement and return a single result.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_selectOne">						<code>Illuminate\Database\ConnectionInterface::selectOne()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_selectOne">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scalar" id="_scalar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scalar(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>, <span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement and return the first column of the first row.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement and return the first column of the first row.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.MultipleColumnsSelectedException.html"><span>Illuminate\Database\MultipleColumnsSelectedException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_scalar">						<code>Illuminate\Database\ConnectionInterface::scalar()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scalar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="selectFromWriteConnection" id="_selectFromWriteConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>selectFromWriteConnection(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement against the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_selectFromWriteConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="select" id="_select">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>select(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>, <span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement against the database.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_select">						<code>Illuminate\Database\ConnectionInterface::select()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_select">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="selectResultSets" id="_selectResultSets">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>selectResultSets(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>, <span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement against the database and returns all of the result sets.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement against the database and returns all of the result sets.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_selectResultSets">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="_cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursor(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>, <span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): <a href="Generator.html"><span title="Generator">Generator</span></a>&lt;int, <a href="stdClass.html"><span title="stdClass">stdClass</span></a>&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a select statement against the database and returns a generator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a select statement against the database and returns a generator.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_cursor">						<code>Illuminate\Database\ConnectionInterface::cursor()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepared" id="_prepared">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepared(<span><a href="PDOStatement.html"><span title="PDOStatement">PDOStatement</span></a> <var>$statement</var></span>): <a href="PDOStatement.html"><span title="PDOStatement">PDOStatement</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Configure the PDO prepared statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Configure the PDO prepared statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepared">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPdoForSelect" id="_getPdoForSelect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPdoForSelect(<span>bool <var>$useReadPdo</var> = <span class="php-kw">true</span></span>): <a href="PDO.html"><span title="PDO">PDO</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the PDO connection to use for a select query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the PDO connection to use for a select query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPdoForSelect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="insert" id="_insert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>insert(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Run an insert statement against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run an insert statement against the database.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_insert">						<code>Illuminate\Database\ConnectionInterface::insert()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_insert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>update(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run an update statement against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run an update statement against the database.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_update">						<code>Illuminate\Database\ConnectionInterface::update()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a delete statement against the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a delete statement against the database.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_delete">						<code>Illuminate\Database\ConnectionInterface::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="statement" id="_statement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>statement(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute an SQL statement and return the boolean result.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute an SQL statement and return the boolean result.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_statement">						<code>Illuminate\Database\ConnectionInterface::statement()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_statement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="affectingStatement" id="_affectingStatement">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>affectingStatement(<span>string <var>$query</var></span>, <span>array <var>$bindings</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run an SQL statement and get the number of rows affected.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run an SQL statement and get the number of rows affected.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_affectingStatement">						<code>Illuminate\Database\ConnectionInterface::affectingStatement()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_affectingStatement">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unprepared" id="_unprepared">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unprepared(<span>string <var>$query</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a raw, unprepared query against the PDO connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a raw, unprepared query against the PDO connection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_unprepared">						<code>Illuminate\Database\ConnectionInterface::unprepared()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unprepared">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="threadCount" id="_threadCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>threadCount(): int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the number of open connections for the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the number of open connections for the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_threadCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pretend" id="_pretend">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pretend(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback in "dry run" mode.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback in &quot;dry run&quot; mode.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_pretend">						<code>Illuminate\Database\ConnectionInterface::pretend()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pretend">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutPretending" id="_withoutPretending">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutPretending(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback without "pretending".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback without &quot;pretending&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutPretending">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withFreshQueryLog" id="_withFreshQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withFreshQueryLog(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback in "dry run" mode.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback in &quot;dry run&quot; mode.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withFreshQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindValues" id="_bindValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindValues(<span><a href="PDOStatement.html"><span title="PDOStatement">PDOStatement</span></a> <var>$statement</var></span>, <span>array <var>$bindings</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Bind values to their parameters in the given statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Bind values to their parameters in the given statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBindings" id="_prepareBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBindings(<span>array <var>$bindings</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the query bindings for execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the query bindings for execution.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_prepareBindings">						<code>Illuminate\Database\ConnectionInterface::prepareBindings()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="run" id="_run">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>run(<span>string <var>$query</var></span>, <span>array <var>$bindings</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a SQL statement and log its execution context.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a SQL statement and log its execution context.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.QueryException.html"><span>Illuminate\Database\QueryException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_run">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="runQueryCallback" id="_runQueryCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>runQueryCallback(<span>string <var>$query</var></span>, <span>array <var>$bindings</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a SQL statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a SQL statement.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.QueryException.html"><span>Illuminate\Database\QueryException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_runQueryCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isUniqueConstraintError" id="_isUniqueConstraintError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isUniqueConstraintError(<span><a href="Exception.html"><span title="Exception">Exception</span></a> <var>$exception</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given database exception was caused by a unique constraint violation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given database exception was caused by a unique constraint violation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isUniqueConstraintError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="logQuery" id="_logQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>logQuery(<span>string <var>$query</var></span>, <span>array <var>$bindings</var></span>, <span>float|null <var>$time</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Log a query in the connection's query log.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Log a query in the connection's query log.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_logQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getElapsedTime" id="_getElapsedTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getElapsedTime(<span>float <var>$start</var></span>): float</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the elapsed time since a given starting point.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the elapsed time since a given starting point.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getElapsedTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenQueryingForLongerThan" id="_whenQueryingForLongerThan">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenQueryingForLongerThan(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|<a href="Carbon.CarbonInterval.html"><span title="Carbon\CarbonInterval">CarbonInterval</span></a>|float|int <var>$threshold</var></span>, <span>callable <var>$handler</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a callback to be invoked when the connection queries for longer than a given amount of time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a callback to be invoked when the connection queries for longer than a given amount of time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenQueryingForLongerThan">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allowQueryDurationHandlersToRunAgain" id="_allowQueryDurationHandlersToRunAgain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allowQueryDurationHandlersToRunAgain(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Allow all the query duration handlers to run again, even if they have already run.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Allow all the query duration handlers to run again, even if they have already run.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allowQueryDurationHandlersToRunAgain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="totalQueryDuration" id="_totalQueryDuration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>totalQueryDuration(): float</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the duration of all run queries in milliseconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the duration of all run queries in milliseconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_totalQueryDuration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resetTotalQueryDuration" id="_resetTotalQueryDuration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resetTotalQueryDuration(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reset the duration of all run queries.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reset the duration of all run queries.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resetTotalQueryDuration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleQueryException" id="_handleQueryException">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleQueryException(<span><a href="Illuminate.Database.QueryException.html"><span title="Illuminate\Database\QueryException">QueryException</span></a> <var>$e</var></span>, <span>string <var>$query</var></span>, <span>array <var>$bindings</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle a query exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle a query exception.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.QueryException.html"><span>Illuminate\Database\QueryException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleQueryException">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tryAgainIfCausedByLostConnection" id="_tryAgainIfCausedByLostConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tryAgainIfCausedByLostConnection(<span><a href="Illuminate.Database.QueryException.html"><span title="Illuminate\Database\QueryException">QueryException</span></a> <var>$e</var></span>, <span>string <var>$query</var></span>, <span>array <var>$bindings</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle a query exception that occurred during query execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle a query exception that occurred during query execution.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.QueryException.html"><span>Illuminate\Database\QueryException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tryAgainIfCausedByLostConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reconnect" id="_reconnect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reconnect(): mixed|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Reconnect to the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reconnect to the database.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.LostConnectionException.html"><span>Illuminate\Database\LostConnectionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reconnect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reconnectIfMissingConnection" id="_reconnectIfMissingConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reconnectIfMissingConnection(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reconnect to the database if a PDO connection is missing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reconnect to the database if a PDO connection is missing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reconnectIfMissingConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disconnect" id="_disconnect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>disconnect(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disconnect from the underlying PDO connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disconnect from the underlying PDO connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disconnect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeStartingTransaction" id="_beforeStartingTransaction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>beforeStartingTransaction(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a hook to be run just before a database transaction is started.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a hook to be run just before a database transaction is started.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_beforeStartingTransaction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeExecuting" id="_beforeExecuting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>beforeExecuting(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a hook to be run just before a database query is executed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a hook to be run just before a database query is executed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_beforeExecuting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="listen" id="_listen">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>listen(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a database query listener with the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a database query listener with the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_listen">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireConnectionEvent" id="_fireConnectionEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireConnectionEvent(<span>string <var>$event</var></span>): array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire an event for this connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire an event for this connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireConnectionEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="event" id="_event">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>event(<span>mixed <var>$event</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire the given event if possible.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire the given event if possible.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_event">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="raw" id="_raw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>raw(<span>mixed <var>$value</var></span>): <a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new raw query expression.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new raw query expression.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_raw">						<code>Illuminate\Database\ConnectionInterface::raw()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_raw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escape" id="_escape">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escape(<span>string|float|int|bool|null <var>$value</var></span>, <span>bool <var>$binary</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escape a value for safe SQL embedding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escape a value for safe SQL embedding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escape">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeString" id="_escapeString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeString(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escape a string value for safe SQL embedding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escape a string value for safe SQL embedding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeBool" id="_escapeBool">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeBool(<span>bool <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escape a boolean value for safe SQL embedding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escape a boolean value for safe SQL embedding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeBool">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeBinary" id="_escapeBinary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeBinary(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Escape a binary value for safe SQL embedding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Escape a binary value for safe SQL embedding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeBinary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasModifiedRecords" id="_hasModifiedRecords">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasModifiedRecords(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the database connection has modified any database records.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the database connection has modified any database records.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasModifiedRecords">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="recordsHaveBeenModified" id="_recordsHaveBeenModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>recordsHaveBeenModified(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate if any records have been modified.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate if any records have been modified.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_recordsHaveBeenModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRecordModificationState" id="_setRecordModificationState">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRecordModificationState(<span>bool <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the record modification state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the record modification state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRecordModificationState">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetRecordModificationState" id="_forgetRecordModificationState">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetRecordModificationState(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Reset the record modification state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reset the record modification state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetRecordModificationState">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="useWriteConnectionWhenReading" id="_useWriteConnectionWhenReading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>useWriteConnectionWhenReading(<span>bool <var>$value</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the connection should use the write PDO connection for reads.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the connection should use the write PDO connection for reads.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_useWriteConnectionWhenReading">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPdo" id="_getPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPdo(): <a href="PDO.html"><span title="PDO">PDO</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current PDO connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current PDO connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRawPdo" id="_getRawPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRawPdo(): <a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current PDO connection parameter without executing any reconnect logic.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current PDO connection parameter without executing any reconnect logic.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRawPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getReadPdo" id="_getReadPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getReadPdo(): <a href="PDO.html"><span title="PDO">PDO</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current PDO connection used for reading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current PDO connection used for reading.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getReadPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRawReadPdo" id="_getRawReadPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRawReadPdo(): <a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current read PDO connection parameter without executing any reconnect logic.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current read PDO connection parameter without executing any reconnect logic.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRawReadPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPdo" id="_setPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPdo(<span><a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$pdo</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the PDO connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the PDO connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setReadPdo" id="_setReadPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setReadPdo(<span><a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$pdo</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the PDO connection used for reading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the PDO connection used for reading.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setReadPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setReconnector" id="_setReconnector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setReconnector(<span>callable <var>$reconnector</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the reconnect instance on the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the reconnect instance on the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setReconnector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the database connection name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the database connection name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getNameWithReadWriteType" id="_getNameWithReadWriteType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getNameWithReadWriteType(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the database connection full name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the database connection full name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getNameWithReadWriteType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConfig" id="_getConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConfig(<span>string|null <var>$option</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an option from the configuration options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an option from the configuration options.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConfig">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDriverName" id="_getDriverName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDriverName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the PDO driver name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the PDO driver name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDriverName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDriverTitle" id="_getDriverTitle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDriverTitle(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a human-readable name for the given connection driver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a human-readable name for the given connection driver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDriverTitle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueryGrammar" id="_getQueryGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueryGrammar(): <a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query grammar used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query grammar used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueryGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setQueryGrammar" id="_setQueryGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setQueryGrammar(<span><a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a> <var>$grammar</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the query grammar used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the query grammar used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setQueryGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSchemaGrammar" id="_getSchemaGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSchemaGrammar(): <a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the schema grammar used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the schema grammar used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSchemaGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSchemaGrammar" id="_setSchemaGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSchemaGrammar(<span><a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a> <var>$grammar</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the schema grammar used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the schema grammar used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSchemaGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPostProcessor" id="_getPostProcessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPostProcessor(): <a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query post processor used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query post processor used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPostProcessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPostProcessor" id="_setPostProcessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPostProcessor(<span><a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a> <var>$processor</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the query post processor used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the query post processor used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPostProcessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEventDispatcher" id="_getEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEventDispatcher(): <a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the event dispatcher used by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the event dispatcher used by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEventDispatcher" id="_setEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEventDispatcher(<span><a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a> <var>$events</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the event dispatcher instance on the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the event dispatcher instance on the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsetEventDispatcher" id="_unsetEventDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsetEventDispatcher(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the event dispatcher for this connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the event dispatcher for this connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsetEventDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTransactionManager" id="_setTransactionManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTransactionManager(<span><a href="Illuminate.Database.DatabaseTransactionsManager.html"><span title="Illuminate\Database\DatabaseTransactionsManager">DatabaseTransactionsManager</span></a> <var>$manager</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the transaction manager instance on the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the transaction manager instance on the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTransactionManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsetTransactionManager" id="_unsetTransactionManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsetTransactionManager(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the transaction manager for this connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the transaction manager for this connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsetTransactionManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pretending" id="_pretending">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pretending(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the connection is in a "dry run".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the connection is in a &quot;dry run&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pretending">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueryLog" id="_getQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueryLog(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the connection query log.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the connection query log.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRawQueryLog" id="_getRawQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRawQueryLog(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the connection query log with embedded bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the connection query log with embedded bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRawQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flushQueryLog" id="_flushQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flushQueryLog(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Clear the query log.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clear the query log.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flushQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enableQueryLog" id="_enableQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enableQueryLog(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Enable the query log on the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enable the query log on the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enableQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="disableQueryLog" id="_disableQueryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>disableQueryLog(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable the query log on the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable the query log on the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_disableQueryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="logging" id="_logging">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>logging(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether we're logging queries.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether we're logging queries.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_logging">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDatabaseName" id="_getDatabaseName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDatabaseName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the connected database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the connected database.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.ConnectionInterface.html#_getDatabaseName">						<code>Illuminate\Database\ConnectionInterface::getDatabaseName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDatabaseName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDatabaseName" id="_setDatabaseName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDatabaseName(<span>string <var>$database</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the name of the connected database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the name of the connected database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDatabaseName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setReadWriteType" id="_setReadWriteType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setReadWriteType(<span>string|null <var>$readWriteType</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the read / write type of the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the read / write type of the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setReadWriteType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTablePrefix" id="_getTablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTablePrefix(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table prefix for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table prefix for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTablePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setTablePrefix" id="_setTablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setTablePrefix(<span>string <var>$prefix</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the table prefix in use by the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the table prefix in use by the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setTablePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutTablePrefix" id="_withoutTablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutTablePrefix(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback without table prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback without table prefix.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutTablePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getServerVersion" id="_getServerVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getServerVersion(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the server version for the connection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the server version for the connection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getServerVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolverFor" id="_resolverFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolverFor(<span>string <var>$driver</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a connection resolver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a connection resolver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolverFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResolver" id="_getResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResolver(<span>string <var>$driver</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the connection resolver for the given driver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the connection resolver for the given driver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResolver">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.DetectsConcurrencyErrors.html"><span>Illuminate\Database\DetectsConcurrencyErrors</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.DetectsConcurrencyErrors.html#_causedByConcurrencyError">causedByConcurrencyError()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.DetectsLostConnections.html"><span>Illuminate\Database\DetectsLostConnections</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.DetectsLostConnections.html#_causedByLostConnection">causedByLostConnection()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Concerns.ManagesTransactions.html"><span>Illuminate\Database\Concerns\ManagesTransactions</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Concerns.ManagesTransactions.html#_transaction">transaction()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_handleTransactionException">handleTransactionException()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_beginTransaction">beginTransaction()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_createTransaction">createTransaction()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_createSavepoint">createSavepoint()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_handleBeginTransactionException">handleBeginTransactionException()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_commit">commit()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_handleCommitTransactionException">handleCommitTransactionException()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_rollBack">rollBack()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_performRollBack">performRollBack()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_handleRollBackException">handleRollBackException()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_transactionLevel">transactionLevel()</a>, <a href="Illuminate.Database.Concerns.ManagesTransactions.html#_afterCommit">afterCommit()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.InteractsWithTime.html"><span>Illuminate\Support\InteractsWithTime</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.InteractsWithTime.html#_secondsUntil">secondsUntil()</a>, <a href="Illuminate.Support.InteractsWithTime.html#_availableAt">availableAt()</a>, <a href="Illuminate.Support.InteractsWithTime.html#_parseDateInterval">parseDateInterval()</a>, <a href="Illuminate.Support.InteractsWithTime.html#_currentTime">currentTime()</a>, <a href="Illuminate.Support.InteractsWithTime.html#_runTimeForHumans">runTimeForHumans()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="pdo" id="$pdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pdo</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="readPdo" id="$readPdo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="PDO.html"><span title="PDO">PDO</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$readPdo</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$readPdo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="database" id="$database">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$database</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$database">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="readWriteType" id="$readWriteType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$readWriteType</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$readWriteType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tablePrefix" id="$tablePrefix">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$tablePrefix</var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$tablePrefix">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="config" id="$config">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$config</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$config">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reconnector" id="$reconnector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">callable</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$reconnector</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$reconnector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryGrammar" id="$queryGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$queryGrammar</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$queryGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="schemaGrammar" id="$schemaGrammar">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span title="Illuminate\Database\Schema\Grammars\Grammar">Grammar</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$schemaGrammar</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$schemaGrammar">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="postProcessor" id="$postProcessor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$postProcessor</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$postProcessor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="events" id="$events">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Events.Dispatcher.html"><span title="Illuminate\Contracts\Events\Dispatcher">Dispatcher</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$events</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$events">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fetchMode" id="$fetchMode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fetchMode</var> = <a href="PDO.html"><span title="PDO">PDO</span></a>::FETCH_OBJ</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fetchMode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transactions" id="$transactions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$transactions</var> = <span class="php-num">0</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$transactions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transactionsManager" id="$transactionsManager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.DatabaseTransactionsManager.html"><span title="Illuminate\Database\DatabaseTransactionsManager">DatabaseTransactionsManager</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$transactionsManager</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$transactionsManager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="recordsModified" id="$recordsModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$recordsModified</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$recordsModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="readOnWriteConnection" id="$readOnWriteConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$readOnWriteConnection</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$readOnWriteConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryLog" id="$queryLog">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$queryLog</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$queryLog">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loggingQueries" id="$loggingQueries">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$loggingQueries</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$loggingQueries">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="totalQueryDuration" id="$totalQueryDuration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">float</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$totalQueryDuration</var> = <span class="php-num">0.0</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$totalQueryDuration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryDurationHandlers" id="$queryDurationHandlers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$queryDurationHandlers</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$queryDurationHandlers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pretending" id="$pretending">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pretending</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pretending">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeStartingTransaction" id="$beforeStartingTransaction">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$beforeStartingTransaction</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$beforeStartingTransaction">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeExecutingCallbacks" id="$beforeExecutingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$beforeExecutingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$beforeExecutingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolvers" id="$resolvers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resolvers</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resolvers">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

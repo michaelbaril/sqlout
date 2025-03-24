@@ -1,0 +1,3500 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Container\Container |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Container.html">Container</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Container.Container.html">
+							Container
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Container.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Container.Container.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Container.html">Container</a>\<a href="Illuminate.Container.Container.html">Container</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, <a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="when" id="_when">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>when(<span>array|string <var>$concrete</var></span>): <a href="Illuminate.Contracts.Container.ContextualBindingBuilder.html"><span title="Illuminate\Contracts\Container\ContextualBindingBuilder">ContextualBindingBuilder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Define a contextual binding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define a contextual binding.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_when">						<code>Illuminate\Contracts\Container\Container::when()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_when">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenHasAttribute" id="_whenHasAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenHasAttribute(<span>string <var>$attribute</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$handler</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Define a contextual binding based on an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define a contextual binding based on an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenHasAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bound" id="_bound">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bound(<span>string <var>$abstract</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given abstract type has been bound.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given abstract type has been bound.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_bound">						<code>Illuminate\Contracts\Container\Container::bound()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bound">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has(<span>string <var>$id</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$id</var>&nbsp;&nbsp;</td>
+										<td><p>Identifier of the entry to look for.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Container.ContainerInterface.html#_has">						<code>Psr\Container\ContainerInterface::has()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolved" id="_resolved">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolved(<span>string <var>$abstract</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given abstract type has been resolved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given abstract type has been resolved.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_resolved">						<code>Illuminate\Contracts\Container\Container::resolved()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolved">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isShared" id="_isShared">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isShared(<span>string <var>$abstract</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given type is shared.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given type is shared.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isShared">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAlias" id="_isAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isAlias(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given string is an alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given string is an alias.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bind" id="_bind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bind(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>, <span>bool <var>$shared</var> = <span class="php-kw">false</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a binding with the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a binding with the container.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="TypeError.html"><span>TypeError</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="ReflectionException.html"><span>ReflectionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_bind">						<code>Illuminate\Contracts\Container\Container::bind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bind">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClosure" id="_getClosure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClosure(<span>string <var>$abstract</var></span>, <span>string <var>$concrete</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the Closure to be used when building a type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the Closure to be used when building a type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClosure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasMethodBinding" id="_hasMethodBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasMethodBinding(<span>string <var>$method</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the container has a method binding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the container has a method binding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasMethodBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindMethod" id="_bindMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindMethod(<span>array|string <var>$method</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Bind a callback to resolve with Container::call.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Bind a callback to resolve with Container::call.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_bindMethod">						<code>Illuminate\Contracts\Container\Container::bindMethod()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseBindMethod" id="_parseBindMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseBindMethod(<span>array|string <var>$method</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the method to be bound in class@method format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the method to be bound in class@method format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseBindMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callMethodBinding" id="_callMethodBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callMethodBinding(<span>string <var>$method</var></span>, <span>mixed <var>$instance</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the method binding for the given method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the method binding for the given method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callMethodBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addContextualBinding" id="_addContextualBinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addContextualBinding(<span>string <var>$concrete</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$implementation</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a contextual binding to the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a contextual binding to the container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_addContextualBinding">						<code>Illuminate\Contracts\Container\Container::addContextualBinding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addContextualBinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindIf" id="_bindIf">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindIf(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>, <span>bool <var>$shared</var> = <span class="php-kw">false</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a binding if it hasn't already been registered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a binding if it hasn't already been registered.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_bindIf">						<code>Illuminate\Contracts\Container\Container::bindIf()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindIf">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="singleton" id="_singleton">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>singleton(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a shared binding in the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a shared binding in the container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_singleton">						<code>Illuminate\Contracts\Container\Container::singleton()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_singleton">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="singletonIf" id="_singletonIf">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>singletonIf(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a shared binding if it hasn't already been registered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a shared binding if it hasn't already been registered.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_singletonIf">						<code>Illuminate\Contracts\Container\Container::singletonIf()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_singletonIf">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scoped" id="_scoped">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scoped(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a scoped binding in the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a scoped binding in the container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_scoped">						<code>Illuminate\Contracts\Container\Container::scoped()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scoped">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scopedIf" id="_scopedIf">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scopedIf(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a scoped binding if it hasn't already been registered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a scoped binding if it hasn't already been registered.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_scopedIf">						<code>Illuminate\Contracts\Container\Container::scopedIf()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scopedIf">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindBasedOnClosureReturnTypes" id="_bindBasedOnClosureReturnTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bindBasedOnClosureReturnTypes(
+	<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>,
+	<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|null <var>$concrete</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$shared</var> = <span class="php-kw">false</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a binding with the container based on the given Closure's return types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a binding with the container based on the given Closure's return types.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bindBasedOnClosureReturnTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="closureReturnTypes" id="_closureReturnTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>closureReturnTypes(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$closure</var></span>): list&lt;class-string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the class names / types of the return type of the given Closure.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the class names / types of the return type of the given Closure.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="ReflectionException.html"><span>ReflectionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_closureReturnTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extend" id="_extend">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>extend(<span>string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$closure</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		"Extend" an abstract type in the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>&quot;Extend&quot; an abstract type in the container.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_extend">						<code>Illuminate\Contracts\Container\Container::extend()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extend">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="instance" id="_instance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>instance&lt;<span title="">TInstance</span> is mixed&gt;(<span>string <var>$abstract</var></span>, <span>TInstance <var>$instance</var></span>): TInstance</code>
+
+
+	<div class="expandable-collapsedView">
+		Register an existing instance as shared in the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register an existing instance as shared in the container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_instance">						<code>Illuminate\Contracts\Container\Container::instance()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_instance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeAbstractAlias" id="_removeAbstractAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeAbstractAlias(<span>string <var>$searched</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove an alias from the contextual binding alias cache.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove an alias from the contextual binding alias cache.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeAbstractAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tag" id="_tag">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tag(<span>array|string <var>$abstracts</var></span>, <span>array|mixed ...<var>$tags</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Assign a set of tags to a given binding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Assign a set of tags to a given binding.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_tag">						<code>Illuminate\Contracts\Container\Container::tag()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tag">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tagged" id="_tagged">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tagged(<span>string <var>$tag</var></span>): iterable</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve all of the bindings for a given tag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve all of the bindings for a given tag.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_tagged">						<code>Illuminate\Contracts\Container\Container::tagged()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tagged">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="alias" id="_alias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>alias(<span>string <var>$abstract</var></span>, <span>string <var>$alias</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Alias a type to a different name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Alias a type to a different name.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_alias">						<code>Illuminate\Contracts\Container\Container::alias()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_alias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rebinding" id="_rebinding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rebinding(<span>string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Bind a new callback to an abstract's rebind event.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Bind a new callback to an abstract's rebind event.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rebinding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="refresh" id="_refresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>refresh(<span>string <var>$abstract</var></span>, <span>mixed <var>$target</var></span>, <span>string <var>$method</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Refresh an instance on the given target and method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Refresh an instance on the given target and method.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_refresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rebound" id="_rebound">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rebound(<span>string <var>$abstract</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire the "rebound" callbacks for the given abstract type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire the &quot;rebound&quot; callbacks for the given abstract type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rebound">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getReboundCallbacks" id="_getReboundCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getReboundCallbacks(<span>string <var>$abstract</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the rebound callbacks for a given type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the rebound callbacks for a given type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getReboundCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>, <span>array <var>$parameters</var> = []</span>): <a href="Closure.html"><span title="Closure">Closure</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given closure such that its dependencies will be injected when executed.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given closure such that its dependencies will be injected when executed.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="call" id="_call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>call(<span>callable|string <var>$callback</var></span>, <span>array&lt;string, mixed&gt; <var>$parameters</var> = []</span>, <span>string|null <var>$defaultMethod</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Call the given Closure / class@method and inject its dependencies.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call the given Closure / class@method and inject its dependencies.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_call">						<code>Illuminate\Contracts\Container\Container::call()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClassForCallable" id="_getClassForCallable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClassForCallable(<span>callable|string <var>$callback</var></span>): string|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the class name for the given callback, if one can be determined.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the class name for the given callback, if one can be determined.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClassForCallable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="factory" id="_factory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>factory&lt;<span title="">TClass</span> is object&gt;(
+	<span>string|class-string&lt;TClass&gt; <var>$abstract</var></span>,
+): ($abstract is class-string&lt;TClass&gt;&nbsp;?&nbsp;<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TClass&nbsp;:&nbsp;<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a closure to resolve the given type from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a closure to resolve the given type from the container.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_factory">						<code>Illuminate\Contracts\Container\Container::factory()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_factory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="makeWith" id="_makeWith">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>makeWith&lt;<span title="">TClass</span> is object&gt;(
+	<span>string|class-string&lt;TClass&gt;|callable <var>$abstract</var></span>,
+	<span>array <var>$parameters</var> = []</span>,
+): ($abstract is class-string&lt;TClass&gt;&nbsp;?&nbsp;TClass&nbsp;:&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		An alias function name for make().
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>An alias function name for make().</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_makeWith">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="make" id="_make">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>make&lt;<span title="">TClass</span> is object&gt;(
+	<span>string|class-string&lt;TClass&gt; <var>$abstract</var></span>,
+	<span>array <var>$parameters</var> = []</span>,
+): ($abstract is class-string&lt;TClass&gt;&nbsp;?&nbsp;TClass&nbsp;:&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the given type from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the given type from the container.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_make">						<code>Illuminate\Contracts\Container\Container::make()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_make">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get&lt;<span title="">TClass</span> is object&gt;(<span>string|class-string&lt;TClass&gt; <var>$id</var></span>): ($id is class-string&lt;TClass&gt;&nbsp;?&nbsp;TClass&nbsp;:&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		&#123;@inheritdoc}
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>{@inheritdoc}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$id</var>&nbsp;&nbsp;</td>
+										<td><p>Identifier of the entry to look for.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Entry.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Psr.Container.ContainerInterface.html#_get">						<code>Psr\Container\ContainerInterface::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolve" id="_resolve">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolve&lt;<span title="">TClass</span> is object&gt;(
+	<span>string|class-string&lt;TClass&gt;|callable <var>$abstract</var></span>,
+	<span>array <var>$parameters</var> = []</span>,
+	<span>bool <var>$raiseEvents</var> = <span class="php-kw">true</span></span>,
+): ($abstract is class-string&lt;TClass&gt;&nbsp;?&nbsp;TClass&nbsp;:&nbsp;mixed)</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the given type from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the given type from the container.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.CircularDependencyException.html"><span>Illuminate\Contracts\Container\CircularDependencyException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolve">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getConcrete" id="_getConcrete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getConcrete(<span>string|callable <var>$abstract</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the concrete type for a given abstract.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the concrete type for a given abstract.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getConcrete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getContextualConcrete" id="_getContextualConcrete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getContextualConcrete(<span>string|callable <var>$abstract</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a>|string|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the contextual concrete binding for the given abstract.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the contextual concrete binding for the given abstract.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getContextualConcrete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findInContextualBindings" id="_findInContextualBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findInContextualBindings(<span>string|callable <var>$abstract</var></span>): <a href="Closure.html"><span title="Closure">Closure</span></a>|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Find the concrete binding for the given abstract in the contextual binding array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find the concrete binding for the given abstract in the contextual binding array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findInContextualBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isBuildable" id="_isBuildable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isBuildable(<span>mixed <var>$concrete</var></span>, <span>string <var>$abstract</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given concrete is buildable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given concrete is buildable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isBuildable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="build" id="_build">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>build&lt;<span title="">TClass</span> is object&gt;(<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(static, array):&nbsp;TClass)|class-string&lt;TClass&gt; <var>$concrete</var></span>): TClass</code>
+
+
+	<div class="expandable-collapsedView">
+		Instantiate a concrete instance of the given type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Instantiate a concrete instance of the given type.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.CircularDependencyException.html"><span>Illuminate\Contracts\Container\CircularDependencyException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_build">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveDependencies" id="_resolveDependencies">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveDependencies(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a>[] <var>$dependencies</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve all of the dependencies from the ReflectionParameters.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve all of the dependencies from the ReflectionParameters.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveDependencies">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasParameterOverride" id="_hasParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasParameterOverride(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$dependency</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given dependency has a parameter override.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given dependency has a parameter override.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParameterOverride" id="_getParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getParameterOverride(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$dependency</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a parameter override for a dependency.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a parameter override for a dependency.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLastParameterOverride" id="_getLastParameterOverride">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLastParameterOverride(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the last parameter override.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the last parameter override.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLastParameterOverride">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolvePrimitive" id="_resolvePrimitive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolvePrimitive(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$parameter</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve a non-class hinted primitive dependency.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve a non-class hinted primitive dependency.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolvePrimitive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveClass" id="_resolveClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveClass(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$parameter</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve a class based dependency from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve a class based dependency from the container.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveVariadicClass" id="_resolveVariadicClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveVariadicClass(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$parameter</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve a class based variadic dependency from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve a class based variadic dependency from the container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveVariadicClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveFromAttribute" id="_resolveFromAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveFromAttribute(<span><a href="ReflectionAttribute.html"><span title="ReflectionAttribute">ReflectionAttribute</span></a> <var>$attribute</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve a dependency based on an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve a dependency based on an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveFromAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="notInstantiable" id="_notInstantiable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>notInstantiable(<span>string <var>$concrete</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Throw an exception that the concrete is not instantiable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Throw an exception that the concrete is not instantiable.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_notInstantiable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unresolvablePrimitive" id="_unresolvablePrimitive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unresolvablePrimitive(<span><a href="ReflectionParameter.html"><span title="ReflectionParameter">ReflectionParameter</span></a> <var>$parameter</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Throw an exception for an unresolvable primitive.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Throw an exception for an unresolvable primitive.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Container.BindingResolutionException.html"><span>Illuminate\Contracts\Container\BindingResolutionException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unresolvablePrimitive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeResolving" id="_beforeResolving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>beforeResolving(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new before resolving callback for all types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new before resolving callback for all types.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_beforeResolving">						<code>Illuminate\Contracts\Container\Container::beforeResolving()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_beforeResolving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolving" id="_resolving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolving(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new resolving callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new resolving callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_resolving">						<code>Illuminate\Contracts\Container\Container::resolving()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterResolving" id="_afterResolving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>afterResolving(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$abstract</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new after resolving callback for all types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new after resolving callback for all types.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_afterResolving">						<code>Illuminate\Contracts\Container\Container::afterResolving()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_afterResolving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterResolvingAttribute" id="_afterResolvingAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>afterResolvingAttribute(<span>string <var>$attribute</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new after resolving attribute callback for all types.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new after resolving attribute callback for all types.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_afterResolvingAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireBeforeResolvingCallbacks" id="_fireBeforeResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireBeforeResolvingCallbacks(<span>string <var>$abstract</var></span>, <span>array <var>$parameters</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire all of the before resolving callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire all of the before resolving callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireBeforeResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireBeforeCallbackArray" id="_fireBeforeCallbackArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireBeforeCallbackArray(<span>string <var>$abstract</var></span>, <span>array <var>$parameters</var></span>, <span>array <var>$callbacks</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire an array of callbacks with an object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire an array of callbacks with an object.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireBeforeCallbackArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireResolvingCallbacks" id="_fireResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireResolvingCallbacks(<span>string <var>$abstract</var></span>, <span>mixed <var>$object</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire all of the resolving callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire all of the resolving callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireAfterResolvingCallbacks" id="_fireAfterResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireAfterResolvingCallbacks(<span>string <var>$abstract</var></span>, <span>mixed <var>$object</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire all of the after resolving callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire all of the after resolving callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireAfterResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireAfterResolvingAttributeCallbacks" id="_fireAfterResolvingAttributeCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireAfterResolvingAttributeCallbacks(<span><a href="ReflectionAttribute.html"><span title="ReflectionAttribute">ReflectionAttribute</span></a>[] <var>$attributes</var></span>, <span>mixed <var>$object</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire all of the after resolving attribute callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire all of the after resolving attribute callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireAfterResolvingAttributeCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCallbacksForType" id="_getCallbacksForType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCallbacksForType(<span>string <var>$abstract</var></span>, <span>object <var>$object</var></span>, <span>array <var>$callbacksPerType</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all callbacks for a given type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all callbacks for a given type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCallbacksForType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fireCallbackArray" id="_fireCallbackArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fireCallbackArray(<span>mixed <var>$object</var></span>, <span>array <var>$callbacks</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Fire an array of callbacks with an object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fire an array of callbacks with an object.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fireCallbackArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBindings" id="_getBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBindings(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the container's bindings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the container's bindings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAlias" id="_getAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAlias(<span>string <var>$abstract</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the alias for an abstract if available.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the alias for an abstract if available.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExtenders" id="_getExtenders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExtenders(<span>string <var>$abstract</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the extender callbacks for a given type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the extender callbacks for a given type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExtenders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetExtenders" id="_forgetExtenders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetExtenders(<span>string <var>$abstract</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all of the extender callbacks for a given type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all of the extender callbacks for a given type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetExtenders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dropStaleInstances" id="_dropStaleInstances">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dropStaleInstances(<span>string <var>$abstract</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Drop all of the stale instances and aliases.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Drop all of the stale instances and aliases.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dropStaleInstances">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetInstance" id="_forgetInstance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetInstance(<span>string <var>$abstract</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a resolved instance from the instance cache.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a resolved instance from the instance cache.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetInstance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetInstances" id="_forgetInstances">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetInstances(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Clear all of the instances from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clear all of the instances from the container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetInstances">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forgetScopedInstances" id="_forgetScopedInstances">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forgetScopedInstances(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Clear all of the scoped instances from the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Clear all of the scoped instances from the container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forgetScopedInstances">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flush" id="_flush">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flush(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flush the container of all bindings and resolved instances.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flush the container of all bindings and resolved instances.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Container.Container.html#_flush">						<code>Illuminate\Contracts\Container\Container::flush()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flush">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInstance" id="_getInstance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getInstance(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the globally available instance of the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the globally available instance of the container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInstance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setInstance" id="_setInstance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setInstance(<span><a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a>|null <var>$container</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Container.Container.html"><span title="Illuminate\Contracts\Container\Container">Container</span></a>|static</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the shared instance of the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the shared instance of the container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setInstance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a given offset exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a given offset exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>string <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the value at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the value at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically access container services.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically access container services.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__set" id="___set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__set(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically set container services.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically set container services.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___set">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="instance" id="$instance">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">static</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$instance</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$instance">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolved" id="$resolved">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resolved</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resolved">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindings" id="$bindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bindings</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="methodBindings" id="$methodBindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$methodBindings</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$methodBindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="instances" id="$instances">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">object[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$instances</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$instances">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scopedInstances" id="$scopedInstances">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$scopedInstances</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$scopedInstances">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="aliases" id="$aliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$aliases</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$aliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="abstractAliases" id="$abstractAliases">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$abstractAliases</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$abstractAliases">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extenders" id="$extenders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$extenders</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$extenders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tags" id="$tags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$tags</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$tags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildStack" id="$buildStack">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$buildStack</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$buildStack">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="with" id="$with">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$with</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$with">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contextual" id="$contextual">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$contextual</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$contextual">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contextualAttributes" id="$contextualAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$contextualAttributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$contextualAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reboundCallbacks" id="$reboundCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$reboundCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$reboundCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="globalBeforeResolvingCallbacks" id="$globalBeforeResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$globalBeforeResolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$globalBeforeResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="globalResolvingCallbacks" id="$globalResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$globalResolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$globalResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="globalAfterResolvingCallbacks" id="$globalAfterResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$globalAfterResolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$globalAfterResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="beforeResolvingCallbacks" id="$beforeResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$beforeResolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$beforeResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolvingCallbacks" id="$resolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterResolvingCallbacks" id="$afterResolvingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$afterResolvingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$afterResolvingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterResolvingAttributeCallbacks" id="$afterResolvingAttributeCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$afterResolvingAttributeCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$afterResolvingAttributeCallbacks">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

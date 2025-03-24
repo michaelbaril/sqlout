@@ -1,0 +1,694 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Support\MessageBag |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Support.html">Support</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Support.Arrayable.html">
+							Arrayable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html">
+							CanBeEscapedWhenCastToString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.Htmlable.html">
+							Htmlable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.Jsonable.html">
+							Jsonable
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Contracts.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.MessageProvider.html">
+							MessageProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.Renderable.html">
+							Renderable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.Responsable.html">
+							Responsable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Support.ValidatedData.html">
+							ValidatedData
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Support.MessageBag.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Support.html">Support</a>\<a href="Illuminate.Contracts.Support.MessageBag.html">MessageBag</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, <a href="Countable.html"><span title="Countable">Countable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Contracts\Support\MessageBag</span></b>
+		extends
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.MessageBag.html"><span>Illuminate\Support\MessageBag</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<b><span class="active" title="Illuminate\Contracts\Support\MessageBag">MessageBag</span></b>, 
+			<a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys present in the message bag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys present in the message bag.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_keys">						<code>Illuminate\Support\MessageBag::keys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span>string <var>$key</var></span>, <span>string <var>$message</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a message to the bag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a message to the bag.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_add">						<code>Illuminate\Support\MessageBag::add()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span><a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>|array <var>$messages</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge a new array of messages into the bag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge a new array of messages into the bag.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_merge">						<code>Illuminate\Support\MessageBag::merge()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has(<span>string|array <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if messages exist for a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if messages exist for a given key.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_has">						<code>Illuminate\Support\MessageBag::has()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first message from the bag for a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first message from the bag for a given key.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_first">						<code>Illuminate\Support\MessageBag::first()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$key</var></span>, <span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the messages from the bag for a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the messages from the bag for a given key.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_get">						<code>Illuminate\Support\MessageBag::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the messages for every key in the bag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the messages for every key in the bag.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_all">						<code>Illuminate\Support\MessageBag::all()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forget" id="_forget">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forget(<span>string <var>$key</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove a message from the bag.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove a message from the bag.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_forget">						<code>Illuminate\Support\MessageBag::forget()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forget">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMessages" id="_getMessages">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMessages(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the raw messages in the container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the raw messages in the container.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_getMessages">						<code>Illuminate\Support\MessageBag::getMessages()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMessages">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFormat" id="_getFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFormat(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default message format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default message format.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_getFormat">						<code>Illuminate\Support\MessageBag::getFormat()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFormat" id="_setFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFormat(<span>string <var>$format</var> = <span class="php-str">':message'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the default message format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the default message format.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_setFormat">						<code>Illuminate\Support\MessageBag::setFormat()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the message bag has any messages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the message bag has any messages.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_isEmpty">						<code>Illuminate\Support\MessageBag::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNotEmpty" id="_isNotEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNotEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the message bag has any messages.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the message bag has any messages.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_isNotEmpty">						<code>Illuminate\Support\MessageBag::isNotEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNotEmpty">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Contracts.Support.Arrayable.html"><span>Illuminate\Contracts\Support\Arrayable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">toArray()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Countable.html"><span>Countable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Countable.html#_count">count()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

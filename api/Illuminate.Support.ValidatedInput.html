@@ -1,0 +1,877 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\ValidatedInput |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.ValidatedInput.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.ValidatedInput.html">ValidatedInput</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.ValidatedData.html"><span title="Illuminate\Contracts\Support\ValidatedData">ValidatedData</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>array <var>$input</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new validated input container.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new validated input container.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span>array <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the validated input with the given array of additional data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the validated input with the given array of additional data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>array|mixed|null <var>$keys</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the raw, underlying input array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the raw, underlying input array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="data" id="_data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>data(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve data from the instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve data from the instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_data">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys for all of the input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys for all of the input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="input" id="_input">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>input(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve an input item from the validated inputs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve an input item from the validated inputs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_input">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dd" id="_dd">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dd(<span>mixed ...<var>$keys</var></span>): never</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the validated inputs items and end the script.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the validated inputs items and end the script.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dd">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dump(<span>mixed <var>$keys</var> = []</span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the items.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the instance as an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the instance as an array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">						<code>Illuminate\Contracts\Support\Arrayable::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>string <var>$name</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically access input data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically access input data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__set" id="___set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__set(<span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically set input data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically set input data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___set">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__isset" id="___isset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__isset(<span><var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an input item is set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an input item is set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___isset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unset" id="___unset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unset(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove an input item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove an input item.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>mixed <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an item exists at an offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an item exists at an offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>mixed <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an item at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an item at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>mixed <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the item at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the item at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>string <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the item at a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the item at a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="ArrayIterator.html"><span title="ArrayIterator">ArrayIterator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get an iterator for the input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an iterator for the input.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.InteractsWithData.html"><span>Illuminate\Support\Traits\InteractsWithData</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.InteractsWithData.html#_exists">exists()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_has">has()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_hasAny">hasAny()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenHas">whenHas()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_filled">filled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isNotFilled">isNotFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_anyFilled">anyFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenFilled">whenFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_missing">missing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenMissing">whenMissing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isEmptyString">isEmptyString()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_str">str()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_string">string()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_boolean">boolean()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_integer">integer()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_float">float()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_date">date()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enum">enum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enums">enums()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isBackedEnum">isBackedEnum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_array">array()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_only">only()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_except">except()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="input" id="$input">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$input</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$input">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

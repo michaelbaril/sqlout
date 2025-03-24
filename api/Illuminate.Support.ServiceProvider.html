@@ -1,0 +1,1533 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\ServiceProvider |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.ServiceProvider.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.ServiceProvider.html">ServiceProvider</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Support\ServiceProvider</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SqloutServiceProvider.html"><span>Baril\Sqlout\SqloutServiceProvider</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Contracts.Foundation.Application.html"><span title="Illuminate\Contracts\Foundation\Application">Application</span></a> <var>$app</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new service provider instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new service provider instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="register" id="_register">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>register(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register any application services.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register any application services.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_register">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="booting" id="_booting">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>booting(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a booting callback to be run before the "boot" method is called.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a booting callback to be run before the &quot;boot&quot; method is called.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_booting">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="booted" id="_booted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>booted(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a booted callback to be run after the "boot" method is called.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a booted callback to be run after the &quot;boot&quot; method is called.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_booted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callBootingCallbacks" id="_callBootingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callBootingCallbacks(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Call the registered booting callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call the registered booting callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callBootingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callBootedCallbacks" id="_callBootedCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callBootedCallbacks(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Call the registered booted callbacks.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Call the registered booted callbacks.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callBootedCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeConfigFrom" id="_mergeConfigFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeConfigFrom(<span>string <var>$path</var></span>, <span>string <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the given configuration with the existing configuration.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the given configuration with the existing configuration.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeConfigFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceConfigRecursivelyFrom" id="_replaceConfigRecursivelyFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceConfigRecursivelyFrom(<span>string <var>$path</var></span>, <span>string <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the given configuration with the existing configuration recursively.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the given configuration with the existing configuration recursively.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceConfigRecursivelyFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadRoutesFrom" id="_loadRoutesFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadRoutesFrom(<span>string <var>$path</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Load the given routes file if routes are not already cached.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load the given routes file if routes are not already cached.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadRoutesFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadViewsFrom" id="_loadViewsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadViewsFrom(<span>string|array <var>$path</var></span>, <span>string <var>$namespace</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a view file namespace.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a view file namespace.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadViewsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadViewComponentsAs" id="_loadViewComponentsAs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadViewComponentsAs(<span>string <var>$prefix</var></span>, <span>array <var>$components</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register the given view components with a custom prefix.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register the given view components with a custom prefix.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadViewComponentsAs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadTranslationsFrom" id="_loadTranslationsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadTranslationsFrom(<span>string <var>$path</var></span>, <span>string|null <var>$namespace</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a translation file namespace or path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a translation file namespace or path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadTranslationsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadJsonTranslationsFrom" id="_loadJsonTranslationsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadJsonTranslationsFrom(<span>string <var>$path</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a JSON translation file path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a JSON translation file path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadJsonTranslationsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMigrationsFrom" id="_loadMigrationsFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMigrationsFrom(<span>array|string <var>$paths</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register database migration paths.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register database migration paths.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMigrationsFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadFactoriesFrom" id="_loadFactoriesFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><span class="deprecated">loadFactoriesFrom</span>(<span>array|string <var>$paths</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register Eloquent model factory paths.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register Eloquent model factory paths.</p>
+</div>
+							<h4>Deprecated</h4>
+							<div>
+									<p>Will be removed in a future Laravel version.</p>
+
+							</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadFactoriesFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callAfterResolving" id="_callAfterResolving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>callAfterResolving(<span>string <var>$name</var></span>, <span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Setup an after resolving listener, or fire immediately if already resolved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Setup an after resolving listener, or fire immediately if already resolved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_callAfterResolving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishesMigrations" id="_publishesMigrations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>publishesMigrations(<span>array <var>$paths</var></span>, <span>mixed <var>$groups</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register migration paths to be published by the publish command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register migration paths to be published by the publish command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_publishesMigrations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishes" id="_publishes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>publishes(<span>array <var>$paths</var></span>, <span>mixed <var>$groups</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register paths to be published by the publish command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register paths to be published by the publish command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_publishes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensurePublishArrayInitialized" id="_ensurePublishArrayInitialized">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensurePublishArrayInitialized(<span>string <var>$class</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure the publish array for the service provider is initialized.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure the publish array for the service provider is initialized.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensurePublishArrayInitialized">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addPublishGroup" id="_addPublishGroup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addPublishGroup(<span>string <var>$group</var></span>, <span>array <var>$paths</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a publish group / tag to the service provider.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a publish group / tag to the service provider.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addPublishGroup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pathsToPublish" id="_pathsToPublish">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pathsToPublish(<span>string|null <var>$provider</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$group</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paths to publish.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paths to publish.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pathsToPublish">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pathsForProviderOrGroup" id="_pathsForProviderOrGroup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pathsForProviderOrGroup(<span>string|null <var>$provider</var></span>, <span>string|null <var>$group</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paths for the provider or group (or both).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paths for the provider or group (or both).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pathsForProviderOrGroup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pathsForProviderAndGroup" id="_pathsForProviderAndGroup">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pathsForProviderAndGroup(<span>string <var>$provider</var></span>, <span>string <var>$group</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the paths for the provider and group.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the paths for the provider and group.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pathsForProviderAndGroup">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishableProviders" id="_publishableProviders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>publishableProviders(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the service providers available for publishing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the service providers available for publishing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_publishableProviders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishableMigrationPaths" id="_publishableMigrationPaths">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>publishableMigrationPaths(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the migration paths available for publishing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the migration paths available for publishing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_publishableMigrationPaths">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishableGroups" id="_publishableGroups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>publishableGroups(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the groups available for publishing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the groups available for publishing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_publishableGroups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="commands" id="_commands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>commands(<span>array|mixed <var>$commands</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register the package's custom Artisan commands.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register the package's custom Artisan commands.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_commands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="optimizes" id="_optimizes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>optimizes(<span>string|null <var>$optimize</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$clear</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register commands that should run on "optimize" or "optimize:clear".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register commands that should run on &quot;optimize&quot; or &quot;optimize:clear&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_optimizes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="provides" id="_provides">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>provides(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the services provided by the provider.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the services provided by the provider.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_provides">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="when" id="_when">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>when(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the events that trigger this service provider to register.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the events that trigger this service provider to register.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_when">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDeferred" id="_isDeferred">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDeferred(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the provider is deferred.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the provider is deferred.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDeferred">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="defaultProviders" id="_defaultProviders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>defaultProviders(): <a href="Illuminate.Support.DefaultProviders.html"><span title="Illuminate\Support\DefaultProviders">DefaultProviders</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default providers for a Laravel application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default providers for a Laravel application.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_defaultProviders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addProviderToBootstrapFile" id="_addProviderToBootstrapFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addProviderToBootstrapFile(<span>string <var>$provider</var></span>, <span>string <var>$path</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the given provider to the application's provider bootstrap file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the given provider to the application's provider bootstrap file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addProviderToBootstrapFile">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="app" id="$app">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Foundation.Application.html"><span title="Illuminate\Contracts\Foundation\Application">Application</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$app</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$app">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bootingCallbacks" id="$bootingCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bootingCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bootingCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bootedCallbacks" id="$bootedCallbacks">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bootedCallbacks</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bootedCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishes" id="$publishes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$publishes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$publishes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishGroups" id="$publishGroups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$publishGroups</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$publishGroups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="publishableMigrationPaths" id="$publishableMigrationPaths">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$publishableMigrationPaths</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$publishableMigrationPaths">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="optimizeCommands" id="$optimizeCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$optimizeCommands</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$optimizeCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="optimizeClearCommands" id="$optimizeClearCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$optimizeClearCommands</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$optimizeClearCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bindings" id="$bindings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bindings</var></code>
+				
+	<div class="expandable-collapsedView">
+		All of the container bindings that should be registered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>All of the container bindings that should be registered.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bindings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="singletons" id="$singletons">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;array-key, string&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$singletons</var></code>
+				
+	<div class="expandable-collapsedView">
+		All of the singletons that should be registered.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>All of the singletons that should be registered.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$singletons">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

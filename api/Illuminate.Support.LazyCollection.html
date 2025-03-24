@@ -1,0 +1,4029 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\LazyCollection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.LazyCollection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.LazyCollection.html">LazyCollection</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="covariant">out</span> <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, <a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;</code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt;|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;TKey, TValue, mixed, void&gt;)|<b><span class="active" title="Illuminate\Support\LazyCollection">self</span></b>&lt;TKey, TValue&gt;|array&lt;TKey, TValue&gt;|null <var>$source</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new lazy collection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new lazy collection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="make" id="_make">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>make&lt;<span title="">TMakeKey</span> is array-key, <span title="">TMakeValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TMakeKey, TMakeValue&gt;|iterable&lt;TMakeKey, TMakeValue&gt;|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;TMakeKey, TMakeValue, mixed, void&gt;)|<b><span class="active" title="Illuminate\Support\LazyCollection">self</span></b>&lt;TMakeKey, TMakeValue&gt;|array&lt;TMakeKey, TMakeValue&gt;|null <var>$items</var> = []</span>,
+): static&lt;TMakeKey, TMakeValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new collection instance if the value isn't one already.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new collection instance if the value isn't one already.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_make">						<code>Illuminate\Support\Enumerable::make()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_make">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="range" id="_range">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>range(<span>int <var>$from</var></span>, <span>int <var>$to</var></span>, <span>int <var>$step</var> = <span class="php-num">1</span></span>): static&lt;int, int&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a collection with the given range.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a collection with the given range.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_range">						<code>Illuminate\Support\Enumerable::range()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_range">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all items in the enumerable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all items in the enumerable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_all">						<code>Illuminate\Support\Enumerable::all()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="eager" id="_eager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>eager(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Eager load all items into a new lazy collection backed by an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Eager load all items into a new lazy collection backed by an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_eager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remember" id="_remember">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remember(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Cache values as they're enumerated.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cache values as they're enumerated.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remember">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="median" id="_median">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>median(<span>string|array&lt;array-key, string&gt;|null <var>$key</var> = <span class="php-kw">null</span></span>): float|int|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the median of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the median of a given key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_median">						<code>Illuminate\Support\Enumerable::median()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_median">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mode" id="_mode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mode(<span>string|array&lt;string&gt;|null <var>$key</var> = <span class="php-kw">null</span></span>): array&lt;int, float|int&gt;|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the mode of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the mode of a given key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_mode">						<code>Illuminate\Support\Enumerable::mode()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collapse" id="_collapse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collapse(): static&lt;int, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Collapse the collection of items into a single array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Collapse the collection of items into a single array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_collapse">						<code>Illuminate\Support\Enumerable::collapse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collapse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collapseWithKeys" id="_collapseWithKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collapseWithKeys(): static&lt;mixed, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Collapse the collection of items into a single array while preserving its keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Collapse the collection of items into a single array while preserving its keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collapseWithKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contains" id="_contains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>contains(<span>(callable(TValue, TKey):&nbsp;bool)|TValue|string <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an item exists in the enumerable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an item exists in the enumerable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_contains">						<code>Illuminate\Support\Enumerable::contains()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_contains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="containsStrict" id="_containsStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>containsStrict(<span>(callable(TValue):&nbsp;bool)|TValue|array-key <var>$key</var></span>, <span>TValue|null <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an item exists, using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an item exists, using strict comparison.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_containsStrict">						<code>Illuminate\Support\Enumerable::containsStrict()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_containsStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doesntContain" id="_doesntContain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doesntContain(<span>mixed <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an item is not contained in the enumerable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an item is not contained in the enumerable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_doesntContain">						<code>Illuminate\Support\Enumerable::doesntContain()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doesntContain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="crossJoin" id="_crossJoin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>crossJoin&lt;<span title="">TCrossJoinKey</span>, <span title="">TCrossJoinValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TCrossJoinKey, TCrossJoinValue&gt;|iterable&lt;TCrossJoinKey, TCrossJoinValue&gt; ...<var>$arrays</var></span>,
+): static&lt;int, array&lt;int, TValue|TCrossJoinValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Cross join the given iterables, returning all possible permutations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cross join the given iterables, returning all possible permutations.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_crossJoin">						<code>Illuminate\Support\Enumerable::crossJoin()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_crossJoin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="countBy" id="_countBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>countBy(<span>(callable(TValue, TKey):&nbsp;array-key)|string|null <var>$countBy</var> = <span class="php-kw">null</span></span>): static&lt;array-key, int&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Count the number of items in the collection by a field or using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count the number of items in the collection by a field or using a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_countBy">						<code>Illuminate\Support\Enumerable::countBy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_countBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diff" id="_diff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diff(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items that are not present in the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items that are not present in the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diff">						<code>Illuminate\Support\Enumerable::diff()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diffUsing" id="_diffUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diffUsing(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>,
+	<span>callable(TValue, TValue):&nbsp;int <var>$callback</var></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items that are not present in the given items, using the callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items that are not present in the given items, using the callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diffUsing">						<code>Illuminate\Support\Enumerable::diffUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diffUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diffAssoc" id="_diffAssoc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diffAssoc(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items whose keys and values are not present in the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items whose keys and values are not present in the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diffAssoc">						<code>Illuminate\Support\Enumerable::diffAssoc()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diffAssoc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diffAssocUsing" id="_diffAssocUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diffAssocUsing(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>, <span>callable(TKey, TKey):&nbsp;int <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items whose keys and values are not present in the given items, using the callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items whose keys and values are not present in the given items, using the callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diffAssocUsing">						<code>Illuminate\Support\Enumerable::diffAssocUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diffAssocUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diffKeys" id="_diffKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diffKeys(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, mixed&gt;|iterable&lt;TKey, mixed&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items whose keys are not present in the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items whose keys are not present in the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diffKeys">						<code>Illuminate\Support\Enumerable::diffKeys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diffKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diffKeysUsing" id="_diffKeysUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diffKeysUsing(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, mixed&gt;|iterable&lt;TKey, mixed&gt; <var>$items</var></span>, <span>callable(TKey, TKey):&nbsp;int <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items whose keys are not present in the given items, using the callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items whose keys are not present in the given items, using the callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_diffKeysUsing">						<code>Illuminate\Support\Enumerable::diffKeysUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diffKeysUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="duplicates" id="_duplicates">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>duplicates&lt;<span title="">TMapValue</span>&gt;(<span>(callable(TValue):&nbsp;TMapValue)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve duplicate items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve duplicate items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_duplicates">						<code>Illuminate\Support\Enumerable::duplicates()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_duplicates">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="duplicatesStrict" id="_duplicatesStrict">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>duplicatesStrict&lt;<span title="">TMapValue</span>&gt;(<span>(callable(TValue):&nbsp;TMapValue)|string|null <var>$callback</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Retrieve duplicate items using strict comparison.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Retrieve duplicate items using strict comparison.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_duplicatesStrict">						<code>Illuminate\Support\Enumerable::duplicatesStrict()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_duplicatesStrict">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="except" id="_except">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>except(<span><a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;array-key, TKey&gt;|array&lt;array-key, TKey&gt; <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all items except for those with the specified keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all items except for those with the specified keys.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_except">						<code>Illuminate\Support\Enumerable::except()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_except">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filter" id="_filter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filter(<span>(callable(TValue, TKey):&nbsp;bool)|null <var>$callback</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a filter over each of the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a filter over each of the items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_filter">						<code>Illuminate\Support\Enumerable::filter()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first&lt;<span title="">TFirstDefault</span>&gt;(
+	<span>(callable(TValue):&nbsp;bool)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>TFirstDefault|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TFirstDefault) <var>$default</var> = <span class="php-kw">null</span></span>,
+): TValue|TFirstDefault</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first item from the enumerable passing the given truth test.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first item from the enumerable passing the given truth test.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_first">						<code>Illuminate\Support\Enumerable::first()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flatten" id="_flatten">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flatten(<span>int <var>$depth</var> = INF</span>): static&lt;int, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a flattened list of the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a flattened list of the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_flatten">						<code>Illuminate\Support\Enumerable::flatten()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flatten">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flip" id="_flip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flip(): static&lt;TValue, TKey&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Flip the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flip the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_flip">						<code>Illuminate\Support\Enumerable::flip()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get&lt;<span title="">TGetDefault</span>&gt;(<span>TKey|null <var>$key</var></span>, <span>TGetDefault|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TGetDefault) <var>$default</var> = <span class="php-kw">null</span></span>): TValue|TGetDefault</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an item by key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an item by key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_get">						<code>Illuminate\Support\Enumerable::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="groupBy" id="_groupBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>groupBy&lt;<span title="">TGroupKey</span> is array-key&gt;(
+	<span>(callable(TValue, TKey):&nbsp;TGroupKey)|array|string <var>$groupBy</var></span>,
+	<span>bool <var>$preserveKeys</var> = <span class="php-kw">false</span></span>,
+): static&lt;($groupBy is string&nbsp;?&nbsp;array-key&nbsp;:&nbsp;($groupBy is array&nbsp;?&nbsp;array-key&nbsp;:&nbsp;TGroupKey)), static&lt;($preserveKeys is true&nbsp;?&nbsp;TKey&nbsp;:&nbsp;int), ($groupBy is array&nbsp;?&nbsp;mixed&nbsp;:&nbsp;TValue)&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Group an associative array by a field or using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Group an associative array by a field or using a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_groupBy">						<code>Illuminate\Support\Enumerable::groupBy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_groupBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keyBy" id="_keyBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keyBy&lt;<span title="">TNewKey</span> is array-key&gt;(
+	<span>(callable(TValue, TKey):&nbsp;TNewKey)|array|string <var>$keyBy</var></span>,
+): static&lt;($keyBy is string&nbsp;?&nbsp;array-key&nbsp;:&nbsp;($keyBy is array&nbsp;?&nbsp;array-key&nbsp;:&nbsp;TNewKey)), TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Key an associative array by a field or using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Key an associative array by a field or using a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_keyBy">						<code>Illuminate\Support\Enumerable::keyBy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keyBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has(<span>mixed <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an item exists in the collection by key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an item exists in the collection by key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_has">						<code>Illuminate\Support\Enumerable::has()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAny" id="_hasAny">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAny(<span>mixed <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if any of the keys exist in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if any of the keys exist in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_hasAny">						<code>Illuminate\Support\Enumerable::hasAny()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAny">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="implode" id="_implode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>implode(<span>(callable(TValue, TKey):&nbsp;mixed)|string <var>$value</var></span>, <span>string|null <var>$glue</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Concatenate values of a given key as a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Concatenate values of a given key as a string.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_implode">						<code>Illuminate\Support\Enumerable::implode()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_implode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersect" id="_intersect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersect(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_intersect">						<code>Illuminate\Support\Enumerable::intersect()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersectUsing" id="_intersectUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersectUsing(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>,
+	<span>callable(TValue, TValue):&nbsp;int <var>$callback</var></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items, using the callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items, using the callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_intersectUsing">						<code>Illuminate\Support\Enumerable::intersectUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersectUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersectAssoc" id="_intersectAssoc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersectAssoc(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items with additional index check.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items with additional index check.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_intersectAssoc">						<code>Illuminate\Support\Enumerable::intersectAssoc()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersectAssoc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersectAssocUsing" id="_intersectAssocUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersectAssocUsing(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>,
+	<span>callable(TValue, TValue):&nbsp;int <var>$callback</var></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items with additional index check, using the callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items with additional index check, using the callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_intersectAssocUsing">						<code>Illuminate\Support\Enumerable::intersectAssocUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersectAssocUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersectByKeys" id="_intersectByKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersectByKeys(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, mixed&gt;|iterable&lt;TKey, mixed&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items by key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items by key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_intersectByKeys">						<code>Illuminate\Support\Enumerable::intersectByKeys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersectByKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the items are empty or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the items are empty or not.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_isEmpty">						<code>Illuminate\Support\Enumerable::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="containsOneItem" id="_containsOneItem">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>containsOneItem(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the collection contains a single item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the collection contains a single item.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_containsOneItem">						<code>Illuminate\Support\Enumerable::containsOneItem()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_containsOneItem">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="join" id="_join">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>join(<span>string <var>$glue</var></span>, <span>string <var>$finalGlue</var> = <span class="php-str">''</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Join all items from the collection using a string. The final items can use a separate glue string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Join all items from the collection using a string. The final items can use a separate glue string.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_join">						<code>Illuminate\Support\Enumerable::join()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_join">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): static&lt;int, TKey&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys of the collection items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys of the collection items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_keys">						<code>Illuminate\Support\Enumerable::keys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="last" id="_last">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>last&lt;<span title="">TLastDefault</span>&gt;(
+	<span>(callable(TValue, TKey):&nbsp;bool)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
+	<span>TLastDefault|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TLastDefault) <var>$default</var> = <span class="php-kw">null</span></span>,
+): TValue|TLastDefault</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the last item from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the last item from the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_last">						<code>Illuminate\Support\Enumerable::last()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_last">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pluck" id="_pluck">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pluck(<span>string|array&lt;array-key, string&gt; <var>$value</var></span>, <span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): static&lt;array-key, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the values of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the values of a given key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_pluck">						<code>Illuminate\Support\Enumerable::pluck()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pluck">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>map&lt;<span title="">TMapValue</span>&gt;(<span>callable(TValue, TKey):&nbsp;TMapValue <var>$callback</var></span>): static&lt;TKey, TMapValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a map over each of the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a map over each of the items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_map">						<code>Illuminate\Support\Enumerable::map()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapToDictionary" id="_mapToDictionary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapToDictionary&lt;<span title="">TMapToDictionaryKey</span> is array-key, <span title="">TMapToDictionaryValue</span>&gt;(
+	<span>callable(TValue, TKey):&nbsp;array&lt;TMapToDictionaryKey, TMapToDictionaryValue&gt; <var>$callback</var></span>,
+): static&lt;TMapToDictionaryKey, array&lt;int, TMapToDictionaryValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a dictionary map over the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a dictionary map over the items.</p>
+<p>The callback should return an associative array with a single key/value pair.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_mapToDictionary">						<code>Illuminate\Support\Enumerable::mapToDictionary()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapToDictionary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapWithKeys" id="_mapWithKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapWithKeys&lt;<span title="">TMapWithKeysKey</span> is array-key, <span title="">TMapWithKeysValue</span>&gt;(
+	<span>callable(TValue, TKey):&nbsp;array&lt;TMapWithKeysKey, TMapWithKeysValue&gt; <var>$callback</var></span>,
+): static&lt;TMapWithKeysKey, TMapWithKeysValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run an associative map over each of the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run an associative map over each of the items.</p>
+<p>The callback should return an associative array with a single key/value pair.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_mapWithKeys">						<code>Illuminate\Support\Enumerable::mapWithKeys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapWithKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_merge">						<code>Illuminate\Support\Enumerable::merge()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeRecursive" id="_mergeRecursive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeRecursive&lt;<span title="">TMergeRecursiveValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TMergeRecursiveValue&gt;|iterable&lt;TKey, TMergeRecursiveValue&gt; <var>$items</var></span>,
+): static&lt;TKey, TValue|TMergeRecursiveValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively merge the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively merge the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_mergeRecursive">						<code>Illuminate\Support\Enumerable::mergeRecursive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeRecursive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="multiply" id="_multiply">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>multiply(<span>int <var>$multiplier</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Multiply the items in the collection by the multiplier.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Multiply the items in the collection by the multiplier.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_multiply">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="combine" id="_combine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>combine&lt;<span title="">TCombineValue</span>&gt;(
+	<span><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;array-key, TCombineValue&gt;|array&lt;array-key, TCombineValue&gt;|(callable():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;array-key, TCombineValue&gt;) <var>$values</var></span>,
+): static&lt;TValue, TCombineValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a collection by using this collection for keys and another for its values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a collection by using this collection for keys and another for its values.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_combine">						<code>Illuminate\Support\Enumerable::combine()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_combine">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="union" id="_union">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>union(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Union the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Union the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_union">						<code>Illuminate\Support\Enumerable::union()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_union">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="nth" id="_nth">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>nth(<span>int <var>$step</var></span>, <span>int <var>$offset</var> = <span class="php-num">0</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new collection consisting of every n-th element.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new collection consisting of every n-th element.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_nth">						<code>Illuminate\Support\Enumerable::nth()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_nth">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="only" id="_only">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>only(<span><a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;array-key, TKey&gt;|array&lt;array-key, TKey&gt;|string <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the items with the specified keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the items with the specified keys.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_only">						<code>Illuminate\Support\Enumerable::only()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="select" id="_select">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>select(<span><a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;array-key, TKey&gt;|array&lt;array-key, TKey&gt;|string <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Select specific values from the items within the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Select specific values from the items within the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_select">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="concat" id="_concat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>concat&lt;<span title="">TConcatKey</span> is array-key, <span title="">TConcatValue</span>&gt;(
+	<span>iterable&lt;TConcatKey, TConcatValue&gt; <var>$source</var></span>,
+): static&lt;TKey|TConcatKey, TValue|TConcatValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Push all of the given items onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Push all of the given items onto the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_concat">						<code>Illuminate\Support\Enumerable::concat()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_concat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="random" id="_random">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>random(<span>int|null <var>$number</var> = <span class="php-kw">null</span></span>): static&lt;int, TValue&gt;|TValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Get one or a specified number of items randomly from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get one or a specified number of items randomly from the collection.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_random">						<code>Illuminate\Support\Enumerable::random()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_random">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replace" id="_replace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replace(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace the collection items with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace the collection items with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_replace">						<code>Illuminate\Support\Enumerable::replace()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceRecursive" id="_replaceRecursive">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceRecursive(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively replace the collection items with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively replace the collection items with the given items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_replaceRecursive">						<code>Illuminate\Support\Enumerable::replaceRecursive()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceRecursive">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reverse" id="_reverse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reverse(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Reverse items order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reverse items order.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_reverse">						<code>Illuminate\Support\Enumerable::reverse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reverse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="search" id="_search">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>search(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): TKey|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Search the collection for a given value and return the corresponding key if successful.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Search the collection for a given value and return the corresponding key if successful.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_search">						<code>Illuminate\Support\Enumerable::search()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_search">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="before" id="_before">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>before(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the item before the given item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the item before the given item.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_before">						<code>Illuminate\Support\Enumerable::before()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_before">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="after" id="_after">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>after(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the item after the given item.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the item after the given item.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_after">						<code>Illuminate\Support\Enumerable::after()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_after">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="shuffle" id="_shuffle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>shuffle(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Shuffle the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Shuffle the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_shuffle">						<code>Illuminate\Support\Enumerable::shuffle()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_shuffle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sliding" id="_sliding">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sliding(<span>int <var>$size</var> = <span class="php-num">2</span></span>, <span>int <var>$step</var> = <span class="php-num">1</span></span>): static&lt;int, static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create chunks representing a "sliding window" view of the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create chunks representing a &quot;sliding window&quot; view of the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sliding">						<code>Illuminate\Support\Enumerable::sliding()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sliding">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skip" id="_skip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>skip(<span>int <var>$count</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Skip the first &#123;$count} items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Skip the first {$count} items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_skip">						<code>Illuminate\Support\Enumerable::skip()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_skip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skipUntil" id="_skipUntil">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>skipUntil(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Skip items in the collection until the given condition is met.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Skip items in the collection until the given condition is met.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_skipUntil">						<code>Illuminate\Support\Enumerable::skipUntil()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_skipUntil">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skipWhile" id="_skipWhile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>skipWhile(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Skip items in the collection while the given condition is met.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Skip items in the collection while the given condition is met.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_skipWhile">						<code>Illuminate\Support\Enumerable::skipWhile()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_skipWhile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="slice" id="_slice">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>slice(<span>int <var>$offset</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a slice of items from the enumerable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a slice of items from the enumerable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_slice">						<code>Illuminate\Support\Enumerable::slice()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_slice">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="split" id="_split">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>split(<span>int <var>$numberOfGroups</var></span>): static&lt;int, static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Split a collection into a certain number of groups.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Split a collection into a certain number of groups.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_split">						<code>Illuminate\Support\Enumerable::split()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_split">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sole" id="_sole">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sole(<span>(callable(TValue, TKey):&nbsp;bool)|string <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): TValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Support.ItemNotFoundException.html"><span>Illuminate\Support\ItemNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Illuminate.Support.MultipleItemsFoundException.html"><span>Illuminate\Support\MultipleItemsFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sole">						<code>Illuminate\Support\Enumerable::sole()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sole">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="firstOrFail" id="_firstOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>firstOrFail(<span>(callable(TValue, TKey):&nbsp;bool)|string <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): TValue</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first item in the collection but throw an exception if no matching items exist.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first item in the collection but throw an exception if no matching items exist.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Support.ItemNotFoundException.html"><span>Illuminate\Support\ItemNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_firstOrFail">						<code>Illuminate\Support\Enumerable::firstOrFail()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_firstOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chunk" id="_chunk">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chunk(
+	<span>int <var>$size</var></span>,
+	<span>bool <var>$preserveKeys</var> = <span class="php-kw">true</span></span>,
+): ($preserveKeys is true&nbsp;?&nbsp;static&lt;int, static&gt;&nbsp;:&nbsp;static&lt;int, static&lt;int, TValue&gt;&gt;)</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the collection into chunks of the given size.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the collection into chunks of the given size.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_chunk">						<code>Illuminate\Support\Enumerable::chunk()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chunk">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="splitIn" id="_splitIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>splitIn(<span>int <var>$numberOfGroups</var></span>): static&lt;int, static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Split a collection into a certain number of groups, and fill the first groups completely.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Split a collection into a certain number of groups, and fill the first groups completely.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_splitIn">						<code>Illuminate\Support\Enumerable::splitIn()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_splitIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chunkWhile" id="_chunkWhile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chunkWhile(<span>callable(TValue, TKey, <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;):&nbsp;bool <var>$callback</var></span>): static&lt;int, static&lt;int, TValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Chunk the collection into chunks with a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Chunk the collection into chunks with a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_chunkWhile">						<code>Illuminate\Support\Enumerable::chunkWhile()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chunkWhile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sort" id="_sort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sort(<span>(callable(TValue, TValue):&nbsp;int)|null|int <var>$callback</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort through each item with a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort through each item with a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sort">						<code>Illuminate\Support\Enumerable::sort()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortDesc" id="_sortDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortDesc(<span>int <var>$options</var> = SORT_REGULAR</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort items in descending order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort items in descending order.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortDesc">						<code>Illuminate\Support\Enumerable::sortDesc()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortBy" id="_sortBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortBy(
+	<span>array&lt;array-key, (callable(TValue, TValue):&nbsp;mixed)|(callable(TValue, TKey):&nbsp;mixed)|string|array{string, string}&gt;|(callable(TValue, TKey):&nbsp;mixed)|string <var>$callback</var></span>,
+	<span>int <var>$options</var> = SORT_REGULAR</span>,
+	<span>bool <var>$descending</var> = <span class="php-kw">false</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort the collection using the given callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort the collection using the given callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortBy">						<code>Illuminate\Support\Enumerable::sortBy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortByDesc" id="_sortByDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortByDesc(
+	<span>array&lt;array-key, (callable(TValue, TValue):&nbsp;mixed)|(callable(TValue, TKey):&nbsp;mixed)|string|array{string, string}&gt;|(callable(TValue, TKey):&nbsp;mixed)|string <var>$callback</var></span>,
+	<span>int <var>$options</var> = SORT_REGULAR</span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort the collection in descending order using the given callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort the collection in descending order using the given callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortByDesc">						<code>Illuminate\Support\Enumerable::sortByDesc()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortByDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortKeys" id="_sortKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortKeys(<span>int <var>$options</var> = SORT_REGULAR</span>, <span>bool <var>$descending</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort the collection keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort the collection keys.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortKeys">						<code>Illuminate\Support\Enumerable::sortKeys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortKeysDesc" id="_sortKeysDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortKeysDesc(<span>int <var>$options</var> = SORT_REGULAR</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort the collection keys in descending order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort the collection keys in descending order.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortKeysDesc">						<code>Illuminate\Support\Enumerable::sortKeysDesc()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortKeysDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sortKeysUsing" id="_sortKeysUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sortKeysUsing(<span>callable(TKey, TKey):&nbsp;int <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Sort the collection keys using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sort the collection keys using a callback.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_sortKeysUsing">						<code>Illuminate\Support\Enumerable::sortKeysUsing()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sortKeysUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="take" id="_take">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>take(<span>int <var>$limit</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Take the first or last &#123;$limit} items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take the first or last {$limit} items.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_take">						<code>Illuminate\Support\Enumerable::take()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_take">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="takeUntil" id="_takeUntil">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>takeUntil(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Take items in the collection until the given condition is met.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take items in the collection until the given condition is met.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_takeUntil">						<code>Illuminate\Support\Enumerable::takeUntil()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_takeUntil">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="takeUntilTimeout" id="_takeUntilTimeout">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>takeUntilTimeout(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$timeout</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Take items in the collection until a given point in time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take items in the collection until a given point in time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_takeUntilTimeout">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="takeWhile" id="_takeWhile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>takeWhile(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Take items in the collection while the given condition is met.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take items in the collection while the given condition is met.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_takeWhile">						<code>Illuminate\Support\Enumerable::takeWhile()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_takeWhile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="tapEach" id="_tapEach">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>tapEach(<span>callable(TValue, TKey):&nbsp;mixed <var>$callback</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass each item in the collection to the given callback, lazily.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass each item in the collection to the given callback, lazily.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_tapEach">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="throttle" id="_throttle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>throttle(<span>float <var>$seconds</var></span>): static&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Throttle the values, releasing them at most once per the given seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Throttle the values, releasing them at most once per the given seconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_throttle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dot" id="_dot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dot(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Flatten a multi-dimensional associative array with dots.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flatten a multi-dimensional associative array with dots.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="undot" id="_undot">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>undot(): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a flatten "dot" notation array into an expanded array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a flatten &quot;dot&quot; notation array into an expanded array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_undot">						<code>Illuminate\Support\Enumerable::undot()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_undot">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unique" id="_unique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unique(<span>(callable(TValue, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return only unique items from the collection array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return only unique items from the collection array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_unique">						<code>Illuminate\Support\Enumerable::unique()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="values" id="_values">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>values(): static&lt;int, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Reset the keys on the underlying array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reset the keys on the underlying array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_values">						<code>Illuminate\Support\Enumerable::values()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_values">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="zip" id="_zip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>zip&lt;<span title="">TZipValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TZipValue&gt;|iterable&lt;array-key, TZipValue&gt; ...<var>$items</var></span>,
+): static&lt;int, static&lt;int, TValue|TZipValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Zip the collection together with one or more arrays.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Zip the collection together with one or more arrays.</p>
+<p>e.g. new LazyCollection([1, 2, 3])-&gt;zip([4, 5, 6]);
+=&gt; [[1, 4], [2, 5], [3, 6]]</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_zip">						<code>Illuminate\Support\Enumerable::zip()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_zip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pad" id="_pad">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pad&lt;<span title="">TPadValue</span>&gt;(<span>int <var>$size</var></span>, <span>TPadValue <var>$value</var></span>): static&lt;int, TValue|TPadValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Pad collection to the specified length with a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pad collection to the specified length with a value.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_pad">						<code>Illuminate\Support\Enumerable::pad()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pad">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Traversable.html"><span title="Traversable">Traversable</span></a>&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the values iterator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the values iterator.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Count the number of items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count the number of items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="makeIterator" id="_makeIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>makeIterator&lt;<span title="">TIteratorKey</span> is array-key, <span title="">TIteratorValue</span>&gt;(
+	<span><a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TIteratorKey, TIteratorValue&gt;|array&lt;TIteratorKey, TIteratorValue&gt;|(callable():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;TIteratorKey, TIteratorValue&gt;) <var>$source</var></span>,
+): <a href="Traversable.html"><span title="Traversable">Traversable</span></a>&lt;TIteratorKey, TIteratorValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Make an iterator from the given source.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make an iterator from the given source.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_makeIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="explodePluckParameters" id="_explodePluckParameters">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>explodePluckParameters(<span>string|string[] <var>$value</var></span>, <span>string|string[]|null <var>$key</var></span>): array{string[], (string[]|null)}</code>
+
+
+	<div class="expandable-collapsedView">
+		Explode the "value" and "key" arguments passed to "pluck".
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Explode the &quot;value&quot; and &quot;key&quot; arguments passed to &quot;pluck&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_explodePluckParameters">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="passthru" id="_passthru">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>passthru(<span>string <var>$method</var></span>, <span>array&lt;mixed&gt; <var>$params</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Pass this lazy collection through a method on the collection class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pass this lazy collection through a method on the collection class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_passthru">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="now" id="_now">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>now(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_now">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="preciseNow" id="_preciseNow">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>preciseNow(): float</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the precise current time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the precise current time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_preciseNow">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="usleep" id="_usleep">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>usleep(<span>int <var>$microseconds</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sleep for the given amount of microseconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sleep for the given amount of microseconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_usleep">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.EnumeratesValues.html"><span>Illuminate\Support\Traits\EnumeratesValues</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.EnumeratesValues.html#_wrap">wrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unwrap">unwrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_empty">empty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_times">times()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_avg">avg()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_average">average()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_some">some()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dd">dd()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dump">dump()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_each">each()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_eachSpread">eachSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_every">every()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_firstWhere">firstWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_value">value()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_ensure">ensure()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapSpread">mapSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapToGroups">mapToGroups()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_flatMap">flatMap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapInto">mapInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_min">min()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_max">max()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_forPage">forPage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_partition">partition()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_percentage">percentage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_sum">sum()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenEmpty">whenEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenNotEmpty">whenNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessEmpty">unlessEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessNotEmpty">unlessNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_where">where()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNull">whereNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotNull">whereNotNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereStrict">whereStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereIn">whereIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInStrict">whereInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereBetween">whereBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotBetween">whereNotBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotIn">whereNotIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotInStrict">whereNotInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInstanceOf">whereInstanceOf()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipe">pipe()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeInto">pipeInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeThrough">pipeThrough()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduce">reduce()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceSpread">reduceSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceWithKeys">reduceWithKeys()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reject">reject()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_tap">tap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_uniqueStrict">uniqueStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toArray">toArray()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toJson">toJson()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getCachingIterator">getCachingIterator()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___toString">__toString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_escapeWhenCastingToString">escapeWhenCastingToString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_proxy">proxy()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___get">__get()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_operatorForWhere">operatorForWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_useAsCallable">useAsCallable()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_valueRetriever">valueRetriever()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_equality">equality()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_negate">negate()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_identity">identity()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="source" id="$source">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;TKey, TValue, mixed, void&gt;)|static|array&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$source</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$source">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.EnumeratesValues.html"><span>Illuminate\Support\Traits\EnumeratesValues</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$escapeWhenCastingToString">$escapeWhenCastingToString</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$proxies">$proxies</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$average">$average</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$avg">$avg</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$contains">$contains</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$doesntContain">$doesntContain</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$each">$each</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$every">$every</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$filter">$filter</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$first">$first</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$flatMap">$flatMap</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$groupBy">$groupBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$keyBy">$keyBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$last">$last</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$map">$map</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$max">$max</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$min">$min</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$partition">$partition</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$percentage">$percentage</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$reject">$reject</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$skipUntil">$skipUntil</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$skipWhile">$skipWhile</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$some">$some</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sortBy">$sortBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sortByDesc">$sortByDesc</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sum">$sum</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$takeUntil">$takeUntil</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$takeWhile">$takeWhile</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$unique">$unique</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$unless">$unless</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$until">$until</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$when">$when</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1041 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\Fluent |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.Fluent.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.Fluent.html">Fluent</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="">TValue</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, <a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, <a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, <a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Support\Fluent</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ColumnDefinition.html"><span>Illuminate\Database\Schema\ColumnDefinition</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html"><span>Illuminate\Database\Schema\ForeignIdColumnDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.ForeignKeyDefinition.html"><span>Illuminate\Database\Schema\ForeignKeyDefinition</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Schema.IndexDefinition.html"><span>Illuminate\Database\Schema\IndexDefinition</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>iterable&lt;TKey, TValue&gt; <var>$attributes</var> = []</span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new fluent instance.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Schema.ForeignIdColumnDefinition.html#___construct">						<code>Illuminate\Database\Schema\ForeignIdColumnDefinition::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get&lt;<span title="">TGetDefault</span>&gt;(<span>TKey <var>$key</var></span>, <span>TGetDefault|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TGetDefault) <var>$default</var> = <span class="php-kw">null</span></span>): TValue|TGetDefault</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute from the fluent instance using "dot" notation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute from the fluent instance using &quot;dot&quot; notation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="set" id="_set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>set(<span>TKey <var>$key</var></span>, <span>TValue <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set an attribute on the fluent instance using "dot" notation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set an attribute on the fluent instance using &quot;dot&quot; notation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_set">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fill" id="_fill">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fill(<span>iterable&lt;TKey, TValue&gt; <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Fill the fluent instance with an array of attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Fill the fluent instance with an array of attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fill">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="value" id="_value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>value(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute from the fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute from the fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_value">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scope" id="_scope">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scope(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of the given key as a new Fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of the given key as a new Fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scope">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>array|mixed|null <var>$keys</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the attributes from the fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the attributes from the fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="data" id="_data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>data(<span>string <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get data from the fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get data from the fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_data">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributes" id="_getAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributes(): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes from the fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes from the fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the fluent instance to an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the fluent instance to an array.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Arrayable.html#_toArray">						<code>Illuminate\Contracts\Support\Arrayable::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): array&lt;TKey, TValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the object into something JSON serializable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the object into something JSON serializable.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toJson" id="_toJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toJson(<span>int <var>$options</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the fluent instance to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the fluent instance to JSON.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Jsonable.html#_toJson">						<code>Illuminate\Contracts\Support\Jsonable::toJson()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetExists" id="_offsetExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetExists(<span>TKey <var>$offset</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given offset exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given offset exists.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetExists">						<code>ArrayAccess::offsetExists()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetGet" id="_offsetGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetGet(<span>TKey <var>$offset</var></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value for a given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value for a given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetGet">						<code>ArrayAccess::offsetGet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetSet" id="_offsetSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetSet(<span>TKey <var>$offset</var></span>, <span>TValue <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetSet">						<code>ArrayAccess::offsetSet()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="offsetUnset" id="_offsetUnset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>offsetUnset(<span>TKey <var>$offset</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset the value at the given offset.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset the value at the given offset.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="ArrayAccess.html#_offsetUnset">						<code>ArrayAccess::offsetUnset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_offsetUnset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__call(<span>TKey <var>$method</var></span>, <span>array{0: ?TValue} <var>$parameters</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle dynamic calls to the fluent instance to set attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle dynamic calls to the fluent instance to set attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__get(<span>TKey <var>$key</var></span>): TValue|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically retrieve the value of an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically retrieve the value of an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__set" id="___set">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__set(<span>TKey <var>$key</var></span>, <span>TValue <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically set the value of an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically set the value of an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___set">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__isset" id="___isset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__isset(<span>TKey <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically check if an attribute is set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically check if an attribute is set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___isset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unset" id="___unset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unset(<span>TKey <var>$key</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Dynamically unset an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dynamically unset an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unset">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.InteractsWithData.html"><span>Illuminate\Support\Traits\InteractsWithData</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.InteractsWithData.html#_exists">exists()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_has">has()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_hasAny">hasAny()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenHas">whenHas()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_filled">filled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isNotFilled">isNotFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_anyFilled">anyFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenFilled">whenFilled()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_missing">missing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_whenMissing">whenMissing()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isEmptyString">isEmptyString()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_str">str()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_string">string()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_boolean">boolean()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_integer">integer()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_float">float()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_date">date()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enum">enum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_enums">enums()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_isBackedEnum">isBackedEnum()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_array">array()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_only">only()</a>, <a href="Illuminate.Support.Traits.InteractsWithData.html#_except">except()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;TKey, TValue&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

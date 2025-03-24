@@ -1,0 +1,1858 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Ds\Map |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ds.html">Ds</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ds.Deque.html">
+							Deque
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ds.Map.html">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Pair.html">
+							Pair
+						</a>
+					</li>
+					<li>
+						<a href="Ds.PriorityQueue.html">
+							PriorityQueue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Queue.html">
+							Queue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Set.html">
+							Set
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Stack.html">
+							Stack
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Vector.html">
+							Vector
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ds.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Hashable.html">
+							Hashable
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Sequence.html">
+							Sequence
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ds.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ds.Map.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ds.html">Ds</a>\<a href="Ds.Map.html">Map</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>mixed ...<var>$values</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new instance, using either a traversable object or an array for the initial values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new instance, using either a traversable object or an array for the initial values.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td>...<var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>A traversable object or an array to use for the initial values.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allocate" id="_allocate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allocate(<span>int <var>$capacity</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Allocates enough memory for a required capacity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Allocates enough memory for a required capacity.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$capacity</var>&nbsp;&nbsp;</td>
+										<td><p>The number of values for which capacity should be allocated.<br></p>
+<p><b>Note:</b> Capacity will stay the same if this value is less than or equal to the current capacity.</p>
+Capacity will always be rounded up to the nearest power of 2.
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allocate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="apply" id="_apply">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>apply(<span>callable <var>$callback</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Updates all values by applying a callback function to each value in the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Updates all values by applying a callback function to each value in the map.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A callable to apply to each value in the map. The callback should return what
+the value should be replaced by.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_apply">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="capacity" id="_capacity">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>capacity(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the current capacity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the current capacity.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_capacity">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="count" id="_count">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>count(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Count elements of an object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count elements of an object</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The custom count as an integer.</p>
+</p>
+<p>
+The return value is cast to an integer.
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Countable.html#_count">						<code>Countable::count()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_count">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="clear" id="_clear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>clear(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes all values from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes all values from the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_clear">						<code>Ds\Collection::clear()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_clear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(): <a href="Ds.Collection.html"><span title="Ds\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a shallow copy of the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a shallow copy of the collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_copy">						<code>Ds\Collection::copy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diff" id="_diff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diff(<span><b><span class="active" title="Ds\Map">Map</span></b> <var>$map</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of removing all keys from the current instance that are present in a given map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of removing all keys from the current instance that are present in a given map.</p>
+<p>A \ B = {x ∈ A | x ∉ B}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$map</var>&nbsp;&nbsp;</td>
+										<td><p>The map containing the keys to exclude in the resulting map.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The result of removing all keys from the current instance that are present in a given map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="filter" id="_filter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>filter(<span>null|callable <var>$callback</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new map using a callable to determine which pairs to include
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new map using a callable to determine which pairs to include</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>Optional callable which returns TRUE if the pair should be included, FALSE
+otherwise. If a callback is not provided, only values which are TRUE (see converting to boolean) will be included.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_filter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first(): <a href="Ds.Pair.html"><span title="Ds\Pair">Pair</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the first pair in the map
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the first pair in the map</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The first pair in the map.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnderflowException.html"><span>UnderflowException</span></a></code>&nbsp;</td>
+										<td><p>if empty</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>mixed <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the value for a given key, or an optional default value if the key could not be found.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; Keys of…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the value for a given key, or an optional default value if the key could not be found.</p>
+<p>
+<b>Note:</b> Keys of type object are supported. If an object implements Ds\Hashable, equality will be
+determined by the object's equals function. If an object does not implement Ds\Hashable, objects must be references to the same instance to be considered equal.
+</p>
+<p>
+<b>Note:</b> You can also use array syntax to access values by key, eg. $map["key"].
+</p>
+<p>
+<b>Caution:</b> Be careful when using array syntax. Scalar keys will be coerced to integers by the engine. For
+example, $map["1"] will attempt to access int(1), while $map->get("1") will correctly look up the string key.
+</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$key</var>&nbsp;&nbsp;</td>
+										<td><p>The key to look up.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The optional default value, returned if the key could not be found.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The value mapped to the given key, or the default value if provided and the key could not be found in the map.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="OutOfBoundsException.html"><span>OutOfBoundsException</span></a></code>&nbsp;</td>
+										<td><p>if the key could not be found and a default value was not provided.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getIterator" id="_getIterator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getIterator(): <a href="Traversable.html"><span title="Traversable">Traversable</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="IteratorAggregate.html#_getIterator">						<code>IteratorAggregate::getIterator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getIterator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasKey" id="_hasKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasKey(<span>mixed <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines whether the map contains a given key
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines whether the map contains a given key</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$key</var>&nbsp;&nbsp;</td>
+										<td><p>The key to look for.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns TRUE if the key could found, FALSE otherwise.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasValue" id="_hasValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasValue(<span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines whether the map contains a given value
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines whether the map contains a given value</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>The value to look for.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns TRUE if the value could found, FALSE otherwise.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersect" id="_intersect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersect(<span><b><span class="active" title="Ds\Map">Map</span></b> <var>$map</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new map containing the pairs of the current instance whose
+keys are also present in the given map. In other…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new map containing the pairs of the current instance whose
+keys are also present in the given map. In other words, returns a
+copy of the current instance with all keys removed that are not also
+in the other map.</p>
+<p>A ∩ B = {x : x ∈ A ∧ x ∈ B}</p>
+<p><b>Note:</b> Values from the current instance will be kept.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$map</var>&nbsp;&nbsp;</td>
+										<td><p>The other map, containing the keys to intersect with.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The key intersection of the current instance and another map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns whether the collection is empty.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns whether the collection is empty.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Returns TRUE if the map is empty, FALSE otherwise.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_isEmpty">						<code>Ds\Collection::isEmpty()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the map to an array.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Casting to an array is not supported yet.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Caution:&lt;/b&gt; Maps…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the map to an array.</p>
+<p><b>Note:</b> Casting to an array is not supported yet.</p>
+<p><b>Caution:</b> Maps where non-scalar keys are can't be converted to an
+array.
+</p>
+<p><b>Caution:</b> An array will treat all numeric keys as integers, eg.
+"1" and 1 as keys in the map will only result in 1 being included in
+the array.
+</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>An array containing all the values in the same order as
+the map.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ds.Collection.html#_toArray">						<code>Ds\Collection::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify data which should be serialized to JSON
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify data which should be serialized to JSON</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>data which can be serialized by <b>json_encode</b>,
+which is a value of any type other than a resource.</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): <a href="Ds.Set.html"><span title="Ds\Set">Set</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a set containing all the keys of the map, in the same order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a set containing all the keys of the map, in the same order.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A Ds\Set containing all the keys of the map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ksort" id="_ksort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ksort(<span>callable|null <var>$comparator</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Sorts the map in-place by key, using an optional comparator function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sorts the map in-place by key, using an optional comparator function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return
+an integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to  2147483647.
+<code>callback ( mixed $a, mixed $b ) : int</code></p>
+<p><b>Caution:</b> Returning non-integer values from the comparison function, such
+as float, will result in an internal cast to integer of the
+callback's return value. So values such as 0.99 and 0.1 will both be
+cast to an  integer value of 0, which will compare such values as
+equal.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ksort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ksorted" id="_ksorted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ksorted(<span>callable|null <var>$comparator</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a copy sorted by key, using an optional comparator function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a copy sorted by key, using an optional comparator function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return
+an integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to 2147483647.
+<code>callback ( mixed $a, mixed $b ) : int</code></p>
+<p><b>Caution:</b> Returning non-integer values from the comparison function, such
+as float, will result in an internal cast to integer of the
+callback's return value. So values such as 0.99 and 0.1 will both be
+cast to an  integer value of 0, which will compare such values as
+equal.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns a copy of the map, sorted by key.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ksorted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="last" id="_last">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>last(): <a href="Ds.Pair.html"><span title="Ds\Pair">Pair</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the last pair of the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the last pair of the map.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The last pair of the map.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="UnderflowException.html"><span>UnderflowException</span></a></code>&nbsp;</td>
+										<td><p>if empty</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_last">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>map(<span>callable <var>$callback</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of applying a callback function to each value of
+the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of applying a callback function to each value of
+the map.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$callback</var>&nbsp;&nbsp;</td>
+										<td><p>A callable to apply to each value in the
+map. The callable should return what the key will be mapped to in the
+resulting map.
+<code>callback ( mixed $key , mixed $value ) : mixed</code></p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The result of applying a callback to each value in the
+map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span>iterable <var>$values</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the result of associating all keys of a given traversable
+object or array with their corresponding values,…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the result of associating all keys of a given traversable
+object or array with their corresponding values, combined with the
+current instance.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$values</var>&nbsp;&nbsp;</td>
+										<td><p>A traversable object or an array.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The result of associating all keys of a given traversable
+object or array with their corresponding values, combined with the
+current instance.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pairs" id="_pairs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pairs(): <a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a Ds\Sequence containing all the pairs of the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a Ds\Sequence containing all the pairs of the map.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Ds\Sequence containing all the pairs of the map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pairs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="put" id="_put">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>put(<span>mixed <var>$key</var></span>, <span>mixed <var>$value</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Associates a key with a value, overwriting a previous association if
+one exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Associates a key with a value, overwriting a previous association if
+one exists.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$key</var>&nbsp;&nbsp;</td>
+										<td><p>The key to associate the value with.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>The value to be associated with the key.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_put">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="putAll" id="_putAll">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>putAll(<span>iterable <var>$pairs</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Associates all key-value pairs of a traversable object or array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Associates all key-value pairs of a traversable object or array.</p>
+<p><b>Note:</b> Keys of type object are supported. If an object implements
+Ds\Hashable, equality will be determined
+by the object's equals function. If an object does not implement
+Ds\Hashable, objects must be references to the same instance to be
+considered equal.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$pairs</var>&nbsp;&nbsp;</td>
+										<td><p>traversable object or array.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_putAll">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reduce" id="_reduce">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reduce(<span>callable <var>$callback</var></span>, <span>mixed <var>$initial</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Reduces the map to a single value using a callback function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reduces the map to a single value using a callback function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$initial</var>&nbsp;&nbsp;</td>
+										<td><p>The initial value of the carry value. Can be
+NULL.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reduce">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="remove" id="_remove">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>remove(<span>mixed <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Removes and returns a value by key, or return an optional default
+value if the key could not be found.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Removes and returns a value by key, or return an optional default
+value if the key could not be found.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$key</var>&nbsp;&nbsp;</td>
+										<td><p>The key to remove.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The optional default value, returned if the key
+could not be found.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The value that was removed, or the default value if
+provided and the key could not be found in the map.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="OutOfBoundsException.html"><span>OutOfBoundsException</span></a></code>&nbsp;</td>
+										<td><p>if the key could not be found and a
+default value was not provided.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_remove">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reverse" id="_reverse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reverse()</code>
+
+
+	<div class="expandable-collapsedView">
+		Reverses the map in-place.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reverses the map in-place.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reverse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reversed" id="_reversed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reversed(): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a reversed copy of the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a reversed copy of the map.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A reversed copy of the map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reversed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="skip" id="_skip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>skip(<span>int <var>$position</var></span>): <a href="Ds.Pair.html"><span title="Ds\Pair">Pair</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the pair at a given zero-based position.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the pair at a given zero-based position.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$position</var>&nbsp;&nbsp;</td>
+										<td><p>The zero-based positional index to return.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns the Ds\Pair at the given position.</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="OutOfRangeException.html"><span>OutOfRangeException</span></a></code>&nbsp;</td>
+										<td><p>if the position is not valid.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_skip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="slice" id="_slice">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>slice(<span>int <var>$index</var></span>, <span>int|null <var>$length</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a subset of the map defined by a starting index and length.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a subset of the map defined by a starting index and length.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$index</var>&nbsp;&nbsp;</td>
+										<td><p>The index at which the range starts. If positive,
+the range will start at that index in the map. If negative, the range
+will start that far from the end.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$length</var>&nbsp;&nbsp;</td>
+										<td><p>If a length is given and is positive, the
+resulting map will have up to that many pairs in it. If a length is
+given and is negative, the range will stop that many pairs from the
+end. If the length results in an overflow, only pairs up to the end
+of the map will be included. If a length is not provided, the
+resulting map will contain all pairs between the index and the end of
+the map.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A subset of the map defined by a starting index and
+length.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_slice">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sort" id="_sort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sort(<span>callable|null <var>$comparator</var> = <span class="php-kw">null</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Sorts the map in-place by value, using an optional comparator
+function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sorts the map in-place by value, using an optional comparator
+function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return
+an integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to 2147483647.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sorted" id="_sorted">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sorted(<span>callable|null <var>$comparator</var> = <span class="php-kw">null</span></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a copy, sorted by value using an optional comparator function.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a copy, sorted by value using an optional comparator function.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$comparator</var>&nbsp;&nbsp;</td>
+										<td><p>The comparison function must return
+an integer less than, equal to, or greater than zero if the first
+argument is considered to be respectively less than, equal to, or
+greater than the second. Note that before PHP 7.0.0 this integer had
+to be in the range from -2147483648 to 2147483647.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sorted">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sum" id="_sum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sum(): float|int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the sum of all values in the map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the sum of all values in the map.</p>
+<p><b>Note:</b> Arrays and objects are considered equal to zero when
+calculating the sum.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The sum of all the values in the map as either a
+float or int depending on the values in the map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="union" id="_union">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>union(<span><b><span class="active" title="Ds\Map">Map</span></b> <var>$map</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new map using values from the current instance and another
+map.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new map using values from the current instance and another
+map.</p>
+<p>A ∪ B = {x: x ∈ A ∨ x ∈ B}</p>
+<p><b>Note:</b> Values of the current instance will be overwritten by those
+provided where keys are equal.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$map</var>&nbsp;&nbsp;</td>
+										<td><p>The other map, to combine with the current instance.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new map containing all the pairs of the current
+instance as well as another map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_union">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="values" id="_values">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>values(): <a href="Ds.Sequence.html"><span title="Ds\Sequence">Sequence</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a sequence containing all the values of the map, in the same
+order.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a sequence containing all the values of the map, in the same
+order.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A Ds\Sequence containing all the values of the map.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_values">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="xor" id="_xor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>xor(<span><b><span class="active" title="Ds\Map">Map</span></b> <var>$map</var></span>): <b><span class="active" title="Ds\Map">Map</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a new map containing keys of the current instance as well as
+another map, but not of both.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a new map containing keys of the current instance as well as
+another map, but not of both.</p>
+<p>A ⊖ B = {x : x ∈ (A \ B) ∪ (B \ A)}</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$map</var>&nbsp;&nbsp;</td>
+										<td><p>The other map.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A new map containing keys in the current instance as well
+as another map, but not in both.</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_xor">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1320 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\HttpFoundation\Cookie |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Component.HttpFoundation.Cookie.html">
+							Cookie
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.FileBag.html">
+							FileBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.HeaderBag.html">
+							HeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.InputBag.html">
+							InputBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.JsonResponse.html">
+							JsonResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ParameterBag.html">
+							ParameterBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.RedirectResponse.html">
+							RedirectResponse
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Request.html">
+							Request
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.Response.html">
+							Response
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ResponseHeaderBag.html">
+							ResponseHeaderBag
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.HttpFoundation.ServerBag.html">
+							ServerBag
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.HttpFoundation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.HttpFoundation.Cookie.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.HttpFoundation.html">HttpFoundation</a>\<a href="Symfony.Component.HttpFoundation.Cookie.html">Cookie</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Represents a cookie.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="fromString" id="_fromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromString(<span>string <var>$cookie</var></span>, <span>bool <var>$decode</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates cookie from raw header string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates cookie from raw header string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="create" id="_create">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>create(
+	<span>string <var>$name</var></span>,
+	<span>?string <var>$value</var> = <span class="php-kw">null</span></span>,
+	<span>int|string|<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$expire</var> = <span class="php-num">0</span></span>,
+	<span>?string <var>$path</var> = <span class="php-str">'/'</span></span>,
+	<span>?string <var>$domain</var> = <span class="php-kw">null</span></span>,
+	<span>?bool <var>$secure</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$httpOnly</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$raw</var> = <span class="php-kw">false</span></span>,
+	<span><b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::SAMESITE_*|<span class="php-str">''</span>|null <var>$sameSite</var> = <b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::<a href="Symfony.Component.HttpFoundation.Cookie.html#SAMESITE_LAX">SAMESITE_LAX</a></span>,
+	<span>bool <var>$partitioned</var> = <span class="php-kw">false</span></span>,
+): <b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_create">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$name</var></span>,
+	<span>string|null <var>$value</var> = <span class="php-kw">null</span></span>,
+	<span>int|string|<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$expire</var> = <span class="php-num">0</span></span>,
+	<span>string|null <var>$path</var> = <span class="php-str">'/'</span></span>,
+	<span>string|null <var>$domain</var> = <span class="php-kw">null</span></span>,
+	<span>bool|null <var>$secure</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$httpOnly</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$raw</var> = <span class="php-kw">false</span></span>,
+	<span><b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::SAMESITE_*|<span class="php-str">''</span>|null <var>$sameSite</var> = <b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::<a href="Symfony.Component.HttpFoundation.Cookie.html#SAMESITE_LAX">SAMESITE_LAX</a></span>,
+	<span>bool <var>$partitioned</var> = <span class="php-kw">false</span></span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The name of the cookie</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>The value of the cookie</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$expire</var>&nbsp;&nbsp;</td>
+										<td><p>The time the cookie expires</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$path</var>&nbsp;&nbsp;</td>
+										<td><p>The path on the server in which the cookie will be available on</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$domain</var>&nbsp;&nbsp;</td>
+										<td><p>The domain that the cookie is available to</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$secure</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the client should send back the cookie only over HTTPS or null to auto-enable this when the request is already using HTTPS</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$httpOnly</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the cookie will be made accessible only through the HTTP protocol</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$raw</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the cookie value should be sent with no url encoding</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$sameSite</var>&nbsp;&nbsp;</td>
+										<td><p>Whether the cookie will be available for cross-site requests</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withValue" id="_withValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withValue(<span>?string <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy with a new value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy with a new value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withDomain" id="_withDomain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withDomain(<span>?string <var>$domain</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy with a new domain that the cookie is available to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy with a new domain that the cookie is available to.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withDomain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withExpires" id="_withExpires">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withExpires(<span>int|string|<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$expire</var> = <span class="php-num">0</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy with a new time the cookie expires.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy with a new time the cookie expires.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withExpires">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPath" id="_withPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPath(<span>string <var>$path</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy with a new path on the server in which the cookie will be available on.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy with a new path on the server in which the cookie will be available on.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withSecure" id="_withSecure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withSecure(<span>bool <var>$secure</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy that only be transmitted over a secure HTTPS connection from the client.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy that only be transmitted over a secure HTTPS connection from the client.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withSecure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withHttpOnly" id="_withHttpOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withHttpOnly(<span>bool <var>$httpOnly</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy that be accessible only through the HTTP protocol.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy that be accessible only through the HTTP protocol.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withHttpOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withRaw" id="_withRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withRaw(<span>bool <var>$raw</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy that uses no url encoding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy that uses no url encoding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withSameSite" id="_withSameSite">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withSameSite(<span><b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::SAMESITE_*|<span class="php-str">''</span>|null <var>$sameSite</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy with SameSite attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy with SameSite attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withSameSite">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPartitioned" id="_withPartitioned">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPartitioned(<span>bool <var>$partitioned</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a cookie copy that is tied to the top-level site in cross-site context.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a cookie copy that is tied to the top-level site in cross-site context.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPartitioned">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the cookie as a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the cookie as a string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the name of the cookie.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the name of the cookie.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getValue" id="_getValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getValue(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the value of the cookie.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the value of the cookie.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDomain" id="_getDomain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDomain(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the domain that the cookie is available to.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the domain that the cookie is available to.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDomain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getExpiresTime" id="_getExpiresTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getExpiresTime(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the time the cookie expires.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the time the cookie expires.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getExpiresTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMaxAge" id="_getMaxAge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMaxAge(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the max-age attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the max-age attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMaxAge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPath" id="_getPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the path on the server in which the cookie will be available on.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the path on the server in which the cookie will be available on.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isSecure" id="_isSecure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isSecure(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the cookie should only be transmitted over a secure HTTPS connection from the client.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the cookie should only be transmitted over a secure HTTPS connection from the client.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isSecure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isHttpOnly" id="_isHttpOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isHttpOnly(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the cookie will be made accessible only through the HTTP protocol.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the cookie will be made accessible only through the HTTP protocol.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isHttpOnly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCleared" id="_isCleared">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCleared(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Whether this cookie is about to be cleared.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether this cookie is about to be cleared.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCleared">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRaw" id="_isRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRaw(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks if the cookie value should be sent with no url encoding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks if the cookie value should be sent with no url encoding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isPartitioned" id="_isPartitioned">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isPartitioned(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the cookie should be tied to the top-level site in cross-site context.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the cookie should be tied to the top-level site in cross-site context.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isPartitioned">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSameSite" id="_getSameSite">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSameSite(): <b><span class="active" title="Symfony\Component\HttpFoundation\Cookie">self</span></b>::SAMESITE_*|null</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSameSite">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSecureDefault" id="_setSecureDefault">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSecureDefault(<span>bool <var>$default</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default value of the &quot;secure&quot; flag when it is set to null</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSecureDefault">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="SAMESITE_NONE" id="SAMESITE_NONE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>SAMESITE_NONE = <span class="php-str">'none'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SAMESITE_NONE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="SAMESITE_LAX" id="SAMESITE_LAX">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>SAMESITE_LAX = <span class="php-str">'lax'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SAMESITE_LAX">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="SAMESITE_STRICT" id="SAMESITE_STRICT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>SAMESITE_STRICT = <span class="php-str">'strict'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#SAMESITE_STRICT">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="expire" id="$expire">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$expire</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$expire">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="$path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$path</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="$name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$name</var></code>
+				
+	<div class="expandable-collapsedView">
+		The name of the cookie
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The name of the cookie</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="value" id="$value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$value</var></code>
+				
+	<div class="expandable-collapsedView">
+		The value of the cookie
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The value of the cookie</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$value">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="domain" id="$domain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$domain</var></code>
+				
+	<div class="expandable-collapsedView">
+		The domain that the cookie is available to
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The domain that the cookie is available to</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$domain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="secure" id="$secure">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$secure</var></code>
+				
+	<div class="expandable-collapsedView">
+		Whether the client should send back the cookie only over HTTPS or null to auto-enable this when the request is already…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the client should send back the cookie only over HTTPS or null to auto-enable this when the request is already using HTTPS</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$secure">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="httpOnly" id="$httpOnly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$httpOnly</var></code>
+				
+	<div class="expandable-collapsedView">
+		Whether the cookie will be made accessible only through the HTTP protocol
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Whether the cookie will be made accessible only through the HTTP protocol</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$httpOnly">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

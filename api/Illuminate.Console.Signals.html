@@ -1,0 +1,484 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Console\Signals |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Console.html">Console</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Console.Command.html">
+							Command
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Console.OutputStyle.html">
+							OutputStyle
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Console.Signals.html">
+							Signals
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Console.CommandMutex.html">
+							CommandMutex
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Console.ManuallyFailedException.html">
+							ManuallyFailedException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Console.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Console.Signals.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Console.html">Console</a>\<a href="Illuminate.Console.Signals.html">Signals</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Symfony.Component.Console.SignalRegistry.SignalRegistry.html"><span title="Symfony\Component\Console\SignalRegistry\SignalRegistry">SignalRegistry</span></a> <var>$registry</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new signal registrar instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new signal registrar instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="register" id="_register">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>register(<span>int <var>$signal</var></span>, <span>callable(int $signal):&nbsp;void <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a new signal handler.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a new signal handler.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_register">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initializeSignal" id="_initializeSignal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initializeSignal(<span><var>$signal</var></span>): array&lt;int, callable(int $signal):&nbsp;void&gt;|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the signal's existing handler in array format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the signal's existing handler in array format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializeSignal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unregister" id="_unregister">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unregister(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Unregister the current signal handlers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unregister the current signal handlers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unregister">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whenAvailable" id="_whenAvailable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whenAvailable(<span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the given callback if "signals" should be used and are available.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the given callback if &quot;signals&quot; should be used and are available.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whenAvailable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHandlers" id="_getHandlers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHandlers(): array&lt;int, array&lt;int, callable&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the registry's handlers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the registry's handlers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHandlers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHandlers" id="_setHandlers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHandlers(<span>array&lt;int, array&lt;int, callable(int $signal):&nbsp;void&gt;&gt; <var>$handlers</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the registry's handlers.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the registry's handlers.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHandlers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveAvailabilityUsing" id="_resolveAvailabilityUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveAvailabilityUsing(<span>callable():&nbsp;bool <var>$resolver</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the availability resolver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the availability resolver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveAvailabilityUsing">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="registry" id="$registry">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Symfony.Component.Console.SignalRegistry.SignalRegistry.html"><span title="Symfony\Component\Console\SignalRegistry\SignalRegistry">SignalRegistry</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$registry</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$registry">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previousHandlers" id="$previousHandlers">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;int, array&lt;int, callable&gt;&gt;|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$previousHandlers</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$previousHandlers">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="availabilityResolver" id="$availabilityResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">(callable():&nbsp;bool)|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$availabilityResolver</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$availabilityResolver">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

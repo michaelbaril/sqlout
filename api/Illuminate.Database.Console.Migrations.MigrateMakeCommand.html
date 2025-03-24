@@ -1,0 +1,663 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Console\Migrations\MigrateMakeCommand |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Console.Migrations.html">Migrations</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Console.Migrations.BaseCommand.html">
+							BaseCommand
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Console.Migrations.MigrateMakeCommand.html">
+							MigrateMakeCommand
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Console.Migrations.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Console.Migrations.MigrateMakeCommand.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Console.html">Console</a>\<a href="namespace-Illuminate.Database.Console.Migrations.html">Migrations</a>\<a href="Illuminate.Database.Console.Migrations.MigrateMakeCommand.html">MigrateMakeCommand</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Console.Migrations.BaseCommand.html"><span title="Illuminate\Database\Console\Migrations\BaseCommand">BaseCommand</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Console.PromptsForMissingInput.html"><span title="Illuminate\Contracts\Console\PromptsForMissingInput">PromptsForMissingInput</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Console.Command.Command.html"><span>Symfony\Component\Console\Command\Command</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Console.Command.html"><span>Illuminate\Console\Command</span></a>
+
+
+		uses
+			<a href="Illuminate.Console.Concerns.CallsCommands.html"><span title="Illuminate\Console\Concerns\CallsCommands">CallsCommands</span></a>, 
+			<a href="Illuminate.Console.Concerns.ConfiguresPrompts.html"><span title="Illuminate\Console\Concerns\ConfiguresPrompts">ConfiguresPrompts</span></a>, 
+			<a href="Illuminate.Console.Concerns.HasParameters.html"><span title="Illuminate\Console\Concerns\HasParameters">HasParameters</span></a>, 
+			<a href="Illuminate.Console.Concerns.InteractsWithIO.html"><span title="Illuminate\Console\Concerns\InteractsWithIO">InteractsWithIO</span></a>, 
+			<a href="Illuminate.Console.Concerns.InteractsWithSignals.html"><span title="Illuminate\Console\Concerns\InteractsWithSignals">InteractsWithSignals</span></a>, 
+			<a href="Illuminate.Console.Concerns.PromptsForMissingInput.html"><span title="Illuminate\Console\Concerns\PromptsForMissingInput">PromptsForMissingInput</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Console.Migrations.BaseCommand.html"><span>Illuminate\Database\Console\Migrations\BaseCommand</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Console\Migrations\MigrateMakeCommand</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Console.PromptsForMissingInput.html"><span title="Illuminate\Contracts\Console\PromptsForMissingInput">PromptsForMissingInput</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.Migrations.MigrateMakeCommand.html"><span>Baril\Sqlout\Migrations\MigrateMakeCommand</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Database.Migrations.MigrationCreator.html"><span title="Illuminate\Database\Migrations\MigrationCreator">MigrationCreator</span></a> <var>$creator</var></span>, <span><a href="Illuminate.Support.Composer.html"><span title="Illuminate\Support\Composer">Composer</span></a> <var>$composer</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new migration install command instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new migration install command instance.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Console.Command.html#___construct">						<code>Illuminate\Console\Command::__construct()</code></a>				</li>
+		</ul>
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Migrations.MigrateMakeCommand.html#___construct">						<code>Baril\Sqlout\Migrations\MigrateMakeCommand::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handle" id="_handle">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handle(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the console command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the console command.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Migrations.MigrateMakeCommand.html#_handle">						<code>Baril\Sqlout\Migrations\MigrateMakeCommand::handle()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handle">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeMigration" id="_writeMigration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>writeMigration(<span>string <var>$name</var></span>, <span>string <var>$table</var></span>, <span>bool <var>$create</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Write the migration file to disk.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Write the migration file to disk.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeMigration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMigrationPath" id="_getMigrationPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMigrationPath(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get migration path (either specified by '--path' option or default location).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get migration path (either specified by '--path' option or default location).</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Console.Migrations.BaseCommand.html#_getMigrationPath">						<code>Illuminate\Database\Console\Migrations\BaseCommand::getMigrationPath()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMigrationPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="promptForMissingArgumentsUsing" id="_promptForMissingArgumentsUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>promptForMissingArgumentsUsing(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prompt for missing input arguments using the returned questions.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prompt for missing input arguments using the returned questions.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_promptForMissingArgumentsUsing">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Console.Migrations.BaseCommand.html"><span>Illuminate\Database\Console\Migrations\BaseCommand</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Console.Migrations.BaseCommand.html#_getMigrationPaths">getMigrationPaths()</a>, <a href="Illuminate.Database.Console.Migrations.BaseCommand.html#_usingRealPath">usingRealPath()</a>, </code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Console.Command.html"><span>Illuminate\Console\Command</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Command.html#_configureUsingFluentDefinition">configureUsingFluentDefinition()</a>, <a href="Illuminate.Console.Command.html#_configureIsolation">configureIsolation()</a>, <a href="Illuminate.Console.Command.html#_run">run()</a>, <a href="Illuminate.Console.Command.html#_execute">execute()</a>, <a href="Illuminate.Console.Command.html#_commandIsolationMutex">commandIsolationMutex()</a>, <a href="Illuminate.Console.Command.html#_resolveCommand">resolveCommand()</a>, <a href="Illuminate.Console.Command.html#_fail">fail()</a>, <a href="Illuminate.Console.Command.html#_isHidden">isHidden()</a>, <a href="Illuminate.Console.Command.html#_setHidden">setHidden()</a>, <a href="Illuminate.Console.Command.html#_getLaravel">getLaravel()</a>, <a href="Illuminate.Console.Command.html#_setLaravel">setLaravel()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.Console.Command.Command.html"><span>Symfony\Component\Console\Command\Command</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.Console.Command.Command.html#_getDefaultName">getDefaultName()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getDefaultDescription">getDefaultDescription()</a>, <a href="Symfony.Component.Console.Command.Command.html#_ignoreValidationErrors">ignoreValidationErrors()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setApplication">setApplication()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setHelperSet">setHelperSet()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getHelperSet">getHelperSet()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getApplication">getApplication()</a>, <a href="Symfony.Component.Console.Command.Command.html#_isEnabled">isEnabled()</a>, <a href="Symfony.Component.Console.Command.Command.html#_configure">configure()</a>, <a href="Symfony.Component.Console.Command.Command.html#_interact">interact()</a>, <a href="Symfony.Component.Console.Command.Command.html#_initialize">initialize()</a>, <a href="Symfony.Component.Console.Command.Command.html#_complete">complete()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setCode">setCode()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setDefinition">setDefinition()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getDefinition">getDefinition()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getNativeDefinition">getNativeDefinition()</a>, <a href="Symfony.Component.Console.Command.Command.html#_addArgument">addArgument()</a>, <a href="Symfony.Component.Console.Command.Command.html#_addOption">addOption()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setName">setName()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setProcessTitle">setProcessTitle()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getName">getName()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setDescription">setDescription()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getDescription">getDescription()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setHelp">setHelp()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getHelp">getHelp()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getProcessedHelp">getProcessedHelp()</a>, <a href="Symfony.Component.Console.Command.Command.html#_setAliases">setAliases()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getAliases">getAliases()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getSynopsis">getSynopsis()</a>, <a href="Symfony.Component.Console.Command.Command.html#_addUsage">addUsage()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getUsages">getUsages()</a>, <a href="Symfony.Component.Console.Command.Command.html#_getHelper">getHelper()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.CallsCommands.html"><span>Illuminate\Console\Concerns\CallsCommands</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.CallsCommands.html#_call">call()</a>, <a href="Illuminate.Console.Concerns.CallsCommands.html#_callSilent">callSilent()</a>, <a href="Illuminate.Console.Concerns.CallsCommands.html#_callSilently">callSilently()</a>, <a href="Illuminate.Console.Concerns.CallsCommands.html#_runCommand">runCommand()</a>, <a href="Illuminate.Console.Concerns.CallsCommands.html#_createInputFromArguments">createInputFromArguments()</a>, <a href="Illuminate.Console.Concerns.CallsCommands.html#_context">context()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html"><span>Illuminate\Console\Concerns\ConfiguresPrompts</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_configurePrompts">configurePrompts()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_promptUntilValid">promptUntilValid()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_validatePrompt">validatePrompt()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_getPromptValidatorInstance">getPromptValidatorInstance()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_validationMessages">validationMessages()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_validationAttributes">validationAttributes()</a>, <a href="Illuminate.Console.Concerns.ConfiguresPrompts.html#_restorePrompts">restorePrompts()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.HasParameters.html"><span>Illuminate\Console\Concerns\HasParameters</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.HasParameters.html#_specifyParameters">specifyParameters()</a>, <a href="Illuminate.Console.Concerns.HasParameters.html#_getArguments">getArguments()</a>, <a href="Illuminate.Console.Concerns.HasParameters.html#_getOptions">getOptions()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.InteractsWithIO.html"><span>Illuminate\Console\Concerns\InteractsWithIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.InteractsWithIO.html#_hasArgument">hasArgument()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_argument">argument()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_arguments">arguments()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_hasOption">hasOption()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_option">option()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_options">options()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_confirm">confirm()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_ask">ask()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_anticipate">anticipate()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_askWithCompletion">askWithCompletion()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_secret">secret()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_choice">choice()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_table">table()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_withProgressBar">withProgressBar()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_info">info()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_line">line()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_comment">comment()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_question">question()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_error">error()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_warn">warn()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_alert">alert()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_newLine">newLine()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_setInput">setInput()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_setOutput">setOutput()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_setVerbosity">setVerbosity()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_parseVerbosity">parseVerbosity()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_getOutput">getOutput()</a>, <a href="Illuminate.Console.Concerns.InteractsWithIO.html#_outputComponents">outputComponents()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.InteractsWithSignals.html"><span>Illuminate\Console\Concerns\InteractsWithSignals</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.InteractsWithSignals.html#_trap">trap()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Console.Concerns.PromptsForMissingInput.html"><span>Illuminate\Console\Concerns\PromptsForMissingInput</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Console.Concerns.PromptsForMissingInput.html#_interact">interact()</a>, <a href="Illuminate.Console.Concerns.PromptsForMissingInput.html#_promptForMissingArguments">promptForMissingArguments()</a>, <a href="Illuminate.Console.Concerns.PromptsForMissingInput.html#_afterPromptingForMissingArguments">afterPromptingForMissingArguments()</a>, <a href="Illuminate.Console.Concerns.PromptsForMissingInput.html#_didReceiveOptions">didReceiveOptions()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Constants inherited from <a href="Symfony.Component.Console.Command.Command.html"><span>Symfony\Component\Console\Command\Command</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.Console.Command.Command.html#SUCCESS"><code>SUCCESS</code></a>, <a href="Symfony.Component.Console.Command.Command.html#FAILURE"><code>FAILURE</code></a>, <a href="Symfony.Component.Console.Command.Command.html#INVALID"><code>INVALID</code></a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="signature" id="$signature">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$signature</var> = <span class="php-str">'make:migration &#123;name : The name of the migration}
+        &#123;--create= : The table to be created}
+        &#123;--table= : The table to migrate}
+        &#123;--path= : The location where the migration file should be created}
+        &#123;--realpath : Indicate any provided migration file paths are pre-resolved absolute paths}
+        &#123;--fullpath : Output the full path of the migration (Deprecated)}'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$signature">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="description" id="$description">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$description</var> = <span class="php-str">'Create a new migration file'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$description">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="creator" id="$creator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Migrations.MigrationCreator.html"><span title="Illuminate\Database\Migrations\MigrationCreator">MigrationCreator</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$creator</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$creator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="composer" id="$composer">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Support.Composer.html"><span title="Illuminate\Support\Composer">Composer</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><span class="deprecated">$composer</span></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$composer">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Console.Command.html"><span>Illuminate\Console\Command</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Console.Command.html#$laravel">$laravel</a></var>, <var><a href="Illuminate.Console.Command.html#$name">$name</a></var>, <var><a href="Illuminate.Console.Command.html#$help">$help</a></var>, <var><a href="Illuminate.Console.Command.html#$hidden">$hidden</a></var>, <var><a href="Illuminate.Console.Command.html#$isolated">$isolated</a></var>, <var><a href="Illuminate.Console.Command.html#$isolatedExitCode">$isolatedExitCode</a></var>, <var><a href="Illuminate.Console.Command.html#$aliases">$aliases</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Console.Concerns.InteractsWithIO.html"><span>Illuminate\Console\Concerns\InteractsWithIO</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Console.Concerns.InteractsWithIO.html#$input">$input</a></var>, <var><a href="Illuminate.Console.Concerns.InteractsWithIO.html#$output">$output</a></var>, <var><a href="Illuminate.Console.Concerns.InteractsWithIO.html#$verbosity">$verbosity</a></var>, <var><a href="Illuminate.Console.Concerns.InteractsWithIO.html#$verbosityMap">$verbosityMap</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Console.Concerns.InteractsWithSignals.html"><span>Illuminate\Console\Concerns\InteractsWithSignals</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Console.Concerns.InteractsWithSignals.html#$signals">$signals</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1347 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Laravel\Scout\Builder |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Laravel.html">Laravel</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Laravel.Scout.html">Scout</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Laravel.Scout.Builder.html">
+							Builder
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Laravel.Scout.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Laravel.Scout.Builder.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Scout.html">Scout</a>\<a href="Laravel.Scout.Builder.html">Builder</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Laravel\Scout\Builder</span></b>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.Builder.html"><span>Baril\Sqlout\Builder</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>TModel <var>$model</var></span>, <span>string <var>$query</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$callback</var> = <span class="php-kw">null</span></span>, <span>bool <var>$softDelete</var> = <span class="php-kw">false</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new search builder instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new search builder instance.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Builder.html#___construct">						<code>Baril\Sqlout\Builder::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="within" id="_within">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>within(<span>string <var>$index</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify a custom index to perform this search on.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify a custom index to perform this search on.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_within">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="where" id="_where">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>where(<span>string <var>$field</var></span>, <span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a constraint to the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a constraint to the search query.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Builder.html#_where">						<code>Baril\Sqlout\Builder::where()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_where">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereIn" id="_whereIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereIn(<span>string <var>$field</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|array <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where in" constraint to the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where in&quot; constraint to the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotIn" id="_whereNotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotIn(<span>string <var>$field</var></span>, <span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|array <var>$values</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "where not in" constraint to the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;where not in&quot; constraint to the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withTrashed" id="_withTrashed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withTrashed(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Include soft deleted records in the results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Include soft deleted records in the results.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Builder.html#_withTrashed">						<code>Baril\Sqlout\Builder::withTrashed()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withTrashed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="onlyTrashed" id="_onlyTrashed">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>onlyTrashed(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Include only soft deleted records in the results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Include only soft deleted records in the results.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Baril.Sqlout.Builder.html#_onlyTrashed">						<code>Baril\Sqlout\Builder::onlyTrashed()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_onlyTrashed">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="take" id="_take">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>take(<span>int <var>$limit</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the "limit" for the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the &quot;limit&quot; for the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_take">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderBy" id="_orderBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orderBy(<span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-str">'asc'</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "order" for the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;order&quot; for the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orderBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderByDesc" id="_orderByDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orderByDesc(<span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a descending "order by" clause to the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a descending &quot;order by&quot; clause to the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orderByDesc">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="latest" id="_latest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>latest(<span>string <var>$column</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "order by" clause for a timestamp to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;order by&quot; clause for a timestamp to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_latest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="oldest" id="_oldest">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>oldest(<span>string <var>$column</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add an "order by" clause for a timestamp to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add an &quot;order by&quot; clause for a timestamp to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_oldest">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="_options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>options(<span>array <var>$options</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set extra options for the search query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set extra options for the search query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_options">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="_query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>query(<span>callable <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the callback that should have an opportunity to modify the database query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the callback that should have an opportunity to modify the database query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="raw" id="_raw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>raw(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the raw results of the search.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the raw results of the search.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_raw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withRawResults" id="_withRawResults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withRawResults(<span>callable <var>$callback</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the callback that should have an opportunity to inspect and modify the raw result returned by the search engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the callback that should have an opportunity to inspect and modify the raw result returned by the search engine.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withRawResults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys of search results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys of search results.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="first" id="_first">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>first(): TModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the first result from the search.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the first result from the search.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_first">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the search.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the search.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cursor" id="_cursor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cursor(): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the search as a "lazy collection" instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the search as a &quot;lazy collection&quot; instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cursor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="simplePaginate" id="_simplePaginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>simplePaginate(<span>int <var>$perPage</var> = <span class="php-kw">null</span></span>, <span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>, <span>int|null <var>$page</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a simple paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a simple paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_simplePaginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="simplePaginateRaw" id="_simplePaginateRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>simplePaginateRaw(<span>int <var>$perPage</var> = <span class="php-kw">null</span></span>, <span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>, <span>int|null <var>$page</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a simple paginator with raw data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a simple paginator with raw data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_simplePaginateRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="paginate" id="_paginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>paginate(<span>int <var>$perPage</var> = <span class="php-kw">null</span></span>, <span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>, <span>int|null <var>$page</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a paginator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a paginator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_paginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="paginateRaw" id="_paginateRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>paginateRaw(<span>int <var>$perPage</var> = <span class="php-kw">null</span></span>, <span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>, <span>int|null <var>$page</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Paginate the given query into a paginator with raw data.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Paginate the given query into a paginator with raw data.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_paginateRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTotalCount" id="_getTotalCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTotalCount(<span>mixed <var>$results</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the total number of results from the Scout engine, or fallback to query builder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the total number of results from the Scout engine, or fallback to query builder.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTotalCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="applyAfterRawSearchCallback" id="_applyAfterRawSearchCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>applyAfterRawSearchCallback(<span>mixed <var>$results</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Invoke the "after raw search" callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Invoke the &quot;after raw search&quot; callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_applyAfterRawSearchCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="engine" id="_engine">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>engine(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the engine that should handle the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the engine that should handle the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_engine">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="model" id="$model">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">TModel</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$model</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$model">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="$query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$query</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callback" id="$callback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$callback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$callback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="queryCallback" id="$queryCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$queryCallback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$queryCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="afterRawSearchCallback" id="$afterRawSearchCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$afterRawSearchCallback</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$afterRawSearchCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="index" id="$index">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$index</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$index">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wheres" id="$wheres">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$wheres</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$wheres">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereIns" id="$whereIns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$whereIns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$whereIns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotIns" id="$whereNotIns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$whereNotIns</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$whereNotIns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="limit" id="$limit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$limit</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$limit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orders" id="$orders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$orders</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$orders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="options" id="$options">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$options</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$options">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1638 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Filesystem\Filesystem |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Filesystem.html">Filesystem</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Filesystem.Filesystem.html">
+							Filesystem
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Filesystem.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Filesystem.Filesystem.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Filesystem.html">Filesystem</a>\<a href="Illuminate.Filesystem.Filesystem.html">Filesystem</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="exists" id="_exists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>exists(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a file or directory exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a file or directory exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_exists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="missing" id="_missing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>missing(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a file or directory is missing.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a file or directory is missing.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_missing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$path</var></span>, <span>bool <var>$lock</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the contents of a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the contents of a file.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Filesystem.FileNotFoundException.html"><span>Illuminate\Contracts\Filesystem\FileNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="json" id="_json">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>json(<span>string <var>$path</var></span>, <span>int <var>$flags</var> = <span class="php-num">0</span></span>, <span>bool <var>$lock</var> = <span class="php-kw">false</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the contents of a file as decoded JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the contents of a file as decoded JSON.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Filesystem.FileNotFoundException.html"><span>Illuminate\Contracts\Filesystem\FileNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_json">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sharedGet" id="_sharedGet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sharedGet(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get contents of a file with shared access.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get contents of a file with shared access.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sharedGet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRequire" id="_getRequire">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRequire(<span>string <var>$path</var></span>, <span>array <var>$data</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the returned value of a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the returned value of a file.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Filesystem.FileNotFoundException.html"><span>Illuminate\Contracts\Filesystem\FileNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRequire">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requireOnce" id="_requireOnce">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>requireOnce(<span>string <var>$path</var></span>, <span>array <var>$data</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Require the given file once.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Require the given file once.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Filesystem.FileNotFoundException.html"><span>Illuminate\Contracts\Filesystem\FileNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requireOnce">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lines" id="_lines">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lines(<span>string <var>$path</var></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the contents of a file one line at a time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the contents of a file one line at a time.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Contracts.Filesystem.FileNotFoundException.html"><span>Illuminate\Contracts\Filesystem\FileNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lines">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hash" id="_hash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hash(<span>string <var>$path</var></span>, <span>string <var>$algorithm</var> = <span class="php-str">'md5'</span></span>): string|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the hash of the file at the given path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the hash of the file at the given path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="put" id="_put">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>put(<span>string <var>$path</var></span>, <span>string <var>$contents</var></span>, <span>bool <var>$lock</var> = <span class="php-kw">false</span></span>): int|bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Write the contents of a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Write the contents of a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_put">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replace" id="_replace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replace(<span>string <var>$path</var></span>, <span>string <var>$content</var></span>, <span>int|null <var>$mode</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Write the contents of a file, replacing it atomically if it already exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Write the contents of a file, replacing it atomically if it already exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceInFile" id="_replaceInFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceInFile(<span>array|string <var>$search</var></span>, <span>array|string <var>$replace</var></span>, <span>string <var>$path</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Replace a given string within a given file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replace a given string within a given file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceInFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepend" id="_prepend">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepend(<span>string <var>$path</var></span>, <span>string <var>$data</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepend to a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepend to a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepend">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="append" id="_append">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>append(<span>string <var>$path</var></span>, <span>string <var>$data</var></span>, <span>bool <var>$lock</var> = <span class="php-kw">false</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Append to a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Append to a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_append">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="chmod" id="_chmod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>chmod(<span>string <var>$path</var></span>, <span>int|null <var>$mode</var> = <span class="php-kw">null</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get or set UNIX mode of a file or directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get or set UNIX mode of a file or directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_chmod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(<span>string|array <var>$paths</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete the file at a given path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete the file at a given path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="move" id="_move">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>move(<span>string <var>$path</var></span>, <span>string <var>$target</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Move a file to a new location.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Move a file to a new location.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_move">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copy" id="_copy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copy(<span>string <var>$path</var></span>, <span>string <var>$target</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy a file to a new location.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy a file to a new location.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="link" id="_link">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>link(<span>string <var>$target</var></span>, <span>string <var>$link</var></span>): bool|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a symlink to the target file or directory. On Windows, a hard link is created if the target is a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a symlink to the target file or directory. On Windows, a hard link is created if the target is a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_link">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relativeLink" id="_relativeLink">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>relativeLink(<span>string <var>$target</var></span>, <span>string <var>$link</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a relative symlink to the target file or directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a relative symlink to the target file or directory.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_relativeLink">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="name" id="_name">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>name(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Extract the file name from a file path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract the file name from a file path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_name">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="basename" id="_basename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>basename(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Extract the trailing name component from a file path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract the trailing name component from a file path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_basename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dirname" id="_dirname">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dirname(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Extract the parent directory from a file path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract the parent directory from a file path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dirname">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extension" id="_extension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>extension(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Extract the file extension from a file path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract the file extension from a file path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guessExtension" id="_guessExtension">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>guessExtension(<span>string <var>$path</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Guess the file extension from the mime-type of a given file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Guess the file extension from the mime-type of a given file.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_guessExtension">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="type" id="_type">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>type(<span>string <var>$path</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the file type of a given file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the file type of a given file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_type">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mimeType" id="_mimeType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mimeType(<span>string <var>$path</var></span>): string|false</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the mime-type of a given file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the mime-type of a given file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mimeType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="size" id="_size">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>size(<span>string <var>$path</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the file size of a given file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the file size of a given file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_size">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lastModified" id="_lastModified">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>lastModified(<span>string <var>$path</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the file's last modification time.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the file's last modification time.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lastModified">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDirectory" id="_isDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDirectory(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given path is a directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given path is a directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmptyDirectory" id="_isEmptyDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmptyDirectory(<span>string <var>$directory</var></span>, <span>bool <var>$ignoreDotFiles</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given path is a directory that does not contain any other files or directories.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given path is a directory that does not contain any other files or directories.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmptyDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isReadable" id="_isReadable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isReadable(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given path is readable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given path is readable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isReadable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isWritable" id="_isWritable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isWritable(<span>string <var>$path</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given path is writable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given path is writable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isWritable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasSameHash" id="_hasSameHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasSameHash(<span>string <var>$firstFile</var></span>, <span>string <var>$secondFile</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if two files are the same by comparing their hashes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if two files are the same by comparing their hashes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasSameHash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isFile" id="_isFile">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isFile(<span>string <var>$file</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given path is a file.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given path is a file.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isFile">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="glob" id="_glob">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>glob(<span>string <var>$pattern</var></span>, <span>int <var>$flags</var> = <span class="php-num">0</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Find path names matching a given pattern.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find path names matching a given pattern.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_glob">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="files" id="_files">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>files(<span>string <var>$directory</var></span>, <span>bool <var>$hidden</var> = <span class="php-kw">false</span></span>): <a href="Symfony.Component.Finder.SplFileInfo.html"><span title="Symfony\Component\Finder\SplFileInfo">SplFileInfo</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array of all files in a directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array of all files in a directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_files">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="allFiles" id="_allFiles">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>allFiles(<span>string <var>$directory</var></span>, <span>bool <var>$hidden</var> = <span class="php-kw">false</span></span>): <a href="Symfony.Component.Finder.SplFileInfo.html"><span title="Symfony\Component\Finder\SplFileInfo">SplFileInfo</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the files from the given directory (recursive).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the files from the given directory (recursive).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_allFiles">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="directories" id="_directories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>directories(<span>string <var>$directory</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the directories within a given directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the directories within a given directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_directories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureDirectoryExists" id="_ensureDirectoryExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureDirectoryExists(<span>string <var>$path</var></span>, <span>int <var>$mode</var> = <span class="php-num">0755</span></span>, <span>bool <var>$recursive</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure a directory exists.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure a directory exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureDirectoryExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="makeDirectory" id="_makeDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>makeDirectory(<span>string <var>$path</var></span>, <span>int <var>$mode</var> = <span class="php-num">0755</span></span>, <span>bool <var>$recursive</var> = <span class="php-kw">false</span></span>, <span>bool <var>$force</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_makeDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="moveDirectory" id="_moveDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>moveDirectory(<span>string <var>$from</var></span>, <span>string <var>$to</var></span>, <span>bool <var>$overwrite</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Move a directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Move a directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_moveDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="copyDirectory" id="_copyDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>copyDirectory(<span>string <var>$directory</var></span>, <span>string <var>$destination</var></span>, <span>int|null <var>$options</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Copy a directory from one location to another.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Copy a directory from one location to another.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_copyDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteDirectory" id="_deleteDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleteDirectory(<span>string <var>$directory</var></span>, <span>bool <var>$preserve</var> = <span class="php-kw">false</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Recursively delete a directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Recursively delete a directory.</p>
+<p>The directory itself may be optionally preserved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteDirectory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteDirectories" id="_deleteDirectories">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deleteDirectories(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove all of the directories within a given directory.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove all of the directories within a given directory.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteDirectories">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cleanDirectory" id="_cleanDirectory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cleanDirectory(<span>string <var>$directory</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Empty the specified directory of all files and folders.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Empty the specified directory of all files and folders.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cleanDirectory">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Foundation\MaintenanceMode |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Foundation.html">Foundation</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Foundation.Application.html">
+							Application
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Contracts.Foundation.MaintenanceMode.html">
+							MaintenanceMode
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Foundation.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Foundation.MaintenanceMode.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Foundation.html">Foundation</a>\<a href="Illuminate.Contracts.Foundation.MaintenanceMode.html">MaintenanceMode</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="activate" id="_activate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>activate(<span>array <var>$payload</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Take the application down for maintenance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take the application down for maintenance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_activate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deactivate" id="_deactivate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deactivate(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Take the application out of maintenance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take the application out of maintenance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deactivate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="active" id="_active">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>active(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the application is currently down for maintenance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the application is currently down for maintenance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_active">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="data" id="_data">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>data(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the data array which was provided when the application was placed into maintenance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the data array which was provided when the application was placed into maintenance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_data">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

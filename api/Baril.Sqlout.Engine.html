@@ -1,0 +1,706 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class Baril\Sqlout\Engine |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.Migrations.html">Migrations</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Baril.Sqlout.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li class="active">
+						<a href="Baril.Sqlout.Engine.html">
+							Engine
+						</a>
+					</li>
+					<li>
+						<a href="Baril.Sqlout.SearchIndex.html">
+							SearchIndex
+						</a>
+					</li>
+					<li>
+						<a href="Baril.Sqlout.SqloutServiceProvider.html">
+							SqloutServiceProvider
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Baril.Sqlout.Searchable.html">
+							Searchable
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Baril.Sqlout.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Baril.Sqlout.Engine.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Baril.html">Baril</a>\<a href="namespace-Baril.Sqlout.html">Sqlout</a>\<a href="Baril.Sqlout.Engine.html">Engine</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Laravel.Scout.Engines.Engine.html"><span title="Laravel\Scout\Engines\Engine">Engine</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Laravel.Scout.Engines.Engine.html"><span>Laravel\Scout\Engines\Engine</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Baril\Sqlout\Engine</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-Engine.html#13" title="Go to source code">Engine.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="newSearchQuery" id="_newSearchQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#15-22" title="Go to source code">newSearchQuery</a>(<span><var>$model</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newSearchQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="processString" id="_processString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#24-71" title="Go to source code">processString</a>(<span>string <var>$content</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Apply the filters to the indexed content or search terms, tokenize it
+and stem the words.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Apply the filters to the indexed content or search terms, tokenize it
+and stem the words.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_processString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="update" id="_update">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#73-97" title="Go to source code">update</a>(<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Update the given model in the index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Update the given model in the index.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_update">						<code>Laravel\Scout\Engines\Engine::update()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_update">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#99-114" title="Go to source code">delete</a>(<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given model from the index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given model from the index.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_delete">						<code>Laravel\Scout\Engines\Engine::delete()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="search" id="_search">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#116-127" title="Go to source code">search</a>(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the given search on the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the given search on the engine.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_search">						<code>Laravel\Scout\Engines\Engine::search()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_search">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="paginate" id="_paginate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#129-143" title="Go to source code">paginate</a>(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>int <var>$perPage</var></span>, <span>int <var>$page</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the given search on the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the given search on the engine.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_paginate">						<code>Laravel\Scout\Engines\Engine::paginate()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_paginate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="performSearch" id="_performSearch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#145-228" title="Go to source code">performSearch</a>(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>array <var>$options</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Perform the given search on the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Perform the given search on the engine.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_performSearch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapIds" id="_mapIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#230-239" title="Go to source code">mapIds</a>(<span>mixed <var>$results</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Pluck and return the primary keys of the given results.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pluck and return the primary keys of the given results.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_mapIds">						<code>Laravel\Scout\Engines\Engine::mapIds()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapIds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRecord" id="_getRecord">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#241-251" title="Go to source code">getRecord</a>(<span><a href="Baril.Sqlout.SearchIndex.html"><span title="Baril\Sqlout\SearchIndex">SearchIndex</span></a> <var>$hit</var></span>): <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Extract the Model from the search hit.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract the Model from the search hit.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRecord">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#253-267" title="Go to source code">map</a>(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>mixed <var>$results</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Map the given results to instances of the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map the given results to instances of the given model.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_map">						<code>Laravel\Scout\Engines\Engine::map()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="lazyMap" id="_lazyMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#269-282" title="Go to source code">lazyMap</a>(<span><a href="Laravel.Scout.Builder.html"><span title="Laravel\Scout\Builder">Builder</span></a> <var>$builder</var></span>, <span>mixed <var>$results</var></span>, <span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Map the given results to instances of the given model via a lazy collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Map the given results to instances of the given model via a lazy collection.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_lazyMap">						<code>Laravel\Scout\Engines\Engine::lazyMap()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_lazyMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTotalCount" id="_getTotalCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#284-293" title="Go to source code">getTotalCount</a>(<span>mixed <var>$results</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the total count from a raw result returned by the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the total count from a raw result returned by the engine.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_getTotalCount">						<code>Laravel\Scout\Engines\Engine::getTotalCount()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTotalCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flush" id="_flush">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#295-304" title="Go to source code">flush</a>(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Flush all of the model's records from the engine.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flush all of the model's records from the engine.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_flush">						<code>Laravel\Scout\Engines\Engine::flush()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flush">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createIndex" id="_createIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#306-316" title="Go to source code">createIndex</a>(<span>string <var>$name</var></span>, <span>array <var>$options</var> = []</span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a search index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a search index.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_createIndex">						<code>Laravel\Scout\Engines\Engine::createIndex()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createIndex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deleteIndex" id="_deleteIndex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-Engine.html#318-327" title="Go to source code">deleteIndex</a>(<span>string <var>$name</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete a search index.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete a search index.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Laravel.Scout.Engines.Engine.html#_deleteIndex">						<code>Laravel\Scout\Engines\Engine::deleteIndex()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deleteIndex">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Laravel.Scout.Engines.Engine.html"><span>Laravel\Scout\Engines\Engine</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Laravel.Scout.Engines.Engine.html#_mapIdsFrom">mapIdsFrom()</a>, <a href="Laravel.Scout.Engines.Engine.html#_keys">keys()</a>, <a href="Laravel.Scout.Engines.Engine.html#_get">get()</a>, <a href="Laravel.Scout.Engines.Engine.html#_cursor">cursor()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Concerns\CompilesJsonPaths |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Concerns.BuildsQueries.html">
+							BuildsQueries
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.BuildsWhereDateClauses.html">
+							BuildsWhereDateClauses
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html">
+							CompilesJsonPaths
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.ExplainsQueries.html">
+							ExplainsQueries
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Concerns.ManagesTransactions.html">
+							ManagesTransactions
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Concerns.CompilesJsonPaths.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html">CompilesJsonPaths</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Concerns\CompilesJsonPaths</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Schema.Grammars.Grammar.html"><span>Illuminate\Database\Schema\Grammars\Grammar</span></a>
+
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></b>
+	</li>
+	<li>
+<a href="Illuminate.Database.Query.Grammars.Grammar.html"><span>Illuminate\Database\Query\Grammars\Grammar</span></a>
+
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></b>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="wrapJsonFieldAndPath" id="_wrapJsonFieldAndPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonFieldAndPath(<span>string <var>$column</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Split the given JSON selector into the field and the optional path and wrap them separately.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Split the given JSON selector into the field and the optional path and wrap them separately.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonFieldAndPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapJsonPath" id="_wrapJsonPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonPath(<span>string <var>$value</var></span>, <span>string <var>$delimiter</var> = <span class="php-str">'-&gt;'</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given JSON path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given JSON path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapJsonPathSegment" id="_wrapJsonPathSegment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonPathSegment(<span>string <var>$segment</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given JSON path segment.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given JSON path segment.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonPathSegment">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

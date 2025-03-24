@@ -1,0 +1,1895 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Eloquent\Relations\Relation |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html">
+							BelongsTo
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">
+							BelongsToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasMany.html">
+							HasMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html">
+							HasManyThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOne.html">
+							HasOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html">
+							HasOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html">
+							HasOneOrManyThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html">
+							HasOneThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html">
+							MorphMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html">
+							MorphOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html">
+							MorphOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html">
+							MorphPivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html">
+							MorphTo
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html">
+							MorphToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Pivot.html">
+							Pivot
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.Relation.html">
+							Relation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.Relation.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="Illuminate.Database.Eloquent.Relations.Relation.html">Relation</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TResult</span>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+			<tr><th><code>abstract</code></th></tr>
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\Relation</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html"><span>Illuminate\Database\Eloquent\Relations\BelongsTo</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span>Illuminate\Database\Eloquent\Relations\MorphTo</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations">SupportsInverseRelations</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html"><span>Illuminate\Database\Eloquent\Relations\HasOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphOneOrMany</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html"><span>Illuminate\Database\Eloquent\Relations\MorphOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html"><span>Illuminate\Database\Eloquent\Relations\BelongsToMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable">InteractsWithPivotTable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphToMany</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasManyThrough</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneThrough</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>, <span>TDeclaringModel <var>$parent</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new relation instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new relation instance.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::__construct()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::__construct()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::__construct()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#___construct">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="noConstraints" id="_noConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>noConstraints&lt;<span title="">TReturn</span> is mixed&gt;(<span><a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TReturn <var>$callback</var></span>): TReturn</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a callback with constraints disabled on the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a callback with constraints disabled on the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_noConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addConstraints" id="_addConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addConstraints(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the base constraints on the relation query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the base constraints on the relation query.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_addConstraints">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::addConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_addConstraints">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::addConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_addConstraints">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::addConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#_addConstraints">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::addConstraints()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addEagerConstraints" id="_addEagerConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addEagerConstraints(<span>array&lt;int, TDeclaringModel&gt; <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the constraints for an eager load of the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the constraints for an eager load of the relation.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::addEagerConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::addEagerConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::addEagerConstraints()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#_addEagerConstraints">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::addEagerConstraints()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addEagerConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initRelation" id="_initRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initRelation(<span>array&lt;int, TDeclaringModel&gt; <var>$models</var></span>, <span>string <var>$relation</var></span>): array&lt;int, TDeclaringModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Initialize the relation on a set of models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initialize the relation on a set of models.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\HasOne::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\MorphMany::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\MorphOne::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\HasMany::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\HasManyThrough::initRelation()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\HasOneThrough::initRelation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(
+	<span>array&lt;int, TDeclaringModel&gt; <var>$models</var></span>,
+	<span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt; <var>$results</var></span>,
+	<span>string <var>$relation</var></span>,
+): array&lt;int, TDeclaringModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Match the eagerly loaded results to their parents.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Match the eagerly loaded results to their parents.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_match">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html#_match">						<code>Illuminate\Database\Eloquent\Relations\HasOne::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html#_match">						<code>Illuminate\Database\Eloquent\Relations\MorphMany::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html#_match">						<code>Illuminate\Database\Eloquent\Relations\MorphOne::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html#_match">						<code>Illuminate\Database\Eloquent\Relations\HasMany::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_match">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html#_match">						<code>Illuminate\Database\Eloquent\Relations\HasManyThrough::match()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html#_match">						<code>Illuminate\Database\Eloquent\Relations\HasOneThrough::match()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResults" id="_getResults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResults(): TResult</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the relationship.</p>
+</div>
+
+
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\HasOne::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\MorphMany::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\MorphOne::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\HasMany::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\HasManyThrough::getResults()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\HasOneThrough::getResults()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEager" id="_getEager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEager(): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the relationship for eager loading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the relationship for eager loading.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html#_getEager">						<code>Illuminate\Database\Eloquent\Relations\MorphTo::getEager()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sole" id="_sole">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>sole(<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query and get the first result if it's the sole matching record.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query and get the first result if it's the sole matching record.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.ModelNotFoundException.html"><span>Illuminate\Database\Eloquent\ModelNotFoundException</span></a>&lt;TRelatedModel&gt;</code>&nbsp;</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><code><a href="Illuminate.Database.MultipleRecordsFoundException.html"><span>Illuminate\Database\MultipleRecordsFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sole">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute the query as a "select" statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute the query as a &quot;select&quot; statement.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_get">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::get()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#_get">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::get()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="touch" id="_touch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>touch(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Touch all of the related models for the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Touch all of the related models for the relationship.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_touch">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::touch()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_touch">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::touch()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_touch">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rawUpdate" id="_rawUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>rawUpdate(<span>array <var>$attributes</var> = []</span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a raw update against the base query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a raw update against the base query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_rawUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationExistenceCountQuery" id="_getRelationExistenceCountQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationExistenceCountQuery(
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>,
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TDeclaringModel&gt; <var>$parentQuery</var></span>,
+): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the constraints for a relationship count query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the constraints for a relationship count query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationExistenceCountQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationExistenceQuery" id="_getRelationExistenceQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationExistenceQuery(
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>,
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TDeclaringModel&gt; <var>$parentQuery</var></span>,
+	<span>array|mixed <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the constraints for an internal relationship existence query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the constraints for an internal relationship existence query.</p>
+<p>Essentially, these queries compare on column names like whereColumn.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\BelongsTo::getRelationExistenceQuery()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::getRelationExistenceQuery()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::getRelationExistenceQuery()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::getRelationExistenceQuery()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationExistenceQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationCountHash" id="_getRelationCountHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationCountHash(<span>bool <var>$incrementJoinCount</var> = <span class="php-kw">true</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a relationship join table hash.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a relationship join table hash.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationCountHash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getKeys" id="_getKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getKeys(<span>array&lt;int, TDeclaringModel&gt; <var>$models</var></span>, <span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): array&lt;int, int|string|null&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the primary keys for an array of models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the primary keys for an array of models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationQuery" id="_getRelationQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query builder that will contain the relationship constraints.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query builder that will contain the relationship constraints.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQuery" id="_getQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying query for the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying query for the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBaseQuery" id="_getBaseQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBaseQuery(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the base query builder driving the Eloquent builder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the base query builder driving the Eloquent builder.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBaseQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toBase" id="_toBase">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toBase(): <a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get a base query builder instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a base query builder instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toBase">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getParent" id="_getParent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getParent(): TDeclaringModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the parent model of the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the parent model of the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getParent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQualifiedParentKeyName" id="_getQualifiedParentKeyName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQualifiedParentKeyName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the fully qualified parent key name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the fully qualified parent key name.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getQualifiedParentKeyName">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::getQualifiedParentKeyName()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_getQualifiedParentKeyName">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::getQualifiedParentKeyName()</code></a>				</li>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html#_getQualifiedParentKeyName">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough::getQualifiedParentKeyName()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQualifiedParentKeyName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelated" id="_getRelated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelated(): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the related model of the relation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the related model of the relation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="createdAt" id="_createdAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>createdAt(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;created at&quot; column.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_createdAt">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::createdAt()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_createdAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="updatedAt" id="_updatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>updatedAt(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html#_updatedAt">						<code>Illuminate\Database\Eloquent\Relations\BelongsToMany::updatedAt()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_updatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relatedUpdatedAt" id="_relatedUpdatedAt">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>relatedUpdatedAt(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the related model's "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the related model's &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_relatedUpdatedAt">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereInEager" id="_whereInEager">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereInEager(<span>string <var>$whereIn</var></span>, <span>string <var>$key</var></span>, <span>array <var>$modelKeys</var></span>, <span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;|null <var>$query</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a whereIn eager constraint for the given set of model keys to be loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a whereIn eager constraint for the given set of model keys to be loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereInEager">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereInMethod" id="_whereInMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereInMethod(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>, <span>string <var>$key</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "where in" method for eager loading.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;where in&quot; method for eager loading.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereInMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requireMorphMap" id="_requireMorphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>requireMorphMap(<span>bool <var>$requireMorphMap</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Prevent polymorphic relationships from being used without model mappings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prevent polymorphic relationships from being used without model mappings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requireMorphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requiresMorphMap" id="_requiresMorphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>requiresMorphMap(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if polymorphic relationships require explicit model mapping.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if polymorphic relationships require explicit model mapping.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_requiresMorphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="enforceMorphMap" id="_enforceMorphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>enforceMorphMap(<span>array&lt;string, class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt; <var>$map</var></span>, <span>bool <var>$merge</var> = <span class="php-kw">true</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Define the morph map for polymorphic relations and require all morphed models to be explicitly mapped.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define the morph map for polymorphic relations and require all morphed models to be explicitly mapped.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_enforceMorphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="morphMap" id="_morphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>morphMap(<span>array&lt;string, class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt;|null <var>$map</var> = <span class="php-kw">null</span></span>, <span>bool <var>$merge</var> = <span class="php-kw">true</span></span>): array&lt;string, class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Set or get the morph map for polymorphic relations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set or get the morph map for polymorphic relations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_morphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildMorphMapFromModels" id="_buildMorphMapFromModels">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>buildMorphMapFromModels(<span>list&lt;class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt;|null <var>$models</var> = <span class="php-kw">null</span></span>): array&lt;string, class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt;|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Builds a table-keyed array from model class names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Builds a table-keyed array from model class names.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildMorphMapFromModels">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMorphedModel" id="_getMorphedModel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMorphedModel(<span>string <var>$alias</var></span>): class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the model associated with a custom polymorphic type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the model associated with a custom polymorphic type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMorphedModel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMorphAlias" id="_getMorphAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMorphAlias(<span>class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt; <var>$className</var></span>): int|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the alias associated with a custom polymorphic class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the alias associated with a custom polymorphic class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMorphAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__call" id="___call">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__call(<span>string <var>$method</var></span>, <span>array <var>$parameters</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle dynamic method calls to the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle dynamic method calls to the relationship.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html#___call">						<code>Illuminate\Database\Eloquent\Relations\MorphTo::__call()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___call">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__clone" id="___clone">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__clone(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Force a clone of the underlying query builder when cloning.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Force a clone of the underlying query builder when cloning.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___clone">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="query" id="$query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$query</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parent" id="$parent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">TDeclaringModel</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$parent</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$parent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="related" id="$related">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">TRelatedModel</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$related</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$related">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="eagerKeysWereEmpty" id="$eagerKeysWereEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$eagerKeysWereEmpty</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$eagerKeysWereEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="constraints" id="$constraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$constraints</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$constraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="morphMap" id="$morphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, class-string&lt;<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$morphMap</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$morphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="requireMorphMap" id="$requireMorphMap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$requireMorphMap</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$requireMorphMap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="selfJoinCount" id="$selfJoinCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$selfJoinCount</var> = <span class="php-num">0</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$selfJoinCount">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

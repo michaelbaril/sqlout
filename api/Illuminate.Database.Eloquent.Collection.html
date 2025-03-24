@@ -1,0 +1,1993 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Eloquent\Collection |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Builder.html">
+							Builder
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.HigherOrderBuilderProxy.html">
+							HigherOrderBuilderProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Model.html">
+							Model
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.PendingHasThroughRelationship.html">
+							PendingHasThroughRelationship
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Scope.html">
+							Scope
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.HasCollection.html">
+							HasCollection
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.InvalidCastException.html">
+							InvalidCastException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.JsonEncodingException.html">
+							JsonEncodingException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.MassAssignmentException.html">
+							MassAssignmentException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.MissingAttributeException.html">
+							MissingAttributeException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.ModelNotFoundException.html">
+							ModelNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.RelationNotFoundException.html">
+							RelationNotFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Collection.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="Illuminate.Database.Eloquent.Collection.html">Collection</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TKey</span> is array-key, <span title="">TModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TModel&gt;</code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Support.Enumerable.html"><span title="Illuminate\Support\Enumerable">Enumerable</span></a>&lt;TKey, TValue&gt;
+
+		uses
+			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Collection</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>find&lt;<span title="">TFindDefault</span>&gt;(
+	<span>mixed <var>$key</var></span>,
+	<span>TFindDefault <var>$default</var> = <span class="php-kw">null</span></span>,
+): ($key is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;static&nbsp;:&nbsp;TModel|TFindDefault)</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a model in the collection by key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a model in the collection by key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findOrFail" id="_findOrFail">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findOrFail(<span>mixed <var>$key</var></span>): TModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Find a model in the collection by key or throw an exception.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Find a model in the collection by key or throw an exception.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.ModelNotFoundException.html"><span>Illuminate\Database\Eloquent\ModelNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findOrFail">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="load" id="_load">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>load(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationships onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationships onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_load">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadAggregate" id="_loadAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadAggregate(
+	<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>,
+	<span>string <var>$column</var></span>,
+	<span>string|null <var>$function</var> = <span class="php-kw">null</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of aggregations over relationship's column onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of aggregations over relationship's column onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadCount" id="_loadCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadCount(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship counts onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship counts onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMax" id="_loadMax">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMax(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship's max column values onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship's max column values onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMax">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMin" id="_loadMin">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMin(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship's min column values onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship's min column values onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMin">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadSum" id="_loadSum">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadSum(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship's column summations onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship's column summations onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadSum">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadAvg" id="_loadAvg">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadAvg(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>, <span>string <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship's average column values onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship's average column values onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadAvg">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadExists" id="_loadExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadExists(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of related existences onto the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of related existences onto the collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMissing" id="_loadMissing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMissing(<span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt;|string <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationships onto the collection if they are not already eager loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationships onto the collection if they are not already eager loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMissing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMissingRelation" id="_loadMissingRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMissingRelation(<span><b><span class="active" title="Illuminate\Database\Eloquent\Collection">Collection</span></b>&lt;int, TModel&gt; <var>$models</var></span>, <span>array <var>$path</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a relationship path if it is not already eager loaded.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a relationship path if it is not already eager loaded.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMissingRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorph" id="_loadMorph">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorph(<span>string <var>$relation</var></span>, <span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt; <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationships onto the mixed relationship collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationships onto the mixed relationship collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorph">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="loadMorphCount" id="_loadMorphCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>loadMorphCount(<span>string <var>$relation</var></span>, <span>array&lt;array-key, array|(callable(<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;*, *, *&gt;):&nbsp;mixed)|string&gt; <var>$relations</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Load a set of relationship counts onto the mixed relationship collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Load a set of relationship counts onto the mixed relationship collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_loadMorphCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="contains" id="_contains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>contains(<span>(callable(TModel, TKey):&nbsp;bool)|TModel|string|int <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a key exists in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a key exists in the collection.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_contains">						<code>Illuminate\Support\Collection::contains()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_contains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doesntContain" id="_doesntContain">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doesntContain(<span>(callable(TModel, TKey):&nbsp;bool)|TModel|string|int <var>$key</var></span>, <span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a key does not exist in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a key does not exist in the collection.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_doesntContain">						<code>Illuminate\Support\Collection::doesntContain()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doesntContain">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="modelKeys" id="_modelKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>modelKeys(): array&lt;int, array-key&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the array of primary keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the array of primary keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_modelKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="merge" id="_merge">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>merge(<span>iterable&lt;array-key, TModel&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_merge">						<code>Illuminate\Support\Collection::merge()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_merge">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="map" id="_map">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>map&lt;<span title="">TMapValue</span>&gt;(<span>callable(TModel, TKey):&nbsp;TMapValue <var>$callback</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TMapValue&gt;|static&lt;TKey, TMapValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run a map over each of the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run a map over each of the items.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_map">						<code>Illuminate\Support\Collection::map()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_map">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mapWithKeys" id="_mapWithKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mapWithKeys&lt;<span title="">TMapWithKeysKey</span> is array-key, <span title="">TMapWithKeysValue</span>&gt;(
+	<span>callable(TModel, TKey):&nbsp;array&lt;TMapWithKeysKey, TMapWithKeysValue&gt; <var>$callback</var></span>,
+): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TMapWithKeysKey, TMapWithKeysValue&gt;|static&lt;TMapWithKeysKey, TMapWithKeysValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Run an associative map over each of the items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Run an associative map over each of the items.</p>
+<p>The callback should return an associative array with a single key / value pair.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_mapWithKeys">						<code>Illuminate\Support\Collection::mapWithKeys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mapWithKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fresh" id="_fresh">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fresh(<span>array&lt;array-key, string&gt;|string <var>$with</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Reload a fresh model instance from the database for all the entities.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Reload a fresh model instance from the database for all the entities.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fresh">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="diff" id="_diff">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>diff(<span>iterable&lt;array-key, TModel&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Diff the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Diff the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_diff">						<code>Illuminate\Support\Collection::diff()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_diff">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="intersect" id="_intersect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>intersect(<span>iterable&lt;array-key, TModel&gt; <var>$items</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Intersect the collection with the given items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Intersect the collection with the given items.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_intersect">						<code>Illuminate\Support\Collection::intersect()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_intersect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unique" id="_unique">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unique(<span>(callable(TModel, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Return only unique items from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return only unique items from the collection.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_unique">						<code>Illuminate\Support\Collection::unique()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unique">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="only" id="_only">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>only(<span>array&lt;array-key, mixed&gt;|null <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns only the models from the collection with the specified keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns only the models from the collection with the specified keys.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_only">						<code>Illuminate\Support\Collection::only()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="except" id="_except">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>except(<span>array&lt;array-key, mixed&gt;|null <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns all models in the collection except the models with specified keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns all models in the collection except the models with specified keys.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_except">						<code>Illuminate\Support\Collection::except()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_except">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="makeHidden" id="_makeHidden">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>makeHidden(<span>array&lt;array-key, string&gt;|string <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Make the given, typically visible, attributes hidden across the entire collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make the given, typically visible, attributes hidden across the entire collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_makeHidden">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="makeVisible" id="_makeVisible">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>makeVisible(<span>array&lt;array-key, string&gt;|string <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Make the given, typically hidden, attributes visible across the entire collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make the given, typically hidden, attributes visible across the entire collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_makeVisible">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setVisible" id="_setVisible">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setVisible(<span>array&lt;int, string&gt; <var>$visible</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the visible attributes across the entire collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the visible attributes across the entire collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setVisible">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHidden" id="_setHidden">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHidden(<span>array&lt;int, string&gt; <var>$hidden</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the hidden attributes across the entire collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the hidden attributes across the entire collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHidden">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="append" id="_append">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>append(<span>array&lt;array-key, string&gt;|string <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Append an attribute across the entire collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Append an attribute across the entire collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_append">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDictionary" id="_getDictionary">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDictionary(<span>iterable&lt;array-key, TModel&gt;|null <var>$items</var> = <span class="php-kw">null</span></span>): array&lt;array-key, TModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a dictionary keyed by primary keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a dictionary keyed by primary keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDictionary">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="countBy" id="_countBy">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>countBy(<span>(callable(TModel, TKey):&nbsp;array-key)|string|null <var>$countBy</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;array-key, int&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Count the number of items in the collection by a field or using a callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Count the number of items in the collection by a field or using a callback.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_countBy">						<code>Illuminate\Support\Collection::countBy()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_countBy">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collapse" id="_collapse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collapse(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Collapse the collection of items into a single array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Collapse the collection of items into a single array.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_collapse">						<code>Illuminate\Support\Collection::collapse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collapse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flatten" id="_flatten">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flatten(<span>int <var>$depth</var> = INF</span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a flattened array of the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a flattened array of the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_flatten">						<code>Illuminate\Support\Collection::flatten()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flatten">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="flip" id="_flip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>flip(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TModel, TKey&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Flip the items in the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Flip the items in the collection.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_flip">						<code>Illuminate\Support\Collection::flip()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_flip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="keys" id="_keys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>keys(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, TKey&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the keys of the collection items.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the keys of the collection items.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_keys">						<code>Illuminate\Support\Collection::keys()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_keys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pad" id="_pad">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pad&lt;<span title="">TPadValue</span>&gt;(<span>int <var>$size</var></span>, <span>TPadValue <var>$value</var></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, TModel|TPadValue&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Pad collection to the specified length with a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Pad collection to the specified length with a value.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_pad">						<code>Illuminate\Support\Collection::pad()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pad">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="partition" id="_partition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>partition(
+	<span>(callable(TModel, TKey):&nbsp;bool)|TModel|string <var>$key</var></span>,
+	<span>TModel|string|null <var>$operator</var> = <span class="php-kw">null</span></span>,
+	<span>TModel|null <var>$value</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int&lt;<span class="php-num">0</span>, <span class="php-num">1</span>&gt;, static&lt;TKey, TModel&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Partition the collection into two arrays using the given callback or key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Partition the collection into two arrays using the given callback or key.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Enumerable.html#_partition">						<code>Illuminate\Support\Enumerable::partition()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_partition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pluck" id="_pluck">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pluck(<span>string|array&lt;array-key, string&gt;|null <var>$value</var></span>, <span>string|null <var>$key</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;array-key, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array with the values of a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array with the values of a given key.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_pluck">						<code>Illuminate\Support\Collection::pluck()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pluck">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="zip" id="_zip">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>zip&lt;<span title="">TZipValue</span>&gt;(
+	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TZipValue&gt;|iterable&lt;array-key, TZipValue&gt; ...<var>$items</var></span>,
+): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, TModel|TZipValue&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Zip the collection together with one or more arrays.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Zip the collection together with one or more arrays.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_zip">						<code>Illuminate\Support\Collection::zip()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_zip">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="duplicateComparator" id="_duplicateComparator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>duplicateComparator(<span>bool <var>$strict</var></span>): callable(TModel, TModel):&nbsp;bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the comparison function to detect duplicates.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the comparison function to detect duplicates.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Support.Collection.html#_duplicateComparator">						<code>Illuminate\Support\Collection::duplicateComparator()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_duplicateComparator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableClass" id="_getQueueableClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableClass(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the type of the entities being queued.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the type of the entities being queued.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableCollection.html#_getQueueableClass">						<code>Illuminate\Contracts\Queue\QueueableCollection::getQueueableClass()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableModelClass" id="_getQueueableModelClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableModelClass(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the queueable class name for the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the queueable class name for the given model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableModelClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableIds" id="_getQueueableIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableIds(): array&lt;int, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the identifiers for all of the entities.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the identifiers for all of the entities.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableCollection.html#_getQueueableIds">						<code>Illuminate\Contracts\Queue\QueueableCollection::getQueueableIds()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableIds">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableRelations" id="_getQueueableRelations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableRelations(): array&lt;int, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the relationships of the entities being queued.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the relationships of the entities being queued.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableCollection.html#_getQueueableRelations">						<code>Illuminate\Contracts\Queue\QueueableCollection::getQueueableRelations()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableRelations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableConnection" id="_getQueueableConnection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableConnection(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the connection of the entities being queued.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the connection of the entities being queued.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Queue.QueueableCollection.html#_getQueueableConnection">						<code>Illuminate\Contracts\Queue\QueueableCollection::getQueueableConnection()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableConnection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toQuery" id="_toQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the Eloquent query builder from the collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the Eloquent query builder from the collection.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toQuery">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Collection.html#___construct">__construct()</a>, <a href="Illuminate.Support.Collection.html#_range">range()</a>, <a href="Illuminate.Support.Collection.html#_all">all()</a>, <a href="Illuminate.Support.Collection.html#_lazy">lazy()</a>, <a href="Illuminate.Support.Collection.html#_median">median()</a>, <a href="Illuminate.Support.Collection.html#_mode">mode()</a>, <a href="Illuminate.Support.Collection.html#_collapseWithKeys">collapseWithKeys()</a>, <a href="Illuminate.Support.Collection.html#_containsStrict">containsStrict()</a>, <a href="Illuminate.Support.Collection.html#_crossJoin">crossJoin()</a>, <a href="Illuminate.Support.Collection.html#_diffUsing">diffUsing()</a>, <a href="Illuminate.Support.Collection.html#_diffAssoc">diffAssoc()</a>, <a href="Illuminate.Support.Collection.html#_diffAssocUsing">diffAssocUsing()</a>, <a href="Illuminate.Support.Collection.html#_diffKeys">diffKeys()</a>, <a href="Illuminate.Support.Collection.html#_diffKeysUsing">diffKeysUsing()</a>, <a href="Illuminate.Support.Collection.html#_duplicates">duplicates()</a>, <a href="Illuminate.Support.Collection.html#_duplicatesStrict">duplicatesStrict()</a>, <a href="Illuminate.Support.Collection.html#_filter">filter()</a>, <a href="Illuminate.Support.Collection.html#_first">first()</a>, <a href="Illuminate.Support.Collection.html#_forget">forget()</a>, <a href="Illuminate.Support.Collection.html#_get">get()</a>, <a href="Illuminate.Support.Collection.html#_getOrPut">getOrPut()</a>, <a href="Illuminate.Support.Collection.html#_groupBy">groupBy()</a>, <a href="Illuminate.Support.Collection.html#_keyBy">keyBy()</a>, <a href="Illuminate.Support.Collection.html#_has">has()</a>, <a href="Illuminate.Support.Collection.html#_hasAny">hasAny()</a>, <a href="Illuminate.Support.Collection.html#_implode">implode()</a>, <a href="Illuminate.Support.Collection.html#_intersectUsing">intersectUsing()</a>, <a href="Illuminate.Support.Collection.html#_intersectAssoc">intersectAssoc()</a>, <a href="Illuminate.Support.Collection.html#_intersectAssocUsing">intersectAssocUsing()</a>, <a href="Illuminate.Support.Collection.html#_intersectByKeys">intersectByKeys()</a>, <a href="Illuminate.Support.Collection.html#_isEmpty">isEmpty()</a>, <a href="Illuminate.Support.Collection.html#_containsOneItem">containsOneItem()</a>, <a href="Illuminate.Support.Collection.html#_join">join()</a>, <a href="Illuminate.Support.Collection.html#_last">last()</a>, <a href="Illuminate.Support.Collection.html#_mapToDictionary">mapToDictionary()</a>, <a href="Illuminate.Support.Collection.html#_mergeRecursive">mergeRecursive()</a>, <a href="Illuminate.Support.Collection.html#_multiply">multiply()</a>, <a href="Illuminate.Support.Collection.html#_combine">combine()</a>, <a href="Illuminate.Support.Collection.html#_union">union()</a>, <a href="Illuminate.Support.Collection.html#_nth">nth()</a>, <a href="Illuminate.Support.Collection.html#_select">select()</a>, <a href="Illuminate.Support.Collection.html#_pop">pop()</a>, <a href="Illuminate.Support.Collection.html#_prepend">prepend()</a>, <a href="Illuminate.Support.Collection.html#_push">push()</a>, <a href="Illuminate.Support.Collection.html#_unshift">unshift()</a>, <a href="Illuminate.Support.Collection.html#_concat">concat()</a>, <a href="Illuminate.Support.Collection.html#_pull">pull()</a>, <a href="Illuminate.Support.Collection.html#_put">put()</a>, <a href="Illuminate.Support.Collection.html#_random">random()</a>, <a href="Illuminate.Support.Collection.html#_replace">replace()</a>, <a href="Illuminate.Support.Collection.html#_replaceRecursive">replaceRecursive()</a>, <a href="Illuminate.Support.Collection.html#_reverse">reverse()</a>, <a href="Illuminate.Support.Collection.html#_search">search()</a>, <a href="Illuminate.Support.Collection.html#_before">before()</a>, <a href="Illuminate.Support.Collection.html#_after">after()</a>, <a href="Illuminate.Support.Collection.html#_shift">shift()</a>, <a href="Illuminate.Support.Collection.html#_shuffle">shuffle()</a>, <a href="Illuminate.Support.Collection.html#_sliding">sliding()</a>, <a href="Illuminate.Support.Collection.html#_skip">skip()</a>, <a href="Illuminate.Support.Collection.html#_skipUntil">skipUntil()</a>, <a href="Illuminate.Support.Collection.html#_skipWhile">skipWhile()</a>, <a href="Illuminate.Support.Collection.html#_slice">slice()</a>, <a href="Illuminate.Support.Collection.html#_split">split()</a>, <a href="Illuminate.Support.Collection.html#_splitIn">splitIn()</a>, <a href="Illuminate.Support.Collection.html#_sole">sole()</a>, <a href="Illuminate.Support.Collection.html#_firstOrFail">firstOrFail()</a>, <a href="Illuminate.Support.Collection.html#_chunk">chunk()</a>, <a href="Illuminate.Support.Collection.html#_chunkWhile">chunkWhile()</a>, <a href="Illuminate.Support.Collection.html#_sort">sort()</a>, <a href="Illuminate.Support.Collection.html#_sortDesc">sortDesc()</a>, <a href="Illuminate.Support.Collection.html#_sortBy">sortBy()</a>, <a href="Illuminate.Support.Collection.html#_sortByMany">sortByMany()</a>, <a href="Illuminate.Support.Collection.html#_sortByDesc">sortByDesc()</a>, <a href="Illuminate.Support.Collection.html#_sortKeys">sortKeys()</a>, <a href="Illuminate.Support.Collection.html#_sortKeysDesc">sortKeysDesc()</a>, <a href="Illuminate.Support.Collection.html#_sortKeysUsing">sortKeysUsing()</a>, <a href="Illuminate.Support.Collection.html#_splice">splice()</a>, <a href="Illuminate.Support.Collection.html#_take">take()</a>, <a href="Illuminate.Support.Collection.html#_takeUntil">takeUntil()</a>, <a href="Illuminate.Support.Collection.html#_takeWhile">takeWhile()</a>, <a href="Illuminate.Support.Collection.html#_transform">transform()</a>, <a href="Illuminate.Support.Collection.html#_dot">dot()</a>, <a href="Illuminate.Support.Collection.html#_undot">undot()</a>, <a href="Illuminate.Support.Collection.html#_values">values()</a>, <a href="Illuminate.Support.Collection.html#_getIterator">getIterator()</a>, <a href="Illuminate.Support.Collection.html#_count">count()</a>, <a href="Illuminate.Support.Collection.html#_add">add()</a>, <a href="Illuminate.Support.Collection.html#_toBase">toBase()</a>, <a href="Illuminate.Support.Collection.html#_offsetExists">offsetExists()</a>, <a href="Illuminate.Support.Collection.html#_offsetGet">offsetGet()</a>, <a href="Illuminate.Support.Collection.html#_offsetSet">offsetSet()</a>, <a href="Illuminate.Support.Collection.html#_offsetUnset">offsetUnset()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.EnumeratesValues.html"><span>Illuminate\Support\Traits\EnumeratesValues</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.EnumeratesValues.html#_make">make()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_wrap">wrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unwrap">unwrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_empty">empty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_times">times()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_avg">avg()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_average">average()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_some">some()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dd">dd()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dump">dump()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_each">each()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_eachSpread">eachSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_every">every()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_firstWhere">firstWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_value">value()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_ensure">ensure()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapSpread">mapSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapToGroups">mapToGroups()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_flatMap">flatMap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapInto">mapInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_min">min()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_max">max()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_forPage">forPage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_percentage">percentage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_sum">sum()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenEmpty">whenEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenNotEmpty">whenNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessEmpty">unlessEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessNotEmpty">unlessNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_where">where()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNull">whereNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotNull">whereNotNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereStrict">whereStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereIn">whereIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInStrict">whereInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereBetween">whereBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotBetween">whereNotBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotIn">whereNotIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotInStrict">whereNotInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInstanceOf">whereInstanceOf()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipe">pipe()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeInto">pipeInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeThrough">pipeThrough()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduce">reduce()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceSpread">reduceSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceWithKeys">reduceWithKeys()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reject">reject()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_tap">tap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_uniqueStrict">uniqueStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toArray">toArray()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toJson">toJson()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getCachingIterator">getCachingIterator()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___toString">__toString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_escapeWhenCastingToString">escapeWhenCastingToString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_proxy">proxy()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___get">__get()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_operatorForWhere">operatorForWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_useAsCallable">useAsCallable()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_valueRetriever">valueRetriever()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_equality">equality()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_negate">negate()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_identity">identity()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html#_getDictionaryKey">getDictionaryKey()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Support.Collection.html"><span>Illuminate\Support\Collection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Collection.html#$items">$items</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.EnumeratesValues.html"><span>Illuminate\Support\Traits\EnumeratesValues</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$escapeWhenCastingToString">$escapeWhenCastingToString</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$proxies">$proxies</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$average">$average</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$avg">$avg</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$contains">$contains</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$doesntContain">$doesntContain</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$each">$each</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$every">$every</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$filter">$filter</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$first">$first</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$flatMap">$flatMap</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$groupBy">$groupBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$keyBy">$keyBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$last">$last</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$map">$map</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$max">$max</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$min">$min</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$partition">$partition</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$percentage">$percentage</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$reject">$reject</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$skipUntil">$skipUntil</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$skipWhile">$skipWhile</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$some">$some</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sortBy">$sortBy</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sortByDesc">$sortByDesc</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$sum">$sum</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$takeUntil">$takeUntil</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$takeWhile">$takeWhile</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$unique">$unique</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$unless">$unless</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$until">$until</a></var>, <var><a href="Illuminate.Support.Traits.EnumeratesValues.html#$when">$when</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

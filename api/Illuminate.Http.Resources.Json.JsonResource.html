@@ -1,0 +1,848 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Http\Resources\Json\JsonResource |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.html">Http</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.Resources.html">Resources</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Http.Resources.Json.html">Json</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html">
+							AnonymousResourceCollection
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Http.Resources.Json.JsonResource.html">
+							JsonResource
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Http.Resources.Json.ResourceCollection.html">
+							ResourceCollection
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Http.Resources.Json.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Http.Resources.Json.JsonResource.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Http.html">Http</a>\<a href="namespace-Illuminate.Http.Resources.html">Resources</a>\<a href="namespace-Illuminate.Http.Resources.Json.html">Json</a>\<a href="Illuminate.Http.Resources.Json.JsonResource.html">JsonResource</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, <a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, <a href="Illuminate.Contracts.Support.Responsable.html"><span title="Illuminate\Contracts\Support\Responsable">Responsable</span></a>, <a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html"><span title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</span></a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html"><span title="Illuminate\Http\Resources\DelegatesToResource">DelegatesToResource</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Http\Resources\Json\JsonResource</span></b>
+
+		implements
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Support.Responsable.html"><span title="Illuminate\Contracts\Support\Responsable">Responsable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html"><span title="Illuminate\Http\Resources\ConditionallyLoadsAttributes">ConditionallyLoadsAttributes</span></a>, 
+			<a href="Illuminate.Http.Resources.DelegatesToResource.html"><span title="Illuminate\Http\Resources\DelegatesToResource">DelegatesToResource</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html"><span>Illuminate\Http\Resources\Json\ResourceCollection</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+		uses
+			<a href="Illuminate.Http.Resources.CollectsResources.html"><span title="Illuminate\Http\Resources\CollectsResources">CollectsResources</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html"><span>Illuminate\Http\Resources\Json\AnonymousResourceCollection</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>mixed <var>$resource</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new resource instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new resource instance.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html#___construct">						<code>Illuminate\Http\Resources\Json\ResourceCollection::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="make" id="_make">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>make(<span>mixed ...<var>$parameters</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new resource instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new resource instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_make">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="collection" id="_collection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>collection(<span>mixed <var>$resource</var></span>): <a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html"><span title="Illuminate\Http\Resources\Json\AnonymousResourceCollection">AnonymousResourceCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new anonymous resource collection.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new anonymous resource collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_collection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newCollection" id="_newCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newCollection(<span>mixed <var>$resource</var></span>): <a href="Illuminate.Http.Resources.Json.AnonymousResourceCollection.html"><span title="Illuminate\Http\Resources\Json\AnonymousResourceCollection">AnonymousResourceCollection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new resource collection instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new resource collection instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolve" id="_resolve">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolve(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a>|null <var>$request</var> = <span class="php-kw">null</span></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the resource to an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the resource to an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolve">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toArray" id="_toArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toArray(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): array|<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Transform the resource into an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transform the resource into an array.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html#_toArray">						<code>Illuminate\Http\Resources\Json\ResourceCollection::toArray()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toJson" id="_toJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toJson(<span>int <var>$options</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the model instance to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the model instance to JSON.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.JsonEncodingException.html"><span>Illuminate\Database\Eloquent\JsonEncodingException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="with" id="_with">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>with(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get any additional data that should be returned with the resource array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get any additional data that should be returned with the resource array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_with">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="additional" id="_additional">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>additional(<span>array <var>$data</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add additional meta data to the resource response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add additional meta data to the resource response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_additional">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonOptions" id="_jsonOptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonOptions(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the JSON serialization options that should be applied to the resource response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the JSON serialization options that should be applied to the resource response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonOptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withResponse" id="_withResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withResponse(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>, <span><a href="Illuminate.Http.JsonResponse.html"><span title="Illuminate\Http\JsonResponse">JsonResponse</span></a> <var>$response</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Customize the response for a request.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Customize the response for a request.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="_wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrap(<span>string <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the string that should wrap the outer-most resource array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the string that should wrap the outer-most resource array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrap">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutWrapping" id="_withoutWrapping">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutWrapping(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Disable wrapping of the outer-most resource array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Disable wrapping of the outer-most resource array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutWrapping">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="response" id="_response">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>response(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a>|null <var>$request</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Http.JsonResponse.html"><span title="Illuminate\Http\JsonResponse">JsonResponse</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Transform the resource into an HTTP response.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transform the resource into an HTTP response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_response">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toResponse" id="_toResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toResponse(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): <a href="Illuminate.Http.JsonResponse.html"><span title="Illuminate\Http\JsonResponse">JsonResponse</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create an HTTP response that represents the object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an HTTP response that represents the object.</p>
+</div>
+
+
+
+
+		<h4>Overriden by</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Http.Resources.Json.ResourceCollection.html#_toResponse">						<code>Illuminate\Http\Resources\Json\ResourceCollection::toResponse()</code></a>				</li>
+		</ul>
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Responsable.html#_toResponse">						<code>Illuminate\Contracts\Support\Responsable::toResponse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the resource for JSON serialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the resource for JSON serialization.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html"><span>Illuminate\Http\Resources\ConditionallyLoadsAttributes</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_filter">filter()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_mergeData">mergeData()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_removeMissingValues">removeMissingValues()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_when">when()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_unless">unless()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_merge">merge()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_mergeWhen">mergeWhen()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_mergeUnless">mergeUnless()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_attributes">attributes()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenHas">whenHas()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenNull">whenNull()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenNotNull">whenNotNull()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenAppended">whenAppended()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenLoaded">whenLoaded()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenCounted">whenCounted()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenAggregated">whenAggregated()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenExistsLoaded">whenExistsLoaded()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenPivotLoaded">whenPivotLoaded()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_whenPivotLoadedAs">whenPivotLoadedAs()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_hasPivotLoaded">hasPivotLoaded()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_hasPivotLoadedAs">hasPivotLoadedAs()</a>, <a href="Illuminate.Http.Resources.ConditionallyLoadsAttributes.html#_transform">transform()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Http.Resources.DelegatesToResource.html"><span>Illuminate\Http\Resources\DelegatesToResource</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Http.Resources.DelegatesToResource.html#_getRouteKey">getRouteKey()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_getRouteKeyName">getRouteKeyName()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_resolveRouteBinding">resolveRouteBinding()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_resolveChildRouteBinding">resolveChildRouteBinding()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_offsetExists">offsetExists()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_offsetGet">offsetGet()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_offsetSet">offsetSet()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#_offsetUnset">offsetUnset()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#___isset">__isset()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#___unset">__unset()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#___get">__get()</a>, <a href="Illuminate.Http.Resources.DelegatesToResource.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="resource" id="$resource">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$resource</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$resource">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="with" id="$with">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$with</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$with">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="additional" id="$additional">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$additional</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$additional">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrap" id="$wrap">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$wrap</var> = <span class="php-str">'data'</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$wrap">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,823 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html">
+							AsPivot
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html">
+							CanBeOneOfMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html">
+							ComparesRelatedModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html">
+							InteractsWithDictionary
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html">
+							InteractsWithPivotTable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html">
+							SupportsDefaultModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html">
+							SupportsInverseRelations
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html">CanBeOneOfMany</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOne.html"><span>Illuminate\Database\Eloquent\Relations\HasOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html"><span>Illuminate\Database\Eloquent\Relations\MorphOne</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneThrough</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="addOneOfManySubQueryConstraints" id="_addOneOfManySubQueryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOneOfManySubQueryConstraints(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$query</var></span>, <span>string|null <var>$column</var> = <span class="php-kw">null</span></span>, <span>string|null <var>$aggregate</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add constraints for inner join subselect for one of many relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add constraints for inner join subselect for one of many relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOneOfManySubQueryConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOneOfManySubQuerySelectColumns" id="_getOneOfManySubQuerySelectColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOneOfManySubQuerySelectColumns(): array|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns the determine the relationship groups.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns the determine the relationship groups.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOneOfManySubQuerySelectColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOneOfManyJoinSubQueryConstraints" id="_addOneOfManyJoinSubQueryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					abstract
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOneOfManyJoinSubQueryConstraints(<span><a href="Illuminate.Database.Query.JoinClause.html"><span title="Illuminate\Database\Query\JoinClause">JoinClause</span></a> <var>$join</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add join query constraints for one of many relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add join query constraints for one of many relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOneOfManyJoinSubQueryConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ofMany" id="_ofMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ofMany(<span>string|array|null <var>$column</var> = <span class="php-str">'id'</span></span>, <span>string|<a href="Closure.html"><span title="Closure">Closure</span></a>|null <var>$aggregate</var> = <span class="php-str">'MAX'</span></span>, <span>string|null <var>$relation</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the relation is a single result of a larger one-to-many relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the relation is a single result of a larger one-to-many relationship.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ofMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="latestOfMany" id="_latestOfMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>latestOfMany(<span>string|array|null <var>$column</var> = <span class="php-str">'id'</span></span>, <span>string|null <var>$relation</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the relation is the latest single result of a larger one-to-many relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the relation is the latest single result of a larger one-to-many relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_latestOfMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="oldestOfMany" id="_oldestOfMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>oldestOfMany(<span>string|array|null <var>$column</var> = <span class="php-str">'id'</span></span>, <span>string|null <var>$relation</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the relation is the oldest single result of a larger one-to-many relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the relation is the oldest single result of a larger one-to-many relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_oldestOfMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultOneOfManyJoinAlias" id="_getDefaultOneOfManyJoinAlias">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultOneOfManyJoinAlias(<span>string <var>$relation</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the default alias for the one of many inner join clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the default alias for the one of many inner join clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultOneOfManyJoinAlias">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newOneOfManySubQuery" id="_newOneOfManySubQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newOneOfManySubQuery(
+	<span>string|array <var>$groupBy</var></span>,
+	<span>array&lt;string&gt;|null <var>$columns</var> = <span class="php-kw">null</span></span>,
+	<span>string|null <var>$aggregate</var> = <span class="php-kw">null</span></span>,
+): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query for the related model, grouping the query by the given column, often the foreign key of the…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query for the related model, grouping the query by the given column, often the foreign key of the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newOneOfManySubQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOneOfManyJoinSubQuery" id="_addOneOfManyJoinSubQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOneOfManyJoinSubQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$parent</var></span>, <span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$subQuery</var></span>, <span>array&lt;string&gt; <var>$on</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the join subquery to the given query on the given column and the relationship's foreign key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the join subquery to the given query on the given column and the relationship's foreign key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOneOfManyJoinSubQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeOneOfManyJoinsTo" id="_mergeOneOfManyJoinsTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeOneOfManyJoinsTo(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt; <var>$query</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the relationship query joins to the given query builder.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the relationship query joins to the given query builder.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeOneOfManyJoinsTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationQuery" id="_getRelationQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query builder that will contain the relationship constraints.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query builder that will contain the relationship constraints.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOneOfManySubQuery" id="_getOneOfManySubQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOneOfManySubQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;|void</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the one of many inner join subselect builder instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the one of many inner join subselect builder instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOneOfManySubQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="qualifySubSelectColumn" id="_qualifySubSelectColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>qualifySubSelectColumn(<span>string <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the qualified column name for the one-of-many relationship using the subselect join query's alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the qualified column name for the one-of-many relationship using the subselect join query's alias.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_qualifySubSelectColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="qualifyRelatedColumn" id="_qualifyRelatedColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>qualifyRelatedColumn(<span>string <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Qualify related column using the related table name if it is not already qualified.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Qualify related column using the related table name if it is not already qualified.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_qualifyRelatedColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="guessRelationship" id="_guessRelationship">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>guessRelationship(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Guess the "hasOne" relationship's name via backtrace.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Guess the &quot;hasOne&quot; relationship's name via backtrace.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_guessRelationship">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isOneOfMany" id="_isOneOfMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isOneOfMany(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether the relationship is a one-of-many relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether the relationship is a one-of-many relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isOneOfMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationName" id="_getRelationName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationName">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="isOneOfMany" id="$isOneOfMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$isOneOfMany</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$isOneOfMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relationName" id="$relationName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relationName</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relationName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="oneOfManySubQuery" id="$oneOfManySubQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;*&gt;|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$oneOfManySubQuery</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$oneOfManySubQuery">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

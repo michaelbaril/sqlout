@@ -1,0 +1,649 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Completion\CompletionInput |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.Completion.html">Completion</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Component.Console.Completion.CompletionInput.html">
+							CompletionInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Completion.CompletionSuggestions.html">
+							CompletionSuggestions
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Completion.Suggestion.html">
+							Suggestion
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.Completion.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Completion.CompletionInput.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="namespace-Symfony.Component.Console.Completion.html">Completion</a>\<a href="Symfony.Component.Console.Completion.CompletionInput.html">CompletionInput</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+			<tr><th><code>final</code></th></tr>
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Symfony.Component.Console.Input.ArgvInput.html"><span title="Symfony\Component\Console\Input\ArgvInput">ArgvInput</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>An input specialized for shell completion.</p>
+<p>This input allows unfinished option names or values and exposes what kind of
+completion is expected.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Console.Input.Input.html"><span>Symfony\Component\Console\Input\Input</span></a>
+
+		implements
+			<a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a>, 
+			<a href="Symfony.Component.Console.Input.StreamableInputInterface.html"><span title="Symfony\Component\Console\Input\StreamableInputInterface">StreamableInputInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html"><span>Symfony\Component\Console\Input\ArgvInput</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Component\Console\Completion\CompletionInput</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="fromString" id="_fromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromString(<span>string <var>$inputStr</var></span>, <span>int <var>$currentIndex</var></span>): <b><span class="active" title="Symfony\Component\Console\Completion\CompletionInput">self</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Converts a terminal string into tokens.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts a terminal string into tokens.</p>
+<p>This is required for shell completions without COMP_WORDS support.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromTokens" id="_fromTokens">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromTokens(<span>string[] <var>$tokens</var></span>, <span>int <var>$currentIndex</var></span>): <b><span class="active" title="Symfony\Component\Console\Completion\CompletionInput">self</span></b></code>
+
+
+	<div class="expandable-collapsedView">
+		Create an input based on an COMP_WORDS token list.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an input based on an COMP_WORDS token list.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$tokens</var>&nbsp;&nbsp;</td>
+										<td><p>the set of split tokens (e.g. COMP_WORDS or argv)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$currentIndex</var>&nbsp;&nbsp;</td>
+										<td><p>the index of the cursor (e.g. COMP_CWORD)</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromTokens">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bind" id="_bind">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>bind(<span><a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a> <var>$definition</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Binds the current Input instance with the given arguments and options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Binds the current Input instance with the given arguments and options.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.Input.html#_bind">						<code>Symfony\Component\Console\Input\Input::bind()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_bind">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCompletionType" id="_getCompletionType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCompletionType(): <b><span class="active" title="Symfony\Component\Console\Completion\CompletionInput">self</span></b>::TYPE_*</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the type of completion required.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the type of completion required.</p>
+<p>TYPE_ARGUMENT_VALUE when completing the value of an input argument
+TYPE_OPTION_VALUE   when completing the value of an input option
+TYPE_OPTION_NAME    when completing the name of an input option
+TYPE_NONE           when nothing should be completed</p>
+<p>TYPE_OPTION_NAME and TYPE_NONE are already implemented by the Console component.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCompletionType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCompletionName" id="_getCompletionName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCompletionName(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		The name of the input option or argument when completing a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The name of the input option or argument when completing a value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>returns null when completing an option name</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCompletionName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCompletionValue" id="_getCompletionValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCompletionValue(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		The value already typed by the user (or empty string).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The value already typed by the user (or empty string).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCompletionValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mustSuggestOptionValuesFor" id="_mustSuggestOptionValuesFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mustSuggestOptionValuesFor(<span>string <var>$optionName</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mustSuggestOptionValuesFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mustSuggestArgumentValuesFor" id="_mustSuggestArgumentValuesFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mustSuggestArgumentValuesFor(<span>string <var>$argumentName</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mustSuggestArgumentValuesFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseToken" id="_parseToken">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseToken(<span>string <var>$token</var></span>, <span>bool <var>$parseOptions</var></span>): bool</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html#_parseToken">						<code>Symfony\Component\Console\Input\ArgvInput::parseToken()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseToken">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a stringified representation of the args passed to the command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a stringified representation of the args passed to the command.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Input.ArgvInput.html#___toString">						<code>Symfony\Component\Console\Input\ArgvInput::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.Console.Input.ArgvInput.html"><span>Symfony\Component\Console\Input\ArgvInput</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.Console.Input.ArgvInput.html#___construct">__construct()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_setTokens">setTokens()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_parse">parse()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_getFirstArgument">getFirstArgument()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_hasParameterOption">hasParameterOption()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_getParameterOption">getParameterOption()</a>, <a href="Symfony.Component.Console.Input.ArgvInput.html#_getRawTokens">getRawTokens()</a>, </code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Symfony.Component.Console.Input.Input.html"><span>Symfony\Component\Console\Input\Input</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Symfony.Component.Console.Input.Input.html#_validate">validate()</a>, <a href="Symfony.Component.Console.Input.Input.html#_isInteractive">isInteractive()</a>, <a href="Symfony.Component.Console.Input.Input.html#_setInteractive">setInteractive()</a>, <a href="Symfony.Component.Console.Input.Input.html#_getArguments">getArguments()</a>, <a href="Symfony.Component.Console.Input.Input.html#_getArgument">getArgument()</a>, <a href="Symfony.Component.Console.Input.Input.html#_setArgument">setArgument()</a>, <a href="Symfony.Component.Console.Input.Input.html#_hasArgument">hasArgument()</a>, <a href="Symfony.Component.Console.Input.Input.html#_getOptions">getOptions()</a>, <a href="Symfony.Component.Console.Input.Input.html#_getOption">getOption()</a>, <a href="Symfony.Component.Console.Input.Input.html#_setOption">setOption()</a>, <a href="Symfony.Component.Console.Input.Input.html#_hasOption">hasOption()</a>, <a href="Symfony.Component.Console.Input.Input.html#_escapeToken">escapeToken()</a>, <a href="Symfony.Component.Console.Input.Input.html#_setStream">setStream()</a>, <a href="Symfony.Component.Console.Input.Input.html#_getStream">getStream()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="TYPE_ARGUMENT_VALUE" id="TYPE_ARGUMENT_VALUE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_ARGUMENT_VALUE = <span class="php-str">'argument_value'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_ARGUMENT_VALUE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPE_OPTION_VALUE" id="TYPE_OPTION_VALUE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_OPTION_VALUE = <span class="php-str">'option_value'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_OPTION_VALUE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPE_OPTION_NAME" id="TYPE_OPTION_NAME">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_OPTION_NAME = <span class="php-str">'option_name'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_OPTION_NAME">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="TYPE_NONE" id="TYPE_NONE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>TYPE_NONE = <span class="php-str">'none'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#TYPE_NONE">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Symfony.Component.Console.Input.Input.html"><span>Symfony\Component\Console\Input\Input</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Symfony.Component.Console.Input.Input.html#$definition">$definition</a></var>, <var><a href="Symfony.Component.Console.Input.Input.html#$stream">$stream</a></var>, <var><a href="Symfony.Component.Console.Input.Input.html#$options">$options</a></var>, <var><a href="Symfony.Component.Console.Input.Input.html#$arguments">$arguments</a></var>, <var><a href="Symfony.Component.Console.Input.Input.html#$interactive">$interactive</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

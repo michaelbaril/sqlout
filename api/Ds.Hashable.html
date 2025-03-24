@@ -1,0 +1,330 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Ds\Hashable |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ds.html">Ds</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ds.Deque.html">
+							Deque
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Map.html">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Pair.html">
+							Pair
+						</a>
+					</li>
+					<li>
+						<a href="Ds.PriorityQueue.html">
+							PriorityQueue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Queue.html">
+							Queue
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Set.html">
+							Set
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Stack.html">
+							Stack
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Vector.html">
+							Vector
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ds.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ds.Hashable.html">
+							Hashable
+						</a>
+					</li>
+					<li>
+						<a href="Ds.Sequence.html">
+							Sequence
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ds.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ds.Hashable.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Ds.html">Ds</a>\<a href="Ds.Hashable.html">Hashable</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Hashable is an interface which allows objects to be used as keys. It’s
+an alternative to spl_object_hash(), which determines an object’s hash
+based on its <b>handle:</b> this means that two objects that are considered
+equal by an implicit definition would not treated as equal because they
+are not the same instance.</p>
+<p>hash() is used to return a scalar value to be used as the object's hash
+value, which determines where it goes in the hash table. While this value
+does not have to be unique, objects which are equal must have the same
+hash value.</p>
+<p>equals() is used to determine if two objects are equal. It's guaranteed
+that the comparing object will be an instance of the same class as the
+subject.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Ds\Hashable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.HashableInterface.html"><span>Symfony\Component\Uid\HashableInterface</span></a>
+		extends
+			<b><span class="active" title="Ds\Hashable">Hashable</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a>
+
+		implements
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.Ulid.html"><span>Symfony\Component\Uid\Ulid</span></a>
+
+		implements
+			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="equals" id="_equals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>equals(<span>object <var>$obj</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determines whether another object is equal to the current instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determines whether another object is equal to the current instance.</p>
+<p>This method allows objects to be used as keys in structures such as
+Ds\Map and Ds\Set, or any other lookup structure that honors this
+interface.</p>
+<p><b>Note:</b> It's guaranteed that $obj is an instance of the same class.</p>
+<p><b>Caution:</b> It's important that objects which are equal also have the
+same hash value.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$obj</var>&nbsp;&nbsp;</td>
+										<td><p>The object to compare the current instance to,
+which is always an instance of the same class.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>True if equal, false otherwise.</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_equals">						<code>Symfony\Component\Uid\AbstractUid::equals()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_equals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hash" id="_hash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hash(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a scalar value to be used as the hash value of the objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a scalar value to be used as the hash value of the objects.</p>
+<p>While the hash value does not define equality, all objects that are
+equal according to Ds\Hashable::equals() must have the same hash
+value. Hash values of equal objects don't have to be unique, for
+example you could just return TRUE for all objects and nothing
+would break - the only implication would be that hash tables then
+turn into linked lists because all your objects will be hashed to
+the same bucket. It's therefore very important that you pick a good
+hash value, such as an ID or email address.</p>
+<p>This method allows objects to be used as keys in structures such as
+Ds\Map and Ds\Set, or any other lookup structure that honors this
+interface.</p>
+<p><b>Caution:</b> Do not pick a value that might change within the object,
+such as a public property. Hash table lookups would fail because
+the hash has changed.</p>
+<p><b>Caution:</b> All objects that are equal must have the same hash value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A scalar value to be used as this object's hash value.</p>
+</div>
+
+
+		<h4>Implemented by</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Uid.AbstractUid.html#_hash">						<code>Symfony\Component\Uid\AbstractUid::hash()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hash">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

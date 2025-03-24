@@ -1,0 +1,1468 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Support\Uri |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Support.html">Support</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Carbon.html">
+							Carbon
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Collection.html">
+							Collection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Composer.html">
+							Composer
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.DefaultProviders.html">
+							DefaultProviders
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Fluent.html">
+							Fluent
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderCollectionProxy.html">
+							HigherOrderCollectionProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HigherOrderTapProxy.html">
+							HigherOrderTapProxy
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.HtmlString.html">
+							HtmlString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.LazyCollection.html">
+							LazyCollection
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MessageBag.html">
+							MessageBag
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ServiceProvider.html">
+							ServiceProvider
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.Stringable.html">
+							Stringable
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Support.Uri.html">
+							Uri
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.UriQueryString.html">
+							UriQueryString
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.ValidatedInput.html">
+							ValidatedInput
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.Enumerable.html">
+							Enumerable
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.InteractsWithTime.html">
+							InteractsWithTime
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Support.ItemNotFoundException.html">
+							ItemNotFoundException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Support.MultipleItemsFoundException.html">
+							MultipleItemsFoundException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Support.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Support.Uri.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Support.html">Support</a>\<a href="Illuminate.Support.Uri.html">Uri</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, <a href="Illuminate.Contracts.Support.Responsable.html"><span title="Illuminate\Contracts\Support\Responsable">Responsable</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span><a href="League.Uri.Contracts.UriInterface.html"><span title="League\Uri\Contracts\UriInterface">UriInterface</span></a>|<a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string <var>$uri</var> = <span class="php-str">''</span></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new parsed URI instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new parsed URI instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="of" id="_of">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>of(<span><a href="League.Uri.Contracts.UriInterface.html"><span title="League\Uri\Contracts\UriInterface">UriInterface</span></a>|<a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string <var>$uri</var> = <span class="php-str">''</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new URI instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new URI instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_of">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="to" id="_to">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>to(<span>string <var>$path</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a URI instance of an absolute URL for the given path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a URI instance of an absolute URL for the given path.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_to">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="route" id="_route">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>route(<span><a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a>|string <var>$name</var></span>, <span>mixed <var>$parameters</var> = []</span>, <span>bool <var>$absolute</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a URI instance for a named route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a URI instance for a named route.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Routing.Exception.RouteNotFoundException.html"><span>Symfony\Component\Routing\Exception\RouteNotFoundException</span></a>|<a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_route">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="signedRoute" id="_signedRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>signedRoute(
+	<span><a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a>|string <var>$name</var></span>,
+	<span>mixed <var>$parameters</var> = []</span>,
+	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|<a href="DateInterval.html"><span title="DateInterval">DateInterval</span></a>|int|null <var>$expiration</var> = <span class="php-kw">null</span></span>,
+	<span>bool <var>$absolute</var> = <span class="php-kw">true</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a signed route URI instance for a named route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a signed route URI instance for a named route.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_signedRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="temporarySignedRoute" id="_temporarySignedRoute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>temporarySignedRoute(
+	<span><a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a>|string <var>$name</var></span>,
+	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|<a href="DateInterval.html"><span title="DateInterval">DateInterval</span></a>|int <var>$expiration</var></span>,
+	<span>array <var>$parameters</var> = []</span>,
+	<span>bool <var>$absolute</var> = <span class="php-kw">true</span></span>,
+): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a temporary signed route URI instance for a named route.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a temporary signed route URI instance for a named route.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_temporarySignedRoute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="scheme" id="_scheme">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>scheme(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's scheme.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's scheme.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_scheme">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="user" id="_user">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>user(<span>bool <var>$withPassword</var> = <span class="php-kw">false</span></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the user from the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the user from the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_user">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="password" id="_password">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>password(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the password from the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the password from the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_password">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="host" id="_host">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>host(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's host.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's host.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_host">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="port" id="_port">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>port(): ?int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's port.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's port.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_port">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="path" id="_path">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>path(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's path.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's path.</p>
+<p>Empty or missing paths are returned as a single &quot;/&quot;.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_path">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="query" id="_query">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>query(): <a href="Illuminate.Support.UriQueryString.html"><span title="Illuminate\Support\UriQueryString">UriQueryString</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's query string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's query string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_query">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fragment" id="_fragment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fragment(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's fragment.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's fragment.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fragment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withScheme" id="_withScheme">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withScheme(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string <var>$scheme</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the scheme of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the scheme of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withScheme">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withUser" id="_withUser">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withUser(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string|null <var>$user</var></span>, <span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string|null <var>$password</var> = <span class="php-kw">null</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the user and password for the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the user and password for the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withUser">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withHost" id="_withHost">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withHost(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string <var>$host</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the host of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the host of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withHost">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPort" id="_withPort">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPort(<span>int|null <var>$port</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the port of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the port of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPort">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withPath" id="_withPath">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withPath(<span><a href="Stringable.html"><span title="Stringable">Stringable</span></a>|string <var>$path</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the path of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the path of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withPath">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withQuery" id="_withQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withQuery(<span>array <var>$query</var></span>, <span>bool <var>$merge</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new query parameters into the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new query parameters into the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withQueryIfMissing" id="_withQueryIfMissing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withQueryIfMissing(<span>array <var>$query</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new query parameters into the URI if they are not already in the query string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new query parameters into the URI if they are not already in the query string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withQueryIfMissing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pushOntoQuery" id="_pushOntoQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pushOntoQuery(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Push a value onto the end of a query string parameter that is a list.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Push a value onto the end of a query string parameter that is a list.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pushOntoQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withoutQuery" id="_withoutQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withoutQuery(<span>array|string <var>$keys</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the given query parameters from the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the given query parameters from the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withoutQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceQuery" id="_replaceQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>replaceQuery(<span>array <var>$query</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify new query parameters for the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify new query parameters for the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="withFragment" id="_withFragment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withFragment(<span>string <var>$fragment</var></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the fragment of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the fragment of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withFragment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="redirect" id="_redirect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>redirect(<span>int <var>$status</var> = <span class="php-num">302</span></span>, <span>array <var>$headers</var> = []</span>): <a href="Illuminate.Http.RedirectResponse.html"><span title="Illuminate\Http\RedirectResponse">RedirectResponse</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create a redirect HTTP response for the given URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a redirect HTTP response for the given URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_redirect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toResponse" id="_toResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toResponse(<span><a href="Illuminate.Http.Request.html"><span title="Illuminate\Http\Request">Request</span></a> <var>$request</var></span>): <a href="Symfony.Component.HttpFoundation.Response.html"><span title="Symfony\Component\HttpFoundation\Response">Response</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Create an HTTP response that represents the object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create an HTTP response that represents the object.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Responsable.html#_toResponse">						<code>Illuminate\Contracts\Support\Responsable::toResponse()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toHtml" id="_toHtml">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toHtml(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get content as a string of HTML.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get content as a string of HTML.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.Htmlable.html#_toHtml">						<code>Illuminate\Contracts\Support\Htmlable::toHtml()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toHtml">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="decode" id="_decode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>decode(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the decoded string representation of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the decoded string representation of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_decode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="value" id="_value">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>value(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the string representation of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the string representation of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_value">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEmpty" id="_isEmpty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEmpty(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the URI is currently an empty string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the URI is currently an empty string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEmpty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dump" id="_dump">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dump(<span>mixed ...<var>$args</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Dump the string representation of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dump the string representation of the URI.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dump">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUrlGeneratorResolver" id="_setUrlGeneratorResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setUrlGeneratorResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$urlGeneratorResolver</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the URL generator resolver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the URL generator resolver.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUrlGeneratorResolver">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUri" id="_getUri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUri(): <a href="League.Uri.Contracts.UriInterface.html"><span title="League\Uri\Contracts\UriInterface">UriInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the underlying URI instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the underlying URI instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the string representation of the URI.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the string representation of the URI.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Dumpable.html"><span>Illuminate\Support\Traits\Dumpable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Dumpable.html#_dd">dd()</a>, </code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="uri" id="$uri">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="League.Uri.Contracts.UriInterface.html"><span title="League\Uri\Contracts\UriInterface">UriInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$uri</var></code>
+				
+	<div class="expandable-collapsedView">
+		The URI instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The URI instance.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$uri">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="urlGeneratorResolver" id="$urlGeneratorResolver">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">?<a href="Closure.html"><span title="Closure">Closure</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$urlGeneratorResolver</var> = <span class="php-kw">null</span></code>
+				
+	<div class="expandable-collapsedView">
+		The URL generator resolver.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The URL generator resolver.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$urlGeneratorResolver">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

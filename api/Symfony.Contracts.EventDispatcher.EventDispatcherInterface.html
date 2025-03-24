@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Symfony\Contracts\EventDispatcher\EventDispatcherInterface |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Contracts.EventDispatcher.html">EventDispatcher</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Contracts.EventDispatcher.EventDispatcherInterface.html">
+							EventDispatcherInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Contracts.EventDispatcher.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Contracts.EventDispatcher.EventDispatcherInterface.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Contracts.html">Contracts</a>\<a href="namespace-Symfony.Contracts.EventDispatcher.html">EventDispatcher</a>\<a href="Symfony.Contracts.EventDispatcher.EventDispatcherInterface.html">EventDispatcherInterface</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Psr.EventDispatcher.EventDispatcherInterface.html"><span title="Psr\EventDispatcher\EventDispatcherInterface">EventDispatcherInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Allows providing hooks on domain-specific lifecycles by dispatching events.</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Symfony\Contracts\EventDispatcher\EventDispatcherInterface</span></b>
+		extends
+			<a href="Psr.EventDispatcher.EventDispatcherInterface.html"><span title="Psr\EventDispatcher\EventDispatcherInterface">EventDispatcherInterface</span></a>
+
+
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="dispatch" id="_dispatch">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dispatch&lt;<span title="">T</span> is object&gt;(<span>T <var>$event</var></span>, <span>string|null <var>$eventName</var> = <span class="php-kw">null</span></span>): T</code>
+
+
+	<div class="expandable-collapsedView">
+		Dispatches an event to all registered listeners.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Dispatches an event to all registered listeners.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$event</var>&nbsp;&nbsp;</td>
+										<td><p>The event to pass to the event handlers/listeners</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$eventName</var>&nbsp;&nbsp;</td>
+										<td><p>The name of the event to dispatch. If not supplied,
+the class of $event should be used instead.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>The passed $event MUST be returned</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dispatch">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

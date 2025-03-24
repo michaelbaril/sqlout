@@ -1,0 +1,3382 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Query\Grammars\Grammar |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Query.html">Query</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Query.Grammars.html">Grammars</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Query.Grammars.Grammar.html">
+							Grammar
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Query.Grammars.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Query.Grammars.Grammar.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Query.html">Query</a>\<a href="namespace-Illuminate.Database.Query.Grammars.html">Grammars</a>\<a href="Illuminate.Database.Query.Grammars.Grammar.html">Grammar</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Grammar.html"><span title="Illuminate\Database\Grammar">Grammar</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a>
+
+
+		uses
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Query\Grammars\Grammar</span></b>
+
+
+		uses
+			<a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span title="Illuminate\Database\Concerns\CompilesJsonPaths">CompilesJsonPaths</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="compileSelect" id="_compileSelect">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileSelect(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a select query into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a select query into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileSelect">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileComponents" id="_compileComponents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileComponents(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the components necessary for a select clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the components necessary for a select clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileComponents">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileAggregate" id="_compileAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileAggregate(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$aggregate</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an aggregated select clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an aggregated select clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileColumns" id="_compileColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileColumns(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$columns</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "select *" portion of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;select *&quot; portion of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileFrom" id="_compileFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileFrom(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$table</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "from" portion of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;from&quot; portion of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileFrom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJoins" id="_compileJoins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJoins(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$joins</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "join" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;join&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJoins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJoinLateral" id="_compileJoinLateral">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJoinLateral(<span><a href="Illuminate.Database.Query.JoinLateralClause.html"><span title="Illuminate\Database\Query\JoinLateralClause">JoinLateralClause</span></a> <var>$join</var></span>, <span>string <var>$expression</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "lateral join" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;lateral join&quot; clause.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJoinLateral">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileWheres" id="_compileWheres">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileWheres(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "where" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;where&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileWheres">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileWheresToArray" id="_compileWheresToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileWheresToArray(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array of all the where clauses for the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array of all the where clauses for the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileWheresToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="concatenateWhereClauses" id="_concatenateWhereClauses">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>concatenateWhereClauses(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$sql</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Format the where clause statements into one string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Format the where clause statements into one string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_concatenateWhereClauses">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereRaw" id="_whereRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereRaw(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a raw where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a raw where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBasic" id="_whereBasic">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBasic(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a basic where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a basic where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBasic">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBitwise" id="_whereBitwise">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBitwise(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a bitwise operator where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a bitwise operator where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBitwise">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereLike" id="_whereLike">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereLike(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where like" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where like&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereLike">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereIn" id="_whereIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereIn(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where in" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where in&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotIn" id="_whereNotIn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotIn(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where not in" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where not in&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotIn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotInRaw" id="_whereNotInRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotInRaw(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where not in raw" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where not in raw&quot; clause.</p>
+<p>For safety, whereIntegerInRaw ensures this method is only used with integer values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotInRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereInRaw" id="_whereInRaw">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereInRaw(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where in raw" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where in raw&quot; clause.</p>
+<p>For safety, whereIntegerInRaw ensures this method is only used with integer values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereInRaw">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNull" id="_whereNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNull(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where null" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where null&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotNull" id="_whereNotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotNull(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where not null" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where not null&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBetween" id="_whereBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBetween(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "between" where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;between&quot; where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereBetweenColumns" id="_whereBetweenColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereBetweenColumns(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "between" where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;between&quot; where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereBetweenColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereDate" id="_whereDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereDate(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where date" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where date&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereTime" id="_whereTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereTime(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where time" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where time&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereDay" id="_whereDay">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereDay(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where day" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where day&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereDay">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereMonth" id="_whereMonth">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereMonth(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where month" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where month&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereMonth">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereYear" id="_whereYear">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereYear(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where year" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where year&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereYear">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dateBasedWhere" id="_dateBasedWhere">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>dateBasedWhere(<span>string <var>$type</var></span>, <span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a date based where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a date based where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_dateBasedWhere">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereColumn" id="_whereColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereColumn(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a where clause comparing two columns.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a where clause comparing two columns.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNested" id="_whereNested">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNested(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a nested where clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a nested where clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNested">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereSub" id="_whereSub">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereSub(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a where condition with a sub-select.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a where condition with a sub-select.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereSub">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereExists" id="_whereExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereExists(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a where exists clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a where exists clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereNotExists" id="_whereNotExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereNotExists(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a where exists clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a where exists clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereNotExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereRowValues" id="_whereRowValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereRowValues(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a where row values condition.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a where row values condition.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereRowValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereJsonBoolean" id="_whereJsonBoolean">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereJsonBoolean(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where JSON boolean" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where JSON boolean&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereJsonBoolean">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereJsonContains" id="_whereJsonContains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereJsonContains(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where JSON contains" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where JSON contains&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereJsonContains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJsonContains" id="_compileJsonContains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJsonContains(<span>string <var>$column</var></span>, <span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "JSON contains" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;JSON contains&quot; statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJsonContains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereJsonOverlaps" id="_whereJsonOverlaps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereJsonOverlaps(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where JSON overlaps" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where JSON overlaps&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereJsonOverlaps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJsonOverlaps" id="_compileJsonOverlaps">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJsonOverlaps(<span>string <var>$column</var></span>, <span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "JSON overlaps" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;JSON overlaps&quot; statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJsonOverlaps">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBindingForJsonContains" id="_prepareBindingForJsonContains">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBindingForJsonContains(<span>mixed <var>$binding</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the binding for a "JSON contains" statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the binding for a &quot;JSON contains&quot; statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBindingForJsonContains">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereJsonContainsKey" id="_whereJsonContainsKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereJsonContainsKey(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where JSON contains key" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where JSON contains key&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereJsonContainsKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJsonContainsKey" id="_compileJsonContainsKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJsonContainsKey(<span>string <var>$column</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "JSON contains key" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;JSON contains key&quot; statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJsonContainsKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereJsonLength" id="_whereJsonLength">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereJsonLength(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where JSON length" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where JSON length&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereJsonLength">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJsonLength" id="_compileJsonLength">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJsonLength(<span>string <var>$column</var></span>, <span>string <var>$operator</var></span>, <span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "JSON length" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;JSON length&quot; statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJsonLength">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileJsonValueCast" id="_compileJsonValueCast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileJsonValueCast(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "JSON value cast" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;JSON value cast&quot; statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileJsonValueCast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereFullText" id="_whereFullText">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereFullText(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "where fulltext" clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;where fulltext&quot; clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereFullText">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereExpression" id="_whereExpression">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereExpression(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a clause based on an expression.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a clause based on an expression.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereExpression">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileGroups" id="_compileGroups">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileGroups(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$groups</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "group by" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;group by&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileGroups">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavings" id="_compileHavings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavings(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "having" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;having&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHaving" id="_compileHaving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHaving(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a single having clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a single having clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHaving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileBasicHaving" id="_compileBasicHaving">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileBasicHaving(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a basic having clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a basic having clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileBasicHaving">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavingBetween" id="_compileHavingBetween">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavingBetween(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a "between" having clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a &quot;between&quot; having clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavingBetween">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavingNull" id="_compileHavingNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavingNull(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a having null clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a having null clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavingNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavingNotNull" id="_compileHavingNotNull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavingNotNull(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a having not null clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a having not null clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavingNotNull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavingBit" id="_compileHavingBit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavingBit(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a having clause involving a bit operator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a having clause involving a bit operator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavingBit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileHavingExpression" id="_compileHavingExpression">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileHavingExpression(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a having clause involving an expression.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a having clause involving an expression.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileHavingExpression">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileNestedHavings" id="_compileNestedHavings">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileNestedHavings(<span>array <var>$having</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a nested having clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a nested having clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileNestedHavings">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileOrders" id="_compileOrders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileOrders(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$orders</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "order by" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;order by&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileOrders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileOrdersToArray" id="_compileOrdersToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileOrdersToArray(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$orders</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the query orders to an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the query orders to an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileOrdersToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileRandom" id="_compileRandom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileRandom(<span>string|int <var>$seed</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the random statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the random statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileRandom">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileLimit" id="_compileLimit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileLimit(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>int <var>$limit</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "limit" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;limit&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileLimit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileGroupLimit" id="_compileGroupLimit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileGroupLimit(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a group limit clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a group limit clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileGroupLimit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileRowNumber" id="_compileRowNumber">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileRowNumber(<span>string <var>$partition</var></span>, <span>string <var>$orders</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a row number clause.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a row number clause.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileRowNumber">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileOffset" id="_compileOffset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileOffset(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>int <var>$offset</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "offset" portions of the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;offset&quot; portions of the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileOffset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUnions" id="_compileUnions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUnions(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the "union" queries attached to the main query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the &quot;union&quot; queries attached to the main query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUnions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUnion" id="_compileUnion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUnion(<span>array <var>$union</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a single union statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a single union statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUnion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapUnion" id="_wrapUnion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapUnion(<span>string <var>$sql</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap a union subquery in parentheses.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap a union subquery in parentheses.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapUnion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUnionAggregate" id="_compileUnionAggregate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUnionAggregate(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a union aggregate query into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a union aggregate query into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUnionAggregate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileExists" id="_compileExists">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileExists(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an exists statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an exists statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileExists">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileInsert" id="_compileInsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileInsert(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an insert statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an insert statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileInsert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileInsertOrIgnore" id="_compileInsertOrIgnore">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileInsertOrIgnore(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an insert ignore statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an insert ignore statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileInsertOrIgnore">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileInsertGetId" id="_compileInsertGetId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileInsertGetId(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>, <span>string <var>$sequence</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an insert and get ID statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an insert and get ID statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileInsertGetId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileInsertUsing" id="_compileInsertUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileInsertUsing(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$columns</var></span>, <span>string <var>$sql</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an insert statement using a subquery into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an insert statement using a subquery into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileInsertUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileInsertOrIgnoreUsing" id="_compileInsertOrIgnoreUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileInsertOrIgnoreUsing(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$columns</var></span>, <span>string <var>$sql</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an insert ignore statement using a subquery into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an insert ignore statement using a subquery into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileInsertOrIgnoreUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUpdate" id="_compileUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUpdate(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an update statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an update statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUpdateColumns" id="_compileUpdateColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUpdateColumns(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the columns for an update statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the columns for an update statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUpdateColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUpdateWithoutJoins" id="_compileUpdateWithoutJoins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUpdateWithoutJoins(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$table</var></span>, <span>string <var>$columns</var></span>, <span>string <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an update statement without joins into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an update statement without joins into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUpdateWithoutJoins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUpdateWithJoins" id="_compileUpdateWithJoins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUpdateWithJoins(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$table</var></span>, <span>string <var>$columns</var></span>, <span>string <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an update statement with joins into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an update statement with joins into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUpdateWithJoins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileUpsert" id="_compileUpsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileUpsert(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>array <var>$values</var></span>, <span>array <var>$uniqueBy</var></span>, <span>array <var>$update</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile an "upsert" statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile an &quot;upsert&quot; statement into SQL.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileUpsert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBindingsForUpdate" id="_prepareBindingsForUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBindingsForUpdate(<span>array <var>$bindings</var></span>, <span>array <var>$values</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the bindings for an update statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the bindings for an update statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBindingsForUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDelete" id="_compileDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDelete(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a delete statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a delete statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDeleteWithoutJoins" id="_compileDeleteWithoutJoins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDeleteWithoutJoins(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a delete statement without joins into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a delete statement without joins into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDeleteWithoutJoins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileDeleteWithJoins" id="_compileDeleteWithJoins">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileDeleteWithJoins(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>string <var>$table</var></span>, <span>string <var>$where</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a delete statement with joins into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a delete statement with joins into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileDeleteWithJoins">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="prepareBindingsForDelete" id="_prepareBindingsForDelete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>prepareBindingsForDelete(<span>array <var>$bindings</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare the bindings for a delete statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare the bindings for a delete statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_prepareBindingsForDelete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileTruncate" id="_compileTruncate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileTruncate(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a truncate table statement into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a truncate table statement into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileTruncate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileLock" id="_compileLock">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileLock(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>, <span>bool|string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the lock into SQL.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the lock into SQL.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileLock">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileThreadCount" id="_compileThreadCount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileThreadCount(): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile a query to get the number of open connections for a database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile a query to get the number of open connections for a database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileThreadCount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="supportsSavepoints" id="_supportsSavepoints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>supportsSavepoints(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the grammar supports savepoints.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the grammar supports savepoints.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_supportsSavepoints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileSavepoint" id="_compileSavepoint">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileSavepoint(<span>string <var>$name</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the SQL statement to define a savepoint.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the SQL statement to define a savepoint.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileSavepoint">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compileSavepointRollBack" id="_compileSavepointRollBack">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compileSavepointRollBack(<span>string <var>$name</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Compile the SQL statement to execute a savepoint rollback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compile the SQL statement to execute a savepoint rollback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compileSavepointRollBack">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapJsonBooleanSelector" id="_wrapJsonBooleanSelector">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonBooleanSelector(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given JSON selector for boolean values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given JSON selector for boolean values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonBooleanSelector">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wrapJsonBooleanValue" id="_wrapJsonBooleanValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wrapJsonBooleanValue(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Wrap the given JSON boolean value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Wrap the given JSON boolean value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wrapJsonBooleanValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="concatenate" id="_concatenate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>concatenate(<span>array <var>$segments</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Concatenate an array of segments, removing empties.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Concatenate an array of segments, removing empties.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_concatenate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="removeLeadingBoolean" id="_removeLeadingBoolean">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>removeLeadingBoolean(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Remove the leading boolean from a statement.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Remove the leading boolean from a statement.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_removeLeadingBoolean">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="substituteBindingsIntoRawSql" id="_substituteBindingsIntoRawSql">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>substituteBindingsIntoRawSql(<span>string <var>$sql</var></span>, <span>array <var>$bindings</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Substitute the given bindings into the given raw SQL query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Substitute the given bindings into the given raw SQL query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_substituteBindingsIntoRawSql">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOperators" id="_getOperators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOperators(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the grammar specific operators.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the grammar specific operators.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOperators">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBitwiseOperators" id="_getBitwiseOperators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBitwiseOperators(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the grammar specific bitwise operators.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the grammar specific bitwise operators.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBitwiseOperators">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Grammar.html#___construct">__construct()</a>, <a href="Illuminate.Database.Grammar.html#_wrapArray">wrapArray()</a>, <a href="Illuminate.Database.Grammar.html#_wrapTable">wrapTable()</a>, <a href="Illuminate.Database.Grammar.html#_wrap">wrap()</a>, <a href="Illuminate.Database.Grammar.html#_wrapAliasedValue">wrapAliasedValue()</a>, <a href="Illuminate.Database.Grammar.html#_wrapAliasedTable">wrapAliasedTable()</a>, <a href="Illuminate.Database.Grammar.html#_wrapSegments">wrapSegments()</a>, <a href="Illuminate.Database.Grammar.html#_wrapValue">wrapValue()</a>, <a href="Illuminate.Database.Grammar.html#_wrapJsonSelector">wrapJsonSelector()</a>, <a href="Illuminate.Database.Grammar.html#_isJsonSelector">isJsonSelector()</a>, <a href="Illuminate.Database.Grammar.html#_columnize">columnize()</a>, <a href="Illuminate.Database.Grammar.html#_parameterize">parameterize()</a>, <a href="Illuminate.Database.Grammar.html#_parameter">parameter()</a>, <a href="Illuminate.Database.Grammar.html#_quoteString">quoteString()</a>, <a href="Illuminate.Database.Grammar.html#_escape">escape()</a>, <a href="Illuminate.Database.Grammar.html#_isExpression">isExpression()</a>, <a href="Illuminate.Database.Grammar.html#_getValue">getValue()</a>, <a href="Illuminate.Database.Grammar.html#_getDateFormat">getDateFormat()</a>, <a href="Illuminate.Database.Grammar.html#_getTablePrefix" class="deprecated">getTablePrefix()</a>, <a href="Illuminate.Database.Grammar.html#_setTablePrefix" class="deprecated">setTablePrefix()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html"><span>Illuminate\Database\Concerns\CompilesJsonPaths</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonFieldAndPath">wrapJsonFieldAndPath()</a>, <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonPath">wrapJsonPath()</a>, <a href="Illuminate.Database.Concerns.CompilesJsonPaths.html#_wrapJsonPathSegment">wrapJsonPathSegment()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="operators" id="$operators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$operators</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$operators">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="bitwiseOperators" id="$bitwiseOperators">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$bitwiseOperators</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$bitwiseOperators">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="selectComponents" id="$selectComponents">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$selectComponents</var> = [
+	<span class="php-str">'aggregate'</span>,
+	<span class="php-str">'columns'</span>,
+	<span class="php-str">'from'</span>,
+	<span class="php-str">'indexHint'</span>,
+	<span class="php-str">'joins'</span>,
+	<span class="php-str">'wheres'</span>,
+	<span class="php-str">'groups'</span>,
+	<span class="php-str">'havings'</span>,
+	<span class="php-str">'orders'</span>,
+	<span class="php-str">'limit'</span>,
+	<span class="php-str">'offset'</span>,
+	<span class="php-str">'lock'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$selectComponents">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Grammar.html"><span>Illuminate\Database\Grammar</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Grammar.html#$connection">$connection</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

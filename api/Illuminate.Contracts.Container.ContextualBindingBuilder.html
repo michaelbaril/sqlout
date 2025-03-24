@@ -1,0 +1,268 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Interface Illuminate\Contracts\Container\ContextualBindingBuilder |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.html">Contracts</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Contracts.Container.html">Container</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Container.Container.html">
+							Container
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Contracts.Container.ContextualBindingBuilder.html">
+							ContextualBindingBuilder
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Contracts.Container.BindingResolutionException.html">
+							BindingResolutionException
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Contracts.Container.CircularDependencyException.html">
+							CircularDependencyException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Contracts.Container.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Contracts.Container.ContextualBindingBuilder.html">Interface</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Interface <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Contracts.html">Contracts</a>\<a href="namespace-Illuminate.Contracts.Container.html">Container</a>\<a href="Illuminate.Contracts.Container.ContextualBindingBuilder.html">ContextualBindingBuilder</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="needs" id="_needs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>needs(<span>string <var>$abstract</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Define the abstract target that depends on the context.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define the abstract target that depends on the context.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_needs">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="give" id="_give">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>give(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|string|array <var>$implementation</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Define the implementation for the contextual binding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define the implementation for the contextual binding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_give">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="giveTagged" id="_giveTagged">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>giveTagged(<span>string <var>$tag</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Define tagged services to be used as the implementation for the contextual binding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define tagged services to be used as the implementation for the contextual binding.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_giveTagged">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="giveConfig" id="_giveConfig">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>giveConfig(<span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Specify the configuration item to bind as a primitive.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Specify the configuration item to bind as a primitive.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_giveConfig">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

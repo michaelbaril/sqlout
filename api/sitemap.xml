@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>index.html</loc></url>
+
+		<url><loc>tree.html</loc></url>
+
+			<url><loc>namespace-Baril.html</loc></url>
+			<url><loc>namespace-Baril.Sqlout.html</loc></url>
+			<url><loc>namespace-Baril.Sqlout.Migrations.html</loc></url>
+			<url><loc>namespace-none.html</loc></url>
+
+			<url><loc>Baril.Sqlout.Builder.html</loc></url>
+			<url><loc>Baril.Sqlout.Engine.html</loc></url>
+			<url><loc>Baril.Sqlout.Migrations.MigrateMakeCommand.html</loc></url>
+			<url><loc>Baril.Sqlout.Migrations.MigrationCreator.html</loc></url>
+			<url><loc>Baril.Sqlout.Searchable.html</loc></url>
+			<url><loc>Baril.Sqlout.SearchIndex.html</loc></url>
+			<url><loc>Baril.Sqlout.SqloutServiceProvider.html</loc></url>
+
+			<url><loc>function-strip_punctuation.html</loc></url>
+
+			<url><loc>source-Builder.html</loc></url>
+			<url><loc>source-Engine.html</loc></url>
+			<url><loc>source-Migrations.MigrateMakeCommand.html</loc></url>
+			<url><loc>source-Migrations.MigrationCreator.html</loc></url>
+			<url><loc>source-SearchIndex.html</loc></url>
+			<url><loc>source-Searchable.html</loc></url>
+			<url><loc>source-SqloutServiceProvider.html</loc></url>
+			<url><loc>source-helpers.html</loc></url>
+</urlset>

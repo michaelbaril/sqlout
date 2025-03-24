@@ -1,0 +1,788 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Input\InputOption |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.Input.html">Input</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArgvInput.html">
+							ArgvInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.ArrayInput.html">
+							ArrayInput
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.Input.html">
+							Input
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputArgument.html">
+							InputArgument
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputDefinition.html">
+							InputDefinition
+						</a>
+					</li>
+					<li class="active">
+						<a href="Symfony.Component.Console.Input.InputOption.html">
+							InputOption
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Input.InputInterface.html">
+							InputInterface
+						</a>
+					</li>
+					<li>
+						<a href="Symfony.Component.Console.Input.StreamableInputInterface.html">
+							StreamableInputInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.Input.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Input.InputOption.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="namespace-Symfony.Component.Console.Input.html">Input</a>\<a href="Symfony.Component.Console.Input.InputOption.html">InputOption</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Represents a command line option.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span>string <var>$name</var></span>,
+	<span>string|array|null <var>$shortcut</var> = <span class="php-kw">null</span></span>,
+	<span>int-mask-of&lt;<b><span class="active" title="Symfony\Component\Console\Input\InputOption">InputOption</span></b>::*&gt;|null <var>$mode</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$description</var> = <span class="php-str">''</span></span>,
+	<span>string|bool|int|float|array|null <var>$default</var> = <span class="php-kw">null</span></span>,
+	<span>array|(<a href="Closure.html"><span title="Closure">Closure</span></a>(<a href="Symfony.Component.Console.Completion.CompletionInput.html"><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span></a>, <a href="Symfony.Component.Console.Completion.CompletionSuggestions.html"><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span></a>):&nbsp;list&lt;string|<a href="Symfony.Component.Console.Completion.Suggestion.html"><span title="Symfony\Component\Console\Completion\Suggestion">Suggestion</span></a>&gt;) <var>$suggestedValues</var> = []</span>,
+)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$shortcut</var>&nbsp;&nbsp;</td>
+										<td><p>The shortcuts, can be null, a string of shortcuts delimited by | or an array of shortcuts</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$mode</var>&nbsp;&nbsp;</td>
+										<td><p>The option mode: One of the VALUE_* constants</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$default</var>&nbsp;&nbsp;</td>
+										<td><p>The default value (must be null for self::VALUE_NONE)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$suggestedValues</var>&nbsp;&nbsp;</td>
+										<td><p>The values used for input completion</p>
+</td>
+									</tr>
+							</table>
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.InvalidArgumentException.html"><span>Symfony\Component\Console\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td><p>If option mode is invalid or incompatible</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getShortcut" id="_getShortcut">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getShortcut(): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the option shortcut.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the option shortcut.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getShortcut">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the option name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the option name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="acceptValue" id="_acceptValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>acceptValue(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option accepts a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option accepts a value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if value mode is not self::VALUE_NONE, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_acceptValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValueRequired" id="_isValueRequired">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValueRequired(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option requires a value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option requires a value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if value mode is self::VALUE_REQUIRED, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValueRequired">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValueOptional" id="_isValueOptional">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValueOptional(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option takes an optional value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option takes an optional value.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if value mode is self::VALUE_OPTIONAL, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValueOptional">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isArray" id="_isArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isArray(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option can take multiple values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option can take multiple values.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if mode is self::VALUE_IS_ARRAY, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isNegatable" id="_isNegatable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isNegatable(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option allows passing a negated variant.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option allows passing a negated variant.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>true if mode is self::VALUE_NEGATABLE, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isNegatable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefault" id="_setDefault">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefault(<span>string|bool|int|float|array|null <var>$default</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefault">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefault" id="_getDefault">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefault(): string|bool|int|float|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the default value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the default value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefault">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDescription" id="_getDescription">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDescription(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the description text.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the description text.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDescription">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasCompletion" id="_hasCompletion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasCompletion(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the option has values for input completion.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the option has values for input completion.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasCompletion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="complete" id="_complete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>complete(<span><a href="Symfony.Component.Console.Completion.CompletionInput.html"><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Completion.CompletionSuggestions.html"><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span></a> <var>$suggestions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Supplies suggestions when command resolves possible completion options for input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Supplies suggestions when command resolves possible completion options for input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_complete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="equals" id="_equals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>equals(<span><b><span class="active" title="Symfony\Component\Console\Input\InputOption">self</span></b> <var>$option</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Checks whether the given option equals this one.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Checks whether the given option equals this one.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_equals">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="VALUE_NONE" id="VALUE_NONE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>VALUE_NONE = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		Do not accept input for the option (e.g. --yell). This is the default behavior of options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Do not accept input for the option (e.g. --yell). This is the default behavior of options.</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALUE_NONE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VALUE_REQUIRED" id="VALUE_REQUIRED">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>VALUE_REQUIRED = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		A value must be passed when the option is used (e.g. --iterations=5 or -i5).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>A value must be passed when the option is used (e.g. --iterations=5 or -i5).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALUE_REQUIRED">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VALUE_OPTIONAL" id="VALUE_OPTIONAL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>VALUE_OPTIONAL = <span class="php-num">4</span></code>
+
+	<div class="expandable-collapsedView">
+		The option may or may not have a value (e.g. --yell or --yell=loud).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The option may or may not have a value (e.g. --yell or --yell=loud).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALUE_OPTIONAL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VALUE_IS_ARRAY" id="VALUE_IS_ARRAY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>VALUE_IS_ARRAY = <span class="php-num">8</span></code>
+
+	<div class="expandable-collapsedView">
+		The option accepts multiple values (e.g. --dir=/foo --dir=/bar).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The option accepts multiple values (e.g. --dir=/foo --dir=/bar).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALUE_IS_ARRAY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VALUE_NEGATABLE" id="VALUE_NEGATABLE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>VALUE_NEGATABLE = <span class="php-num">16</span></code>
+
+	<div class="expandable-collapsedView">
+		The option allows passing a negated variant (e.g. --ansi or --no-ansi).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The option allows passing a negated variant (e.g. --ansi or --no-ansi).</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALUE_NEGATABLE">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

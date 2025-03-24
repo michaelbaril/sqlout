@@ -1,0 +1,2233 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Ramsey\Uuid\Uuid |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ramsey.html">Ramsey</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ramsey.Uuid.html">Uuid</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Ramsey.Uuid.Uuid.html">
+							Uuid
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Ramsey.Uuid.DeprecatedUuidInterface.html">
+							DeprecatedUuidInterface
+						</a>
+					</li>
+					<li>
+						<a href="Ramsey.Uuid.UuidFactoryInterface.html">
+							UuidFactoryInterface
+						</a>
+					</li>
+					<li>
+						<a href="Ramsey.Uuid.UuidInterface.html">
+							UuidInterface
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a class="deprecated" href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html">
+							DeprecatedUuidMethodsTrait
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ramsey.Uuid.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ramsey.Uuid.Uuid.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ramsey.html">Ramsey</a>\<a href="namespace-Ramsey.Uuid.html">Uuid</a>\<a href="Ramsey.Uuid.Uuid.html">Uuid</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html"><span class="deprecated" title="Ramsey\Uuid\DeprecatedUuidMethodsTrait">DeprecatedUuidMethodsTrait</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Uuid provides constants and static methods for working with and generating UUIDs</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(
+	<span><a href="Ramsey.Uuid.Rfc4122.FieldsInterface.html"><span title="Ramsey\Uuid\Rfc4122\FieldsInterface">FieldsInterface</span></a> <var>$fields</var></span>,
+	<span><a href="Ramsey.Uuid.Converter.NumberConverterInterface.html"><span title="Ramsey\Uuid\Converter\NumberConverterInterface">NumberConverterInterface</span></a> <var>$numberConverter</var></span>,
+	<span><a href="Ramsey.Uuid.Codec.CodecInterface.html"><span title="Ramsey\Uuid\Codec\CodecInterface">CodecInterface</span></a> <var>$codec</var></span>,
+	<span><a href="Ramsey.Uuid.Converter.TimeConverterInterface.html"><span title="Ramsey\Uuid\Converter\TimeConverterInterface">TimeConverterInterface</span></a> <var>$timeConverter</var></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a universally unique identifier (UUID) from an array of fields
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a universally unique identifier (UUID) from an array of fields</p>
+<p>Unless you're making advanced use of this library to generate identifiers
+that deviate from RFC 4122, you probably do not want to instantiate a
+UUID directly. Use the static methods, instead:</p>
+<pre><code>use Ramsey\Uuid\Uuid;
+
+$timeBasedUuid = Uuid::uuid1();
+$namespaceMd5Uuid = Uuid::uuid3(Uuid::NAMESPACE_URL, 'http://php.net/');
+$randomUuid = Uuid::uuid4();
+$namespaceSha1Uuid = Uuid::uuid5(Uuid::NAMESPACE_URL, 'http://php.net/');
+</code></pre>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$fields</var>&nbsp;&nbsp;</td>
+										<td><p>The fields from which to construct a UUID</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$numberConverter</var>&nbsp;&nbsp;</td>
+										<td><p>The number converter to use
+for converting hex values to/from integers</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$codec</var>&nbsp;&nbsp;</td>
+										<td><p>The codec to use when encoding or decoding
+UUID strings</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$timeConverter</var>&nbsp;&nbsp;</td>
+										<td><p>The time converter to use
+for converting timestamps extracted from a UUID to unix timestamps</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__toString" id="___toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__toString(): string</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Stringable.html#___toString">						<code>Stringable::__toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="jsonSerialize" id="_jsonSerialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>jsonSerialize(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the UUID to a string for JSON serialization
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the UUID to a string for JSON serialization</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="JsonSerializable.html#_jsonSerialize">						<code>JsonSerializable::jsonSerialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_jsonSerialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serialize" id="_serialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>serialize(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Converts the UUID to a string for PHP serialization
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Converts the UUID to a string for PHP serialization</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Serializable.html#_serialize">						<code>Serializable::serialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_serialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__serialize" id="___serialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__serialize(): array{bytes: string}</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___serialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unserialize" id="_unserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unserialize(<span>string <var>$data</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Re-constructs the object from its serialized form
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Re-constructs the object from its serialized form</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>The serialized PHP string to unserialize into
+a UuidInterface instance</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Serializable.html#_unserialize">						<code>Serializable::unserialize()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__unserialize" id="___unserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__unserialize(<span>array{bytes?: string} <var>$data</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___unserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compareTo" id="_compareTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compareTo(<span><a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a> <var>$other</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
+the other UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
+the other UUID</p>
+<p>The first of two UUIDs is greater than the second if the most
+significant field in which the UUIDs differ is greater for the first
+UUID.</p>
+<ul>
+<li>Q. What's the value of being able to sort UUIDs?</li>
+<li>A. Use them as keys in a B-Tree or similar mapping.</li>
+</ul>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$other</var>&nbsp;&nbsp;</td>
+										<td><p>The UUID to compare</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>-1, 0, or 1 if the UUID is less than, equal to, or greater than $other</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_compareTo">						<code>Ramsey\Uuid\UuidInterface::compareTo()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compareTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="equals" id="_equals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>equals(<span>?object <var>$other</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the UUID is equal to the provided object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the UUID is equal to the provided object</p>
+<p>The result is true if and only if the argument is not null, is a UUID
+object, has the same variant, and contains the same value, bit for bit,
+as the UUID.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$other</var>&nbsp;&nbsp;</td>
+										<td><p>An object to test for equality with this UUID</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>True if the other object is equal to this UUID</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_equals">						<code>Ramsey\Uuid\UuidInterface::equals()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_equals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getBytes" id="_getBytes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getBytes(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the binary string representation of the UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the binary string representation of the UUID</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_getBytes">						<code>Ramsey\Uuid\UuidInterface::getBytes()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getBytes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFields" id="_getFields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFields(): <a href="Ramsey.Uuid.Fields.FieldsInterface.html"><span title="Ramsey\Uuid\Fields\FieldsInterface">FieldsInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the fields that comprise this UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the fields that comprise this UUID</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_getFields">						<code>Ramsey\Uuid\UuidInterface::getFields()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHex" id="_getHex">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHex(): <a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the hexadecimal representation of the UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the hexadecimal representation of the UUID</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_getHex">						<code>Ramsey\Uuid\UuidInterface::getHex()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHex">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getInteger" id="_getInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getInteger(): <a href="Ramsey.Uuid.Type.Integer.html"><span title="Ramsey\Uuid\Type\Integer">Integer</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the integer representation of the UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the integer representation of the UUID</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_getInteger">						<code>Ramsey\Uuid\UuidInterface::getInteger()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUrn" id="_getUrn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUrn(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the string standard representation of the UUID as a URN
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the string standard representation of the UUID as a URN</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_getUrn">						<code>Ramsey\Uuid\UuidInterface::getUrn()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUrn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toString" id="_toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>toString(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the string standard representation of the UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the string standard representation of the UUID</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Ramsey.Uuid.UuidInterface.html#_toString">						<code>Ramsey\Uuid\UuidInterface::toString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getFactory" id="_getFactory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getFactory(): <a href="Ramsey.Uuid.UuidFactoryInterface.html"><span title="Ramsey\Uuid\UuidFactoryInterface">UuidFactoryInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the factory used to create UUIDs
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the factory used to create UUIDs</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getFactory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setFactory" id="_setFactory">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setFactory(<span><a href="Ramsey.Uuid.UuidFactoryInterface.html"><span title="Ramsey\Uuid\UuidFactoryInterface">UuidFactoryInterface</span></a> <var>$factory</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the factory used to create UUIDs
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the factory used to create UUIDs</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$factory</var>&nbsp;&nbsp;</td>
+										<td><p>A factory that will be used by this
+class to create UUIDs</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setFactory">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromBytes" id="_fromBytes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromBytes(<span>string <var>$bytes</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a UUID from a byte string
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a UUID from a byte string</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$bytes</var>&nbsp;&nbsp;</td>
+										<td><p>A binary string</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance created from a binary
+string representation</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromBytes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromString" id="_fromString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromString(<span>string <var>$uuid</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a UUID from the string standard representation
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a UUID from the string standard representation</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uuid</var>&nbsp;&nbsp;</td>
+										<td><p>A hexadecimal string</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance created from a hexadecimal
+string representation</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromDateTime" id="_fromDateTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromDateTime(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$dateTime</var></span>, <span><a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a>|null <var>$node</var> = <span class="php-kw">null</span></span>, <span>int|null <var>$clockSeq</var> = <span class="php-kw">null</span></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a UUID from a DateTimeInterface instance
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a UUID from a DateTimeInterface instance</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$dateTime</var>&nbsp;&nbsp;</td>
+										<td><p>The date and time</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$node</var>&nbsp;&nbsp;</td>
+										<td><p>A 48-bit number representing the hardware
+address</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
+										<td><p>A 14-bit number used to help avoid duplicates
+that could arise when the clock is set backwards in time or if the
+node ID changes</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 1 UUID created from a DateTimeInterface instance</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromDateTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromHexadecimal" id="_fromHexadecimal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromHexadecimal(<span><a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a> <var>$hex</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a UUID from the Hexadecimal object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a UUID from the Hexadecimal object</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$hex</var>&nbsp;&nbsp;</td>
+										<td><p>Hexadecimal object representing a hexadecimal number</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance created from the Hexadecimal
+object representing a hexadecimal number</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromHexadecimal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromInteger" id="_fromInteger">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromInteger(<span>string <var>$integer</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Creates a UUID from a 128-bit integer string
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Creates a UUID from a 128-bit integer string</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$integer</var>&nbsp;&nbsp;</td>
+										<td><p>String representation of 128-bit integer</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance created from the string
+representation of a 128-bit integer</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromInteger">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isValid" id="_isValid">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isValid(<span>string <var>$uuid</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the provided string is a valid UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the provided string is a valid UUID</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$uuid</var>&nbsp;&nbsp;</td>
+										<td><p>A string to validate as a UUID</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>True if the string is a valid UUID, false otherwise</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isValid">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid1" id="_uuid1">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid1(<span><a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a>|int|string|null <var>$node</var> = <span class="php-kw">null</span></span>, <span>int|null <var>$clockSeq</var> = <span class="php-kw">null</span></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 1 (Gregorian time) UUID from a host ID, sequence number,
+and the current time
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 1 (Gregorian time) UUID from a host ID, sequence number,
+and the current time</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$node</var>&nbsp;&nbsp;</td>
+										<td><p>A 48-bit number representing the
+hardware address; this number may be represented as an integer or a
+hexadecimal string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
+										<td><p>A 14-bit number used to help avoid duplicates that
+could arise when the clock is set backwards in time or if the node ID
+changes</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 1 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid1">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid2" id="_uuid2">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid2(
+	<span>int <var>$localDomain</var></span>,
+	<span><a href="Ramsey.Uuid.Type.Integer.html"><span title="Ramsey\Uuid\Type\Integer">Integer</span></a>|null <var>$localIdentifier</var> = <span class="php-kw">null</span></span>,
+	<span><a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a>|null <var>$node</var> = <span class="php-kw">null</span></span>,
+	<span>int|null <var>$clockSeq</var> = <span class="php-kw">null</span></span>,
+): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 2 (DCE Security) UUID from a local domain, local
+identifier, host ID, clock sequence, and the current…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 2 (DCE Security) UUID from a local domain, local
+identifier, host ID, clock sequence, and the current time</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$localDomain</var>&nbsp;&nbsp;</td>
+										<td><p>The local domain to use when generating bytes,
+according to DCE Security</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$localIdentifier</var>&nbsp;&nbsp;</td>
+										<td><p>The local identifier for the
+given domain; this may be a UID or GID on POSIX systems, if the local
+domain is person or group, or it may be a site-defined identifier
+if the local domain is org</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$node</var>&nbsp;&nbsp;</td>
+										<td><p>A 48-bit number representing the hardware
+address</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
+										<td><p>A 14-bit number used to help avoid duplicates
+that could arise when the clock is set backwards in time or if the
+node ID changes (in a version 2 UUID, the lower 8 bits of this number
+are replaced with the domain).</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 2 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid2">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid3" id="_uuid3">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid3(<span>string|<a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a> <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 3 (name-based) UUID based on the MD5 hash of a
+namespace ID and a name
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 3 (name-based) UUID based on the MD5 hash of a
+namespace ID and a name</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$ns</var>&nbsp;&nbsp;</td>
+										<td><p>The namespace (must be a valid UUID)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The name to use for creating a UUID</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 3 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid3">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid4" id="_uuid4">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid4(): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 4 (random) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 4 (random) UUID</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 4 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid4">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid5" id="_uuid5">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid5(<span>string|<a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a> <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 5 (name-based) UUID based on the SHA-1 hash of a
+namespace ID and a name
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 5 (name-based) UUID based on the SHA-1 hash of a
+namespace ID and a name</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$ns</var>&nbsp;&nbsp;</td>
+										<td><p>The namespace (must be a valid UUID)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>The name to use for creating a UUID</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 5 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid5">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid6" id="_uuid6">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid6(<span><a href="Ramsey.Uuid.Type.Hexadecimal.html"><span title="Ramsey\Uuid\Type\Hexadecimal">Hexadecimal</span></a>|null <var>$node</var> = <span class="php-kw">null</span></span>, <span>int|null <var>$clockSeq</var> = <span class="php-kw">null</span></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 6 (reordered time) UUID from a host ID, sequence number,
+and the current time
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 6 (reordered time) UUID from a host ID, sequence number,
+and the current time</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$node</var>&nbsp;&nbsp;</td>
+										<td><p>A 48-bit number representing the hardware
+address</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
+										<td><p>A 14-bit number used to help avoid duplicates that
+could arise when the clock is set backwards in time or if the node ID
+changes</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 6 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid6">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid7" id="_uuid7">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid7(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|null <var>$dateTime</var> = <span class="php-kw">null</span></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 7 (Unix Epoch time) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 7 (Unix Epoch time) UUID</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$dateTime</var>&nbsp;&nbsp;</td>
+										<td><p>An optional date/time from which
+to create the version 7 UUID. If not provided, the UUID is generated
+using the current date/time.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 7 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid7">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="uuid8" id="_uuid8">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>uuid8(<span>string <var>$bytes</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a version 8 (custom) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a version 8 (custom) UUID</p>
+<p>The bytes provided may contain any value according to your application's
+needs. Be aware, however, that other applications may not understand the
+semantics of the value.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$bytes</var>&nbsp;&nbsp;</td>
+										<td><p>A 16-byte octet string. This is an open blob
+of data that you may fill with 128 bits of information. Be aware,
+however, bits 48 through 51 will be replaced with the UUID version
+field, and bits 64 and 65 will be replaced with the UUID variant. You
+MUST NOT rely on these bits for your application needs.</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>A UuidInterface instance that represents a
+version 8 UUID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_uuid8">#</a>
+		</td>
+	</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html"><span class="deprecated">Ramsey\Uuid\DeprecatedUuidMethodsTrait</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSeqHiAndReserved" class="deprecated">getClockSeqHiAndReserved()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSeqHiAndReservedHex" class="deprecated">getClockSeqHiAndReservedHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSeqLow" class="deprecated">getClockSeqLow()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSeqLowHex" class="deprecated">getClockSeqLowHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSequence" class="deprecated">getClockSequence()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getClockSequenceHex" class="deprecated">getClockSequenceHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getNumberConverter" class="deprecated">getNumberConverter()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getDateTime" class="deprecated">getDateTime()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getFieldsHex" class="deprecated">getFieldsHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getLeastSignificantBits" class="deprecated">getLeastSignificantBits()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getLeastSignificantBitsHex" class="deprecated">getLeastSignificantBitsHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getMostSignificantBits" class="deprecated">getMostSignificantBits()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getMostSignificantBitsHex" class="deprecated">getMostSignificantBitsHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getNode" class="deprecated">getNode()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getNodeHex" class="deprecated">getNodeHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeHiAndVersion" class="deprecated">getTimeHiAndVersion()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeHiAndVersionHex" class="deprecated">getTimeHiAndVersionHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeLow" class="deprecated">getTimeLow()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeLowHex" class="deprecated">getTimeLowHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeMid" class="deprecated">getTimeMid()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimeMidHex" class="deprecated">getTimeMidHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimestamp" class="deprecated">getTimestamp()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getTimestampHex" class="deprecated">getTimestampHex()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getVariant" class="deprecated">getVariant()</a>, <a href="Ramsey.Uuid.DeprecatedUuidMethodsTrait.html#_getVersion" class="deprecated">getVersion()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="NAMESPACE_DNS" id="NAMESPACE_DNS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NAMESPACE_DNS = <span class="php-str">'6ba7b810-9dad-11d1-80b4-00c04fd430c8'</span></code>
+
+	<div class="expandable-collapsedView">
+		When this namespace is specified, the name string is a fully-qualified
+domain name
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>When this namespace is specified, the name string is a fully-qualified
+domain name</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NAMESPACE_DNS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="NAMESPACE_URL" id="NAMESPACE_URL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NAMESPACE_URL = <span class="php-str">'6ba7b811-9dad-11d1-80b4-00c04fd430c8'</span></code>
+
+	<div class="expandable-collapsedView">
+		When this namespace is specified, the name string is a URL
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>When this namespace is specified, the name string is a URL</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NAMESPACE_URL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="NAMESPACE_OID" id="NAMESPACE_OID">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NAMESPACE_OID = <span class="php-str">'6ba7b812-9dad-11d1-80b4-00c04fd430c8'</span></code>
+
+	<div class="expandable-collapsedView">
+		When this namespace is specified, the name string is an ISO OID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>When this namespace is specified, the name string is an ISO OID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NAMESPACE_OID">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="NAMESPACE_X500" id="NAMESPACE_X500">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NAMESPACE_X500 = <span class="php-str">'6ba7b814-9dad-11d1-80b4-00c04fd430c8'</span></code>
+
+	<div class="expandable-collapsedView">
+		When this namespace is specified, the name string is an X.500 DN in DER
+or a text output format
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>When this namespace is specified, the name string is an X.500 DN in DER
+or a text output format</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NAMESPACE_X500">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="NIL" id="NIL">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>NIL = <span class="php-str">'00000000-0000-0000-0000-000000000000'</span></code>
+
+	<div class="expandable-collapsedView">
+		The nil UUID is a special form of UUID that is specified to have all 128
+bits set to zero
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The nil UUID is a special form of UUID that is specified to have all 128
+bits set to zero</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#NIL">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="MAX" id="MAX">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>MAX = <span class="php-str">'ffffffff-ffff-ffff-ffff-ffffffffffff'</span></code>
+
+	<div class="expandable-collapsedView">
+		The max UUID is a special form of UUID that is specified to have all 128
+bits set to one
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The max UUID is a special form of UUID that is specified to have all 128
+bits set to one</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#MAX">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RESERVED_NCS" id="RESERVED_NCS">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>RESERVED_NCS = <span class="php-num">0</span></code>
+
+	<div class="expandable-collapsedView">
+		Variant: reserved, NCS backward compatibility
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Variant: reserved, NCS backward compatibility</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RESERVED_NCS">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RFC_4122" id="RFC_4122">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>RFC_4122 = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Variant: the UUID layout specified in RFC 4122
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Variant: the UUID layout specified in RFC 4122</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RFC_4122">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RESERVED_MICROSOFT" id="RESERVED_MICROSOFT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>RESERVED_MICROSOFT = <span class="php-num">6</span></code>
+
+	<div class="expandable-collapsedView">
+		Variant: reserved, Microsoft Corporation backward compatibility
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Variant: reserved, Microsoft Corporation backward compatibility</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RESERVED_MICROSOFT">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RESERVED_FUTURE" id="RESERVED_FUTURE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>RESERVED_FUTURE = <span class="php-num">7</span></code>
+
+	<div class="expandable-collapsedView">
+		Variant: reserved for future definition
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Variant: reserved for future definition</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RESERVED_FUTURE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VALID_PATTERN" id="VALID_PATTERN">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><span class="deprecated">VALID_PATTERN</span> = <span class="php-str">'^[0-9A-Fa-f]&#123;8}-[0-9A-Fa-f]&#123;4}-[0-9A-Fa-f]&#123;4}-[0-9A-Fa-f]&#123;4}-[0-9A-Fa-f]&#123;12}$'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#VALID_PATTERN">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_TIME" id="UUID_TYPE_TIME">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_TIME = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 1 (Gregorian time) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 1 (Gregorian time) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_TIME">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_DCE_SECURITY" id="UUID_TYPE_DCE_SECURITY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_DCE_SECURITY = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 2 (DCE Security) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 2 (DCE Security) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_DCE_SECURITY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_IDENTIFIER" id="UUID_TYPE_IDENTIFIER">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><span class="deprecated">UUID_TYPE_IDENTIFIER</span> = <span class="php-num">2</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_IDENTIFIER">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_HASH_MD5" id="UUID_TYPE_HASH_MD5">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_HASH_MD5 = <span class="php-num">3</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 3 (name-based and hashed with MD5) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 3 (name-based and hashed with MD5) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_HASH_MD5">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_RANDOM" id="UUID_TYPE_RANDOM">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_RANDOM = <span class="php-num">4</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 4 (random) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 4 (random) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_RANDOM">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_HASH_SHA1" id="UUID_TYPE_HASH_SHA1">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_HASH_SHA1 = <span class="php-num">5</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 5 (name-based and hashed with SHA1) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 5 (name-based and hashed with SHA1) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_HASH_SHA1">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_PEABODY" id="UUID_TYPE_PEABODY">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><span class="deprecated">UUID_TYPE_PEABODY</span> = <span class="php-num">6</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_PEABODY">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_REORDERED_TIME" id="UUID_TYPE_REORDERED_TIME">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_REORDERED_TIME = <span class="php-num">6</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 6 (reordered time) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 6 (reordered time) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_REORDERED_TIME">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_UNIX_TIME" id="UUID_TYPE_UNIX_TIME">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_UNIX_TIME = <span class="php-num">7</span></code>
+
+	<div class="expandable-collapsedView">
+		Version 7 (Unix Epoch time) UUID
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Version 7 (Unix Epoch time) UUID</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_UNIX_TIME">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="UUID_TYPE_CUSTOM" id="UUID_TYPE_CUSTOM">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>UUID_TYPE_CUSTOM = <span class="php-num">8</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#UUID_TYPE_CUSTOM">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DCE_DOMAIN_PERSON" id="DCE_DOMAIN_PERSON">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>DCE_DOMAIN_PERSON = <span class="php-num">0</span></code>
+
+	<div class="expandable-collapsedView">
+		DCE Security principal domain
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>DCE Security principal domain</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DCE_DOMAIN_PERSON">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DCE_DOMAIN_GROUP" id="DCE_DOMAIN_GROUP">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>DCE_DOMAIN_GROUP = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		DCE Security group domain
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>DCE Security group domain</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DCE_DOMAIN_GROUP">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DCE_DOMAIN_ORG" id="DCE_DOMAIN_ORG">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>DCE_DOMAIN_ORG = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		DCE Security organization domain
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>DCE Security organization domain</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DCE_DOMAIN_ORG">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DCE_DOMAIN_NAMES" id="DCE_DOMAIN_NAMES">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>DCE_DOMAIN_NAMES = [
+	<b><span class="active" title="Ramsey\Uuid\Uuid">self</span></b>::<a href="Ramsey.Uuid.Uuid.html#DCE_DOMAIN_PERSON">DCE_DOMAIN_PERSON</a> =&gt; <span class="php-str">'person'</span>,
+	<b><span class="active" title="Ramsey\Uuid\Uuid">self</span></b>::<a href="Ramsey.Uuid.Uuid.html#DCE_DOMAIN_GROUP">DCE_DOMAIN_GROUP</a> =&gt; <span class="php-str">'group'</span>,
+	<b><span class="active" title="Ramsey\Uuid\Uuid">self</span></b>::<a href="Ramsey.Uuid.Uuid.html#DCE_DOMAIN_ORG">DCE_DOMAIN_ORG</a> =&gt; <span class="php-str">'org'</span>,
+]</code>
+
+	<div class="expandable-collapsedView">
+		DCE Security domain string names
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>DCE Security domain string names</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DCE_DOMAIN_NAMES">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="codec" id="$codec">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Ramsey.Uuid.Codec.CodecInterface.html"><span title="Ramsey\Uuid\Codec\CodecInterface">CodecInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$codec</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$codec">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="numberConverter" id="$numberConverter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Ramsey.Uuid.Converter.NumberConverterInterface.html"><span title="Ramsey\Uuid\Converter\NumberConverterInterface">NumberConverterInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$numberConverter</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$numberConverter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fields" id="$fields">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Ramsey.Uuid.Rfc4122.FieldsInterface.html"><span title="Ramsey\Uuid\Rfc4122\FieldsInterface">FieldsInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$fields</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$fields">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="timeConverter" id="$timeConverter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Ramsey.Uuid.Converter.TimeConverterInterface.html"><span title="Ramsey\Uuid\Converter\TimeConverterInterface">TimeConverterInterface</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$timeConverter</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$timeConverter">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

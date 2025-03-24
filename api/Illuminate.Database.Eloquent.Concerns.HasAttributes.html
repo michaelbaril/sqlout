@@ -1,0 +1,4280 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Concerns\HasAttributes |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html">
+							GuardsAttributes
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">
+							HasAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html">
+							HasEvents
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html">
+							HasGlobalScopes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html">
+							HasRelationships
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html">
+							HasTimestamps
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html">
+							HasUniqueIds
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html">
+							HidesAttributes
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html">
+							PreventsCircularRecursion
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html">
+							QueriesRelationships
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Concerns.HasAttributes.html">HasAttributes</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Concerns\HasAttributes</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Model.html"><span>Illuminate\Database\Eloquent\Model</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
+			<a href="Illuminate.Contracts.Broadcasting.HasBroadcastChannel.html"><span title="Illuminate\Contracts\Broadcasting\HasBroadcastChannel">HasBroadcastChannel</span></a>, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Queue.QueueableEntity.html"><span title="Illuminate\Contracts\Queue\QueueableEntity">QueueableEntity</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Illuminate.Contracts.Routing.UrlRoutable.html"><span title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasEvents.html"><span title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasGlobalScopes.html"><span title="Illuminate\Database\Eloquent\Concerns\HasGlobalScopes">HasGlobalScopes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasRelationships.html"><span title="Illuminate\Database\Eloquent\Concerns\HasRelationships">HasRelationships</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasTimestamps.html"><span title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HasUniqueIds.html"><span title="Illuminate\Database\Eloquent\Concerns\HasUniqueIds">HasUniqueIds</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Baril.Sqlout.SearchIndex.html"><span>Baril\Sqlout\SearchIndex</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="initializeHasAttributes" id="_initializeHasAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initializeHasAttributes(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Initialize the trait.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initialize the trait.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initializeHasAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributesToArray" id="_attributesToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attributesToArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert the model's attributes to an array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert the model's attributes to an array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attributesToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addDateAttributesToArray" id="_addDateAttributesToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addDateAttributesToArray(<span>array <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the date attributes to the attributes array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the date attributes to the attributes array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addDateAttributesToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addMutatedAttributesToArray" id="_addMutatedAttributesToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addMutatedAttributesToArray(<span>array <var>$attributes</var></span>, <span>array <var>$mutatedAttributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the mutated attributes to the attributes array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the mutated attributes to the attributes array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addMutatedAttributesToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCastAttributesToArray" id="_addCastAttributesToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCastAttributesToArray(<span>array <var>$attributes</var></span>, <span>array <var>$mutatedAttributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the casted attributes to the attributes array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the casted attributes to the attributes array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCastAttributesToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayableAttributes" id="_getArrayableAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayableAttributes(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute array of all arrayable attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute array of all arrayable attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayableAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayableAppends" id="_getArrayableAppends">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayableAppends(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the appendable values that are arrayable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the appendable values that are arrayable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayableAppends">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relationsToArray" id="_relationsToArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>relationsToArray(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the model's relationships in array form.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the model's relationships in array form.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_relationsToArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayableRelations" id="_getArrayableRelations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayableRelations(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute array of all arrayable relations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute array of all arrayable relations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayableRelations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayableItems" id="_getArrayableItems">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayableItems(<span>array <var>$values</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute array of all arrayable values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute array of all arrayable values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayableItems">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAttribute" id="_hasAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAttribute(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether an attribute exists on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether an attribute exists on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttribute" id="_getAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttribute(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute from the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute from the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="throwMissingAttributeExceptionIfApplicable" id="_throwMissingAttributeExceptionIfApplicable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>throwMissingAttributeExceptionIfApplicable(<span>string <var>$key</var></span>): null</code>
+
+
+	<div class="expandable-collapsedView">
+		Either throw a missing attribute exception or return null depending on Eloquent's configuration.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Either throw a missing attribute exception or return null depending on Eloquent's configuration.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.MissingAttributeException.html"><span>Illuminate\Database\Eloquent\MissingAttributeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_throwMissingAttributeExceptionIfApplicable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributeValue" id="_getAttributeValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributeValue(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a plain attribute (not a relationship).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a plain attribute (not a relationship).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributeValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributeFromArray" id="_getAttributeFromArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributeFromArray(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an attribute from the $attributes array.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an attribute from the $attributes array.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributeFromArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationValue" id="_getRelationValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationValue(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isRelation" id="_isRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isRelation(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given key is a relationship method on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given key is a relationship method on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleLazyLoadingViolation" id="_handleLazyLoadingViolation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleLazyLoadingViolation(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Handle a lazy loading violation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Handle a lazy loading violation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleLazyLoadingViolation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationshipFromMethod" id="_getRelationshipFromMethod">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationshipFromMethod(<span>string <var>$method</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a relationship value from a method.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a relationship value from a method.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="LogicException.html"><span>LogicException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationshipFromMethod">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasGetMutator" id="_hasGetMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasGetMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a get mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a get mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasGetMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAttributeMutator" id="_hasAttributeMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAttributeMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a "Attribute" return type marked mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a &quot;Attribute&quot; return type marked mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAttributeMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAttributeGetMutator" id="_hasAttributeGetMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAttributeGetMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a "Attribute" return type marked get mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a &quot;Attribute&quot; return type marked get mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAttributeGetMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAnyGetMutator" id="_hasAnyGetMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAnyGetMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if any get mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if any get mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAnyGetMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mutateAttribute" id="_mutateAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mutateAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of an attribute using its mutator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of an attribute using its mutator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mutateAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mutateAttributeMarkedAttribute" id="_mutateAttributeMarkedAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mutateAttributeMarkedAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of an "Attribute" return type marked attribute using its mutator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of an &quot;Attribute&quot; return type marked attribute using its mutator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mutateAttributeMarkedAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mutateAttributeForArray" id="_mutateAttributeForArray">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mutateAttributeForArray(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of an attribute using its mutator for array conversion.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of an attribute using its mutator for array conversion.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mutateAttributeForArray">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeCasts" id="_mergeCasts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeCasts(<span>array <var>$casts</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge new casts with existing casts on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge new casts with existing casts on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeCasts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="ensureCastsAreStringValues" id="_ensureCastsAreStringValues">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>ensureCastsAreStringValues(<span>array <var>$casts</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Ensure that the given casts are strings.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Ensure that the given casts are strings.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_ensureCastsAreStringValues">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castAttribute" id="_castAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast an attribute to a native PHP type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast an attribute to a native PHP type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClassCastableAttributeValue" id="_getClassCastableAttributeValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getClassCastableAttributeValue(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given attribute using a custom cast class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given attribute using a custom cast class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClassCastableAttributeValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEnumCastableAttributeValue" id="_getEnumCastableAttributeValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEnumCastableAttributeValue(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given attribute to an enum.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given attribute to an enum.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEnumCastableAttributeValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCastType" id="_getCastType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCastType(<span>string <var>$key</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the type of cast for a model attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the type of cast for a model attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCastType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deviateClassCastableAttribute" id="_deviateClassCastableAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>deviateClassCastableAttribute(<span>string <var>$method</var></span>, <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Increment or decrement the given attribute using the custom cast class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Increment or decrement the given attribute using the custom cast class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deviateClassCastableAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serializeClassCastableAttribute" id="_serializeClassCastableAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>serializeClassCastableAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Serialize the given attribute using the custom cast class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Serialize the given attribute using the custom cast class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_serializeClassCastableAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isCustomDateTimeCast" id="_isCustomDateTimeCast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isCustomDateTimeCast(<span>string <var>$cast</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the cast type is a custom date time cast.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the cast type is a custom date time cast.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isCustomDateTimeCast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isImmutableCustomDateTimeCast" id="_isImmutableCustomDateTimeCast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isImmutableCustomDateTimeCast(<span>string <var>$cast</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the cast type is an immutable custom date time cast.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the cast type is an immutable custom date time cast.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isImmutableCustomDateTimeCast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDecimalCast" id="_isDecimalCast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDecimalCast(<span>string <var>$cast</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the cast type is a decimal cast.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the cast type is a decimal cast.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDecimalCast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAttribute" id="_setAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a given attribute on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a given attribute on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasSetMutator" id="_hasSetMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasSetMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a set mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a set mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasSetMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAttributeSetMutator" id="_hasAttributeSetMutator">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAttributeSetMutator(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if an "Attribute" return type marked set mutator exists for an attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if an &quot;Attribute&quot; return type marked set mutator exists for an attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAttributeSetMutator">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setMutatedAttributeValue" id="_setMutatedAttributeValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setMutatedAttributeValue(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of an attribute using its mutator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of an attribute using its mutator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setMutatedAttributeValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAttributeMarkedMutatedAttributeValue" id="_setAttributeMarkedMutatedAttributeValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAttributeMarkedMutatedAttributeValue(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of a "Attribute" return type marked attribute using its mutator.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of a &quot;Attribute&quot; return type marked attribute using its mutator.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAttributeMarkedMutatedAttributeValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDateAttribute" id="_isDateAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDateAttribute(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given attribute is a date or date castable.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given attribute is a date or date castable.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDateAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillJsonAttribute" id="_fillJsonAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillJsonAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set a given JSON attribute on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set a given JSON attribute on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillJsonAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setClassCastableAttribute" id="_setClassCastableAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setClassCastableAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of a class castable attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of a class castable attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setClassCastableAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setEnumCastableAttribute" id="_setEnumCastableAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setEnumCastableAttribute(<span>string <var>$key</var></span>, <span><a href="UnitEnum.html"><span title="UnitEnum">UnitEnum</span></a>|string|int|null <var>$value</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the value of an enum castable attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the value of an enum castable attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setEnumCastableAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getEnumCaseFromValue" id="_getEnumCaseFromValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getEnumCaseFromValue(<span>string <var>$enumClass</var></span>, <span>string|int <var>$value</var></span>): <a href="UnitEnum.html"><span title="UnitEnum">UnitEnum</span></a>|<a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get an enum case instance from a given class and value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an enum case instance from a given class and value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getEnumCaseFromValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStorableEnumValue" id="_getStorableEnumValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getStorableEnumValue(<span>string <var>$expectedEnum</var></span>, <span><a href="UnitEnum.html"><span title="UnitEnum">UnitEnum</span></a>|<a href="BackedEnum.html"><span title="BackedEnum">BackedEnum</span></a> <var>$value</var></span>): string|int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the storable value from the given enum.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the storable value from the given enum.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStorableEnumValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayAttributeWithValue" id="_getArrayAttributeWithValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayAttributeWithValue(<span>string <var>$path</var></span>, <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array attribute with the given key and value set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array attribute with the given key and value set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayAttributeWithValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getArrayAttributeByKey" id="_getArrayAttributeByKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getArrayAttributeByKey(<span>string <var>$key</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get an array attribute or return an empty array if it is not set.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get an array attribute or return an empty array if it is not set.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getArrayAttributeByKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castAttributeAsJson" id="_castAttributeAsJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castAttributeAsJson(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given attribute to JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given attribute to JSON.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castAttributeAsJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getJsonCastFlags" id="_getJsonCastFlags">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getJsonCastFlags(<span>string <var>$key</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the JSON casting flags for the given attribute.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the JSON casting flags for the given attribute.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getJsonCastFlags">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asJson" id="_asJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>asJson(<span>mixed <var>$value</var></span>, <span>int <var>$flags</var> = <span class="php-num">0</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Encode the given value as JSON.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Encode the given value as JSON.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromJson" id="_fromJson">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromJson(<span>string|null <var>$value</var></span>, <span>bool <var>$asObject</var> = <span class="php-kw">false</span></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Decode the given JSON back into an array or object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decode the given JSON back into an array or object.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromJson">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromEncryptedString" id="_fromEncryptedString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromEncryptedString(<span>string <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Decrypt the given encrypted string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decrypt the given encrypted string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromEncryptedString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castAttributeAsEncryptedString" id="_castAttributeAsEncryptedString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castAttributeAsEncryptedString(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given attribute to an encrypted string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given attribute to an encrypted string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castAttributeAsEncryptedString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="encryptUsing" id="_encryptUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>encryptUsing(<span><a href="Illuminate.Contracts.Encryption.Encrypter.html"><span title="Illuminate\Contracts\Encryption\Encrypter">Encrypter</span></a>|null <var>$encrypter</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the encrypter instance that will be used to encrypt attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the encrypter instance that will be used to encrypt attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_encryptUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="currentEncrypter" id="_currentEncrypter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>currentEncrypter(): <a href="Illuminate.Contracts.Encryption.Encrypter.html"><span title="Illuminate\Contracts\Encryption\Encrypter">Encrypter</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the current encrypter being used by the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the current encrypter being used by the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_currentEncrypter">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castAttributeAsHashedString" id="_castAttributeAsHashedString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>castAttributeAsHashedString(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Cast the given attribute to a hashed string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Cast the given attribute to a hashed string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_castAttributeAsHashedString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromFloat" id="_fromFloat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromFloat(<span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Decode the given float.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Decode the given float.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromFloat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asDecimal" id="_asDecimal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>asDecimal(<span>float|string <var>$value</var></span>, <span>int <var>$decimals</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Return a decimal as string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return a decimal as string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asDecimal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asDate" id="_asDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>asDate(<span>mixed <var>$value</var></span>): <a href="Illuminate.Support.Carbon.html"><span title="Illuminate\Support\Carbon">Carbon</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Return a timestamp as DateTime object with time set to 00:00:00.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return a timestamp as DateTime object with time set to 00:00:00.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asDateTime" id="_asDateTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>asDateTime(<span>mixed <var>$value</var></span>): <a href="Illuminate.Support.Carbon.html"><span title="Illuminate\Support\Carbon">Carbon</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Return a timestamp as DateTime object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return a timestamp as DateTime object.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asDateTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isStandardDateFormat" id="_isStandardDateFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isStandardDateFormat(<span>string <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given value is a standard date format.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given value is a standard date format.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isStandardDateFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromDateTime" id="_fromDateTime">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromDateTime(<span>mixed <var>$value</var></span>): string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert a DateTime to a storable string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert a DateTime to a storable string.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromDateTime">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="asTimestamp" id="_asTimestamp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>asTimestamp(<span>mixed <var>$value</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Return a timestamp as unix timestamp.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return a timestamp as unix timestamp.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_asTimestamp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serializeDate" id="_serializeDate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>serializeDate(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$date</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Prepare a date for array / JSON serialization.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Prepare a date for array / JSON serialization.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_serializeDate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDates" id="_getDates">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDates(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that should be converted to dates.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that should be converted to dates.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDates">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDateFormat" id="_getDateFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDateFormat(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the format for database stored dates.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the format for database stored dates.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDateFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDateFormat" id="_setDateFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDateFormat(<span>string <var>$format</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the date format used by the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the date format used by the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDateFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasCast" id="_hasCast">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasCast(<span>string <var>$key</var></span>, <span>array|string|null <var>$types</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether an attribute should be cast to a native type.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether an attribute should be cast to a native type.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasCast">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCasts" id="_getCasts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCasts(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that should be cast.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that should be cast.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCasts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="casts" id="_casts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>casts(): array&lt;string, string&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that should be cast.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that should be cast.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_casts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDateCastable" id="_isDateCastable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDateCastable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether a value is Date / DateTime castable for inbound manipulation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether a value is Date / DateTime castable for inbound manipulation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDateCastable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDateCastableWithCustomFormat" id="_isDateCastableWithCustomFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDateCastableWithCustomFormat(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether a value is Date / DateTime custom-castable for inbound manipulation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether a value is Date / DateTime custom-castable for inbound manipulation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDateCastableWithCustomFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isJsonCastable" id="_isJsonCastable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isJsonCastable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether a value is JSON castable for inbound manipulation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether a value is JSON castable for inbound manipulation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isJsonCastable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEncryptedCastable" id="_isEncryptedCastable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEncryptedCastable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine whether a value is an encrypted castable for inbound manipulation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine whether a value is an encrypted castable for inbound manipulation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEncryptedCastable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isClassCastable" id="_isClassCastable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClassCastable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given key is cast using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given key is cast using a custom class.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.InvalidCastException.html"><span>Illuminate\Database\Eloquent\InvalidCastException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClassCastable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isEnumCastable" id="_isEnumCastable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isEnumCastable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the given key is cast using an enum.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the given key is cast using an enum.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isEnumCastable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isClassDeviable" id="_isClassDeviable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClassDeviable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the key is deviable using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the key is deviable using a custom class.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.InvalidCastException.html"><span>Illuminate\Database\Eloquent\InvalidCastException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClassDeviable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isClassSerializable" id="_isClassSerializable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClassSerializable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the key is serializable using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the key is serializable using a custom class.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.InvalidCastException.html"><span>Illuminate\Database\Eloquent\InvalidCastException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClassSerializable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="resolveCasterClass" id="_resolveCasterClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>resolveCasterClass(<span>string <var>$key</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Resolve the custom caster class for a given key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Resolve the custom caster class for a given key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_resolveCasterClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="parseCasterClass" id="_parseCasterClass">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>parseCasterClass(<span>string <var>$class</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Parse the given caster class, removing any arguments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Parse the given caster class, removing any arguments.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_parseCasterClass">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeAttributesFromCachedCasts" id="_mergeAttributesFromCachedCasts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeAttributesFromCachedCasts(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the cast class and attribute cast attributes back into the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the cast class and attribute cast attributes back into the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeAttributesFromCachedCasts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeAttributesFromClassCasts" id="_mergeAttributesFromClassCasts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeAttributesFromClassCasts(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the cast class attributes back into the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the cast class attributes back into the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeAttributesFromClassCasts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mergeAttributesFromAttributeCasts" id="_mergeAttributesFromAttributeCasts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>mergeAttributesFromAttributeCasts(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Merge the cast class attributes back into the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Merge the cast class attributes back into the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_mergeAttributesFromAttributeCasts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="normalizeCastClassResponse" id="_normalizeCastClassResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>normalizeCastClassResponse(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Normalize the response from a custom class caster.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Normalize the response from a custom class caster.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_normalizeCastClassResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributes" id="_getAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributes(): array&lt;string, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the current attributes on the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the current attributes on the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributesForInsert" id="_getAttributesForInsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributesForInsert(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the current attributes on the model for an insert operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the current attributes on the model for an insert operation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributesForInsert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRawAttributes" id="_setRawAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRawAttributes(<span>array <var>$attributes</var></span>, <span>bool <var>$sync</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the array of model attributes. No checking is done.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the array of model attributes. No checking is done.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRawAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOriginal" id="_getOriginal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the model's original attribute values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the model's original attribute values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOriginal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOriginalWithoutRewindingModel" id="_getOriginalWithoutRewindingModel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOriginalWithoutRewindingModel(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the model's original attribute values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the model's original attribute values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOriginalWithoutRewindingModel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRawOriginal" id="_getRawOriginal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRawOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the model's raw original attribute values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the model's raw original attribute values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRawOriginal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="only" id="_only">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>only(<span>array|mixed <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a subset of the model's attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a subset of the model's attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncOriginal" id="_syncOriginal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncOriginal(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync the original attributes with the current.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync the original attributes with the current.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncOriginal">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncOriginalAttribute" id="_syncOriginalAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncOriginalAttribute(<span>string <var>$attribute</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync a single original attribute with its current value.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync a single original attribute with its current value.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncOriginalAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncOriginalAttributes" id="_syncOriginalAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncOriginalAttributes(<span>array|string <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync multiple original attribute with their current values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync multiple original attribute with their current values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncOriginalAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="syncChanges" id="_syncChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>syncChanges(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sync the changed attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sync the changed attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_syncChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isDirty" id="_isDirty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isDirty(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model or any of the given attribute(s) have been modified.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model or any of the given attribute(s) have been modified.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isDirty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isClean" id="_isClean">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClean(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model or all the given attribute(s) have remained the same.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model or all the given attribute(s) have remained the same.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClean">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="discardChanges" id="_discardChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>discardChanges(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Discard attribute changes and reset the attributes to their original state.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Discard attribute changes and reset the attributes to their original state.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_discardChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="wasChanged" id="_wasChanged">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>wasChanged(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the model or any of the given attribute(s) were changed when the model was last saved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the model or any of the given attribute(s) were changed when the model was last saved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_wasChanged">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasChanges" id="_hasChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasChanges(<span>array <var>$changes</var></span>, <span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if any of the given attributes were changed when the model was last saved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if any of the given attributes were changed when the model was last saved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDirty" id="_getDirty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDirty(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that have been changed since the last sync.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that have been changed since the last sync.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDirty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDirtyForUpdate" id="_getDirtyForUpdate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDirtyForUpdate(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that have been changed since the last sync for an update operation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that have been changed since the last sync for an update operation.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDirtyForUpdate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getChanges" id="_getChanges">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getChanges(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that were changed when the model was last saved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that were changed when the model was last saved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="originalIsEquivalent" id="_originalIsEquivalent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>originalIsEquivalent(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the new and old values for a given key are equivalent.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the new and old values for a given key are equivalent.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_originalIsEquivalent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="transformModelValue" id="_transformModelValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>transformModelValue(<span>string <var>$key</var></span>, <span>mixed <var>$value</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Transform a raw model value using mutators, casts, etc.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Transform a raw model value using mutators, casts, etc.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_transformModelValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="append" id="_append">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>append(<span>array|string <var>$attributes</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Append attributes to query when building a query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Append attributes to query when building a query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_append">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAppends" id="_getAppends">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAppends(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the accessors that are being appended to model arrays.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the accessors that are being appended to model arrays.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAppends">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAppends" id="_setAppends">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAppends(<span>array <var>$appends</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the accessors to append to model arrays.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the accessors to append to model arrays.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAppends">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasAppended" id="_hasAppended">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasAppended(<span>string <var>$attribute</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Return whether the accessor attribute has been appended.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Return whether the accessor attribute has been appended.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasAppended">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMutatedAttributes" id="_getMutatedAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMutatedAttributes(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the mutated attributes for a given instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the mutated attributes for a given instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMutatedAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="cacheMutatedAttributes" id="_cacheMutatedAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>cacheMutatedAttributes(<span>object|string <var>$classOrInstance</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Extract and cache all the mutated attributes of a class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Extract and cache all the mutated attributes of a class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_cacheMutatedAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getMutatorMethods" id="_getMutatorMethods">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getMutatorMethods(<span>mixed <var>$class</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the attribute mutator methods.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the attribute mutator methods.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getMutatorMethods">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributeMarkedMutatorMethods" id="_getAttributeMarkedMutatorMethods">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAttributeMarkedMutatorMethods(<span>mixed <var>$class</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the "Attribute" return typed attribute mutator methods.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the &quot;Attribute&quot; return typed attribute mutator methods.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAttributeMarkedMutatorMethods">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="attributes" id="$attributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="original" id="$original">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$original</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$original">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="changes" id="$changes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$changes</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$changes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="casts" id="$casts">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$casts</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$casts">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="classCastCache" id="$classCastCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$classCastCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$classCastCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributeCastCache" id="$attributeCastCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributeCastCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributeCastCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="primitiveCastTypes" id="$primitiveCastTypes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$primitiveCastTypes</var> = [
+	<span class="php-str">'array'</span>,
+	<span class="php-str">'bool'</span>,
+	<span class="php-str">'boolean'</span>,
+	<span class="php-str">'collection'</span>,
+	<span class="php-str">'custom_datetime'</span>,
+	<span class="php-str">'date'</span>,
+	<span class="php-str">'datetime'</span>,
+	<span class="php-str">'decimal'</span>,
+	<span class="php-str">'double'</span>,
+	<span class="php-str">'encrypted'</span>,
+	<span class="php-str">'encrypted:array'</span>,
+	<span class="php-str">'encrypted:collection'</span>,
+	<span class="php-str">'encrypted:json'</span>,
+	<span class="php-str">'encrypted:object'</span>,
+	<span class="php-str">'float'</span>,
+	<span class="php-str">'hashed'</span>,
+	<span class="php-str">'immutable_date'</span>,
+	<span class="php-str">'immutable_datetime'</span>,
+	<span class="php-str">'immutable_custom_datetime'</span>,
+	<span class="php-str">'int'</span>,
+	<span class="php-str">'integer'</span>,
+	<span class="php-str">'json'</span>,
+	<span class="php-str">'json:unicode'</span>,
+	<span class="php-str">'object'</span>,
+	<span class="php-str">'real'</span>,
+	<span class="php-str">'string'</span>,
+	<span class="php-str">'timestamp'</span>,
+]</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$primitiveCastTypes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="dateFormat" id="$dateFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$dateFormat</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$dateFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="appends" id="$appends">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$appends</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$appends">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="snakeAttributes" id="$snakeAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$snakeAttributes</var> = <span class="php-kw">true</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$snakeAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="mutatorCache" id="$mutatorCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$mutatorCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$mutatorCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attributeMutatorCache" id="$attributeMutatorCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$attributeMutatorCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$attributeMutatorCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAttributeMutatorCache" id="$getAttributeMutatorCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$getAttributeMutatorCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$getAttributeMutatorCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAttributeMutatorCache" id="$setAttributeMutatorCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$setAttributeMutatorCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$setAttributeMutatorCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="castTypeCache" id="$castTypeCache">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$castTypeCache</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$castTypeCache">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="encrypter" id="$encrypter">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Contracts.Encryption.Encrypter.html"><span title="Illuminate\Contracts\Encryption\Encrypter">Encrypter</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$encrypter</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$encrypter">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

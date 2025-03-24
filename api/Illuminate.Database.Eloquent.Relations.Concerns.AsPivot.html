@@ -1,0 +1,878 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Trait Illuminate\Database\Eloquent\Relations\Concerns\AsPivot |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html">
+							AsPivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html">
+							CanBeOneOfMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html">
+							ComparesRelatedModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html">
+							InteractsWithDictionary
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html">
+							InteractsWithPivotTable
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html">
+							SupportsDefaultModels
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html">
+							SupportsInverseRelations
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html">Trait</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Trait <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.Concerns.html">Concerns</a>\<a href="Illuminate.Database.Eloquent.Relations.Concerns.AsPivot.html">AsPivot</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\Concerns\AsPivot</span></b>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span>Illuminate\Database\Eloquent\Relations\Pivot</span></a>
+
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\AsPivot">AsPivot</span></b>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html"><span>Illuminate\Database\Eloquent\Relations\MorphPivot</span></a>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="fromAttributes" id="_fromAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromAttributes(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$parent</var></span>, <span>array <var>$attributes</var></span>, <span>string <var>$table</var></span>, <span>bool <var>$exists</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pivot model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pivot model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fromRawAttributes" id="_fromRawAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fromRawAttributes(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$parent</var></span>, <span>array <var>$attributes</var></span>, <span>string <var>$table</var></span>, <span>bool <var>$exists</var> = <span class="php-kw">false</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new pivot model from raw values returned from a query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new pivot model from raw values returned from a query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fromRawAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeysForSelectQuery" id="_setKeysForSelectQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeysForSelectQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the keys for a select query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the keys for a select query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeysForSelectQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setKeysForSaveQuery" id="_setKeysForSaveQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setKeysForSaveQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt; <var>$query</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the keys for a save update query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the keys for a save update query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setKeysForSaveQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="delete" id="_delete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>delete(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Delete the pivot model record from the database.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Delete the pivot model record from the database.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_delete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDeleteQuery" id="_getDeleteQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDeleteQuery(): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the query builder for a delete operation on the pivot.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the query builder for a delete operation on the pivot.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDeleteQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getTable" id="_getTable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getTable(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the table associated with the model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the table associated with the model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getTable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getForeignKey" id="_getForeignKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getForeignKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the foreign key column name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the foreign key column name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getForeignKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelatedKey" id="_getRelatedKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelatedKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "related key" column name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;related key&quot; column name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelatedKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOtherKey" id="_getOtherKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOtherKey(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the "related key" column name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the &quot;related key&quot; column name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOtherKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setPivotKeys" id="_setPivotKeys">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setPivotKeys(<span>string <var>$foreignKey</var></span>, <span>string <var>$relatedKey</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the key names for the pivot model instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the key names for the pivot model instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setPivotKeys">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setRelatedModel" id="_setRelatedModel">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setRelatedModel(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|null <var>$related</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Set the related model of the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set the related model of the relationship.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setRelatedModel">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasTimestampAttributes" id="_hasTimestampAttributes">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasTimestampAttributes(<span>array|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the pivot model or given attributes has timestamp attributes.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the pivot model or given attributes has timestamp attributes.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasTimestampAttributes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCreatedAtColumn" id="_getCreatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCreatedAtColumn(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "created at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;created at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCreatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getUpdatedAtColumn" id="_getUpdatedAtColumn">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getUpdatedAtColumn(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the name of the "updated at" column.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the name of the &quot;updated at&quot; column.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getUpdatedAtColumn">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getQueueableId" id="_getQueueableId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getQueueableId(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the queueable identity for the entity.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the queueable identity for the entity.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getQueueableId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryForRestoration" id="_newQueryForRestoration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryForRestoration(<span>int[]|string[]|string <var>$ids</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query to restore one or more models by their queueable IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query to restore one or more models by their queueable IDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryForRestoration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newQueryForCollectionRestoration" id="_newQueryForCollectionRestoration">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newQueryForCollectionRestoration(<span>int[]|string[] <var>$ids</var></span>): <a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;static&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a new query to restore multiple models by their queueable IDs.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a new query to restore multiple models by their queueable IDs.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newQueryForCollectionRestoration">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="unsetRelations" id="_unsetRelations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>unsetRelations(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Unset all the loaded relations for the instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Unset all the loaded relations for the instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_unsetRelations">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="pivotParent" id="$pivotParent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotParent</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotParent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="pivotRelated" id="$pivotRelated">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a></code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$pivotRelated</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$pivotRelated">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="foreignKey" id="$foreignKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$foreignKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$foreignKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relatedKey" id="$relatedKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relatedKey</var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relatedKey">#</a>
+		</td>
+	</tr>
+		</table>
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

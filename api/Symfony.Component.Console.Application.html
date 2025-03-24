@@ -1,0 +1,1589 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Symfony\Component\Console\Application |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.html">Symfony</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.html">Component</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Symfony.Component.Console.html">Console</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="Symfony.Component.Console.Application.html">
+							Application
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Symfony.Component.Console.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Symfony.Component.Console.Application.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Symfony.html">Symfony</a>\<a href="namespace-Symfony.Component.html">Component</a>\<a href="namespace-Symfony.Component.Console.html">Console</a>\<a href="Symfony.Component.Console.Application.html">Application</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Symfony.Contracts.Service.ResetInterface.html"><span title="Symfony\Contracts\Service\ResetInterface">ResetInterface</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>An Application is the container for a collection of commands.</p>
+<p>It is the main entry point of a Console application.</p>
+<p>This class is optimized for a standard CLI environment.</p>
+<p>Usage:</p>
+<p>$app = new Application('myapp', '1.0 (stable)');
+$app-&gt;add(new SimpleCommand());
+$app-&gt;run();</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>__construct(<span>string <var>$name</var> = <span class="php-str">'UNKNOWN'</span></span>, <span>string <var>$version</var> = <span class="php-str">'UNKNOWN'</span></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDispatcher" id="_setDispatcher">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDispatcher(<span><a href="Symfony.Contracts.EventDispatcher.EventDispatcherInterface.html"><span title="Symfony\Contracts\EventDispatcher\EventDispatcherInterface">EventDispatcherInterface</span></a> <var>$dispatcher</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDispatcher">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCommandLoader" id="_setCommandLoader">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCommandLoader(<span><a href="Symfony.Component.Console.CommandLoader.CommandLoaderInterface.html"><span title="Symfony\Component\Console\CommandLoader\CommandLoaderInterface">CommandLoaderInterface</span></a> <var>$commandLoader</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCommandLoader">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getSignalRegistry" id="_getSignalRegistry">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSignalRegistry(): <a href="Symfony.Component.Console.SignalRegistry.SignalRegistry.html"><span title="Symfony\Component\Console\SignalRegistry\SignalRegistry">SignalRegistry</span></a></code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSignalRegistry">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setSignalsToDispatchEvent" id="_setSignalsToDispatchEvent">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setSignalsToDispatchEvent(<span>int ...<var>$signalsToDispatchEvent</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setSignalsToDispatchEvent">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAlarmInterval" id="_setAlarmInterval">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAlarmInterval(<span>?int <var>$seconds</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the interval to schedule a SIGALRM signal in seconds.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the interval to schedule a SIGALRM signal in seconds.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAlarmInterval">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAlarmInterval" id="_getAlarmInterval">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAlarmInterval(): ?int</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the interval in seconds on which a SIGALRM signal is dispatched.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the interval in seconds on which a SIGALRM signal is dispatched.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAlarmInterval">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="run" id="_run">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>run(<span>?<a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a> <var>$input</var> = <span class="php-kw">null</span></span>, <span>?<a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var> = <span class="php-kw">null</span></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Runs the current application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Runs the current application.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>0 if everything went fine, or an error code</p>
+</div>
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Exception.html"><span>Exception</span></a></code>&nbsp;</td>
+										<td><p>When running fails. Bypass this when {@link setCatchExceptions()}.</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_run">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doRun" id="_doRun">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doRun(<span><a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Runs the current application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Runs the current application.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>0 if everything went fine, or an error code</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doRun">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="reset" id="_reset">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reset(): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Contracts.Service.ResetInterface.html#_reset">						<code>Symfony\Contracts\Service\ResetInterface::reset()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reset">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setHelperSet" id="_setHelperSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setHelperSet(<span><a href="Symfony.Component.Console.Helper.HelperSet.html"><span title="Symfony\Component\Console\Helper\HelperSet">HelperSet</span></a> <var>$helperSet</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setHelperSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHelperSet" id="_getHelperSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHelperSet(): <a href="Symfony.Component.Console.Helper.HelperSet.html"><span title="Symfony\Component\Console\Helper\HelperSet">HelperSet</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the helper set associated with the command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the helper set associated with the command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHelperSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefinition" id="_setDefinition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefinition(<span><a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a> <var>$definition</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefinition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefinition" id="_getDefinition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefinition(): <a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the InputDefinition related to this Application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the InputDefinition related to this Application.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefinition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="complete" id="_complete">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>complete(<span><a href="Symfony.Component.Console.Completion.CompletionInput.html"><span title="Symfony\Component\Console\Completion\CompletionInput">CompletionInput</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Completion.CompletionSuggestions.html"><span title="Symfony\Component\Console\Completion\CompletionSuggestions">CompletionSuggestions</span></a> <var>$suggestions</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds suggestions to $suggestions for the current completion input (e.g. option or argument).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds suggestions to $suggestions for the current completion input (e.g. option or argument).</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_complete">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHelp" id="_getHelp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getHelp(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the help message.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the help message.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHelp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="areExceptionsCaught" id="_areExceptionsCaught">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>areExceptionsCaught(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets whether to catch exceptions or not during commands execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets whether to catch exceptions or not during commands execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_areExceptionsCaught">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCatchExceptions" id="_setCatchExceptions">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCatchExceptions(<span>bool <var>$boolean</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets whether to catch exceptions or not during commands execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets whether to catch exceptions or not during commands execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCatchExceptions">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCatchErrors" id="_setCatchErrors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setCatchErrors(<span>bool <var>$catchErrors</var> = <span class="php-kw">true</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets whether to catch errors or not during commands execution.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets whether to catch errors or not during commands execution.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCatchErrors">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="isAutoExitEnabled" id="_isAutoExitEnabled">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isAutoExitEnabled(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets whether to automatically exit after a command execution or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets whether to automatically exit after a command execution or not.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isAutoExitEnabled">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setAutoExit" id="_setAutoExit">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setAutoExit(<span>bool <var>$boolean</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets whether to automatically exit after a command execution or not.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets whether to automatically exit after a command execution or not.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setAutoExit">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getName" id="_getName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getName(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the name of the application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the name of the application.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setName" id="_setName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setName(<span>string <var>$name</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the application name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the application name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getVersion" id="_getVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getVersion(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the application version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the application version.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setVersion" id="_setVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setVersion(<span>string <var>$version</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the application version.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the application version.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getLongVersion" id="_getLongVersion">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getLongVersion(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the long version of the application.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the long version of the application.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getLongVersion">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="register" id="_register">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>register(<span>string <var>$name</var></span>): <a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Registers a new command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Registers a new command.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_register">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addCommands" id="_addCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCommands(<span><a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a>[] <var>$commands</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Adds an array of command objects.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds an array of command objects.</p>
+<p>If a Command is not enabled it will not be added.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$commands</var>&nbsp;&nbsp;</td>
+										<td><p>An array of commands</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="add" id="_add">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>add(<span><a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a> <var>$command</var></span>): ?<a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Adds a command object.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Adds a command object.</p>
+<p>If a command with the same name already exists, it will be overridden.
+If the command is not enabled it will not be added.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_add">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="get" id="_get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>get(<span>string <var>$name</var></span>): <a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Returns a registered command by name or alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns a registered command by name or alias.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.CommandNotFoundException.html"><span>Symfony\Component\Console\Exception\CommandNotFoundException</span></a></code>&nbsp;</td>
+										<td><p>When given command name does not exist</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="has" id="_has">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>has(<span>string <var>$name</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns true if the command exists, false otherwise.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns true if the command exists, false otherwise.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_has">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getNamespaces" id="_getNamespaces">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getNamespaces(): string[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of all unique namespaces used by currently registered commands.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of all unique namespaces used by currently registered commands.</p>
+<p>It does not return the global namespace which always exists.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getNamespaces">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="findNamespace" id="_findNamespace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>findNamespace(<span>string <var>$namespace</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Finds a registered namespace by a name or an abbreviation.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Finds a registered namespace by a name or an abbreviation.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.NamespaceNotFoundException.html"><span>Symfony\Component\Console\Exception\NamespaceNotFoundException</span></a></code>&nbsp;</td>
+										<td><p>When namespace is incorrect or ambiguous</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_findNamespace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="find" id="_find">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>find(<span>string <var>$name</var></span>): <a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Finds a command by name or alias.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Finds a command by name or alias.</p>
+<p>Contrary to get, this command tries to find the best
+match if you give it an abbreviation of a name or alias.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Symfony.Component.Console.Exception.CommandNotFoundException.html"><span>Symfony\Component\Console\Exception\CommandNotFoundException</span></a></code>&nbsp;</td>
+										<td><p>When command name is incorrect or ambiguous</p>
+</td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_find">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="all" id="_all">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>all(<span>?string <var>$namespace</var> = <span class="php-kw">null</span></span>): <a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the commands (registered in the given namespace if provided).
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the commands (registered in the given namespace if provided).</p>
+<p>The array keys are the full names and the values the command instances.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_all">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getAbbreviations" id="_getAbbreviations">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getAbbreviations(<span>array <var>$names</var></span>): string[][]</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns an array of possible abbreviations given a set of names.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns an array of possible abbreviations given a set of names.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getAbbreviations">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="renderThrowable" id="_renderThrowable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>renderThrowable(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>, <span><a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_renderThrowable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doRenderThrowable" id="_doRenderThrowable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doRenderThrowable(<span><a href="Throwable.html"><span title="Throwable">Throwable</span></a> <var>$e</var></span>, <span><a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var></span>): void</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doRenderThrowable">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="configureIO" id="_configureIO">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>configureIO(<span><a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Configures the input and output instances based on the user arguments and options.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Configures the input and output instances based on the user arguments and options.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_configureIO">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="doRunCommand" id="_doRunCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>doRunCommand(<span><a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a> <var>$command</var></span>, <span><a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a> <var>$input</var></span>, <span><a href="Symfony.Component.Console.Output.OutputInterface.html"><span title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</span></a> <var>$output</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Runs the current command.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Runs the current command.</p>
+<p>If an event dispatcher has been attached to the application,
+events are also dispatched during the life-cycle of the command.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>0 if everything went fine, or an error code</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_doRunCommand">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCommandName" id="_getCommandName">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCommandName(<span><a href="Symfony.Component.Console.Input.InputInterface.html"><span title="Symfony\Component\Console\Input\InputInterface">InputInterface</span></a> <var>$input</var></span>): ?string</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the name of the command based on input.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the name of the command based on input.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCommandName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultInputDefinition" id="_getDefaultInputDefinition">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultInputDefinition(): <a href="Symfony.Component.Console.Input.InputDefinition.html"><span title="Symfony\Component\Console\Input\InputDefinition">InputDefinition</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the default input definition.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the default input definition.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultInputDefinition">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultCommands" id="_getDefaultCommands">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultCommands(): <a href="Symfony.Component.Console.Command.Command.html"><span title="Symfony\Component\Console\Command\Command">Command</span></a>[]</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the default commands that should always be available.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the default commands that should always be available.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultCommands">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getDefaultHelperSet" id="_getDefaultHelperSet">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getDefaultHelperSet(): <a href="Symfony.Component.Console.Helper.HelperSet.html"><span title="Symfony\Component\Console\Helper\HelperSet">HelperSet</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the default helper set with the helpers that should always be available.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the default helper set with the helpers that should always be available.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getDefaultHelperSet">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="extractNamespace" id="_extractNamespace">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>extractNamespace(<span>string <var>$name</var></span>, <span>?int <var>$limit</var> = <span class="php-kw">null</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the namespace part of the command name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the namespace part of the command name.</p>
+<p>This method is not part of public API and should not be used directly.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_extractNamespace">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setDefaultCommand" id="_setDefaultCommand">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>setDefaultCommand(<span>string <var>$commandName</var></span>, <span>bool <var>$isSingleCommand</var> = <span class="php-kw">false</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the default Command name.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the default Command name.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDefaultCommand">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

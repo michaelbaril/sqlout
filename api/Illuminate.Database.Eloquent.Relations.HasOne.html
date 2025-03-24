@@ -1,0 +1,744 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<title>Class Illuminate\Database\Eloquent\Relations\HasOne |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.html">Baril</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Baril.Sqlout.html">Sqlout</a>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.html">Illuminate</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.html">Database</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>
+	<ul>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-none.html">none</a>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsTo.html">
+							BelongsTo
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">
+							BelongsToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasMany.html">
+							HasMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html">
+							HasManyThrough
+						</a>
+					</li>
+					<li class="active">
+						<a href="Illuminate.Database.Eloquent.Relations.HasOne.html">
+							HasOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html">
+							HasOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html">
+							HasOneOrManyThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html">
+							HasOneThrough
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html">
+							MorphMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOne.html">
+							MorphOne
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html">
+							MorphOneOrMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphPivot.html">
+							MorphPivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphTo.html">
+							MorphTo
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.MorphToMany.html">
+							MorphToMany
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Pivot.html">
+							Pivot
+						</a>
+					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Relations.Relation.html">
+							Relation
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Illuminate.Database.Eloquent.Relations.HasOne.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="Illuminate.Database.Eloquent.Relations.HasOne.html">HasOne</a>
+		</h1>
+
+			<h2><code>&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt;</code></h2>
+
+	<table class="classLikeSignatureTable">
+
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span title="Illuminate\Database\Eloquent\Relations\HasOneOrMany">HasOneOrMany</span></a>&lt;TRelatedModel, TDeclaringModel, ?TRelatedModel&gt;</code>			</td>
+		</tr>
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a></code>			</td>
+		</tr>
+		<tr>
+			<th><code>uses</code></th>
+			<td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a></code>			</td>
+		</tr>
+
+	</table>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.Builder.html"><span title="Illuminate\Contracts\Database\Eloquent\Builder">Builder</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrMany</span></a>
+
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations">SupportsInverseRelations</span></a>
+	<ul class="classTree">
+	<li>
+<b><span class="active">Illuminate\Database\Eloquent\Relations\HasOne</span></b>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="getResults" id="_getResults">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getResults()</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the results of the relationship.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the results of the relationship.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getResults">						<code>Illuminate\Database\Eloquent\Relations\Relation::getResults()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResults">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="initRelation" id="_initRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>initRelation(<span>array <var>$models</var></span>, <span><var>$relation</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Initialize the relation on a set of models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Initialize the relation on a set of models.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_initRelation">						<code>Illuminate\Database\Eloquent\Relations\Relation::initRelation()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_initRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="match" id="_match">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>match(<span>array <var>$models</var></span>, <span><a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a> <var>$results</var></span>, <span><var>$relation</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Match the eagerly loaded results to their parents.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Match the eagerly loaded results to their parents.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.Relation.html#_match">						<code>Illuminate\Database\Eloquent\Relations\Relation::match()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_match">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelationExistenceQuery" id="_getRelationExistenceQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelationExistenceQuery(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a> <var>$query</var></span>, <span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a> <var>$parentQuery</var></span>, <span><var>$columns</var> = [<span class="php-str">'*'</span>]</span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Add the constraints for an internal relationship existence query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add the constraints for an internal relationship existence query.</p>
+<p>Essentially, these queries compare on column names like whereColumn.</p>
+</div>
+
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getRelationExistenceQuery">						<code>Illuminate\Database\Eloquent\Relations\HasOneOrMany::getRelationExistenceQuery()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelationExistenceQuery">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOneOfManySubQueryConstraints" id="_addOneOfManySubQueryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOneOfManySubQueryConstraints(
+	<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>,
+	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
+	<span>string|null <var>$aggregate</var> = <span class="php-kw">null</span></span>,
+): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add constraints for inner join subselect for one of many relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add constraints for inner join subselect for one of many relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOneOfManySubQueryConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getOneOfManySubQuerySelectColumns" id="_getOneOfManySubQuerySelectColumns">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getOneOfManySubQuerySelectColumns(): array|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the columns that should be selected by the one of many subquery.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the columns that should be selected by the one of many subquery.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getOneOfManySubQuerySelectColumns">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOneOfManyJoinSubQueryConstraints" id="_addOneOfManyJoinSubQueryConstraints">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addOneOfManyJoinSubQueryConstraints(<span><a href="Illuminate.Database.Query.JoinClause.html"><span title="Illuminate\Database\Query\JoinClause">JoinClause</span></a> <var>$join</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Add join query constraints for one of many relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add join query constraints for one of many relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOneOfManyJoinSubQueryConstraints">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="newRelatedInstanceFor" id="_newRelatedInstanceFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>newRelatedInstanceFor(<span>TDeclaringModel <var>$parent</var></span>): TRelatedModel</code>
+
+
+	<div class="expandable-collapsedView">
+		Make a new related instance for the given model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Make a new related instance for the given model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_newRelatedInstanceFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getRelatedKeyFrom" id="_getRelatedKeyFrom">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getRelatedKeyFrom(<span>TRelatedModel <var>$model</var></span>): int|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the value of the model's foreign key.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the value of the model's foreign key.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getRelatedKeyFrom">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrMany</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#___construct">__construct()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_make">make()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_makeMany">makeMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_addConstraints">addConstraints()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_addEagerConstraints">addEagerConstraints()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_matchOne">matchOne()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_matchMany">matchMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_matchOneOrMany">matchOneOrMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getRelationValue">getRelationValue()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_buildDictionary">buildDictionary()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_findOrNew">findOrNew()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_firstOrNew">firstOrNew()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_firstOrCreate">firstOrCreate()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_createOrFirst">createOrFirst()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_updateOrCreate">updateOrCreate()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_upsert">upsert()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_save">save()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_saveQuietly">saveQuietly()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_saveMany">saveMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_saveManyQuietly">saveManyQuietly()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_create">create()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_createQuietly">createQuietly()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_forceCreate">forceCreate()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_forceCreateQuietly">forceCreateQuietly()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_createMany">createMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_createManyQuietly">createManyQuietly()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_setForeignAttributesForCreate">setForeignAttributesForCreate()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getRelationExistenceQueryForSelfRelation">getRelationExistenceQueryForSelfRelation()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_take">take()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_limit">limit()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getExistenceCompareKey">getExistenceCompareKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getParentKey">getParentKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getQualifiedParentKeyName">getQualifiedParentKeyName()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getForeignKeyName">getForeignKeyName()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getQualifiedForeignKeyName">getQualifiedForeignKeyName()</a>, <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#_getLocalKeyName">getLocalKeyName()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Relation.html#_noConstraints">noConstraints()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getEager">getEager()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_sole">sole()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_get">get()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_touch">touch()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_rawUpdate">rawUpdate()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationExistenceCountQuery">getRelationExistenceCountQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationCountHash">getRelationCountHash()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getKeys">getKeys()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelationQuery">getRelationQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getQuery">getQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getBaseQuery">getBaseQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_toBase">toBase()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getParent">getParent()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getRelated">getRelated()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_createdAt">createdAt()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_updatedAt">updatedAt()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_relatedUpdatedAt">relatedUpdatedAt()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_whereInEager">whereInEager()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_whereInMethod">whereInMethod()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_requireMorphMap">requireMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_requiresMorphMap">requiresMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_enforceMorphMap">enforceMorphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_morphMap">morphMap()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_buildMorphMapFromModels">buildMorphMapFromModels()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getMorphedModel">getMorphedModel()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#_getMorphAlias">getMorphAlias()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#___call">__call()</a>, <a href="Illuminate.Database.Eloquent.Relations.Relation.html#___clone">__clone()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.ForwardsCalls.html"><span>Illuminate\Support\Traits\ForwardsCalls</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardCallTo">forwardCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_forwardDecoratedCallTo">forwardDecoratedCallTo()</a>, <a href="Illuminate.Support.Traits.ForwardsCalls.html#_throwBadMethodCallException">throwBadMethodCallException()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, </code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithDictionary.html#_getDictionaryKey">getDictionaryKey()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_inverse">inverse()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_chaperone">chaperone()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_guessInverseRelation">guessInverseRelation()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_getPossibleInverseRelations">getPossibleInverseRelations()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_applyInverseRelationToCollection">applyInverseRelationToCollection()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_applyInverseRelationToModel">applyInverseRelationToModel()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_getInverseRelationship">getInverseRelationship()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_withoutInverse">withoutInverse()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#_withoutChaperone">withoutChaperone()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html#_is">is()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html#_isNot">isNot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html#_getParentKey">getParentKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html#_compareKeys">compareKeys()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_ofMany">ofMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_latestOfMany">latestOfMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_oldestOfMany">oldestOfMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_getDefaultOneOfManyJoinAlias">getDefaultOneOfManyJoinAlias()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_newOneOfManySubQuery">newOneOfManySubQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_addOneOfManyJoinSubQuery">addOneOfManyJoinSubQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_mergeOneOfManyJoinsTo">mergeOneOfManyJoinsTo()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_getRelationQuery">getRelationQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_getOneOfManySubQuery">getOneOfManySubQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_qualifySubSelectColumn">qualifySubSelectColumn()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_qualifyRelatedColumn">qualifyRelatedColumn()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_guessRelationship">guessRelationship()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_isOneOfMany">isOneOfMany()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#_getRelationName">getRelationName()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html#_withDefault">withDefault()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html#_getDefaultFor">getDefaultFor()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrMany</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#$foreignKey">$foreignKey</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.HasOneOrMany.html#$localKey">$localKey</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties inherited from <a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span>Illuminate\Database\Eloquent\Relations\Relation</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$query">$query</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$parent">$parent</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$related">$related</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$eagerKeysWereEmpty">$eagerKeysWereEmpty</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$constraints">$constraints</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$morphMap">$morphMap</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$requireMorphMap">$requireMorphMap</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Relation.html#$selfJoinCount">$selfJoinCount</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html#$inverseRelationship">$inverseRelationship</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#$isOneOfMany">$isOneOfMany</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#$relationName">$relationName</a></var>, <var><a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html#$oneOfManySubQuery">$oneOfManySubQuery</a></var></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span>Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html#$withDefault">$withDefault</a></var></code>				</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>
