@@ -19,6 +19,8 @@ Sqlout is compatible with Laravel 5.8+ to 10.x and Scout 7.1+ / 8.x / 9.x / 10.x
 (credit goes to [ikari7789](https://github.com/ikari7789) for Laravel 9 and 10 / Scout
 9 and 10 support).
 
+You can find the full API documentation [here](https://michaelbaril.github.io/sqlout/api/).
+
 ## Version Compatibility
 
  Laravel     | Scout     | Sqlout
