@@ -7,7 +7,7 @@ NC='\033[0m'
 
 myself="$(realpath $0)"
 preset_min='7.3 8.* lowest 5.7'
-preset_max='8.3 10.* stable 8.4'
+preset_max='8.3 11.* stable 8.4'
 compose_project_name=${PWD##*\/}
 
 # Check if variable exists in .env file
@@ -35,7 +35,7 @@ env_replace() {
 if [[ $# == 0 || $# == 1 && ($1 == 'help') ]]; then
     echo 'Usage:'
     echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the lowest requirements (PHP 7.3, Laravel 8)"
-    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the highest requirements (PHP 8.3, Laravel 10)"
+    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the highest requirements (PHP 8.3, Laravel 11)"
     echo -e "${PURPLE}run <COMMAND> <PHP_VERSION> <LARAVEL_VERSION> <DEPENDENCY_VERSION=lowest|stable> <MYSQL_VERSION>${NC}: run command with the specicied requirements"
     echo -e "${PURPLE}run <COMMAND>${NC}: run command with the same requirements as previous run"
     echo
