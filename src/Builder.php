@@ -7,9 +7,9 @@ use Laravel\Scout\Builder as ScoutBuilder;
 
 class Builder extends ScoutBuilder
 {
-    const NATURAL_LANGUAGE = 'in natural language mode';
-    const QUERY_EXPANSION = 'in natural language mode with query expansion';
-    const BOOLEAN = 'in boolean mode';
+    public const NATURAL_LANGUAGE = 'in natural language mode';
+    public const QUERY_EXPANSION = 'in natural language mode with query expansion';
+    public const BOOLEAN = 'in boolean mode';
 
     /**
      * The search mode (one of the consts above).

@@ -51,7 +51,7 @@ class Engine extends ScoutEngine
         $stemmer = config('scout.sqlout.stemmer');
         if ($stemmer) {
             if (is_string($stemmer) && class_exists($stemmer) && method_exists($stemmer, 'stem')) {
-                $stemmer = [new $stemmer, 'stem'];
+                $stemmer = [new $stemmer(), 'stem'];
             }
             if (is_object($stemmer) && method_exists($stemmer, 'stem')) {
                 foreach ($words as $k => $word) {

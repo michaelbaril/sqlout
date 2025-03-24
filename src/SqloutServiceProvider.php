@@ -16,7 +16,7 @@ class SqloutServiceProvider extends ServiceProvider
     public function boot()
     {
         app(EngineManager::class)->extend('sqlout', function () {
-            return new Engine;
+            return new Engine();
         });
 
         if ($this->app->runningInConsole()) {
@@ -25,7 +25,7 @@ class SqloutServiceProvider extends ServiceProvider
             ]);
         }
         $this->publishes([
-            __DIR__.'/../config/scout.php' => $this->app['path.config'].DIRECTORY_SEPARATOR.'scout.php',
+            __DIR__ . '/../config/scout.php' => $this->app['path.config'] . DIRECTORY_SEPARATOR . 'scout.php',
         ]);
     }
 }
