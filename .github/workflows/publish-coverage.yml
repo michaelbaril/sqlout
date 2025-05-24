@@ -15,6 +15,8 @@ jobs:
     uses: michaelbaril/shared/.github/workflows/run-tests.yml@main
     with:
       with-coverage: true
+      database-engine: mysql
+      database-version: 8.4
   publish-coverage:
     needs: generate-coverage
     uses: michaelbaril/shared/.github/workflows/publish-coverage.yml@main
