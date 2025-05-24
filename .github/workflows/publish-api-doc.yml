@@ -1,0 +1,13 @@
+name: "Publish API documentation"
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - src/**
+      - apigen.neon
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  publish-api-doc:
+    uses: michaelbaril/shared/.github/workflows/publish-api-doc.yml@main

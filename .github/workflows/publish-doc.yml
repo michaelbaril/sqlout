@@ -1,0 +1,15 @@
+name: "Publish documentation"
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - README.md
+      - doc/**.md
+      - markdown-to-html.json
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  publish-doc:
+    uses: michaelbaril/shared/.github/workflows/publish-doc.yml@main
+

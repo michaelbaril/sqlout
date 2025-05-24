@@ -6,8 +6,23 @@ GRAY='\033[1;30m'
 NC='\033[0m'
 
 myself="$(realpath $0)"
-preset_min='7.3 8.* lowest 5.7'
-preset_max='8.4 12.* stable 8.4'
+preset_min='7.3 8.* lowest'
+preset_max='8.4 12.* stable'
+preset_sqlite_min="$preset_min sqlite"
+preset_sqlite_max="$preset_max sqlite"
+preset_sqlite="$preset_sqlite_max"
+preset_mysql_min="$preset_min mysql 5.7"
+preset_mysql_max="$preset_max mysql 8.4"
+preset_mysql="$preset_mysql_max"
+preset_mariadb_min="$preset_min mariadb 10.2"
+preset_mariadb_max="$preset_max mariadb 11.7"
+preset_mariadb="$preset_mariadb_max"
+preset_pgsql_min="$preset_min pgsql 9.6"
+preset_pgsql_max="$preset_max pgsql 17.4"
+preset_pgsql="$preset_pgsql_max"
+preset_sqlsrv_min="8.1 8.* lowest sqlsrv 2019"
+preset_sqlsrv_max="$preset_max sqlsrv 2022"
+preset_sqlsrv="$preset_sqlsrv_max"
 compose_project_name=${PWD##*\/}
 
 # Check if variable exists in .env file
@@ -34,9 +49,8 @@ env_replace() {
 
 if [[ $# == 0 || $# == 1 && ($1 == 'help') ]]; then
     echo 'Usage:'
-    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the lowest requirements (PHP 7.3, Laravel 8)"
-    echo -e "${PURPLE}run <COMMAND> min${NC}: run command with the highest requirements (PHP 8.4, Laravel 12)"
-    echo -e "${PURPLE}run <COMMAND> <PHP_VERSION> <LARAVEL_VERSION> <DEPENDENCY_VERSION=lowest|stable> <MYSQL_VERSION>${NC}: run command with the specicied requirements"
+    echo -e "${PURPLE}run <COMMAND> <PRESET=min|max|...>${NC}: run command with the specicied preset"
+    echo -e "${PURPLE}run <COMMAND> <PHP_VERSION> <LARAVEL_VERSION> <DEPENDENCY_VERSION=lowest|stable> <DB_ENGINE=sqlite|mysql|pgsql|sqlsrv> <DATABASE_VERSION>${NC}: run command with the specicied requirements"
     echo -e "${PURPLE}run <COMMAND>${NC}: run command with the same requirements as previous run"
     echo
     echo 'Available commands:'
@@ -80,18 +94,21 @@ if [ $# -gt 1 ]; then
     php_version=$2
     laravel_version=${3:-'*'}
     dependency_version=${4:-'stable'}
-    mysql_version=${5:-'8.4'}
+    db_engine=${5:-'sqlite'}
+    db_version=${6:-''}
 
     echo
     echo 'Using:'
     echo -e "- PHP ${PURPLE}${php_version}${NC}"
     echo -e "- Laravel ${PURPLE}${laravel_version}${NC}"
     echo -e "- ${PURPLE}${dependency_version}${NC} dependencies"
-    echo -e "- MySQL ${PURPLE}${mysql_version}${NC}"
+    echo -e "- Database ${PURPLE}${db_engine} ${db_version}${NC}"
     echo
 
     env_replace PHP_VERSION $php_version
     env_replace MYSQL_VERSION $mysql_version
+    env_replace DB_ENGINE $db_engine
+    env_replace DB_VERSION $db_version
 
     docker compose down
     docker volume rm ${compose_project_name}_mysql_data >/dev/null 2>&1 

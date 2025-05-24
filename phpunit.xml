@@ -10,25 +10,14 @@
       <directory suffix="Test.php">./tests/</directory>
     </testsuite>
   </testsuites>
-  <php>
-    <env name="APP_ENV" value="testing"/>
-    <env name="CACHE_DRIVER" value="array"/>
-    <env name="SESSION_DRIVER" value="array"/>
-    <env name="QUEUE_DRIVER" value="sync"/>
-  </php>
   <source>
     <include>
       <directory suffix=".php">./src</directory>
     </include>
   </source>
-  <!--<coverage includeUncoveredFiles="true"
+  <coverage includeUncoveredFiles="true"
             pathCoverage="false"
             ignoreDeprecatedCodeUnits="true"
             disableCodeCoverageIgnore="true">
-    <report>
-      <clover outputFile="clover.xml"/>
-      <cobertura outputFile="cobertura.xml"/>
-      <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="90"/>
-    </report>
-  </coverage>-->
+  </coverage>
 </phpunit>

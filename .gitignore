@@ -1,7 +1,6 @@
-/vendor/
 .env
-composer.lock
 .phpunit.cache
 .phpunit.result.cache
-clover.xml
+composer.lock
 /coverage
+/vendor

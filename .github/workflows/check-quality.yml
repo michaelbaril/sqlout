@@ -1,46 +1,19 @@
 name: "Check quality"
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [master, main]
     paths:
       - src/**
-      - tests/**
       - phpcs.xml
   pull_request:
-    types:
-      - opened
-      - reopened
-      - edited
-      - synchronize
-    branches:
-      - master
-      - main
+    types: [opened, reopened, edited, synchronize]
+    branches: [master, main]
     paths:
       - src/**
-      - tests/**
       - phpcs.xml
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true      
 jobs:
-  quality:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          extensions: curl, zip, mbstring, pdo, pdo_mysql
-          tools: cs2pr
-          coverage: none
-      - name: Install dependencies
-        run: |
-          composer update --prefer-dist --no-interaction      
-      - name: PHP Code Sniffer
-        run: ./vendor/bin/phpcs -q --report=checkstyle --standard=./phpcs.xml src | cs2pr
-      # - name: PHPStan
-      #   run: ./vendor/bin/phpstan analyse --configuration=./phpstan.neon --error-format=checkstyle src | cs2pr
+  phpcs:
+    uses: michaelbaril/shared/.github/workflows/phpcs.yml@main

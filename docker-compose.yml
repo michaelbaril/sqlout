@@ -1,39 +1,26 @@
----
-services:
-  mysql:
-    environment:
-      MYSQL_DATABASE: test
-      MYSQL_PASSWORD: test
-      MYSQL_USER: test
-      MYSQL_ALLOW_EMPTY_PASSWORD: true
-    healthcheck:
-        test: ["CMD", "mysqladmin", "ping", "-proot"]
-        retries: 3
-        timeout: 5s
-    image: mysql:${MYSQL_VERSION:-8.4}
-    restart: always
-    volumes:
-      - mysql_data:/var/lib/mysql
 
+services:
+
+  database:
+    extends:
+      file: ./docker-compose.databases.yml
+      service: ${DB_ENGINE:-sqlite}
 
   php:
     build:
+      context: .
       args:
-        PHP_VERSION: ${PHP_VERSION:-8.2}
+        PHP_VERSION: ${PHP_VERSION:-8.4}
         UID: ${UID:-1000}
         GID: ${GID:-1000}
-      context: .
       tags:
         - ${COMPOSE_PROJECT_NAME}-php-${PHP_VERSION}
+    image: ${COMPOSE_PROJECT_NAME}-php-${PHP_VERSION}
+    pull_policy: never
     command: sleep infinity # keep the container running
     depends_on:
-      mysql:
+      database:
         condition: service_healthy
-    image: ${COMPOSE_PROJECT_NAME}-php-${PHP_VERSION}
     volumes:
       - .:/app
-      - ${COMPOSER_CACHE_DIR}:/.composer/cache
-
-volumes:
-    mysql_data:
-        driver: local
+      - ${COMPOSER_CACHE_DIR:-/.composer/cache}:/.composer/cache

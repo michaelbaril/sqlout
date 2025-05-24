@@ -1,9 +1,7 @@
 name: "Publish coverage"
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [master, main]
     paths:
       - src/**
       - tests/**
@@ -12,65 +10,11 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Start MySQL
-        run: |
-          sudo systemctl start mysql.service
-          mysql -uroot -proot -e 'CREATE DATABASE test'
-          mysql -uroot -proot -e "CREATE USER 'test'@'%' IDENTIFIED WITH mysql_native_password BY 'test'"
-          mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON test.* TO 'test'@'%'"
-          mysql -uroot -proot -e "FLUSH PRIVILEGES"
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.2
-          extensions: curl, zip, mbstring, pdo, pdo_mysql
-          coverage: xdebug
-      - name: Install dependencies
-        run: |
-          composer update --prefer-dist --no-interaction
-      - name: Setup .env
-        run: |
-          sed -i -E "s/^DB_HOST=.*$/DB_HOST=127.0.0.1/g" .env.test
-      - name: Enable PHPUnit coverage
-        run: |
-          sed -i "s/<\!--<coverage/<coverage/g" phpunit.xml
-          sed -i "s/<\/coverage>-->/<\/coverage>/g" phpunit.xml
-      - name: Execute tests
-        run: vendor/bin/phpunit
-      - name: Make code coverage badge
-        uses: steffendietz/clover-to-shieldsio-json-action@v1.0
-        with:
-          path-to-clover: clover.xml
-          path-to-json: coverage/badge.json
-      - name: Round percentage
-        run: |
-          percentage=$(sed -E "s/^.*\"([0-9.]+)\%.*$/\1/g" coverage/badge.json)
-          rounded=$(php -r "echo round($percentage);")
-          sed -i "s/$percentage%/$rounded%/g" coverage/badge.json
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage
-          path: coverage
-  publish:
-    needs: generate
-    runs-on: ubuntu-latest
-    concurrency:
-      group: publish-gh-pages
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-      - name: Publish coverage
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./coverage
-          destination_dir: coverage
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: Update coverage
+  generate-coverage:
+    name: "Generate coverage"
+    uses: michaelbaril/shared/.github/workflows/run-tests.yml@main
+    with:
+      with-coverage: true
+  publish-coverage:
+    needs: generate-coverage
+    uses: michaelbaril/shared/.github/workflows/publish-coverage.yml@main
