@@ -8,6 +8,7 @@ use Baril\Sqlout\SearchIndex;
 use Baril\Sqlout\Tests\Models\Comment;
 use Baril\Sqlout\Tests\Models\Post;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Laravel\Scout\Builder as ScoutBuilder;
 use Wamania\Snowball\StemmerFactory;
 
 class SearchTest extends TestCase
@@ -48,6 +49,19 @@ class SearchTest extends TestCase
         $this->assertEquals(1, $search->count());
         $results = $search->get();
         $this->assertEquals($post->id, $results->first()->id);
+    }
+
+    public function test_paginated_search()
+    {
+        Post::all()->each(function ($post) {
+            $post->title = 'gloubiboulga';
+            $post->save();
+        });
+
+        $search = Post::search('gloubiboulga')->paginate(2);
+        $this->assertEquals(2, $search->count());
+        $this->assertEquals(5, $search->total());
+        $this->assertEquals(3, $search->lastPage());
     }
 
     public function test_search_by_model()
@@ -91,7 +105,7 @@ class SearchTest extends TestCase
         $this->assertEquals($posts[2]->id, $results[0]->id);
     }
 
-    public function test_forwarded_scope()
+    public function test_where_and_forwarded_scope()
     {
         Comment::query()->update(['text' => 'schtroumpf']);
         Comment::all()->searchable();
@@ -100,6 +114,10 @@ class SearchTest extends TestCase
         $comment->save();
 
         $this->assertEquals(5, Comment::search('schtroumpf')->count());
+
+        $results = Comment::search('schtroumpf')->where('author', 'gargamel')->get();
+        $this->assertCount(1, $results);
+        $this->assertEquals($comment->id, $results[0]->id);
 
         $results = Comment::search('schtroumpf')->author('gargamel')->get();
         $this->assertCount(1, $results);
@@ -110,6 +128,12 @@ class SearchTest extends TestCase
         })->get();
         $this->assertCount(1, $results);
         $this->assertEquals($comment->id, $results[0]->id);
+    }
+
+    public function test_macro_has_priority_over_scope()
+    {
+        ScoutBuilder::macro('author', function () { return 'gargamel'; });
+        $this->assertEquals('gargamel', Comment::search('schtroumpf')->author());
     }
 
     public function test_ordering()
@@ -144,6 +168,18 @@ class SearchTest extends TestCase
         $log = DB::getQueryLog();
         $query = end($log)['query'];
         $this->assertStringContainsString(Builder::NATURAL_LANGUAGE, $query);
+
+        app('config')->set('scout.sqlout.default_mode', Builder::NATURAL_LANGUAGE);
+
+        Post::search('kiki')->inBooleanMode()->get();
+        $log = DB::getQueryLog();
+        $query = end($log)['query'];
+        $this->assertStringContainsString(Builder::BOOLEAN, $query);
+
+        Post::search('kiki')->withQueryExpansion()->get();
+        $log = DB::getQueryLog();
+        $query = end($log)['query'];
+        $this->assertStringContainsString(Builder::QUERY_EXPANSION, $query);
     }
 
     public function test_filters()
@@ -227,6 +263,7 @@ class SearchTest extends TestCase
         Post::first()->delete();
         $this->assertEquals(4, Post::search('bitch')->count());
         $this->assertEquals(5, Post::search('bitch')->withTrashed()->count());
+        $this->assertEquals(1, Post::search('bitch')->onlyTrashed()->count());
     }
 
     public function test_morph_map()
