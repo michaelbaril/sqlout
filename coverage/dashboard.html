@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>Dashboard for /home/runner/work/sqlout/sqlout/src</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="_css/bootstrap.min.css?v=11.0.9" rel="stylesheet" type="text/css">
-  <link href="_css/nv.d3.min.css?v=11.0.9" rel="stylesheet" type="text/css">
-  <link href="_css/style.css?v=11.0.9" rel="stylesheet" type="text/css">
+  <link href="_css/bootstrap.min.css?v=12.3.0" rel="stylesheet" type="text/css">
+  <link href="_css/billboard.min.css?v=12.3.0" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=12.3.0" rel="stylesheet" type="text/css">
   <link href="_css/custom.css" rel="stylesheet" type="text/css">
  </head>
  <body>
@@ -34,7 +34,7 @@
    <div class="row">
     <div class="col-md-6">
      <h3>Coverage Distribution</h3>
-     <div id="classCoverageDistribution" style="height: 300px;">
+     <div id="classesCoverageDistribution" style="height: 300px;">
        <svg></svg>
      </div>
     </div>
@@ -58,8 +58,6 @@
        </thead>
        <tbody>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#10">Baril\Sqlout\Migrations\MigrateMakeCommand</a></td><td class="text-right">3%</td></tr>
-       <tr><td><a href="Builder.php.html#8">Baril\Sqlout\Builder</a></td><td class="text-right">69%</td></tr>
-       <tr><td><a href="Engine.php.html#13">Baril\Sqlout\Engine</a></td><td class="text-right">86%</td></tr>
 
        </tbody>
       </table>
@@ -77,8 +75,6 @@
        </thead>
        <tbody>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#10">Baril\Sqlout\Migrations\MigrateMakeCommand</a></td><td class="text-right">51</td></tr>
-       <tr><td><a href="Engine.php.html#13">Baril\Sqlout\Engine</a></td><td class="text-right">44</td></tr>
-       <tr><td><a href="Builder.php.html#8">Baril\Sqlout\Builder</a></td><td class="text-right">21</td></tr>
 
        </tbody>
       </table>
@@ -93,7 +89,7 @@
    <div class="row">
     <div class="col-md-6">
      <h3>Coverage Distribution</h3>
-     <div id="methodCoverageDistribution" style="height: 300px;">
+     <div id="methodsCoverageDistribution" style="height: 300px;">
        <svg></svg>
      </div>
     </div>
@@ -116,11 +112,6 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Builder.php.html#68"><abbr title="Baril\Sqlout\Builder::where">where</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Builder.php.html#91"><abbr title="Baril\Sqlout\Builder::onlyTrashed">onlyTrashed</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Builder.php.html#148"><abbr title="Baril\Sqlout\Builder::withQueryExpansion">withQueryExpansion</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Builder.php.html#159"><abbr title="Baril\Sqlout\Builder::inBooleanMode">inBooleanMode</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Engine.php.html#137"><abbr title="Baril\Sqlout\Engine::paginate">paginate</abbr></a></td><td class="text-right">0%</td></tr>
        <tr><td><a href="Engine.php.html#236"><abbr title="Baril\Sqlout\Engine::mapIds">mapIds</abbr></a></td><td class="text-right">0%</td></tr>
        <tr><td><a href="Engine.php.html#301"><abbr title="Baril\Sqlout\Engine::flush">flush</abbr></a></td><td class="text-right">0%</td></tr>
        <tr><td><a href="Engine.php.html#313"><abbr title="Baril\Sqlout\Engine::createIndex">createIndex</abbr></a></td><td class="text-right">0%</td></tr>
@@ -128,9 +119,7 @@
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#24"><abbr title="Baril\Sqlout\Migrations\MigrateMakeCommand::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#36"><abbr title="Baril\Sqlout\Migrations\MigrateMakeCommand::writeSqloutMigration">writeSqloutMigration</abbr></a></td><td class="text-right">0%</td></tr>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#61"><abbr title="Baril\Sqlout\Migrations\MigrateMakeCommand::getMigrationContents">getMigrationContents</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Builder.php.html#45"><abbr title="Baril\Sqlout\Builder::__call">__call</abbr></a></td><td class="text-right">75%</td></tr>
        <tr><td><a href="Engine.php.html#105"><abbr title="Baril\Sqlout\Engine::delete">delete</abbr></a></td><td class="text-right">83%</td></tr>
-       <tr><td><a href="Engine.php.html#152"><abbr title="Baril\Sqlout\Engine::performSearch">performSearch</abbr></a></td><td class="text-right">89%</td></tr>
 
        </tbody>
       </table>
@@ -147,10 +136,8 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Engine.php.html#152"><abbr title="Baril\Sqlout\Engine::performSearch">performSearch</abbr></a></td><td class="text-right">12</td></tr>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#24"><abbr title="Baril\Sqlout\Migrations\MigrateMakeCommand::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
        <tr><td><a href="Migrations/MigrateMakeCommand.php.html#36"><abbr title="Baril\Sqlout\Migrations\MigrateMakeCommand::writeSqloutMigration">writeSqloutMigration</abbr></a></td><td class="text-right">6</td></tr>
-       <tr><td><a href="Builder.php.html#45"><abbr title="Baril\Sqlout\Builder::__call">__call</abbr></a></td><td class="text-right">2</td></tr>
        <tr><td><a href="Engine.php.html#105"><abbr title="Baril\Sqlout\Engine::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
 
        </tbody>
@@ -161,149 +148,161 @@
    <footer>
     <hr/>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.9</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.28</a> and <a href="https://phpunit.de/">PHPUnit 11.5.15</a> at Mon Mar 24 18:14:30 UTC 2025.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 12.3.0</a> using <a href="https://www.php.net/" target="_top">PHP 8.4.8</a> and <a href="https://phpunit.de/">PHPUnit 12.2.2</a> at Mon Jun 16 10:53:47 UTC 2025.</small>
     </p>
    </footer>
   </div>
-  <script src="_js/jquery.min.js?v=11.0.9" type="text/javascript"></script>
-  <script src="_js/d3.min.js?v=11.0.9" type="text/javascript"></script>
-  <script src="_js/nv.d3.min.js?v=11.0.9" type="text/javascript"></script>
-  <script type="text/javascript">
-$(document).ready(function() {
-  nv.addGraph(function() {
-    var chart = nv.models.multiBarChart();
-    chart.tooltips(false)
-      .showControls(false)
-      .showLegend(false)
-      .reduceXTicks(false)
-      .staggerLabels(true)
-      .yAxis.tickFormat(d3.format('d'));
-
-    d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,1,0,0,0,0,0,1,0,1,0,4], "Class Coverage"))
-      .transition().duration(500).call(chart);
-
-    nv.utils.windowResize(chart.update);
-
-    return chart;
+  <script src="_js/billboard.pkgd.min.js?v=12.3.0" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[100,15,"Builder.php.html#8","Baril\\Sqlout\\Builder"],[91.37931034482759,40,"Engine.php.html#13","Baril\\Sqlout\\Engine"],[3.125,7,"Migrations\/MigrateMakeCommand.php.html#10","Baril\\Sqlout\\Migrations\\MigrateMakeCommand"],[100,1,"Migrations\/MigrationCreator.php.html#8","Baril\\Sqlout\\Migrations\\MigrationCreator"],[100,1,"SearchIndex.php.html#7","Baril\\Sqlout\\SearchIndex"],[100,2,"SqloutServiceProvider.php.html#9","Baril\\Sqlout\\SqloutServiceProvider"],[100,3,"Searchable.php.html#7","Baril\\Sqlout\\Searchable"]]</script>
+  <script type="application/json" id="complexity_method">[[100,2,"Builder.php.html#37","Baril\\Sqlout\\Builder::__construct"],[100,2,"Builder.php.html#45","Baril\\Sqlout\\Builder::__call"],[100,1,"Builder.php.html#55","Baril\\Sqlout\\Builder::scope"],[100,1,"Builder.php.html#68","Baril\\Sqlout\\Builder::where"],[100,1,"Builder.php.html#80","Baril\\Sqlout\\Builder::withTrashed"],[100,1,"Builder.php.html#91","Baril\\Sqlout\\Builder::onlyTrashed"],[100,1,"Builder.php.html#103","Baril\\Sqlout\\Builder::orderByScore"],[100,1,"Builder.php.html#114","Baril\\Sqlout\\Builder::only"],[100,1,"Builder.php.html#125","Baril\\Sqlout\\Builder::mode"],[100,1,"Builder.php.html#137","Baril\\Sqlout\\Builder::inNaturalLanguageMode"],[100,1,"Builder.php.html#148","Baril\\Sqlout\\Builder::withQueryExpansion"],[100,1,"Builder.php.html#159","Baril\\Sqlout\\Builder::inBooleanMode"],[100,1,"Builder.php.html#169","Baril\\Sqlout\\Builder::count"],[100,1,"Engine.php.html#15","Baril\\Sqlout\\Engine::newSearchQuery"],[90.47619047619048,13,"Engine.php.html#31","Baril\\Sqlout\\Engine::processString"],[100,2,"Engine.php.html#79","Baril\\Sqlout\\Engine::update"],[83.33333333333334,2,"Engine.php.html#105","Baril\\Sqlout\\Engine::delete"],[100,1,"Engine.php.html#122","Baril\\Sqlout\\Engine::search"],[100,1,"Engine.php.html#137","Baril\\Sqlout\\Engine::paginate"],[93.87755102040816,12,"Engine.php.html#152","Baril\\Sqlout\\Engine::performSearch"],[0,1,"Engine.php.html#236","Baril\\Sqlout\\Engine::mapIds"],[100,1,"Engine.php.html#247","Baril\\Sqlout\\Engine::getRecord"],[100,1,"Engine.php.html#261","Baril\\Sqlout\\Engine::map"],[100,1,"Engine.php.html#277","Baril\\Sqlout\\Engine::lazyMap"],[100,1,"Engine.php.html#290","Baril\\Sqlout\\Engine::getTotalCount"],[0,1,"Engine.php.html#301","Baril\\Sqlout\\Engine::flush"],[0,1,"Engine.php.html#313","Baril\\Sqlout\\Engine::createIndex"],[0,1,"Engine.php.html#324","Baril\\Sqlout\\Engine::deleteIndex"],[100,1,"Migrations\/MigrateMakeCommand.php.html#19","Baril\\Sqlout\\Migrations\\MigrateMakeCommand::__construct"],[0,3,"Migrations\/MigrateMakeCommand.php.html#24","Baril\\Sqlout\\Migrations\\MigrateMakeCommand::handle"],[0,2,"Migrations\/MigrateMakeCommand.php.html#36","Baril\\Sqlout\\Migrations\\MigrateMakeCommand::writeSqloutMigration"],[0,1,"Migrations\/MigrateMakeCommand.php.html#61","Baril\\Sqlout\\Migrations\\MigrateMakeCommand::getMigrationContents"],[100,1,"Migrations\/MigrationCreator.php.html#10","Baril\\Sqlout\\Migrations\\MigrationCreator::__construct"],[100,1,"SearchIndex.php.html#20","Baril\\Sqlout\\SearchIndex::record"],[100,2,"SqloutServiceProvider.php.html#16","Baril\\Sqlout\\SqloutServiceProvider::boot"],[100,2,"Searchable.php.html#18","Baril\\Sqlout\\Searchable::search"],[100,1,"Searchable.php.html#34","Baril\\Sqlout\\Searchable::getSearchWeight"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
   });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [0,1,0,0,0,0,0,0,0,0,1,5])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [7,0,0,0,0,0,0,0,0,1,2,27])
+  );
 
-  nv.addGraph(function() {
-    var chart = nv.models.multiBarChart();
-    chart.tooltips(false)
-      .showControls(false)
-      .showLegend(false)
-      .reduceXTicks(false)
-      .staggerLabels(true)
-      .yAxis.tickFormat(d3.format('d'));
-
-    d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([12,0,0,0,0,0,0,0,1,2,1,21], "Method Coverage"))
-      .transition().duration(500).call(chart);
-
-    nv.utils.windowResize(chart.update);
-
-    return chart;
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
   });
-
-  function getCoverageDistributionData(data, label) {
-    var labels = [
-      '0%',
-      '0-10%',
-      '10-20%',
-      '20-30%',
-      '30-40%',
-      '40-50%',
-      '50-60%',
-      '60-70%',
-      '70-80%',
-      '80-90%',
-      '90-100%',
-      '100%'
-    ];
-    var values = [];
-    $.each(labels, function(key) {
-      values.push({x: labels[key], y: data[key]});
-    });
-
-    return [
-      {
-        key: label,
-        values: values,
-        color: "#4572A7"
-      }
-    ];
-  }
-  nv.addGraph(function() {
-    var chart = nv.models.scatterChart()
-      .showDistX(true)
-      .showDistY(true)
-      .showLegend(false)
-      .forceX([0, 100]);
-    chart.tooltipContent(function(graph) {
-      return '<p>' + graph.point.class + '</p>';
-    });
-
-    chart.xAxis.axisLabel('Code Coverage (in percent)');
-    chart.yAxis.axisLabel('Cyclomatic Complexity');
-
-    d3.select('#classComplexity svg')
-      .datum(getComplexityData([[69.23076923076923,15,"<a href=\"Builder.php.html#8\">Baril\\Sqlout\\Builder<\/a>"],[86.20689655172413,40,"<a href=\"Engine.php.html#13\">Baril\\Sqlout\\Engine<\/a>"],[3.125,7,"<a href=\"Migrations\/MigrateMakeCommand.php.html#10\">Baril\\Sqlout\\Migrations\\MigrateMakeCommand<\/a>"],[100,1,"<a href=\"Migrations\/MigrationCreator.php.html#8\">Baril\\Sqlout\\Migrations\\MigrationCreator<\/a>"],[100,1,"<a href=\"SearchIndex.php.html#7\">Baril\\Sqlout\\SearchIndex<\/a>"],[100,2,"<a href=\"SqloutServiceProvider.php.html#9\">Baril\\Sqlout\\SqloutServiceProvider<\/a>"],[100,3,"<a href=\"Searchable.php.html#7\">Baril\\Sqlout\\Searchable<\/a>"]], 'Class Complexity'))
-      .transition()
-      .duration(500)
-      .call(chart);
-
-    nv.utils.windowResize(chart.update);
-
-    return chart;
-  });
-
-  nv.addGraph(function() {
-    var chart = nv.models.scatterChart()
-      .showDistX(true)
-      .showDistY(true)
-      .showLegend(false)
-      .forceX([0, 100]);
-    chart.tooltipContent(function(graph) {
-      return '<p>' + graph.point.class + '</p>';
-    });
-
-    chart.xAxis.axisLabel('Code Coverage (in percent)');
-    chart.yAxis.axisLabel('Method Complexity');
-
-    d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,2,"<a href=\"Builder.php.html#37\">Baril\\Sqlout\\Builder::__construct<\/a>"],[75,2,"<a href=\"Builder.php.html#45\">Baril\\Sqlout\\Builder::__call<\/a>"],[100,1,"<a href=\"Builder.php.html#55\">Baril\\Sqlout\\Builder::scope<\/a>"],[0,1,"<a href=\"Builder.php.html#68\">Baril\\Sqlout\\Builder::where<\/a>"],[100,1,"<a href=\"Builder.php.html#80\">Baril\\Sqlout\\Builder::withTrashed<\/a>"],[0,1,"<a href=\"Builder.php.html#91\">Baril\\Sqlout\\Builder::onlyTrashed<\/a>"],[100,1,"<a href=\"Builder.php.html#103\">Baril\\Sqlout\\Builder::orderByScore<\/a>"],[100,1,"<a href=\"Builder.php.html#114\">Baril\\Sqlout\\Builder::only<\/a>"],[100,1,"<a href=\"Builder.php.html#125\">Baril\\Sqlout\\Builder::mode<\/a>"],[100,1,"<a href=\"Builder.php.html#137\">Baril\\Sqlout\\Builder::inNaturalLanguageMode<\/a>"],[0,1,"<a href=\"Builder.php.html#148\">Baril\\Sqlout\\Builder::withQueryExpansion<\/a>"],[0,1,"<a href=\"Builder.php.html#159\">Baril\\Sqlout\\Builder::inBooleanMode<\/a>"],[100,1,"<a href=\"Builder.php.html#169\">Baril\\Sqlout\\Builder::count<\/a>"],[100,1,"<a href=\"Engine.php.html#15\">Baril\\Sqlout\\Engine::newSearchQuery<\/a>"],[90.47619047619048,13,"<a href=\"Engine.php.html#31\">Baril\\Sqlout\\Engine::processString<\/a>"],[100,2,"<a href=\"Engine.php.html#79\">Baril\\Sqlout\\Engine::update<\/a>"],[83.33333333333334,2,"<a href=\"Engine.php.html#105\">Baril\\Sqlout\\Engine::delete<\/a>"],[100,1,"<a href=\"Engine.php.html#122\">Baril\\Sqlout\\Engine::search<\/a>"],[0,1,"<a href=\"Engine.php.html#137\">Baril\\Sqlout\\Engine::paginate<\/a>"],[89.79591836734694,12,"<a href=\"Engine.php.html#152\">Baril\\Sqlout\\Engine::performSearch<\/a>"],[0,1,"<a href=\"Engine.php.html#236\">Baril\\Sqlout\\Engine::mapIds<\/a>"],[100,1,"<a href=\"Engine.php.html#247\">Baril\\Sqlout\\Engine::getRecord<\/a>"],[100,1,"<a href=\"Engine.php.html#261\">Baril\\Sqlout\\Engine::map<\/a>"],[100,1,"<a href=\"Engine.php.html#277\">Baril\\Sqlout\\Engine::lazyMap<\/a>"],[100,1,"<a href=\"Engine.php.html#290\">Baril\\Sqlout\\Engine::getTotalCount<\/a>"],[0,1,"<a href=\"Engine.php.html#301\">Baril\\Sqlout\\Engine::flush<\/a>"],[0,1,"<a href=\"Engine.php.html#313\">Baril\\Sqlout\\Engine::createIndex<\/a>"],[0,1,"<a href=\"Engine.php.html#324\">Baril\\Sqlout\\Engine::deleteIndex<\/a>"],[100,1,"<a href=\"Migrations\/MigrateMakeCommand.php.html#19\">Baril\\Sqlout\\Migrations\\MigrateMakeCommand::__construct<\/a>"],[0,3,"<a href=\"Migrations\/MigrateMakeCommand.php.html#24\">Baril\\Sqlout\\Migrations\\MigrateMakeCommand::handle<\/a>"],[0,2,"<a href=\"Migrations\/MigrateMakeCommand.php.html#36\">Baril\\Sqlout\\Migrations\\MigrateMakeCommand::writeSqloutMigration<\/a>"],[0,1,"<a href=\"Migrations\/MigrateMakeCommand.php.html#61\">Baril\\Sqlout\\Migrations\\MigrateMakeCommand::getMigrationContents<\/a>"],[100,1,"<a href=\"Migrations\/MigrationCreator.php.html#10\">Baril\\Sqlout\\Migrations\\MigrationCreator::__construct<\/a>"],[100,1,"<a href=\"SearchIndex.php.html#20\">Baril\\Sqlout\\SearchIndex::record<\/a>"],[100,2,"<a href=\"SqloutServiceProvider.php.html#16\">Baril\\Sqlout\\SqloutServiceProvider::boot<\/a>"],[100,2,"<a href=\"Searchable.php.html#18\">Baril\\Sqlout\\Searchable::search<\/a>"],[100,1,"<a href=\"Searchable.php.html#34\">Baril\\Sqlout\\Searchable::getSearchWeight<\/a>"]], 'Method Complexity'))
-      .transition()
-      .duration(500)
-      .call(chart);
-
-    nv.utils.windowResize(chart.update);
-
-    return chart;
-  });
-
-  function getComplexityData(data, label) {
-    var values = [];
-    $.each(data, function(key) {
-      var value = Math.round(data[key][0]*100) / 100;
-      values.push({
-        x: value,
-        y: data[key][1],
-        class: data[key][2],
-        size: 0.05,
-        shape: 'diamond'
-      });
-    });
-
-    return [
-      {
-        key: label,
-        values: values,
-        color: "#4572A7"
-      }
-    ];
-  }
-});
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
   </script>
  </body>
 </html>
