@@ -34,9 +34,6 @@
         "wamania/php-stemmer": "PHP stemmer that can be used together with Sqlout."
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "5.0.x-dev"
-        },
         "laravel": {
             "providers": [
                 "Baril\\Sqlout\\SqloutServiceProvider"
