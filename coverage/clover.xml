@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750072208">
-  <project timestamp="1750072208" name="Clover Coverage">
+<coverage generated="1750072513">
+  <project timestamp="1750072513" name="Clover Coverage">
     <package name="Baril\Sqlout">
       <file name="/home/runner/work/sqlout/sqlout/src/Builder.php">
         <class name="Baril\Sqlout\Builder" namespace="Baril\Sqlout">
