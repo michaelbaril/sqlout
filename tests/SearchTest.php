@@ -2,12 +2,14 @@
 
 namespace Baril\Sqlout\Tests;
 
-use DB;
 use Baril\Sqlout\Builder;
 use Baril\Sqlout\SearchIndex;
 use Baril\Sqlout\Tests\Models\Comment;
 use Baril\Sqlout\Tests\Models\Post;
+use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Facades\DB as DB;
+use Illuminate\Support\LazyCollection;
 use Laravel\Scout\Builder as ScoutBuilder;
 use Wamania\Snowball\StemmerFactory;
 
@@ -284,9 +286,35 @@ class SearchTest extends TestCase
         });
 
         $search = Post::search('kikikuku');
-        $results = $search->get()->all();
-        $lazyResults = $search->cursor()->all();
+        $results = $search->get();
+        $lazyResults = $search->cursor();
+        $this->assertInstanceOf(LazyCollection::class, $lazyResults);
         $this->assertCount(3, $lazyResults);
-        $this->assertEquals($results, $lazyResults);
+        $this->assertEquals($results->all(), $lazyResults->all());
+    }
+
+    public function test_limit()
+    {
+        Post::query()->update(['title' => 'testing limit']);
+        Post::all()->searchable();
+
+        $search = Post::search('limit')->take(1);
+        $this->assertEquals(1, $search->get()->count());
+    }
+
+    public function test_paginate()
+    {
+        Post::query()->update(['title' => 'testing paginate']);
+        Post::all()->searchable();
+        $ids = Post::pluck('id')->sort();
+
+        $paginator = Post::search('paginate')->orderBy('id')->simplePaginate(2, 'page', 2);
+        $this->assertInstanceOf(Paginator::class, $paginator);
+        $this->assertCount(2, $paginator->items());
+        $this->assertEquals(2, $paginator->currentPage());
+        $this->assertEquals(
+            $ids->skip(2)->take(2)->values()->all(),
+            array_map(fn($item) => $item->id, $paginator->items())
+        );
     }
 }
