@@ -162,13 +162,6 @@ class Engine extends ScoutEngine
                 ->groupBy('record_id')
                 ->selectRaw("sum(weight * (match(content) against (? $mode))) as _score", [$terms])
                 ->addSelect(['record_type', 'record_id']);
-        foreach ($builder->wheres as $field => $value) {
-            if (is_array($value) || $value instanceof Arrayable) {
-                $query->whereIn($field, $value);
-            } else {
-                $query->where($field, $value);
-            }
-        }
 
         // Order clauses:
         if (!$builder->orders) {
@@ -193,16 +186,8 @@ class Engine extends ScoutEngine
             }
         }
 
-        // Applying scopes to the model query:
         $query->whereHasMorph('record', get_class($builder->model), function ($query) use ($builder) {
-            foreach ($builder->scopes as $scope) {
-                if ($scope instanceof Closure) {
-                    $scope($query);
-                } else {
-                    list($method, $parameters) = $scope;
-                    $query->$method(...$parameters);
-                }
-            }
+            $this->applyQueryScopes($builder, $query);
         });
 
         // Applying limit/offset:
@@ -224,6 +209,51 @@ class Engine extends ScoutEngine
         $results['query'] = $query->with('record');
 
         return $results;
+    }
+
+    /**
+     * @param  \Baril\Sqlout\Builder  $builder
+     * @param  \Illuminate\Database\Eloquent\Query\Builder  $query
+     * @return void
+     */
+    protected function applyQueryScopes($builder, $query)
+    {
+        $softDeleted = $builder->wheres['__soft_deleted'] ?? null;
+        if (!method_exists($builder->model, 'bootSoftDeletes')) {
+            // Model is not soft deletable
+        } elseif (is_null($softDeleted)) {
+            $query->withTrashed();
+        } elseif ($softDeleted) {
+            $query->onlyTrashed();
+        } else {
+            $query->withoutTrashed();
+        }
+        unset($builder->wheres['__soft_deleted']);
+        foreach ($builder->wheres as $field => $value) {
+            if (is_array($value) || $value instanceof Arrayable) {
+                $query->whereIn($field, $value);
+            } else {
+                $query->where($field, $value);
+            }
+        }
+        foreach ($builder->whereIns ?? [] as $field => $values) {
+            $query->whereIn($field, $values);
+        }
+        foreach ($builder->whereNotIns ?? [] as $field => $values) {
+            $query->whereNotIn($field, $values);
+        }
+        foreach ($builder->scopes as $scope) {
+            if ($scope instanceof Closure) {
+                $scope($query);
+            } else {
+                list($method, $parameters) = $scope;
+                $query->$method(...$parameters);
+            }
+        }
+        if ($builder->queryCallback) {
+            $callback = $builder->queryCallback;
+            $callback($query);
+        }
     }
 
     /**

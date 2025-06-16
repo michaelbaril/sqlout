@@ -170,11 +170,12 @@ $results = Post::search('you see what happens larry')
 > any effect. See below for the proper way to order results.
 
 If the name of your scope collides with the name of a method of the
-`Baril\Sqlout\Builder` object, you can wrap your scope into the `scope` method:
+`Baril\Sqlout\Builder` object, you still have the option to use Scout's
+`query` method:
 
 ```php
 $results = Post::search('ve vant ze money lebowski')
-    ->scope(function ($query) {
+    ->query(function ($query) {
         $query->within('something');
     })
     ->get();

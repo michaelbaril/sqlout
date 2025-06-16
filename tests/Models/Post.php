@@ -14,6 +14,8 @@ class Post extends Model
     use SoftDeletes;
     use Searchable;
 
+    protected $guarded = [];
+
     protected $weights = [
         'title' => 4,
     ];
