@@ -107,7 +107,51 @@ class SearchTest extends TestCase
         $this->assertEquals($posts[2]->id, $results[0]->id);
     }
 
-    public function test_where_and_forwarded_scope()
+    public function test_wheres()
+    {
+        Comment::query()->update([
+            'author' => 'kiki',
+            'text' => 'kuku',
+            'post_id' => 1,
+        ]);
+        Comment::all()->searchable();
+        $comments = Comment::all();
+        $comments[0]->update([
+            'author' => 'toto',
+            'post_id' => 2,
+        ]);
+        $comments[1]->update([
+            'author' => 'toto',
+        ]);
+        $comments[2]->update([
+            'author' => 'tutu',
+            'post_id' => 2,
+        ]);
+
+        $search = Comment::search('kuku')->where('author', 'toto');
+        $this->assertEquals(2, $search->count());
+        $this->assertEquals(2, $search->get()->count());
+
+        if (method_exists(Builder::class, 'whereIn')) {
+            $search = Comment::search('kuku')->whereIn('author', ['toto', 'tutu']);
+            $this->assertEquals(3, $search->count());
+            $this->assertEquals(3, $search->get()->count());
+    
+            $search = Comment::search('kuku')
+                ->whereIn('author', ['toto', 'kiki'])
+                ->where('post_id', 1);
+            $this->assertEquals(3, $search->count());
+            $this->assertEquals(3, $search->get()->count());
+        }
+
+        if (method_exists(Builder::class, 'whereNotIn')) {
+            $search = Comment::search('kuku')->whereNotIn('author', ['toto', 'tutu']);
+            $this->assertEquals(2, $search->count());
+            $this->assertEquals(2, $search->get()->count());
+        }
+    }
+
+    public function test_forwarded_scope()
     {
         Comment::query()->update(['text' => 'schtroumpf']);
         Comment::all()->searchable();
@@ -117,15 +161,11 @@ class SearchTest extends TestCase
 
         $this->assertEquals(5, Comment::search('schtroumpf')->count());
 
-        $results = Comment::search('schtroumpf')->where('author', 'gargamel')->get();
-        $this->assertCount(1, $results);
-        $this->assertEquals($comment->id, $results[0]->id);
-
         $results = Comment::search('schtroumpf')->author('gargamel')->get();
         $this->assertCount(1, $results);
         $this->assertEquals($comment->id, $results[0]->id);
 
-        $results = Comment::search('schtroumpf')->scope(function ($builder) {
+        $results = Comment::search('schtroumpf')->query(function ($builder) {
             $builder->author('gargamel');
         })->get();
         $this->assertCount(1, $results);
