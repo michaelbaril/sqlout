@@ -6,7 +6,6 @@ use Closure;
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
-use Illuminate\Support\LazyCollection;
 use Laravel\Scout\Engines\Engine as ScoutEngine;
 use Laravel\Scout\Builder;
 
