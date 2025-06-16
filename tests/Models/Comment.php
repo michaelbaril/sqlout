@@ -12,6 +12,8 @@ class Comment extends Model
     use HasFactory;
     use Searchable;
 
+    protected $guarded = [];
+
     public function post()
     {
         return $this->belongsTo(Post::class);
