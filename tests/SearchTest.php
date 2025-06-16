@@ -314,7 +314,7 @@ class SearchTest extends TestCase
         $this->assertEquals(2, $paginator->currentPage());
         $this->assertEquals(
             $ids->skip(2)->take(2)->values()->all(),
-            array_map(fn($item) => $item->id, $paginator->items())
+            array_map(function ($item) { return $item->id; }, $paginator->items())
         );
     }
 }
