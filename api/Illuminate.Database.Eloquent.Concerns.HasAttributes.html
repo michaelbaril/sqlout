@@ -101,6 +101,11 @@
 							QueriesRelationships
 						</a>
 					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html">
+							TransformsToResource
+						</a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -174,6 +179,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -256,7 +262,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>attributesToArray(): array</code>
+				<code>attributesToArray(): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -287,7 +293,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>addDateAttributesToArray(<span>array <var>$attributes</var></span>): array</code>
+				<code>addDateAttributesToArray(<span>array&lt;string, mixed&gt; <var>$attributes</var></span>): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -318,7 +324,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>addMutatedAttributesToArray(<span>array <var>$attributes</var></span>, <span>array <var>$mutatedAttributes</var></span>): array</code>
+				<code>addMutatedAttributesToArray(
+	<span>array&lt;string, mixed&gt; <var>$attributes</var></span>,
+	<span>array&lt;string, mixed&gt; <var>$mutatedAttributes</var></span>,
+): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -349,7 +358,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>addCastAttributesToArray(<span>array <var>$attributes</var></span>, <span>array <var>$mutatedAttributes</var></span>): array</code>
+				<code>addCastAttributesToArray(
+	<span>array&lt;string, mixed&gt; <var>$attributes</var></span>,
+	<span>array&lt;string, mixed&gt; <var>$mutatedAttributes</var></span>,
+): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -380,7 +392,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getArrayableAttributes(): array</code>
+				<code>getArrayableAttributes(): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1280,6 +1292,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_serializeClassCastableAttribute">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="compareClassCastableAttribute" id="_compareClassCastableAttribute">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>compareClassCastableAttribute(<span>string <var>$key</var></span>, <span>mixed <var>$original</var></span>, <span>mixed <var>$value</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Compare two values for the given attribute using the custom cast class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Compare two values for the given attribute using the custom cast class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_compareClassCastableAttribute">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="isCustomDateTimeCast" id="_isCustomDateTimeCast">
@@ -2760,6 +2803,37 @@
 			<a href="#_isClassSerializable">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="isClassComparable" id="_isClassComparable">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>isClassComparable(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if the key is comparable using a custom class.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if the key is comparable using a custom class.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_isClassComparable">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="resolveCasterClass" id="_resolveCasterClass">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -3050,7 +3124,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+				<code>getOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): ($key is null&nbsp;?&nbsp;array&lt;string, mixed&gt;&nbsp;:&nbsp;mixed)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3081,7 +3155,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getOriginalWithoutRewindingModel(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+				<code>getOriginalWithoutRewindingModel(
+	<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>,
+	<span>mixed <var>$default</var> = <span class="php-kw">null</span></span>,
+): ($key is null&nbsp;?&nbsp;array&lt;string, mixed&gt;&nbsp;:&nbsp;mixed)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3112,7 +3189,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getRawOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): mixed|array</code>
+				<code>getRawOriginal(<span>string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>mixed <var>$default</var> = <span class="php-kw">null</span></span>): ($key is null&nbsp;?&nbsp;array&lt;string, mixed&gt;&nbsp;:&nbsp;mixed)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3143,7 +3220,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>only(<span>array|mixed <var>$attributes</var></span>): array</code>
+				<code>only(<span>array&lt;string&gt;|mixed <var>$attributes</var></span>): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3161,6 +3238,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_only">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="except" id="_except">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>except(<span>array&lt;string&gt;|mixed <var>$attributes</var></span>): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all attributes except the given ones.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all attributes except the given ones.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_except">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="syncOriginal" id="_syncOriginal">
@@ -3236,7 +3344,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>syncOriginalAttributes(<span>array|string <var>$attributes</var></span>): $this</code>
+				<code>syncOriginalAttributes(<span>array&lt;string&gt;|string <var>$attributes</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3298,7 +3406,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>isDirty(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+				<code>isDirty(<span>array&lt;string&gt;|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3329,7 +3437,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>isClean(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+				<code>isClean(<span>array&lt;string&gt;|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3391,7 +3499,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>wasChanged(<span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+				<code>wasChanged(<span>array&lt;string&gt;|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3422,7 +3530,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>hasChanges(<span>array <var>$changes</var></span>, <span>array|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
+				<code>hasChanges(<span>array&lt;string&gt; <var>$changes</var></span>, <span>array&lt;string&gt;|string|null <var>$attributes</var> = <span class="php-kw">null</span></span>): bool</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3453,7 +3561,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getDirty(): array</code>
+				<code>getDirty(): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3484,7 +3592,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getDirtyForUpdate(): array</code>
+				<code>getDirtyForUpdate(): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3515,7 +3623,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getChanges(): array</code>
+				<code>getChanges(): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3533,6 +3641,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_getChanges">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getPrevious" id="_getPrevious">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getPrevious(): array&lt;string, mixed&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Get the attributes that were previously original before the model was last saved.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the attributes that were previously original before the model was last saved.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getPrevious">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="originalIsEquivalent" id="_originalIsEquivalent">
@@ -3608,7 +3747,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>append(<span>array|string <var>$attributes</var></span>): $this</code>
+				<code>append(<span>array&lt;string&gt;|string <var>$attributes</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3863,7 +4002,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
 			</td>
 
 			<td class="table-cell">
@@ -3887,7 +4026,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
 			</td>
 
 			<td class="table-cell">
@@ -3911,7 +4050,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
 			</td>
 
 			<td class="table-cell">
@@ -3923,6 +4062,30 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#$changes">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="previous" id="$previous">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array&lt;string, mixed&gt;</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$previous</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$previous">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="casts" id="$casts">

@@ -221,15 +221,15 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
 	</li>
 	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
+
+
+	</li>
+	<li>
 <a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphOneOrMany</span></a>
 
 
 	<ul class="classTree">
-	<li>
-<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
-
-
-	</li>
 	<li>
 <a href="Illuminate.Database.Eloquent.Relations.MorphOne.html"><span>Illuminate\Database\Eloquent\Relations\MorphOne</span></a>
 
@@ -241,12 +241,12 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
 	</li>
-	</ul>
-	</li>
 	<li>
-<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
 
 
+	</li>
+	</ul>
 	</li>
 	</ul>
 	</li>
@@ -277,7 +277,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>, <span>TDeclaringModel <var>$parent</var></span>, <span>string <var>$foreignKey</var></span>, <span>string <var>$localKey</var></span>): void</code>
+				<code>__construct(<span><a href="Illuminate.Database.Eloquent.Builder.html"><span title="Illuminate\Database\Eloquent\Builder">Builder</span></a>&lt;TRelatedModel&gt; <var>$query</var></span>, <span>TDeclaringModel <var>$parent</var></span>, <span>string <var>$foreignKey</var></span>, <span>string <var>$localKey</var></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1126,6 +1126,68 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_createManyQuietly">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forceCreateMany" id="_forceCreateMany">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forceCreateMany(<span>iterable <var>$records</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a Collection of new instances of the related model, allowing mass-assignment.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a Collection of new instances of the related model, allowing mass-assignment.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forceCreateMany">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="forceCreateManyQuietly" id="_forceCreateManyQuietly">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>forceCreateManyQuietly(<span>iterable <var>$records</var></span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a Collection of new instances of the related model, allowing mass-assignment and without raising any events to…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a Collection of new instances of the related model, allowing mass-assignment and without raising any events to the parent model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_forceCreateManyQuietly">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="setForeignAttributesForCreate" id="_setForeignAttributesForCreate">

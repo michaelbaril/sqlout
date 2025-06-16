@@ -101,6 +101,11 @@
 							QueriesRelationships
 						</a>
 					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html">
+							TransformsToResource
+						</a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -174,6 +179,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -274,6 +280,161 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_resolveRelationUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hasRelationAutoloadCallback" id="_hasRelationAutoloadCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>hasRelationAutoloadCallback(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Determine if a relationship autoloader callback has been defined.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Determine if a relationship autoloader callback has been defined.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_hasRelationAutoloadCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="autoloadRelationsUsing" id="_autoloadRelationsUsing">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>autoloadRelationsUsing(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>, <span>mixed <var>$context</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Define an automatic relationship autoloader callback for this model and its relations.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Define an automatic relationship autoloader callback for this model and its relations.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_autoloadRelationsUsing">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="attemptToAutoloadRelation" id="_attemptToAutoloadRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>attemptToAutoloadRelation(<span>string <var>$key</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Attempt to autoload the given relationship using the autoload callback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Attempt to autoload the given relationship using the autoload callback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_attemptToAutoloadRelation">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="invokeRelationAutoloadCallbackFor" id="_invokeRelationAutoloadCallbackFor">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>invokeRelationAutoloadCallbackFor(<span>string <var>$key</var></span>, <span>array <var>$tuples</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Invoke the relationship autoloader callback for the given relationships.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Invoke the relationship autoloader callback for the given relationships.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_invokeRelationAutoloadCallbackFor">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="propagateRelationAutoloadCallbackToRelation" id="_propagateRelationAutoloadCallbackToRelation">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>propagateRelationAutoloadCallbackToRelation(<span>string <var>$key</var></span>, <span>mixed <var>$models</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Propagate the relationship autoloader callback to the given related models.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Propagate the relationship autoloader callback to the given related models.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_propagateRelationAutoloadCallbackToRelation">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="hasOne" id="_hasOne">
@@ -1691,6 +1852,37 @@
 			<a href="#_setRelations">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="withRelationshipAutoloading" id="_withRelationshipAutoloading">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>withRelationshipAutoloading(): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Enable relationship autoloading for this model.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enable relationship autoloading for this model.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_withRelationshipAutoloading">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="withoutRelations" id="_withoutRelations">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -1869,6 +2061,54 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#$touches">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relationAutoloadCallback" id="$relationAutoloadCallback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a>|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relationAutoloadCallback</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relationAutoloadCallback">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="relationAutoloadContext" id="$relationAutoloadContext">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$relationAutoloadContext</var> = <span class="php-kw">null</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$relationAutoloadContext">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="manyMethods" id="$manyMethods">

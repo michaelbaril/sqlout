@@ -207,7 +207,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>): void</code>
+				<code>__construct(<span><a href="Illuminate.Database.Query.Builder.html"><span title="Illuminate\Database\Query\Builder">Builder</span></a> <var>$query</var></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -705,6 +705,130 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_hydrate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillAndInsert" id="_fillAndInsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillAndInsert(<span>array&lt;int, array&lt;string, mixed&gt;&gt; <var>$values</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Insert into the database after merging the model's default attributes, setting timestamps, and casting values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Insert into the database after merging the model's default attributes, setting timestamps, and casting values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillAndInsert">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillAndInsertOrIgnore" id="_fillAndInsertOrIgnore">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillAndInsertOrIgnore(<span>array&lt;int, array&lt;string, mixed&gt;&gt; <var>$values</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Insert (ignoring errors) into the database after merging the model's default attributes, setting timestamps, and…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Insert (ignoring errors) into the database after merging the model's default attributes, setting timestamps, and casting values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillAndInsertOrIgnore">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillAndInsertGetId" id="_fillAndInsertGetId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillAndInsertGetId(<span>array&lt;string, mixed&gt; <var>$values</var></span>): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Insert a record into the database and get its ID after merging the model's default attributes, setting timestamps, and…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Insert a record into the database and get its ID after merging the model's default attributes, setting timestamps, and casting values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillAndInsertGetId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="fillForInsert" id="_fillForInsert">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>fillForInsert(<span>array&lt;int, array&lt;string, mixed&gt;&gt; <var>$values</var></span>): array&lt;int, array&lt;string, mixed&gt;&gt;</code>
+
+
+	<div class="expandable-collapsedView">
+		Enrich the given values by merging in the model's default attributes, adding timestamps, and casting values.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Enrich the given values by merging in the model's default attributes, adding timestamps, and casting values.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_fillForInsert">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="fromQuery" id="_fromQuery">
@@ -2929,7 +3053,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>withAttributes(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array|string <var>$attributes</var></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>): $this</code>
+				<code>withAttributes(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array|string <var>$attributes</var></span>, <span>mixed <var>$value</var> = <span class="php-kw">null</span></span>, <span>bool <var>$asConditions</var> = <span class="php-kw">true</span></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3840,7 +3964,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunk">chunk()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkMap">chunkMap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_each">each()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkById">chunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkByIdDesc">chunkByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedChunkById">orderedChunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_eachById">eachById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazy">lazy()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyById">lazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyByIdDesc">lazyByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedLazyById">orderedLazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_first">first()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginateUsingCursor">paginateUsingCursor()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_getOriginalColumnNameForCursorPagination">getOriginalColumnNameForCursorPagination()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginator">paginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_simplePaginator">simplePaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_cursorPaginator">cursorPaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_tap">tap()</a></code>				</td>
+<code><a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunk">chunk()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkMap">chunkMap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_each">each()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkById">chunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkByIdDesc">chunkByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedChunkById">orderedChunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_eachById">eachById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazy">lazy()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyById">lazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyByIdDesc">lazyByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedLazyById">orderedLazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_first">first()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginateUsingCursor">paginateUsingCursor()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_getOriginalColumnNameForCursorPagination">getOriginalColumnNameForCursorPagination()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginator">paginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_simplePaginator">simplePaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_cursorPaginator">cursorPaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_tap">tap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_pipe">pipe()</a></code>				</td>
 			</tr>
 		</table>
 
@@ -3860,7 +3984,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_has">has()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_hasNested">hasNested()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orHas">orHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_doesntHave">doesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orDoesntHave">orDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereHas">whereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withWhereHas">withWhereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereHas">orWhereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHave">whereDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHave">orWhereDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_hasMorph">hasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getBelongsToRelation">getBelongsToRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orHasMorph">orHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_doesntHaveMorph">doesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orDoesntHaveMorph">orDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereHasMorph">whereHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereHasMorph">orWhereHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHaveMorph">whereDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHaveMorph">orWhereDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereRelation">whereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withWhereRelation">withWhereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereRelation">orWhereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHaveRelation">whereDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHaveRelation">orWhereDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphRelation">whereMorphRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphRelation">orWhereMorphRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphDoesntHaveRelation">whereMorphDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphDoesntHaveRelation">orWhereMorphDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphedTo">whereMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereNotMorphedTo">whereNotMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphedTo">orWhereMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereNotMorphedTo">orWhereNotMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereBelongsTo">whereBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereBelongsTo">orWhereBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withAggregate">withAggregate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getRelationHashedColumn">getRelationHashedColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withCount">withCount()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withMax">withMax()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withMin">withMin()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withSum">withSum()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withAvg">withAvg()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withExists">withExists()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_addHasWhere">addHasWhere()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_mergeConstraintsFrom">mergeConstraintsFrom()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_requalifyWhereTables">requalifyWhereTables()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_addWhereCountQuery">addWhereCountQuery()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getRelationWithoutConstraints">getRelationWithoutConstraints()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_canUseExistsForExistenceCheck">canUseExistsForExistenceCheck()</a></code>				</td>
+<code><a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_has">has()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_hasNested">hasNested()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orHas">orHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_doesntHave">doesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orDoesntHave">orDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereHas">whereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withWhereHas">withWhereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereHas">orWhereHas()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHave">whereDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHave">orWhereDoesntHave()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_hasMorph">hasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getBelongsToRelation">getBelongsToRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orHasMorph">orHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_doesntHaveMorph">doesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orDoesntHaveMorph">orDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereHasMorph">whereHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereHasMorph">orWhereHasMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHaveMorph">whereDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHaveMorph">orWhereDoesntHaveMorph()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereRelation">whereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withWhereRelation">withWhereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereRelation">orWhereRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereDoesntHaveRelation">whereDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereDoesntHaveRelation">orWhereDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphRelation">whereMorphRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphRelation">orWhereMorphRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphDoesntHaveRelation">whereMorphDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphDoesntHaveRelation">orWhereMorphDoesntHaveRelation()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereMorphedTo">whereMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereNotMorphedTo">whereNotMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereMorphedTo">orWhereMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereNotMorphedTo">orWhereNotMorphedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereBelongsTo">whereBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereBelongsTo">orWhereBelongsTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_whereAttachedTo">whereAttachedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_orWhereAttachedTo">orWhereAttachedTo()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withAggregate">withAggregate()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getRelationHashedColumn">getRelationHashedColumn()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withCount">withCount()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withMax">withMax()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withMin">withMin()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withSum">withSum()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withAvg">withAvg()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_withExists">withExists()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_addHasWhere">addHasWhere()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_mergeConstraintsFrom">mergeConstraintsFrom()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_requalifyWhereTables">requalifyWhereTables()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_addWhereCountQuery">addWhereCountQuery()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_getRelationWithoutConstraints">getRelationWithoutConstraints()</a>, <a href="Illuminate.Database.Eloquent.Concerns.QueriesRelationships.html#_canUseExistsForExistenceCheck">canUseExistsForExistenceCheck()</a></code>				</td>
 			</tr>
 		</table>
 
@@ -4098,6 +4222,7 @@
 	<span class="php-str">'explain'</span>,
 	<span class="php-str">'getbindings'</span>,
 	<span class="php-str">'getconnection'</span>,
+	<span class="php-str">'getcountforpagination'</span>,
 	<span class="php-str">'getgrammar'</span>,
 	<span class="php-str">'getrawbindings'</span>,
 	<span class="php-str">'implode'</span>,

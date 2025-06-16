@@ -204,7 +204,7 @@
 		<tr>
 			<th><code>uses</code></th>
 			<td>
-<code><a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a></code>			</td>
 		</tr>
 
 	</table>
@@ -221,6 +221,7 @@
 			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
 
 		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
 			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	<ul class="classTree">
@@ -273,7 +274,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span>iterable&lt;TKey, TValue&gt; <var>$attributes</var> = []</span>): void</code>
+				<code>__construct(<span>iterable&lt;TKey, TValue&gt; <var>$attributes</var> = []</span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -296,6 +297,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="make" id="_make">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>make(<span>iterable&lt;TKey, TValue&gt; <var>$attributes</var> = []</span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Create a new fluent instance.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Create a new fluent instance.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_make">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="get" id="_get">
@@ -957,6 +989,16 @@
 
 		<table class="table">
 			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Conditionable.html"><span>Illuminate\Support\Traits\Conditionable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Conditionable.html#_when">when()</a>, <a href="Illuminate.Support.Traits.Conditionable.html#_unless">unless()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
 				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.InteractsWithData.html"><span>Illuminate\Support\Traits\InteractsWithData</span></a></th>
 			</tr>
 			<tr>
@@ -1014,6 +1056,7 @@
 		</td>
 	</tr>
 		</table>
+
 
 
 		<table class="table">

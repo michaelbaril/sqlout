@@ -98,8 +98,7 @@
 
 	</table>
 		<div class="classLikeDescription">
-	<div class="description"><p>A number converter converts UUIDs from hexadecimal characters into
-representations of integers and vice versa</p>
+	<div class="description"><p>A number converter converts UUIDs from hexadecimal characters into representations of integers and vice versa</p>
 </div>
 		</div>
 
@@ -126,19 +125,17 @@ representations of integers and vice versa</p>
 			</td>
 
 			<td class="table-cell">
-				<code>fromHex(<span>string <var>$hex</var></span>): string</code>
+				<code>fromHex(<span>string <var>$hex</var></span>): numeric-string</code>
 
 
 	<div class="expandable-collapsedView">
-		Converts a hexadecimal number into an string integer representation of
-the number
+		Converts a hexadecimal number into a string integer representation of the number
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Converts a hexadecimal number into an string integer representation of
-the number</p>
-<p>The integer representation returned is a string representation of the
-integer, to accommodate unsigned integers greater than PHP_INT_MAX.</p>
+	<div class="description"><p>Converts a hexadecimal number into a string integer representation of the number</p>
+<p>The integer representation returned is a string representation of the integer to accommodate unsigned integers
+that are greater than <code>PHP_INT_MAX</code>.</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -172,26 +169,23 @@ integer, to accommodate unsigned integers greater than PHP_INT_MAX.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>toHex(<span>string <var>$number</var></span>): string</code>
+				<code>toHex(<span>string <var>$number</var></span>): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">
-		Converts a string integer representation into a hexadecimal string
-representation of the number
+		Converts a string integer representation into a hexadecimal string representation of the number
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Converts a string integer representation into a hexadecimal string
-representation of the number</p>
+	<div class="description"><p>Converts a string integer representation into a hexadecimal string representation of the number</p>
 </div>
 
 							<h4>Parameters</h4>
 							<table>
 									<tr>
 										<td><var>$number</var>&nbsp;&nbsp;</td>
-										<td><p>A string integer representation to convert; this
-must be a numeric string to accommodate unsigned integers greater
-than PHP_INT_MAX.</p>
+										<td><p>A string integer representation to convert; this must be a numeric string to accommodate
+unsigned integers that are greater than <code>PHP_INT_MAX</code>.</p>
 </td>
 									</tr>
 							</table>

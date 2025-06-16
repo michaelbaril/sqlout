@@ -101,6 +101,11 @@
 							QueriesRelationships
 						</a>
 					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html">
+							TransformsToResource
+						</a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -174,6 +179,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<b><span class="active" title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></b>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -504,7 +510,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>unguarded(<span>callable <var>$callback</var></span>): mixed</code>
+				<code>unguarded&lt;<span title="">TReturn</span>&gt;(<span>callable():&nbsp;TReturn <var>$callback</var></span>): TReturn</code>
 
 
 	<div class="expandable-collapsedView">
@@ -659,7 +665,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>fillableFromArray(<span>array <var>$attributes</var></span>): array</code>
+				<code>fillableFromArray(<span>array&lt;string, mixed&gt; <var>$attributes</var></span>): array&lt;string, mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">

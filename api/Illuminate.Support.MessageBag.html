@@ -226,7 +226,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span>array <var>$messages</var> = []</span>): void</code>
+				<code>__construct(<span>array&lt;string, <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|string|array&lt;string&gt;&gt; <var>$messages</var> = []</span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -257,7 +257,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>keys(): array</code>
+				<code>keys(): array&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -391,7 +391,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>merge(<span><a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>|array <var>$messages</var></span>): $this</code>
+				<code>merge(<span><a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>|array&lt;string, array&lt;string&gt;&gt; <var>$messages</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -561,7 +561,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>get(<span>string <var>$key</var></span>, <span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array</code>
+				<code>get(<span>string <var>$key</var></span>, <span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array&lt;string&gt;|array&lt;string, array&lt;string&gt;&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -597,7 +597,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getMessagesForWildcardKey(<span>string <var>$key</var></span>, <span>string|null <var>$format</var></span>): array</code>
+				<code>getMessagesForWildcardKey(<span>string <var>$key</var></span>, <span>string|null <var>$format</var></span>): array&lt;string, array&lt;string&gt;&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -628,7 +628,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>all(<span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array</code>
+				<code>all(<span>string|null <var>$format</var> = <span class="php-kw">null</span></span>): array&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -731,7 +731,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>transform(<span>array <var>$messages</var></span>, <span>string <var>$format</var></span>, <span>string <var>$messageKey</var></span>): array</code>
+				<code>transform(<span>array&lt;string&gt; <var>$messages</var></span>, <span>string <var>$format</var></span>, <span>string <var>$messageKey</var></span>): array&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -793,7 +793,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>messages(): array</code>
+				<code>messages(): array&lt;string, array&lt;string&gt;&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -824,7 +824,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getMessages(): array</code>
+				<code>getMessages(): array&lt;string, array&lt;string&gt;&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1269,7 +1269,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array&lt;string, array&lt;string&gt;&gt;</code>
 			</td>
 
 			<td class="table-cell">

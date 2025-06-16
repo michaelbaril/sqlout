@@ -58,6 +58,16 @@
 					</li>
 			</ul>
 		</div>
+		<div class="menu-section">
+			<h3>Interfaces</h3>
+			<ul>
+					<li>
+						<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html">
+							SignalableCommandInterface
+						</a>
+					</li>
+			</ul>
+		</div>
 	</div>
 	</div>
 
@@ -98,6 +108,11 @@
 
 
 
+		<tr>
+			<th><code>implements</code></th>
+			<td>
+<code><a href="Symfony.Component.Console.Command.SignalableCommandInterface.html"><span title="Symfony\Component\Console\Command\SignalableCommandInterface">SignalableCommandInterface</span></a></code>			</td>
+		</tr>
 
 	</table>
 		<div class="classLikeDescription">
@@ -110,6 +125,8 @@
 	<li>
 <b><span class="active">Symfony\Component\Console\Command\Command</span></b>
 
+		implements
+			<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html"><span title="Symfony\Component\Console\Command\SignalableCommandInterface">SignalableCommandInterface</span></a>
 
 	<ul class="classTree">
 	<li>
@@ -175,11 +192,16 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getDefaultName(): ?string</code>
+				<code><span class="deprecated">getDefaultName</span>(): ?string</code>
 
 
 
 	<div class="expandable-expandedView">
+							<h4>Deprecated</h4>
+							<div>
+									<p>since Symfony 7.3, use the #[AsCommand] attribute instead</p>
+
+							</div>
 
 
 
@@ -201,11 +223,16 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getDefaultDescription(): ?string</code>
+				<code><span class="deprecated">getDefaultDescription</span>(): ?string</code>
 
 
 
 	<div class="expandable-expandedView">
+							<h4>Deprecated</h4>
+							<div>
+									<p>since Symfony 7.3, use the #[AsCommand] attribute instead</p>
+
+							</div>
 
 
 
@@ -1484,6 +1511,81 @@ like a daemon.</p>
 			<a href="#_getHelper">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="getSubscribedSignals" id="_getSubscribedSignals">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getSubscribedSignals(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns the list of signals to subscribe.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns the list of signals to subscribe.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html#_getSubscribedSignals">						<code>Symfony\Component\Console\Command\SignalableCommandInterface::getSubscribedSignals()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getSubscribedSignals">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="handleSignal" id="_handleSignal">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>handleSignal(<span>int <var>$signal</var></span>, <span>int|false <var>$previousExitCode</var> = <span class="php-num">0</span></span>): int|false</code>
+
+
+	<div class="expandable-collapsedView">
+		The method will be called when the application is signaled.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>The method will be called when the application is signaled.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>The exit code to return or false to continue the normal execution</p>
+</div>
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html#_handleSignal">						<code>Symfony\Component\Console\Command\SignalableCommandInterface::handleSignal()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_handleSignal">#</a>
+		</td>
+	</tr>
 		</table>
 
 
@@ -1551,6 +1653,7 @@ like a daemon.</p>
 		</td>
 	</tr>
 		</table>
+
 
 
 

@@ -117,12 +117,12 @@
 		<tr>
 			<th><code>implements</code></th>
 			<td>
-<code><a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a></code>			</td>
+<code><a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, <a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, <a href="Stringable.html"><span title="Stringable">Stringable</span></a></code>			</td>
 		</tr>
 		<tr>
 			<th><code>uses</code></th>
 			<td>
-<code><a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+<code><a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>, <a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a></code>			</td>
 		</tr>
 
 	</table>
@@ -133,12 +133,14 @@
 <b><span class="active">Illuminate\Pagination\AbstractPaginator</span></b>
 
 		implements
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
 			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
 			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
 
 		uses
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
-			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
@@ -1928,6 +1930,42 @@
 			<a href="#___toString">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="_escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>escapeWhenCastingToString(<span>bool <var>$escape</var> = <span class="php-kw">true</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Indicate that the paginator's string representation should be escaped when __toString is invoked.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Indicate that the paginator's string representation should be escaped when __toString is invoked.</p>
+</div>
+
+
+
+
+		<h4>Implements</h4>
+		<ul>
+				<li>
+<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html#_escapeWhenCastingToString">						<code>Illuminate\Contracts\Support\CanBeEscapedWhenCastToString::escapeWhenCastingToString()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_escapeWhenCastingToString">#</a>
+		</td>
+	</tr>
 		</table>
 
 		<table class="table">
@@ -1949,6 +1987,17 @@
 <code><a href="Illuminate.Support.Traits.Tappable.html#_tap">tap()</a></code>				</td>
 			</tr>
 		</table>
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span>Illuminate\Support\Traits\TransformsToResourceCollection</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.TransformsToResourceCollection.html#_toResourceCollection">toResourceCollection()</a>, <a href="Illuminate.Support.Traits.TransformsToResourceCollection.html#_guessResourceCollection">guessResourceCollection()</a></code>				</td>
+			</tr>
+		</table>
+
 
 
 
@@ -2128,6 +2177,30 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#$pageName">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="escapeWhenCastingToString" id="$escapeWhenCastingToString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">bool</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$escapeWhenCastingToString</var> = <span class="php-kw">false</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$escapeWhenCastingToString">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="onEachSide" id="$onEachSide">
@@ -2323,6 +2396,7 @@
 		</td>
 	</tr>
 		</table>
+
 
 
 

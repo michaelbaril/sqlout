@@ -174,9 +174,8 @@
 
 	<div class="expandable-expandedView">
 	<div class="description"><p>Creates a universally unique identifier (UUID) from an array of fields</p>
-<p>Unless you're making advanced use of this library to generate identifiers
-that deviate from RFC 4122, you probably do not want to instantiate a
-UUID directly. Use the static methods, instead:</p>
+<p>Unless you're making advanced use of this library to generate identifiers that deviate from RFC 9562 (formerly
+RFC 4122), you probably do not want to instantiate a UUID directly. Use the static methods, instead:</p>
 <pre><code>use Ramsey\Uuid\Uuid;
 
 $timeBasedUuid = Uuid::uuid1();
@@ -195,20 +194,18 @@ $namespaceSha1Uuid = Uuid::uuid5(Uuid::NAMESPACE_URL, 'http://php.net/');
 									</tr>
 									<tr>
 										<td><var>$numberConverter</var>&nbsp;&nbsp;</td>
-										<td><p>The number converter to use
-for converting hex values to/from integers</p>
+										<td><p>The number converter to use for converting hex values to/from integers</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$codec</var>&nbsp;&nbsp;</td>
-										<td><p>The codec to use when encoding or decoding
-UUID strings</p>
+										<td><p>The codec to use when encoding or decoding UUID strings</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$timeConverter</var>&nbsp;&nbsp;</td>
-										<td><p>The time converter to use
-for converting timestamps extracted from a UUID to unix timestamps</p>
+										<td><p>The time converter to use for converting timestamps extracted from a
+UUID to unix timestamps</p>
 </td>
 									</tr>
 							</table>
@@ -232,7 +229,7 @@ for converting timestamps extracted from a UUID to unix timestamps</p>
 			</td>
 
 			<td class="table-cell">
-				<code>__toString(): string</code>
+				<code>__toString(): non-empty-string</code>
 
 
 
@@ -376,8 +373,7 @@ for converting timestamps extracted from a UUID to unix timestamps</p>
 							<table>
 									<tr>
 										<td><var>$data</var>&nbsp;&nbsp;</td>
-										<td><p>The serialized PHP string to unserialize into
-a UuidInterface instance</p>
+										<td><p>The serialized PHP string to unserialize into a UuidInterface instance</p>
 </td>
 									</tr>
 							</table>
@@ -436,20 +432,13 @@ a UuidInterface instance</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
-the other UUID
+		Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than the other UUID
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
-the other UUID</p>
-<p>The first of two UUIDs is greater than the second if the most
-significant field in which the UUIDs differ is greater for the first
-UUID.</p>
-<ul>
-<li>Q. What's the value of being able to sort UUIDs?</li>
-<li>A. Use them as keys in a B-Tree or similar mapping.</li>
-</ul>
+	<div class="description"><p>Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than the other UUID</p>
+<p>The first of two UUIDs is greater than the second if the most significant field in which the UUIDs differ is
+greater for the first UUID.</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -497,9 +486,8 @@ UUID.</p>
 
 	<div class="expandable-expandedView">
 	<div class="description"><p>Returns true if the UUID is equal to the provided object</p>
-<p>The result is true if and only if the argument is not null, is a UUID
-object, has the same variant, and contains the same value, bit for bit,
-as the UUID.</p>
+<p>The result is true if and only if the argument is not null, is a UUID object, has the same variant, and contains
+the same value, bit-for-bit, as the UUID.</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -538,7 +526,7 @@ as the UUID.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>getBytes(): string</code>
+				<code>getBytes(): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">
@@ -718,7 +706,7 @@ as the UUID.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>toString(): string</code>
+				<code>toString(): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">
@@ -800,8 +788,7 @@ as the UUID.</p>
 							<table>
 									<tr>
 										<td><var>$factory</var>&nbsp;&nbsp;</td>
-										<td><p>A factory that will be used by this
-class to create UUIDs</p>
+										<td><p>A factory that will be used by this class to create UUIDs</p>
 </td>
 									</tr>
 							</table>
@@ -846,10 +833,16 @@ class to create UUIDs</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance created from a binary
-string representation</p>
+							<div><p>A UuidInterface instance created from a binary string representation</p>
 </div>
 
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Ramsey.Uuid.Exception.InvalidArgumentException.html"><span>Ramsey\Uuid\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
 
 	</div>
 			</td>
@@ -889,10 +882,16 @@ string representation</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance created from a hexadecimal
-string representation</p>
+							<div><p>A UuidInterface instance created from a hexadecimal string representation</p>
 </div>
 
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Ramsey.Uuid.Exception.InvalidArgumentException.html"><span>Ramsey\Uuid\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
 
 	</div>
 			</td>
@@ -931,22 +930,19 @@ string representation</p>
 									</tr>
 									<tr>
 										<td><var>$node</var>&nbsp;&nbsp;</td>
-										<td><p>A 48-bit number representing the hardware
-address</p>
+										<td><p>A 48-bit number representing the hardware address</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
-										<td><p>A 14-bit number used to help avoid duplicates
-that could arise when the clock is set backwards in time or if the
-node ID changes</p>
+										<td><p>A 14-bit number used to help avoid duplicates that could arise when the clock is set
+backwards in time or if the node ID changes</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 1 UUID created from a DateTimeInterface instance</p>
+							<div><p>A UuidInterface instance that represents a version 1 UUID created from a DateTimeInterface instance</p>
 </div>
 
 
@@ -988,10 +984,16 @@ version 1 UUID created from a DateTimeInterface instance</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance created from the Hexadecimal
-object representing a hexadecimal number</p>
+							<div><p>A UuidInterface instance created from the Hexadecimal object representing a hexadecimal number</p>
 </div>
 
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Ramsey.Uuid.Exception.InvalidArgumentException.html"><span>Ramsey\Uuid\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
 
 	</div>
 			</td>
@@ -1031,10 +1033,16 @@ object representing a hexadecimal number</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance created from the string
-representation of a 128-bit integer</p>
+							<div><p>A UuidInterface instance created from the string representation of a 128-bit integer</p>
 </div>
 
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Ramsey.Uuid.Exception.InvalidArgumentException.html"><span>Ramsey\Uuid\Exception\InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
 
 	</div>
 			</td>
@@ -1099,36 +1107,31 @@ representation of a 128-bit integer</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 1 (Gregorian time) UUID from a host ID, sequence number,
-and the current time
+		Returns a version 1 (Gregorian time) UUID from a host ID, sequence number, and the current time
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 1 (Gregorian time) UUID from a host ID, sequence number,
-and the current time</p>
+	<div class="description"><p>Returns a version 1 (Gregorian time) UUID from a host ID, sequence number, and the current time</p>
 </div>
 
 							<h4>Parameters</h4>
 							<table>
 									<tr>
 										<td><var>$node</var>&nbsp;&nbsp;</td>
-										<td><p>A 48-bit number representing the
-hardware address; this number may be represented as an integer or a
-hexadecimal string</p>
+										<td><p>A 48-bit number representing the hardware address; this number may
+be represented as an integer or a hexadecimal string</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
-										<td><p>A 14-bit number used to help avoid duplicates that
-could arise when the clock is set backwards in time or if the node ID
-changes</p>
+										<td><p>A 14-bit number used to help avoid duplicates that could arise when the clock is set
+backwards in time or if the node ID changes</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 1 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 1 UUID</p>
 </div>
 
 
@@ -1158,50 +1161,43 @@ version 1 UUID</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 2 (DCE Security) UUID from a local domain, local
-identifier, host ID, clock sequence, and the current…
+		Returns a version 2 (DCE Security) UUID from a local domain, local identifier, host ID, clock sequence, and the current…
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 2 (DCE Security) UUID from a local domain, local
-identifier, host ID, clock sequence, and the current time</p>
+	<div class="description"><p>Returns a version 2 (DCE Security) UUID from a local domain, local identifier, host ID, clock sequence, and the current time</p>
 </div>
 
 							<h4>Parameters</h4>
 							<table>
 									<tr>
 										<td><var>$localDomain</var>&nbsp;&nbsp;</td>
-										<td><p>The local domain to use when generating bytes,
-according to DCE Security</p>
+										<td><p>The local domain to use when generating bytes, according to DCE Security</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$localIdentifier</var>&nbsp;&nbsp;</td>
-										<td><p>The local identifier for the
-given domain; this may be a UID or GID on POSIX systems, if the local
-domain is person or group, or it may be a site-defined identifier
-if the local domain is org</p>
+										<td><p>The local identifier for the given domain; this may be a UID or GID
+on POSIX systems, if the local domain is &quot;person&quot; or &quot;group,&quot; or it may be a site-defined identifier if the
+local domain is &quot;org&quot;</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$node</var>&nbsp;&nbsp;</td>
-										<td><p>A 48-bit number representing the hardware
-address</p>
+										<td><p>A 48-bit number representing the hardware address</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
-										<td><p>A 14-bit number used to help avoid duplicates
-that could arise when the clock is set backwards in time or if the
-node ID changes (in a version 2 UUID, the lower 8 bits of this number
-are replaced with the domain).</p>
+										<td><p>A 14-bit number used to help avoid duplicates that could arise when the clock is set
+backwards in time or if the node ID changes (in a version 2 UUID, the lower 8 bits of this number are
+replaced with the domain).</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 2 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 2 UUID</p>
 </div>
 
 
@@ -1222,17 +1218,15 @@ version 2 UUID</p>
 			</td>
 
 			<td class="table-cell">
-				<code>uuid3(<span>string|<a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a> <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+				<code>uuid3(<span><a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a>|string <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 3 (name-based) UUID based on the MD5 hash of a
-namespace ID and a name
+		Returns a version 3 (name-based) UUID based on the MD5 hash of a namespace ID and a name
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 3 (name-based) UUID based on the MD5 hash of a
-namespace ID and a name</p>
+	<div class="description"><p>Returns a version 3 (name-based) UUID based on the MD5 hash of a namespace ID and a name</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -1250,8 +1244,7 @@ namespace ID and a name</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 3 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 3 UUID</p>
 </div>
 
 
@@ -1285,8 +1278,7 @@ version 3 UUID</p>
 
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 4 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 4 UUID</p>
 </div>
 
 
@@ -1307,17 +1299,15 @@ version 4 UUID</p>
 			</td>
 
 			<td class="table-cell">
-				<code>uuid5(<span>string|<a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a> <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
+				<code>uuid5(<span><a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a>|string <var>$ns</var></span>, <span>string <var>$name</var></span>): <a href="Ramsey.Uuid.UuidInterface.html"><span title="Ramsey\Uuid\UuidInterface">UuidInterface</span></a></code>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 5 (name-based) UUID based on the SHA-1 hash of a
-namespace ID and a name
+		Returns a version 5 (name-based) UUID based on the SHA-1 hash of a namespace ID and a name
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 5 (name-based) UUID based on the SHA-1 hash of a
-namespace ID and a name</p>
+	<div class="description"><p>Returns a version 5 (name-based) UUID based on the SHA-1 hash of a namespace ID and a name</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -1335,8 +1325,7 @@ namespace ID and a name</p>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 5 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 5 UUID</p>
 </div>
 
 
@@ -1361,35 +1350,30 @@ version 5 UUID</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 6 (reordered time) UUID from a host ID, sequence number,
-and the current time
+		Returns a version 6 (reordered Gregorian time) UUID from a host ID, sequence number, and the current time
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 6 (reordered time) UUID from a host ID, sequence number,
-and the current time</p>
+	<div class="description"><p>Returns a version 6 (reordered Gregorian time) UUID from a host ID, sequence number, and the current time</p>
 </div>
 
 							<h4>Parameters</h4>
 							<table>
 									<tr>
 										<td><var>$node</var>&nbsp;&nbsp;</td>
-										<td><p>A 48-bit number representing the hardware
-address</p>
+										<td><p>A 48-bit number representing the hardware address</p>
 </td>
 									</tr>
 									<tr>
 										<td><var>$clockSeq</var>&nbsp;&nbsp;</td>
-										<td><p>A 14-bit number used to help avoid duplicates that
-could arise when the clock is set backwards in time or if the node ID
-changes</p>
+										<td><p>A 14-bit number used to help avoid duplicates that could arise when the clock is set
+backwards in time or if the node ID changes</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 6 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 6 UUID</p>
 </div>
 
 
@@ -1425,16 +1409,14 @@ version 6 UUID</p>
 							<table>
 									<tr>
 										<td><var>$dateTime</var>&nbsp;&nbsp;</td>
-										<td><p>An optional date/time from which
-to create the version 7 UUID. If not provided, the UUID is generated
-using the current date/time.</p>
+										<td><p>An optional date/time from which to create the version 7 UUID. If not
+provided, the UUID is generated using the current date/time.</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 7 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 7 UUID</p>
 </div>
 
 
@@ -1459,32 +1441,28 @@ version 7 UUID</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns a version 8 (custom) UUID
+		Returns a version 8 (custom format) UUID
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns a version 8 (custom) UUID</p>
-<p>The bytes provided may contain any value according to your application's
-needs. Be aware, however, that other applications may not understand the
-semantics of the value.</p>
+	<div class="description"><p>Returns a version 8 (custom format) UUID</p>
+<p>The bytes provided may contain any value according to your application's needs. Be aware, however, that other
+applications may not understand the semantics of the value.</p>
 </div>
 
 							<h4>Parameters</h4>
 							<table>
 									<tr>
 										<td><var>$bytes</var>&nbsp;&nbsp;</td>
-										<td><p>A 16-byte octet string. This is an open blob
-of data that you may fill with 128 bits of information. Be aware,
-however, bits 48 through 51 will be replaced with the UUID version
-field, and bits 64 and 65 will be replaced with the UUID variant. You
-MUST NOT rely on these bits for your application needs.</p>
+										<td><p>A 16-byte octet string. This is an open blob of data that you may fill with 128 bits of
+information. Be aware, however, bits 48 through 51 will be replaced with the UUID version field, and bits 64
+and 65 will be replaced with the UUID variant. You MUST NOT rely on these bits for your application needs.</p>
 </td>
 									</tr>
 							</table>
 
 							<h4>Returns</h4>
-							<div><p>A UuidInterface instance that represents a
-version 8 UUID</p>
+							<div><p>A UuidInterface instance that represents a version 8 UUID</p>
 </div>
 
 
@@ -1525,13 +1503,11 @@ version 8 UUID</p>
 <code>NAMESPACE_DNS = <span class="php-str">'6ba7b810-9dad-11d1-80b4-00c04fd430c8'</span></code>
 
 	<div class="expandable-collapsedView">
-		When this namespace is specified, the name string is a fully-qualified
-domain name
+		When this namespace is specified, the name string is a fully qualified domain name
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>When this namespace is specified, the name string is a fully-qualified
-domain name</p>
+	<div class="description"><p>When this namespace is specified, the name string is a fully qualified domain name</p>
 </div>
 	</div>
 			</td>
@@ -1599,13 +1575,11 @@ domain name</p>
 <code>NAMESPACE_X500 = <span class="php-str">'6ba7b814-9dad-11d1-80b4-00c04fd430c8'</span></code>
 
 	<div class="expandable-collapsedView">
-		When this namespace is specified, the name string is an X.500 DN in DER
-or a text output format
+		When this namespace is specified, the name string is an X.500 DN (in DER or a text output format)
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>When this namespace is specified, the name string is an X.500 DN in DER
-or a text output format</p>
+	<div class="description"><p>When this namespace is specified, the name string is an X.500 DN (in DER or a text output format)</p>
 </div>
 	</div>
 			</td>
@@ -1625,13 +1599,11 @@ or a text output format</p>
 <code>NIL = <span class="php-str">'00000000-0000-0000-0000-000000000000'</span></code>
 
 	<div class="expandable-collapsedView">
-		The nil UUID is a special form of UUID that is specified to have all 128
-bits set to zero
+		The Nil UUID is a special form of UUID that is specified to have all 128 bits set to zero
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>The nil UUID is a special form of UUID that is specified to have all 128
-bits set to zero</p>
+	<div class="description"><p>The Nil UUID is a special form of UUID that is specified to have all 128 bits set to zero</p>
 </div>
 	</div>
 			</td>
@@ -1651,13 +1623,11 @@ bits set to zero</p>
 <code>MAX = <span class="php-str">'ffffffff-ffff-ffff-ffff-ffffffffffff'</span></code>
 
 	<div class="expandable-collapsedView">
-		The max UUID is a special form of UUID that is specified to have all 128
-bits set to one
+		The Max UUID is a special form of UUID that is specified to have all 128 bits set to one
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>The max UUID is a special form of UUID that is specified to have all 128
-bits set to one</p>
+	<div class="description"><p>The Max UUID is a special form of UUID that is specified to have all 128 bits set to one</p>
 </div>
 	</div>
 			</td>
@@ -1701,16 +1671,40 @@ bits set to one</p>
 <code>RFC_4122 = <span class="php-num">2</span></code>
 
 	<div class="expandable-collapsedView">
-		Variant: the UUID layout specified in RFC 4122
+		Variant: the UUID layout specified in RFC 9562 (formerly RFC 4122)
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Variant: the UUID layout specified in RFC 4122</p>
+	<div class="description"><p>Variant: the UUID layout specified in RFC 9562 (formerly RFC 4122)</p>
 </div>
 	</div>
 			</td>
 		<td class="table-anchor">
 			<a href="#RFC_4122">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="RFC_9562" id="RFC_9562">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code>RFC_9562 = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Variant: the UUID layout specified in RFC 9562 (formerly RFC 4122)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Variant: the UUID layout specified in RFC 9562 (formerly RFC 4122)</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#RFC_9562">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="RESERVED_MICROSOFT" id="RESERVED_MICROSOFT">
@@ -1950,11 +1944,11 @@ bits set to one</p>
 <code>UUID_TYPE_REORDERED_TIME = <span class="php-num">6</span></code>
 
 	<div class="expandable-collapsedView">
-		Version 6 (reordered time) UUID
+		Version 6 (reordered Gregorian time) UUID
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Version 6 (reordered time) UUID</p>
+	<div class="description"><p>Version 6 (reordered Gregorian time) UUID</p>
 </div>
 	</div>
 			</td>
@@ -1997,8 +1991,13 @@ bits set to one</p>
 			<td class="table-cell">
 <code>UUID_TYPE_CUSTOM = <span class="php-num">8</span></code>
 
+	<div class="expandable-collapsedView">
+		Version 8 (custom format) UUID
+	</div>
 
 	<div class="expandable-expandedView">
+	<div class="description"><p>Version 8 (custom format) UUID</p>
+</div>
 	</div>
 			</td>
 		<td class="table-anchor">

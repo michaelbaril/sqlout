@@ -160,6 +160,21 @@
 
 	<ul class="classTree">
 	<li>
+<a href="Symfony.Component.HttpFoundation.JsonResponse.html"><span>Symfony\Component\HttpFoundation\JsonResponse</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Http.JsonResponse.html"><span>Illuminate\Http\JsonResponse</span></a>
+
+
+		uses
+			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
 <a href="Symfony.Component.HttpFoundation.RedirectResponse.html"><span>Symfony\Component\HttpFoundation\RedirectResponse</span></a>
 
 
@@ -170,21 +185,6 @@
 
 		uses
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
-			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
-			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
-	</li>
-	</ul>
-	</li>
-	<li>
-<a href="Symfony.Component.HttpFoundation.JsonResponse.html"><span>Symfony\Component\HttpFoundation\JsonResponse</span></a>
-
-
-	<ul class="classTree">
-	<li>
-<a href="Illuminate.Http.JsonResponse.html"><span>Illuminate\Http\JsonResponse</span></a>
-
-
-		uses
 			<a href="Illuminate.Http.ResponseTrait.html"><span title="Illuminate\Http\ResponseTrait">ResponseTrait</span></a>, 
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	</li>
@@ -245,9 +245,9 @@
 		<h4>Overriden by</h4>
 		<ul>
 				<li>
-<a href="Symfony.Component.HttpFoundation.RedirectResponse.html#___construct">						<code>Symfony\Component\HttpFoundation\RedirectResponse::__construct()</code></a>				</li>
-				<li>
 <a href="Symfony.Component.HttpFoundation.JsonResponse.html#___construct">						<code>Symfony\Component\HttpFoundation\JsonResponse::__construct()</code></a>				</li>
+				<li>
+<a href="Symfony.Component.HttpFoundation.RedirectResponse.html#___construct">						<code>Symfony\Component\HttpFoundation\RedirectResponse::__construct()</code></a>				</li>
 		</ul>
 	</div>
 			</td>
@@ -3603,7 +3603,7 @@ removes the actual content by calling the setNotModified() method.</p>
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array&lt;int, string&gt;</code>
 			</td>
 
 			<td class="table-cell">
@@ -3672,17 +3672,8 @@ removes the actual content by calling the setNotModified() method.</p>
 	<span class="php-num">511</span> =&gt; <span class="php-str">'Network Authentication Required'</span>,
 ]</code>
 				
-	<div class="expandable-collapsedView">
-		Status codes translation table.
-	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Status codes translation table.</p>
-<p>The list of codes is complete according to the
-{@link <a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</a> Hypertext Transfer Protocol (HTTP) Status Code Registry}
-(last updated 2021-10-01).</p>
-<p>Unless otherwise noted, the status code is defined in RFC2616.</p>
-</div>
 	</div>
 			</td>
 		<td class="table-anchor">

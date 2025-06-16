@@ -203,7 +203,7 @@
 		<tr>
 			<th><code>uses</code></th>
 			<td>
-<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
+<code><a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, <a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, <a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, <a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a></code>			</td>
 		</tr>
 
 	</table>
@@ -430,6 +430,44 @@
 			<a href="#_temporarySignedRoute">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="action" id="_action">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>action(<span>string|array <var>$action</var></span>, <span>mixed <var>$parameters</var> = []</span>, <span>bool <var>$absolute</var> = <span class="php-kw">true</span></span>): static</code>
+
+
+	<div class="expandable-collapsedView">
+		Get a URI instance for a controller action.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get a URI instance for a controller action.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="InvalidArgumentException.html"><span>InvalidArgumentException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_action">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="scheme" id="_scheme">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -617,6 +655,38 @@
 			<a href="#_path">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="pathSegments" id="_pathSegments">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>pathSegments(): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the URI's path segments.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the URI's path segments.</p>
+<p>Empty or missing paths are returned as an empty collection.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_pathSegments">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="query" id="_query">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -783,7 +853,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>withPort(<span>int|null <var>$port</var></span>): static</code>
+				<code>withPort(<span>?int <var>$port</var></span>): static</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1369,6 +1439,16 @@
 
 		<table class="table">
 			<tr>
+				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Illuminate.Support.Traits.Macroable.html#_macro">macro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_mixin">mixin()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_hasMacro">hasMacro()</a>, <a href="Illuminate.Support.Traits.Macroable.html#_flushMacros">flushMacros()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___callStatic">__callStatic()</a>, <a href="Illuminate.Support.Traits.Macroable.html#___call">__call()</a></code>				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
 				<th class="table-heading">Methods used from <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a></th>
 			</tr>
 			<tr>
@@ -1451,6 +1531,16 @@
 		</table>
 
 
+
+		<table class="table">
+			<tr>
+				<th class="table-heading">Properties used from <a href="Illuminate.Support.Traits.Macroable.html"><span>Illuminate\Support\Traits\Macroable</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><var><a href="Illuminate.Support.Traits.Macroable.html#$macros">$macros</a></var></code>				</td>
+			</tr>
+		</table>
 
 
 

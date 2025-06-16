@@ -165,6 +165,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -190,10 +191,16 @@
 	</ul>
 	</li>
 	<li>
-<a href="Illuminate.Pagination.Cursor.html"><span>Illuminate\Pagination\Cursor</span></a>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
 
 		implements
-			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>&lt;array-key, mixed&gt;
+			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>&lt;TKey, TValue&gt;, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
+			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
+			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
+			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
 
 	</li>
 	<li>
@@ -212,26 +219,10 @@
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	</li>
 	<li>
-<a href="Illuminate.Support.UriQueryString.html"><span>Illuminate\Support\UriQueryString</span></a>
+<a href="Illuminate.Pagination.Cursor.html"><span>Illuminate\Pagination\Cursor</span></a>
 
 		implements
-			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>, 
-			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
-
-		uses
-			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>
-	</li>
-	<li>
-<a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
-
-		implements
-			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>&lt;TKey, TValue&gt;, 
-			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>&lt;TKey, TValue&gt;, 
-			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
-			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;TKey, TValue&gt;, 
-			<a href="Illuminate.Contracts.Support.Jsonable.html"><span title="Illuminate\Contracts\Support\Jsonable">Jsonable</span></a>, 
-			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>, 
-			<a href="Illuminate.Contracts.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Contracts\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;TKey, TValue&gt;
+			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>&lt;array-key, mixed&gt;
 
 	</li>
 	<li>
@@ -261,6 +252,16 @@
 
 	</li>
 	<li>
+<a href="Illuminate.Support.UriQueryString.html"><span>Illuminate\Support\UriQueryString</span></a>
+
+		implements
+			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>
+	</li>
+	<li>
 <a href="Illuminate.Support.Fluent.html"><span>Illuminate\Support\Fluent</span></a>
 
 		implements
@@ -270,6 +271,7 @@
 			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
 
 		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
 			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	<ul class="classTree">
@@ -318,7 +320,8 @@
 
 		uses
 			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
-			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
@@ -345,6 +348,26 @@
 	</ul>
 	</li>
 	<li>
+<a href="Illuminate.Contracts.Support.ValidatedData.html"><span>Illuminate\Contracts\Support\ValidatedData</span></a>
+		extends
+			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
+
+
+	<ul class="classTree">
+	<li>
+<a href="Illuminate.Support.ValidatedInput.html"><span>Illuminate\Support\ValidatedInput</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Support.ValidatedData.html"><span title="Illuminate\Contracts\Support\ValidatedData">ValidatedData</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>
+	</li>
+	</ul>
+	</li>
+	<li>
 <a href="Illuminate.Contracts.Support.MessageBag.html"><span>Illuminate\Contracts\Support\MessageBag</span></a>
 		extends
 			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>, 
@@ -362,26 +385,6 @@
 			<a href="Illuminate.Contracts.Support.MessageProvider.html"><span title="Illuminate\Contracts\Support\MessageProvider">MessageProvider</span></a>, 
 			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
 
-	</li>
-	</ul>
-	</li>
-	<li>
-<a href="Illuminate.Contracts.Support.ValidatedData.html"><span>Illuminate\Contracts\Support\ValidatedData</span></a>
-		extends
-			<b><span class="active" title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></b>, 
-			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
-			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>
-
-
-	<ul class="classTree">
-	<li>
-<a href="Illuminate.Support.ValidatedInput.html"><span>Illuminate\Support\ValidatedInput</span></a>
-
-		implements
-			<a href="Illuminate.Contracts.Support.ValidatedData.html"><span title="Illuminate\Contracts\Support\ValidatedData">ValidatedData</span></a>
-
-		uses
-			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>
 	</li>
 	</ul>
 	</li>
@@ -433,21 +436,21 @@
 				<li>
 <a href="Illuminate.Pagination.Cursor.html#_toArray">						<code>Illuminate\Pagination\Cursor::toArray()</code></a>				</li>
 				<li>
-<a href="Illuminate.Support.UriQueryString.html#_toArray">						<code>Illuminate\Support\UriQueryString::toArray()</code></a>				</li>
-				<li>
-<a href="Illuminate.Http.Request.html#_toArray">						<code>Illuminate\Http\Request::toArray()</code></a>				</li>
-				<li>
 <a href="Illuminate.Pagination.LengthAwarePaginator.html#_toArray">						<code>Illuminate\Pagination\LengthAwarePaginator::toArray()</code></a>				</li>
 				<li>
 <a href="Illuminate.Pagination.Paginator.html#_toArray">						<code>Illuminate\Pagination\Paginator::toArray()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.ValidatedInput.html#_toArray">						<code>Illuminate\Support\ValidatedInput::toArray()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.UriQueryString.html#_toArray">						<code>Illuminate\Support\UriQueryString::toArray()</code></a>				</li>
+				<li>
+<a href="Illuminate.Http.Request.html#_toArray">						<code>Illuminate\Http\Request::toArray()</code></a>				</li>
 				<li>
 <a href="Illuminate.Pagination.CursorPaginator.html#_toArray">						<code>Illuminate\Pagination\CursorPaginator::toArray()</code></a>				</li>
 				<li>
 <a href="Illuminate.Support.Fluent.html#_toArray">						<code>Illuminate\Support\Fluent::toArray()</code></a>				</li>
 				<li>
 <a href="Illuminate.Support.MessageBag.html#_toArray">						<code>Illuminate\Support\MessageBag::toArray()</code></a>				</li>
-				<li>
-<a href="Illuminate.Support.ValidatedInput.html#_toArray">						<code>Illuminate\Support\ValidatedInput::toArray()</code></a>				</li>
 		</ul>
 	</div>
 			</td>

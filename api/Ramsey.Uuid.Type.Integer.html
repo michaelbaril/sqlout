@@ -127,11 +127,10 @@
 	</table>
 		<div class="classLikeDescription">
 	<div class="description"><p>A value object representing an integer</p>
-<p>This class exists for type-safety purposes, to ensure that integers
-returned from ramsey/uuid methods as strings are truly integers and not some
-other kind of string.</p>
-<p>To support large integers beyond PHP_INT_MAX and PHP_INT_MIN on both 64-bit
-and 32-bit systems, we store the integers as strings.</p>
+<p>This class exists for type-safety purposes, to ensure that integers returned from ramsey/uuid methods as strings are
+truly integers and not some other kind of string.</p>
+<p>To support large integers beyond PHP_INT_MAX and PHP_INT_MIN on both 64-bit and 32-bit systems, we store the integers
+as strings.</p>
 </div>
 		</div>
 
@@ -158,7 +157,7 @@ and 32-bit systems, we store the integers as strings.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span>float|int|string|<b><span class="active" title="Ramsey\Uuid\Type\Integer">self</span></b> <var>$value</var></span>)</code>
+				<code>__construct(<span><b><span class="active" title="Ramsey\Uuid\Type\Integer">self</span></b>|float|int|string <var>$value</var></span>)</code>
 
 
 
@@ -220,7 +219,7 @@ and 32-bit systems, we store the integers as strings.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>toString(): string</code>
+				<code>toString(): numeric-string</code>
 
 
 
@@ -251,7 +250,7 @@ and 32-bit systems, we store the integers as strings.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>__toString(): string</code>
+				<code>__toString(): numeric-string</code>
 
 
 

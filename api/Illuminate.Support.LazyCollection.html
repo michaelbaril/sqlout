@@ -234,7 +234,7 @@
 			<td class="table-cell">
 				<code>__construct(
 	<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;|iterable&lt;TKey, TValue&gt;|(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;<a href="Generator.html"><span title="Generator">Generator</span></a>&lt;TKey, TValue, mixed, void&gt;)|<b><span class="active" title="Illuminate\Support\LazyCollection">self</span></b>&lt;TKey, TValue&gt;|array&lt;TKey, TValue&gt;|null <var>$source</var> = <span class="php-kw">null</span></span>,
-): void</code>
+)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -375,7 +375,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>eager(): static</code>
+				<code>eager(): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -406,7 +406,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>remember(): static</code>
+				<code>remember(): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -758,7 +758,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>diff(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>): static</code>
+				<code>diff(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, TValue&gt;|iterable&lt;array-key, TValue&gt; <var>$items</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2407,7 +2407,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>reverse(): static</code>
+				<code>reverse(): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2551,7 +2551,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>shuffle(): static</code>
+				<code>shuffle(): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2968,7 +2968,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>chunkWhile(<span>callable(TValue, TKey, <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;):&nbsp;bool <var>$callback</var></span>): static&lt;int, static&lt;int, TValue&gt;&gt;</code>
+				<code>chunkWhile(<span>callable(TValue, TKey, <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;TKey, TValue&gt;):&nbsp;bool <var>$callback</var></span>): static&lt;int, static&lt;TKey, TValue&gt;&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3263,7 +3263,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>take(<span>int <var>$limit</var></span>): static</code>
+				<code>take(<span>int <var>$limit</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3299,7 +3299,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>takeUntil(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+				<code>takeUntil(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3335,7 +3335,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>takeUntilTimeout(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$timeout</var></span>): static</code>
+				<code>takeUntilTimeout(<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a> <var>$timeout</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3366,7 +3366,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>takeWhile(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static</code>
+				<code>takeWhile(<span>TValue|(callable(TValue, TKey):&nbsp;bool) <var>$value</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3402,7 +3402,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>tapEach(<span>callable(TValue, TKey):&nbsp;mixed <var>$callback</var></span>): static</code>
+				<code>tapEach(<span>callable(TValue, TKey):&nbsp;mixed <var>$callback</var></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3531,7 +3531,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>unique(<span>(callable(TValue, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static</code>
+				<code>unique(<span>(callable(TValue, TKey):&nbsp;mixed)|string|null <var>$key</var> = <span class="php-kw">null</span></span>, <span>bool <var>$strict</var> = <span class="php-kw">false</span></span>): static&lt;TKey, TValue&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3936,7 +3936,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Illuminate.Support.Traits.EnumeratesValues.html#_wrap">wrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unwrap">unwrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_empty">empty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_times">times()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_avg">avg()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_average">average()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_some">some()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dd">dd()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dump">dump()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_each">each()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_eachSpread">eachSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_every">every()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_firstWhere">firstWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_value">value()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_ensure">ensure()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapSpread">mapSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapToGroups">mapToGroups()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_flatMap">flatMap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapInto">mapInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_min">min()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_max">max()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_forPage">forPage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_partition">partition()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_percentage">percentage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_sum">sum()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenEmpty">whenEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenNotEmpty">whenNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessEmpty">unlessEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessNotEmpty">unlessNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_where">where()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNull">whereNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotNull">whereNotNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereStrict">whereStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereIn">whereIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInStrict">whereInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereBetween">whereBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotBetween">whereNotBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotIn">whereNotIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotInStrict">whereNotInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInstanceOf">whereInstanceOf()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipe">pipe()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeInto">pipeInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeThrough">pipeThrough()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduce">reduce()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceSpread">reduceSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceWithKeys">reduceWithKeys()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reject">reject()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_tap">tap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_uniqueStrict">uniqueStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toArray">toArray()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toJson">toJson()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getCachingIterator">getCachingIterator()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___toString">__toString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_escapeWhenCastingToString">escapeWhenCastingToString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_proxy">proxy()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___get">__get()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_operatorForWhere">operatorForWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_useAsCallable">useAsCallable()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_valueRetriever">valueRetriever()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_equality">equality()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_negate">negate()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_identity">identity()</a></code>				</td>
+<code><a href="Illuminate.Support.Traits.EnumeratesValues.html#_wrap">wrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unwrap">unwrap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_empty">empty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_times">times()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_fromJson">fromJson()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_avg">avg()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_average">average()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_some">some()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dd">dd()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_dump">dump()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_each">each()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_eachSpread">eachSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_every">every()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_firstWhere">firstWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_value">value()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_ensure">ensure()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_isNotEmpty">isNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapSpread">mapSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapToGroups">mapToGroups()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_flatMap">flatMap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_mapInto">mapInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_min">min()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_max">max()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_forPage">forPage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_partition">partition()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_percentage">percentage()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_sum">sum()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenEmpty">whenEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whenNotEmpty">whenNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessEmpty">unlessEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_unlessNotEmpty">unlessNotEmpty()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_where">where()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNull">whereNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotNull">whereNotNull()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereStrict">whereStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereIn">whereIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInStrict">whereInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereBetween">whereBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotBetween">whereNotBetween()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotIn">whereNotIn()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereNotInStrict">whereNotInStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_whereInstanceOf">whereInstanceOf()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipe">pipe()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeInto">pipeInto()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_pipeThrough">pipeThrough()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduce">reduce()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceSpread">reduceSpread()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reduceWithKeys">reduceWithKeys()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_reject">reject()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_tap">tap()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_uniqueStrict">uniqueStrict()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_collect">collect()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toArray">toArray()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_jsonSerialize">jsonSerialize()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_toJson">toJson()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getCachingIterator">getCachingIterator()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___toString">__toString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_escapeWhenCastingToString">escapeWhenCastingToString()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_proxy">proxy()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#___get">__get()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_getArrayableItems">getArrayableItems()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_operatorForWhere">operatorForWhere()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_useAsCallable">useAsCallable()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_valueRetriever">valueRetriever()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_equality">equality()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_negate">negate()</a>, <a href="Illuminate.Support.Traits.EnumeratesValues.html#_identity">identity()</a></code>				</td>
 			</tr>
 		</table>
 

@@ -420,6 +420,13 @@
 
 	</li>
 	<li>
+<a href="Ramsey.Uuid.Exception.InvalidArgumentException.html"><span>Ramsey\Uuid\Exception\InvalidArgumentException</span></a>
+
+		implements
+			<a href="Ramsey.Uuid.Exception.UuidExceptionInterface.html"><span title="Ramsey\Uuid\Exception\UuidExceptionInterface">UuidExceptionInterface</span></a>
+
+	</li>
+	<li>
 <a href="Symfony.Component.Console.Exception.CommandNotFoundException.html"><span>Symfony\Component\Console\Exception\CommandNotFoundException</span></a>
 
 		implements
@@ -459,6 +466,11 @@
 
 		implements
 			<a href="Symfony.Component.Routing.Exception.ExceptionInterface.html"><span title="Symfony\Component\Routing\Exception\ExceptionInterface">ExceptionInterface</span></a>
+
+	</li>
+	<li>
+<a href="Symfony.Component.Uid.Exception.InvalidArgumentException.html"><span>Symfony\Component\Uid\Exception\InvalidArgumentException</span></a>
+
 
 	</li>
 	</ul>
@@ -836,6 +848,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -1156,7 +1169,8 @@
 
 		uses
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
-			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Pagination.CursorPaginator.html"><span>Illuminate\Pagination\CursorPaginator</span></a>
@@ -1177,12 +1191,14 @@
 <a href="Illuminate.Pagination.AbstractPaginator.html"><span>Illuminate\Pagination\AbstractPaginator</span></a>
 
 		implements
+			<a href="Illuminate.Contracts.Support.CanBeEscapedWhenCastToString.html"><span title="Illuminate\Contracts\Support\CanBeEscapedWhenCastToString">CanBeEscapedWhenCastToString</span></a>, 
 			<a href="Illuminate.Contracts.Support.Htmlable.html"><span title="Illuminate\Contracts\Support\Htmlable">Htmlable</span></a>, 
 			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
 
 		uses
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
-			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
@@ -1319,7 +1335,8 @@
 
 		uses
 			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
-			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
@@ -1352,6 +1369,7 @@
 			<a href="JsonSerializable.html"><span title="JsonSerializable">JsonSerializable</span></a>
 
 		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
 			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	<ul class="classTree">
@@ -1456,6 +1474,7 @@
 		uses
 			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
 			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
 			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
 	</li>
 	<li>
@@ -1709,6 +1728,8 @@
 	<li>
 <a href="Symfony.Component.Console.Command.Command.html"><span>Symfony\Component\Console\Command\Command</span></a>
 
+		implements
+			<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html"><span title="Symfony\Component\Console\Command\SignalableCommandInterface">SignalableCommandInterface</span></a>
 
 	<ul class="classTree">
 	<li>
@@ -1797,6 +1818,26 @@
 	</li>
 	<li>
 <a href="Symfony.Component.Console.Helper.TableStyle.html"><span>Symfony\Component\Console\Helper\TableStyle</span></a>
+
+
+	</li>
+	<li>
+<a href="Symfony.Component.Console.Helper.TreeHelper.html"><span>Symfony\Component\Console\Helper\TreeHelper</span></a>
+
+		implements
+			<a href="RecursiveIterator.html"><span title="RecursiveIterator">RecursiveIterator</span></a>&lt;int, <a href="Symfony.Component.Console.Helper.TreeNode.html"><span title="Symfony\Component\Console\Helper\TreeNode">TreeNode</span></a>&gt;
+
+	</li>
+	<li>
+<a href="Symfony.Component.Console.Helper.TreeNode.html"><span>Symfony\Component\Console\Helper\TreeNode</span></a>
+
+		implements
+			<a href="Countable.html"><span title="Countable">Countable</span></a>, 
+			<a href="IteratorAggregate.html"><span title="IteratorAggregate">IteratorAggregate</span></a>&lt;<a href="Symfony.Component.Console.Helper.TreeNode.html"><span title="Symfony\Component\Console\Helper\TreeNode">TreeNode</span></a>&gt;
+
+	</li>
+	<li>
+<a href="Symfony.Component.Console.Helper.TreeStyle.html"><span>Symfony\Component\Console\Helper\TreeStyle</span></a>
 
 
 	</li>
@@ -2590,6 +2631,11 @@
 
 	</li>
 	<li>
+<a href="Symfony.Component.Console.Command.SignalableCommandInterface.html"><span>Symfony\Component\Console\Command\SignalableCommandInterface</span></a>
+
+
+	</li>
+	<li>
 <a href="Symfony.Component.Console.CommandLoader.CommandLoaderInterface.html"><span>Symfony\Component\Console\CommandLoader\CommandLoaderInterface</span></a>
 
 
@@ -2895,6 +2941,11 @@
 
 	</li>
 	<li>
+<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span>Illuminate\Database\Eloquent\Concerns\TransformsToResource</span></a>
+
+
+	</li>
+	<li>
 <a href="Illuminate.Database.Eloquent.HasCollection.html"><span>Illuminate\Database\Eloquent\HasCollection</span></a>
 
 
@@ -3031,6 +3082,11 @@
 	</li>
 	<li>
 <a href="Illuminate.Support.Traits.Tappable.html"><span>Illuminate\Support\Traits\Tappable</span></a>
+
+
+	</li>
+	<li>
+<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span>Illuminate\Support\Traits\TransformsToResourceCollection</span></a>
 
 
 	</li>

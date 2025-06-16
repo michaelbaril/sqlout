@@ -182,7 +182,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span><a href="Illuminate.Database.ConnectionInterface.html"><span title="Illuminate\Database\ConnectionInterface">ConnectionInterface</span></a> <var>$connection</var></span>, <span>?<a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a> <var>$grammar</var> = <span class="php-kw">null</span></span>, <span>?<a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a> <var>$processor</var> = <span class="php-kw">null</span></span>): void</code>
+				<code>__construct(<span><a href="Illuminate.Database.ConnectionInterface.html"><span title="Illuminate\Database\ConnectionInterface">ConnectionInterface</span></a> <var>$connection</var></span>, <span>?<a href="Illuminate.Database.Query.Grammars.Grammar.html"><span title="Illuminate\Database\Query\Grammars\Grammar">Grammar</span></a> <var>$grammar</var> = <span class="php-kw">null</span></span>, <span>?<a href="Illuminate.Database.Query.Processors.Processor.html"><span title="Illuminate\Database\Query\Processors\Processor">Processor</span></a> <var>$processor</var> = <span class="php-kw">null</span></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -218,7 +218,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>select(<span>array|mixed <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): $this</code>
+				<code>select(<span>mixed <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -487,7 +487,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>addSelect(<span>array|mixed <var>$column</var></span>): $this</code>
+				<code>addSelect(<span>mixed <var>$column</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1598,7 +1598,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>whereRaw(<span>string <var>$sql</var></span>, <span>mixed <var>$bindings</var> = []</span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
+				<code>whereRaw(<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string <var>$sql</var></span>, <span>mixed <var>$bindings</var> = []</span>, <span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3974,7 +3974,7 @@
 				<code>having(
 	<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$column</var></span>,
 	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$operator</var> = <span class="php-kw">null</span></span>,
-	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$value</var> = <span class="php-kw">null</span></span>,
+	<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$value</var> = <span class="php-kw">null</span></span>,
 	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
 ): $this</code>
 
@@ -4010,7 +4010,7 @@
 				<code>orHaving(
 	<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|<a href="Closure.html"><span title="Closure">Closure</span></a>|string <var>$column</var></span>,
 	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$operator</var> = <span class="php-kw">null</span></span>,
-	<span><a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$value</var> = <span class="php-kw">null</span></span>,
+	<span><a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|<a href="DateTimeInterface.html"><span title="DateTimeInterface">DateTimeInterface</span></a>|string|int|float|null <var>$value</var> = <span class="php-kw">null</span></span>,
 ): $this</code>
 
 
@@ -4782,6 +4782,37 @@
 			<a href="#_reorder">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="reorderDesc" id="_reorderDesc">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>reorderDesc(<span><a href="Closure.html"><span title="Closure">Closure</span></a>|<b><span class="active" title="Illuminate\Database\Query\Builder">Builder</span></b>|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string|null <var>$column</var></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add descending "reorder" clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add descending &quot;reorder&quot; clause to the query.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_reorderDesc">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="removeExistingOrdersFor" id="_removeExistingOrdersFor">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -5165,7 +5196,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>find(<span>int|string <var>$id</var></span>, <span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): object|null</code>
+				<code>find(<span>int|string <var>$id</var></span>, <span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): object|null</code>
 
 
 	<div class="expandable-collapsedView">
@@ -5198,7 +5229,7 @@
 			<td class="table-cell">
 				<code>findOr&lt;<span title="">TValue</span>&gt;(
 	<span>mixed <var>$id</var></span>,
-	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|list&lt;string&gt;|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
 ): object|TValue</code>
 
@@ -5335,7 +5366,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>get(<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, <a href="stdClass.html"><span title="stdClass">stdClass</span></a>&gt;</code>
+				<code>get(<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>&lt;int, <a href="stdClass.html"><span title="stdClass">stdClass</span></a>&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -5430,7 +5461,7 @@
 			<td class="table-cell">
 				<code>paginate(
 	<span>int|<a href="Closure.html"><span title="Closure">Closure</span></a> <var>$perPage</var> = <span class="php-num">15</span></span>,
-	<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
 	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
 	<span><a href="Closure.html"><span title="Closure">Closure</span></a>|int|null <var>$total</var> = <span class="php-kw">null</span></span>,
@@ -5467,7 +5498,7 @@
 			<td class="table-cell">
 				<code>simplePaginate(
 	<span>int <var>$perPage</var> = <span class="php-num">15</span></span>,
-	<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
 	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
 ): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a></code>
@@ -5504,7 +5535,7 @@
 			<td class="table-cell">
 				<code>cursorPaginate(
 	<span>int|null <var>$perPage</var> = <span class="php-num">15</span></span>,
-	<span>array|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
+	<span>string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$cursorName</var> = <span class="php-str">'cursor'</span></span>,
 	<span><a href="Illuminate.Pagination.Cursor.html"><span title="Illuminate\Pagination\Cursor">Cursor</span></a>|string|null <var>$cursor</var> = <span class="php-kw">null</span></span>,
 ): <a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a></code>
@@ -5570,7 +5601,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getCountForPagination(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): int</code>
+				<code>getCountForPagination(<span>array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): int</code>
 
 
 	<div class="expandable-collapsedView">
@@ -5601,7 +5632,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>runPaginationCountQuery(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): array</code>
+				<code>runPaginationCountQuery(<span>array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): array&lt;mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -5663,7 +5694,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>withoutSelectAliases(<span>array <var>$columns</var></span>): array</code>
+				<code>withoutSelectAliases(<span>array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var></span>): array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -6290,7 +6321,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>setAggregate(<span>string <var>$function</var></span>, <span>array <var>$columns</var></span>): $this</code>
+				<code>setAggregate(<span>string <var>$function</var></span>, <span>array&lt;<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string&gt; <var>$columns</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -6321,7 +6352,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>onceWithColumns(<span>array <var>$columns</var></span>, <span>callable <var>$callback</var></span>): mixed</code>
+				<code>onceWithColumns&lt;<span title="">TResult</span>&gt;(<span>array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt; <var>$columns</var></span>, <span>callable():&nbsp;TResult <var>$callback</var></span>): TResult</code>
 
 
 	<div class="expandable-collapsedView">
@@ -6601,7 +6632,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>upsert(<span>array <var>$values</var></span>, <span>array|string <var>$uniqueBy</var></span>, <span>array|null <var>$update</var> = <span class="php-kw">null</span></span>): int</code>
+				<code>upsert(<span>array <var>$values</var></span>, <span>array|string <var>$uniqueBy</var></span>, <span>?array <var>$update</var> = <span class="php-kw">null</span></span>): int</code>
 
 
 	<div class="expandable-collapsedView">
@@ -6918,7 +6949,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getColumns(): array</code>
+				<code>getColumns(): list&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7073,7 +7104,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getBindings(): array</code>
+				<code>getBindings(): list&lt;mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7104,7 +7135,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getRawBindings(): array</code>
+				<code>getRawBindings(
+	
+): array{select: list&lt;mixed&gt;, from: list&lt;mixed&gt;, join: list&lt;mixed&gt;, where: list&lt;mixed&gt;, groupBy: list&lt;mixed&gt;, having: list&lt;mixed&gt;, order: list&lt;mixed&gt;, union: list&lt;mixed&gt;, unionOrder: list&lt;mixed&gt;}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7135,7 +7168,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>setBindings(<span>array <var>$bindings</var></span>, <span>string <var>$type</var> = <span class="php-str">'where'</span></span>): $this</code>
+				<code>setBindings(
+	<span>list&lt;mixed&gt; <var>$bindings</var></span>,
+	<span><span class="php-str">'select'</span>|<span class="php-str">'from'</span>|<span class="php-str">'join'</span>|<span class="php-str">'where'</span>|<span class="php-str">'groupBy'</span>|<span class="php-str">'having'</span>|<span class="php-str">'order'</span>|<span class="php-str">'union'</span>|<span class="php-str">'unionOrder'</span> <var>$type</var> = <span class="php-str">'where'</span></span>,
+): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7173,7 +7209,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>addBinding(<span>mixed <var>$value</var></span>, <span>string <var>$type</var> = <span class="php-str">'where'</span></span>): $this</code>
+				<code>addBinding(
+	<span>mixed <var>$value</var></span>,
+	<span><span class="php-str">'select'</span>|<span class="php-str">'from'</span>|<span class="php-str">'join'</span>|<span class="php-str">'where'</span>|<span class="php-str">'groupBy'</span>|<span class="php-str">'having'</span>|<span class="php-str">'order'</span>|<span class="php-str">'union'</span>|<span class="php-str">'unionOrder'</span> <var>$type</var> = <span class="php-str">'where'</span></span>,
+): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7273,7 +7312,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>cleanBindings(<span>array <var>$bindings</var></span>): array</code>
+				<code>cleanBindings(<span>array&lt;mixed&gt; <var>$bindings</var></span>): list&lt;mixed&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -7783,7 +7822,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunk">chunk()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkMap">chunkMap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_each">each()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkById">chunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkByIdDesc">chunkByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedChunkById">orderedChunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_eachById">eachById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazy">lazy()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyById">lazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyByIdDesc">lazyByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedLazyById">orderedLazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_first">first()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_firstOrFail">firstOrFail()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_sole">sole()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginateUsingCursor">paginateUsingCursor()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_getOriginalColumnNameForCursorPagination">getOriginalColumnNameForCursorPagination()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginator">paginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_simplePaginator">simplePaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_cursorPaginator">cursorPaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_tap">tap()</a></code>				</td>
+<code><a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunk">chunk()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkMap">chunkMap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_each">each()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkById">chunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_chunkByIdDesc">chunkByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedChunkById">orderedChunkById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_eachById">eachById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazy">lazy()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyById">lazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_lazyByIdDesc">lazyByIdDesc()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_orderedLazyById">orderedLazyById()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_first">first()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_firstOrFail">firstOrFail()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_sole">sole()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginateUsingCursor">paginateUsingCursor()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_getOriginalColumnNameForCursorPagination">getOriginalColumnNameForCursorPagination()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_paginator">paginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_simplePaginator">simplePaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_cursorPaginator">cursorPaginator()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_tap">tap()</a>, <a href="Illuminate.Database.Concerns.BuildsQueries.html#_pipe">pipe()</a></code>				</td>
 			</tr>
 		</table>
 
@@ -7910,7 +7949,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array</code>
+				<code class="nowrap">array{select: list&lt;mixed&gt;, from: list&lt;mixed&gt;, join: list&lt;mixed&gt;, where: list&lt;mixed&gt;, groupBy: list&lt;mixed&gt;, having: list&lt;mixed&gt;, order: list&lt;mixed&gt;, union: list&lt;mixed&gt;, unionOrder: list&lt;mixed&gt;}</code>
 			</td>
 
 			<td class="table-cell">
@@ -7944,7 +7983,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array|null</code>
+				<code class="nowrap">array{function: string, columns: array&lt;<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>|string&gt;}|null</code>
 			</td>
 
 			<td class="table-cell">
@@ -7968,7 +8007,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">array|null</code>
+				<code class="nowrap">array&lt;string|<a href="Illuminate.Contracts.Database.Query.Expression.html"><span title="Illuminate\Contracts\Database\Query\Expression">Expression</span></a>&gt;|null</code>
 			</td>
 
 			<td class="table-cell">

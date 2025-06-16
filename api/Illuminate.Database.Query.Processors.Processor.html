@@ -186,7 +186,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processSchemas(<span>array <var>$results</var></span>): array</code>
+				<code>processSchemas(<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>): list&lt;array{name: string, path: (string|null), default: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -217,7 +217,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processTables(<span>array <var>$results</var></span>): array</code>
+				<code>processTables(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, schema: (string|null), schema_qualified_name: string, size: (int|null), comment: (string|null), collation: (string|null), engine: (string|null)}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -248,7 +250,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processViews(<span>array <var>$results</var></span>): array</code>
+				<code>processViews(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, schema: string, schema_qualified_name: string, definition: string}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -279,7 +283,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processTypes(<span>array <var>$results</var></span>): array</code>
+				<code>processTypes(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, schema: string, type: string, type: string, category: string, implicit: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -310,7 +316,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processColumns(<span>array <var>$results</var></span>): array</code>
+				<code>processColumns(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, type: string, type_name: string, nullable: bool, default: mixed, auto_increment: bool, comment: (string|null), generation: (array{type: string, expression: (string|null)}|null)}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -341,7 +349,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processIndexes(<span>array <var>$results</var></span>): array</code>
+				<code>processIndexes(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, columns: list&lt;string&gt;, type: string, unique: bool, primary: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -372,7 +382,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>processForeignKeys(<span>array <var>$results</var></span>): array</code>
+				<code>processForeignKeys(
+	<span>list&lt;array&lt;string, mixed&gt;&gt; <var>$results</var></span>,
+): list&lt;array{name: string, columns: list&lt;string&gt;, foreign_schema: string, foreign_table: string, foreign_columns: list&lt;string&gt;, on_update: string, on_delete: string}&gt;</code>
 
 
 	<div class="expandable-collapsedView">

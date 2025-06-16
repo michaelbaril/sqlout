@@ -170,7 +170,7 @@
 			Class <a href="namespace-Illuminate.html">Illuminate</a>\<a href="namespace-Illuminate.Database.html">Database</a>\<a href="namespace-Illuminate.Database.Eloquent.html">Eloquent</a>\<a href="namespace-Illuminate.Database.Eloquent.Relations.html">Relations</a>\<a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html">BelongsToMany</a>
 		</h1>
 
-			<h2><code>&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TPivotModel</span> is <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a>&gt;</code></h2>
+			<h2><code>&lt;<span title="">TRelatedModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TDeclaringModel</span> is <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>, <span title="">TPivotModel</span> is <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a> = <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a>, <span title="">TAccessor</span> is string = <span class="php-str">'pivot'</span>&gt;</code></h2>
 
 	<table class="classLikeSignatureTable">
 
@@ -179,7 +179,7 @@
 		<tr>
 			<th><code>extends</code></th>
 			<td>
-<code><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, TDeclaringModel, <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&gt;</code>			</td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Relation.html"><span title="Illuminate\Database\Eloquent\Relations\Relation">Relation</span></a>&lt;TRelatedModel, TDeclaringModel, <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;&gt;</code>			</td>
 		</tr>
 		<tr>
 			<th><code>uses</code></th>
@@ -252,7 +252,7 @@
 	<span>string <var>$parentKey</var></span>,
 	<span>string <var>$relatedKey</var></span>,
 	<span>string|null <var>$relationName</var> = <span class="php-kw">null</span></span>,
-): void</code>
+)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -602,7 +602,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>using(<span>class-string&lt;TPivotModel&gt; <var>$class</var></span>): $this</code>
+				<code>using&lt;<span title="">TNewPivotModel</span> is <a href="Illuminate.Database.Eloquent.Relations.Pivot.html"><span title="Illuminate\Database\Eloquent\Relations\Pivot">Pivot</span></a>&gt;(<span>class-string&lt;TNewPivotModel&gt; <var>$class</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -633,7 +633,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>as(<span>string <var>$accessor</var></span>): $this</code>
+				<code>as&lt;<span title="">TNewAccessor</span> is string&gt;(<span>TNewAccessor <var>$accessor</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1171,7 +1171,7 @@
 				<code>findOrNew(
 	<span>mixed <var>$id</var></span>,
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
-): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel)</code>
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;&nbsp;:&nbsp;TRelatedModel&amp;object{pivot: TPivotModel})</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1202,7 +1202,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>firstOrNew(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>): TRelatedModel</code>
+				<code>firstOrNew(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1233,7 +1233,12 @@
 			</td>
 
 			<td class="table-cell">
-				<code>firstOrCreate(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>firstOrCreate(
+	<span>array <var>$attributes</var> = []</span>,
+	<span>array <var>$values</var> = []</span>,
+	<span>array <var>$joining</var> = []</span>,
+	<span>bool <var>$touch</var> = <span class="php-kw">true</span></span>,
+): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1264,7 +1269,12 @@
 			</td>
 
 			<td class="table-cell">
-				<code>createOrFirst(<span>array <var>$attributes</var> = []</span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>createOrFirst(
+	<span>array <var>$attributes</var> = []</span>,
+	<span>array <var>$values</var> = []</span>,
+	<span>array <var>$joining</var> = []</span>,
+	<span>bool <var>$touch</var> = <span class="php-kw">true</span></span>,
+): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1295,7 +1305,12 @@
 			</td>
 
 			<td class="table-cell">
-				<code>updateOrCreate(<span>array <var>$attributes</var></span>, <span>array <var>$values</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>updateOrCreate(
+	<span>array <var>$attributes</var></span>,
+	<span>array <var>$values</var> = []</span>,
+	<span>array <var>$joining</var> = []</span>,
+	<span>bool <var>$touch</var> = <span class="php-kw">true</span></span>,
+): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1329,7 +1344,7 @@
 				<code>find(
 	<span>mixed <var>$id</var></span>,
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
-): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel|null)</code>
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;&nbsp;:&nbsp;(TRelatedModel&amp;object{pivot: TPivotModel})|null)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1360,7 +1375,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>findSole(<span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel</code>
+				<code>findSole(<span>mixed <var>$id</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1402,7 +1417,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>findMany(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|array <var>$ids</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;</code>
+				<code>findMany(<span><a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>|array <var>$ids</var></span>, <span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): <a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1436,7 +1451,7 @@
 				<code>findOrFail(
 	<span>mixed <var>$id</var></span>,
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
-): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;&nbsp;:&nbsp;TRelatedModel)</code>
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;&nbsp;:&nbsp;TRelatedModel&amp;object{pivot: TPivotModel})</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1478,7 +1493,7 @@
 	<span>mixed <var>$id</var></span>,
 	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|list&lt;string&gt;|string <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
-): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&gt;|TValue&nbsp;:&nbsp;TRelatedModel|TValue)</code>
+): ($id is <a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;array-key, mixed&gt;|array&lt;mixed&gt;&nbsp;?&nbsp;<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;|TValue&nbsp;:&nbsp;(TRelatedModel&amp;object{pivot: TPivotModel})|TValue)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1514,7 +1529,7 @@
 	<span>mixed <var>$operator</var> = <span class="php-kw">null</span></span>,
 	<span>mixed <var>$value</var> = <span class="php-kw">null</span></span>,
 	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
-): TRelatedModel|null</code>
+): (TRelatedModel&amp;object{pivot: TPivotModel})|null</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1545,7 +1560,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>first(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel|null</code>
+				<code>first(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): (TRelatedModel&amp;object{pivot: TPivotModel})|null</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1576,7 +1591,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>firstOrFail(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel</code>
+				<code>firstOrFail(<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1617,7 +1632,7 @@
 				<code>firstOr&lt;<span title="">TValue</span>&gt;(
 	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|list&lt;string&gt; <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>():&nbsp;TValue)|null <var>$callback</var> = <span class="php-kw">null</span></span>,
-): TRelatedModel|TValue</code>
+): (TRelatedModel&amp;object{pivot: TPivotModel})|TValue</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1793,7 +1808,7 @@
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
 	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
-): <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a></code>
+): <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span title="Illuminate\Pagination\LengthAwarePaginator">LengthAwarePaginator</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1829,7 +1844,7 @@
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$pageName</var> = <span class="php-str">'page'</span></span>,
 	<span>int|null <var>$page</var> = <span class="php-kw">null</span></span>,
-): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a></code>
+): <a href="Illuminate.Contracts.Pagination.Paginator.html"><span title="Illuminate\Contracts\Pagination\Paginator">Paginator</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1865,7 +1880,7 @@
 	<span>array <var>$columns</var> = [<span class="php-str">'*'</span>]</span>,
 	<span>string <var>$cursorName</var> = <span class="php-str">'cursor'</span></span>,
 	<span>string|null <var>$cursor</var> = <span class="php-kw">null</span></span>,
-): <a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a></code>
+): <a href="Illuminate.Contracts.Pagination.CursorPaginator.html"><span title="Illuminate\Contracts\Pagination\CursorPaginator">CursorPaginator</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2088,7 +2103,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>lazy(<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+				<code>lazy(<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2123,7 +2138,7 @@
 	<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>,
 	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
 	<span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>,
-): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2158,7 +2173,7 @@
 	<span>int <var>$chunkSize</var> = <span class="php-num">1000</span></span>,
 	<span>string|null <var>$column</var> = <span class="php-kw">null</span></span>,
 	<span>string|null <var>$alias</var> = <span class="php-kw">null</span></span>,
-): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2189,7 +2204,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>cursor(): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&gt;</code>
+				<code>cursor(): <a href="Illuminate.Support.LazyCollection.html"><span title="Illuminate\Support\LazyCollection">LazyCollection</span></a>&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2474,7 +2489,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>save(<span>TRelatedModel <var>$model</var></span>, <span>array <var>$pivotAttributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>save(<span>TRelatedModel <var>$model</var></span>, <span>array <var>$pivotAttributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2505,7 +2520,11 @@
 			</td>
 
 			<td class="table-cell">
-				<code>saveQuietly(<span>TRelatedModel <var>$model</var></span>, <span>array <var>$pivotAttributes</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>saveQuietly(
+	<span>TRelatedModel <var>$model</var></span>,
+	<span>array <var>$pivotAttributes</var> = []</span>,
+	<span>bool <var>$touch</var> = <span class="php-kw">true</span></span>,
+): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2604,7 +2623,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>create(<span>array <var>$attributes</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel</code>
+				<code>create(<span>array <var>$attributes</var> = []</span>, <span>array <var>$joining</var> = []</span>, <span>bool <var>$touch</var> = <span class="php-kw">true</span></span>): TRelatedModel&amp;object{pivot: TPivotModel}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -2635,7 +2654,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>createMany(<span>iterable <var>$records</var></span>, <span>array <var>$joinings</var> = []</span>): array&lt;int, TRelatedModel&gt;</code>
+				<code>createMany(<span>iterable <var>$records</var></span>, <span>array <var>$joinings</var> = []</span>): array&lt;int, TRelatedModel&amp;object{pivot: TPivotModel}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3254,7 +3273,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getPivotAccessor(): string</code>
+				<code>getPivotAccessor(): TAccessor</code>
 
 
 	<div class="expandable-collapsedView">
@@ -3387,7 +3406,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_toggle">toggle()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithoutDetaching">syncWithoutDetaching()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_sync">sync()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithPivotValues">syncWithPivotValues()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatRecordsList">formatRecordsList()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachNew">attachNew()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivot">updateExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivotUsingCustomClass">updateExistingPivotUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attach">attach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachUsingCustomClass">attachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecords">formatAttachRecords()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecord">formatAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_extractAttachIdAndAttributes">extractAttachIdAndAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_baseAttachRecord">baseAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_addTimestampsToAttachment">addTimestampsToAttachment()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_hasPivotColumn">hasPivotColumn()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detach">detach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detachUsingCustomClass">detachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getCurrentlyAttachedPivots">getCurrentlyAttachedPivots()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivot">newPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newExistingPivot">newExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatement">newPivotStatement()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatementForId">newPivotStatementForId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotQuery">newPivotQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_withPivot">withPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseIds">parseIds()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseId">parseId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKeys">castKeys()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKey">castKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castAttributes">castAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getTypeSwapValue">getTypeSwapValue()</a></code>				</td>
+<code><a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_toggle">toggle()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithoutDetaching">syncWithoutDetaching()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_sync">sync()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_syncWithPivotValues">syncWithPivotValues()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatRecordsList">formatRecordsList()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachNew">attachNew()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivot">updateExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_updateExistingPivotUsingCustomClass">updateExistingPivotUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attach">attach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_attachUsingCustomClass">attachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecords">formatAttachRecords()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_formatAttachRecord">formatAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_extractAttachIdAndAttributes">extractAttachIdAndAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_baseAttachRecord">baseAttachRecord()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_addTimestampsToAttachment">addTimestampsToAttachment()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_hasPivotColumn">hasPivotColumn()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detach">detach()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_detachUsingCustomClass">detachUsingCustomClass()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getCurrentlyAttachedPivots">getCurrentlyAttachedPivots()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getCurrentlyAttachedPivotsForIds">getCurrentlyAttachedPivotsForIds()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivot">newPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newExistingPivot">newExistingPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatement">newPivotStatement()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotStatementForId">newPivotStatementForId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_newPivotQuery">newPivotQuery()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_withPivot">withPivot()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseIds">parseIds()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_parseId">parseId()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKeys">castKeys()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castKey">castKey()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_castAttributes">castAttributes()</a>, <a href="Illuminate.Database.Eloquent.Relations.Concerns.InteractsWithPivotTable.html#_getTypeSwapValue">getTypeSwapValue()</a></code>				</td>
 			</tr>
 		</table>
 
@@ -3776,7 +3795,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap">string</code>
+				<code class="nowrap">TAccessor</code>
 			</td>
 
 			<td class="table-cell">

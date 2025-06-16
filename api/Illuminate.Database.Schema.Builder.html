@@ -156,7 +156,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a> <var>$connection</var></span>): void</code>
+				<code>__construct(<span><a href="Illuminate.Database.Connection.html"><span title="Illuminate\Database\Connection">Connection</span></a> <var>$connection</var></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -411,7 +411,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getSchemas(): array</code>
+				<code>getSchemas(): list&lt;array{name: string, path: (string|null), default: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -504,7 +504,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getTables(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+				<code>getTables(
+	<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>,
+): list&lt;array{name: string, schema: (string|null), schema_qualified_name: string, size: (int|null), comment: (string|null), collation: (string|null), engine: (string|null)}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -535,7 +537,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getTableListing(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>, <span>bool <var>$schemaQualified</var> = <span class="php-kw">true</span></span>): array</code>
+				<code>getTableListing(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>, <span>bool <var>$schemaQualified</var> = <span class="php-kw">true</span></span>): list&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -566,7 +568,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getViews(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+				<code>getViews(
+	<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>,
+): list&lt;array{name: string, schema: (string|null), schema_qualified_name: string, definition: string}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -597,7 +601,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getTypes(<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>): array</code>
+				<code>getTypes(
+	<span>string|string[]|null <var>$schema</var> = <span class="php-kw">null</span></span>,
+): list&lt;array{name: string, schema: string, type: string, type: string, category: string, implicit: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -659,7 +665,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>hasColumns(<span>string <var>$table</var></span>, <span>array <var>$columns</var></span>): bool</code>
+				<code>hasColumns(<span>string <var>$table</var></span>, <span>array&lt;string&gt; <var>$columns</var></span>): bool</code>
 
 
 	<div class="expandable-collapsedView">
@@ -783,7 +789,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getColumnListing(<span>string <var>$table</var></span>): array</code>
+				<code>getColumnListing(<span>string <var>$table</var></span>): list&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -814,7 +820,9 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getColumns(<span>string <var>$table</var></span>): array</code>
+				<code>getColumns(
+	<span>string <var>$table</var></span>,
+): list&lt;array{name: string, type: string, type_name: string, nullable: bool, default: mixed, auto_increment: bool, comment: (string|null), generation: (array{type: string, expression: (string|null)}|null)}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -845,7 +853,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getIndexes(<span>string <var>$table</var></span>): array</code>
+				<code>getIndexes(<span>string <var>$table</var></span>): list&lt;array{name: string, columns: list&lt;string&gt;, type: string, unique: bool, primary: bool}&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -876,7 +884,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>getIndexListing(<span>string <var>$table</var></span>): array</code>
+				<code>getIndexListing(<span>string <var>$table</var></span>): list&lt;string&gt;</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1093,7 +1101,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>dropColumns(<span>string <var>$table</var></span>, <span>string|array <var>$columns</var></span>): void</code>
+				<code>dropColumns(<span>string <var>$table</var></span>, <span>string|array&lt;string&gt; <var>$columns</var></span>): void</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1548,7 +1556,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>blueprintResolver(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$resolver</var></span>): void</code>
+				<code>blueprintResolver(<span>(<a href="Closure.html"><span title="Closure">Closure</span></a>(string, <a href="Closure.html"><span title="Closure">Closure</span></a>, string):&nbsp;<a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a>)|null <var>$resolver</var></span>): void</code>
 
 
 	<div class="expandable-collapsedView">
@@ -1648,7 +1656,7 @@
 			</td>
 
 			<td class="table-cell table-shrink">
-				<code class="nowrap"><a href="Closure.html"><span title="Closure">Closure</span></a></code>
+				<code class="nowrap">(<a href="Closure.html"><span title="Closure">Closure</span></a>(string, <a href="Closure.html"><span title="Closure">Closure</span></a>, string):&nbsp;<a href="Illuminate.Database.Schema.Blueprint.html"><span title="Illuminate\Database\Schema\Blueprint">Blueprint</span></a>)|null</code>
 			</td>
 
 			<td class="table-cell">

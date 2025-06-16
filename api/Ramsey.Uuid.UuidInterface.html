@@ -125,8 +125,7 @@
 
 	</table>
 		<div class="classLikeDescription">
-	<div class="description"><p>A UUID is a universally unique identifier adhering to an agreed-upon
-representation format and standard for generation</p>
+	<div class="description"><p>A UUID is a universally unique identifier adhering to an agreed-upon representation format and standard for generation</p>
 </div>
 		</div>
 
@@ -182,20 +181,13 @@ representation format and standard for generation</p>
 
 
 	<div class="expandable-collapsedView">
-		Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
-the other UUID
+		Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than the other UUID
 	</div>
 
 	<div class="expandable-expandedView">
-	<div class="description"><p>Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than
-the other UUID</p>
-<p>The first of two UUIDs is greater than the second if the most
-significant field in which the UUIDs differ is greater for the first
-UUID.</p>
-<ul>
-<li>Q. What's the value of being able to sort UUIDs?</li>
-<li>A. Use them as keys in a B-Tree or similar mapping.</li>
-</ul>
+	<div class="description"><p>Returns -1, 0, or 1 if the UUID is less than, equal to, or greater than the other UUID</p>
+<p>The first of two UUIDs is greater than the second if the most significant field in which the UUIDs differ is
+greater for the first UUID.</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -243,9 +235,8 @@ UUID.</p>
 
 	<div class="expandable-expandedView">
 	<div class="description"><p>Returns true if the UUID is equal to the provided object</p>
-<p>The result is true if and only if the argument is not null, is a UUID
-object, has the same variant, and contains the same value, bit for bit,
-as the UUID.</p>
+<p>The result is true if and only if the argument is not null, is a UUID object, has the same variant, and contains
+the same value, bit-for-bit, as the UUID.</p>
 </div>
 
 							<h4>Parameters</h4>
@@ -284,7 +275,7 @@ as the UUID.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>getBytes(): string</code>
+				<code>getBytes(): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">
@@ -464,7 +455,7 @@ as the UUID.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>toString(): string</code>
+				<code>toString(): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">
@@ -500,7 +491,7 @@ as the UUID.</p>
 			</td>
 
 			<td class="table-cell">
-				<code>__toString(): string</code>
+				<code>__toString(): non-empty-string</code>
 
 
 	<div class="expandable-collapsedView">

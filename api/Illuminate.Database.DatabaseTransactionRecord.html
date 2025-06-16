@@ -196,7 +196,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>__construct(<span>string <var>$connection</var></span>, <span>int <var>$level</var></span>, <span><b><span class="active" title="Illuminate\Database\DatabaseTransactionRecord">DatabaseTransactionRecord</span></b>|null <var>$parent</var> = <span class="php-kw">null</span></span>): void</code>
+				<code>__construct(<span>string <var>$connection</var></span>, <span>int <var>$level</var></span>, <span><b><span class="active" title="Illuminate\Database\DatabaseTransactionRecord">DatabaseTransactionRecord</span></b>|null <var>$parent</var> = <span class="php-kw">null</span></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -247,6 +247,37 @@
 			<a href="#_addCallback">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="addCallbackForRollback" id="_addCallbackForRollback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>addCallbackForRollback(<span>callable <var>$callback</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Register a callback to be executed after rollback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Register a callback to be executed after rollback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addCallbackForRollback">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="executeCallbacks" id="_executeCallbacks">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -278,6 +309,37 @@
 			<a href="#_executeCallbacks">#</a>
 		</td>
 	</tr>
+	<tr class="expandable collapsed" data-order="executeCallbacksForRollback" id="_executeCallbacksForRollback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>executeCallbacksForRollback(): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Execute all of the callbacks for rollback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Execute all of the callbacks for rollback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_executeCallbacksForRollback">#</a>
+		</td>
+	</tr>
 	<tr class="expandable collapsed" data-order="getCallbacks" id="_getCallbacks">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -307,6 +369,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_getCallbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCallbacksForRollback" id="_getCallbacksForRollback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCallbacksForRollback(): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Get all of the callbacks for rollback.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get all of the callbacks for rollback.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCallbacksForRollback">#</a>
 		</td>
 	</tr>
 		</table>
@@ -415,6 +508,30 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#$callbacks">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callbacksForRollback" id="$callbacksForRollback">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">array</code>
+			</td>
+
+			<td class="table-cell">
+<code><var>$callbacksForRollback</var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$callbacksForRollback">#</a>
 		</td>
 	</tr>
 		</table>

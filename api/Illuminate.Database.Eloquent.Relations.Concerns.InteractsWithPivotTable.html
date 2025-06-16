@@ -214,7 +214,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code>syncWithoutDetaching(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>): array{attached: array, detached: array, updated: array}</code>
+				<code>syncWithoutDetaching(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array|int|string <var>$ids</var></span>): array{attached: array, detached: array, updated: array}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -245,7 +245,10 @@
 			</td>
 
 			<td class="table-cell">
-				<code>sync(<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>, <span>bool <var>$detaching</var> = <span class="php-kw">true</span></span>): array{attached: array, detached: array, updated: array}</code>
+				<code>sync(
+	<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array|int|string <var>$ids</var></span>,
+	<span>bool <var>$detaching</var> = <span class="php-kw">true</span></span>,
+): array{attached: array, detached: array, updated: array}</code>
 
 
 	<div class="expandable-collapsedView">
@@ -277,7 +280,7 @@
 
 			<td class="table-cell">
 				<code>syncWithPivotValues(
-	<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array <var>$ids</var></span>,
+	<span><a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a>|<a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|array|int|string <var>$ids</var></span>,
 	<span>array <var>$values</var></span>,
 	<span>bool <var>$detaching</var> = <span class="php-kw">true</span></span>,
 ): array{attached: array, detached: array, updated: array}</code>
@@ -763,6 +766,37 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_getCurrentlyAttachedPivots">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getCurrentlyAttachedPivotsForIds" id="_getCurrentlyAttachedPivotsForIds">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>getCurrentlyAttachedPivotsForIds(<span>mixed <var>$ids</var> = <span class="php-kw">null</span></span>): <a href="Illuminate.Support.Collection.html"><span title="Illuminate\Support\Collection">Collection</span></a></code>
+
+
+	<div class="expandable-collapsedView">
+		Get the pivot models that are currently attached, filtered by related model keys.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get the pivot models that are currently attached, filtered by related model keys.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getCurrentlyAttachedPivotsForIds">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="newPivot" id="_newPivot">

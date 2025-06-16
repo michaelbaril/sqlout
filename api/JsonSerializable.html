@@ -111,6 +111,7 @@
 			<a href="Illuminate.Database.Eloquent.Concerns.HidesAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.GuardsAttributes.html"><span title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Concerns.PreventsCircularRecursion.html"><span title="Illuminate\Database\Eloquent\Concerns\PreventsCircularRecursion">PreventsCircularRecursion</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html"><span title="Illuminate\Database\Eloquent\Concerns\TransformsToResource">TransformsToResource</span></a>, 
 			<a href="Illuminate.Support.Traits.ForwardsCalls.html"><span title="Illuminate\Support\Traits\ForwardsCalls">ForwardsCalls</span></a>, 
 			<a href="Illuminate.Database.Eloquent.HasCollection.html"><span title="Illuminate\Database\Eloquent\HasCollection">HasCollection</span></a>
 	<ul class="classTree">
@@ -168,24 +169,6 @@
 	</ul>
 	</li>
 	<li>
-<a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a>
-
-		implements
-			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
-			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
-			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
-
-	<ul class="classTree">
-	<li>
-<a href="Symfony.Component.Uid.Ulid.html"><span>Symfony\Component\Uid\Ulid</span></a>
-
-		implements
-			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
-
-	</li>
-	</ul>
-	</li>
-	<li>
 <a href="Illuminate.Pagination.LengthAwarePaginator.html"><span>Illuminate\Pagination\LengthAwarePaginator</span></a>
 
 		implements
@@ -234,6 +217,7 @@
 			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>
 
 		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
 			<a href="Illuminate.Support.Traits.InteractsWithData.html"><span title="Illuminate\Support\Traits\InteractsWithData">InteractsWithData</span></a>, 
 			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
 	<ul class="classTree">
@@ -273,6 +257,38 @@
 
 	</li>
 	<li>
+<a href="Symfony.Component.Uid.AbstractUid.html"><span>Symfony\Component\Uid\AbstractUid</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>, 
+			<a href="Symfony.Component.Uid.HashableInterface.html"><span title="Symfony\Component\Uid\HashableInterface">HashableInterface</span></a>
+
+	<ul class="classTree">
+	<li>
+<a href="Symfony.Component.Uid.Ulid.html"><span>Symfony\Component\Uid\Ulid</span></a>
+
+		implements
+			<a href="Symfony.Component.Uid.TimeBasedUidInterface.html"><span title="Symfony\Component\Uid\TimeBasedUidInterface">TimeBasedUidInterface</span></a>
+
+	</li>
+	</ul>
+	</li>
+	<li>
+<a href="Illuminate.Support.Stringable.html"><span>Illuminate\Support\Stringable</span></a>
+
+		implements
+			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
+			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
+			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
+
+		uses
+			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
+			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, 
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
+	</li>
+	<li>
 <a href="Ds.Pair.html"><span>Ds\Pair</span></a>
 
 		implements
@@ -301,20 +317,6 @@
 
 	</li>
 	<li>
-<a href="Illuminate.Support.Stringable.html"><span>Illuminate\Support\Stringable</span></a>
-
-		implements
-			<b><span class="active" title="JsonSerializable">JsonSerializable</span></b>, 
-			<a href="ArrayAccess.html"><span title="ArrayAccess">ArrayAccess</span></a>, 
-			<a href="Stringable.html"><span title="Stringable">Stringable</span></a>
-
-		uses
-			<a href="Illuminate.Support.Traits.Conditionable.html"><span title="Illuminate\Support\Traits\Conditionable">Conditionable</span></a>, 
-			<a href="Illuminate.Support.Traits.Dumpable.html"><span title="Illuminate\Support\Traits\Dumpable">Dumpable</span></a>, 
-			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
-			<a href="Illuminate.Support.Traits.Tappable.html"><span title="Illuminate\Support\Traits\Tappable">Tappable</span></a>
-	</li>
-	<li>
 <a href="Illuminate.Support.Enumerable.html"><span>Illuminate\Support\Enumerable</span></a>
 		extends
 			<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a>&lt;TKey, TValue&gt;, 
@@ -335,7 +337,8 @@
 
 		uses
 			<a href="Illuminate.Support.Traits.EnumeratesValues.html"><span title="Illuminate\Support\Traits\EnumeratesValues">EnumeratesValues</span></a>, 
-			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>
+			<a href="Illuminate.Support.Traits.Macroable.html"><span title="Illuminate\Support\Traits\Macroable">Macroable</span></a>, 
+			<a href="Illuminate.Support.Traits.TransformsToResourceCollection.html"><span title="Illuminate\Support\Traits\TransformsToResourceCollection">TransformsToResourceCollection</span></a>
 	<ul class="classTree">
 	<li>
 <a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
@@ -580,6 +583,16 @@
 				<li>
 <a href="Illuminate.Http.Resources.Json.JsonResource.html#_jsonSerialize">						<code>Illuminate\Http\Resources\Json\JsonResource::jsonSerialize()</code></a>				</li>
 				<li>
+<a href="Illuminate.Pagination.LengthAwarePaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\LengthAwarePaginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Pagination.Paginator.html#_jsonSerialize">						<code>Illuminate\Pagination\Paginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Pagination.CursorPaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\CursorPaginator::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.Fluent.html#_jsonSerialize">						<code>Illuminate\Support\Fluent::jsonSerialize()</code></a>				</li>
+				<li>
+<a href="Illuminate.Support.MessageBag.html#_jsonSerialize">						<code>Illuminate\Support\MessageBag::jsonSerialize()</code></a>				</li>
+				<li>
 <a href="Ramsey.Uuid.Uuid.html#_jsonSerialize">						<code>Ramsey\Uuid\Uuid::jsonSerialize()</code></a>				</li>
 				<li>
 <a href="Ramsey.Uuid.Type.Hexadecimal.html#_jsonSerialize">						<code>Ramsey\Uuid\Type\Hexadecimal::jsonSerialize()</code></a>				</li>
@@ -588,17 +601,9 @@
 				<li>
 <a href="Symfony.Component.Uid.AbstractUid.html#_jsonSerialize">						<code>Symfony\Component\Uid\AbstractUid::jsonSerialize()</code></a>				</li>
 				<li>
-<a href="Illuminate.Pagination.LengthAwarePaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\LengthAwarePaginator::jsonSerialize()</code></a>				</li>
-				<li>
-<a href="Illuminate.Pagination.Paginator.html#_jsonSerialize">						<code>Illuminate\Pagination\Paginator::jsonSerialize()</code></a>				</li>
-				<li>
 <a href="Ramsey.Uuid.Type.Time.html#_jsonSerialize">						<code>Ramsey\Uuid\Type\Time::jsonSerialize()</code></a>				</li>
 				<li>
-<a href="Illuminate.Pagination.CursorPaginator.html#_jsonSerialize">						<code>Illuminate\Pagination\CursorPaginator::jsonSerialize()</code></a>				</li>
-				<li>
-<a href="Illuminate.Support.Fluent.html#_jsonSerialize">						<code>Illuminate\Support\Fluent::jsonSerialize()</code></a>				</li>
-				<li>
-<a href="Illuminate.Support.MessageBag.html#_jsonSerialize">						<code>Illuminate\Support\MessageBag::jsonSerialize()</code></a>				</li>
+<a href="Illuminate.Support.Stringable.html#_jsonSerialize">						<code>Illuminate\Support\Stringable::jsonSerialize()</code></a>				</li>
 				<li>
 <a href="Ds.Vector.html#_jsonSerialize">						<code>Ds\Vector::jsonSerialize()</code></a>				</li>
 				<li>
@@ -617,8 +622,6 @@
 <a href="Ds.PriorityQueue.html#_jsonSerialize">						<code>Ds\PriorityQueue::jsonSerialize()</code></a>				</li>
 				<li>
 <a href="Carbon.Language.html#_jsonSerialize">						<code>Carbon\Language::jsonSerialize()</code></a>				</li>
-				<li>
-<a href="Illuminate.Support.Stringable.html#_jsonSerialize">						<code>Illuminate\Support\Stringable::jsonSerialize()</code></a>				</li>
 		</ul>
 	</div>
 			</td>

@@ -101,6 +101,11 @@
 							QueriesRelationships
 						</a>
 					</li>
+					<li>
+						<a href="Illuminate.Database.Eloquent.Concerns.TransformsToResource.html">
+							TransformsToResource
+						</a>
+					</li>
 			</ul>
 		</div>
 	</div>
@@ -1382,6 +1387,86 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_orWhereBelongsTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="whereAttachedTo" id="_whereAttachedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>whereAttachedTo(
+	<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>|<a href="Illuminate.Database.Eloquent.Collection.html"><span title="Illuminate\Database\Eloquent\Collection">Collection</span></a>&lt;int, <a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a>&gt; <var>$related</var></span>,
+	<span>string|null <var>$relationshipName</var> = <span class="php-kw">null</span></span>,
+	<span>string <var>$boolean</var> = <span class="php-str">'and'</span></span>,
+): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "belongs to many" relationship where clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;belongs to many&quot; relationship where clause to the query.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="Illuminate.Database.Eloquent.RelationNotFoundException.html"><span>Illuminate\Database\Eloquent\RelationNotFoundException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_whereAttachedTo">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orWhereAttachedTo" id="_orWhereAttachedTo">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code>orWhereAttachedTo(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$related</var></span>, <span>string|null <var>$relationshipName</var> = <span class="php-kw">null</span></span>): $this</code>
+
+
+	<div class="expandable-collapsedView">
+		Add a "belongs to many" relationship with an "or where" clause to the query.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Add a &quot;belongs to many&quot; relationship with an &quot;or where&quot; clause to the query.</p>
+</div>
+
+
+
+							<h4>Throws</h4>
+							<table>
+									<tr>
+										<td><code><a href="RuntimeException.html"><span>RuntimeException</span></a></code>&nbsp;</td>
+										<td></td>
+									</tr>
+							</table>
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_orWhereAttachedTo">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="withAggregate" id="_withAggregate">
