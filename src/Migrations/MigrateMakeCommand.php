@@ -6,10 +6,14 @@ use Baril\Sqlout\Migrations\MigrationCreator;
 use Illuminate\Database\Console\Migrations\MigrateMakeCommand as BaseCommand;
 use Illuminate\Support\Composer;
 use Illuminate\Support\Str;
+use InvalidArgumentException;
 
 class MigrateMakeCommand extends BaseCommand
 {
-    protected $signature = 'sqlout:make-migration {connection? : Name of the connection}
+    protected $signature = 'sqlout:make-migration
+        {connection? : Name of the connection}
+        {table? : Name of the table}
+        {--model= : The model that the index is for}
         {--name= : The name of the migration.}
         {--path= : The location where the migration file should be created.}
         {--realpath : Indicate any provided migration file paths are pre-resolved absolute paths.}
@@ -23,9 +27,26 @@ class MigrateMakeCommand extends BaseCommand
 
     public function handle()
     {
-        $connection = $this->input->getArgument('connection') ?? config('database.default');
+        $name = $this->input->getOption('name');
+        
+        if ($modelClass = $this->input->getOption('model')) {
+            if (!class_exists($modelClass)) {
+                throw new InvalidArgumentException("$modelClass class does not exist!");
+            }
+            if (!method_exists($modelClass, 'searchableAs')) {
+                throw new InvalidArgumentException("$modelClass class is not searchable!");
+            }
+            $model = new $modelClass();
+            $connection = $model->getConnectionName();
+            $table = $model->searchableAs();
+            $name = 'create sqlout index for ' . class_basename($modelClass);
+        } else {
+            $connection = $this->input->getArgument('connection') ?? config('database.default');
+            $table = $this->input->getArgument('table') ?? config('scout.sqlout.table_name');
+            $name = "create sqlout index $connection $table";
+        }
 
-        $this->writeSqloutMigration($connection);
+        $this->writeSqloutMigration($name, $connection, $table);
         $this->composer->dumpAutoloads();
 
         if ($this->input->hasOption('migrate') && $this->option('migrate')) {
@@ -33,13 +54,11 @@ class MigrateMakeCommand extends BaseCommand
         }
     }
 
-    protected function writeSqloutMigration($connection)
+    protected function writeSqloutMigration($name, $connection, $tableName)
     {
         // Get the name for the migration file:
-        $name = $this->input->getOption('name') ?: 'create_sqlout_index_for_' . $connection;
         $name = Str::snake(trim($name));
         $className = Str::studly($name);
-        $tableName = config('scout.sqlout.table_name');
 
         // Generate the content of the migration file:
         $contents = $this->getMigrationContents($className, $connection, $tableName);

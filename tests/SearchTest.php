@@ -6,11 +6,14 @@ use Baril\Sqlout\Builder;
 use Baril\Sqlout\SearchIndex;
 use Baril\Sqlout\Tests\Models\Comment;
 use Baril\Sqlout\Tests\Models\Post;
+use Baril\Sqlout\Tests\Models\PostOtherSearchIndex;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\DB as DB;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\LazyCollection;
 use Laravel\Scout\Builder as ScoutBuilder;
+use Orchestra\Testbench\Database\MigrateProcessor;
 use Wamania\Snowball\StemmerFactory;
 
 class SearchTest extends TestCase
@@ -356,5 +359,42 @@ class SearchTest extends TestCase
             $ids->skip(2)->take(2)->values()->all(),
             array_map(function ($item) { return $item->id; }, $paginator->items())
         );
+    }
+
+    public function test_other_index()
+    {
+        $path = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'migrations';
+        File::deleteDirectory($path);
+        File::makeDirectory($path);
+
+        $this->artisan('sqlout:make-migration', [
+            '--model' => PostOtherSearchIndex::class,
+            '--path' => $path,
+            '--realpath' => true,
+        ]);
+
+        $this->assertCount(1, File::allFiles($path));
+
+        $migrator = new MigrateProcessor($this, [
+            '--path' => $path,
+            '--realpath' => true,
+        ]);
+        $migrator->up();
+
+        $this->assertTrue(DB::getSchemaBuilder()->hasTable('other_searchindex'));
+
+        PostOtherSearchIndex::unguard();
+        PostOtherSearchIndex::create([
+            'title' => 'kiki',
+            'body' => 'kuku',
+        ]);
+
+        $this->assertNotEmpty(DB::table('other_searchindex')->get());
+
+        $search = PostOtherSearchIndex::search('kiki');
+        $this->assertEquals(1, $search->count());
+
+        // Cleaning stuff:
+        File::deleteDirectory($path);
     }
 }

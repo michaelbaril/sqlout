@@ -35,4 +35,17 @@ trait Searchable
     {
         return $this->weights[$field] ?? 1;
     }
+
+    /**
+     * Get the index name for the model when searching.
+     *
+     * @return string
+     */
+    public function searchableAs()
+    {
+        return config(
+            'scout.sqlout.table_name',
+            config('scout.prefix').$this->getTable().config('scout.suffix', '_index')
+        );
+    }
 }
