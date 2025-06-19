@@ -315,7 +315,36 @@ return [
 ];
 ```
 
-In the example, the stemmer comes from the package [`wamania/php-stemmer`],
+In the example, the stemmer comes from the package
+[`wamania/php-stemmer`](https://github.com/wamania/php-stemmer),
 but any class with a `stem` method, or anything callable such as a closure, will do.
 
-[`wamania/php-stemmer`]: https://github.com/wamania/php-stemmer
+As for stopwords, you can either list them directly in the config (as shown above),
+or load them from a file. The file can be either a TXT file (with one stopword per line),
+or a PHP file that returns an array:
+
+```php
+// config/scout.php
+return [
+    // ...
+    'sqlout' => [
+        // ...
+        'stopwords' => 'storage/app/stopwords/fr.php',
+        // ...
+    ],
+];
+```
+
+```php
+// storage/app/stopwords/fr.php
+return [
+    'à',
+    'le',
+    'la',
+];
+```
+
+You may want to use the package [`voku/stop-words`](https://github.com/voku/stop-words),
+which provides collections of stopwords for various languages as PHP files,
+or [`yooper/stop-words`](https://github.com/yooper/stop-words),
+which provides them as TXT files.

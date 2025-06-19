@@ -41,7 +41,7 @@ class Engine extends ScoutEngine
 
         // Remove stopwords & short words:
         $minLength = config('scout.sqlout.minimum_length', 0);
-        $stopwords = config('scout.sqlout.stopwords', []);
+        $stopwords = $this->loadStopWords();
         $words = (new Collection($words))->reject(function ($word) use ($minLength, $stopwords) {
             return mb_strlen($word) < $minLength || in_array($word, $stopwords);
         })->all();
@@ -67,6 +67,32 @@ class Engine extends ScoutEngine
 
         // Return result:
         return implode(' ', $words);
+    }
+
+    protected function loadStopWords()
+    {
+        $stopwords = config('scout.sqlout.stopwords', []);
+        if (is_iterable($stopwords)) {
+            return $stopwords;
+        }
+
+        $file = $stopwords;
+        if (!file_exists($file)) {
+            throw new Exception("Can't import stop words from $file");
+        }
+
+        $stream = fopen($file, 'r');
+        $firstline = trim(fgets($stream));
+
+        if (trim($firstline) == '<?php') {
+            return require $file;
+        }
+
+        $stopwords = [$firstline];
+        while (false !== ($word = fgets($stream))) {
+            $stopwords[] = trim($word);
+        }
+        return $stopwords;
     }
 
     /**
