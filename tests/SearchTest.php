@@ -242,18 +242,40 @@ class SearchTest extends TestCase
         $this->assertEquals('salut ça boume ?', $indexed);
     }
 
-    public function test_stopwords()
+    /**
+     * @dataProvider stopWordsProvider
+     */    
+    public function test_stopwords($config, $content, $expectedIndexedContent)
     {
-        app('config')->set('scout.sqlout.stopwords', [
-            'fuck',
-        ]);
+        app('config')->set('scout.sqlout.stopwords', $config);
 
         $post = Post::first();
-        $post->body = 'shut the fuck up donny';
+        $post->body = $content;
         $post->save();
 
         $indexed = $this->newSearchQuery()->where('record_type', Post::class)->where('record_id', $post->id)->where('field', 'body')->value('content');
-        $this->assertEquals('shut the up donny', $indexed);
+        $this->assertEquals($expectedIndexedContent, $indexed);
+    }
+
+    public static function stopWordsProvider()
+    {
+        return [
+            'array' => [
+                ['fuck'],
+                'shut the fuck up donny',
+                'shut the up donny',
+            ],
+            'PHP file' => [
+                'vendor/voku/stop-words/src/voku/helper/stopwords/fr.php',
+                'banco charlie alpha bravo',
+                'charlie alpha bravo',
+            ],
+            'TXT file' => [
+                'vendor/yooper/stop-words/data/stop-words_french_1_fr.txt',
+                'bigre boum tsoin brrr kiki',
+                'kiki',
+            ],
+        ];
     }
 
     public function test_minimum_length()
