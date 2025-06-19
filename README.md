@@ -62,23 +62,90 @@ return [
 ];
 ```
 
-Migrate your database:
+## Creating the index
+
+Models are indexed in a separate table. You can either create a single table
+and use it as a global index for all models, or create 1 index table per model
+(or a mix of both).
+
+### Global index
+
+The default name for the table is `searchindex`. If you want to use a different
+name, you can configure it in `config/scout.php`:
+
+```php
+
+return [
+    // ...
+    'sqlout' => [
+        'table_name' => 'my_custom_index_name',
+        // ...
+    ],
+    // ...
+];
+
+```
+
+Then, migrate your database:
 
 ```bash
 php artisan sqlout:make-migration
 php artisan migrate
 ```
 
-This will create a `searchindex` table in your database (the table name can
-be customized in the config file).
+This will create the `searchindex` table (or whatever name you've configured).
+
+### Different connections
 
 If you want to index models that belong to different connections, you need
-a table for Sqlout on each connection. To create the table on a connection that
+an index table per connection. To create the table on a connection that
 is not the default connection, you can call the `sqlout:make-migration` command
 and pass the name of the connection:
 
 ```bash
 php artisan sqlout:make-migration my_other_connection
+php artisan migrate
+```
+
+### Separate indexes
+
+If you prefer to index each model in a different table, set the global
+index name to an empty string:
+
+```php
+
+return [
+    // ...
+    'sqlout' => [
+        'table_name' => '',
+        // ...
+    ],
+    // ...
+];
+
+```
+
+Each model will be indexed in a table named like the model table
+followed by `_index`, eg. the `Post` model will be index in `posts_index`.
+
+You can configure a different suffix, and also a prefix, in the config file:
+
+```php
+
+return [
+    'prefix' => 'sqlout_',
+    'suffix' => '',
+];
+
+```
+
+You can also customize the table name for each model with the `searchableAs` method
+(see [next section](#making-a-model-searchable)).
+
+Once you're set up, create the index table for your models like this:
+
+```bash
+php artisan sqlout:make-migration --model="\\App\\Models\\Post"
 php artisan migrate
 ```
 
@@ -105,6 +172,14 @@ class Post extends Model
             'excerpt' => $this->post_excerpt,
             'body' => $this->post_content,
         ];
+    }
+
+    // Optionally, you can customize the
+    // name of the table that the model
+    // will be indexed in:
+    public function searchableAs(): string
+    {
+        return 'my_custom_index';
     }
 }
 ```

@@ -16,7 +16,7 @@ class Engine extends ScoutEngine
         $query = SearchIndex::query();
         $searchModel = $query->getModel()
                 ->setConnection($model->getConnectionName())
-                ->setTable(config('scout.sqlout.table_name'));
+                ->setTable($model->searchableAs());
         return $query->setModel($searchModel);
     }
 

@@ -4,6 +4,7 @@ namespace Baril\Sqlout\Tests;
 
 use Baril\Sqlout\SqloutServiceProvider;
 use Dotenv\Dotenv;
+use Illuminate\Support\Facades\DB;
 use Laravel\Scout\ScoutServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
@@ -96,12 +97,8 @@ class TestCase extends OrchestraTestCase
     protected function setUp(): void
     {
         parent::setUp();
+        DB::getSchemaBuilder()->dropAllTables();
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-        \DB::enableQueryLog();
-    }
-
-    protected function dumpQueryLog()
-    {
-        dump(\DB::getQueryLog());
+        DB::enableQueryLog();
     }
 }
