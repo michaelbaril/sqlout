@@ -45,7 +45,7 @@ trait Searchable
     {
         return config(
             'scout.sqlout.table_name',
-            config('scout.prefix').$this->getTable().config('scout.suffix', '_index')
+            config('scout.prefix') . $this->getTable() . config('scout.suffix', '_index')
         );
     }
 }
