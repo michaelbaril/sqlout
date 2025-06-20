@@ -28,7 +28,7 @@ class MigrateMakeCommand extends BaseCommand
     public function handle()
     {
         $name = $this->input->getOption('name');
-        
+
         if ($modelClass = $this->input->getOption('model')) {
             if (!class_exists($modelClass)) {
                 throw new InvalidArgumentException("$modelClass class does not exist!");

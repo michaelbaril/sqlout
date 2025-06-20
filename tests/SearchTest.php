@@ -139,7 +139,7 @@ class SearchTest extends TestCase
             $search = Comment::search('kuku')->whereIn('author', ['toto', 'tutu']);
             $this->assertEquals(3, $search->count());
             $this->assertEquals(3, $search->get()->count());
-    
+
             $search = Comment::search('kuku')
                 ->whereIn('author', ['toto', 'kiki'])
                 ->where('post_id', 1);
@@ -177,7 +177,9 @@ class SearchTest extends TestCase
 
     public function test_macro_has_priority_over_scope()
     {
-        ScoutBuilder::macro('author', function () { return 'gargamel'; });
+        ScoutBuilder::macro('author', function () {
+            return 'gargamel';
+        });
         $this->assertEquals('gargamel', Comment::search('schtroumpf')->author());
     }
 
@@ -244,7 +246,7 @@ class SearchTest extends TestCase
 
     /**
      * @dataProvider stopWordsProvider
-     */    
+     */
     public function test_stopwords($config, $content, $expectedIndexedContent)
     {
         app('config')->set('scout.sqlout.stopwords', $config);
@@ -379,7 +381,9 @@ class SearchTest extends TestCase
         $this->assertEquals(2, $paginator->currentPage());
         $this->assertEquals(
             $ids->skip(2)->take(2)->values()->all(),
-            array_map(function ($item) { return $item->id; }, $paginator->items())
+            array_map(function ($item) {
+                return $item->id;
+            }, $paginator->items())
         );
     }
 
