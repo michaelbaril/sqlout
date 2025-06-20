@@ -141,6 +141,15 @@
 
 	<ul class="classTree">
 	<li>
+<a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
+	</li>
+	<li>
 <a href="Illuminate.Database.Eloquent.Relations.MorphTo.html"><span>Illuminate\Database\Eloquent\Relations\MorphTo</span></a>
 
 
@@ -166,10 +175,8 @@
 	</ul>
 	</li>
 	<li>
-<a href="Illuminate.Database.Eloquent.Collection.html"><span>Illuminate\Database\Eloquent\Collection</span></a>
+<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasManyThrough</span></a>
 
-		implements
-			<a href="Illuminate.Contracts.Queue.QueueableCollection.html"><span title="Illuminate\Contracts\Queue\QueueableCollection">QueueableCollection</span></a>
 
 		uses
 			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
@@ -187,11 +194,32 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
 	</li>
 	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough</span></a>
+
+
+		uses
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
+	<ul class="classTree">
+	<li>
 <a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasManyThrough</span></a>
 
 
 		uses
 			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
+	</li>
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneThrough</span></a>
+
+		implements
+			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
+
+		uses
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
+			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>, 
+			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
+	</li>
+	</ul>
 	</li>
 	<li>
 <a href="Illuminate.Database.Eloquent.Relations.BelongsToMany.html"><span>Illuminate\Database\Eloquent\Relations\BelongsToMany</span></a>
@@ -217,6 +245,11 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsInverseRelations.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsInverseRelations">SupportsInverseRelations</span></a>
 	<ul class="classTree">
 	<li>
+<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
+
+
+	</li>
+	<li>
 <a href="Illuminate.Database.Eloquent.Relations.HasOne.html"><span>Illuminate\Database\Eloquent\Relations\HasOne</span></a>
 
 		implements
@@ -228,15 +261,15 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
 	</li>
 	<li>
-<a href="Illuminate.Database.Eloquent.Relations.HasMany.html"><span>Illuminate\Database\Eloquent\Relations\HasMany</span></a>
-
-
-	</li>
-	<li>
 <a href="Illuminate.Database.Eloquent.Relations.MorphOneOrMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphOneOrMany</span></a>
 
 
 	<ul class="classTree">
+	<li>
+<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
+
+
+	</li>
 	<li>
 <a href="Illuminate.Database.Eloquent.Relations.MorphOne.html"><span>Illuminate\Database\Eloquent\Relations\MorphOne</span></a>
 
@@ -248,40 +281,7 @@
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
 			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
 	</li>
-	<li>
-<a href="Illuminate.Database.Eloquent.Relations.MorphMany.html"><span>Illuminate\Database\Eloquent\Relations\MorphMany</span></a>
-
-
-	</li>
 	</ul>
-	</li>
-	</ul>
-	</li>
-	<li>
-<a href="Illuminate.Database.Eloquent.Relations.HasOneOrManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough</span></a>
-
-
-		uses
-			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
-	<ul class="classTree">
-	<li>
-<a href="Illuminate.Database.Eloquent.Relations.HasOneThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasOneThrough</span></a>
-
-		implements
-			<a href="Illuminate.Contracts.Database.Eloquent.SupportsPartialRelations.html"><span title="Illuminate\Contracts\Database\Eloquent\SupportsPartialRelations">SupportsPartialRelations</span></a>
-
-		uses
-			<a href="Illuminate.Database.Eloquent.Relations.Concerns.ComparesRelatedModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\ComparesRelatedModels">ComparesRelatedModels</span></a>, 
-			<a href="Illuminate.Database.Eloquent.Relations.Concerns.CanBeOneOfMany.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\CanBeOneOfMany">CanBeOneOfMany</span></a>, 
-			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>, 
-			<a href="Illuminate.Database.Eloquent.Relations.Concerns.SupportsDefaultModels.html"><span title="Illuminate\Database\Eloquent\Relations\Concerns\SupportsDefaultModels">SupportsDefaultModels</span></a>
-	</li>
-	<li>
-<a href="Illuminate.Database.Eloquent.Relations.HasManyThrough.html"><span>Illuminate\Database\Eloquent\Relations\HasManyThrough</span></a>
-
-
-		uses
-			<b><span class="active" title="Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithDictionary">InteractsWithDictionary</span></b>
 	</li>
 	</ul>
 	</li>

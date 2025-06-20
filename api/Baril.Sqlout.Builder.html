@@ -150,42 +150,6 @@
 				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
 			</tr>
 
-	<tr class="expandable collapsed" data-order="__construct" id="___construct">
-			<td class="table-cell table-shrink">
-				<code class="nowrap">
-					
-	public
-					
-					
-				</code>
-			</td>
-
-			<td class="table-cell">
-				<code><a href="source-Builder.html#28-43" title="Go to source code">__construct</a>(<span><a href="Illuminate.Database.Eloquent.Model.html"><span title="Illuminate\Database\Eloquent\Model">Model</span></a> <var>$model</var></span>, <span>string <var>$query</var></span>, <span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var> = <span class="php-kw">null</span></span>, <span>bool <var>$softDelete</var> = <span class="php-kw">false</span></span>): void</code>
-
-
-	<div class="expandable-collapsedView">
-		Create a new search builder instance.
-	</div>
-
-	<div class="expandable-expandedView">
-	<div class="description"><p>Create a new search builder instance.</p>
-</div>
-
-
-
-
-		<h4>Overrides</h4>
-		<ul>
-				<li>
-<a href="Laravel.Scout.Builder.html#___construct">						<code>Laravel\Scout\Builder::__construct()</code></a>				</li>
-		</ul>
-	</div>
-			</td>
-		<td class="table-anchor">
-			<a href="#___construct">#</a>
-		</td>
-	</tr>
 	<tr class="expandable collapsed" data-order="__call" id="___call">
 			<td class="table-cell table-shrink">
 				<code class="nowrap">
@@ -197,7 +161,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#45-53" title="Go to source code">__call</a>(<span><var>$method</var></span>, <span><var>$parameters</var></span>)</code>
+				<code><a href="source-Builder.html#28-36" title="Go to source code">__call</a>(<span><var>$method</var></span>, <span><var>$parameters</var></span>)</code>
 
 
 
@@ -223,11 +187,16 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#55-59" title="Go to source code">scope</a>(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>)</code>
+				<code><a href="source-Builder.html#38-45" title="Go to source code"><span class="deprecated">scope</span></a>(<span><a href="Closure.html"><span title="Closure">Closure</span></a> <var>$callback</var></span>)</code>
 
 
 
 	<div class="expandable-expandedView">
+							<h4>Deprecated</h4>
+							<div>
+									<p>Will be removed in next major version, use Scout's $builder-&gt;query($callback) instead.</p>
+
+							</div>
 
 
 
@@ -236,114 +205,6 @@
 			</td>
 		<td class="table-anchor">
 			<a href="#_scope">#</a>
-		</td>
-	</tr>
-	<tr class="expandable collapsed" data-order="where" id="_where">
-			<td class="table-cell table-shrink">
-				<code class="nowrap">
-					
-	public
-					
-					
-				</code>
-			</td>
-
-			<td class="table-cell">
-				<code><a href="source-Builder.html#61-73" title="Go to source code">where</a>(<span>string <var>$field</var></span>, <span>mixed <var>$value</var></span>): $this</code>
-
-
-	<div class="expandable-collapsedView">
-		Add a constraint to the search query.
-	</div>
-
-	<div class="expandable-expandedView">
-	<div class="description"><p>Add a constraint to the search query.</p>
-</div>
-
-
-
-
-		<h4>Overrides</h4>
-		<ul>
-				<li>
-<a href="Laravel.Scout.Builder.html#_where">						<code>Laravel\Scout\Builder::where()</code></a>				</li>
-		</ul>
-	</div>
-			</td>
-		<td class="table-anchor">
-			<a href="#_where">#</a>
-		</td>
-	</tr>
-	<tr class="expandable collapsed" data-order="withTrashed" id="_withTrashed">
-			<td class="table-cell table-shrink">
-				<code class="nowrap">
-					
-	public
-					
-					
-				</code>
-			</td>
-
-			<td class="table-cell">
-				<code><a href="source-Builder.html#75-84" title="Go to source code">withTrashed</a>(): $this</code>
-
-
-	<div class="expandable-collapsedView">
-		Include soft deleted records in the results.
-	</div>
-
-	<div class="expandable-expandedView">
-	<div class="description"><p>Include soft deleted records in the results.</p>
-</div>
-
-
-
-
-		<h4>Overrides</h4>
-		<ul>
-				<li>
-<a href="Laravel.Scout.Builder.html#_withTrashed">						<code>Laravel\Scout\Builder::withTrashed()</code></a>				</li>
-		</ul>
-	</div>
-			</td>
-		<td class="table-anchor">
-			<a href="#_withTrashed">#</a>
-		</td>
-	</tr>
-	<tr class="expandable collapsed" data-order="onlyTrashed" id="_onlyTrashed">
-			<td class="table-cell table-shrink">
-				<code class="nowrap">
-					
-	public
-					
-					
-				</code>
-			</td>
-
-			<td class="table-cell">
-				<code><a href="source-Builder.html#86-95" title="Go to source code">onlyTrashed</a>(): $this</code>
-
-
-	<div class="expandable-collapsedView">
-		Include only soft deleted records in the results.
-	</div>
-
-	<div class="expandable-expandedView">
-	<div class="description"><p>Include only soft deleted records in the results.</p>
-</div>
-
-
-
-
-		<h4>Overrides</h4>
-		<ul>
-				<li>
-<a href="Laravel.Scout.Builder.html#_onlyTrashed">						<code>Laravel\Scout\Builder::onlyTrashed()</code></a>				</li>
-		</ul>
-	</div>
-			</td>
-		<td class="table-anchor">
-			<a href="#_onlyTrashed">#</a>
 		</td>
 	</tr>
 	<tr class="expandable collapsed" data-order="orderByScore" id="_orderByScore">
@@ -357,7 +218,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#97-106" title="Go to source code">orderByScore</a>(<span>string <var>$direction</var> = <span class="php-str">'desc'</span></span>): $this</code>
+				<code><a href="source-Builder.html#47-56" title="Go to source code">orderByScore</a>(<span>string <var>$direction</var> = <span class="php-str">'desc'</span></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -388,7 +249,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#108-117" title="Go to source code">only</a>(<span>string|array|<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a> <var>$fields</var></span>): $this</code>
+				<code><a href="source-Builder.html#58-67" title="Go to source code">only</a>(<span>string|array|<a href="Illuminate.Contracts.Support.Arrayable.html"><span title="Illuminate\Contracts\Support\Arrayable">Arrayable</span></a> <var>$fields</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -419,7 +280,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#119-129" title="Go to source code">mode</a>(<span>string <var>$mode</var></span>): $this</code>
+				<code><a href="source-Builder.html#69-79" title="Go to source code">mode</a>(<span>string <var>$mode</var></span>): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -450,7 +311,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#131-140" title="Go to source code">inNaturalLanguageMode</a>(): $this</code>
+				<code><a href="source-Builder.html#81-90" title="Go to source code">inNaturalLanguageMode</a>(): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -481,7 +342,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#142-151" title="Go to source code">withQueryExpansion</a>(): $this</code>
+				<code><a href="source-Builder.html#92-101" title="Go to source code">withQueryExpansion</a>(): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -512,7 +373,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#153-162" title="Go to source code">inBooleanMode</a>(): $this</code>
+				<code><a href="source-Builder.html#103-112" title="Go to source code">inBooleanMode</a>(): $this</code>
 
 
 	<div class="expandable-collapsedView">
@@ -543,7 +404,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Builder.html#164-174" title="Go to source code">count</a>(): int</code>
+				<code><a href="source-Builder.html#114-124" title="Go to source code">count</a>(): int</code>
 
 
 	<div class="expandable-collapsedView">
@@ -570,7 +431,7 @@
 			</tr>
 			<tr>
 				<td class="table-cell">
-<code><a href="Laravel.Scout.Builder.html#_within">within()</a>, <a href="Laravel.Scout.Builder.html#_whereIn">whereIn()</a>, <a href="Laravel.Scout.Builder.html#_whereNotIn">whereNotIn()</a>, <a href="Laravel.Scout.Builder.html#_take">take()</a>, <a href="Laravel.Scout.Builder.html#_orderBy">orderBy()</a>, <a href="Laravel.Scout.Builder.html#_orderByDesc">orderByDesc()</a>, <a href="Laravel.Scout.Builder.html#_latest">latest()</a>, <a href="Laravel.Scout.Builder.html#_oldest">oldest()</a>, <a href="Laravel.Scout.Builder.html#_options">options()</a>, <a href="Laravel.Scout.Builder.html#_query">query()</a>, <a href="Laravel.Scout.Builder.html#_raw">raw()</a>, <a href="Laravel.Scout.Builder.html#_withRawResults">withRawResults()</a>, <a href="Laravel.Scout.Builder.html#_keys">keys()</a>, <a href="Laravel.Scout.Builder.html#_first">first()</a>, <a href="Laravel.Scout.Builder.html#_get">get()</a>, <a href="Laravel.Scout.Builder.html#_cursor">cursor()</a>, <a href="Laravel.Scout.Builder.html#_simplePaginate">simplePaginate()</a>, <a href="Laravel.Scout.Builder.html#_simplePaginateRaw">simplePaginateRaw()</a>, <a href="Laravel.Scout.Builder.html#_paginate">paginate()</a>, <a href="Laravel.Scout.Builder.html#_paginateRaw">paginateRaw()</a>, <a href="Laravel.Scout.Builder.html#_getTotalCount">getTotalCount()</a>, <a href="Laravel.Scout.Builder.html#_applyAfterRawSearchCallback">applyAfterRawSearchCallback()</a>, <a href="Laravel.Scout.Builder.html#_engine">engine()</a></code>				</td>
+<code><a href="Laravel.Scout.Builder.html#___construct">__construct()</a>, <a href="Laravel.Scout.Builder.html#_within">within()</a>, <a href="Laravel.Scout.Builder.html#_where">where()</a>, <a href="Laravel.Scout.Builder.html#_whereIn">whereIn()</a>, <a href="Laravel.Scout.Builder.html#_whereNotIn">whereNotIn()</a>, <a href="Laravel.Scout.Builder.html#_withTrashed">withTrashed()</a>, <a href="Laravel.Scout.Builder.html#_onlyTrashed">onlyTrashed()</a>, <a href="Laravel.Scout.Builder.html#_take">take()</a>, <a href="Laravel.Scout.Builder.html#_orderBy">orderBy()</a>, <a href="Laravel.Scout.Builder.html#_orderByDesc">orderByDesc()</a>, <a href="Laravel.Scout.Builder.html#_latest">latest()</a>, <a href="Laravel.Scout.Builder.html#_oldest">oldest()</a>, <a href="Laravel.Scout.Builder.html#_options">options()</a>, <a href="Laravel.Scout.Builder.html#_query">query()</a>, <a href="Laravel.Scout.Builder.html#_raw">raw()</a>, <a href="Laravel.Scout.Builder.html#_withRawResults">withRawResults()</a>, <a href="Laravel.Scout.Builder.html#_keys">keys()</a>, <a href="Laravel.Scout.Builder.html#_first">first()</a>, <a href="Laravel.Scout.Builder.html#_get">get()</a>, <a href="Laravel.Scout.Builder.html#_cursor">cursor()</a>, <a href="Laravel.Scout.Builder.html#_simplePaginate">simplePaginate()</a>, <a href="Laravel.Scout.Builder.html#_simplePaginateRaw">simplePaginateRaw()</a>, <a href="Laravel.Scout.Builder.html#_paginate">paginate()</a>, <a href="Laravel.Scout.Builder.html#_paginateRaw">paginateRaw()</a>, <a href="Laravel.Scout.Builder.html#_getTotalCount">getTotalCount()</a>, <a href="Laravel.Scout.Builder.html#_applyAfterRawSearchCallback">applyAfterRawSearchCallback()</a>, <a href="Laravel.Scout.Builder.html#_engine">engine()</a></code>				</td>
 			</tr>
 		</table>
 

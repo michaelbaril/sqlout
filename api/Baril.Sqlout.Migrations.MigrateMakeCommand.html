@@ -149,7 +149,7 @@
 			</div>
 
 		<div class="classLikeSection">
-			<b>Located at</b> <a href="source-Migrations.MigrateMakeCommand.html#10" title="Go to source code">Migrations/MigrateMakeCommand.php</a><br>
+			<b>Located at</b> <a href="source-Migrations.MigrateMakeCommand.html#11" title="Go to source code">Migrations/MigrateMakeCommand.php</a><br>
 		</div>
 
 
@@ -170,7 +170,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Migrations.MigrateMakeCommand.html#19-22" title="Go to source code">__construct</a>(<span><a href="Baril.Sqlout.Migrations.MigrationCreator.html"><span title="Baril\Sqlout\Migrations\MigrationCreator">MigrationCreator</span></a> <var>$creator</var></span>, <span><a href="Illuminate.Support.Composer.html"><span title="Illuminate\Support\Composer">Composer</span></a> <var>$composer</var></span>)</code>
+				<code><a href="source-Migrations.MigrateMakeCommand.html#23-26" title="Go to source code">__construct</a>(<span><a href="Baril.Sqlout.Migrations.MigrationCreator.html"><span title="Baril\Sqlout\Migrations\MigrationCreator">MigrationCreator</span></a> <var>$creator</var></span>, <span><a href="Illuminate.Support.Composer.html"><span title="Illuminate\Support\Composer">Composer</span></a> <var>$composer</var></span>)</code>
 
 
 	<div class="expandable-collapsedView">
@@ -206,7 +206,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Migrations.MigrateMakeCommand.html#24-34" title="Go to source code">handle</a>()</code>
+				<code><a href="source-Migrations.MigrateMakeCommand.html#28-55" title="Go to source code">handle</a>()</code>
 
 
 	<div class="expandable-collapsedView">
@@ -242,7 +242,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Migrations.MigrateMakeCommand.html#36-59" title="Go to source code">writeSqloutMigration</a>(<span><var>$connection</var></span>)</code>
+				<code><a href="source-Migrations.MigrateMakeCommand.html#57-78" title="Go to source code">writeSqloutMigration</a>(<span><var>$name</var></span>, <span><var>$connection</var></span>, <span><var>$tableName</var></span>)</code>
 
 
 
@@ -268,7 +268,7 @@
 			</td>
 
 			<td class="table-cell">
-				<code><a href="source-Migrations.MigrateMakeCommand.html#61-75" title="Go to source code">getMigrationContents</a>(<span><var>$className</var></span>, <span><var>$connection</var></span>, <span><var>$tableName</var></span>)</code>
+				<code><a href="source-Migrations.MigrateMakeCommand.html#80-94" title="Go to source code">getMigrationContents</a>(<span><var>$className</var></span>, <span><var>$connection</var></span>, <span><var>$tableName</var></span>)</code>
 
 
 
@@ -454,7 +454,10 @@
 			</td>
 
 			<td class="table-cell">
-<code><var><a href="source-Migrations.MigrateMakeCommand.html#12-16" title="Go to source code">$signature</a></var> = <span class="php-str">'sqlout:make-migration &#123;connection? : Name of the connection}
+<code><var><a href="source-Migrations.MigrateMakeCommand.html#13-20" title="Go to source code">$signature</a></var> = <span class="php-str">'sqlout:make-migration
+        &#123;connection? : Name of the connection}
+        &#123;table? : Name of the table}
+        &#123;--model= : The model that the index is for}
         &#123;--name= : The name of the migration.}
         &#123;--path= : The location where the migration file should be created.}
         &#123;--realpath : Indicate any provided migration file paths are pre-resolved absolute paths.}
@@ -482,7 +485,7 @@
 			</td>
 
 			<td class="table-cell">
-<code><var><a href="source-Migrations.MigrateMakeCommand.html#17" title="Go to source code">$description</a></var> = <span class="php-str">'Create the migration file for Sqlout, and optionally run the migration'</span></code>
+<code><var><a href="source-Migrations.MigrateMakeCommand.html#21" title="Go to source code">$description</a></var> = <span class="php-str">'Create the migration file for Sqlout, and optionally run the migration'</span></code>
 				
 
 	<div class="expandable-expandedView">
