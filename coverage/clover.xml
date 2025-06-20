@@ -1,74 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750072513">
-  <project timestamp="1750072513" name="Clover Coverage">
+<coverage generated="1750438889">
+  <project timestamp="1750438889" name="Clover Coverage">
     <package name="Baril\Sqlout">
       <file name="/home/runner/work/sqlout/sqlout/src/Builder.php">
         <class name="Baril\Sqlout\Builder" namespace="Baril\Sqlout">
-          <metrics complexity="15" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="39" coveredelements="39"/>
+          <metrics complexity="10" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="14" elements="25" coveredelements="22"/>
         </class>
-        <line num="37" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="16"/>
-        <line num="39" type="stmt" count="16"/>
-        <line num="40" type="stmt" count="16"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="45" type="method" name="__call" visibility="public" complexity="2" crap="2" count="2"/>
-        <line num="47" type="stmt" count="2"/>
-        <line num="48" type="stmt" count="1"/>
-        <line num="51" type="stmt" count="1"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="55" type="method" name="scope" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="57" type="stmt" count="1"/>
-        <line num="58" type="stmt" count="1"/>
-        <line num="68" type="method" name="where" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="70" type="stmt" count="1"/>
-        <line num="71" type="stmt" count="1"/>
-        <line num="72" type="stmt" count="1"/>
-        <line num="80" type="method" name="withTrashed" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="82" type="stmt" count="1"/>
-        <line num="83" type="stmt" count="1"/>
-        <line num="91" type="method" name="onlyTrashed" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="93" type="stmt" count="1"/>
-        <line num="94" type="stmt" count="1"/>
-        <line num="103" type="method" name="orderByScore" visibility="public" complexity="1" crap="1" count="14"/>
-        <line num="105" type="stmt" count="14"/>
-        <line num="114" type="method" name="only" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="116" type="stmt" count="1"/>
-        <line num="125" type="method" name="mode" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="127" type="stmt" count="1"/>
-        <line num="128" type="stmt" count="1"/>
-        <line num="137" type="method" name="inNaturalLanguageMode" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="139" type="stmt" count="1"/>
-        <line num="148" type="method" name="withQueryExpansion" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="150" type="stmt" count="1"/>
-        <line num="159" type="method" name="inBooleanMode" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="161" type="stmt" count="1"/>
-        <line num="169" type="method" name="count" visibility="public" complexity="1" crap="1" count="7"/>
-        <line num="171" type="stmt" count="7"/>
-        <line num="172" type="stmt" count="7"/>
-        <line num="173" type="stmt" count="7"/>
-        <metrics loc="176" ncloc="99" classes="1" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="39" coveredelements="39"/>
+        <line num="28" type="method" name="__call" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="41" type="method" name="scope" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="53" type="method" name="orderByScore" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="55" type="stmt" count="16"/>
+        <line num="64" type="method" name="only" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="75" type="method" name="mode" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="77" type="stmt" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="87" type="method" name="inNaturalLanguageMode" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="98" type="method" name="withQueryExpansion" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="100" type="stmt" count="1"/>
+        <line num="109" type="method" name="inBooleanMode" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="111" type="stmt" count="1"/>
+        <line num="119" type="method" name="count" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="121" type="stmt" count="9"/>
+        <line num="122" type="stmt" count="9"/>
+        <line num="123" type="stmt" count="9"/>
+        <metrics loc="126" ncloc="72" classes="1" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="14" elements="25" coveredelements="22"/>
       </file>
       <file name="/home/runner/work/sqlout/sqlout/src/Engine.php">
         <class name="Baril\Sqlout\Engine" namespace="Baril\Sqlout">
-          <metrics complexity="40" methods="15" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="116" coveredstatements="108" elements="131" coveredelements="116"/>
+          <metrics complexity="52" methods="17" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="146" coveredstatements="137" elements="163" coveredelements="146"/>
         </class>
-        <line num="14" type="method" name="newSearchQuery" visibility="protected" complexity="1" crap="1" count="20"/>
-        <line num="16" type="stmt" count="20"/>
-        <line num="17" type="stmt" count="20"/>
-        <line num="18" type="stmt" count="20"/>
-        <line num="19" type="stmt" count="20"/>
-        <line num="20" type="stmt" count="20"/>
-        <line num="30" type="method" name="processString" visibility="protected" complexity="13" crap="13.15" count="20"/>
-        <line num="33" type="stmt" count="20"/>
+        <line num="14" type="method" name="newSearchQuery" visibility="protected" complexity="1" crap="1" count="24"/>
+        <line num="16" type="stmt" count="24"/>
+        <line num="17" type="stmt" count="24"/>
+        <line num="18" type="stmt" count="24"/>
+        <line num="19" type="stmt" count="24"/>
+        <line num="20" type="stmt" count="24"/>
+        <line num="30" type="method" name="processString" visibility="protected" complexity="13" crap="13.15" count="24"/>
+        <line num="33" type="stmt" count="24"/>
         <line num="34" type="stmt" count="1"/>
         <line num="35" type="stmt" count="1"/>
-        <line num="40" type="stmt" count="20"/>
-        <line num="43" type="stmt" count="20"/>
-        <line num="44" type="stmt" count="20"/>
-        <line num="45" type="stmt" count="20"/>
-        <line num="46" type="stmt" count="20"/>
-        <line num="47" type="stmt" count="20"/>
-        <line num="50" type="stmt" count="20"/>
-        <line num="51" type="stmt" count="20"/>
+        <line num="40" type="stmt" count="24"/>
+        <line num="43" type="stmt" count="24"/>
+        <line num="44" type="stmt" count="24"/>
+        <line num="45" type="stmt" count="24"/>
+        <line num="46" type="stmt" count="24"/>
+        <line num="47" type="stmt" count="24"/>
+        <line num="50" type="stmt" count="24"/>
+        <line num="51" type="stmt" count="24"/>
         <line num="52" type="stmt" count="2"/>
         <line num="53" type="stmt" count="0"/>
         <line num="55" type="stmt" count="2"/>
@@ -78,202 +64,249 @@
         <line num="60" type="stmt" count="1"/>
         <line num="61" type="stmt" count="1"/>
         <line num="64" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="20"/>
-        <line num="78" type="method" name="update" visibility="public" complexity="2" crap="2" count="20"/>
-        <line num="80" type="stmt" count="20"/>
-        <line num="81" type="stmt" count="20"/>
-        <line num="82" type="stmt" count="20"/>
-        <line num="83" type="stmt" count="20"/>
-        <line num="85" type="stmt" count="20"/>
-        <line num="86" type="stmt" count="20"/>
-        <line num="87" type="stmt" count="20"/>
-        <line num="88" type="stmt" count="20"/>
-        <line num="89" type="stmt" count="20"/>
-        <line num="90" type="stmt" count="20"/>
-        <line num="91" type="stmt" count="20"/>
-        <line num="92" type="stmt" count="20"/>
-        <line num="93" type="stmt" count="20"/>
-        <line num="95" type="stmt" count="20"/>
-        <line num="104" type="method" name="delete" visibility="public" complexity="2" crap="2.02" count="1"/>
-        <line num="106" type="stmt" count="1"/>
-        <line num="107" type="stmt" count="0"/>
-        <line num="109" type="stmt" count="1"/>
-        <line num="110" type="stmt" count="1"/>
-        <line num="111" type="stmt" count="1"/>
-        <line num="112" type="stmt" count="1"/>
-        <line num="121" type="method" name="search" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="123" type="stmt" count="13"/>
-        <line num="124" type="stmt" count="13"/>
-        <line num="125" type="stmt" count="13"/>
-        <line num="136" type="method" name="paginate" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="138" type="stmt" count="2"/>
-        <line num="139" type="stmt" count="2"/>
-        <line num="140" type="stmt" count="2"/>
-        <line num="141" type="stmt" count="2"/>
-        <line num="151" type="method" name="performSearch" visibility="protected" complexity="12" crap="12" count="15"/>
-        <line num="153" type="stmt" count="15"/>
-        <line num="154" type="stmt" count="15"/>
-        <line num="157" type="stmt" count="15"/>
-        <line num="158" type="stmt" count="15"/>
-        <line num="159" type="stmt" count="15"/>
-        <line num="160" type="stmt" count="15"/>
-        <line num="161" type="stmt" count="15"/>
-        <line num="162" type="stmt" count="15"/>
-        <line num="163" type="stmt" count="15"/>
-        <line num="164" type="stmt" count="15"/>
-        <line num="165" type="stmt" count="15"/>
-        <line num="166" type="stmt" count="1"/>
-        <line num="167" type="stmt" count="1"/>
-        <line num="169" type="stmt" count="0"/>
-        <line num="174" type="stmt" count="15"/>
-        <line num="175" type="stmt" count="13"/>
-        <line num="177" type="stmt" count="15"/>
-        <line num="178" type="stmt" count="15"/>
-        <line num="179" type="stmt" count="15"/>
-        <line num="180" type="stmt" count="14"/>
-        <line num="181" type="stmt" count="14"/>
-        <line num="183" type="stmt" count="2"/>
-        <line num="184" type="stmt" count="2"/>
-        <line num="185" type="stmt" count="2"/>
-        <line num="186" type="stmt" count="2"/>
-        <line num="187" type="stmt" count="2"/>
-        <line num="188" type="stmt" count="2"/>
-        <line num="189" type="stmt" count="2"/>
-        <line num="190" type="stmt" count="2"/>
-        <line num="191" type="stmt" count="2"/>
-        <line num="192" type="stmt" count="2"/>
-        <line num="197" type="stmt" count="15"/>
-        <line num="198" type="stmt" count="15"/>
-        <line num="199" type="stmt" count="2"/>
-        <line num="200" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="24"/>
+        <line num="72" type="method" name="loadStopWords" visibility="protected" complexity="5" crap="5.01" count="24"/>
+        <line num="74" type="stmt" count="24"/>
+        <line num="75" type="stmt" count="24"/>
+        <line num="76" type="stmt" count="24"/>
+        <line num="79" type="stmt" count="2"/>
+        <line num="80" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="0"/>
+        <line num="84" type="stmt" count="2"/>
+        <line num="85" type="stmt" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="104" type="method" name="update" visibility="public" complexity="2" crap="2" count="24"/>
+        <line num="106" type="stmt" count="24"/>
+        <line num="107" type="stmt" count="24"/>
+        <line num="108" type="stmt" count="24"/>
+        <line num="109" type="stmt" count="24"/>
+        <line num="111" type="stmt" count="24"/>
+        <line num="112" type="stmt" count="24"/>
+        <line num="113" type="stmt" count="24"/>
+        <line num="114" type="stmt" count="24"/>
+        <line num="115" type="stmt" count="24"/>
+        <line num="116" type="stmt" count="24"/>
+        <line num="117" type="stmt" count="24"/>
+        <line num="118" type="stmt" count="24"/>
+        <line num="119" type="stmt" count="24"/>
+        <line num="121" type="stmt" count="24"/>
+        <line num="130" type="method" name="delete" visibility="public" complexity="2" crap="2.02" count="1"/>
+        <line num="132" type="stmt" count="1"/>
+        <line num="133" type="stmt" count="0"/>
+        <line num="135" type="stmt" count="1"/>
+        <line num="136" type="stmt" count="1"/>
+        <line num="137" type="stmt" count="1"/>
+        <line num="138" type="stmt" count="1"/>
+        <line num="147" type="method" name="search" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="149" type="stmt" count="15"/>
+        <line num="150" type="stmt" count="15"/>
+        <line num="151" type="stmt" count="15"/>
+        <line num="162" type="method" name="paginate" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="164" type="stmt" count="2"/>
+        <line num="165" type="stmt" count="2"/>
+        <line num="166" type="stmt" count="2"/>
+        <line num="167" type="stmt" count="2"/>
+        <line num="177" type="method" name="performSearch" visibility="protected" complexity="7" crap="7" count="17"/>
+        <line num="179" type="stmt" count="17"/>
+        <line num="180" type="stmt" count="17"/>
+        <line num="183" type="stmt" count="17"/>
+        <line num="184" type="stmt" count="17"/>
+        <line num="185" type="stmt" count="17"/>
+        <line num="186" type="stmt" count="17"/>
+        <line num="187" type="stmt" count="17"/>
+        <line num="188" type="stmt" count="17"/>
+        <line num="189" type="stmt" count="17"/>
+        <line num="190" type="stmt" count="17"/>
+        <line num="193" type="stmt" count="17"/>
+        <line num="194" type="stmt" count="15"/>
+        <line num="196" type="stmt" count="17"/>
+        <line num="197" type="stmt" count="17"/>
+        <line num="198" type="stmt" count="17"/>
+        <line num="199" type="stmt" count="16"/>
+        <line num="200" type="stmt" count="16"/>
         <line num="202" type="stmt" count="2"/>
         <line num="203" type="stmt" count="2"/>
-        <line num="206" type="stmt" count="15"/>
-        <line num="209" type="stmt" count="15"/>
-        <line num="210" type="stmt" count="3"/>
-        <line num="211" type="stmt" count="3"/>
-        <line num="212" type="stmt" count="1"/>
-        <line num="213" type="stmt" count="1"/>
-        <line num="218" type="stmt" count="15"/>
-        <line num="219" type="stmt" count="15"/>
-        <line num="220" type="stmt" count="15"/>
-        <line num="221" type="stmt" count="15"/>
-        <line num="224" type="stmt" count="15"/>
-        <line num="226" type="stmt" count="15"/>
-        <line num="235" type="method" name="mapIds" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="237" type="stmt" count="0"/>
-        <line num="246" type="method" name="getRecord" visibility="protected" complexity="1" crap="1" count="9"/>
-        <line num="248" type="stmt" count="9"/>
-        <line num="249" type="stmt" count="9"/>
-        <line num="260" type="method" name="map" visibility="public" complexity="1" crap="1" count="10"/>
-        <line num="262" type="stmt" count="10"/>
-        <line num="263" type="stmt" count="9"/>
-        <line num="264" type="stmt" count="10"/>
-        <line num="265" type="stmt" count="10"/>
-        <line num="276" type="method" name="lazyMap" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="278" type="stmt" count="1"/>
-        <line num="279" type="stmt" count="1"/>
+        <line num="204" type="stmt" count="2"/>
+        <line num="205" type="stmt" count="2"/>
+        <line num="206" type="stmt" count="2"/>
+        <line num="207" type="stmt" count="2"/>
+        <line num="208" type="stmt" count="2"/>
+        <line num="209" type="stmt" count="2"/>
+        <line num="210" type="stmt" count="2"/>
+        <line num="211" type="stmt" count="2"/>
+        <line num="215" type="stmt" count="17"/>
+        <line num="216" type="stmt" count="17"/>
+        <line num="217" type="stmt" count="17"/>
+        <line num="220" type="stmt" count="17"/>
+        <line num="221" type="stmt" count="3"/>
+        <line num="222" type="stmt" count="3"/>
+        <line num="223" type="stmt" count="1"/>
+        <line num="224" type="stmt" count="1"/>
+        <line num="229" type="stmt" count="17"/>
+        <line num="230" type="stmt" count="17"/>
+        <line num="231" type="stmt" count="17"/>
+        <line num="232" type="stmt" count="17"/>
+        <line num="235" type="stmt" count="17"/>
+        <line num="237" type="stmt" count="17"/>
+        <line num="245" type="method" name="applyQueryScopes" visibility="protected" complexity="12" crap="12" count="17"/>
+        <line num="247" type="stmt" count="17"/>
+        <line num="248" type="stmt" count="17"/>
+        <line num="250" type="stmt" count="14"/>
+        <line num="251" type="stmt" count="14"/>
+        <line num="252" type="stmt" count="1"/>
+        <line num="253" type="stmt" count="1"/>
+        <line num="255" type="stmt" count="1"/>
+        <line num="257" type="stmt" count="17"/>
+        <line num="258" type="stmt" count="17"/>
+        <line num="259" type="stmt" count="2"/>
+        <line num="260" type="stmt" count="1"/>
+        <line num="262" type="stmt" count="1"/>
+        <line num="265" type="stmt" count="17"/>
+        <line num="266" type="stmt" count="1"/>
+        <line num="268" type="stmt" count="17"/>
+        <line num="269" type="stmt" count="1"/>
+        <line num="271" type="stmt" count="17"/>
+        <line num="272" type="stmt" count="1"/>
+        <line num="273" type="stmt" count="0"/>
+        <line num="275" type="stmt" count="1"/>
+        <line num="276" type="stmt" count="1"/>
+        <line num="279" type="stmt" count="17"/>
         <line num="280" type="stmt" count="1"/>
-        <line num="289" type="method" name="getTotalCount" visibility="public" complexity="1" crap="1" count="9"/>
-        <line num="291" type="stmt" count="9"/>
-        <line num="300" type="method" name="flush" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="302" type="stmt" count="0"/>
-        <line num="312" type="method" name="createIndex" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="315" type="stmt" count="0"/>
-        <line num="323" type="method" name="deleteIndex" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="326" type="stmt" count="0"/>
-        <metrics loc="328" ncloc="222" classes="1" methods="15" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="116" coveredstatements="108" elements="131" coveredelements="116"/>
+        <line num="281" type="stmt" count="1"/>
+        <line num="291" type="method" name="mapIds" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="293" type="stmt" count="0"/>
+        <line num="302" type="method" name="getRecord" visibility="protected" complexity="1" crap="1" count="10"/>
+        <line num="304" type="stmt" count="10"/>
+        <line num="305" type="stmt" count="10"/>
+        <line num="316" type="method" name="map" visibility="public" complexity="1" crap="1" count="11"/>
+        <line num="318" type="stmt" count="11"/>
+        <line num="319" type="stmt" count="10"/>
+        <line num="320" type="stmt" count="11"/>
+        <line num="321" type="stmt" count="11"/>
+        <line num="332" type="method" name="lazyMap" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="334" type="stmt" count="1"/>
+        <line num="335" type="stmt" count="1"/>
+        <line num="336" type="stmt" count="1"/>
+        <line num="345" type="method" name="getTotalCount" visibility="public" complexity="1" crap="1" count="11"/>
+        <line num="347" type="stmt" count="11"/>
+        <line num="356" type="method" name="flush" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="358" type="stmt" count="0"/>
+        <line num="368" type="method" name="createIndex" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="371" type="stmt" count="0"/>
+        <line num="379" type="method" name="deleteIndex" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="382" type="stmt" count="0"/>
+        <metrics loc="384" ncloc="273" classes="1" methods="17" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="146" coveredstatements="137" elements="163" coveredelements="146"/>
       </file>
       <file name="/home/runner/work/sqlout/sqlout/src/SearchIndex.php">
         <class name="Baril\Sqlout\SearchIndex" namespace="Baril\Sqlout">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
-        <line num="20" type="method" name="record" visibility="public" complexity="1" crap="1" count="15"/>
-        <line num="22" type="stmt" count="15"/>
+        <line num="20" type="method" name="record" visibility="public" complexity="1" crap="1" count="17"/>
+        <line num="22" type="stmt" count="17"/>
         <metrics loc="25" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
       <file name="/home/runner/work/sqlout/sqlout/src/Searchable.php">
         <class name="Baril\Sqlout\Searchable" namespace="Baril\Sqlout">
-          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+          <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
         </class>
-        <line num="18" type="method" name="search" visibility="public" complexity="2" crap="2" count="16"/>
-        <line num="20" type="stmt" count="16"/>
-        <line num="21" type="stmt" count="16"/>
-        <line num="22" type="stmt" count="16"/>
-        <line num="23" type="stmt" count="16"/>
-        <line num="24" type="stmt" count="16"/>
-        <line num="25" type="stmt" count="16"/>
-        <line num="34" type="method" name="getSearchWeight" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="36" type="stmt" count="20"/>
-        <metrics loc="39" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+        <line num="18" type="method" name="search" visibility="public" complexity="2" crap="2" count="18"/>
+        <line num="20" type="stmt" count="18"/>
+        <line num="21" type="stmt" count="18"/>
+        <line num="22" type="stmt" count="18"/>
+        <line num="23" type="stmt" count="18"/>
+        <line num="24" type="stmt" count="18"/>
+        <line num="25" type="stmt" count="18"/>
+        <line num="34" type="method" name="getSearchWeight" visibility="public" complexity="1" crap="1" count="24"/>
+        <line num="36" type="stmt" count="24"/>
+        <line num="44" type="method" name="searchableAs" visibility="public" complexity="1" crap="1" count="24"/>
+        <line num="46" type="stmt" count="24"/>
+        <line num="47" type="stmt" count="24"/>
+        <line num="48" type="stmt" count="24"/>
+        <line num="49" type="stmt" count="24"/>
+        <metrics loc="52" ncloc="34" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
       </file>
       <file name="/home/runner/work/sqlout/sqlout/src/SqloutServiceProvider.php">
         <class name="Baril\Sqlout\SqloutServiceProvider" namespace="Baril\Sqlout">
           <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
         </class>
-        <line num="16" type="method" name="boot" visibility="public" complexity="2" crap="2" count="20"/>
-        <line num="18" type="stmt" count="20"/>
-        <line num="19" type="stmt" count="20"/>
-        <line num="20" type="stmt" count="20"/>
-        <line num="22" type="stmt" count="20"/>
-        <line num="23" type="stmt" count="20"/>
-        <line num="24" type="stmt" count="20"/>
-        <line num="25" type="stmt" count="20"/>
-        <line num="27" type="stmt" count="20"/>
-        <line num="28" type="stmt" count="20"/>
-        <line num="29" type="stmt" count="20"/>
+        <line num="16" type="method" name="boot" visibility="public" complexity="2" crap="2" count="24"/>
+        <line num="18" type="stmt" count="24"/>
+        <line num="19" type="stmt" count="24"/>
+        <line num="20" type="stmt" count="24"/>
+        <line num="22" type="stmt" count="24"/>
+        <line num="23" type="stmt" count="24"/>
+        <line num="24" type="stmt" count="24"/>
+        <line num="25" type="stmt" count="24"/>
+        <line num="27" type="stmt" count="24"/>
+        <line num="28" type="stmt" count="24"/>
+        <line num="29" type="stmt" count="24"/>
         <metrics loc="32" ncloc="27" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
       </file>
     </package>
     <package name="Baril\Sqlout\Migrations">
       <file name="/home/runner/work/sqlout/sqlout/src/Migrations/MigrateMakeCommand.php">
         <class name="Baril\Sqlout\Migrations\MigrateMakeCommand" namespace="Baril\Sqlout\Migrations">
-          <metrics complexity="7" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="1" elements="36" coveredelements="2"/>
+          <metrics complexity="9" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="36" elements="46" coveredelements="39"/>
         </class>
-        <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="21" type="stmt" count="20"/>
-        <line num="24" type="method" name="handle" visibility="public" complexity="3" crap="12" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="36" type="method" name="writeSqloutMigration" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
+        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="24"/>
+        <line num="25" type="stmt" count="24"/>
+        <line num="28" type="method" name="handle" visibility="public" complexity="6" crap="7.58" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="0"/>
-        <line num="52" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
         <line num="53" type="stmt" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="61" type="method" name="getMigrationContents" visibility="protected" complexity="1" crap="2" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="0"/>
-        <line num="65" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="67" type="stmt" count="0"/>
-        <line num="68" type="stmt" count="0"/>
-        <line num="69" type="stmt" count="0"/>
-        <line num="70" type="stmt" count="0"/>
-        <line num="71" type="stmt" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="74" type="stmt" count="0"/>
-        <metrics loc="77" ncloc="73" classes="1" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="1" elements="36" coveredelements="2"/>
+        <line num="57" type="method" name="writeSqloutMigration" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="67" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="77" type="stmt" count="1"/>
+        <line num="80" type="method" name="getMigrationContents" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <metrics loc="96" ncloc="92" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="36" elements="46" coveredelements="39"/>
       </file>
       <file name="/home/runner/work/sqlout/sqlout/src/Migrations/MigrationCreator.php">
         <class name="Baril\Sqlout\Migrations\MigrationCreator" namespace="Baril\Sqlout\Migrations">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
-        <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
-        <line num="12" type="stmt" count="20"/>
+        <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="24"/>
+        <line num="12" type="stmt" count="24"/>
         <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
     </package>
@@ -287,6 +320,6 @@
       <line num="12" type="stmt" count="0"/>
       <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="7" coveredelements="0"/>
     </file>
-    <metrics files="8" loc="707" ncloc="499" classes="7" methods="37" coveredmethods="27" conditionals="0" coveredconditionals="0" statements="200" coveredstatements="154" elements="237" coveredelements="181"/>
+    <metrics files="8" loc="745" ncloc="550" classes="7" methods="36" coveredmethods="26" conditionals="0" coveredconditionals="0" statements="234" coveredstatements="210" elements="270" coveredelements="236"/>
   </project>
 </coverage>
